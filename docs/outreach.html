@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outreach Directory — Santa Cruz Doughnut Economics</title>
+    <title>Outreach Directory — Petaluma Doughnut Economics</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -217,8 +217,8 @@
 <body>
     <div class="top-bar">
         <div>
-            <h1>Outreach Directory & Draft Messages</h1>
-            <div class="subtitle">Key contacts for filling data gaps in the Santa Cruz Doughnut portrait</div>
+            <h1>Petaluma Outreach Directory</h1>
+            <div class="subtitle">Experts &amp; orgs to consult for indicator validation — 11 John Shribbs picks + 28 Petaluma/Sonoma orgs</div>
         </div>
         <div class="nav-links">
             <a href="research.html">Data Gap Analysis</a>
@@ -229,17 +229,18 @@
     <div class="container">
         <div class="intro">
             <h2>How to use this directory</h2>
-            <p>Each card below identifies a person or institution who can provide data for one or more missing dimensions. Cards include contact info, the specific data we need, why this contact is relevant, and a draft outreach message you can copy and customize. Click any card to expand it. Use the filters to focus on a specific gap area.</p>
+            <p>These are the people and organizations to consult during Phase 2 — indicator validation. <strong>Priority</strong> cards (tagged) are the experts <em>Petaluma City Councilmember John Shribbs</em> specifically recommended. The rest are Petaluma- or Sonoma County-based orgs that can advise on specific doughnut dimensions. Click any card to expand contact info, what data we'd ask for, and (where included) a draft outreach message you can adapt.</p>
+            <p style="margin-top:0.75rem;font-size:0.85rem;color:#636e72"><strong>Reusable template:</strong> <em>"I'm working with CalDEC and Amelia Eichel on Petaluma's first Doughnut Economics city portrait — part of the General Plan update. We've drafted indicators for [dimension] and would value your input on whether our metric, data point, and target are the right ones. Could we schedule 20 minutes? Happy to share what we've built."</em></p>
         </div>
 
         <div class="filter-bar" id="filterBar">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="priority">Priority Gaps</button>
+            <button class="filter-btn active" data-filter="all">All (39)</button>
+            <button class="filter-btn" data-filter="priority">Priority (John's picks)</button>
             <button class="filter-btn" data-filter="social">Social Foundation</button>
             <button class="filter-btn" data-filter="ecological">Ecological Ceiling</button>
             <button class="filter-btn" data-filter="cross">Cross-cutting</button>
-            <button class="filter-btn" data-filter="county">County Data</button>
-            <button class="filter-btn" data-filter="watsonville">Watsonville Data</button>
+            <button class="filter-btn" data-filter="petaluma">Petaluma-based</button>
+            <button class="filter-btn" data-filter="sonoma">Sonoma County</button>
         </div>
 
         <div id="cardsContainer"></div>
@@ -249,677 +250,683 @@
     // ── Contact data ─────────────────────────────────────────────────
 
     const CONTACTS = [
-        // ─── PRIORITY: Cross-cutting data hub ────────────────────────
+        // ─── JOHN SHRIBBS'S RECOMMENDATIONS (PRIORITY) ───────────────
         {
-            org: "DataShare Santa Cruz County / Community Foundation",
-            tags: ["cross", "priority", "county", "watsonville"],
-            person: "Christina Cuevas, Program Director",
-            phone: "(831) 662-2070",
-            email: "ccuevas@cfscc.org",
-            altEmail: "cfhelp@cfscc.org",
-            address: "7807 Soquel Drive, Aptos, CA 95003",
-            website: "https://www.datasharescc.org/",
+            org: "Redwood Empire Food Bank",
+            tags: ["priority", "social", "sonoma"],
+            person: null,
+            phone: "(707) 523-7900",
+            email: "info@refb.org",
+            contactForm: "https://refb.org/about-us/contact.html",
+            website: "https://refb.org",
+            address: "3990 Brickway Blvd, Santa Rosa, CA 95403",
             dataNeeds: [
-                "All 12 social indicators at county AND city-of-Watsonville level",
-                "Gini coefficient (city-level, not just county)",
-                "Life expectancy by jurisdiction",
-                "ALICE (Asset Limited, Income Constrained, Employed) household counts by city",
-                "Gender pay gap data disaggregated by jurisdiction"
+                "Food insecurity rate for the City of Petaluma (vs. Sonoma County)",
+                "Monthly people served broken down by zip code in Petaluma",
+                "CalFresh enrollment trends for Petaluma",
+                "Eligibility threshold counts (how many Petaluma residents qualify for food-bank services)"
             ],
-            why: "DataShare SCC is THE central hub for 475+ community wellbeing indicators in the county. It's maintained by the Community Foundation in partnership with Conduent Healthy Communities Institute. They already have most of the data we need — we just need to know which indicators map to our doughnut dimensions, and whether they can break data down by city (Santa Cruz vs Watsonville vs unincorporated).",
-            draft: `Subject: Data partnership request — Santa Cruz Doughnut Economics portrait
-
-Dear Christina,
-
-I'm building an open-source Doughnut Economics portrait for Santa Cruz County — a data visualization that maps social and ecological wellbeing across the City of Santa Cruz, Santa Cruz County, and the City of Watsonville, following the framework developed by economist Kate Raworth and the Doughnut Economics Action Lab (DEAL).
-
-DataShare SCC has been an invaluable resource, but I have several data gaps that I believe your team could help fill:
-
-1. Can any of the 475+ indicators be disaggregated by city (Santa Cruz city vs Watsonville vs unincorporated areas)? We currently have county-level data for many social dimensions but need city-level breakdowns.
-
-2. Specifically, we're seeking city-level data for: Gini coefficient, life expectancy, food insecurity rates, uninsured rates, ALICE household counts, and crime rates.
-
-3. Would you be open to a brief call to walk through which DataShare indicators best map to the doughnut's 12 social foundation dimensions?
-
-The project is entirely open-source and community-focused — the goal is to make data accessible and actionable for residents and policymakers. I'd be happy to share what we've built so far and discuss how this could complement DataShare's mission.
-
-Thank you for your time,
-[Your name]`
-        },
-        {
-            org: "DEAL — Doughnut Economics Action Lab",
-            tags: ["cross", "priority"],
-            person: "DEAL Team (via contact form)",
-            phone: null,
-            email: null,
-            website: "https://doughnuteconomics.org/",
-            contactForm: "https://doughnuteconomics.org/contact",
-            dataNeeds: [
-                "Methodology validation for our city portrait approach",
-                "Access to Creating City Portraits guide resources",
-                "Connection to other city portrait practitioners for data methodology advice"
-            ],
-            why: "DEAL created the framework we're using. They've supported city portraits in Amsterdam, Portland, Philadelphia, and many other cities. They can validate our indicator choices, scoring methodology, and connect us with practitioners who've solved similar data gap challenges.",
-            draft: `Subject: Community-led Doughnut portrait for Santa Cruz, CA — seeking methodology guidance
-
-Dear DEAL Team,
-
-I'm leading a community-driven effort to create a Doughnut Economics city portrait for Santa Cruz County, California, covering three jurisdictions: City of Santa Cruz, Santa Cruz County, and City of Watsonville.
-
-We've built a working prototype with data for all 9 ecological ceiling dimensions and 12 social foundation dimensions, but we'd welcome guidance on:
-
-1. Indicator selection and scoring methodology — are there recommended best practices for translating local data into the -100 to +150 severity scale?
-2. Handling data gaps where city-level data doesn't exist (e.g., nitrogen loading only available at county level)
-3. Connecting with other community-led portrait efforts in US cities for peer learning
-
-Our project is open-source and emphasizes primary source documentation — every data point links to its source document. We'd love to learn from DEAL's experience and potentially share our process as a case study for other mid-size US cities.
-
-Is there someone on the team we could schedule a 30-minute call with?
-
-Thank you,
-[Your name]`
-        },
-
-        // ─── FOOD ────────────────────────────────────────────────────
-        {
-            org: "Second Harvest Food Bank Santa Cruz County",
-            tags: ["social", "priority", "county", "watsonville"],
-            person: "Erica Padilla-Chavez, CEO",
-            phone: null,
-            email: null,
-            website: "https://www.thefoodbank.org/",
-            address: "800 Ohlone Pkwy, Watsonville, CA 95076",
-            contactForm: "https://www.thefoodbank.org/contact/",
-            dataNeeds: [
-                "Food insecurity rate for Watsonville city specifically (vs county-wide 1-in-3)",
-                "Monthly people served broken down by city/zip code",
-                "Year-over-year trends in food bank usage by jurisdiction",
-                "CalFresh enrollment rates by city"
-            ],
-            why: "Second Harvest is the primary food bank serving all of Santa Cruz County and has the most granular data on food insecurity. They serve 70,000+ people/month and track demand by location. CEO Erica Padilla-Chavez has been vocal about the 2025 federal funding crisis and likely has detailed geographic breakdowns.",
-            draft: `Subject: Data request for Santa Cruz Doughnut Economics research — food insecurity by city
-
-Dear Ms. Padilla-Chavez,
-
-I'm building an open-source Doughnut Economics portrait for Santa Cruz County that visualizes social and ecological wellbeing across the City of Santa Cruz, the County, and Watsonville. Food security is one of 12 social foundation dimensions we track.
-
-We currently use the county-wide "1 in 3 residents food insecure" figure, but for our jurisdiction comparison we need more granular data:
-
-- Do you track the number of people served per month by city or zip code? We'd especially value data for Watsonville vs Santa Cruz city.
-- Do you have year-over-year trends we could chart (e.g., 2019 vs 2023 vs 2025)?
-- Are there CalFresh enrollment rates broken down by city?
-
-The project is community-focused and open-source — the goal is helping residents and policymakers understand where needs are greatest. We prominently credit all data sources and link directly to your organization.
-
-I know your team is stretched thin given the federal funding crisis. Even high-level numbers or a pointer to existing reports would be incredibly helpful.
-
-Thank you for all that Second Harvest does for our community.
-
-Best regards,
-[Your name]`
-        },
-
-        // ─── HEALTH ──────────────────────────────────────────────────
-        {
-            org: "Santa Cruz County Health Services Agency",
-            tags: ["social", "priority", "county", "watsonville"],
-            person: "Public Health Division / Community Health Assessment team",
-            altPerson: "Corinne Hyland, CHA/CHIP Coordinator",
-            phone: "(831) 454-4100",
-            altPhone: "(831) 566-4370",
-            email: null,
-            website: "https://www.santacruzhealth.org/",
-            dataNeeds: [
-                "Uninsured rate by city (SC vs Watsonville vs county)",
-                "Life expectancy by city or zip code",
-                "Infant mortality rate by city",
-                "Access to primary care — provider-to-population ratios by area",
-                "Mental health service utilization data"
-            ],
-            why: "The county HSA conducted the 2024 Community Health Assessment (CHA) and maintains the Community Health Improvement Plan (CHIP). The CHA contains detailed health data often disaggregated by geography. Corinne Hyland is the CHA/CHIP coordinator and the best entry point for data requests.",
-            draft: `Subject: Data request for community health indicators — Santa Cruz Doughnut Economics
-
-Dear Corinne,
-
-I'm developing an open-source Doughnut Economics portrait for Santa Cruz County, and the 2024 Community Health Assessment has been a valuable reference. I'm writing to request additional health data that would strengthen our social foundation analysis:
-
-1. Uninsured rates disaggregated by city (City of Santa Cruz vs Watsonville vs unincorporated)
-2. Life expectancy estimates by city or census tract
-3. Infant mortality rates by jurisdiction
-4. Primary care provider-to-population ratios by service area
-
-If these breakdowns exist in the full CHA dataset (even if not published in the summary report), we'd be grateful for access. We're also happy to sign any data use agreements if needed.
-
-Our project maps 12 social and 9 ecological dimensions across three jurisdictions and makes data accessible to residents through an interactive visualization. All sources are cited and linked.
-
-Would it be possible to schedule a brief call to discuss which data points are available?
-
-Thank you,
-[Your name]`
-        },
-        {
-            org: "Salud Para La Gente",
-            tags: ["social", "watsonville"],
-            person: "Main office",
-            phone: "(831) 728-0222",
-            email: null,
-            address: "P.O. Box 1870, Watsonville, CA 95077",
-            website: "https://splg.org/",
-            dataNeeds: [
-                "Uninsured/underinsured rates among Watsonville farmworker community",
-                "Health access barriers specific to Watsonville residents",
-                "Patient demographics and service volume trends"
-            ],
-            why: "Salud Para La Gente is the primary federally qualified health center serving Watsonville's predominantly Latino/farmworker community. They have direct insight into health access disparities that county-level data may mask.",
-            draft: `Subject: Community health data request — Watsonville Doughnut Economics portrait
-
-Dear Salud Para La Gente team,
-
-I'm building a Doughnut Economics community portrait for Watsonville that visualizes social and ecological wellbeing. Health access is a key dimension, and your organization serves the population most affected by health disparities in our area.
-
-Would you be able to share any of the following (even estimates or ranges)?
-
-- Approximate uninsured/underinsured rate among your patient population
-- Top health access barriers your patients face (cost, language, transportation, etc.)
-- How patient volume has changed year-over-year (as a proxy for unmet need)
-
-This project aims to highlight where communities like Watsonville need the most support. All data sources are credited prominently. I'd welcome a brief conversation at your convenience.
-
-Gracias,
-[Your name]`
-        },
-
-        // ─── EDUCATION ───────────────────────────────────────────────
-        {
-            org: "Santa Cruz County Office of Education",
-            tags: ["social", "priority", "county", "watsonville"],
-            person: "Dr. Faris Sabbah, Superintendent",
-            altPerson: "Nick Ibarra, Director of Communications",
-            phone: "(831) 466-5900",
-            altPhone: "(831) 466-5886",
-            email: null,
-            address: "400 Encinal Street, Santa Cruz, CA 95060",
-            website: "https://santacruzcoe.org/",
-            dataNeeds: [
-                "Graduation rates by district (Santa Cruz City Schools vs Pajaro Valley USD)",
-                "Math and reading proficiency by district and demographic group",
-                "Chronic absenteeism rates by city",
-                "College/career readiness indicators for Watsonville"
-            ],
-            why: "The COE oversees all school districts in the county and has access to disaggregated education data. Dr. Sabbah can direct us to the right data analyst. They also partner with Equal Access Santa Cruz on digital divide issues, making them relevant for the 'networks' dimension too.",
-            draft: `Subject: Education data for Santa Cruz Doughnut Economics community portrait
-
-Dear Dr. Sabbah (or Nick),
-
-I'm developing an open-source Doughnut Economics portrait for Santa Cruz County that visualizes social and ecological wellbeing. Education is one of 12 social foundation dimensions.
-
-We have strong data for City of Santa Cruz schools (97% graduation at SC High, CAASPP scores), but we need comparable data for the Pajaro Valley Unified School District to complete our Watsonville portrait:
-
-- Graduation rates for PVUSD high schools (Watsonville High, Pajaro Valley High)
-- Math and reading proficiency rates (CAASPP) for PVUSD
-- Chronic absenteeism rates compared across districts
-- Any college/career readiness indicators specific to Watsonville
-
-We're also interested in the COE's perspective on achievement gaps between the northern and southern parts of the county — context that would help our visualization tell a more complete story.
-
-Would you or someone on your data team be available for a brief conversation?
-
-Best regards,
-[Your name]`
-        },
-
-        // ─── HOUSING & HOMELESSNESS ──────────────────────────────────
-        {
-            org: "Housing Matters",
-            tags: ["social", "priority", "county", "watsonville"],
-            person: "Phil Kramer, CEO",
-            phone: "(831) 458-6020",
-            email: "contact@housingmatterssc.org",
-            address: "115 Coral Street, Santa Cruz, CA 95060",
-            website: "https://housingmatterssc.org/",
-            dataNeeds: [
-                "PIT count data disaggregated by city (SC vs Watsonville vs unincorporated)",
-                "Rent burden rates by city",
-                "Wait times for permanent supportive housing",
-                "Year-over-year homelessness trends by jurisdiction"
-            ],
-            why: "Housing Matters manages the Homeless Management Information System (HMIS) for Santa Cruz County and conducts the annual PIT count. CEO Phil Kramer has deep knowledge of homelessness data and can provide city-level breakdowns that aren't in public reports.",
-            draft: `Subject: Homelessness data by jurisdiction — Santa Cruz Doughnut Economics
-
-Dear Phil,
-
-I'm building a Doughnut Economics portrait that compares social wellbeing across the City of Santa Cruz, Santa Cruz County, and Watsonville. Housing is our most critical dimension — we know Santa Cruz has the highest per-capita homelessness in the nation, but we need more granular data.
-
-Could your team help with:
-- 2024 or 2025 PIT count numbers broken down by city (City of SC vs Watsonville vs unincorporated)
-- Rent burden rates (% spending >30% and >50% on housing) by jurisdiction
-- Any year-over-year trends by city
-
-We'd also value Housing Matters' perspective on what indicators best capture the housing crisis at a city level.
-
-Our project makes all data open and accessible to the community, and we prominently credit sources. Happy to share what we've built and discuss how it might support your advocacy work.
-
-Best,
-[Your name]`
-        },
-        {
-            org: "Housing Authority of Santa Cruz County",
-            tags: ["social", "county", "watsonville"],
-            person: "General office",
-            phone: "(831) 454-9455",
-            email: "hacosc@hacosantacruz.org",
-            address: "2160 41st Avenue, Capitola, CA 95010",
-            website: "https://hacosantacruz.org/",
-            dataNeeds: [
-                "Housing Choice Voucher utilization by city",
-                "Affordable housing unit counts by jurisdiction",
-                "Waitlist lengths by city"
-            ],
-            why: "The Housing Authority administers federal housing programs and has detailed data on voucher utilization and affordable housing stock across jurisdictions.",
-            draft: null
-        },
-
-        // ─── INCOME & POVERTY ────────────────────────────────────────
-        {
-            org: "United Way of Santa Cruz County / 211",
-            tags: ["social", "county", "watsonville"],
-            person: "General office",
-            phone: "(831) 479-5466",
-            email: null,
-            address: "4450 Capitola Road, Suite 106, Capitola, CA 95010",
-            website: "https://www.unitedwaysc.org/",
-            altWebsite: "https://211santacruzcounty.org/",
-            dataNeeds: [
-                "ALICE household data by city (Asset Limited, Income Constrained, Employed)",
-                "211 call volume and needs categories by zip code/city",
-                "Poverty and income data for Watsonville vs Santa Cruz city"
-            ],
-            why: "United Way publishes the ALICE report — households above the poverty line but unable to afford basic necessities — which is a better measure of economic stress than poverty rate alone. Their 211 helpline data reveals real-time community needs by geography.",
-            draft: `Subject: ALICE data and 211 trends by city — Doughnut Economics research
-
-Dear United Way team,
-
-I'm developing a Doughnut Economics portrait for Santa Cruz County that maps social wellbeing across the City of Santa Cruz, the County, and Watsonville.
-
-For our "income & work" dimension, poverty rate alone doesn't capture the full picture — your ALICE data is much more telling. I have two requests:
-
-1. Do you have ALICE household counts or percentages broken down by city (Santa Cruz city vs Watsonville vs unincorporated)?
-2. Can you share any 211 call data showing the most common needs by city or zip code?
-
-This data would help us show the true scale of economic stress in each jurisdiction, which we believe would support your advocacy as well.
-
-Thank you,
-[Your name]`
-        },
-
-        // ─── PEACE & JUSTICE / CRIME ─────────────────────────────────
-        {
-            org: "Santa Cruz Police Department",
-            tags: ["social", "county"],
-            person: "Community Services Unit",
-            phone: "(831) 420-5844",
-            altPhone: "(831) 471-1131 (non-emergency)",
-            email: "SantaCops@cityofsantacruz.com",
-            website: "https://www.santacruzca.gov/Government/City-Departments/Police",
-            dataNeeds: [
-                "Annual crime statistics report for the city (violent + property)",
-                "Year-over-year crime trends",
-                "Crime rates by neighborhood/area"
-            ],
-            why: "We have FBI UCR aggregate data for the city but could benefit from the department's own annual reports for more detailed and current crime statistics.",
+            why: "John Shribbs recommended bringing them into the food-insecurity conversation. Regional food bank serving Sonoma, Lake, Mendocino, Del Norte, and Humboldt — Petaluma is in their service area.",
             draft: null
         },
         {
-            org: "Watsonville Police Department",
-            tags: ["social", "watsonville"],
-            person: "General office",
-            phone: "(831) 768-3350",
+            org: "Healthy Petaluma District + Foundation",
+            tags: ["priority", "social", "petaluma"],
+            person: "Elece Hempel, Board Member (also Board Chair of Generation Housing) — CEO Ramona Faith",
+            phone: "(707) 285-2143",
+            email: "info@healthypetaluma.org",
+            website: "https://healthypetaluma.org",
+            address: "1425 N. McDowell Blvd, Suite 105, Petaluma, CA 94954",
+            dataNeeds: [
+                "Chronic-disease and mental-health-access indicators for Petaluma",
+                "Tree-canopy / shade-equity data (John flagged as a climate-health indicator to add)",
+                "Social-connectedness and Blue Zones Project Petaluma engagement data",
+                "Petaluma Health District's preferred uninsured/health-access metrics"
+            ],
+            why: "John Shribbs named Elece Hempel as the right contact here. The District also co-leads Blue Zones Project Petaluma. Verify Elece's officer role at PHCD before formal outreach (search confirmed her as a board member; specific Chair title not independently verified on the PHCD site).",
+            draft: `Subject: Petaluma Doughnut Economics — health indicators input\n\nDear Elece,\n\nJohn Shribbs suggested I reach out. I'm working with CalDEC on Petaluma's first Doughnut Economics city portrait, part of the General Plan update. Health is one of our 12 social-foundation dimensions — we currently track uninsured rate (5.5%, ACS 2020-2024).\n\nI'd love 20 minutes of your time to ask: (1) is uninsured the right primary indicator for Petaluma, or would you suggest a different metric? (2) John suggested adding a tree-cover / shade indicator as the climate gets hotter — does that resonate? (3) Could Blue Zones Project Petaluma engagement data serve as a "social connectedness" indicator?\n\nHappy to share what we've built so far.\n\nThanks,\nAmelia Eichel\nCalDEC | Petaluma Doughnut lead`
+        },
+        {
+            org: "Blue Zones Project Petaluma",
+            tags: ["priority", "social", "petaluma"],
+            person: null,
+            phone: null,
             email: null,
-            website: "https://www.watsonville.gov/155/Police-Department",
-            address: "215 Union Street, Watsonville, CA 95076",
+            contactForm: "https://bluezonesprojectpetaluma.com",
+            website: "https://bluezonesprojectpetaluma.com",
+            address: "Petaluma, CA (coordinated through Healthy Petaluma, 1425 N. McDowell Blvd)",
             dataNeeds: [
-                "Annual crime statistics for Watsonville (violent + property rates per 1,000)",
-                "Year-over-year trends",
-                "Community safety programs data"
+                "Tree-canopy / walkability scores for Petaluma",
+                "Social-belonging + Happiness Scale indicators (John flagged this for the social-cohesion dimension)",
+                "Purpose and well-being measures from Blue Zones methodology",
+                "Petaluma-specific Power 9 lifestyle adoption data, if collected"
             ],
-            why: "We have no crime rate data for Watsonville specifically. The police department's annual report would give us the violent crime and property crime rates needed for the 'peace & justice' dimension.",
-            draft: `Subject: Crime statistics request for community research project
-
-Dear Watsonville Police Department,
-
-I'm building a community data portrait for Watsonville using the Doughnut Economics framework — a visualization of social and ecological wellbeing. One of our 12 social dimensions is "peace & justice," and we currently lack crime rate data specific to Watsonville.
-
-Could you provide or direct me to:
-- Annual violent crime and property crime rates (per 1,000 residents) for 2023 or 2024
-- Year-over-year crime trend data (even 3-5 years would be helpful)
-
-We'd also be interested in highlighting community safety programs in our "ways to get involved" section.
-
-This is a community-focused, open-source project — all data sources are cited. Thank you for your service to Watsonville.
-
-Best regards,
-[Your name]`
+            why: "John Shribbs recommended Blue Zones for both tree-cover/shade (health) and a Happiness Scale (social cohesion). Co-led locally by Healthy Petaluma.",
+            draft: null
+        },
+        {
+            org: "Petaluma City Schools",
+            tags: ["priority", "social", "petaluma"],
+            person: "Matthew Harris, Superintendent (announced departure end of 2025-26 school year; successor TBD)",
+            phone: "(707) 778-4604",
+            email: "mharris@petk12.org",
+            website: "https://petalumacityschools.org",
+            address: "200 Douglas Street, Petaluma, CA 94952",
+            dataNeeds: [
+                "High school graduation rate disaggregated by race/ethnicity, English learners, and socioeconomic status (the 'equity lens' Peggy flagged)",
+                "Chronic absenteeism rates",
+                "A-G completion (UC/CSU eligibility)",
+                "School-meal-program participation rates"
+            ],
+            why: "John Shribbs suggested verifying the 92% HS graduation rate with the Superintendent; Peggy flagged that the education indicator needs an equity / achievement-gap lens.",
+            draft: null
+        },
+        {
+            org: "Petaluma People Services Center (PPSC)",
+            tags: ["priority", "social", "petaluma"],
+            person: null,
+            phone: "(707) 765-8488",
+            email: "CARES@petalumapeople.org",
+            contactForm: "https://petalumapeople.org/contact",
+            website: "https://petalumapeople.org",
+            address: "1500 Petaluma Blvd S, Suite A, Petaluma, CA 94952",
+            dataNeeds: [
+                "Petaluma-specific poverty rate (vs. the Census 6.5% figure)",
+                "ALICE (Asset-Limited, Income-Constrained, Employed) household counts in Petaluma",
+                "Workforce / job-seeker patterns and barriers",
+                "Senior-services demand data"
+            ],
+            why: "John Shribbs flagged PPSC for poverty + income data. They run Mentor Me Petaluma and other youth and senior programs, so they have ground-truth on local need beyond what the Census reports.",
+            draft: null
+        },
+        {
+            org: "Generation Housing (Gen H)",
+            tags: ["priority", "social", "sonoma"],
+            person: "Elece Hempel, Board Chair",
+            phone: "(707) 900-4364",
+            email: "info@generationhousing.org",
+            contactForm: "https://generationhousing.org/contact/",
+            website: "https://generationhousing.org",
+            address: "427 Mendocino Ave, Suite 100, Santa Rosa, CA 95401",
+            dataNeeds: [
+                "Petaluma-specific cost-burdened household rate (vs. Sonoma County)",
+                "Housing production vs. RHNA targets for Petaluma",
+                "Sonoma County gender pay gap data (John suggested Gen H for this too)",
+                "Recommended additional housing indicators beyond cost-burdened + PIT count"
+            ],
+            why: "John Shribbs suggested Gen H for housing and also for county-level gender pay gap data. Elece Hempel is the Board Chair (same person as on Healthy Petaluma's board).",
+            draft: null
+        },
+        {
+            org: "Ellis Creek Water Recycling Facility (City of Petaluma Public Works & Utilities)",
+            tags: ["priority", "social", "petaluma"],
+            person: "Chelsea Thompson — Deputy Director of Environmental Services (per 2023 BACWA presentation; confirm via city directory)",
+            phone: "(707) 776-3777",
+            email: null,
+            contactForm: "https://cityofpetaluma.org/elliscreek/",
+            website: "https://cityofpetaluma.org/elliscreek/",
+            address: "3890 Cypress Drive, Petaluma, CA 94954",
+            dataNeeds: [
+                "City of Petaluma drinking-water quality (CCR) confirmation — does our EWG-sourced data match the City's CCR?",
+                "Disinfection-byproducts (HAA5, TTHM) trend over recent years",
+                "Recycled-water deliveries (volume, end-uses)",
+                "Long-term water plan + availability indicator (John flagged this gap)"
+            ],
+            why: "John Shribbs named Chelsea Thompson at Ellis Creek as the person to verify water-quality indicators. Ellis Creek is the City's wastewater + recycled-water facility.",
+            draft: `Subject: Petaluma Doughnut — water-quality + long-term water indicator input\n\nDear Chelsea,\n\nJohn Shribbs suggested I reach out. I'm working with CalDEC on Petaluma's first Doughnut Economics city portrait (part of the General Plan update). For the Water & Sanitation dimension we currently cite EWG Tap Water DB: 0 EPA violations, but 12 of 24 contaminants above EWG health guidelines (HAA5 36.2 ppb, TTHM 25.4 ppb).\n\nCould we talk through: (1) does this match Petaluma's own Consumer Confidence Report? (2) what's the recent trend on disinfection byproducts? (3) John flagged that we need a long-term-water-availability indicator — what would you recommend?\n\n20 minutes whenever you're free.\n\nThanks,\nAmelia Eichel\nCalDEC | Petaluma Doughnut lead`
+        },
+        {
+            org: "Sonoma Clean Power (SCP)",
+            tags: ["priority", "social", "sonoma"],
+            person: null,
+            phone: "(855) 202-2139",
+            email: "info@sonomacleanpower.org",
+            contactForm: "https://sonomacleanpower.org/contact-us",
+            website: "https://sonomacleanpower.org",
+            address: "50 Santa Rosa Ave, Santa Rosa, CA 95404",
+            dataNeeds: [
+                "Petaluma-specific electricity-mix carbon intensity (the 91% carbon-free figure is service-territory-wide)",
+                "EverGreen 100% renewable opt-in rate among Petaluma customers",
+                "Energy-burden / equity-program enrollment in Petaluma",
+                "Petaluma Energy East and other Petaluma-specific SCP projects"
+            ],
+            why: "John Shribbs flagged SCP for the energy burden indicator. SCP is Petaluma's Community Choice Aggregator (default service since 2017). They publish a service-territory power mix but Petaluma-specific figures would be more meaningful.",
+            draft: null
+        },
+        {
+            org: "Pacific Gas & Electric — North Bay Local Government Affairs",
+            tags: ["priority", "social", "sonoma"],
+            person: "Local Government Affairs reps for Bay Area (use contact form)",
+            phone: "1-800-743-5000",
+            email: null,
+            contactForm: "https://www.pge.com/en/contact-us.html",
+            website: "https://www.pge.com",
+            address: "Petaluma service area; HQ Oakland, CA",
+            dataNeeds: [
+                "Grid reliability metrics (SAIDI/SAIFI) for Petaluma",
+                "PSPS frequency + customer impact in Petaluma",
+                "Income-qualified weatherization + electrification program participation in Petaluma",
+                "Gas-infrastructure scope in Petaluma (for the electrification narrative)"
+            ],
+            why: "John Shribbs flagged PG&E. Gas + delivery infrastructure complement SCP's generation. No public Petaluma-specific contact email; suggest reaching out through the general contact form or via Sonoma County PG&E community engagement.",
+            draft: null
+        },
+        {
+            org: "Petaluma Police Department",
+            tags: ["priority", "social", "petaluma"],
+            person: "Brian Miller, Chief of Police (sworn in April 2024)",
+            phone: "(707) 778-4372",
+            email: null,
+            contactForm: "https://cityofpetaluma.org/contact-police/",
+            website: "https://cityofpetaluma.org/departments/police-department/",
+            address: "969 Petaluma Blvd North, Petaluma, CA 94952",
+            dataNeeds: [
+                "Verify the 2023 violent-crime rate (FBI UCR: 510.7 per 100,000) — confirms our spreadsheet's '12.18 per 1,000' was a unit error",
+                "Alternative indicators beyond raw violent-crime rate (calls-for-service mix, SAFE-team handoffs, use-of-force, trust-in-police survey)",
+                "Petaluma's District Policing outcomes data",
+                "Restorative-justice and diversion-program data"
+            ],
+            why: "John Shribbs flagged the Police Chief for alternative crime / public-safety indicators. Chief Brian Miller's District Policing model and Public Safety Advisory Group may suggest restorative or community-trust indicators that better fit the Doughnut.",
+            draft: null
+        },
+        {
+            org: "Sonoma County Clerk-Recorder-Assessor-Registrar of Voters",
+            tags: ["priority", "social", "sonoma"],
+            person: "Deva Marie Proto, Clerk-Recorder-Assessor-Registrar of Voters",
+            phone: "(707) 565-6800",
+            email: "rov-info@sonomacounty.gov",
+            website: "https://sonomacounty.ca.gov/Clerk-Recorder-Assessor-Registrar-of-Voters",
+            address: "435 Fiscal Drive, Santa Rosa, CA 95403",
+            dataNeeds: [
+                "Petaluma-precinct-level voter turnout for Nov 2024 (county-wide was 83%)",
+                "Voter registration rate among voting-age Petaluma residents",
+                "Ballot return / cure rates",
+                "Civic-participation indicator suggestion (John floated GP-workshop attendance as a possible metric)"
+            ],
+            why: "John Shribbs pointed to the Registrar for voter data. Deva Marie Proto certified the Nov 2024 election; precinct-level Statement of Vote is the authoritative source for Petaluma-specific turnout.",
+            draft: null
         },
 
-        // ─── POLITICAL VOICE ─────────────────────────────────────────
+        // ─── ADDITIONAL PETALUMA / SONOMA COUNTY ORGS ────────────────
         {
-            org: "Santa Cruz County Elections Department",
-            tags: ["social", "county", "watsonville"],
-            person: "Tricia Webber, County Clerk",
-            phone: "(831) 454-2060",
-            email: "tricia.webber@santacruzcountyca.gov",
-            address: "701 Ocean Street, Room 310, Santa Cruz, CA 95060",
-            website: "https://votescount.santacruzcountyca.gov/",
+            org: "Petaluma Bounty",
+            tags: ["social", "petaluma"],
+            person: "Suzi Grady, Program Director",
+            phone: "(707) 765-8488 x148",
+            email: "suzi@petalumabounty.org",
+            website: "https://www.petalumabounty.org",
+            address: "1500 Petaluma Blvd South, Petaluma, CA 94952 (farm at 55 Shasta Ave)",
             dataNeeds: [
-                "Voter turnout for 2024 general election broken down by city (SC city vs Watsonville)",
-                "Voter registration rates by city",
-                "Historical turnout trends by jurisdiction (2016, 2018, 2020, 2022, 2024)"
+                "Petaluma-specific food access + gleaning yield data",
+                "Community-garden participation in Petaluma",
+                "Fresh-produce distribution volume + reach"
             ],
-            why: "We have county-wide turnout (81.8%) but need city-level breakdowns. The County Clerk's office has precinct-level data that can be aggregated by city boundaries.",
-            draft: `Subject: Voter turnout data by city — Santa Cruz Doughnut Economics
-
-Dear Ms. Webber,
-
-I'm building a community data portrait for Santa Cruz County using the Doughnut Economics framework, and "political voice" is one of our social foundation dimensions. We have county-wide voter turnout data (81.8% for the Nov 2024 general), but we need city-level breakdowns.
-
-Could you provide or direct me to:
-- Voter turnout percentages for the 2024 general election disaggregated by the City of Santa Cruz and the City of Watsonville
-- Voter registration rates by city
-- If available, historical turnout by city for the last 3-4 election cycles
-
-I believe this data would be in your precinct-level results, aggregated by city boundary. Even a pointer to the right dataset would be helpful.
-
-Thank you,
-[Your name]`
+            why: "Petaluma-focused food-security nonprofit running a community farm, gleaning, and fresh-food distribution. Operated under PPSC's umbrella but a distinct program.",
+            draft: null
         },
-
-        // ─── GENDER EQUALITY ─────────────────────────────────────────
         {
-            org: "Santa Cruz County Women's Commission",
-            tags: ["social", "county", "watsonville"],
-            person: "Commission staff",
-            phone: "(831) 454-2772",
-            email: "commissions@santacruzcounty.ca.gov",
-            address: "701 Ocean Street, Room 510, Santa Cruz, CA 95060",
-            website: "https://www.sccwc.org/",
+            org: "Committee on the Shelterless (COTS) — Mary Isaak Center",
+            tags: ["social", "petaluma"],
+            person: null,
+            phone: "(707) 765-6530",
+            email: null,
+            contactForm: "https://cots.org/contact/",
+            website: "https://cots.org",
+            address: "900 Hopper Street, Petaluma, CA 94952",
             dataNeeds: [
-                "Gender pay gap data for Watsonville specifically",
-                "Women in elected office / leadership by jurisdiction",
-                "Domestic violence and gender-based violence rates by city",
-                "Childcare cost burden data by area"
+                "Beyond the PIT count of 214: shelter utilization, family vs. single-adult breakdown",
+                "Exits to permanent housing (success rate)",
+                "Inflow trends — how many newly homeless / month",
+                "Rapid re-housing program outcomes"
             ],
-            why: "The Women's Commission is actively partnering with DataShare SCC to fill data gaps in six categories (healthcare, economic empowerment, education, violence, criminal justice, political participation). They have CEDAW backing from the Board of Supervisors and are the best conduit for gender-specific data.",
-            draft: `Subject: Gender equity data for Watsonville — Doughnut Economics portrait
-
-Dear Women's Commission,
-
-I'm building a Doughnut Economics community portrait for Santa Cruz County, and "gender equality" is one of our 12 social foundation dimensions. For the City of Santa Cruz, we have the county-wide wage ratio (0.85) and know about the equal pay in sports policy, but we lack data specific to Watsonville.
-
-Given the Commission's partnership with DataShare SCC on the Women's Wellbeing dashboard, could you help with:
-- Gender pay gap data disaggregated by city (especially Watsonville)
-- Domestic violence/gender-based violence rates by jurisdiction
-- Women's representation in elected office and leadership roles by city
-
-We'd also welcome the Commission's guidance on which indicators best capture gender equity at the local level. The 2024 CEDAW resolution is an important milestone we're documenting.
-
-Thank you,
-[Your name]`
+            why: "Petaluma's primary homelessness-services nonprofit. Operates the Mary Isaak Center. Critical for any housing-dimension validation beyond the cost-burdened + PIT-count headline numbers.",
+            draft: null
         },
-
-        // ─── WATER / ECOLOGICAL ──────────────────────────────────────
         {
-            org: "Pajaro Valley Water Management Agency",
-            tags: ["ecological", "watsonville", "priority"],
-            person: "Brian Lockwood, General Manager",
-            phone: "(831) 722-9292",
-            email: "lockwood@pvwater.org",
-            address: "36 Brennan Street, Watsonville, CA 95076",
-            website: "https://www.pvwater.org/",
+            org: "Petaluma Health Center",
+            tags: ["social", "petaluma"],
+            person: null,
+            phone: "(707) 559-7500",
+            email: null,
+            contactForm: "https://phealthcenter.org/contact-us/",
+            website: "https://phealthcenter.org",
+            address: "1179 N. McDowell Blvd, Petaluma, CA 94954",
             dataNeeds: [
-                "Current nitrate levels in Watsonville drinking water wells (mg/L NO3-N)",
-                "Seawater intrusion extent — current maps and measurements",
-                "Groundwater overdraft rate (acre-feet/year)",
-                "Progress on managed aquifer recharge projects"
+                "Underinsured (not just uninsured) rate in Petaluma",
+                "Preventive-care access by income / language / insurance",
+                "Behavioral-health visits / unmet demand",
+                "Social-determinants-of-health screening results"
             ],
-            why: "PVWMA manages the critically overdrafted Pajaro Valley groundwater basin that supplies Watsonville's drinking water. GM Brian Lockwood has the most current data on nitrate contamination, seawater intrusion, and overdraft status. This fills gaps in both 'nitrogen loading' and 'freshwater withdrawals' dimensions for Watsonville.",
-            draft: `Subject: Groundwater data request for Watsonville Doughnut Economics portrait
-
-Dear Brian,
-
-I'm building a Doughnut Economics portrait for Watsonville that visualizes ecological and social wellbeing. Two of our ecological dimensions — nitrogen loading and freshwater withdrawals — depend on Pajaro Valley groundwater data.
-
-We currently cite PVWMA's finding that 87% of groundwater nitrate is from agricultural sources (2015 data), but we'd like to update with more current numbers:
-
-1. What are the current average nitrate levels (mg/L NO3-N) in Watsonville's drinking water wells?
-2. What is the current annual groundwater overdraft rate (acre-feet/year)?
-3. Is there an updated seawater intrusion boundary map we could reference?
-4. What progress has been made on managed aquifer recharge since the SGMA plan?
-
-This project makes data accessible to the public and could help communicate the urgency of PVWMA's mission. Happy to share the visualization and discuss.
-
-Thank you,
-[Your name]`
+            why: "Federally Qualified Health Center — distinct from the Petaluma Health District. PHC has clinical-encounter data the District doesn't.",
+            draft: null
         },
-
-        // ─── OCEAN ACIDIFICATION ─────────────────────────────────────
         {
-            org: "MBARI — Monterey Bay Aquarium Research Institute",
+            org: "Petaluma Transit",
+            tags: ["social", "petaluma"],
+            person: "Jared Hall, Transit Division Manager",
+            phone: "(707) 778-4460",
+            email: "transit@cityofpetaluma.org",
+            contactForm: "https://transit.cityofpetaluma.net/contact-us/",
+            website: "https://transit.cityofpetaluma.net",
+            address: "555 N. McDowell Blvd, Petaluma, CA 94954",
+            dataNeeds: [
+                "Petaluma Transit + LumaGo microtransit ridership trends",
+                "Paratransit eligibility + reach",
+                "Mode-share data complementing the 72.6% drive-alone figure",
+                "Transit-dependent population coverage / gaps"
+            ],
+            why: "Owns the public-transit numerator for Petaluma's Mobility dimension. LumaGo (microtransit) is a fast-growing service worth surfacing in the doughnut.",
+            draft: null
+        },
+        {
+            org: "Sonoma-Marin Area Rail Transit (SMART)",
+            tags: ["social", "petaluma"],
+            person: null,
+            phone: "(707) 794-3330",
+            email: "CustomerService@sonomamarintrain.org",
+            contactForm: "https://sonomamarintrain.org/CustomerService",
+            website: "https://sonomamarintrain.org",
+            address: "5401 Old Redwood Highway, Suite 200, Petaluma, CA 94954",
+            dataNeeds: [
+                "Petaluma station ridership (downtown + N. Petaluma)",
+                "Multi-use pathway usage near Petaluma",
+                "Commute mode shift attributable to SMART"
+            ],
+            why: "Passenger rail + parallel pathway connecting Petaluma to Marin and northern Sonoma. Two Petaluma stations make this a major piece of the Mobility story.",
+            draft: null
+        },
+        {
+            org: "Sonoma County Transportation Authority (SCTA / RCPA)",
+            tags: ["social", "sonoma"],
+            person: null,
+            phone: "(707) 565-5373",
+            email: "info@scta.ca.gov",
+            contactForm: "https://scta.ca.gov/contact/",
+            website: "https://scta.ca.gov",
+            address: "411 King Street, Santa Rosa, CA 95404",
+            dataNeeds: [
+                "VMT (vehicle-miles-traveled) per capita for Petaluma",
+                "Active-transportation network gaps in Petaluma",
+                "Mode-share by neighborhood",
+                "County-wide GHG inventory (transportation share)"
+            ],
+            why: "Regional planning agency + climate-protection authority (RCPA). They own the data backbone behind mobility + climate. SCTA also runs carpool tools John suggested as a mobility lever.",
+            draft: null
+        },
+        {
+            org: "Sonoma Resource Conservation District (RCD)",
+            tags: ["ecological", "sonoma"],
+            person: null,
+            phone: "(707) 569-1448",
+            email: "info@sonomarcd.org",
+            contactForm: "https://sonomarcd.org/about/contact-us/",
+            website: "https://sonomarcd.org",
+            address: "1221 Farmers Lane, Suite F, Santa Rosa, CA 95405",
+            dataNeeds: [
+                "Soil-health + conservation-practice adoption on agricultural lands in Petaluma Valley",
+                "Riparian-restoration acres along Petaluma River and tributaries",
+                "Rangeland conservation easement progress"
+            ],
+            why: "Already used as our source for the Petaluma River watershed species list (biodiversity dimension). Strongest partner for land + soil + on-farm ecological indicators.",
+            draft: null
+        },
+        {
+            org: "Sonoma Ecology Center",
+            tags: ["ecological", "sonoma"],
+            person: null,
+            phone: "(707) 996-0712",
+            email: "info@sonomaecologycenter.org",
+            contactForm: "https://sonomaecologycenter.org/contact-us/",
+            website: "https://sonomaecologycenter.org",
+            address: "461 7th Street West, Suite 1, Sonoma, CA 95476",
+            dataNeeds: [
+                "Watershed-health indicators (water temperature, biology, riparian condition)",
+                "Native habitat extent in Petaluma Valley",
+                "Climate-adaptation work relevant to Petaluma"
+            ],
+            why: "Sonoma Valley-based but their watershed science work covers Petaluma. Could co-design the biodiversity / freshwater indicators.",
+            draft: null
+        },
+        {
+            org: "Sonoma Land Trust",
+            tags: ["ecological", "sonoma"],
+            person: null,
+            phone: "(707) 526-6930",
+            email: "info@sonomalandtrust.org",
+            contactForm: "https://sonomalandtrust.org/contact/",
+            website: "https://sonomalandtrust.org",
+            address: "822 Fifth Street, Santa Rosa, CA 95404",
+            dataNeeds: [
+                "Petaluma-area protected-land acreage trend (% toward 30x30)",
+                "Petaluma Marsh / baylands restoration progress",
+                "Habitat-connectivity corridors near Petaluma"
+            ],
+            why: "Major regional land trust. The 22% protected-land figure for Petaluma Valley/Sonoma Mountain is partly Sonoma Land Trust's work. Petaluma Marsh restoration directly affects the biodiversity wedge.",
+            draft: null
+        },
+        {
+            org: "Petaluma Wetlands Alliance",
+            tags: ["ecological", "petaluma"],
+            person: null,
+            phone: "(707) 486-9030",
+            email: null,
+            contactForm: "https://petalumawetlands.org/contact/",
+            website: "https://petalumawetlands.org",
+            address: "PO Box 2182, Petaluma, CA 94953",
+            dataNeeds: [
+                "Wetland bird counts (Shollenberger Park, Alman Marsh)",
+                "Habitat-condition trends",
+                "Tidal-marsh extent and restoration"
+            ],
+            why: "All-volunteer wetland stewardship at the city's edge. Long-running bird counts give a ground-truth biodiversity indicator.",
+            draft: null
+        },
+        {
+            org: "Friends of the Petaluma River",
+            tags: ["ecological", "petaluma"],
+            person: null,
+            phone: "(707) 763-7756",
+            email: "friends@friendsofthepetalumariver.org",
+            contactForm: "https://www.petalumariver.org/contact-us",
+            website: "https://www.petalumariver.org",
+            address: "260H N. Water Street, Petaluma, CA 94952",
+            dataNeeds: [
+                "Petaluma River water-quality (their Watershed Classroom citizen-science data)",
+                "Riparian habitat condition",
+                "Public-access metrics along the river"
+            ],
+            why: "Riverkeeper-equivalent for the Petaluma River. Citizen-science data is a unique local indicator stream.",
+            draft: null
+        },
+        {
+            org: "Petaluma River Park Foundation",
+            tags: ["ecological", "petaluma"],
+            person: "Marge (per public email)",
+            phone: "(707) 277-1655",
+            email: "marge@petalumariverpark.org",
+            contactForm: "https://www.petalumariverpark.org/contact-us-2",
+            website: "https://www.petalumariverpark.org",
+            address: "159 H Street, Petaluma, CA 94952",
+            dataNeeds: [
+                "Park acreage + access equity in Petaluma",
+                "Riparian-restoration progress at Petaluma River Park (23 acres)",
+                "Urban green-space per capita"
+            ],
+            why: "Building the city's signature riverfront park. Strong fit for any 'access to nature' or 'urban green space' supplementary indicator.",
+            draft: null
+        },
+        {
+            org: "Bay Area Air Quality Management District (BAAQMD)",
             tags: ["ecological"],
-            person: "Dr. James Barry, Senior Scientist (Biological Oceanography)",
-            phone: null,
+            person: null,
+            phone: "(415) 749-4900",
             email: null,
-            website: "https://www.mbari.org/person/james-barry/",
-            altWebsite: "https://www.mbari.org/data/ocean-acidification-1-oa1-mooring/",
+            contactForm: "https://www.baaqmd.gov/contact-us",
+            website: "https://www.baaqmd.gov",
+            address: "375 Beale Street, Suite 600, San Francisco, CA 94105",
             dataNeeds: [
-                "Localized ocean pH measurements from OA1/OA2 moorings in Monterey Bay",
-                "pH trend data over time (is acidification accelerating locally?)",
-                "Local impacts on shellfish, kelp forests, and marine life",
-                "How to translate regional ocean chemistry data to a city-scale indicator"
+                "Petaluma-specific PM2.5 and ozone trend (confirm our 7.0–9.5 μg/m³ range)",
+                "Wildfire-smoke-day counts",
+                "AB617 community-air-monitoring options for Petaluma",
+                "Local GHG-inventory support"
             ],
-            why: "MBARI operates Ocean Acidification moorings (OA1 and OA2) in Monterey Bay with continuous pH measurements. Dr. Barry leads research on biological impacts of ocean acidification. Currently our 'ocean acidification' dimension says 'monitored regionally' — MBARI can give us actual numbers.",
-            draft: `Subject: Monterey Bay ocean acidification data for community Doughnut Economics portrait
-
-Dear Dr. Barry,
-
-I'm building a Doughnut Economics portrait for Santa Cruz that maps ecological and social wellbeing. Ocean acidification is one of nine ecological ceiling dimensions, and Monterey Bay's unique upwelling dynamics make this particularly relevant for our coast.
-
-Currently our dataset simply notes "monitored regionally" for ocean acidification. I'd love to include more specific data:
-
-1. What are the current pH trends from MBARI's OA1 and OA2 moorings?
-2. Is acidification accelerating in Monterey Bay specifically?
-3. What local biological impacts have been documented (shellfish, kelp, etc.)?
-4. How would you recommend translating regional ocean pH data into a meaningful indicator for a city-scale portrait?
-
-The goal is making this science accessible to Santa Cruz residents and connecting it to local action. We'd credit MBARI prominently and link to your data portals.
-
-Thank you for considering this request.
-
-Best regards,
-[Your name]`
-        },
-
-        // ─── ENERGY ──────────────────────────────────────────────────
-        {
-            org: "Central Coast Community Energy (3CE)",
-            tags: ["social", "ecological", "county", "watsonville"],
-            person: "General inquiries",
-            phone: "(831) 316-1400",
-            email: null,
-            website: "https://3ce.org/",
-            contactForm: "https://3ce.org/contact/",
-            dataNeeds: [
-                "Renewable energy mix for Santa Cruz County customers",
-                "Enrollment rates in 3CE Prime (100% renewable) by city",
-                "Energy burden — % of low-income households struggling with energy costs",
-                "GHG reduction from 3CE vs PG&E baseline"
-            ],
-            why: "3CE (formerly Monterey Bay Community Power) is the community choice energy provider for Santa Cruz County. They have data on renewable energy adoption and can provide info on energy equity programs. Relevant for both 'energy' (social) and 'climate change' (ecological) dimensions.",
+            why: "Regulator we already cite for air pollution. Could become an indicator-validation partner across air, climate, and wildfire-smoke health.",
             draft: null
         },
-
-        // ─── CLIMATE / SUSTAINABILITY ────────────────────────────────
         {
-            org: "City of Santa Cruz — Sustainability & Climate Action",
-            tags: ["ecological", "cross"],
-            person: "Tiffany Wise-West, Sustainability & Climate Action Manager",
-            phone: "(831) 420-5433",
-            email: "TWise-West@cityofsantacruz.com",
-            address: "809 Center Street, Santa Cruz, CA 95060",
-            website: "https://www.santacruzca.gov/Government/City-Departments/City-Manager/Climate-Action-Program",
+            org: "Sonoma County Climate Action and Resiliency Division (CARD)",
+            tags: ["ecological", "sonoma"],
+            person: null,
+            phone: "(707) 565-6470",
+            email: "energy@sonoma-county.org",
+            contactForm: "https://sonomacounty.gov/climate",
+            website: "https://sonomacounty.gov/climate",
+            address: "575 Administration Drive, Santa Rosa, CA 95403",
             dataNeeds: [
-                "Updated GHG inventory (more recent than 2019)",
-                "Climate Action Plan 2030 implementation progress metrics",
-                "City-specific waste diversion rate (current)",
-                "EV adoption rate within city limits"
+                "County GHG inventory consistent with our 7.25 MT/cap Petaluma figure",
+                "Adaptation strategies relevant to Petaluma (flood, heat, drought)",
+                "Climate Resilience Comprehensive Action Plan touchpoints",
+                "Energy-retrofit + electrification data"
             ],
-            why: "Tiffany leads the city's climate action program and has access to the most current GHG data and CAP implementation metrics. She can also connect us with other city departments for social data.",
-            draft: `Subject: Data for Santa Cruz Doughnut Economics portrait — climate & sustainability metrics
-
-Dear Tiffany,
-
-I'm building an open-source Doughnut Economics portrait for Santa Cruz — a data visualization mapping our city's social and ecological wellbeing. Your Climate Action Plan 2030 has been a primary source for our ecological ceiling data.
-
-I have a few data update requests:
-
-1. Is there a more recent GHG inventory than the 2019 data (4.22 MT CO2e/person)?
-2. Are there CAP 2030 implementation progress metrics available?
-3. What is the current city-specific waste diversion rate?
-4. Are there any EV adoption or mode-shift metrics being tracked?
-
-I'd also welcome your perspective on which ecological indicators matter most at the city scale. Our project currently covers 9 planetary boundary dimensions and links each to primary sources and local actions.
-
-Would you be open to a brief call?
-
-Thank you for your leadership on climate action,
-[Your name]`
+            why: "Owns the county climate plan. Aligning Petaluma's GP doughnut climate framing with the county's CRCAP avoids duplicate work.",
+            draft: null
         },
-
-        // ─── NETWORKS / BROADBAND ────────────────────────────────────
         {
-            org: "Cruzio Internet / Equal Access Santa Cruz",
-            tags: ["social", "county", "watsonville"],
-            person: "General office",
-            phone: "(831) 459-6301",
+            org: "Sonoma Water (Sonoma County Water Agency)",
+            tags: ["ecological", "sonoma"],
+            person: null,
+            phone: "(707) 547-1900",
+            email: "Sonoma.Water@scwa.ca.gov",
+            contactForm: "https://www.sonomawater.org/contact-us",
+            website: "https://www.sonomawater.org",
+            address: "404 Aviation Blvd, Santa Rosa, CA 95403",
+            dataNeeds: [
+                "Petaluma's wholesale water allocation + actual delivery (vs. 13,400 AF/yr entitlement)",
+                "Russian River system supply reliability under drought scenarios",
+                "Streamflow / climate-projection data"
+            ],
+            why: "Wholesale water source for the City of Petaluma (Russian River system). Co-owns the freshwater-withdrawals indicator with the City's Water Resources Dept.",
+            draft: null
+        },
+        {
+            org: "Petaluma Valley Groundwater Sustainability Agency (PVGSA)",
+            tags: ["ecological", "sonoma"],
+            person: null,
+            phone: "(707) 243-8555",
+            email: "info@petalumavalleygroundwater.org",
+            contactForm: "https://petalumavalleygroundwater.org/contact/",
+            website: "https://petalumavalleygroundwater.org",
+            address: "c/o West Yost, 2235 Mercury Way, Suite 105, Santa Rosa, CA 95407",
+            dataNeeds: [
+                "Verify our 2,701 AF/yr Petaluma groundwater pumping figure",
+                "Sustainable-yield trajectory under drought + climate change",
+                "Recycled-water-recharge potential"
+            ],
+            why: "Authors the WY2024 Annual Report we already cite. Direct line on whether the basin will stay 'within sustainable yield' in non-normal water years.",
+            draft: null
+        },
+        {
+            org: "Zero Waste Sonoma (Sonoma County Waste Management Agency)",
+            tags: ["ecological", "sonoma"],
+            person: null,
+            phone: "(707) 565-3375",
+            email: "zerowastesonoma@sonomacounty.gov",
+            contactForm: "https://zerowastesonoma.gov/about",
+            website: "https://zerowastesonoma.gov",
+            address: "2300 County Center Drive, Suite B100, Santa Rosa, CA 95403",
+            dataNeeds: [
+                "Petaluma-only disposal rate disaggregation (the 7.1 lbs/person/day is SCWMA-wide)",
+                "SB 1383 organics-program compliance in Petaluma",
+                "HHW participation rates"
+            ],
+            why: "Reports Petaluma's waste to CalRecycle as a JPA member. The Waste & Materials wedge of our doughnut is sourced from their Electronic Annual Report.",
+            draft: null
+        },
+        {
+            org: "Recology Sonoma Marin",
+            tags: ["ecological", "sonoma"],
+            person: null,
+            phone: "(800) 243-0291",
+            email: "RecologySonomaMarin@recology.com",
+            contactForm: "https://www.recology.com/recology-sonoma-marin/contact/",
+            website: "https://www.recology.com/recology-sonoma-marin/",
+            address: "3400 Standish Ave, Santa Rosa, CA 95407",
+            dataNeeds: [
+                "Petaluma tonnage by stream (trash / recycling / organics)",
+                "Contamination rates",
+                "Customer participation rates"
+            ],
+            why: "Franchised hauler. Where Zero Waste Sonoma is policy + reporting, Recology has operational tonnage data.",
+            draft: null
+        },
+        {
+            org: "North Bay Organizing Project (NBOP)",
+            tags: ["social", "sonoma"],
+            person: null,
+            phone: null,
+            email: "info@northbayop.org",
+            contactForm: "https://www.northbayop.org/contact",
+            website: "https://www.northbayop.org",
+            address: "PO Box 1928, Santa Rosa, CA 95402",
+            dataNeeds: [
+                "Civic-participation indicators among low-income / BIPOC residents",
+                "Language-access metrics",
+                "Voter engagement beyond raw turnout"
+            ],
+            why: "Grassroots organizing. Voter turnout doesn't capture full civic participation; NBOP can help define a community-level indicator.",
+            draft: null
+        },
+        {
+            org: "Latino Service Providers (LSP)",
+            tags: ["social", "sonoma"],
+            person: null,
+            phone: "(707) 837-9577",
+            email: "info@latinoserviceproviders.org",
+            contactForm: "https://latinoserviceproviders.org/contact/",
+            website: "https://latinoserviceproviders.org",
+            address: "1015A Center Street, Santa Rosa, CA 95403",
+            dataNeeds: [
+                "Latinx-disaggregated health, education, language-access indicators",
+                "Mental-health access for Spanish-speaking Petalumans",
+                "Promotores network reach"
+            ],
+            why: "Critical for any equity-disaggregated indicator across multiple dimensions. Peggy's repeated 'equity lens' note applies here.",
+            draft: null
+        },
+        {
+            org: "Sonoma County Economic Development Board (EDB)",
+            tags: ["social", "sonoma"],
+            person: null,
+            phone: "(707) 565-7170",
+            email: "EDB@sonomacounty.gov",
+            contactForm: "https://sonomaedb.org",
+            website: "https://sonomaedb.org",
+            address: "141 Stony Circle, Suite 110, Santa Rosa, CA 95401",
+            dataNeeds: [
+                "Petaluma employment by sector + wages",
+                "Industry diversification metrics",
+                "Small-business indicators"
+            ],
+            why: "Authoritative on Sonoma County workforce + economic data. Complements PPSC's local poverty data.",
+            draft: null
+        },
+        {
+            org: "Sonoma County Office of Equity",
+            tags: ["social", "sonoma"],
+            person: "Melissa Valle, Director (verify)",
+            phone: "(707) 565-3040",
+            email: "publicaffairs@sonoma-county.org",
+            contactForm: "https://sonomacounty.ca.gov/Office-of-Equity/Contact-Us/",
+            website: "https://sonomacounty.ca.gov/Office-of-Equity",
+            address: "575 Administration Drive, Santa Rosa, CA 95403",
+            dataNeeds: [
+                "Sonoma County's equity-index methodology + indicators",
+                "Disaggregated equity data across health, income, education, justice",
+                "Best-practice review of our Racial Equity Index sub-indicator"
+            ],
+            why: "Aligning Petaluma's social-equity dimension with the County's existing equity framework prevents duplicate methodology debates.",
+            draft: null
+        },
+        {
+            org: "Mentor Me Petaluma (PPSC program)",
+            tags: ["social", "petaluma"],
+            person: null,
+            phone: "(707) 765-8488 x108",
+            email: "mentorme@petalumapeople.org",
+            contactForm: "https://www.wearementorme.org/contact/",
+            website: "https://www.wearementorme.org",
+            address: "426 8th Street, Petaluma, CA 94952",
+            dataNeeds: [
+                "Petaluma youth-mentorship reach",
+                "Attendance + social-emotional outcomes",
+                "Equity of program access"
+            ],
+            why: "Youth + education program complementing the school-district graduation-rate indicator.",
+            draft: null
+        },
+        {
+            org: "Petaluma Educational Foundation (PEF)",
+            tags: ["social", "petaluma"],
+            person: null,
+            phone: "(707) 778-4632",
             email: null,
-            address: "877 Cedar Street, Suite 150, Santa Cruz, CA 95060",
-            website: "https://cruzio.com/",
-            altWebsite: "https://equalaccesssantacruz.com/",
+            contactForm: "https://pefinfo.com/contact-us",
+            website: "https://pefinfo.com",
+            address: "100 Fourth Street, Petaluma, CA 94952",
             dataNeeds: [
-                "Number of households connected through Equal Access by city",
-                "Broadband coverage gaps mapped by neighborhood/city",
-                "Digital divide statistics for Watsonville specifically",
-                "Internet speeds available by area"
+                "School-program enrichment reach",
+                "Scholarship distribution",
+                "Educational-equity gap-filling efforts"
             ],
-            why: "Cruzio runs the Equal Access program providing $15/month internet to low-income families. They have direct data on the digital divide by geography and can break down broadband access gaps for Watsonville (where the divide is likely worse).",
-            draft: `Subject: Broadband access data by city — Doughnut Economics research
-
-Dear Cruzio / Equal Access team,
-
-I'm building a Doughnut Economics portrait for Santa Cruz County, and "networks" (connectivity and social cohesion) is one of our social dimensions. Your Equal Access program is a key part of this story.
-
-We currently cite the C- broadband grade and ~16,000 households lacking adequate internet county-wide, but we need city-level data:
-
-- How many households have been connected through Equal Access, broken down by city?
-- What does broadband access look like in Watsonville specifically vs Santa Cruz city?
-- Are there maps of coverage gaps by neighborhood we could reference?
-
-We'd love to highlight Equal Access as a model solution in our "ways to get involved" section. Happy to share the project and discuss.
-
-Thank you,
-[Your name]`
+            why: "Filling gaps the school district can't fund. Useful for education-equity narrative beyond the headline graduation-rate.",
+            draft: null
         },
-
-        // ─── UC SANTA CRUZ ──────────────────────────────────────────
         {
-            org: "UC Santa Cruz — Sustainability Office / CAPECA",
-            tags: ["cross", "ecological"],
-            person: "Sustainability Office staff",
-            phone: "(831) 502-0046",
-            email: "ekericks@ucsc.edu",
-            altEmail: "elvaugha@ucsc.edu",
-            website: "https://sustainability.ucsc.edu/",
-            address: "Kerr Hall 118, UC Santa Cruz",
-            dataNeeds: [
-                "Campus GHG emissions (as contributor to city totals)",
-                "Community-Academic Partnerships (CAPECA) data on climate equity",
-                "Student housing/food insecurity research",
-                "Faculty expertise connections for specific dimensions"
-            ],
-            why: "UCSC has ~19,000 students who are part of the city's population (and poverty rate). The Sustainability Office runs CAPECA, which facilitates community-led climate equity research. Faculty in environmental studies, sociology, and economics may have relevant unpublished data or student research.",
-            draft: `Subject: Partnership opportunity — Santa Cruz Doughnut Economics community portrait
-
-Dear UCSC Sustainability Office,
-
-I'm leading a community effort to build a Doughnut Economics portrait for Santa Cruz — mapping social and ecological wellbeing using Kate Raworth's framework. Given UCSC's deep commitment to sustainability and community engagement, I see several partnership opportunities:
-
-1. CAPECA alignment: Our portrait covers the same climate equity themes CAPECA addresses. Could we share findings?
-2. Student research: Are there thesis projects or research papers with relevant local data (food insecurity, housing, environmental justice)?
-3. Campus data: UCSC's ~19,000 students significantly affect city-level poverty and housing statistics. Does the Sustainability Office track campus-specific GHG emissions we could incorporate?
-
-We'd be happy to present this project to the Sustainability & Resiliency Committee or Student Environmental Center. The project is open-source and designed to drive community action.
-
-Best regards,
-[Your name]`
-        },
-
-        // ─── WATSONVILLE CITY ────────────────────────────────────────
-        {
-            org: "City of Watsonville — City Manager's Office",
-            tags: ["cross", "watsonville", "priority"],
-            person: "City Manager's Office",
-            phone: "(831) 768-3010",
+            org: "California Doughnut Economics Coalition (CalDEC)",
+            tags: ["cross"],
+            person: null,
+            phone: null,
             email: null,
-            address: "275 Main Street, Suite 400, Watsonville, CA 95076",
-            website: "https://www.watsonville.gov/236/City-Manager",
+            contactForm: "https://caldec.org/contact/",
+            website: "https://caldec.org",
+            address: "11278 Los Alamitos Blvd, Unit 910, Los Alamitos, CA 90720",
             dataNeeds: [
-                "All 12 social foundation metrics for Watsonville specifically",
-                "CAAP 2030 implementation progress data",
-                "City-specific poverty, housing, and employment data",
-                "Water quality / nitrate contamination data from city perspective"
+                "Methodology guidance from peer-city pilots (San José, San Francisco, Santa Cruz, etc.)",
+                "Downscaling guidance from the statewide CA Doughnut to a single city",
+                "Shared regional dimensions across CalDEC pilots"
             ],
-            why: "The City Manager's office is the best single entry point for all Watsonville-specific data. They can route us to the right departments and may have internal data dashboards not publicly available. Watsonville has the most data gaps of our three jurisdictions.",
-            draft: `Subject: Community data request for Watsonville Doughnut Economics portrait
-
-Dear City Manager's Office,
-
-I'm building an open-source Doughnut Economics portrait — a data visualization of social and ecological wellbeing — for three Santa Cruz County jurisdictions: City of Santa Cruz, the County, and the City of Watsonville.
-
-Watsonville currently has the most data gaps in our portrait, particularly for social foundation metrics. I'm hoping you can help connect me to the right departments or data sources for:
-
-- Poverty rate and median household income (city-specific)
-- Housing cost burden and homelessness data
-- Health insurance coverage rates
-- Educational attainment and graduation rates (PVUSD data)
-- Crime rates (from WPD annual reports)
-- Voter turnout (city-level from county elections)
-- CAAP 2030 implementation progress
-
-The Doughnut Economics framework was developed by Kate Raworth and has been used by cities worldwide (Amsterdam, Portland, etc.) to create holistic portraits of community wellbeing. Our project makes Watsonville's data visible and accessible to residents.
-
-I'd welcome a brief meeting to discuss the project and which departments could assist. I can share the current visualization at any time.
-
-Thank you for your service to the Watsonville community.
-
-Best regards,
-[Your name]`
+            why: "The parent organization for this pilot — Amelia leads the Petaluma + Santa Cruz pilots. Peer learning across CalDEC cities reduces re-invention.",
+            draft: null
         },
-
-        // ─── PESTICIDES / CHEMICAL POLLUTION ─────────────────────────
         {
-            org: "Santa Cruz County Agricultural Commissioner",
-            tags: ["ecological", "watsonville"],
-            person: "Agricultural Commissioner's Office",
-            phone: "(831) 763-8080",
+            org: "Doughnut Economics Action Lab (DEAL)",
+            tags: ["cross"],
+            person: null,
+            phone: null,
             email: null,
-            address: "175 Westridge Drive, Watsonville, CA 95076",
-            website: "https://agcomm.santacruzcountyca.gov/",
+            contactForm: "https://doughnuteconomics.org/contact",
+            website: "https://doughnuteconomics.org",
+            address: "Oxford, UK (international)",
             dataNeeds: [
-                "Pesticide use trends year-over-year (is fumigant use declining?)",
-                "Pesticide use by crop and geography within the county",
-                "Progress on integrated pest management (IPM) adoption",
-                "Buffer zone enforcement data near schools/residences"
+                "Downscaling methodology validation",
+                "City Portrait toolkit + Doughnut Unrolled application",
+                "Connection to other small-city pilots globally"
             ],
-            why: "The Ag Commissioner's office collects and reports all pesticide use data to the state DPR. They have the most granular local data on what's being applied, where, and trends over time. Key for updating the 'chemical pollution' dimension.",
+            why: "Kate Raworth's organization stewards the framework. Validation here gives CalDEC + Petaluma methodological legitimacy.",
+            draft: null
+        },
+        {
+            org: "San Francisco Bay National Estuarine Research Reserve (SF Bay NERR)",
+            tags: ["ecological"],
+            person: null,
+            phone: "(415) 338-3707",
+            email: null,
+            contactForm: "https://sfbaynerr.sfsu.edu/visit-our-offices",
+            website: "https://sfbaynerr.sfsu.edu",
+            address: "SFSU Romberg Tiburon Campus, 3152 Paradise Drive, Tiburon, CA 94920",
+            dataNeeds: [
+                "Direct query of NERRS CDMO for SCQC1 (China Camp) pH parameter, 2023–2024",
+                "Aragonite-saturation values for San Pablo Bay",
+                "Estuarine-pH baseline + trend at the Petaluma River mouth"
+            ],
+            why: "The ocean-acidification dimension is the one indicator we couldn't fill — no public summarized value exists. SF Bay NERR's raw data via NERRS CDMO is the path. Asking them to summarize SCQC1 pH 2023–24 would close this gap.",
+            draft: null
+        },
+        {
+            org: "San Francisco Estuary Partnership (SFEP)",
+            tags: ["ecological"],
+            person: null,
+            phone: "(510) 746-7334",
+            email: "communications@sfestuary.org",
+            contactForm: "https://www.sfestuary.org/contact-us/",
+            website: "https://www.sfestuary.org",
+            address: "375 Beale Street, Suite 700, San Francisco, CA 94105",
+            dataNeeds: [
+                "State of the Estuary indicators applicable to the Petaluma River reach",
+                "Baylands restoration progress affecting Petaluma Marsh",
+                "Estuary-wide water-quality + habitat trends"
+            ],
+            why: "EPA National Estuary Program partnership. Their 2016 report flagged the ocean-acidification data gap; they may know who's working to fill it now.",
             draft: null
         }
     ];
@@ -935,7 +942,7 @@ Best regards,
 
         filtered.forEach((c, idx) => {
             const tagHtml = c.tags.map(t => {
-                if (t === 'priority') return '<span class="card-tag tag-priority">Priority</span>';
+                if (t === 'priority') return '<span class="card-tag tag-priority">John’s pick</span>';
                 if (t === 'social') return '<span class="card-tag tag-social">Social</span>';
                 if (t === 'ecological') return '<span class="card-tag tag-ecological">Ecological</span>';
                 if (t === 'cross') return '<span class="card-tag tag-cross">Cross-cutting</span>';
