@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Doughnut Economics City Portrait",
-  "description": "Schema for a city/region doughnut economics portrait with 12 social foundations and 9 ecological ceilings",
+  "description": "Schema for a city/region doughnut economics portrait. 12 standard social foundations + 9 standard ecological ceilings, optionally extended with one locally-defined dimension on each side (e.g., 'mobility' and 'waste & materials' for Petaluma).",
   "type": "object",
   "required": ["meta", "social", "ecological"],
   "properties": {
@@ -32,16 +32,16 @@
     "social": {
       "type": "array",
       "minItems": 12,
-      "maxItems": 12,
+      "maxItems": 13,
       "items": { "$ref": "#/definitions/dimension" },
-      "description": "12 social foundation dimensions"
+      "description": "12 standard social foundation dimensions, optionally with one locally-defined dimension (e.g., 'mobility' for Petaluma)"
     },
     "ecological": {
       "type": "array",
       "minItems": 9,
-      "maxItems": 9,
+      "maxItems": 10,
       "items": { "$ref": "#/definitions/dimension" },
-      "description": "9 ecological ceiling dimensions"
+      "description": "9 standard ecological ceiling dimensions, optionally with one locally-defined dimension (e.g., 'waste & materials' for Petaluma)"
     }
   },
   "definitions": {
@@ -55,10 +55,12 @@
             "food", "health", "education", "income & work", "housing",
             "water & sanitation", "energy", "social equity",
             "peace & justice", "political voice", "gender equality", "networks",
+            "mobility",
             "climate change", "ocean acidification", "chemical pollution",
             "nitrogen & phosphorus loading", "freshwater withdrawals",
             "land conversion", "biodiversity loss", "air pollution",
-            "ozone layer depletion"
+            "ozone layer depletion",
+            "waste & materials"
           ]
         },
         "level": {

@@ -8,13 +8,9 @@ Forked from [jglasskatz/doughnut-santa-cruz](https://github.com/jglasskatz/dough
 
 Open `docs/index-d3.html` in a browser — no build step needed.
 
-## Cities Included
+## City
 
-| City | Status | Notes |
-|------|--------|-------|
-| **City of Petaluma, CA** | 🚧 In progress | First-pass data + expert-network list. Severities marked DRAFT pending review. |
-| **City of Santa Cruz, CA** | ✅ Reference | 3 jurisdictions (City, County, Watsonville) — from upstream |
-| **Portland, OR** | ✅ Reference | 21 dimensions with sub-indicators — from upstream |
+**City of Petaluma, California** — ~60,000 residents in southern Sonoma County. This portrait covers the 12 social foundations + 9 ecological ceilings (plus Petaluma-specific Mobility + Waste indicators in progress). All severities are DRAFT pending Phase 2 expert validation.
 
 ## Features
 
@@ -32,24 +28,23 @@ Open `docs/index-d3.html` in a browser — no build step needed.
 ├── docs/                      # Website (GitHub Pages) + reference docs
 │   ├── index-d3.html          # Main D3.js interactive visualization
 │   ├── d3-doughnut.js         # D3.js doughnut chart component
-│   ├── data.js                # All city data (Santa Cruz jurisdictions)
+│   ├── data.js                # Petaluma city data — drives the viz
 │   ├── admin.html             # Spreadsheet admin UI for editing data
 │   ├── energy-deepdive.html   # Energy dimension deep-dive (→ microgridme.xyz)
 │   ├── index.html             # Legacy Canvas-based visualization
 │   ├── app.js                 # Legacy app logic
-│   ├── adding-a-city.md       # Guide to add new cities
+│   ├── adding-a-city.md       # Reference: how the template is structured
 │   ├── doughnut-economics-framework.md
 │   ├── city-portrait-methodology.md
-│   └── santa-cruz-context.md
+│   └── petaluma-data-source.md # Amelia's raw source data + expert network
 ├── data/
 │   ├── schema.json            # JSON Schema for city portraits
-│   └── portland_or.json       # Portland, OR portrait data
-├── tools/
-│   ├── cli.js                 # CLI for research agent
-│   ├── research-agent.js      # AI-powered data collection
-│   ├── schema.js              # Data schema definitions
-│   └── package.json
-└── sources/                   # Source document screenshots
+│   └── petaluma_ca.json       # Petaluma portrait (schema-compliant archive)
+└── tools/
+    ├── cli.js                 # CLI for research agent
+    ├── research-agent.js      # AI-powered data collection
+    ├── schema.js              # Data schema definitions
+    └── package.json
 ```
 
 ## Quick Start

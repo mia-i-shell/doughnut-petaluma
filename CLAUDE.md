@@ -6,7 +6,7 @@
 
 Build a complete Doughnut Economics portrait for the **City of Petaluma, California** using Kate Raworth's framework. This is **CalDEC's small-city pilot integrating the Doughnut into Petaluma's General Plan update** (the first GP update since 2008; draft GP + EIR expected Spring 2026). Project lead: **Amelia Eichel** (CalDEC board).
 
-The project also retains the Santa Cruz and Portland portraits as references and to support replication for other cities.
+The project is **Petaluma-only**. The Santa Cruz / Watsonville / Portland portraits that came from the upstream repo have been removed; only Petaluma data and Petaluma-specific docs live here now.
 
 ## What is the Doughnut?
 
@@ -70,20 +70,16 @@ doughnut-petaluma/
 ├── README.md
 ├── data/
 │   ├── schema.json                        # JSON Schema for city portraits
-│   ├── petaluma_ca.json                   # Petaluma portrait (schema-compliant archive)
-│   └── portland_or.json                   # Reference: Portland portrait
+│   └── petaluma_ca.json                   # Petaluma portrait (schema-compliant archive)
 ├── docs/
 │   ├── index-d3.html                      # Main D3.js interactive viz (open in browser)
 │   ├── d3-doughnut.js                     # D3 chart component
-│   ├── data.js                            # ⚡ THIS drives the viz — Petaluma + Santa Cruz + Portland live here
-│   ├── adding-a-city.md
-│   ├── city-portrait-methodology.md
-│   ├── doughnut-economics-framework.md
-│   ├── petaluma-data-source.md            # Amelia's raw input + expert network
-│   ├── petaluma-context.md                # (TBD) Petaluma-specific context + data sources
-│   └── santa-cruz-context.md
-├── tools/                                 # AI research agent (optional)
-└── sources/
+│   ├── data.js                            # ⚡ THIS drives the viz — only city_petaluma lives here
+│   ├── adding-a-city.md                   # Template for replicating to other cities
+│   ├── city-portrait-methodology.md       # DEAL's City Portrait method
+│   ├── doughnut-economics-framework.md    # Framework reference
+│   └── petaluma-data-source.md            # Amelia's raw source data + expert network
+└── tools/                                 # AI research agent (optional)
 ```
 
 ## Data Collection Rules (Petaluma adaptation)
