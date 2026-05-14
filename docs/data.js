@@ -45,19 +45,20 @@ const JURISDICTIONS = {
             },
             {
                 name: "chemical pollution",
-                level: "NaN",
-                indicator: "Pesticide use + toxic releases",
-                value: "Need more input from City",
-                year: null,
-                target: "Reduced agricultural + industrial chemical use",
-                context: "Sonoma County is a major ag region (wine, dairy, poultry). Pull from CA DPR + EPA TRI for county-level data; City staff input needed for local specifics.",
-                source: "TBD — CA Dept of Pesticide Regulation; EPA TRI",
-                sourceUrl: "https://www.cdpr.ca.gov/",
+                level: 50,
+                indicator: "Pesticide use (Sonoma County, active ingredient applied)",
+                value: "2,449,036 lbs of active ingredient applied in 2023 (+6% vs 2022's 2,312,392 lbs). ~92% from wine grapes (2,249,403 lbs); structural pest control 45,802 lbs; apples 51,569 lbs.",
+                year: 2023,
+                target: "Reduce total agricultural and structural pesticide use year-over-year; phase down highest-toxicity classes",
+                context: "Sonoma County ranks 21st statewide for pesticide use. The use is increasing year-over-year, not decreasing — hence the 'needs attention' severity. Petaluma-specific use isn't published; this is the county figure (Petaluma sits at the southern edge of Sonoma's wine country). Source page 18 / Table 15 of CDPR's 2023 Pesticide Use Annual Report. Petaluma City staff input still needed for any in-city industrial releases (EPA TRI).",
+                source: "California Department of Pesticide Regulation — 2023 Pesticide Use Annual Report (Table 15)",
+                sourceUrl: "https://www.cdpr.ca.gov/wp-content/uploads/2025/08/2023_pur_annual_report.pdf",
                 screenshot: null,
                 actions: [
                     "Buy organic + locally grown produce",
-                    "Reduce household pesticide/herbicide use",
-                    "Support pollinator-friendly landscaping"
+                    "Reduce household pesticide / herbicide use",
+                    "Support pollinator-friendly landscaping",
+                    "Advocate for regenerative-viticulture incentives in the GP"
                 ]
             },
             {
@@ -114,19 +115,20 @@ const JURISDICTIONS = {
             },
             {
                 name: "biodiversity loss",
-                level: "NaN",
-                indicator: "Habitat condition + native species",
-                value: "Data pending (22% protected land is a proxy)",
-                year: null,
-                target: "Stable/increasing native-species populations; no net habitat loss",
-                context: "Petaluma Valley + Sonoma Mountain support oak woodland, vernal pools, salmonid streams. Need CDFW + Sonoma Ecology Center data.",
-                source: "TBD — CDFW + Sonoma Ecology Center",
-                sourceUrl: "https://sonomaecologycenter.org/",
+                level: 75,
+                indicator: "Federally/state-listed threatened or endangered species in Petaluma River watershed",
+                value: "At least 8 listed T&E species documented: California red-legged frog (fed T), Central CA Coast steelhead (fed T), Chinook salmon (fed E), willow flycatcher (fed T), bank swallow (state T), California freshwater shrimp (fed E), salt marsh harvest mouse (fed E), Ridgway's rail (fed E).",
+                year: 2024,
+                target: "Stable / increasing populations of native species; no net habitat loss; recovery of listed species",
+                context: "Verified via Sonoma Resource Conservation District watershed page (red-legged frog, steelhead, Chinook, willow flycatcher, bank swallow confirmed on page directly). Freshwater shrimp confirmed in Petaluma River range per EPA ESPP fact sheet. Multiple listed species = high biodiversity-pressure signal. Population trend data is not publicly available as annual counts — Phase 2 recommendation: query CDFW's CNDDB by USGS quad (Petaluma, Petaluma River, Cotati, Glen Ellen).",
+                source: "Sonoma Resource Conservation District; USFWS / EPA Endangered Species Protection; NOAA Fisheries",
+                sourceUrl: "https://sonomarcd.org/district-watersheds/petaluma-river/",
                 screenshot: null,
                 actions: [
                     "Plant California natives in your yard",
-                    "Support Sonoma Ecology Center + Sonoma Land Trust",
-                    "Volunteer for stream-restoration projects"
+                    "Support Sonoma Ecology Center + Sonoma Land Trust + Sonoma RCD",
+                    "Volunteer for Petaluma River stream-restoration projects",
+                    "Advocate for riparian buffers + steelhead-recovery actions in the GP"
                 ]
             },
             {
@@ -160,6 +162,24 @@ const JURISDICTIONS = {
                 actions: [
                     "Properly dispose of refrigerants + old appliances",
                     "Support continued Montreal Protocol enforcement"
+                ]
+            },
+            {
+                name: "waste & materials",
+                level: 75,
+                indicator: "Per-capita disposal rate (Sonoma County Waste Management Agency)",
+                value: "7.1 lbs/person/day calculated disposal rate (target: 4.5 lbs/person/day) — agency well above target.",
+                year: 2022,
+                target: "≤4.5 lbs/person/day (Zero Waste Sonoma target); zero waste long-term",
+                context: "Locally-defined Petaluma dimension (10th ecological wedge) — not in Kate Raworth's standard 9. Petaluma reports waste through SCWMA (Zero Waste Sonoma), which covers all 10 Sonoma jurisdictions including Petaluma. CalRecycle's per-jurisdiction tool returns 'No Data' for Petaluma-only because it's reported via SCWMA. The 7.1 vs 4.5 target gap = 58% overshoot of target. Source: SCWMA 2022 EAR submitted to CalRecycle, page 46 (re-reported on 2024 EAR page 49).",
+                source: "Zero Waste Sonoma — Electronic Annual Report (EAR) to CalRecycle",
+                sourceUrl: "https://zerowastesonoma.gov/uploads/reports/Annual-Report-2024.pdf",
+                screenshot: null,
+                actions: [
+                    "Compost food scraps + yard waste",
+                    "Cut single-use plastics + packaging",
+                    "Use Recology Sonoma Marin's organics program",
+                    "Advocate for stronger procurement + extended producer responsibility in the GP"
                 ]
             }
         ],
