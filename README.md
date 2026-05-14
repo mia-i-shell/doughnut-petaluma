@@ -2,25 +2,24 @@
 
 A Doughnut Economics portrait for the **City of Petaluma, California** — built as part of CalDEC's small-city pilot integrating the Doughnut framework into Petaluma's General Plan update (draft GP + EIR expected Spring 2026).
 
-Forked from [jglasskatz/doughnut-santa-cruz](https://github.com/jglasskatz/doughnut-santa-cruz). See `CLAUDE.md` for the full Petaluma project context.
-
 ## Live Demo
 
 Open `docs/index-d3.html` in a browser — no build step needed.
 
 ## City
 
-**City of Petaluma, California** — ~60,000 residents in southern Sonoma County. This portrait covers the 12 social foundations + 9 ecological ceilings (plus Petaluma-specific Mobility + Waste indicators in progress). All severities are DRAFT pending Phase 2 expert validation.
+**City of Petaluma, California** — ~60,000 residents in southern Sonoma County. This portrait covers **13 social foundation dimensions** (Raworth's 12 + locally-defined **Mobility**) and **10 ecological ceiling dimensions** (Raworth's 9 + locally-defined **Waste & Materials**) — 23 indicators total. All severities are DRAFT pending Phase 2 expert validation.
 
 ## Features
 
 - **D3.js interactive doughnut chart** with hover tooltips, click-to-expand details, responsive design
 - **Color-coded segments** showing severity (no problem → severe)
 - **Detail panel** with indicator values, sources, targets, and community actions
+- **Outreach directory** — 39 verified Petaluma/Sonoma orgs to consult for Phase 2 indicator validation
+- **Data gap analysis** — completeness + quality report across the 23 dimensions
 - **Energy deep-dive** connecting to [microgridme.xyz](https://microgridme.xyz) for distributed energy analysis
-- **Multi-city support** — switch between cities with keyboard shortcuts
-- **AI research agent** to auto-populate new city portraits with sourced data
-- **Templatized data schema** (JSON) for easy replication
+- **AI research agent** to auto-populate indicators with sourced data
+- **Templatized JSON schema** for easy replication to other cities
 
 ## Project Structure
 
@@ -71,16 +70,16 @@ node cli.js --template "Austin" "Texas" --output ../data/austin_tx.json
 
 ### Check data quality
 ```bash
-node tools/cli.js --report data/portland_or.json
+node tools/cli.js --report data/petaluma_ca.json
 ```
 
 ## The Framework
 
 ### Social Foundation (Inner Ring)
-12 dimensions no one should fall below: food, health, education, income & work, housing, water & sanitation, energy, social equity, peace & justice, political voice, gender equality, networks.
+12 standard Raworth dimensions no one should fall below: food, health, education, income & work, housing, water & sanitation, energy, social equity, peace & justice, political voice, gender equality, networks. **Petaluma adds a 13th locally-defined dimension: Mobility** (drive-alone share, transit + active-mobility).
 
 ### Ecological Ceiling (Outer Ring)
-9 planetary boundaries not to overshoot: climate change, ocean acidification, chemical pollution, nitrogen & phosphorus loading, freshwater withdrawals, land conversion, biodiversity loss, air pollution, ozone layer depletion.
+9 standard planetary boundaries not to overshoot: climate change, ocean acidification, chemical pollution, nitrogen & phosphorus loading, freshwater withdrawals, land conversion, biodiversity loss, air pollution, ozone layer depletion. **Petaluma adds a 10th locally-defined dimension: Waste & Materials** (per-capita disposal rate).
 
 ### The Safe and Just Space
 The doughnut — between the social foundation and ecological ceiling — is where people thrive within planetary means.
@@ -107,6 +106,10 @@ The energy dimension includes a deep-dive page connecting to [microgridme.xyz](h
 
 See [docs/adding-a-city.md](docs/adding-a-city.md) for how to add your city.
 
+## Credits & Provenance
+
+This repo is a fork of [jglasskatz/doughnut-santa-cruz](https://github.com/jglasskatz/doughnut-santa-cruz) — the visualization template and codebase originate from that project. The Petaluma portrait, data, outreach directory, and documentation here were built specifically for Petaluma and are not derived from any other city's data. See `CLAUDE.md` for project context.
+
 ## License
 
-MIT — Original doughnut.js visualization by Jeremy Johnson (2021-23).
+MIT — Original D3.js visualization codebase by Jeremy Johnson / jglasskatz (2021–25).

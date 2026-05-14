@@ -16,12 +16,12 @@ Usage:
   node cli.js --report <file>              Generate data quality report
 
 Examples:
-  node cli.js "Santa Cruz" "California"
-  node cli.js "Portland" "Oregon" --ring social
+  node cli.js "Petaluma" "California"
+  node cli.js "Petaluma" "California" --ring social
   node cli.js "Amsterdam" "Netherlands" --dimensions "housing,food,health"
-  node cli.js "Santa Cruz" "California" --output data/santa_cruz.json
+  node cli.js "Petaluma" "California" --output data/petaluma_ca.json
   node cli.js --template "Austin" "Texas" --output data/austin_tx.json
-  node cli.js --report data/portland_or.json
+  node cli.js --report data/petaluma_ca.json
 
 Options:
   --ring <social|ecological|both>   Which ring to research (default: both)
@@ -48,13 +48,13 @@ Environment Variables:
 
 Provider Examples:
   # OpenAI
-  LLM_API_KEY=sk-... node cli.js "Portland" "Oregon"
+  LLM_API_KEY=sk-... node cli.js "Petaluma" "California"
 
   # Ollama (local)
-  LLM_BASE_URL=http://localhost:11434/v1 LLM_MODEL=llama3 LLM_API_KEY=ollama node cli.js "Portland" "Oregon"
+  LLM_BASE_URL=http://localhost:11434/v1 LLM_MODEL=llama3 LLM_API_KEY=ollama node cli.js "Petaluma" "California"
 
   # Any OpenAI-compatible API
-  LLM_BASE_URL=https://your-provider.com/v1 LLM_API_KEY=... node cli.js "Portland" "Oregon"
+  LLM_BASE_URL=https://your-provider.com/v1 LLM_API_KEY=... node cli.js "Petaluma" "California"
 `;
 
 function parseArgs(argv) {

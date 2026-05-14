@@ -9,8 +9,8 @@
       "type": "object",
       "required": ["id", "name", "region", "country", "population"],
       "properties": {
-        "id": { "type": "string", "description": "URL-safe identifier, e.g. 'portland_or'" },
-        "name": { "type": "string", "description": "Display name, e.g. 'City of Portland'" },
+        "id": { "type": "string", "description": "URL-safe identifier, e.g. 'petaluma_ca'" },
+        "name": { "type": "string", "description": "Display name, e.g. 'City of Petaluma'" },
         "region": { "type": "string", "description": "State/province/region" },
         "country": { "type": "string", "description": "Country code (ISO 3166-1)" },
         "population": { "type": "string" },

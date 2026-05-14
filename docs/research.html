@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Gap Analysis — Santa Cruz Doughnut Economics</title>
+    <title>Data Gap Analysis — Petaluma Doughnut Economics</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -280,7 +280,7 @@
     <div class="top-bar">
         <div>
             <h1>Researcher Data Gap Analysis</h1>
-            <div class="subtitle">Santa Cruz Doughnut Economics — Data Completeness & Quality Report</div>
+            <div class="subtitle">Petaluma Doughnut Economics — Data Completeness &amp; Quality Report</div>
         </div>
         <div style="display:flex;gap:1rem;">
             <a href="outreach.html">Outreach Directory</a>
@@ -705,7 +705,7 @@
         const totalPartial = Object.values(jStats).reduce((s, j) => s + j.partial.length, 0);
         const overallPct = Math.round(totalComplete / totalPoints * 100);
 
-        html += `<p>This report analyzes <strong>${totalPoints} data points</strong> across 3 jurisdictions (City of Santa Cruz, Santa Cruz County, City of Watsonville), covering 9 ecological ceiling dimensions and 12 social foundation dimensions each.</p>`;
+        html += `<p>This report analyzes <strong>${totalPoints} data points</strong> for the <strong>City of Petaluma</strong>, covering 10 ecological ceiling dimensions and 13 social foundation dimensions (Raworth's standard 9+12, plus Petaluma's locally-defined Mobility and Waste &amp; Materials wedges).</p>`;
         html += `<p>Overall completeness: <strong>${overallPct}%</strong> (${totalComplete} complete, ${totalPartial} partial, ${totalMissing} missing/placeholder).</p>`;
 
         // Per-jurisdiction summary
@@ -777,24 +777,33 @@
         html += '<h3>Recommended Data Sources for Filling Gaps</h3>';
         html += '<p>The following sources are recommended for filling the identified gaps, organized by dimension type:</p>';
 
-        html += '<p><strong>Social Foundation (County & Watsonville):</strong></p><ul>';
-        html += '<li><strong>Food</strong>: Second Harvest Food Bank (thefoodbank.org), USDA Food Environment Atlas, Feeding America Map the Meal Gap</li>';
-        html += '<li><strong>Health</strong>: Census ACS (data.census.gov), County Health Rankings (countyhealthrankings.org), DataShare SCC</li>';
-        html += '<li><strong>Education</strong>: CA Dept of Education DataQuest (dq.cde.ca.gov), Public School Review, CAASPP test results</li>';
-        html += '<li><strong>Income & Work</strong>: Census QuickFacts, BLS Local Area Unemployment, DataShare SCC</li>';
-        html += '<li><strong>Housing</strong>: HUD CHAS data, CHPC Housing Needs Reports (chpc.net), PIT Count reports</li>';
-        html += '<li><strong>Water</strong>: Annual Water Quality Reports (CCR), PVWMA for Watsonville, State Water Board</li>';
-        html += '<li><strong>Energy</strong>: EnergySage, PG&E rate schedules, CEC, 3 Clean Energy</li>';
-        html += '<li><strong>Social Equity</strong>: Census ACS Gini index (B19083), CalEnviroScreen</li>';
-        html += '<li><strong>Peace & Justice</strong>: FBI UCR (crime-data-explorer.fr.cloud.gov), NeighborhoodScout, CA DOJ OpenJustice</li>';
-        html += '<li><strong>Political Voice</strong>: CA Secretary of State voter stats, Santa Cruz County Elections</li>';
-        html += '<li><strong>Gender Equality</strong>: CA Civil Rights Dept pay gap data, DataShare SCC Women\'s Wellbeing</li>';
-        html += '<li><strong>Networks</strong>: CA Broadband Report Card, FCC broadband maps, Equal Access SC</li>';
+        html += '<p><strong>Social Foundation:</strong></p><ul>';
+        html += '<li><strong>Food</strong>: Redwood Empire Food Bank (refb.org), Petaluma Bounty, Petaluma Health and Environmental Justice Report</li>';
+        html += '<li><strong>Health</strong>: Petaluma Health District (Elece Hempel), Petaluma Health Center, Census ACS, Blue Zones Project Petaluma</li>';
+        html += '<li><strong>Education</strong>: Petaluma City Schools Superintendent, CA Dept of Education DataQuest, Petaluma Educational Foundation</li>';
+        html += '<li><strong>Income &amp; Work</strong>: Petaluma People Services, Sonoma County Economic Development Board, Census QuickFacts, BLS Local Area Unemployment</li>';
+        html += '<li><strong>Housing</strong>: Generation Housing (Gen H), COTS Petaluma, Petaluma Housing Element, Socioeconomic Profile</li>';
+        html += '<li><strong>Water &amp; Sanitation</strong>: City of Petaluma Water Resources Dept (Chelsea Thompson, Ellis Creek WRF), EWG Tap Water DB, State Water Board</li>';
+        html += '<li><strong>Energy</strong>: Sonoma Clean Power, PG&amp;E North Bay, DOE LEAD Tool, Petaluma Blueprint for Climate Action</li>';
+        html += '<li><strong>Social Equity</strong>: Sonoma County Office of Equity, Latino Service Providers, Census ACS Gini (B19083), Racial Equity Index</li>';
+        html += '<li><strong>Peace &amp; Justice</strong>: Petaluma Police Dept (Chief Brian Miller), FBI UCR Crime Data Explorer, CA DOJ OpenJustice</li>';
+        html += '<li><strong>Political Voice</strong>: Sonoma County Registrar of Voters (Deva Marie Proto), North Bay Organizing Project</li>';
+        html += '<li><strong>Gender Equality</strong>: Generation Housing, Census ACS S2002, CA Civil Rights Dept pay-gap data, BLS</li>';
+        html += '<li><strong>Networks</strong>: Census ACS S2801, FCC Broadband Map, CPUC broadband reports</li>';
+        html += '<li><strong>Mobility</strong> <em>(Petaluma-specific)</em>: Petaluma Transit, SMART, Sonoma County Transportation Authority, Census Journey-to-Work</li>';
         html += '</ul>';
 
         html += '<p><strong>Ecological Ceiling:</strong></p><ul>';
-        html += '<li><strong>Ocean Acidification</strong>: MBARI publications, NOAA Ocean Acidification Program — need localized pH data</li>';
-        html += '<li><strong>Nitrogen Loading</strong>: PVWMA reports for south county; City of SC Water Dept for city-level — city data gap may be unfillable (different water source)</li>';
+        html += '<li><strong>Climate Change</strong>: Petaluma Blueprint for Climate Action, Sonoma County Climate Action &amp; Resiliency Division</li>';
+        html += '<li><strong>Ocean Acidification</strong>: SF Bay NERR (SCQC1 station), SF Estuary Partnership, NERRS CDMO — direct data pull required, no public summary exists</li>';
+        html += '<li><strong>Chemical Pollution</strong>: CA Dept of Pesticide Regulation (county-level), EPA TRI, Sonoma County Ag Commissioner</li>';
+        html += '<li><strong>Nitrogen &amp; Phosphorus Loading</strong>: Petaluma Valley Groundwater Sustainability Agency Annual Reports</li>';
+        html += '<li><strong>Freshwater Withdrawals</strong>: PVGSA, Sonoma Water (Sonoma County Water Agency), City Water Resources Dept</li>';
+        html += '<li><strong>Land Conversion</strong>: Sonoma Land Trust, Sonoma Mountain Preservation, CA 30x30 tracker</li>';
+        html += '<li><strong>Biodiversity Loss</strong>: Sonoma Resource Conservation District (Petaluma River watershed), Sonoma Ecology Center, CDFW CNDDB, Petaluma Wetlands Alliance</li>';
+        html += '<li><strong>Air Pollution</strong>: Bay Area Air Quality Management District (BAAQMD)</li>';
+        html += '<li><strong>Ozone Layer Depletion</strong>: Global indicator — UNEP / NOAA (Montreal Protocol)</li>';
+        html += '<li><strong>Waste &amp; Materials</strong> <em>(Petaluma-specific)</em>: Zero Waste Sonoma (SCWMA Electronic Annual Reports), Recology Sonoma Marin</li>';
         html += '</ul>';
 
         // Methodology notes
