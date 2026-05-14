@@ -1,6 +1,8 @@
-# 🍩 Doughnut Economics City Portraits
+# 🍩 Doughnut Petaluma
 
-Interactive visualizations of social foundations and ecological ceilings for cities, based on [Kate Raworth's Doughnut Economics](https://doughnuteconomics.org/) framework.
+A Doughnut Economics portrait for the **City of Petaluma, California** — built as part of CalDEC's small-city pilot integrating the Doughnut framework into Petaluma's General Plan update (draft GP + EIR expected Spring 2026).
+
+Forked from [jglasskatz/doughnut-santa-cruz](https://github.com/jglasskatz/doughnut-santa-cruz). See `CLAUDE.md` for the full Petaluma project context.
 
 ## Live Demo
 
@@ -8,11 +10,11 @@ Open `docs/index-d3.html` in a browser — no build step needed.
 
 ## Cities Included
 
-| City | Status | Data Points |
-|------|--------|-------------|
-| **City of Santa Cruz, CA** | ✅ Complete | 21 dimensions, 3 jurisdictions (City, County, Watsonville) |
-| **Portland, OR** | ✅ Complete | 21 dimensions with sub-indicators |
-| *Your city?* | [Add one →](docs/adding-a-city.md) | |
+| City | Status | Notes |
+|------|--------|-------|
+| **City of Petaluma, CA** | 🚧 In progress | First-pass data + expert-network list. Severities marked DRAFT pending review. |
+| **City of Santa Cruz, CA** | ✅ Reference | 3 jurisdictions (City, County, Watsonville) — from upstream |
+| **Portland, OR** | ✅ Reference | 21 dimensions with sub-indicators — from upstream |
 
 ## Features
 

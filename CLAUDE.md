@@ -1,142 +1,162 @@
-# Santa Cruz Doughnut Economics Project
+# Petaluma Doughnut Economics Project
+
+> **Fork status:** Forked from [jglasskatz/doughnut-santa-cruz](https://github.com/jglasskatz/doughnut-santa-cruz) on 2026-05-13. Owner: [mia-i-shell/doughnut-petaluma](https://github.com/mia-i-shell/doughnut-petaluma). Local upstream remote tracks the original for future syncs.
 
 ## Purpose
 
-Build a complete Doughnut Economics portrait for the **City of Santa Cruz, California** using Kate Raworth's framework. The process must be reproducible so other cities can follow the same methodology.
+Build a complete Doughnut Economics portrait for the **City of Petaluma, California** using Kate Raworth's framework. This is **CalDEC's small-city pilot integrating the Doughnut into Petaluma's General Plan update** (the first GP update since 2008; draft GP + EIR expected Spring 2026). Project lead: **Amelia Eichel** (CalDEC board).
+
+The project also retains the Santa Cruz and Portland portraits as references and to support replication for other cities.
 
 ## What is the Doughnut?
 
-The Doughnut is a visual framework with two concentric rings:
-- **Inner ring (Social Foundation)**: 12 dimensions of human wellbeing that no one should fall below
-- **Outer ring (Ecological Ceiling)**: 9 planetary boundaries that humanity should not overshoot
-- **The doughnut (safe and just space)**: the area between the rings where people thrive within planetary means
-
-See `docs/doughnut-economics-framework.md` for the complete framework reference.
+Two concentric rings:
+- **Inner ring (Social Foundation)** — 12 dimensions of human wellbeing no one should fall below
+- **Outer ring (Ecological Ceiling)** — 9 planetary boundaries humanity should not overshoot
+- **The doughnut (safe and just space)** — the area between, where people thrive within planetary means
 
 ## The 12 Social Foundation Dimensions
-
-1. Food — food security, nutrition access
-2. Health — healthcare access, outcomes
-3. Education — attainment, quality, equity
-4. Income & Work — poverty, employment, living wage
-5. Water & Sanitation — clean water access, quality
-6. Energy — affordability, access, clean energy
-7. Networks — social capital, internet access, community connections
-8. Housing — affordability, adequacy, homelessness
-9. Gender Equality — pay gap, representation, safety
-10. Social Equity — income inequality (Gini), racial equity
-11. Political Voice — voter turnout, civic engagement
-12. Peace & Justice — crime rates, incarceration, trust
+1. Food
+2. Health
+3. Education
+4. Income & Work
+5. Water & Sanitation
+6. Energy
+7. Networks
+8. Housing
+9. Gender Equality
+10. Social Equity
+11. Political Voice
+12. Peace & Justice
 
 ## The 9 Ecological Ceiling Boundaries
+1. Climate Change
+2. Ocean Acidification
+3. Chemical Pollution
+4. Nitrogen & Phosphorus Loading
+5. Freshwater Withdrawals
+6. Land Conversion
+7. Biodiversity Loss
+8. Air Pollution
+9. Ozone Layer Depletion
 
-1. Climate Change — GHG emissions per capita
-2. Ocean Acidification — marine pH / CO2 absorption impacts
-3. Chemical Pollution — pesticide use, toxic releases
-4. Nitrogen & Phosphorus Loading — fertilizer runoff, groundwater contamination
-5. Freshwater Withdrawals — water use vs sustainable yield
-6. Land Conversion — development of natural land
-7. Biodiversity Loss — species decline, habitat loss
-8. Air Pollution — PM2.5, ozone levels
-9. Ozone Layer Depletion — stratospheric ozone (largely global, not local)
+## Petaluma Context
 
-## The Four Lenses (City Portrait Method)
+- **Population:** ~60,000 (largest city in southern Sonoma County)
+- **Setting:** On the Petaluma River, which feeds San Pablo Bay / SF Bay (estuarine system)
+- **Economy:** Mix of tech, dairy, poultry, wine country agriculture; receives a 1% tax on Amazon purchases
+- **Climate:** Mediterranean; drought-sensitive; subject to wildfire smoke episodes
+- **Planning moment:** General Plan update — the first since 2008. Council selected land-use map 2025-12-15. Draft GP + EIR public Spring 2026. **This is the leverage window for embedding the Doughnut into long-horizon policy.**
 
-Every indicator should be considered through four lenses:
+See `docs/petaluma-data-source.md` for the raw source data Amelia provided, including Peggy and Councilmember John Shribbs' feedback and the expert-network list for Phase 2 (indicator validation with topic experts).
 
-1. **Local-Social**: What does it mean for the people of Santa Cruz to thrive?
-2. **Local-Ecological**: What does it mean for Santa Cruz to thrive within its natural habitat?
-3. **Global-Social**: What does it mean for Santa Cruz to respect the wellbeing of people worldwide?
-4. **Global-Ecological**: What does it mean for Santa Cruz to respect the health of the whole planet?
+## Open Schema Decisions
 
-See `docs/city-portrait-methodology.md` for the full methodology.
+Amelia's data includes a few categories that don't map 1:1 to Raworth's standard 12 + 9. These need resolution:
 
-## Santa Cruz Context
-
-- Population ~65,000; coastal city 75 mi south of San Francisco
-- UC Santa Cruz is a major institution (~19,000 students)
-- 95% surface water supply (San Lorenzo River, Loch Lomond Reservoir)
-- Severe housing affordability crisis
-- Transportation = 69% of GHG emissions
-- Global biodiversity hotspot (1,000+ native plant species, 35 endemic species)
-- South county (Pajaro Valley) is a major agricultural region — distinct from the city
-
-See `docs/santa-cruz-context.md` for detailed context and data sources.
+| Petaluma category | Decision needed |
+|---|---|
+| **Mobility** (72.6% drive alone) | Map to networks? add as 13th dim? fold into climate change narrative? |
+| **Global Measure of Wellbeing** | Treat as DEAL four-lens framing rather than a single dimension? |
+| **Waste & Materials** | Supplementary local indicator, not a planetary boundary |
+| **Global Consumption-Based Footprint** | Same as global-social — four-lens framing |
+| **Equality (gender + racial together)** | Split: gender → gender equality dim; racial → social equity subIndicator (already done in current data) |
 
 ## Project Structure
 
 ```
-Doughnut/
-├── CLAUDE.md                          # This file — project instructions
-├── docs/
-│   ├── doughnut-economics-framework.md  # Full framework reference
-│   ├── city-portrait-methodology.md     # How to build a city portrait
-│   └── santa-cruz-context.md            # Santa Cruz specific context & data sources
+doughnut-petaluma/
+├── CLAUDE.md                              # This file
+├── README.md
 ├── data/
-│   ├── raw/                             # Raw data files and CSVs
-│   │   └── ecological_ceiling_indicators.csv
-│   └── processed/                       # Cleaned/transformed data
-├── doughnut_spreadsheet/                # Working spreadsheet with all indicators
-│   └── Santa Cruz Doughnut Indicators.xlsx
-├── src/                                 # Code for data processing & visualization
-└── scripts/                             # Data collection and automation scripts
+│   ├── schema.json                        # JSON Schema for city portraits
+│   ├── petaluma_ca.json                   # Petaluma portrait (schema-compliant archive)
+│   └── portland_or.json                   # Reference: Portland portrait
+├── docs/
+│   ├── index-d3.html                      # Main D3.js interactive viz (open in browser)
+│   ├── d3-doughnut.js                     # D3 chart component
+│   ├── data.js                            # ⚡ THIS drives the viz — Petaluma + Santa Cruz + Portland live here
+│   ├── adding-a-city.md
+│   ├── city-portrait-methodology.md
+│   ├── doughnut-economics-framework.md
+│   ├── petaluma-data-source.md            # Amelia's raw input + expert network
+│   ├── petaluma-context.md                # (TBD) Petaluma-specific context + data sources
+│   └── santa-cruz-context.md
+├── tools/                                 # AI research agent (optional)
+└── sources/
 ```
 
-## Data Collection Rules
+## Data Collection Rules (Petaluma adaptation)
 
-1. **Always prefer City of Santa Cruz data** over county or regional data
-2. **Note the geographic scale** for every data point (city, county, metro, state)
-3. **Include the source URL** and publication year for every data point
-4. **Flag data gaps** — missing data is important to document
-5. **Disaggregate by equity dimensions** where possible (race, income, neighborhood)
-6. **Use the most recent data available** — note the year for each data point
-7. **Distinguish production-based vs consumption-based** metrics (especially for ecological dimensions)
+1. **Prefer City of Petaluma data** over county or regional data
+2. **Note the geographic scale** for every data point (city, county, metro, state, global)
+3. **Include source URL + publication year** for every data point
+4. **Flag data gaps** explicitly using `level: "NaN"` (data.js) or `level: null` (JSON)
+5. **Disaggregate by equity dimensions** where possible (race, income, neighborhood) — Peggy's recurring note
+6. **Use the most recent data available** — note the year
+7. **Distinguish production-based vs consumption-based** metrics for ecological dims
+8. **Preserve expert-contact attributions** — see `docs/petaluma-data-source.md` for the Phase 2 expert list (Redwood Empire Food Bank, Petaluma Health District, Gen H, Ellis Creek WRF, PG&E, Sonoma Clean Power, Police Chief, Voter Registrar, etc.)
 
-## Key Data Sources (Priority Order)
+## Key Petaluma Data Sources (Priority Order)
 
 ### City-Level
-- City of Santa Cruz Climate Action Plan 2030
-- City of Santa Cruz GHG Emissions Inventories (1996-2019)
-- City of Santa Cruz Water Department reports
-- City of Santa Cruz Parks & Recreation data
+- Petaluma General Plan update — https://www.planpetaluma.org
+- Petaluma Blueprint for Climate Action
+- Petaluma Health and Environmental Justice Report
+- Petaluma Housing Element
+- Petaluma Socioeconomic Profile
+- City of Petaluma Water Resources & Conservation Dept
 
 ### County/Regional
-- US Census / American Community Survey (city-level estimates available)
-- DataShare SCC (datasharescc.org) — community indicators dashboard
-- Santa Cruz County Health Services Agency assessments
-- Santa Cruz County Climate Action and Adaptation Plan (2022)
-- CA Dept of Pesticide Regulation — Pesticide Use Reports (county level)
+- Sonoma County data portal
+- Sonoma County Registrar of Voters
+- Bay Area Air Quality Management District (BAAQMD)
+- Sonoma Mountain Preservation (protected land)
+- Petaluma Valley Groundwater Sustainability Plan
 
 ### State/Federal
-- CalEnviroScreen — environmental justice mapping
-- CA Air Resources Board — emissions data
-- EPA Air Quality System — monitoring station data
-- UC Davis Groundwater Nitrate Viewer
+- U.S. Census Bureau / ACS
+- CalEnviroScreen
+- CA Air Resources Board
+- CA Dept of Pesticide Regulation
+- CA Dept of Fish & Wildlife
 
-## Indicator Scoring
+## Indicator Scoring Scale (matches data.js)
 
-For each indicator, assess against a target/threshold:
-- **Severe shortfall** — far below social foundation target
-- **Shortfall** — below target
-- **Near threshold** — approaching but not yet meeting target
-- **Thriving** — meeting the target within ecological limits
-- **Overshoot** — exceeding ecological ceiling
-- **Severe overshoot** — far beyond ecological ceiling
+| Level | Label | Meaning |
+|---|---|---|
+| -100 | No problem | Well within safe bounds |
+| -50 | Under control | Meeting targets |
+| 0 | On track | At threshold, needs monitoring |
+| 50 | Needs attention | Exceeding threshold |
+| 100 | Critical | Significantly beyond threshold |
+| 150 | Severe | Emergency level |
+| `"NaN"` | Unknown | Insufficient data |
 
-## Workflow for Adding New Indicators
+> **All levels in the current Petaluma data are DRAFT — assigned by Claude based on stated targets. Every entry's `context` notes "DRAFT severity — pending review" and should be confirmed by Amelia + topic experts in Phase 2.**
 
-1. Identify the dimension and lens (e.g., Climate Change / Local-Ecological)
-2. Search for City of Santa Cruz data first, then county, then state/federal
-3. Record: category, indicator name, data point, year, geographic scale, notes, source, source URL
-4. Add to the appropriate CSV in `data/raw/`
-5. Update the working spreadsheet
-6. Assess against threshold — is this shortfall, thriving, or overshoot?
+## Workflow for Adding/Updating Indicators
+
+1. Identify the dimension + lens (e.g., Climate Change / Local-Ecological)
+2. Search City of Petaluma first → Sonoma County → state/federal
+3. Update both `docs/data.js` (drives the viz) **and** `data/petaluma_ca.json` (schema-compliant archive)
+4. Record: indicator name, value, year, geographic scale, target, context, source, source URL, geographic scale, confidence, actions
+5. Assess severity against the target; assign `level` per the scale above
+
+## Phase 2 — Expert Validation
+
+For each indicator, consult the relevant expert (see `docs/petaluma-data-source.md`):
+1. Confirm indicator choice is the right proxy
+2. Verify data point + year
+3. Suggest alternative or additional indicators
+4. Update both `docs/data.js` and `data/petaluma_ca.json`
+5. Remove the "DRAFT severity — pending review" flag once confirmed
 
 ## Reproducibility
 
-This project should serve as a template. To adapt for another city:
+Pattern for other CalDEC cities (San José, SF, San Mateo, etc.):
 1. Fork this repo
-2. Replace "Santa Cruz" references with your city
-3. Follow the same data collection methodology
-4. Use the same indicator structure and CSV format
-5. Adapt data sources to your city's available data
+2. Add a new entry to `JURISDICTIONS` in `docs/data.js` (key like `city_sanjose`)
+3. Add corresponding `data/<city>.json` schema-compliant version
+4. Replace context + sources with city-specific equivalents
+5. Use the same severity scale + the same Raworth dimensions

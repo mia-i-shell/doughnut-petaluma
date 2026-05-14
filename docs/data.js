@@ -1055,5 +1055,372 @@ const JURISDICTIONS = {
                 ]
             }
         ]
+    },
+    "city_petaluma": {
+        name: "City of Petaluma",
+        population: "~60,000",
+        description: "Small city in southern Sonoma County, CA, on the Petaluma River. Updating its General Plan for the first time since 2008. CalDEC's small-city pilot integrating Doughnut Economics into the GP update. Draft GP + EIR expected Spring 2026. Project lead: Amelia Eichel.",
+        ecological: [
+            {
+                name: "climate change",
+                level: 100,
+                indicator: "Per capita GHG emissions",
+                value: "7.25 MT CO2e/person",
+                year: 2024,
+                target: "1.6–2.0 MT CO2e/person (1.5 °C-aligned)",
+                context: "DRAFT severity — pending review. Community-wide emissions ~435,000 MTCO2e ÷ ~60,000 residents. Significantly above the DEAL 'safe and just space' target.",
+                source: "Petaluma Blueprint for Climate Action",
+                sourceUrl: "https://www.planpetaluma.org/blueprint-for-climate-action",
+                screenshot: null,
+                actions: [
+                    "Switch to an EV or ride Petaluma Transit / SMART",
+                    "Electrify home heating + cooking",
+                    "Enroll in Sonoma Clean Power EverGreen (100% renewable)",
+                    "Support Blueprint for Climate Action implementation in the GP update"
+                ]
+            },
+            {
+                name: "ocean acidification",
+                level: "NaN",
+                indicator: "Estuarine pH (Petaluma River → SF Bay)",
+                value: "Data pending",
+                year: null,
+                target: "Maintain estuarine pH; protect bay ecosystem health",
+                context: "Petaluma is inland but its river feeds San Pablo Bay. Worth monitoring at the SF Bay NERR / NOAA scale.",
+                source: "TBD — SF Bay NERR / NOAA",
+                sourceUrl: "https://sfbaynerr.sfsu.edu/",
+                screenshot: null,
+                actions: [
+                    "Reduce personal carbon footprint",
+                    "Support Petaluma River + SF Bay watershed restoration",
+                    "Volunteer with Petaluma River cleanups"
+                ]
+            },
+            {
+                name: "chemical pollution",
+                level: "NaN",
+                indicator: "Pesticide use + toxic releases",
+                value: "Need more input from City",
+                year: null,
+                target: "Reduced agricultural + industrial chemical use",
+                context: "Sonoma County is a major ag region (wine, dairy, poultry). Pull from CA DPR + EPA TRI for county-level data; City staff input needed for local specifics.",
+                source: "TBD — CA Dept of Pesticide Regulation; EPA TRI",
+                sourceUrl: "https://www.cdpr.ca.gov/",
+                screenshot: null,
+                actions: [
+                    "Buy organic + locally grown produce",
+                    "Reduce household pesticide/herbicide use",
+                    "Support pollinator-friendly landscaping"
+                ]
+            },
+            {
+                name: "nitrogen & phosphorus loading",
+                level: 20,
+                indicator: "Groundwater nitrogen levels",
+                value: "Most wells <10 mg/L; hotspots 4–7 mg/L near agricultural boundaries",
+                year: 2024,
+                target: "<10 mg/L (drinking water standard); reduce ag + septic runoff",
+                context: "DRAFT severity — moderate loading; localized hotspots near ag boundaries and septic areas.",
+                source: "Petaluma Valley Groundwater WY2024 Annual Report",
+                sourceUrl: "https://petalumavalleygroundwater.org/wp-content/uploads/PV-Annual-Report_WY2024-ADA.pdf",
+                screenshot: null,
+                actions: [
+                    "Reduce lawn fertilizer use",
+                    "Convert septic to sewer where feasible",
+                    "Support regenerative agriculture in Petaluma Valley"
+                ]
+            },
+            {
+                name: "freshwater withdrawals",
+                level: "NaN",
+                indicator: "Withdrawals vs. sustainable yield",
+                value: "Data pending",
+                year: null,
+                target: "Withdrawals ≤ sustainable annual yield",
+                context: "Highly relevant — Sonoma County is drought-sensitive. John Shribbs (Council) flagged the need for a long-term water-plan indicator.",
+                source: "TBD — Petaluma Water Resources Dept",
+                sourceUrl: "https://cityofpetaluma.org/water-resources-conservation/",
+                screenshot: null,
+                actions: [
+                    "Cut household water use 20%",
+                    "Replace lawn with drought-tolerant landscape",
+                    "Support water-recycling expansion"
+                ]
+            },
+            {
+                name: "land conversion",
+                level: 0,
+                indicator: "% protected land (Petaluma Valley / Sonoma Mountain)",
+                value: "~22% under conservation easements or public ownership",
+                year: 2024,
+                target: "≥30% by 2030 (California 30x30 goal)",
+                context: "DRAFT severity — on track but short of CA 30x30. Petaluma's Urban Growth Boundary is a key tool; the GP update is the leverage point.",
+                source: "Sonoma Mountain Preservation",
+                sourceUrl: "https://sonomamountain.org/preservation/protected-open-space/",
+                screenshot: null,
+                actions: [
+                    "Support Sonoma Land Trust + Sonoma Mountain Preservation",
+                    "Defend Petaluma's Urban Growth Boundary in the GP update",
+                    "Volunteer with land-stewardship orgs"
+                ]
+            },
+            {
+                name: "biodiversity loss",
+                level: "NaN",
+                indicator: "Habitat condition + native species",
+                value: "Data pending (22% protected land is a proxy)",
+                year: null,
+                target: "Stable/increasing native-species populations; no net habitat loss",
+                context: "Petaluma Valley + Sonoma Mountain support oak woodland, vernal pools, salmonid streams. Need CDFW + Sonoma Ecology Center data.",
+                source: "TBD — CDFW + Sonoma Ecology Center",
+                sourceUrl: "https://sonomaecologycenter.org/",
+                screenshot: null,
+                actions: [
+                    "Plant California natives in your yard",
+                    "Support Sonoma Ecology Center + Sonoma Land Trust",
+                    "Volunteer for stream-restoration projects"
+                ]
+            },
+            {
+                name: "air pollution",
+                level: 30,
+                indicator: "PM2.5 annual average",
+                value: "7.0–9.5 μg/m³",
+                year: 2024,
+                target: "≤5 μg/m³ (WHO guideline)",
+                context: "DRAFT severity — above WHO target; meets US EPA standard. Wildfire smoke is the dominant episodic driver.",
+                source: "Bay Area Air Quality Management District",
+                sourceUrl: "https://www.baaqmd.gov/en/about-air-quality/current-air-quality/air-monitoring-data/",
+                screenshot: null,
+                actions: [
+                    "Use HEPA filters during smoke events",
+                    "Reduce home wood-burning",
+                    "Support Sonoma County FireSafe Council"
+                ]
+            },
+            {
+                name: "ozone layer depletion",
+                level: -100,
+                indicator: "Stratospheric ozone (global)",
+                value: "Global Montreal Protocol — on track to recover by ~2066",
+                year: 2024,
+                target: "Continued global compliance with Montreal Protocol",
+                context: "Largely a global indicator; included for framework completeness.",
+                source: "UNEP / NOAA",
+                sourceUrl: "https://ozone.unep.org/",
+                screenshot: null,
+                actions: [
+                    "Properly dispose of refrigerants + old appliances",
+                    "Support continued Montreal Protocol enforcement"
+                ]
+            }
+        ],
+        social: [
+            {
+                name: "food",
+                level: 25,
+                indicator: "Food insecurity rate",
+                value: "5.4% of households food insecure",
+                year: 2024,
+                target: "Zero hunger",
+                context: "DRAFT severity — pending review. Below US avg (~10%) but short of the zero-hunger target. Open question: how many people are eligible for food-bank services? Bring Redwood Empire Food Bank into the conversation.",
+                source: "Petaluma Health and Environmental Justice Report (p. 82)",
+                sourceUrl: "https://cityofpetaluma.org/",
+                screenshot: null,
+                actions: [
+                    "Support Redwood Empire Food Bank",
+                    "Volunteer at Petaluma Bounty",
+                    "Advocate for school meal programs"
+                ]
+            },
+            {
+                name: "health",
+                level: 10,
+                indicator: "Uninsured rate",
+                value: "5.5% uninsured",
+                year: 2024,
+                target: "Universal coverage",
+                context: "DRAFT severity — pending review. Below CA average (~7%). John Shribbs (Council) suggested: consult Elece Hempel, Chair of Petaluma Health District. He also suggested adding a tree-cover/shade indicator (Blue Zone could advise) as the climate gets hotter.",
+                source: "U.S. Census Bureau ACS 2020–2024",
+                sourceUrl: "https://data.census.gov/",
+                screenshot: null,
+                actions: [
+                    "Support Covered California enrollment outreach",
+                    "Volunteer with Petaluma Health Center",
+                    "Advocate for shade-tree plantings in the GP"
+                ]
+            },
+            {
+                name: "education",
+                level: -30,
+                indicator: "High school graduation rate",
+                value: "92%",
+                year: 2024,
+                target: "≥95% with no achievement gap by race/income",
+                context: "DRAFT severity — above CA avg (~87%). Peggy flagged: needs an equity lens (achievement-gap disaggregation). Verify with the Petaluma City Schools Superintendent.",
+                source: "U.S. Census Bureau ACS 2020–2024",
+                sourceUrl: "https://data.census.gov/",
+                screenshot: null,
+                actions: [
+                    "Support Petaluma City Schools",
+                    "Mentor or tutor at-risk students",
+                    "Volunteer with after-school programs"
+                ]
+            },
+            {
+                name: "income & work",
+                level: -10,
+                indicator: "Poverty rate",
+                value: "6.5% of persons in poverty",
+                year: 2024,
+                target: "<5% in poverty; living wage for all workers",
+                context: "DRAFT severity — below CA avg (~12%). Petaluma People Services has additional data on local poverty.",
+                source: "U.S. Census Bureau ACS 2020–2024",
+                sourceUrl: "https://data.census.gov/",
+                screenshot: null,
+                actions: [
+                    "Support Petaluma People Services",
+                    "Shop local small businesses",
+                    "Advocate for a local living-wage standard"
+                ]
+            },
+            {
+                name: "housing",
+                level: 60,
+                indicator: "Cost-burdened households + point-in-time unhoused",
+                value: "34% cost-burdened (>30% income on housing); 214 persons unhoused (PIT)",
+                year: 2024,
+                target: "<30% cost-burdened; zero unhoused",
+                context: "DRAFT severity — Sonoma County's housing affordability crisis hits Petaluma hard. John Shribbs suggested adding an indicator from Generation Housing (Gen H). Sources: Housing Element p. B21; Socioeconomic Profile p. 9.",
+                source: "Petaluma Housing Element + Socioeconomic Profile",
+                sourceUrl: "https://www.planpetaluma.org/",
+                screenshot: null,
+                actions: [
+                    "Support COTS Petaluma",
+                    "Advocate for affordable-housing zoning in the GP",
+                    "Volunteer at the Mary Isaak Center",
+                    "Support Generation Housing's policy work"
+                ]
+            },
+            {
+                name: "water & sanitation",
+                level: "NaN",
+                indicator: "% receiving water from systems below quality standards",
+                value: "Data pending",
+                year: null,
+                target: "0% on substandard systems; long-term water availability assured",
+                context: "Chelsea Thompson at Ellis Creek Water Recycling Facility could verify. John Shribbs flagged: add an indicator about long-term water plan + water availability.",
+                source: "TBD — City Water Resources & Conservation Dept",
+                sourceUrl: "https://cityofpetaluma.org/water-resources-conservation/",
+                screenshot: null,
+                actions: [
+                    "Conserve household water",
+                    "Support graywater + rainwater capture",
+                    "Advocate for groundwater protection in the GP"
+                ]
+            },
+            {
+                name: "energy",
+                level: "NaN",
+                indicator: "Household energy burden",
+                value: "Data pending (% of households with energy bill ≥10% of income)",
+                year: null,
+                target: "<6% energy burden for all; 100% clean electricity",
+                context: "Reps at PG&E + Sonoma Clean Power can advise.",
+                source: "TBD — PG&E + Sonoma Clean Power",
+                sourceUrl: "https://sonomacleanpower.org/",
+                screenshot: null,
+                actions: [
+                    "Enroll in SCP EverGreen 100% renewable",
+                    "Apply for income-qualified weatherization",
+                    "Electrify home heating + cooking"
+                ]
+            },
+            {
+                name: "social equity",
+                level: 75,
+                indicator: "Gini index of income inequality",
+                value: "0.44 (i.e., 44 on 0–100 scale)",
+                year: 2019,
+                target: "<30 (California Doughnut target)",
+                context: "DRAFT severity — significantly above target. Subindicator: Racial Equity Index Inclusion Score = 66 (CA = 65; California Doughnut target = 100). Brian O. (development team) may have additional cohesion data; Blue Zone could advise on a Happiness Scale.",
+                source: "Petaluma Socioeconomic Profile (p. 26)",
+                sourceUrl: "https://www.planpetaluma.org/",
+                screenshot: null,
+                actions: [
+                    "Support local living-wage ordinances",
+                    "Advocate for progressive local taxation",
+                    "Support Petaluma People Services + Mentor Me Petaluma"
+                ]
+            },
+            {
+                name: "peace & justice",
+                level: "NaN",
+                indicator: "Violent crimes per capita (unit needs verification)",
+                value: "12.18 per 1,000 (definition pending)",
+                year: null,
+                target: "Reduced violent crime + restorative justice",
+                context: "Data point needs verification — unit is unusual; may be per-10,000 or per-100,000. Petaluma Police Chief could verify and suggest alternatives.",
+                source: "TBD — Petaluma Police Department",
+                sourceUrl: "https://cityofpetaluma.org/police/",
+                screenshot: null,
+                actions: [
+                    "Support restorative-justice programs in Sonoma County",
+                    "Participate in community-policing forums",
+                    "Advocate for violence-prevention funding"
+                ]
+            },
+            {
+                name: "political voice",
+                level: "NaN",
+                indicator: "Voter participation",
+                value: "Data pending",
+                year: null,
+                target: ">75% turnout; broad civic participation",
+                context: "Pull from Sonoma County Registrar of Voters. John Shribbs suggested adding a civic-participation indicator (GP-update workshop attendance, etc.).",
+                source: "TBD — Sonoma County Registrar of Voters",
+                sourceUrl: "https://sonomacounty.ca.gov/government/registrar-of-voters",
+                screenshot: null,
+                actions: [
+                    "Register + vote in every election",
+                    "Attend Petaluma City Council meetings",
+                    "Participate in GP update workshops"
+                ]
+            },
+            {
+                name: "gender equality",
+                level: "NaN",
+                indicator: "Gender pay ratio",
+                value: "Data pending (CA statewide: ~89.9% women's earnings)",
+                year: null,
+                target: "1:1 pay equity",
+                context: "% of men's median wage earned by women for full-time, year-round work. Gen H may have county-level data.",
+                source: "TBD — Gen H / BLS",
+                sourceUrl: "https://generationhousing.org/",
+                screenshot: null,
+                actions: [
+                    "Support pay-transparency ordinances",
+                    "Advocate for women-owned business procurement at the City",
+                    "Support women-led Petaluma nonprofits"
+                ]
+            },
+            {
+                name: "networks",
+                level: "NaN",
+                indicator: "Connectivity / community ties (recommend adding)",
+                value: "Data pending — broadband + civic engagement indicators recommended",
+                year: null,
+                target: "Universal broadband; strong community ties",
+                context: "Not in Petaluma's current indicator set. NOTE: spreadsheet has a 'Mobility' category (72.6% commuters drive alone) not yet wired — schema decision pending on whether Mobility folds into networks, becomes a 13th dimension, or moves under climate-change narrative.",
+                source: "TBD",
+                sourceUrl: "https://broadbandmap.fcc.gov/",
+                screenshot: null,
+                actions: [
+                    "Support digital-equity programs",
+                    "Strengthen neighborhood associations",
+                    "Participate in Petaluma civic events"
+                ]
+            }
+        ]
     }
 };
