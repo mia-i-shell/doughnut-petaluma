@@ -72,7 +72,7 @@ doughnut-petaluma/
 │   ├── schema.json                        # JSON Schema for city portraits
 │   └── petaluma_ca.json                   # Petaluma portrait (schema-compliant archive)
 ├── docs/
-│   ├── index-d3.html                      # Main D3.js interactive viz (open in browser)
+│   ├── index.html                         # Main D3.js interactive viz (open in browser)
 │   ├── d3-doughnut.js                     # D3 chart component
 │   ├── data.js                            # ⚡ THIS drives the viz — only city_petaluma lives here
 │   ├── adding-a-city.md                   # Template for replicating to other cities

@@ -4,7 +4,9 @@ A Doughnut Economics portrait for the **City of Petaluma, California** — built
 
 ## Live Demo
 
-Open `docs/index-d3.html` in a browser — no build step needed.
+**Public site:** https://mia-i-shell.github.io/doughnut-petaluma/
+
+Or open `docs/index.html` in a browser locally — no build step needed.
 
 ## City
 
@@ -25,7 +27,7 @@ Open `docs/index-d3.html` in a browser — no build step needed.
 
 ```
 ├── docs/                      # Website (GitHub Pages) + reference docs
-│   ├── index-d3.html          # Main D3.js interactive visualization
+│   ├── index.html             # Main D3.js interactive visualization
 │   ├── d3-doughnut.js         # D3.js doughnut chart component
 │   ├── data.js                # Petaluma city data — drives the viz
 │   ├── admin.html             # Spreadsheet admin UI for editing data
@@ -51,7 +53,7 @@ Open `docs/index-d3.html` in a browser — no build step needed.
 ### View the visualization
 ```bash
 # Just open in a browser — no build step needed
-open docs/index-d3.html
+open docs/index.html
 ```
 
 ### Add a new city (AI-powered)
