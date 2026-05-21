@@ -319,9 +319,14 @@ class D3Doughnut {
             const arcAngle = (Math.PI * 2) / dims.length;
 
             dims.forEach((dim, i) => {
+                // d3.arc angle convention: 0 = 12 o'clock, positive = clockwise.
+                // Math.cos/sin use the standard math convention (0 = 3 o'clock).
+                // Convert d3 angle → SVG xy:  x = sin(θ)·r,  y = -cos(θ)·r.
+                // (Previously used Math.cos(angle)·r / Math.sin(angle)·r, which rotated
+                //  labels ~90° relative to wedges — making "Health" click "Housing", etc.)
                 const angle = i * arcAngle - Math.PI / 2 + arcAngle / 2;
-                const x = Math.cos(angle) * radius;
-                const y = Math.sin(angle) * radius;
+                const x = Math.sin(angle) * radius;
+                const y = -Math.cos(angle) * radius;
 
                 const words = dim.name.split(' ');
                 const lines = [];
