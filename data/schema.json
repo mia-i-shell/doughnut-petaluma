@@ -1,110 +1,512 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Doughnut Economics City Portrait",
-  "description": "Schema for a city/region doughnut economics portrait. 12 standard social foundations + 9 standard ecological ceilings, optionally extended with one locally-defined dimension on each side (e.g., 'mobility' and 'waste & materials' for Petaluma).",
+  "description": "Schema for a city/region doughnut economics portrait. 12 standard social foundations + 9 standard ecological ceilings, each optionally extended with locally-defined dimensions (e.g. 'mobility' for Petaluma and NYC; 'waste & materials' for both; 'heat & climate resilience' for NYC). Supports DEAL's four-lens City Portrait method: the required per-dimension fields carry the LOCAL lens (local-social for social dimensions, local-ecological for ecological ones) and the optional 'global' block carries the GLOBAL lens (global-social / global-ecological). Also supports sub-jurisdiction disaggregation via the optional 'boroughs' block, used by the NYC portrait to carry all five boroughs per dimension.",
   "type": "object",
-  "required": ["meta", "social", "ecological"],
+  "required": [
+    "meta",
+    "social",
+    "ecological"
+  ],
   "properties": {
     "meta": {
       "type": "object",
-      "required": ["id", "name", "region", "country", "population"],
+      "required": [
+        "id",
+        "name",
+        "region",
+        "country",
+        "population"
+      ],
       "properties": {
-        "id": { "type": "string", "description": "URL-safe identifier, e.g. 'petaluma_ca'" },
-        "name": { "type": "string", "description": "Display name, e.g. 'City of Petaluma'" },
-        "region": { "type": "string", "description": "State/province/region" },
-        "country": { "type": "string", "description": "Country code (ISO 3166-1)" },
-        "population": { "type": "string" },
-        "description": { "type": "string" },
+        "id": {
+          "type": "string",
+          "description": "URL-safe identifier, e.g. 'petaluma_ca' or 'nyc_ny'"
+        },
+        "name": {
+          "type": "string",
+          "description": "Display name, e.g. 'City of Petaluma'"
+        },
+        "region": {
+          "type": "string",
+          "description": "State/province/region"
+        },
+        "country": {
+          "type": "string",
+          "description": "Country code (ISO 3166-1)"
+        },
+        "population": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "jurisdictionType": {
+          "type": "string",
+          "enum": [
+            "city",
+            "borough",
+            "county",
+            "region"
+          ],
+          "default": "city",
+          "description": "What kind of jurisdiction this portrait describes. Borough portraits are derived from a parent city portrait."
+        },
+        "parentId": {
+          "type": "string",
+          "description": "For a sub-jurisdiction portrait (jurisdictionType 'borough'), the meta.id of the parent city portrait it was derived from."
+        },
+        "subJurisdictions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "For a city portrait carrying disaggregated data, the keys used in each dimension's 'boroughs' block, e.g. ['bronx','brooklyn','manhattan','queens','statenIsland']."
+        },
+        "lenses": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "local-social",
+              "local-ecological",
+              "global-social",
+              "global-ecological"
+            ]
+          },
+          "description": "Which of DEAL's four City Portrait lenses this portrait populates. A local-only portrait lists the two local lenses; a full four-lens portrait lists all four."
+        },
+        "policyAnchor": {
+          "type": "string",
+          "description": "The planning or policy process this portrait is anchored to, e.g. 'Petaluma General Plan update' or 'Local Law 97 / PlaNYC / City of Yes'."
+        },
         "coordinates": {
           "type": "object",
           "properties": {
-            "lat": { "type": "number" },
-            "lng": { "type": "number" }
+            "lat": {
+              "type": "number"
+            },
+            "lng": {
+              "type": "number"
+            }
           }
         },
-        "lastUpdated": { "type": "string", "format": "date" },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date"
+        },
         "contributors": {
           "type": "array",
-          "items": { "type": "string" }
+          "items": {
+            "type": "string"
+          }
         }
       }
     },
     "social": {
       "type": "array",
       "minItems": 12,
-      "maxItems": 13,
-      "items": { "$ref": "#/definitions/dimension" },
-      "description": "12 standard social foundation dimensions, optionally with one locally-defined dimension (e.g., 'mobility' for Petaluma)"
+      "maxItems": 14,
+      "items": {
+        "$ref": "#/definitions/dimension"
+      },
+      "description": "12 standard social foundation dimensions, optionally with locally-defined additions (e.g. 'mobility')"
     },
     "ecological": {
       "type": "array",
       "minItems": 9,
-      "maxItems": 10,
-      "items": { "$ref": "#/definitions/dimension" },
-      "description": "9 standard ecological ceiling dimensions, optionally with one locally-defined dimension (e.g., 'waste & materials' for Petaluma)"
+      "maxItems": 11,
+      "items": {
+        "$ref": "#/definitions/dimension"
+      },
+      "description": "9 standard ecological ceiling dimensions, optionally with locally-defined additions (e.g. 'waste & materials', 'heat & climate resilience')"
     }
   },
   "definitions": {
+    "level": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": -100,
+      "maximum": 150,
+      "description": "-100=no problem, -50=under control, 0=on track, 50=needs attention, 100=critical, 150=severe, null=unknown"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "default": "medium",
+      "description": "high=primary source, current, correct geographic scale; medium=primary but older or wrong scale, or good secondary; low=proxy, unverified, or source fetch failed"
+    },
+    "geographicScale": {
+      "type": "string",
+      "enum": [
+        "city",
+        "borough",
+        "county",
+        "metro",
+        "state",
+        "national",
+        "global"
+      ],
+      "description": "Geographic level the data is actually reported at. Never label a metro or state figure as 'city'."
+    },
+    "productionVsConsumption": {
+      "type": "string",
+      "enum": [
+        "production-based",
+        "consumption-based",
+        "both",
+        "not-applicable"
+      ],
+      "description": "For ecological indicators: whether the figure counts impacts occurring inside the jurisdiction (production-based) or embodied in what the jurisdiction consumes (consumption-based)."
+    },
+    "subJurisdictionEntry": {
+      "type": "object",
+      "description": "One sub-jurisdiction's (e.g. borough's) reading for this dimension. A null value with a populated 'note' is the correct representation of a genuine data gap \u2014 never interpolate or pro-rate a citywide figure.",
+      "properties": {
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "level": {
+          "$ref": "#/definitions/level"
+        },
+        "year": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "source": {
+          "type": "string"
+        },
+        "sourceUrl": {
+          "type": "string"
+        },
+        "confidence": {
+          "$ref": "#/definitions/confidence"
+        },
+        "note": {
+          "type": "string",
+          "description": "Required when value is null: why the figure is unavailable at this scale and what the closest proxy or holder of the data is."
+        }
+      }
+    },
+    "lensEntry": {
+      "type": "object",
+      "description": "A single lens reading for a dimension. Used for the optional 'global' block.",
+      "required": [
+        "lens",
+        "level"
+      ],
+      "properties": {
+        "lens": {
+          "type": "string",
+          "enum": [
+            "local-social",
+            "local-ecological",
+            "global-social",
+            "global-ecological"
+          ]
+        },
+        "level": {
+          "$ref": "#/definitions/level"
+        },
+        "levelRationale": {
+          "type": "string",
+          "description": "Why this level, tied explicitly to the stated target."
+        },
+        "indicator": {
+          "type": "string"
+        },
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "year": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "target": {
+          "type": "string"
+        },
+        "context": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "sourceUrl": {
+          "type": "string"
+        },
+        "confidence": {
+          "$ref": "#/definitions/confidence"
+        },
+        "geographicScale": {
+          "$ref": "#/definitions/geographicScale"
+        },
+        "productionVsConsumption": {
+          "$ref": "#/definitions/productionVsConsumption"
+        },
+        "productionVsConsumptionNote": {
+          "type": "string"
+        }
+      }
+    },
     "dimension": {
       "type": "object",
-      "required": ["name", "level", "indicator", "value", "source", "sourceUrl"],
+      "required": [
+        "name",
+        "level",
+        "indicator",
+        "value",
+        "source",
+        "sourceUrl"
+      ],
       "properties": {
         "name": {
           "type": "string",
           "enum": [
-            "food", "health", "education", "income & work", "housing",
-            "water & sanitation", "energy", "social equity",
-            "peace & justice", "political voice", "gender equality", "networks",
+            "food",
+            "health",
+            "education",
+            "income & work",
+            "housing",
+            "water & sanitation",
+            "energy",
+            "social equity",
+            "peace & justice",
+            "political voice",
+            "gender equality",
+            "networks",
             "mobility",
-            "climate change", "ocean acidification", "chemical pollution",
-            "nitrogen & phosphorus loading", "freshwater withdrawals",
-            "land conversion", "biodiversity loss", "air pollution",
+            "climate change",
+            "ocean acidification",
+            "chemical pollution",
+            "nitrogen & phosphorus loading",
+            "freshwater withdrawals",
+            "land conversion",
+            "biodiversity loss",
+            "air pollution",
             "ozone layer depletion",
-            "waste & materials"
+            "waste & materials",
+            "heat & climate resilience"
           ]
         },
-        "level": {
-          "type": ["number", "null"],
-          "minimum": -100,
-          "maximum": 150,
-          "description": "-100=no problem, -50=under control, 0=on track, 50=needs attention, 100=critical, 150=severe, null=unknown"
-        },
-        "indicator": { "type": "string", "description": "What metric is being measured" },
-        "value": { "type": "string", "description": "The actual data value with units" },
-        "year": { "type": ["integer", "null"] },
-        "target": { "type": "string" },
-        "context": { "type": "string", "description": "2-3 sentences of context" },
-        "source": { "type": "string", "description": "Primary source name" },
-        "sourceUrl": { "type": "string", "format": "uri" },
-        "screenshot": { "type": ["string", "null"] },
-        "confidence": {
+        "lens": {
           "type": "string",
-          "enum": ["high", "medium", "low"],
-          "default": "medium"
+          "enum": [
+            "local-social",
+            "local-ecological"
+          ],
+          "description": "Which local lens the top-level fields of this dimension represent. Defaults by ring: social dimensions are local-social, ecological dimensions are local-ecological."
+        },
+        "level": {
+          "$ref": "#/definitions/level"
+        },
+        "levelRationale": {
+          "type": "string",
+          "description": "One or two sentences justifying the level against the stated target. Expected in practice for any non-null level."
+        },
+        "indicator": {
+          "type": "string",
+          "description": "What metric is being measured"
+        },
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "The actual data value with units"
+        },
+        "year": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "target": {
+          "type": "string"
+        },
+        "context": {
+          "type": "string",
+          "description": "2-5 sentences of context"
+        },
+        "source": {
+          "type": "string",
+          "description": "Primary source name"
+        },
+        "sourceUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "screenshot": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confidence": {
+          "$ref": "#/definitions/confidence"
         },
         "geographicScale": {
+          "$ref": "#/definitions/geographicScale"
+        },
+        "productionVsConsumption": {
+          "$ref": "#/definitions/productionVsConsumption"
+        },
+        "productionVsConsumptionNote": {
           "type": "string",
-          "enum": ["city", "county", "metro", "state", "national", "global"],
-          "description": "Geographic level of the data"
+          "description": "Free-text qualification of the production/consumption basis, where the enum alone loses information (e.g. 'consumption-based; framing only, not quantified for this city')."
+        },
+        "boroughs": {
+          "type": "object",
+          "description": "Sub-jurisdiction disaggregation for this dimension. Keys should match meta.subJurisdictions.",
+          "additionalProperties": {
+            "$ref": "#/definitions/subJurisdictionEntry"
+          }
+        },
+        "neighborhoodNote": {
+          "type": "string",
+          "description": "The sharpest intra-jurisdiction disparity for this dimension, with named places and sourced values."
+        },
+        "global": {
+          "allOf": [
+            {
+              "$ref": "#/definitions/lensEntry"
+            }
+          ],
+          "description": "The global lens for this dimension: global-social for social dimensions, global-ecological for ecological ones. What the jurisdiction's footprint or responsibility looks like beyond its own boundary."
+        },
+        "policyAnchors": {
+          "type": "array",
+          "description": "The binding or stated commitments this dimension's target is drawn from.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "relevance": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "description": "Verified status as of the research date."
+              },
+              "sourceUrl": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "comparisonNote": {
+          "type": "string",
+          "description": "How this jurisdiction differs from a peer portrait on this dimension, with both figures where known. Makes multi-city portraits worth comparing."
+        },
+        "dataGaps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Specific missing data plus which agency or expert would hold it."
         },
         "actions": {
           "type": "array",
-          "items": { "type": "string" },
-          "description": "3-5 concrete ways residents can get involved"
+          "items": {
+            "type": "string"
+          },
+          "description": "3-6 concrete, jurisdiction-specific ways residents can get involved"
+        },
+        "experts": {
+          "type": "array",
+          "description": "Organizations to consult for indicator validation. Organizations and public contact routes only \u2014 never a private individual's personal contact details.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "org": {
+                "type": "string"
+              },
+              "why": {
+                "type": "string"
+              },
+              "contactPath": {
+                "type": "string"
+              }
+            }
+          }
         },
         "subIndicators": {
           "type": "array",
           "items": {
             "type": "object",
             "properties": {
-              "name": { "type": "string" },
-              "value": { "type": "string" },
-              "year": { "type": "integer" },
-              "source": { "type": "string" },
-              "sourceUrl": { "type": "string" }
+              "name": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              },
+              "year": {
+                "type": "integer"
+              },
+              "source": {
+                "type": "string"
+              },
+              "sourceUrl": {
+                "type": "string"
+              },
+              "geographicScale": {
+                "$ref": "#/definitions/geographicScale"
+              },
+              "geographicScaleNote": {
+                "type": "string"
+              }
             }
           },
           "description": "Additional data points for this dimension"
+        },
+        "reviewStatus": {
+          "type": "object",
+          "description": "Provenance of the severity level and figures.",
+          "properties": {
+            "state": {
+              "type": "string",
+              "enum": [
+                "draft",
+                "adversarially-reviewed",
+                "expert-validated"
+              ],
+              "description": "draft=assigned by a research pass, not yet checked; adversarially-reviewed=an independent reviewer re-fetched sources and applied corrections; expert-validated=confirmed by a topic expert."
+            },
+            "reviewedLevel": {
+              "$ref": "#/definitions/level"
+            },
+            "originalLevel": {
+              "$ref": "#/definitions/level"
+            },
+            "findingsCount": {
+              "type": "integer"
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        },
+        "geographicScaleNote": {
+          "type": "string",
+          "description": "Free-text qualification of the geographic scale where the enum loses information (e.g. 'city (Jamaica Bay only)')."
         }
       }
     }

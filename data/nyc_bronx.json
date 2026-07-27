@@ -1,0 +1,752 @@
+{
+  "meta": {
+    "id": "nyc_bronx",
+    "name": "The Bronx",
+    "region": "New York",
+    "country": "US",
+    "population": "~1,356,000",
+    "description": "The Bronx (Bronx County), one of New York City's five boroughs. Derived from the NYC citywide portrait: each dimension shows the borough's own figure where one is published, and falls back to the citywide figure — flagged in the context — where it is not.",
+    "jurisdictionType": "borough",
+    "parentId": "nyc_ny",
+    "lenses": [
+      "local-social",
+      "local-ecological",
+      "global-social",
+      "global-ecological"
+    ],
+    "policyAnchor": "Local Law 97 of 2019 · PlaNYC: Getting Sustainability Done (2023) · City of Yes (2024) · NY State CLCPA",
+    "lastUpdated": "2026-07-27"
+  },
+  "social": [
+    {
+      "name": "food",
+      "lens": "local-social",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "health",
+      "lens": "local-social",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "education",
+      "lens": "local-social",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "income & work",
+      "lens": "local-social",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "water & sanitation",
+      "lens": "local-social",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "energy",
+      "lens": "local-social",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "networks",
+      "lens": "local-social",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "housing",
+      "lens": "local-social",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "gender equality",
+      "lens": "local-social",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "social equity",
+      "lens": "local-social",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "political voice",
+      "lens": "local-social",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "peace & justice",
+      "lens": "local-social",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "mobility",
+      "lens": "local-social",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    }
+  ],
+  "ecological": [
+    {
+      "name": "climate change",
+      "lens": "local-ecological",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "ocean acidification",
+      "lens": "local-ecological",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "chemical pollution",
+      "lens": "local-ecological",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "nitrogen & phosphorus loading",
+      "lens": "local-ecological",
+      "level": -20,
+      "levelRationale": "NYC still discharges ~18 billion gallons/year of untreated combined sewage through 398 outfalls (CSO), and the city has missed its first two green-infrastructure milestones (1.5% by 2015, 4% by 2020, against a 2030 goal), which argues for 'needs attention.' That is offset by genuinely large, verified nitrogen-specific point-source gains (>58% cut at the four East River WRRFs, ~50%+ cut into Jamaica Bay since 2010) and a harbor-wide dissolved-oxygen record that has been above the NYS 5.0 mg/L standard every summer since the 1990s — real, monitored improvement a small-city groundwater-nitrate problem like Petaluma's does not have an equivalent to.",
+      "indicator": "Combined sewer overflow (CSO) annual discharge volume, paired with wastewater nitrogen loading to receiving waters",
+      "value": "Hunts Point WRRF (Bronx): biological nitrogen removal retrofit cut nitrogen discharge from ~22,000 lbs/day to ~12,000 lbs/day (~45% reduction), part of the East River WRRF upgrade program.",
+      "year": 2025,
+      "target": "Reduce CSO volume by 1.67 billion gallons/year by 2040 and spend $3.5B on green infrastructure by 2045 (2023 CSO Consent Order Modification, DEC Case CO2-20110512-25 modifying CO2-20000107-8). Nitrogen: Long Island Sound TMDL (EPA-approved 2001) requires an aggregate 58.5% reduction in human-generated nitrogen vs. a 1990 baseline; the 2010 Jamaica Bay Nitrogen Consent Agreement targeted ~50% reduction in WRRF nitrogen loading to the bay.",
+      "context": "The Bronx: Hunts Point WRRF (Bronx): biological nitrogen removal retrofit cut nitrogen discharge from ~22,000 lbs/day to ~12,000 lbs/day (~45% reduction), part of the East River WRRF upgrade program.\n\nCitywide for comparison: ~18 billion gallons/year of combined sewage discharged citywide through 398 CSO outfalls (~60% of NYC is combined-sewered). Nitrogen: the four East River WRRFs (Wards Island, Hunts Point, Bowery Bay, Tallman Island) cut aggregate nitrogen discharge by >58% after a $1B+ upgrade program; the four Jamaica Bay WRRFs (Jamaica, 26th Ward, Coney Island, Rockaway) cut nitrogen loading to Jamaica Bay from a historic ~54,000 lbs/day to a currently reported ~18,000-20,000 lbs/day.\n\nThis is a wastewater-and-CSO story, not an agricultural-runoff story — the sharp structural contrast with Petaluma, where the same dimension is scored on groundwater nitrate near farms and septic systems. NYC's 14 WRRFs and 398 combined-sewer outfalls mean nitrogen and pathogen loading are concentrated at engineered point sources tied to rain events, not diffuse land-based leaching. The policy levers are capital-intensive: WRRF biological nutrient removal retrofits (East River, Jamaica Bay), CSO storage tunnels (Newtown Creek, Flushing Bay), and the green infrastructure program, which the city is currently behind schedule on. Caveat: the citywide 18 BGY figure and the 398-outfall count are the most current published DEP/DEC figures, but a single up-to-date, citywide nitrogen-loading total across all 14 WRRFs (as opposed to per-facility figures of varying vintage) was not found in this search.",
+      "source": "City Limits, 'City Expands East River & Long Island Sound Cleanup Effort'",
+      "sourceUrl": "https://citylimits.org/city-expands-east-river-long-island-sound-cleanup-effort/",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "borough",
+      "actions": [
+        "Sign up for NYC DEP's Sewage Pollution Right to Know Act discharge alerts before swimming, boating, or fishing in waterways like the Gowanus Canal, Newtown Creek, Flushing Bay, or Jamaica Bay.",
+        "Comment during the Citywide (East River/Open Waters) and Jamaica Bay Long Term Control Plan public review processes (contact: ltcp@dep.nyc.gov) to push for faster green infrastructure buildout, given the city has already missed its 2015 and 2020 milestones.",
+        "Volunteer with Jamaica Bay Ecowatchers or the NY-NJ Harbor & Estuary Program on salt-marsh monitoring and restoration tied to the bay's nitrogen-loading history.",
+        "Support DEP's transition toward 100% beneficial reuse of biosolids (rather than landfilling) by following and commenting on DEP's Biosolids Management/Beneficial Use Plan solicitations, which also affects phosphorus recovery.",
+        "Track and testify at NYC Council's Committee on Environmental Protection, Resiliency and Waterfronts on CSO-reduction reporting and green infrastructure funding tied to the 2022 NYS Environmental Bond Act.",
+        "Reduce household use of high-phosphorus detergents/fertilizers, which still contribute to combined sewer and stormwater nutrient loads reaching CSO-affected waterways."
+      ],
+      "reviewStatus": {
+        "state": "draft",
+        "reviewedLevel": 40,
+        "notes": "DRAFT severity — not yet adversarially reviewed or expert-validated."
+      },
+      "productionVsConsumption": "production-based",
+      "neighborhoodNote": "Jamaica Bay (bordering southeast Brooklyn and southern Queens/the Rockaways) and the Gowanus Canal (Brooklyn) are the sharpest intra-city hot spots: both are enclosed, low-flushing waterbodies where nitrogen loading has historically driven hypoxia and salt-marsh loss, versus open, well-flushed reaches of the East River/Upper Bay where the Harbor Survey shows dissolved oxygen consistently meeting state standards. Source: NYC DEP Jamaica Bay page and Jamaica Bay Ecowatchers timeline (https://www.nyc.gov/site/dep/water/jamaica-bay.page, https://jamaicabayecowatchers.org/about-us/timeline-history-and-accomplishments/).",
+      "subIndicators": [
+        {
+          "name": "Harbor-wide summer average dissolved oxygen",
+          "value": "Above the NYS minimum standard of 5.0 mg/L every summer since the 1990s, at open-water sites (surface and bottom), based on a 40-site weekly Harbor Survey run since 1909",
+          "year": 2024,
+          "source": "NYC DEP Harbor Survey Program / NYC Environment & Health Data Portal",
+          "sourceUrl": "https://a816-dohbesp.nyc.gov/IndicatorPublic/data-explorer/waterways/?id=2427",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Green infrastructure milestone compliance",
+          "value": "City missed both prior 5-year milestones under its Green Infrastructure Grant Program order (1.5% of combined-sewer-area impervious surface managed by 2015; 4% by 2020), against a goal of managing GI on ~8,000 of the ~78,000 impervious acres (10%) by 2030; cumulative GI-attributable CSO reduction reported at 668 million gallons/year as of December 2025",
+          "year": 2025,
+          "source": "Center for an Urban Future / NYC DEP green infrastructure milestone certification",
+          "sourceUrl": "https://www.nyc.gov/assets/dep/downloads/pdf/water/stormwater/green-infrastructure/2025-green-infrastructure-milestone-certification.pdf",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Jamaica Bay nitrogen loading trend",
+          "value": "Reduced from a historic ~54,000 lbs/day to ~18,000-20,000 lbs/day, roughly a 50%+ cut, under the 2010 Nitrogen Consent Agreement ($100M in WRRF nitrogen-control technology + $15M for marsh restoration)",
+          "year": 2020,
+          "source": "The Wave / Jamaica Bay Ecowatchers reporting; NRDC",
+          "sourceUrl": "https://www.rockawave.com/articles/a-jamaica-bay-milestone/",
+          "geographicScale": "city"
+        }
+      ],
+      "global": {
+        "lens": "global-ecological",
+        "level": 65,
+        "levelRationale": "No NYC-specific quantified nitrogen- or phosphorus-footprint study was located, so this level rests on a proxy: nitrogen is one of the planetary boundaries scientists (Steffen et al. 2015, Rockström et al.) consider already transgressed globally at a 'high risk' level via synthetic fertilizer use, and NYC's food supply is entirely import-dependent on that globally overshot system. That directional judgment supports a 'needs attention'-to-'critical' score, but the lack of a city-specific number keeps me from placing it higher with confidence.",
+        "indicator": "NYC's embodied/consumption-based nitrogen footprint via its imported food supply (no verified city-specific study found; scaled from national per-capita averages as an order-of-magnitude proxy)",
+        "value": "Not directly measured for NYC. The U.S. average per-capita nitrogen footprint is reported as roughly 30-41 kg N/person/year (dominated by food production), per the N-Print project (University of Virginia). Applying that national average to NYC's ~8.3M residents implies a rough order-of-magnitude footprint of roughly 250,000-340,000 metric tons N/year — this is an extrapolation from a national figure, not a measured NYC number, and should be treated as illustrative only.",
+        "year": 2018,
+        "target": "No NYC-specific target exists. The relevant global anchor is the planetary nitrogen boundary itself: Steffen et al. (2015) put the safe boundary for anthropogenic nitrogen fixation at 62-82 Tg N/year, against actual global fixation estimated at roughly 150 Tg N/year (already substantially overshot).",
+        "context": "NYC's nitrogen and phosphorus footprint is transmitted globally through its food system: importing produce, grain, meat, and dairy from farms that use synthetic fertilizer manufactured from mined phosphate rock (a finite resource concentrated in Morocco/Western Sahara) and fossil-fuel-derived nitrogen. A 2020 peer-reviewed 'community nitrogen footprint' methodology applied to Baltimore City (~19,000 metric tons N/year, ~30 kg N/capita/year, 73% from food production) is the closest published municipal-scale analog and shows this kind of analysis is feasible for a U.S. city; it has not, to my knowledge, been done for NYC. Separately, NYC exports its wastewater biosolids (roughly 500,000+ tons/year across all 14 WRRFs) largely to landfill and historically to out-of-state land application (Colorado, Florida, 1992-2010); each ton landfilled instead of land-applied represents phosphorus that is not being returned to agricultural soils, a lost-recovery issue tied to the finite global phosphate-rock reserve.",
+        "source": "N-Print project (University of Virginia); Wang, Castellanos-Beltran et al. 'A community nitrogen footprint analysis of Baltimore City, Maryland' (IOPscience, 2020) as methodological analog",
+        "sourceUrl": "https://n-print.org/YourNFootprint",
+        "confidence": "low",
+        "geographicScale": "global",
+        "productionVsConsumption": "consumption-based"
+      },
+      "policyAnchors": [
+        {
+          "name": "2023 CSO Consent Order Modification (DEC Case CO2-20110512-25, modifying CO2-20000107-8)",
+          "relevance": "Sets the binding citywide CSO reduction target (1.67 billion gallons/year by 2040) and green infrastructure spending commitment ($3.5B by 2045) that anchors the local-ecological CSO figure.",
+          "status": "Active and being reported on quarterly; a 2026 Q1 CSO quarterly report was found published by DEP, and DEP filed a Newtown Creek CSO Storage Tunnel FEIS/Notice of Completion in February 2026 and a Flushing Bay alternative storage-tunnel modification report in December 2025, indicating the consent order's major capital projects are actively moving through design/environmental review as of mid-2026.",
+          "sourceUrl": "https://www.nyc.gov/assets/dep/downloads/pdf/water/nyc-waterways/citywide-ltcp/2025-q4-cso-quarterly-report.pdf"
+        },
+        {
+          "name": "Sewage Pollution Right to Know Act (SPRTKA) enforcement",
+          "relevance": "A December 2023 NYS Supreme Court ruling found DEP had failed to meet SPRTKA's requirement to notify the public of CSO discharges within 4 hours; ongoing compliance affects how quickly residents learn of nitrogen/pathogen-bearing discharges before contact with waterways.",
+          "status": "Ruling issued December 2023 following litigation by Waterkeeper Alliance, Riverkeeper, NRDC and partners via the Pace Environmental Litigation Clinic; I could not confirm from available sources whether any appeal was filed or resolved by mid-2026 — flagged as unconfirmed.",
+          "sourceUrl": "https://waterkeeper.org/news/new-york-state-supreme-court-rules-nyc-department-of-environmental-protection-failed-to-report-combined-sewer-overflow-discharges/"
+        },
+        {
+          "name": "Long Island Sound Nitrogen TMDL (EPA-approved 2001)",
+          "relevance": "The binding regional target (58.5% aggregate reduction in human-generated nitrogen from a 1990 baseline) that NYC's East River WRRF upgrades were built to satisfy.",
+          "status": "NEIWPCC reports hypoxic area/volume in the Sound is trending down and NY/CT continue implementation alongside EPA's 2015 Nitrogen Reduction Strategy, but ecosystem-level targets (e.g., eelgrass extent) remain below goals — described as 'ongoing' rather than complete.",
+          "sourceUrl": "https://neiwpcc.org/our-programs/pollution-control/lis-tmdl/"
+        },
+        {
+          "name": "2010 Jamaica Bay Nitrogen Consent Agreement",
+          "relevance": "The specific $115M agreement ($100M WRRF nitrogen-control tech + $15M marsh restoration) that drove the Jamaica Bay WRRF nitrogen cuts and salt-marsh mitigation funding referenced in the local-ecological entry.",
+          "status": "Reported by Jamaica Bay Ecowatchers as substantially implemented, with the wetland mitigation fund created under the agreement noted as concluded in recent reporting; the 26th Ward carbon-addition facility (an additional, more recent nitrogen-control project) has separately been completed.",
+          "sourceUrl": "https://www.rockawave.com/articles/a-jamaica-bay-milestone/"
+        },
+        {
+          "name": "NYS Clean Water, Clean Air and Green Jobs Environmental Bond Act (2022, $4.2B)",
+          "relevance": "A funding source explicitly eligible for CSO/stormwater and water-infrastructure projects (at least $200M for water infrastructure, at least $250M for stormwater/algal-bloom-related projects statewide), relevant to financing NYC's green infrastructure buildout.",
+          "status": "Passed by referendum in 2022; grant guideline documents were still being issued/revised into 2024, and the NY League of Conservation Voters published a 'three years on' status review — implementation is ongoing rather than complete.",
+          "sourceUrl": "https://www.nylcv.org/news/the-environmental-bond-act-three-years-on/"
+        }
+      ],
+      "comparisonNote": "Petaluma's nitrogen & phosphorus story is groundwater nitrate near agricultural land and septic systems (most wells below the 10 mg/L drinking-water standard, with 4-7 mg/L hotspots near ag boundaries, scored level 20). NYC's is an engineered wastewater-and-CSO story roughly three orders of magnitude larger: 18 billion gallons/year of combined sewage through 398 outfalls citywide and 14 WRRFs whose historic point-source nitrogen loading required a $1B+ East River upgrade program and a separate 2010 Jamaica Bay consent agreement — there is essentially no diffuse agricultural-runoff analog in NYC's version of this dimension, and no groundwater-nitrate analog either, since NYC draws its water from upstate reservoirs rather than local wells.",
+      "dataGaps": [
+        "A single, current, citywide total for nitrogen (and especially phosphorus) loading across all 14 WRRFs was not found; DEP/NYSDEC report by individual facility SPDES discharge monitoring reports (DMRs) of varying vintage, not a rolled-up citywide figure — NYC DEP's Bureau of Wastewater Treatment or NYSDEC's eDMR/EPA ECHO database would have the facility-level source data needed to build one.",
+        "No borough-aggregated CSO volume totals are published; DEP/DEC report by waterbody/watershed (Gowanus Canal, Newtown Creek, Flushing Bay, Jamaica Bay, Bronx River, etc.), which only partially maps to boroughs and sometimes spans two.",
+        "Current (2025/2026) biosolids destination and landfill-vs-beneficial-use percentages could not be confirmed; the figures found (roughly 69% landfill/31% beneficial use) appear to predate DEP's stated 2030 100%-diversion goal — DEP's current Biosolids Management/Beneficial Use Plan would have up-to-date figures.",
+        "No NYC-specific phosphorus loading or consumption-based phosphorus-footprint figure was found at all; this dimension is currently written almost entirely from the nitrogen side, which is defensible because nitrogen (not phosphorus) is the limiting, TMDL-regulated nutrient in NYC's marine/estuarine receiving waters, but a topic expert should confirm whether phosphorus deserves a more prominent, separately sourced sub-indicator.",
+        "The exact percentage of Staten Island's land area covered by the ~10,000-acre Bluebelt program (and therefore how much of the borough is truly free of combined-sewer/CSO exposure) was not found in a primary DEP source."
+      ],
+      "experts": [
+        {
+          "org": "NYC DEP Bureau of Wastewater Treatment",
+          "why": "Holds facility-level SPDES discharge monitoring data for nitrogen and phosphorus across all 14 WRRFs and the current Biosolids Management/Beneficial Use Plan status.",
+          "contactPath": "https://www.nyc.gov/site/dep/water/wastewater-treatment-plants.page (general DEP public contact/311)"
+        },
+        {
+          "org": "NEIWPCC (Long Island Sound Study coordination)",
+          "why": "Coordinates LIS TMDL progress reporting between NY and CT and could confirm NYC's specific facility-level contribution to the aggregate 58.5% nitrogen-reduction target.",
+          "contactPath": "https://neiwpcc.org/our-programs/pollution-control/lis-tmdl/"
+        },
+        {
+          "org": "Jamaica Bay Ecowatchers",
+          "why": "Long-running community monitoring group with direct knowledge of the Jamaica Bay nitrogen consent agreement's implementation, current loading figures, and salt-marsh restoration status.",
+          "contactPath": "https://jamaicabayecowatchers.org/about-us/"
+        },
+        {
+          "org": "NY-NJ Harbor & Estuary Program / Hudson River Foundation",
+          "why": "Publishes the periodic 'State of the Estuary' report and coordinates the DEP Harbor Survey dissolved-oxygen dataset used in this dossier.",
+          "contactPath": "https://www.hudsonriver.org/"
+        },
+        {
+          "org": "Riverkeeper / Waterkeeper Alliance (Pace Environmental Litigation Clinic coalition)",
+          "why": "Party to the SPRTKA CSO-reporting litigation and closely tracks NYC's CSO Long Term Control Plan compliance.",
+          "contactPath": "https://waterkeeper.org/news/category/press-releases/"
+        }
+      ]
+    },
+    {
+      "name": "freshwater withdrawals",
+      "lens": "local-ecological",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "land conversion",
+      "lens": "local-ecological",
+      "level": -20,
+      "levelRationale": "Citywide tree canopy is at 23.4% against a legally-mandated 30% goal (Local Law 148 of 2023) — about 78% of the way there — but the city's own April 2026 Urban Forest Plan pushed the deadline from 2035 to 2040 and acknowledges current growth trends (about +0.3 pts/yr) will miss even that; independent analysts project 2055+ at present funding levels. Combined with historic near-total loss of Jamaica Bay's salt marsh islands (only partially reversed by restoration), this is 'needs attention' rather than 'on track,' despite real, measurable gains.",
+      "indicator": "Tree canopy cover % (citywide), with parkland %, impervious surface %, and wetland loss/restoration as supporting sub-indicators",
+      "value": "26.7% tree canopy (2021)",
+      "year": 2021,
+      "target": "30% tree canopy citywide 'in an equitable manner,' mandated by Local Law 148 of 2023 and reaffirmed in PlaNYC: Getting Sustainability Done (2023); implementing Urban Forest Plan released April 2026 by the Mayor's Office of Climate & Environmental Justice moved the target date from 2035 to 2040",
+      "context": "The Bronx: 26.7% tree canopy (2021)\n\nCitywide for comparison: 23.4% canopy citywide (45,247 acres) in 2021, up from 22.2% (2017) and 20.37% (2010); ~72% of the city's 305 sq mi land area is impervious surface (buildings, roads, sidewalks); NYC Parks manages >30,000 acres = 14% of city land as parkland, rising to ~19.5% (38,000–50,000 acres) if state/federal parkland within the five boroughs is included\n\nUnlike Petaluma, where 'land conversion' means whether farmland/open space outside an urban growth boundary gets paved over, NYC is already ~72% impervious — the meaningful question is how much of the remaining pervious/natural fraction is protected, growing, or being lost, and whether the city's own growth model (infill density) is itself averting conversion elsewhere. Nearly 90% of 2017–2021 canopy growth came from existing trees expanding rather than new plantings, and the only net canopy LOSS citywide was on one- and two-family residential lots, concentrated in southeastern Queens — meaning small-lot residential development/hardscaping is the marginal driver of loss even in a built-out city. The policy lever is Local Law 148 implementation funding (flagged as under-resourced by the City Comptroller) plus zoning/permitting practices for residential lot coverage. Caveat: canopy %, parkland %, and impervious % measure related but distinct things and none alone is a perfect proxy; we present all three rather than picking one number to represent 'land conversion' for a megacity.",
+      "source": "2021 LiDAR canopy assessment (Nature Conservancy/USDA Forest Service), as reported by NBC New York citing NYC Urban Forest Plan data",
+      "sourceUrl": "https://www.nbcnewyork.com/news/local/nyc-urban-forest-plan-trees-mamdani-report-staten-island/6492728/",
+      "screenshot": null,
+      "confidence": "medium",
+      "geographicScale": "borough",
+      "actions": [
+        "Support Forest for All NYC (coalition of NYC Parks, Natural Areas Conservancy, TNC, and community groups) and its push to fully fund Local Law 148 Urban Forest Plan implementation",
+        "Volunteer with the Natural Areas Conservancy's forest and wetland restoration programs in your borough's natural areas",
+        "Comment on City of Yes for Housing Opportunity implementation rezonings (via NYC Department of City Planning's public review process) to support infill over any greenfield/natural-area development pressure",
+        "Support Jamaica Bay marsh restoration volunteer days through the National Park Service's Gateway National Recreation Area or Jamaica Bay Ecowatchers",
+        "Advocate for closing the ~7-point canopy gap in Environmental Justice communities by contacting your City Council member about MOCEJ Urban Forest Plan funding",
+        "Push NYC pension funds and the Mayor's Office of Food Policy to require deforestation-free sourcing standards in the Good Food Purchasing Program's institutional food contracts"
+      ],
+      "reviewStatus": {
+        "state": "draft",
+        "reviewedLevel": 50,
+        "notes": "DRAFT severity — not yet adversarially reviewed or expert-validated."
+      },
+      "productionVsConsumption": "production-based",
+      "productionVsConsumptionNote": "production-based (physical land cover within city limits)",
+      "neighborhoodNote": "Environmental-justice-designated communities have ~19% canopy coverage versus ~26% in non-EJ areas — a 7-percentage-point gap the city's own 2026 Urban Forest Plan names as a racial/environmental-justice priority (NBC New York, citing MOCEJ Urban Forest Plan, April 2026). Within Queens, southeastern neighborhoods are where the city's only net residential canopy loss is occurring (The Nature Conservancy, 2021).",
+      "subIndicators": [
+        {
+          "name": "Natural Areas Conservancy-assessed forest, marsh & wetland acreage co-managed with NYC Parks",
+          "value": "~10,000 acres of forest, salt marsh, and freshwater wetland across the five boroughs",
+          "year": 2013,
+          "source": "Natural Areas Conservancy",
+          "sourceUrl": "https://naturalareasnyc.org/about/",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Jamaica Bay salt-marsh-island loss and restoration",
+          "value": "Marsh islands declined from ~2,350 acres (1951) to ~800 acres remaining; ~1,400 acres of tidal marsh lost since 1924, with a peak loss rate of ~44 acres/year (1994-1999); since 2003 a multi-agency effort (NPS, US Army Corps, NYS DEC, NYC DEP, Port Authority) has restored ~150 acres, including ~60 acres at Elders Point East/West",
+          "year": 2024,
+          "source": "National Park Service, Gateway National Recreation Area",
+          "sourceUrl": "https://www.nps.gov/gate/learn/nature/marshrestoration.htm",
+          "geographicScale": "city",
+          "geographicScaleNote": "city (Jamaica Bay)"
+        },
+        {
+          "name": "Special Natural Area Districts (zoning tool restricting development on steep slopes, forests, wetlands)",
+          "value": "4 Special Natural Area Districts citywide, e.g. NA-1 covering Staten Island's central wetlands/Emerson Hill/Todt Hill area and NA-2 covering Riverdale/Spuyten Duyvil/Fieldston in the Bronx",
+          "year": 2024,
+          "source": "NYC Department of City Planning, Zoning Resolution Article X Chapter 5",
+          "sourceUrl": "https://zoningresolution.planning.nyc.gov/article-x/chapter-5",
+          "geographicScale": "city"
+        },
+        {
+          "name": "City of Yes for Housing Opportunity — infill capacity added without greenfield conversion",
+          "value": "Adopted Dec 5, 2024; targets ~80,000 new housing units over 15 years primarily via infill on existing built lots/campuses and modest density increases (e.g. ~20% more floor area for affordable housing under the Universal Affordability Preference), rather than extending the built footprint onto new land",
+          "year": 2024,
+          "source": "NYC Department of City Planning / City Council",
+          "sourceUrl": "https://www.nyc.gov/site/planning/plans/city-of-yes/city-of-yes-for-housing-opportunity.page",
+          "geographicScale": "city"
+        }
+      ],
+      "global": {
+        "lens": "global-ecological",
+        "level": null,
+        "levelRationale": "No NYC-specific study quantifying the land/deforestation footprint embodied in the city's food, timber, or commodity consumption was found. Global literature establishes the mechanism (beef, soy, and palm oil together drive roughly 60% of tropical deforestation from commodity production) but no source scales this to NYC's population or Hunts Point Market's sourcing geography specifically, so a level would be fabricated. Scored null per the hard rule against inventing figures.",
+        "indicator": "Embodied land-use/deforestation footprint of NYC's food, timber, and commodity consumption (proposed; not yet quantified for NYC)",
+        "value": "Not quantified for NYC. Best available global evidence: beef (cattle/buffalo, ~27% of the total), oil palm, and soy are the top three agricultural commodities driving tropical deforestation worldwide; these three commodities account for roughly 60% of 21st-century tropical deforestation from agricultural expansion.",
+        "year": 2025,
+        "target": "No NYC-specific target exists. Analogous frameworks: NYC's Good Food Purchasing Program (institutional food procurement standards) and citywide Zero Waste goals do not currently include a land-footprint or deforestation-free sourcing metric.",
+        "context": "NYC's population of 8.3M, its role as a global wholesale hub (Hunts Point produce, meat, and fish markets), and its concentration of corporate food/commodity buyers give it an outsized indirect land footprint relative to its physical size — the inverse framing of the local-ecological lens above, where the city's built density is a land-conservation act. This footprint is transmitted through supply chains (imported beef, soy-fed livestock products, palm oil in packaged food, tropical hardwoods and paper), not through direct land conversion within the five boroughs. It is conceptually the land-use analog to the well-documented gap between NYC's production-based GHG inventory and its higher consumption-based footprint. No source was found that isolates NYC (or even the NY metro) from national U.S. per-capita averages, so any NYC-specific number here would be an estimate presented as fact — instead this is flagged as a research gap. NYC's ~200,000+ acres of protected upstate watershed land (Catskill/Delaware system) is the one large, well-quantified land-protection footprint NYC holds outside its own boundaries, but it protects drinking-water quality rather than offsetting consumption-driven deforestation, so it is reported here for completeness rather than folded into a global-footprint number.",
+        "source": "Forest Trends / Nature Reviews Earth & Environment, 'The global deforestation footprint of agriculture and forestry' (2025); no NYC-specific source located",
+        "sourceUrl": "https://www.nature.com/articles/s43017-025-00660-3",
+        "confidence": "low",
+        "geographicScale": "global",
+        "productionVsConsumption": "consumption-based",
+        "productionVsConsumptionNote": "consumption-based (global commodity/food supply chains); framing only, not quantified for NYC"
+      },
+      "policyAnchors": [
+        {
+          "name": "Local Law 148 of 2023",
+          "relevance": "Mandates a citywide Urban Forest Plan and sets the binding 30% tree-canopy-by-a-date target that anchors the local-ecological headline indicator.",
+          "status": "The Mayor's Office of Climate & Environmental Justice released the first Urban Forest Plan in April 2026, keeping the 30% target but pushing the deadline from 2035 to 2040; the plan lists 43 actions across public agencies and private partners. Independent commentary (RPA, Comptroller) notes current funding/growth rates would miss even 2040.",
+          "sourceUrl": "https://www.urbanforestplan.nyc/"
+        },
+        {
+          "name": "PlaNYC: Getting Sustainability Done (2023)",
+          "relevance": "The citywide sustainability plan that first codified the 30% canopy-by-2035 aspiration later formalized in Local Law 148.",
+          "status": "Superseded in operational detail by the 2026 Urban Forest Plan for this specific target; broader PlaNYC goals remain the city's overarching sustainability framework as of mid-2026.",
+          "sourceUrl": "https://thecitylife.org/2023/04/20/planyc-getting-sustainability-done-new-york-citys-strategic-climate-plan/"
+        },
+        {
+          "name": "City of Yes for Housing Opportunity",
+          "relevance": "Directly supports the 'density as land conservation' counter-framing: adds infill housing capacity (~80,000 units over 15 years) via zoning reform rather than greenfield expansion.",
+          "status": "Adopted by City Council Dec 5, 2024; in the implementation/rezoning-application phase as of mid-2026.",
+          "sourceUrl": "https://www.nyc.gov/site/planning/plans/city-of-yes/city-of-yes-for-housing-opportunity.page"
+        },
+        {
+          "name": "NY State 30x30 Act (2022 amendments to Environmental Conservation Law)",
+          "relevance": "Statewide analog to California's 30x30 goal cited in the Petaluma portrait; sets a 30%-of-state-lands-and-waters-conserved-by-2030 target that NYC's parkland and watershed holdings contribute to.",
+          "status": "DEC and OPRHP finalized 30x30 open-space conservation strategies and methodology in 2026; statewide conservation stood at roughly 23% as of the most recent public reporting (2024).",
+          "sourceUrl": "https://dec.ny.gov/nature/open-space/30x30"
+        },
+        {
+          "name": "NYC DEP Watershed Land Acquisition Program / Filtration Avoidance Determination (FAD)",
+          "relevance": "NYC's single largest land-protection program by acreage; buying upstate Catskill/Delaware watershed land (up to 105,000 acres authorized since 1997, on top of 200,000+ acres already protected over ~200 years) lets the city avoid building a multi-billion-dollar filtration plant — land conservation functioning as climate/water infrastructure.",
+          "status": "Active; DEP announced its highest-value single watershed land purchase in city history in 2025 (~48 acres near Kensico Reservoir, Westchester County, $12.56M), and the FAD's land-acquisition solicitation goals were revised (43% reduction in the 7-year solicitation goal through 2024) following National Academies recommendations.",
+          "sourceUrl": "https://www.nyc.gov/site/dep/news/25-034/dep-highest-value-watershed-protection-land-purchase-new-york-city-s-history"
+        }
+      ],
+      "comparisonNote": "Petaluma frames land conversion as keeping farmland and hillside open space outside its Urban Growth Boundary from being paved (~22% of Petaluma Valley/Sonoma Mountain land under conservation easement or public ownership, level 0, target ≥30% by California's 2030 30x30 goal). NYC has essentially no undeveloped land left to protect at that scale — it is already ~72% impervious — so the meaningful metric flips to how much of a nearly-built-out landscape is canopy, parkland, or restored wetland (23.4% canopy vs. a 30%-by-2040 target; 14-19.5% parkland), and to whether the city's growth model itself avoids new conversion. On that inverted metric, NYC's ultra-low per-capita land consumption (~459 m² per person vs. thousands of m² in sprawling US metros) and its infill-only 2024 rezoning (City of Yes) arguably make it the stronger land-conservation performer of the two cities at a regional/national scale, even though its raw percentage of 'natural' land is lower than Petaluma's.",
+      "dataGaps": [
+        "Borough-level parkland acreage/percentage (as distinct from tree canopy %) was not found broken out by borough in a single authoritative table — NYC Parks' 'About' and FAQ pages state citywide figures only; Community District-level open space ratios would need to come from DCP's Community District Profiles or NYC Parks' facility inventory.",
+        "Citywide impervious surface % by borough was not found; DEP's Citywide Parcel-Based Impervious Area GIS Study (NYC Open Data) may have parcel-level data that could be aggregated by borough but was not analyzed here.",
+        "No study was located quantifying NYC's (or NY metro's) specific embodied global land/deforestation footprint from food, timber, or commodity imports — this exists at the national U.S. level but not scaled to NYC.",
+        "A consolidated citywide wetland-acreage inventory (beyond Jamaica Bay specifically) — total freshwater and tidal wetland acreage and trend over time — was not found in one source; NYC DEP's wetlands mapping and the Natural Areas Conservancy's decade-old (now being refreshed) forest/wetland ecological assessment would be the sources to request directly."
+      ],
+      "experts": [
+        {
+          "org": "Natural Areas Conservancy",
+          "why": "Co-manages and is refreshing the ecological assessment of NYC's ~10,000 acres of forest, marsh, and wetland; best positioned to confirm current wetland acreage trends and forest health.",
+          "contactPath": "https://naturalareasnyc.org/about/"
+        },
+        {
+          "org": "NYC Mayor's Office of Climate & Environmental Justice (Urban Forest Plan team)",
+          "why": "Authored the April 2026 Urban Forest Plan and holds the most current canopy/EJ-gap data and implementation funding status.",
+          "contactPath": "https://www.urbanforestplan.nyc/"
+        },
+        {
+          "org": "NYC Department of Environmental Protection (Bureau of Water Supply)",
+          "why": "Administers the watershed Land Acquisition Program and Bluebelt system; can confirm current acreage protected and FAD status.",
+          "contactPath": "https://www.nyc.gov/site/dep/index.page"
+        },
+        {
+          "org": "Gateway National Recreation Area / National Park Service (Jamaica Bay Unit)",
+          "why": "Leads Jamaica Bay salt marsh restoration; can confirm current marsh acreage and restoration project pipeline.",
+          "contactPath": "https://www.nps.gov/gate/index.htm"
+        },
+        {
+          "org": "Regional Plan Association (RPA)",
+          "why": "Publishes independent analysis of NYC's urban forest funding gap and regional land-use/sprawl comparisons relevant to the density-as-conservation framing.",
+          "contactPath": "https://rpa.org/"
+        }
+      ]
+    },
+    {
+      "name": "biodiversity loss",
+      "lens": "local-ecological",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "air pollution",
+      "lens": "local-ecological",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "ozone layer depletion",
+      "lens": "local-ecological",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "waste & materials",
+      "lens": "local-ecological",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    },
+    {
+      "name": "heat & climate resilience",
+      "lens": "local-ecological",
+      "level": null,
+      "indicator": "Not yet researched",
+      "value": null,
+      "year": null,
+      "target": "TBD",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
+      "source": "Pending",
+      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "screenshot": null,
+      "confidence": "low",
+      "geographicScale": "city",
+      "actions": [],
+      "reviewStatus": {
+        "state": "draft",
+        "notes": "Not yet researched."
+      }
+    }
+  ]
+}
