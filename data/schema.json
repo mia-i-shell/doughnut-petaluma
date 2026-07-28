@@ -261,6 +261,13 @@
         },
         "productionVsConsumptionNote": {
           "type": "string"
+        },
+        "boroughs": {
+          "type": "object",
+          "description": "Sub-jurisdiction disaggregation measured on THIS lens's basis. Used where borough data exists only for the global/consumption-based accounting and not for the local/production-based one (e.g. NYC's Consumption-Based Emissions Inventory). Never mix bases between local.boroughs and global.boroughs.",
+          "additionalProperties": {
+            "$ref": "#/definitions/subJurisdictionEntry"
+          }
         }
       }
     },

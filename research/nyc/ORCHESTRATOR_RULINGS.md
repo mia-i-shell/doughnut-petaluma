@@ -1,0 +1,192 @@
+# Orchestrator Rulings — NYC Doughnut Portrait
+
+Standing decisions from the orchestrator. **Read this alongside the research or review
+brief.** These are settled: apply them, and do not re-litigate them as findings.
+If a ruling genuinely cannot be applied to your dimension, say so and explain why.
+
+---
+
+## R1. The severity `level` scores the DIMENSION, not just the headline indicator
+
+The viz renders **one wedge per dimension**, and readers interpret that wedge as the
+dimension's overall standing. So a level that faithfully scores the headline indicator
+while ignoring well-sourced failures inside the same dimension is misleading, even
+when it is technically accurate.
+
+Therefore:
+- Anchor the level primarily on the headline indicator versus its stated target.
+- **Then adjust** for material, well-sourced shortfalls captured in the
+  `subIndicators` — and say what moved it, by name, in `levelRationale`.
+- `levelRationale` must be auditable: a reader should be able to see which facts pushed
+  the number up or down.
+
+This cuts both ways. Do not let one bad sub-indicator drag a genuinely strong dimension
+into the red, and do not let a strong headline launder a real failure.
+
+**Worked example (mobility).** Drive-alone share of 20.6% against a <50% target argues
+for roughly -85. But the same dimension contains: only a minority of subway stations
+ADA-accessible (with the compliance deadline set at 2055), traffic deaths at or near
+post-Vision-Zero highs, ~8 mph bus speeds, and Fair Fares enrolling well below the
+eligible population. Those are not marginal. **Mobility should land near -45**: clearly
+inside the safe space, but not "solved". `levelRationale` must name all four pull
+factors.
+
+## R2. The global lens must be about the city's EXTERNAL footprint or responsibility
+
+A global-lens entry has to say something about how the city affects, or is responsible
+to, people and ecosystems **beyond its own boundary**. Two failure modes to avoid:
+
+- **Restating local data** with the word "global" attached. Not a global lens.
+- **A comparative performance statistic** that is merely internationally *benchmarked*.
+  "NYC's subway construction costs are the highest in the world" is a governance and
+  cost-efficiency fact about NYC, not a claim about NYC's effect on anyone else.
+
+Where a comparative benchmark is the best material available, it may stay as
+**supporting context or a subIndicator** — but it must not be the headline global
+indicator, and it must not carry a confident score on its own.
+
+**Prefer, in order:** (1) a quantified embodied/consumption-based footprint;
+(2) a quantified transmission channel (trade, finance, procurement, waste export,
+supply-chain labour, remittances, aviation); (3) an honest qualitative framing with
+`level: null` and a named party who could quantify it.
+
+**A `null` global level with strong framing beats an invented number.** Do not attach a
+precise-looking score to an unquantified claim — a `level` of 30 or 65 next to
+`confidence: "low"` and no underlying quantity is a finding, not a result.
+
+**Worked example (mobility).** Lead the global-social lens with the supply-chain and
+transferability content (rolling stock and EV-battery sourcing; NYC as the one US city
+whose mode share is compatible with a 1.5°C per-capita transport budget, and what that
+means for the ~1 billion people without all-season road access). Keep the Transit Costs
+Project figure as a subIndicator. If nothing is quantified, score `null`.
+
+## R3. Prefer the officially published figure at the target geography
+
+Where an agency or the Census publishes a figure directly at the geography you need,
+use it as the headline. A defensible aggregate you computed yourself (e.g. worker-
+weighted across the five counties) is acceptable **only** when no published
+place-level figure exists — and then the method must be stated in `value` or `context`
+and `confidence` capped at `medium`.
+
+If your own aggregate and a published figure disagree, report the **published** figure
+as the headline and note the discrepancy. Never present a derived number as if an
+agency published it.
+
+## R4. Petaluma comparability lives in prose, not in forced indicator matching
+
+Use the indicator that is genuinely right for a megacity. Cross-portrait comparability
+is carried by the `petalumaContrast` field, not by using the same metric everywhere.
+The one exception is `mobility`, where drive-alone share is the shared headline in both
+portraits by design — keep it.
+
+## R5. NYC outperforming is a real result — report it
+
+Several dimensions should score **negative** (inside the safe space): mobility mode
+share, water supply, per-capita production-based emissions, per-capita land
+consumption, homicide rate. Report those honestly and do not manufacture a problem to
+make the portrait look uniformly alarming. The portrait is more useful, and more
+credible, when the strengths are as well-evidenced as the failures.
+
+Equally, do not launder a genuine crisis (housing, Rikers, heat mortality inequity)
+into a moderate score.
+
+## R6. Settled structural decisions — do not report these as findings
+
+- Extraterritorial assets NYC controls but does not contain (e.g. the ~200,000+ acres
+  of protected upstate watershed land) are **excluded** from local scores and belong in
+  `policyAnchors` and the global lens.
+- **`waste & materials`** and **`heat & climate resilience`** are locally-defined
+  ecological dimensions, intentionally outside Raworth's 9 planetary boundaries.
+  **`mobility`** is a locally-defined social dimension outside the standard 12.
+- For nitrogen & phosphorus: **CSO volume is the headline**, WRRF nitrogen loading is a
+  subIndicator, and nitrogen-weighting over phosphorus is correct for NYC given
+  N-limited marine receiving waters.
+- A borough entry of `value: null` **plus a `note`** naming the closest proxy is the
+  correct encoding of a real gap, and must never be marked down as incompleteness.
+  An interpolated or population-pro-rated borough figure is a critical defect.
+
+## R7. Never put a consumption-based figure in a production-based slot
+
+Sometimes the only sub-jurisdiction (borough) data that exists for a dimension is
+consumption-based, while the local/production-based figure exists only citywide. That
+is exactly the case for climate change: MOCEJ publishes no production-based borough
+inventory, but the Consumption-Based Emissions Inventory (CBEI) gives real per-capita
+figures for all five boroughs.
+
+Do **not** resolve this by putting the consumption-based borough numbers into
+`local.boroughs`. The two accountings differ by a factor of nearly two; mixing them
+silently corrupts the dimension.
+
+The correct structure:
+- `local.boroughs` → `value: null` with a `note` saying production-based borough
+  inventories are not published and naming MOCEJ as the holder.
+- `global.boroughs` → the CBEI figures, which is where they actually belong. The schema
+  now supports `boroughs` on the global lens entry for exactly this.
+- The borough portraits surface the CBEI figure as an explicitly labelled
+  **consumption-based** subIndicator, never as the borough's local headline.
+
+Generalise this: whenever a sub-jurisdiction figure is measured on a different basis
+than the dimension's headline, carry it on the lens it actually belongs to and label the
+basis. Losing a real number is bad; silently mislabelling one is worse.
+
+## R8. Score against the portrait's own target, not a borrowed regional average
+
+Where a framework publishes a *typology* or regional-group average rather than a
+city-specific target (e.g. C40's "Future of Urban Consumption in a 1.5°C World"
+trajectory for "North America, Oceania & High-Income Asia"), that figure is **not** the
+city's target and must never be presented as one.
+
+Score the global lens against the portrait's standing benchmark — the DEAL
+1.5°C-aligned per-capita figure of ~1.6–2.0 tCO2e/person — so that severity is
+comparable across dimensions and across the Petaluma and NYC portraits. Cite the
+regional trajectory as supporting context, explicitly labelled as a regional-typology
+average that is not an NYC commitment.
+
+## R9. GPC production-based is the headline inventory basis
+
+For climate change, use MOCEJ's **Citywide-GPC** production-based figure as the local
+headline: it is the international city-inventory standard, it is what Local Law 97 and
+the 40x30 target are tracked against, and it is methodologically comparable to
+Petaluma's inventory. Carry the Citywide-CLCPA variant (which additionally counts
+near-term methane warming and runs higher) as a subIndicator with its basis stated —
+not as the headline, and not silently averaged in.
+
+## R10. A borough entry must measure the SAME indicator as the headline
+
+`boroughs[x].value` is reserved for the dimension's headline indicator measured at that
+borough. If the borough figure you found measures something *else* — a vulnerability
+index instead of a mortality rate, facility density instead of a load, a related
+composite instead of the metric itself — then:
+
+- set `value: null`
+- put the proxy in `note`, naming it as a proxy and naming what it actually measures
+- do **not** assign a `level` derived from the proxy
+
+This is R7 generalised to indicators rather than accounting bases. It is not a
+criticism of finding proxies — proxies are useful and belong in the dossier. It is
+about which field they go in, because the build pipeline promotes
+`boroughs[x].value` to that borough's headline figure in its own portrait. A Heat
+Vulnerability Index score sitting in the `value` slot of a heat-*mortality* dimension
+becomes, in the Bronx portrait, a sentence asserting the Bronx's heat mortality is
+"HVI 5". That is a fabrication produced by good-faith research in the wrong field.
+
+Reporting "2 of 5 boroughs have real data, 3 have proxies named in notes" is a better
+result than "5 of 5" purchased by loosening what counts.
+
+## R11. Verify a surprising figure against the previous vintage before headlining it
+
+If your figure differs substantially from the value the orchestrator's prompt suggested,
+or from the previously published vintage, that is a signal to slow down — it is roughly
+as likely to be a misread chart, a different denominator, or a redefined measure as it
+is to be a real change.
+
+Before headlining it: locate the prior year's published figure, state both, and explain
+the change (methodology revision, genuine trend, scope change). If you cannot explain
+the gap, headline the figure you can defend and put the other in a subIndicator with
+the discrepancy flagged.
+
+Specific live example: the heat dimension reports ~500 heat-related deaths/year from a
+2026 DOHMH report where the prompt suggested ~350. Both may be right — DOHMH has revised
+its heat-exacerbated-mortality methodology before — but the portrait must say which
+vintage and which definition it is using, and whether the change is methodological or
+real.

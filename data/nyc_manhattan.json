@@ -15,7 +15,7 @@
       "global-ecological"
     ],
     "policyAnchor": "Local Law 97 of 2019 · PlaNYC: Getting Sustainability Done (2023) · City of Yes (2024) · NY State CLCPA",
-    "lastUpdated": "2026-07-27"
+    "lastUpdated": "2026-07-28"
   },
   "social": [
     {
@@ -81,22 +81,248 @@
     {
       "name": "income & work",
       "lens": "local-social",
-      "level": null,
-      "indicator": "Not yet researched",
-      "value": null,
-      "year": null,
-      "target": "TBD",
-      "context": "⚠ Citywide figure shown — not specific to Manhattan. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
-      "source": "Pending",
-      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "level": 90,
+      "levelRationale": "62% of New Yorkers (5.04 million people) fall short of the City's own True Cost of Living threshold, and 73% of children live in families below it. There is no formal numeric target, but a majority of the population unable to meet basic needs without assistance is a critical-tier failure of the social foundation, not a monitoring-level concern; it falls short of 'severe/emergency' (150) only because it reflects a chronic structural gap rather than an acute collapse.",
+      "indicator": "NYC True Cost of Living (TCOL) Measure — share of residents below the true cost of living threshold",
+      "value": "55.6% below TCOL threshold citywide reporting; borough race breakdown shows Hispanic 85.3% and Black 80% below threshold vs. white 32.9% — the widest racial gap of any borough",
+      "year": 2026,
+      "target": "No binding numeric target exists; framed against the Mayor's Office of Equity & Racial Justice (MOERJ) Citywide Racial Equity Plan's implicit goal of closing racial TCOL gaps (Hispanic 77.6%, Black 65.6%, Asian/Pacific Islander 63.3%, White 43.7% below threshold) and against the older, narrower United Way of NYC / Fund for the City of New York 'True Cost of Living' series (50% of working-age households in 2023, up from 36% in 2021), which used a related but distinct methodology.",
+      "context": "Manhattan: 55.6% below TCOL threshold citywide reporting; borough race breakdown shows Hispanic 85.3% and Black 80% below threshold vs. white 32.9% — the widest racial gap of any borough\n\nCitywide for comparison: 62% of New Yorkers (~5.04M people) below the TCOL threshold citywide (down from 67% before government supports/benefits are counted); families with children need a median $159,197/yr but have median resources of $124,007/yr, an average annual gap of $39,603; 73% of NYC children (1.2M) live in families below the threshold; 92% of New Yorkers with disabilities are below threshold (avg. gap $76,178)\n\nThis is a purpose-built, first-of-its-kind official city measure (not a federal proxy), released April 6, 2026 by the Mamdani administration as part of its first-100-days package, mandated by 2022 voter referendums that created MOERJ. It is far more meaningful for NYC than the federal poverty line because it accounts for NYC's extreme housing, childcare, and transportation costs. The scale dwarfs anything in a small city like Petaluma: a majority of an 8.3M-person city cannot cover basic needs even while working, and the racial gap (78% of Hispanic residents vs. 44% of white residents below threshold) is itself close to the entire gap between Petaluma's poverty rate and the U.S. average. Policy lever: MOERJ's Citywide Racial Equity Plan (200+ goals, 800+ strategies across 45 agencies) and the City Council's pending 'City of Yes for Economic Opportunity' follow-ons and minimum-wage legislation. Caveat: this is a brand-new measure with only one data release so far (April 2026), so no multi-year TCOL trend exists yet on this exact methodology; the older, differently-scoped UWNYC/FCNY 'True Cost of Living' series (50% in 2023, up from 36% in 2021) is the best available proxy for trend direction and both show a fast-worsening trajectory.",
+      "source": "NYC MOERJ True Cost of Living Measure / NYC Mayor's Office press release",
+      "sourceUrl": "https://www.nyc.gov/mayors-office/news/2026/04/mayor-mamdani-releases-preliminary-citywide-racial-equity-plan-a",
       "screenshot": null,
-      "confidence": "low",
-      "geographicScale": "city",
-      "actions": [],
+      "confidence": "medium",
+      "geographicScale": "borough",
+      "actions": [
+        "Testify or submit comment to the NYC Council Committee on Consumer and Worker Protection on the '30 For Our City' minimum-wage bill (Council Member Sandy Nurse's office).",
+        "Report Fair Workweek scheduling violations or delivery-worker underpayment directly to NYC's Department of Consumer and Worker Protection (DCWP) worker-rights hotline/portal.",
+        "Apply for the city's expanding 2-K/3-K seats or the new municipal childcare pilot through NYC Public Schools / the Administration for Children's Services to offset the childcare barrier documented in the TCOL Measure.",
+        "Engage with the Mayor's Office of Equity & Racial Justice's public process on the Preliminary Citywide Racial Equity Plan, which sets the framework for closing the TCOL racial gaps.",
+        "Support NY Senate Bill S173 (Unemployment Bridge Program) to give excluded/undocumented workers a permanent safety net, replacing the lapsed 2021 Excluded Workers Fund.",
+        "Track the NYC Comptroller's pension-fund shareholder campaign pressing banks (including NYC-headquartered JPMorgan Chase and Citi) on fossil-fuel financed-emissions disclosure and net-zero asset-manager compliance."
+      ],
       "reviewStatus": {
         "state": "draft",
-        "notes": "Not yet researched."
-      }
+        "reviewedLevel": 100,
+        "notes": "DRAFT severity — not yet adversarially reviewed or expert-validated."
+      },
+      "productionVsConsumption": "not-applicable",
+      "productionVsConsumptionNote": "not applicable (social indicator)",
+      "neighborhoodNote": "The Bronx figure (75.1% below TCOL, 87% of children) makes it the poorest large urban county in the nation by conventional federal poverty measures too: Furman Center puts the Bronx's federal poverty rate at 28.8% in 2024 vs. 18.0% citywide, 15.6% in Manhattan, 13.3% in Queens, and 11.1% in Staten Island (source: NYU Furman Center neighborhood/borough profiles, furmancenter.org, 2024 data). Within the Bronx, Mott Haven/Melrose has a 42.6% poverty rate; within Manhattan, the Upper East Side is 5.5% against East Harlem's 32.2% — arguably the single sharpest income-and-work disparity in the portrait.",
+      "subIndicators": [
+        {
+          "name": "Federal/ACS poverty rate (contrast measure)",
+          "value": "18.2% of persons at or below the federal poverty line citywide (2023); Hispanic 24.8%, Black 21.7%, Asian 16.8%, White 11.5%; child poverty 24.5%",
+          "year": 2023,
+          "source": "Community Service Society of NY analysis of U.S. Census/ACS data",
+          "sourceUrl": "https://www.cssny.org/news/entry/latest-census-data-shows-poverty-remains-stubbornly-high-in-new-york-city-analysis",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Poverty Tracker (independent, Columbia University / Robin Hood Foundation)",
+          "value": "26% overall poverty rate in 2024 — highest since the Poverty Tracker began (2012) — affecting 2.2M people (1.7M adults, ~450,000 children); ~3 in 5 New Yorkers (5M) live below 200% of the poverty line",
+          "year": 2024,
+          "source": "Robin Hood / Columbia Population Research Center, 'Annual Poverty Tracker Report' Vol. 8",
+          "sourceUrl": "https://robinhood.org/news/robin-hood-annual-poverty-tracker-report-shows-25-overall-poverty-rate-in-new-york-city-climbing-beyond-record-highs-observed-in-2022/",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Gini index of income inequality (ACS B19083)",
+          "value": "0.5546 citywide (2023), essentially flat vs. 0.5547 in 2022 — the 4th-highest among large U.S. cities; borough range from 0.4609 (Staten Island) to 0.5929 (Manhattan), with Bronx 0.5200, Brooklyn 0.5349, Queens 0.4745",
+          "year": 2023,
+          "source": "NYC Rent Guidelines Board, '2025 Income and Affordability Study' (ACS B19083 vintage 2023)",
+          "sourceUrl": "https://rentguidelinesboard.cityofnewyork.us/wp-content/uploads/2025/04/2025-IA-Study.pdf",
+          "geographicScale": "borough",
+          "geographicScaleNote": "city+borough"
+        },
+        {
+          "name": "Median household income by borough",
+          "value": "Citywide $83,970 (2024); Staten Island $101,220 (+21%); Manhattan ~$110,000 (+31%, per a separate 2024 ACS citation); Queens $88,160 (+5%); Brooklyn $83,770 (about even); Bronx $47,600 (-43%)",
+          "year": 2024,
+          "source": "NYU Furman Center neighborhood/borough profiles (ACS-derived)",
+          "sourceUrl": "https://www.furmancenter.org/neighborhoods/the-bronx/",
+          "geographicScale": "borough",
+          "geographicScaleNote": "city+borough"
+        },
+        {
+          "name": "'Good job' rate by borough (living wage + FT + benefits + safe conditions)",
+          "value": "Manhattan ~46%, Staten Island ~37%, Brooklyn ~33%, Queens ~28%, Bronx ~20%",
+          "year": 2023,
+          "source": "NYC Comptroller Mark Levine, 'The State of Job Quality in New York City'",
+          "sourceUrl": "https://comptroller.nyc.gov/reports/the-state-of-job-quality-in-new-york-city/",
+          "geographicScale": "borough",
+          "geographicScaleNote": "city+borough"
+        },
+        {
+          "name": "Unemployment rate by race/ethnicity",
+          "value": "Black 8.9%, Hispanic 6.3%, Asian 3.5%, White under 3% (Black rate over 3x the white rate); young Black workers 23.8% unemployment, 9 points above 2019",
+          "year": 2025,
+          "source": "NY State Comptroller DiNapoli, 'Post-Pandemic Unemployment in NYC Persists for Some Demographic Groups' (Apr 7, 2026 release, Dec 2025 data)",
+          "sourceUrl": "https://www.osc.ny.gov/press/releases/2026/04/dinapoli-post-pandemic-unemployment-nyc-persists-some-demographic-groups",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Unemployment rate by borough (proxy, not race-adjusted)",
+          "value": "Citywide 5.3% (seasonally adjusted, June 2026); Bronx ~6.5% (May 2026, highest of the five); Manhattan/New York County ~4.1% (May 2026); Brooklyn ~5.8%, Queens ~5.1%, Staten Island ~5.3% (all July 2025 vintage — most recent full five-borough set located)",
+          "year": 2026,
+          "source": "NYS Dept. of Labor Local Area Unemployment Statistics (LAUS), as aggregated by FRED/Trading Economics from BLS data",
+          "sourceUrl": "https://dol.ny.gov/local-area-unemployment-statistics",
+          "geographicScale": "borough"
+        },
+        {
+          "name": "NY minimum wage in NYC",
+          "value": "$17.00/hr effective Jan 1, 2026 (up from $16.50 in 2025); statutory $0.50 step increases end in 2026, then indexed annually starting 2027 to CPI-W for the Northeast region",
+          "year": 2026,
+          "source": "NYS Department of Labor / Gov. Hochul minimum wage schedule",
+          "sourceUrl": "https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-reminds-new-yorkers-minimum-wage-increase-january-1",
+          "geographicScale": "state",
+          "geographicScaleNote": "city+state"
+        },
+        {
+          "name": "App-based delivery worker minimum pay rate",
+          "value": "$22.13/hr as of April 1, 2026 (up 3.2% from $21.44, inflation-indexed), covering both food and third-party grocery delivery workers; first-in-the-nation rule; enforcement has produced settlements including $5,195,000 from Uber Eats/Fantuan/HungryPanda for ~49,000 workers, and litigation against non-compliant platforms (e.g., Motoclick workers found earning $3.67-$4.67/hr)",
+          "year": 2026,
+          "source": "NYC Department of Consumer and Worker Protection (DCWP)",
+          "sourceUrl": "https://www.nyc.gov/site/dca/workers/workersrights/food-delivery-worker-laws-faqs.page",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Average Wall Street bonus vs. typical wage",
+          "value": "$246,900 average 2025 bonus (record, +6%), on a $49.2B bonus pool (+9%, record); average total securities-industry compensation $505,677 (2024) — about 5x the average private-sector salary elsewhere in the city; securities sector = 20.2% of NYC economic output and 8.4% of city tax revenue (FY2025) despite being ~1 in 13 jobs",
+          "year": 2025,
+          "source": "NY State Comptroller DiNapoli, Wall Street bonus report",
+          "sourceUrl": "https://www.osc.ny.gov/press/releases/2026/03/dinapoli-246900-average-bonus-on-wall-street-up-6-percent-in-2025",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Freelance/gig workforce share",
+          "value": "~1.3 million people, ~34% of NYC's workforce, freelance in some capacity",
+          "year": 2023,
+          "source": "Freelancers Union / Upwork survey conducted with the NYC Mayor's Office",
+          "sourceUrl": "https://www.nelp.org/on-the-passage-of-new-york-citys-freelance-isnt-free-act/",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Childcare cost as labor-force barrier",
+          "value": "NYC lost an estimated $23 billion in economic activity in 2022 due to the child care crisis; modeled gains of $900M in labor income and $1.9B in disposable income if the child care cost burden on working parents were removed",
+          "year": 2022,
+          "source": "Citizens' Committee for Children of New York (CCC), cited via NYC Comptroller/advocacy analysis",
+          "sourceUrl": "https://cccnewyork.org/nyc-needs-universal-child-care/",
+          "geographicScale": "city"
+        }
+      ],
+      "global": {
+        "lens": "global-social",
+        "level": 100,
+        "levelRationale": "NYC is literally headquarters to the world's single largest fossil-fuel financier (JPMorgan Chase) even as the city's own pension funds have divested from fossil-fuel equities and adopted a 2040 net-zero target — a direct contradiction between NYC's private financial sector and its public capital. Layered on top, the city's economy structurally depends on 600,000+ workers excluded from baseline labor law protections. This is a critical-tier finding: NYC's role as a global capital allocator actively works against the international decarbonization and labor standards it claims to support, even though city government itself (via pension divestment, wage-theft enforcement, and the 2021 Excluded Workers Fund) has taken real, if partial and time-limited, corrective steps.",
+        "indicator": "NYC-headquartered banks' fossil-fuel financing set against NYC public pension divestment, and NYC's undocumented/excluded workforce",
+        "value": "JPMorgan Chase (HQ: NYC) financed $53.5B in fossil fuels in 2024, the largest of any bank globally; Citigroup (HQ: NYC) also ranks among the world's top-3 fossil-fuel financiers (~$45-47B in 2024); the world's 65 largest banks financed fossil fuels with $906B in 2025 (+8% y/y) and $8.7 trillion since the 2016 Paris Agreement. Meanwhile, three of NYC's five public pension systems (Teachers' Retirement System, NYCERS, Board of Education Retirement System) completed divestment from publicly-traded fossil-fuel reserve owners in 2022 and have adopted a 2040 net-zero portfolio target; a 2024 comptroller proposal to also exclude future private-market midstream/downstream fossil-fuel investment is pending. Separately, an estimated 600,000-820,400 undocumented New Yorkers (estimates vary by source/year; see caveat) are excluded from unemployment insurance and many labor protections; the 2021 Excluded Workers Fund provided a one-time $2.1B/$15,600-per-worker benefit to ~290,000 workers before exhausting its funds by December 2021, with no permanent successor enacted as of mid-2026.",
+        "year": 2025,
+        "target": "No binding target for NYC-headquartered banks' financed emissions exists (this is private-sector activity outside city jurisdiction); the closest civic-side target is the NYC pension funds' 2040 net-zero portfolio commitment (NYC Comptroller/Bureau of Asset Management) and the state-level proposed Unemployment Bridge Program (NY Senate Bill S173, 2025) as the aspirational successor to the Excluded Workers Fund.",
+        "context": "NYC's global-social footprint in income & work runs through its financial sector, which allocates global capital: the same city that hosts the headquarters of the world's largest fossil-fuel underwriter also manages, through its own Comptroller-run pension funds, one of the most prominent divestment programs in U.S. public finance. This is a distinctly big-city phenomenon with no equivalent in Petaluma. It is transmitted through securities underwriting and lending (not NYC tax revenue directly, though Wall Street generates ~8.4% of city tax revenue), through shareholder engagement campaigns the Comptroller runs on banks the city does business with, and through the city's own workforce: roughly 600,000+ undocumented workers (below) are structurally part of the 'informal economy' underpinning low-wage sectors (delivery, domestic work, food service, construction) that make NYC's consumption possible, while remaining excluded from unemployment insurance, and disproportionately vulnerable to wage theft. Policy levers: NYC Comptroller's shareholder engagement/net-zero asset manager requirements (deadline June 30, 2025 for asset managers to submit compliant plans); state legislation for a permanent excluded-worker unemployment program. Caveat: I could not find a credible NYC-specific dollar estimate for remittances sent abroad from the city (a plausible global-social channel raised in the brief) — this is a genuine data gap, flagged below rather than estimated.",
+        "source": "Oil Change International / Rainforest Action Network et al., 'Banking on Climate Chaos 2026' report (2025 data); NYC Comptroller's Office; NY State Senate",
+        "sourceUrl": "https://www.ran.org/press-releases/bocc26/",
+        "confidence": "medium",
+        "geographicScale": "global",
+        "productionVsConsumption": "not-applicable",
+        "productionVsConsumptionNote": "not applicable (social/financial indicator)"
+      },
+      "policyAnchors": [
+        {
+          "name": "NYC True Cost of Living Measure & Preliminary Citywide Racial Equity Plan (2026)",
+          "relevance": "First official city-government TCOL measure and racial equity plan for income/work outcomes, mandated by 2022 voter referendums; sets the new baseline (62% below TCOL) used as this dimension's headline indicator.",
+          "status": "Released April 6, 2026 by the Mamdani administration (Mayor's Office of Equity & Racial Justice under Commissioner Afua Atta-Mensah, with Mayor's Office for Economic Opportunity and the Urban Institute); described as 'preliminary,' with 45 agencies, 200+ goals and 800+ strategies still being finalized.",
+          "sourceUrl": "https://www.nyc.gov/mayors-office/news/2026/04/mayor-mamdani-releases-preliminary-citywide-racial-equity-plan-a"
+        },
+        {
+          "name": "'30 For Our City' minimum wage bill (NYC Council)",
+          "relevance": "Would raise the NYC minimum wage from $17 to $30/hr (large employers) by 2030, well beyond the state-set floor.",
+          "status": "Introduced by Council Member Sandy Nurse, backed publicly by Mayor Mamdani; referred to the Council's Committee on Consumer and Worker Protection; as of late July 2026 still in committee, not yet voted on by the full Council.",
+          "sourceUrl": "https://gothamist.com/news/nyc-30-minimum-wage-proposal-headed-to-city-council"
+        },
+        {
+          "name": "NY State minimum wage schedule (2023 state law)",
+          "relevance": "Sets the current wage floor for NYC and the indexing mechanism beyond 2026.",
+          "status": "In effect: $17.00/hr in NYC as of Jan 1, 2026; state law schedules the last flat $0.50 step for 2026, then CPI-W(Northeast)-indexed annual increases starting 2027.",
+          "sourceUrl": "https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-reminds-new-yorkers-minimum-wage-increase-january-1"
+        },
+        {
+          "name": "App-Based Delivery Workers' Minimum Pay Rate (NYC Local Law / DCWP rule, 2021-23)",
+          "relevance": "First-in-the-nation minimum pay standard for app-based food and grocery delivery workers.",
+          "status": "In effect and actively enforced; rate increased to $22.13/hr April 1, 2026; federal court (SDNY, Judge Koeltl) denied industry's request for a preliminary injunction and injunction pending appeal in January 2026; DCWP has extracted multi-million-dollar settlements (e.g., $5.195M from Uber Eats/Fantuan/HungryPanda) and is actively suing non-compliant platforms (e.g., Motoclick).",
+          "sourceUrl": "https://www.jacksonlewis.com/insights/courts-decline-halt-nyc-delivery-worker-amendments-leaving-employers-subject-new-compliance-obligations"
+        },
+        {
+          "name": "NYC Fair Workweek Law (Local Laws 66-69 of 2017)",
+          "relevance": "Predictive-scheduling and just-cause protections for fast-food and retail workers, a major lever against income volatility for low-wage NYC workers.",
+          "status": "Actively enforced by DCWP under the Mamdani administration; more than $8.5M in restitution recovered since Jan 1, 2026 including a $1.5M+ settlement affecting 760+ workers (March 2026) and action against a premium retailer (Theory LLC, ~$277K).",
+          "sourceUrl": "https://www.nyc.gov/mayors-office/news/2026/03/mamdani-administration-secures-nearly--2m-in-restitution-for-800"
+        },
+        {
+          "name": "Earned Safe and Sick Time Act (ESSTA) expansion",
+          "relevance": "Expands paid/unpaid safe-and-sick leave categories relevant to low-wage and gig-adjacent workers' income stability.",
+          "status": "Expanded provisions took effect Feb 22, 2026, adding up to 32 hours of unpaid safe/sick leave (frontloaded) atop existing paid leave (40-56 hrs depending on employer size), and new usable categories (housing court proceedings, workplace-violence recovery, disaster response).",
+          "sourceUrl": "https://www.kelleydrye.com/viewpoints/blogs/labor-days/prepare-now-for-the-expanded-nyc-earned-sick-and-safe-time-act-effective-february-22-2026"
+        },
+        {
+          "name": "Freelance Isn't Free Act",
+          "relevance": "Protects the ~34% of the NYC workforce that freelances from nonpayment.",
+          "status": "NYC's 2016 local law was extended statewide effective Aug 28, 2024 (NY General Business Law Article 44-A); in effect, enforced by NYS DOL and NYC DCWP.",
+          "sourceUrl": "https://dol.ny.gov/freelance-isnt-free-act"
+        },
+        {
+          "name": "City of Yes for Economic Opportunity",
+          "relevance": "Citywide zoning reform intended to expand job-creating business types and reduce regulatory barriers to work.",
+          "status": "Adopted by City Council June 6, 2024 under the Adams administration; zoning changes are permanent and remain in effect under the Mamdani administration, with continuing implementation (industrial strategic plan, enforcement resourcing commitments).",
+          "sourceUrl": "https://www.citylandnyc.org/council-approves-city-of-yes-for-economic-opportunity-amendment/"
+        },
+        {
+          "name": "Excluded Workers Fund (2021) / proposed Unemployment Bridge Program",
+          "relevance": "Precedent for extending unemployment-style support to undocumented and other excluded workers; its lapse is the central unresolved gap in NYC labor protection.",
+          "status": "The 2021 $2.1B one-time fund (paid ~$1.2B of it, ~120,000-290,000 workers approved depending on source) was fully exhausted by December 2021 and never replaced; a permanent successor, the Unemployment Bridge Program (NY Senate Bill S173, 2025, funded via a proposed digital-advertising tax on large tech firms), has been proposed but was not enacted as of mid-2026.",
+          "sourceUrl": "https://www.nysenate.gov/legislation/bills/2025/S173"
+        }
+      ],
+      "comparisonNote": "Petaluma's own data.js lists a 6.5% poverty rate (2024, ACS) and a 0.44 Gini coefficient (2019) — figures that would represent enormous success by NYC standards. NYC's citywide Gini is 0.5546 (2023) with Manhattan alone at 0.5929, and 62% of New Yorkers fall short of the city's own True Cost of Living threshold versus Petaluma's much narrower affordability strain (34% cost-burdened on housing). The scale and mechanism also differ qualitatively: Petaluma has no equivalent to NYC's finance-sector wealth concentration (Wall Street's $246,900 average bonus vs. Petaluma's local median incomes) or to a 600,000+ person undocumented workforce excluded from unemployment insurance.",
+      "dataGaps": [
+        "No NYC-specific dollar estimate for remittances sent abroad from the city could be located; the NYC Mayor's Office of Immigrant Affairs (MOIA) or the Center for Migration Studies of New York (CMSNY) would be the most likely holders of city-scale remittance modeling.",
+        "The official 'NYCgov Poverty Measure' (Mayor's Office for Economic Opportunity / NYC Opportunity) publishes on a multi-year lag (e.g., its 2023-dated report covered 2020 data) and I could not locate a current-year percentage from NYC Opportunity itself; NYC Opportunity's Poverty Research Team would have the authoritative current figure and could clarify the publication schedule.",
+        "No current, city-specific wage-theft dollar total was found; the widely-cited '$20 million/week' figure traces to former Manhattan DA Cyrus Vance (pre-2022) and is stale — the NYC Comptroller's Bureau of Labor Law or NYS DOL's Division of Labor Standards would hold current recovery totals.",
+        "Garment/retail global sourcing labor conditions specific to NYC-headquartered or NYC-based retailers were not found in available searches within this session's time — the NYC Economic Development Corporation (garment district initiatives) or NGOs like the Worker Rights Consortium would be better positioned to quantify this.",
+        "A single most-recent, same-month unemployment rate for all five boroughs could not be assembled from one source; borough figures above mix May-July 2026 vintages from BLS/LAUS as aggregated by third parties (FRED, Trading Economics) rather than a single NYS DOL table — NYS DOL's Bureau of Labor Market Information would have the authoritative single-vintage table."
+      ],
+      "experts": [
+        {
+          "org": "NYC Mayor's Office of Economic Opportunity (NYC Opportunity) — Poverty Research Team",
+          "why": "Owns the official NYCgov Poverty Measure methodology and publication schedule; can confirm current-year figures and the relationship to the new TCOL Measure.",
+          "contactPath": "https://www.nyc.gov/site/opportunity/poverty-in-nyc/poverty-measure.page"
+        },
+        {
+          "org": "NYC Mayor's Office of Equity & Racial Justice (MOERJ)",
+          "why": "Produced the April 2026 True Cost of Living Measure and Citywide Racial Equity Plan used as this dossier's headline indicator; best positioned to clarify methodology, future update cadence, and borough/neighborhood-level detail.",
+          "contactPath": "https://www.nyc.gov/site/equity/index.page"
+        },
+        {
+          "org": "NYC Department of Consumer and Worker Protection (DCWP)",
+          "why": "Administers and enforces Fair Workweek, delivery-worker minimum pay, and Freelance Isn't Free protections; holds the most current enforcement/recovery data.",
+          "contactPath": "https://www.nyc.gov/site/dca/index.page"
+        },
+        {
+          "org": "NYC Comptroller's Office (Bureau of Asset Management / Bureau of Labor Law)",
+          "why": "Runs pension-fund fossil-fuel divestment/net-zero implementation and publishes wage-theft and job-quality reports central to both the local and global lenses here.",
+          "contactPath": "https://comptroller.nyc.gov/"
+        },
+        {
+          "org": "Center for Migration Studies of New York (CMSNY)",
+          "why": "Publishes the most detailed demographic modeling of NYC's undocumented population, needed to reconcile the wide range of estimates (600K-820K+) found in this research.",
+          "contactPath": "https://cmsny.org/"
+        },
+        {
+          "org": "NY State Department of Labor, Division of Labor Standards",
+          "why": "Holds current wage-theft recovery totals and administers the Excluded Workers Fund records and any successor Unemployment Bridge Program.",
+          "contactPath": "https://dol.ny.gov/"
+        }
+      ]
     },
     {
       "name": "water & sanitation",
@@ -161,22 +387,222 @@
     {
       "name": "housing",
       "lens": "local-social",
-      "level": null,
-      "indicator": "Not yet researched",
-      "value": null,
-      "year": null,
-      "target": "TBD",
-      "context": "⚠ Citywide figure shown — not specific to Manhattan. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
-      "source": "Pending",
-      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "level": 100,
+      "levelRationale": "The net rental vacancy rate (1.41%) is the lowest recorded since 1968 and is nearly 3.5x below the 5% threshold that NY State's Emergency Tenant Protection Act uses to determine whether a 'housing emergency' exists (a LOWER vacancy rate means a WORSE emergency, and rent stabilization is legally re-triggered/sustained specifically because the market fails this test). Combined with a majority of renters rent-burdened, a quarter severely burdened, and a shelter system serving a record 194,531 unique individuals in 2025, this is an emergency-level reading on the -100..150 scale.",
+      "indicator": "Net rental vacancy rate (NYC Housing and Vacancy Survey), with rent burden and shelter census as co-headline indicators",
+      "value": "2.33% net rental vacancy rate (2023); 10.01% in 2021 -- the highest borough rate both years",
+      "year": 2023,
+      "target": "NY State Emergency Tenant Protection Act: a rental vacancy rate at or above 5% is the legal standard under which NYC could be found to no longer have a 'housing emergency' justifying rent stabilization; the city has been below this line since before 1968 and is now at less than a third of it. HVS is conducted roughly every 3 years (next due ~2026).",
+      "context": "Manhattan: 2.33% net rental vacancy rate (2023); 10.01% in 2021 -- the highest borough rate both years\n\nCitywide for comparison: 1.41% net rental vacancy rate citywide (2023 NYCHVS), down from 4.54% in 2021 and the lowest since the survey began tracking this in 1968 (only ~33,000 units available for rent out of a 2.36M-unit rental stock); for units renting under $1,100/month the rate was 0.39%. Separately: the median renter household paid 29.5% of income toward rent in 2023 (down from 34.3% in 2021, driven by income growth outpacing the 9% rent increase), but renters earning under the $70,000 median paid a typical 54% of income toward rent; more than half of all renter households were rent-burdened (30%+ of income) and about one in four were severely rent-burdened (50%+). DHS+HPD shelter census was 73,219 people (Dec 2024), and the DHS system served a record 194,531 unique individuals over the course of 2025 -- the most in the shelter system's history -- even as the separate asylum-seeker shelter population fell from a Jan-2024 peak of ~69,000-70,000 to ~33,300 (Sept 2025).\n\nNYC's housing crisis differs from a small city's in that market failure is now legally instrumentalized: the ultra-low vacancy rate is not just a symptom but the statutory mechanism that keeps the entire ~1-million-unit rent-stabilization system in place, which in turn shapes state and city legislative fights every few years. A small city like Petaluma has no equivalent regulatory apparatus keyed to vacancy. The scale of shortage (33,000 available units against ~3.4M occupied households) means underproduction, not mismanagement, is the core lever -- construction has not kept pace with a net addition of 275,000 households since 2021 against only ~60,000 net new units. Caveats: the 2023 HVS is a sample survey (fielded Jan-June 2023) with margins of error that widen sharply at the borough level for a metric already near zero; the next HVS is due in 2026 and current conditions (post City of Yes, post rent freeze) are not yet independently re-measured.",
+      "source": "NYCHVS 2023, Table 9 and narrative text",
+      "sourceUrl": "https://www.nyc.gov/assets/hpd/downloads/pdfs/about/2023-nychvs-selected-initial-findings.pdf",
       "screenshot": null,
-      "confidence": "low",
-      "geographicScale": "city",
-      "actions": [],
+      "confidence": "high",
+      "geographicScale": "borough",
+      "actions": [
+        "Know your rights under Good Cause Eviction and, if facing eviction, contact Right to Counsel NYC Coalition or Housing Court Answers for same-day help finding a Right to Counsel-eligible attorney.",
+        "Apply for NYCHA public housing and Section 8 waitlists when open (watch nyc.gov/nycha for the next application window) and report HPD violations (heat, hot water, mold, pests) via 311 or NYC's HPDOnline portal to build the legal record landlords are held to.",
+        "Support or join a tenant association -- Met Council on Housing, Right to Counsel NYC Coalition, and Association for Neighborhood and Housing Development (ANHD) all organize building- and borough-level tenant power, especially in the Bronx where eviction filing rates are highest.",
+        "Weigh in on City of Yes-enabled rezonings and City Planning Commission/Community Board hearings in your neighborhood -- local implementation (ADUs, small-building conversions) is where the ~80,000-unit citywide target will be won or lost building by building.",
+        "If you are a basement-apartment tenant or landlord, track the DOB/HPD Basement Apartment Conversion Pilot Program rulemaking (public comment periods via nyc.gov) -- the current pathway explicitly excludes some of the most flood-exposed neighborhoods.",
+        "Check whether your landlord is on the Public Advocate's Worst Landlord Watchlist (landlordwatchlist.com) before renewing or signing a lease, and report unresolved conditions to help build enforcement pressure."
+      ],
       "reviewStatus": {
         "state": "draft",
-        "notes": "Not yet researched."
-      }
+        "reviewedLevel": 150,
+        "notes": "DRAFT severity — not yet adversarially reviewed or expert-validated."
+      },
+      "neighborhoodNote": "Eviction filings -- a downstream proxy for housing precarity where vacancy/burden data is thin at fine geography -- are heavily concentrated in the Bronx: in 2024 the eight community districts with the highest eviction filing rates citywide were all in the Bronx (Morrisania/Crotona highest at 159.7 per 1,000 rental units), with the ninth-highest in the Rockaways, Queens; Stuyvesant Town/Turtle Bay in Manhattan had the lowest measured rate (12.7 per 1,000). Source: NYU Furman Center, State of Renters and Their Homes 2024, using NYS Office of Court Administration eviction filing data.",
+      "subIndicators": [
+        {
+          "name": "Renter households rent-burdened (30%+ of income) and severely rent-burdened (50%+), by borough",
+          "value": "Citywide: >50% rent-burdened, ~25% severely burdened (2023 NYCHVS). Severely rent-burdened share by borough (2023 ACS/HVS data as reported in Furman Center's 2024 State of the City): Bronx 35.8%, Staten Island 32.1%, Brooklyn 28.1%, Queens 28.0%, Manhattan 25.4%.",
+          "year": 2023,
+          "source": "NYC HPD NYCHVS 2023; NYU Furman Center, State of Renters and Their Homes 2024",
+          "sourceUrl": "https://www.furmancenter.org/soc-report/state-of-the-city-2024/state-of-renters-and-their-homes-2024/",
+          "geographicScale": "borough"
+        },
+        {
+          "name": "Rent burden by race/ethnicity of householder (equity disaggregation)",
+          "value": "Severely rent-burdened (50%+ of income): Black-headed households 28%, Hispanic-headed 27%, Asian-headed 26%, White-headed 22% (2023). Households with a housing voucher: 86% severely rent-burdened even after assistance (85% in 2021).",
+          "year": 2023,
+          "source": "NYC HPD, 2023 NYCHVS Selected Initial Findings, Table 18",
+          "sourceUrl": "https://www.nyc.gov/assets/hpd/downloads/pdfs/about/2023-nychvs-selected-initial-findings.pdf",
+          "geographicScale": "city"
+        },
+        {
+          "name": "DHS/HPD shelter census and record system-wide use",
+          "value": "73,219 people in DHS+HPD shelters (Dec 2024), up from 65,640 (Dec 2023), +11.5% y/y; a record 194,531 unique individuals used the DHS shelter system at some point during 2025 -- the most in the system's history. Separately, asylum-seeker shelter population peaked at ~69,000-70,000 (Jan 2024) and had fallen to ~33,300 by Sept 2025 (-51%), after more than 239,200 asylum seekers had entered the shelter system cumulatively since spring 2022.",
+          "year": 2025,
+          "source": "Coalition for the Homeless, DHS/HPD shelter census tracker; NYC Comptroller, Asylum Seeker Census",
+          "sourceUrl": "https://www.coalitionforthehomeless.org/dhs-hpd-census/",
+          "geographicScale": "city"
+        },
+        {
+          "name": "NYCHA scale and capital need",
+          "value": "NYCHA houses roughly 516,000-521,000 authorized residents in ~177,565 apartments across 335 developments (public housing + PACT/Section 9 combined; figures vary slightly by report vintage in 2024-2025). The 2023 Physical Needs Assessment found $78.3B in 20-year capital repair needs (up 73% from $45.3B in the 2017 PNA); a January-2025 update raised this to $78.6B. NYCHA's Section 8 voucher waitlist reopened in 2024 for the first time since 2009: 633,808 households applied online, with 200,000 selected via lottery; a separate public-housing waitlist holds an estimated ~250,000 households.",
+          "year": 2025,
+          "source": "NYCHA Fact Sheet; NYCHA 2023/2025 Physical Needs Assessment; NYCHA press release 2024-08-01",
+          "sourceUrl": "https://www.nyc.gov/assets/nycha/downloads/pdf/NYCHA_Fact_Sheet.pdf",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Rent-stabilized stock and Rent Guidelines Board action",
+          "value": "~1 million rent-stabilized units citywide (~40% of NYC's rental housing, ~2 million residents). For Oct 2025-Sept 2026 leases, RGB approved +3% (1-yr) / +4.5% (2-yr) increases. In a 7-1 vote in June 2026, the RGB approved a 0%/0% rent freeze for both 1-year and 2-year lease renewals beginning Oct 1, 2026 -- the first-ever freeze on 2-year leases and Mayor Mamdani's signature campaign pledge fulfilled six months into his term.",
+          "year": 2026,
+          "source": "NYC Rent Guidelines Board; TIME, Al Jazeera, Time Out New York coverage of the June 2026 RGB vote",
+          "sourceUrl": "https://rentguidelinesboard.cityofnewyork.us/",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Eviction filings, citywide and by borough (per 1,000 rental units, 2024)",
+          "value": "119,646 new eviction filings citywide in 2024 (-9.6% vs. 2023), still well below pre-pandemic levels. Filing rate per 1,000 rental units by borough (2024): Bronx 104.1, Queens 47.1, Brooklyn 45.2, Staten Island 42.9, Manhattan 36.6.",
+          "year": 2024,
+          "source": "NYU Furman Center, State of Renters and Their Homes 2024, using NYS Office of Court Administration Universal Case Management System data",
+          "sourceUrl": "https://www.furmancenter.org/soc-report/state-of-the-city-2024/state-of-renters-and-their-homes-2024/",
+          "geographicScale": "borough"
+        },
+        {
+          "name": "Right to Counsel representation rate, citywide and Bronx",
+          "value": "Attorney representation rate for eligible tenants facing eviction fell from 71% (2021) to 42% (2024) citywide as eligible caseload grew ~110% over the same period; in the Bronx, where evictions are most concentrated, representation fell from 88% to 31%. Where representation was secured, 89% of tenants remained stably housed (2024). Advocates estimate at least $350M in additional annual funding is needed for full RTC implementation.",
+          "year": 2024,
+          "source": "NYC Comptroller, 'Evictions Up, Representation Down' (May 2025)",
+          "sourceUrl": "https://comptroller.nyc.gov/reports/evictions-up-representation-down/",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Illegal/basement apartments and Hurricane Ida",
+          "value": "11 people, mostly immigrants, drowned in illegal basement apartments during Hurricane Ida (Sept 1, 2021). The 2023 Basement Apartment Conversion Pilot Program (BACPP) created a legal conversion pathway; as of early 2026 only a few hundred units have been legalized against an estimated 100,000+ illegal basement/cellar units citywide. DOB/HPD proposed expanded rules in Nov 2025, but critics note the program still excludes some of the most flood-vulnerable neighborhoods (e.g. Flushing, Jamaica, Elmhurst, Cypress Hills) where 2021 deaths occurred.",
+          "year": 2025,
+          "source": "THE CITY; NY State Senate (Kavanagh/Epstein legislation); NYC DOB/HPD basement legalization rulemaking coverage",
+          "sourceUrl": "https://www.thecity.nyc/2021/09/02/nyc-basement-apartment-storm-deaths-renew-housing-advocates-calls-for-legalization/",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Housing quality: HPD violations and Worst Landlord Watchlist",
+          "value": "NYC Public Advocate's 2025 Worst Landlord Watchlist (7th annual): top-ranked landlord Margaret Brunn had 4,872 open HPD violations across 24 buildings; the top two landlords (both linked to A&E Real Estate Holdings) together held over 8,700 open violations across 60 buildings -- described as more violations than any prior top-2 in the list's history. Violations cited include heat/hot-water outages, rodent infestation, and structural collapse risk.",
+          "year": 2025,
+          "source": "NYC Public Advocate Jumaane Williams, Worst Landlord Watchlist 2025",
+          "sourceUrl": "https://www.landlordwatchlist.com/about",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Median asking rent by borough",
+          "value": "Q1 2025 median asking rents (StreetEasy, as summarized in secondary market-trend coverage): Manhattan $4,391.67, Brooklyn $3,479.67, Queens $3,000.00, Bronx $2,820.67, Staten Island $2,679.33. By late 2025 Manhattan's median reached ~$4,720-4,995/month (Douglas Elliman/Miller Samuel) and Brooklyn's reached ~$4,000.",
+          "year": 2025,
+          "source": "StreetEasy market data via secondary aggregation; Douglas Elliman/Miller Samuel Rental Report",
+          "sourceUrl": "https://millersamuel.com/files/2025/12/Rental-11_2025.pdf",
+          "geographicScale": "borough"
+        },
+        {
+          "name": "485-x and Good Cause Eviction, statewide adoption",
+          "value": "485-x ('Affordable Neighborhoods for New Yorkers') replaced the expired 421-a tax incentive effective April 2024, requiring 20-25% permanently affordable units at a weighted average of 60-80% AMI for qualifying projects. Good Cause Eviction took effect April 20, 2024 in NYC (rent-increase caps and just-cause eviction protections for most market-rate tenants below ~345% of Fair Market Rent, i.e. ~$4,900/month); 17 NY municipalities have since opted into stronger local versions, extending protection to roughly 1 million renters statewide.",
+          "year": 2024,
+          "source": "NYC HPD 485-x program page; NY State Senate press release on Good Cause adoption",
+          "sourceUrl": "https://www.nyc.gov/site/hpd/services-and-information/tax-incentives-485-x.page",
+          "geographicScale": "state",
+          "geographicScaleNote": "city/state"
+        }
+      ],
+      "global": {
+        "lens": "global-social",
+        "level": 100,
+        "levelRationale": "NYC real estate functions as a documented global capital sink -- via anonymous-LLC and foreign luxury purchases, pied-a-terre vacancy, and institutional-investor ownership of regulated housing -- while the single most relevant federal transparency tool (the Corporate Transparency Act's beneficial-ownership registry) was narrowed in March 2025 to exempt the domestic LLCs that are the primary vehicle for anonymous U.S. real-estate purchases. That is a policy regression, not an improvement, which justifies a 'critical' rather than 'on track' reading, but the evidence base for NYC-specific magnitude is thinner and more secondary-sourced than the local-lens figures, so confidence is medium and the level should be read as directional rather than precisely calibrated.",
+        "indicator": "NYC real estate as a destination for global and anonymous capital; global institutional landlords in NYC housing; NYC's crisis in context of global housing inadequacy",
+        "value": "About 10% of Manhattan condo transactions are pied-a-terre/non-primary-residence purchases per NYC Department of Finance data (secondary-sourced figure, not independently verified against the primary DOF table). FinCEN's residential real estate Geographic Targeting Orders (GTOs) -- which require title insurers to identify the natural persons behind shell-company, non-financed purchases over $300,000 -- cover NYC among a defined list of metro areas and were most recently renewed effective Oct 10, 2025 through Feb 28, 2026; a permanent nationwide reporting rule (finalized Aug 2024) that would replace the GTOs was postponed from Dec 1, 2025 to March 1, 2026. Separately, FinCEN's March 2025 interim final rule under the Corporate Transparency Act exempted all U.S.-formed entities (including the LLCs typically used to hold anonymous NYC real estate) from beneficial-ownership reporting, leaving only foreign-registered entities in scope -- a narrowing of the anti-anonymity regime relative to the CTA's original 2021 design. Globally, institutional and private-equity capital owns significant NYC regulated housing stock: Blackstone (headquartered in Manhattan) and Ivanhoe Cambridge have owned Stuyvesant Town-Peter Cooper Village (~11,200 units) since 2015, a case study cited in the UN Special Rapporteur on the Right to Housing's work on the 'financialization of housing' (Leilani Farha's 2017 Human Rights Council report, A/HRC/34/51, followed by a 2019 letter from the Special Rapporteur and the UN Working Group on Business and Human Rights directly to Blackstone's CEO). By contrast, UN-Habitat's World Cities Report 2026 finds 1.13 billion people live in informal settlements/slums worldwide (2024), up from 895 million in 2000, and up to 3.4 billion lack access to adequate housing altogether -- a reminder that NYC's crisis, however severe, is a crisis of price and regulation within a fully formal, serviced housing stock, categorically different from the lack of any durable shelter facing over a billion people globally.",
+        "year": 2025,
+        "target": "No binding NYC or US target exists for foreign/anonymous capital flows into housing. The relevant global-framework anchor is the UN Special Rapporteur on the Right to Housing's call (since 2017) for states to ensure housing markets serve human need rather than investment returns; NYC/NYS-level tools in this space include the FinCEN GTOs/reporting rule (federal, NYC-covered), a longstanding but unenacted NYC pied-a-terre tax proposal, and NY State's 2019 LLC Transparency Act (disclosure of beneficial owners for LLCs holding NYS real property, separate from the federal CTA).",
+        "context": "The transmission channel is financial, not physical: global capital reaches NYC housing through anonymous shell-company purchases of luxury condos, institutional acquisition of rent-regulated portfolios (financed partly through global pension and sovereign capital, as with Ivanhoe Cambridge's stake in Stuyvesant Town), and NYC-headquartered private-equity firms' broader single-family-rental strategies elsewhere in the US and abroad. This matters for the Doughnut's global-social lens because it is the mirror image of NYC's local housing scarcity: the same undersupplied, high-value housing stock that burdens NYC renters is simultaneously an attractive, low-risk store of value for global capital, and the 2025 federal narrowing of beneficial-ownership disclosure removes a tool that had been used to make that flow visible. A small city like Petaluma has no comparable exposure to global capital markets in its housing stock.",
+        "source": "FinCEN news releases and Federal Register notices; OHCHR Special Rapporteur reports and correspondence; UN-Habitat World Cities Report 2026",
+        "sourceUrl": "https://www.fincen.gov/news/news-releases/fincen-renews-residential-real-estate-geographic-targeting-orders-0",
+        "confidence": "medium",
+        "geographicScale": "global"
+      },
+      "policyAnchors": [
+        {
+          "name": "Housing Stability and Tenant Protection Act (HSTPA) of 2019",
+          "relevance": "State law that closed vacancy decontrol, capped preferential-rent and individual/major capital improvement rent increases, and underlies the current tight rent-stabilization regime whose stock size (~1M units) and vacancy dynamics are central to this dossier.",
+          "status": "Remains in force; its restrictions are a repeatedly cited reason (alongside HVS vacancy math) why institutional owners like Blackstone have described profitability pressure on regulated portfolios such as Stuyvesant Town. Not independently re-verified for 2026 amendments in this research pass.",
+          "sourceUrl": "https://rentguidelinesboard.cityofnewyork.us/"
+        },
+        {
+          "name": "Good Cause Eviction Law (NY State, 2024)",
+          "relevance": "Extends just-cause eviction and rent-increase-cap protections to a large share of NYC's previously-unprotected market-rate renters.",
+          "status": "In effect since April 20, 2024 in NYC by default; 17 municipalities statewide have since opted into stronger local versions, extending coverage to roughly 1 million renters statewide as of 2025.",
+          "sourceUrl": "https://www.nysenate.gov/newsroom/press-releases/2025/julia-salazar/1-year-later-good-cause-eviction-adopted-17-ny"
+        },
+        {
+          "name": "485-x (Affordable Neighborhoods for New Yorkers)",
+          "relevance": "Replacement for the expired 421-a tax incentive; ties new-construction tax exemptions to permanent affordability requirements (20-25% of units at 60-80% AMI) and MWBE contracting goals.",
+          "status": "In effect since April 2024 for new projects; existing 421-a projects have an extended completion deadline to 2031 if they choose not to convert.",
+          "sourceUrl": "https://www.nyc.gov/site/hpd/services-and-information/tax-incentives-485-x.page"
+        },
+        {
+          "name": "City of Yes for Housing Opportunity",
+          "relevance": "Citywide zoning overhaul intended to legalize more housing types (ADUs, small apartment buildings, office conversions) and reduce parking mandates; includes the Universal Affordability Preference (20% density bonus for permanently affordable space).",
+          "status": "Adopted by City Council Dec 5, 2024, with a projected ~80,000 new homes over 15 years and $5B in accompanying City/State infrastructure funding secured in the Council negotiation. Housing advocates and researchers (e.g. testimony collected by NYU Furman Center) have argued this falls well short of the scale of need implied by the ~275,000-household growth NYC absorbed between 2021-2023 alone against only ~60,000 net new units.",
+          "sourceUrl": "https://www.nixonpeabody.com/insights/alerts/2025/01/16/nyc-council-passes-city-of-yes-for-housing-opportunity"
+        },
+        {
+          "name": "Fair Housing Framework (city law codifying 'Affirmatively Furthering Fair Housing') and Where We Live NYC",
+          "relevance": "Commits the city to actively countering housing segregation and discrimination; Where We Live NYC is the resulting five-year fair-housing plan.",
+          "status": "The Fair Housing Framework was codified into local law in 2023; secondary sources in this research surfaced it as Local Law 167 of 2023, which conflicts with this brief's pointer to 'LL 174 of 2021' -- flagged below as a question for the orchestrator rather than asserted either way. 'Where We Live NYC 2025,' the city's second five-year fair housing plan, was finalized in 2025.",
+          "sourceUrl": "https://www.nyc.gov/site/hpd/news/066-25/city-new-york-releases-final-where-we-live-nyc-2025-fair-housing-plan"
+        },
+        {
+          "name": "Right to Counsel (NYC Local Law 136 of 2017, phased citywide)",
+          "relevance": "Guarantees free legal representation to income-eligible tenants facing eviction in Housing Court; the single biggest lever shown to keep tenants stably housed (89% success rate when representation is secured).",
+          "status": "In effect citywide, but chronically underfunded relative to a caseload that grew ~110% from 2022-2024; representation rates fell from 71% to 42% citywide (88% to 31% in the Bronx) over the same period per the NYC Comptroller's May 2025 audit.",
+          "sourceUrl": "https://comptroller.nyc.gov/reports/evictions-up-representation-down/"
+        },
+        {
+          "name": "NYCHA PACT/RAD and the Public Housing Preservation Trust",
+          "relevance": "Mechanisms for routing private and federal (Section 8/RAD) capital into NYCHA's $78.3-78.6B, 20-year physical needs backlog without full privatization.",
+          "status": "PACT conversions continue (91 developments, ~23,367 units converted as of the 2024 Fact Sheet); the Public Housing Preservation Trust (created 2022) provides an additional financing vehicle. Not independently re-verified for a 2026 status update in this research pass -- flagged as a data gap.",
+          "sourceUrl": "https://www.nyc.gov/assets/nycha/downloads/pdf/NYCHA_Fact_Sheet.pdf"
+        },
+        {
+          "name": "NYC Rent Guidelines Board 2026-27 rent freeze",
+          "relevance": "First-ever freeze applied to both 1-year and 2-year rent-stabilized lease renewals; a direct, near-term test of Mayor Mamdani's affordability agenda given the RGB's role as the sole regulator of ~1 million units' rents.",
+          "status": "Approved 7-1 by the RGB in June 2026; 0% increase for both lease lengths effective Oct 1, 2026-Sept 30, 2027. Landlord groups and some housing economists (Reason, Vital City) argue this does not address underlying vacancy/supply scarcity and could reduce maintenance investment; tenant advocates frame it as immediate relief for burdened renters.",
+          "sourceUrl": "https://time.com/article/2026/06/26/new-york-rent-freeze-stabilized-apartments-zohran-mamdani-housing-promise/"
+        }
+      ],
+      "comparisonNote": "Petaluma's housing entry (data.js, level 60) reports 34% cost-burdened households and 214 unhoused persons (point-in-time count, 2024) against a target of <30% burdened and zero unhoused -- serious for a city of ~60,000, but a single-order-of-magnitude problem measured with a straightforward annual PIT count. NYC's housing crisis is legally structural rather than simply a burden rate: a 1.41% vacancy rate is itself the statutory trigger sustaining rent stabilization for ~1 million units, more than half of NYC renters are burdened (comparable in share to Petaluma's 34%, but at 8.3M people the absolute population affected is roughly 140x larger), and its shelter system alone served 194,531 unique people in 2025 -- roughly 900x Petaluma's entire PIT unhoused count, and about 2.3% of NYC's total population passing through DHS shelter in a single year. NYC also carries a housing dimension Petaluma has no equivalent of at all: a $78B public-housing capital backlog (NYCHA) and a global-capital-sink dynamic (foreign/LLC luxury purchases, private-equity ownership of regulated stock) that a small inland city simply is not exposed to.",
+      "dataGaps": [
+        "No single official source confirms a combined DHS-shelter-plus-HERRC/asylum total exceeding 100,000 at any single point in time; the components (DHS+HPD ~65,640-73,219 in Dec 2023/2024; asylum-specific shelter population peaking ~69,000-70,000 in Jan 2024) come from different trackers (Coalition for the Homeless vs. NYC Comptroller) and summing them is this researcher's inference, not a published citywide total. DHS's own Daily Report / NYC Open Data 'DHS Daily Report' dataset would have the authoritative combined daily figure.",
+        "Staten Island's 2023 net rental vacancy rate is not separately reported in the NYCHVS Selected Initial Findings due to small sample size; would require restricted-use NYCHVS microdata from HPD/Census Bureau under a data-use agreement.",
+        "No primary-sourced, NYC-specific figure was found quantifying the share of NYC residential purchases made by foreign nationals or anonymous LLCs (the ~10% Manhattan pied-a-terre figure is secondary-sourced to unspecified NYC Department of Finance data and was not independently verified against a DOF table).",
+        "HPD housing-code violation counts and heat/hot-water complaint volumes by borough (as opposed to by individual landlord/building, which the Worst Landlord Watchlist covers) were not retrieved in this pass; NYC Open Data's 'Housing Maintenance Code Violations' dataset would have this.",
+        "NYCHA authorized-resident and apartment counts broken out by borough were not found in the sources reached (only citywide totals and individual flagship-development examples); NYCHA's Development Data Book / Capital Tracker (capitaltracker.nycha.info) likely has this."
+      ],
+      "experts": [
+        {
+          "org": "NYU Furman Center for Real Estate and Urban Policy",
+          "why": "Publishes the annual State of New York City's Housing and Neighborhoods report and the NYS Eviction Tracker; best single source for borough- and community-district-level housing indicators.",
+          "contactPath": "https://furmancenter.org/contact"
+        },
+        {
+          "org": "Right to Counsel NYC Coalition",
+          "why": "Tracks Right to Counsel implementation gaps and runs the NYC Eviction Crisis Monitor; would validate whether representation-rate figures used here remain current.",
+          "contactPath": "https://www.righttocounselnyc.org/"
+        },
+        {
+          "org": "Association for Neighborhood and Housing Development (ANHD)",
+          "why": "Produces data briefs on rent-stabilized housing loss, City of Yes implementation, and neighborhood-level underproduction; active in HPD/City Council testimony.",
+          "contactPath": "https://anhd.org/"
+        },
+        {
+          "org": "Office of the NYC Comptroller (Housing & Economic Development / Asylum Seeker Accounting units)",
+          "why": "Publishes eviction, shelter-census, and asylum-seeker-cost dashboards used throughout this dossier; can confirm the combined shelter-census data gap noted above.",
+          "contactPath": "https://comptroller.nyc.gov/"
+        },
+        {
+          "org": "Community Service Society of New York",
+          "why": "Long-running tenant-side research and advocacy on rent burden, Housing Court, and NYCHA; testified on the 2023 HVS results.",
+          "contactPath": "https://www.cssny.org/"
+        }
+      ]
     },
     {
       "name": "gender equality",
@@ -261,44 +687,431 @@
     {
       "name": "mobility",
       "lens": "local-social",
-      "level": null,
-      "indicator": "Not yet researched",
-      "value": null,
-      "year": null,
-      "target": "TBD",
-      "context": "⚠ Citywide figure shown — not specific to Manhattan. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
-      "source": "Pending",
-      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "level": -100,
+      "levelRationale": "ORCHESTRATOR OVERRIDE (ruling R1), applied because this dimension's adversarial review did not complete. Drive-alone share of 20.6% against a <50% target argues for roughly -85 on the headline indicator alone. Adjusted to -45 because the same dimension contains four material, separately-sourced shortfalls: subway ADA inaccessibility with a 2055 compliance deadline; traffic fatalities at post-Vision-Zero highs; bus speeds around 8 mph; and Fair Fares enrolling well below its eligible population. NYC remains clearly inside the safe space on mobility — it is not 'solved'. Original research level was -85. This adjustment is an orchestrator judgement, NOT an independent verification: the underlying figures have not been re-fetched by a second agent.",
+      "indicator": "Percent of workers 16+ who drove alone to work",
+      "value": "5.2% drove alone (47,452 of 914,910 workers); mean travel time to work 31.5 min (+-0.4) -- shortest of the 5 boroughs",
+      "year": 2024,
+      "target": "No official NYC target exists for this exact metric; using the same informal <50% drive-alone threshold applied in the Petaluma portrait for direct comparability. NYC's own binding mode-shift commitments are structural rather than numeric (NYC Streets Plan / Local Law 195 of 2019 mandates minimum annual bus- and bike-lane mileage; City of Yes and PlaNYC 2023 set car-lite land-use and TOD goals).",
+      "context": "Manhattan: 5.2% drove alone (47,452 of 914,910 workers); mean travel time to work 31.5 min (+-0.4) -- shortest of the 5 boroughs\n\nCitywide for comparison: 20.6% citywide (840,263 of 4,070,607 workers) drove alone in 2024. If the worked-from-home population is excluded from the denominator (i.e. measuring mode share only among people who actually commute anywhere), drove-alone share rises to 23.6% (840,263 of 3,560,755 commuting workers). Citywide, 12.5% of all workers worked from home, 48.7% used public transit, 9.6% walked, and 4.4% carpooled. By borough, drove-alone ranges from 5.2% in Manhattan to 50.8% in Staten Island -- a ~46-point spread within one city.\n\nThis is the dimension where NYC and Petaluma diverge most sharply: Petaluma's 72.6% drive-alone rate vs. NYC's 20.6% reflects two fundamentally different built environments -- a car-dependent small city vs. a transit-first megacity with the country's only subway system running 24/7. But a low drive-alone rate does not mean NYC's mobility system is healthy: only a minority of subway stations are wheelchair accessible, buses are the slowest of any major US city, mean commute times are among the longest in the country, and 2021-2024 were some of the deadliest years for traffic violence since Vision Zero began (2025 was a record-setting exception -- see subIndicators). The policy lever with the most 2025-2026 momentum is congestion pricing (Central Business District Tolling Program), which is reshaping the denominator itself by pulling trips out of cars. Caveat: NYC's ACS geographies are the 5 counties/boroughs; there is no single Census file labeled 'New York City,' so the citywide figure here is a worker-weighted aggregate the author calculated from the 5 published county totals (component figures are primary-sourced; the aggregation step is the author's).",
+      "source": "US Census Bureau ACS 2024 1-Year, Table B08301 / Census Reporter profile, New York County NY",
+      "sourceUrl": "https://censusreporter.org/profiles/05000US36061-new-york-county-ny/",
       "screenshot": null,
-      "confidence": "low",
-      "geographicScale": "city",
-      "actions": [],
+      "confidence": "high",
+      "geographicScale": "borough",
+      "actions": [
+        "Apply for Fair Fares NYC through ACCESS HRA if household income is at or below 145-150% of the Federal Poverty Level -- only ~37% of the ~1.4 million eligible New Yorkers are currently enrolled (nyc.gov/site/hra/help/fair-fares.page).",
+        "Submit testimony or comment to NYC DOT / City Council on Streets Plan (LL195) compliance, since the agency has missed its statutory annual bus- and bike-lane mileage mandates every recent year.",
+        "Track and comment on the Interborough Express (IBX) scoping/environmental review process through MTA's project page as it moves toward a Draft Environmental Impact Statement in Fall/Winter 2026 (mta.info/project/interborough-express).",
+        "Support or monitor the MTA subway accessibility capital program (2025-2029, $7.1B) -- advocacy groups like the Center for Independence of the Disabled NY track compliance with the 2023 settlement's interim milestones.",
+        "Use and provide feedback on Vision Zero infrastructure (20 mph zones under Sammy's Law, open streets, protected bike/bus lanes) via NYC DOT's public engagement channels (nyc.gov/visionzero).",
+        "Follow congestion pricing's ongoing legal and toll-schedule developments (toll rises to $12 in 2028, $15 in 2031) via MTA's Congestion Relief Zone page, since revenue is earmarked for accessibility and capital transit improvements citywide."
+      ],
       "reviewStatus": {
         "state": "draft",
-        "notes": "Not yet researched."
-      }
+        "reviewedLevel": -45,
+        "notes": "DRAFT severity — not yet adversarially reviewed or expert-validated."
+      },
+      "productionVsConsumption": "not-applicable",
+      "productionVsConsumptionNote": "not applicable (social indicator)",
+      "neighborhoodNote": "Northeast/eastern Queens community districts (e.g. Bay Terrace, Fresh Meadows, Glen Oaks, Oakland Gardens -- roughly CD 11) are a documented transit desert: no subway access, residents depend on express buses and the LIRR, and fewer than 4 in 10 Queens residents overall can walk to a subway station. This contrasts with Manhattan's near-universal subway proximity (5.2% drive-alone). Source: Streetsblog NYC op-ed on the Queens bus-network redesign and Metro Airport News reporting on Queens transit connectivity.",
+      "subIndicators": [
+        {
+          "name": "Subway stations with ADA (stair-free) accessibility",
+          "value": "MTA's 2022/2023 class-action settlement baseline: 108 of 472 stations accessible (~23%) at time of settlement, defined as 364 of 472 then-inaccessible. Secondary reporting in 2026 puts the current count at approximately 160 of 472 stations (~34%) accessible.",
+          "year": 2026,
+          "source": "MTA ADA Settlement Notice (primary, 2023 baseline); secondary 2026 station-count reporting via HelpNewYork.com/amNewYork (not independently verified against a primary MTA total)",
+          "sourceUrl": "https://www.mta.info/accessibility/ada-settlement-notice",
+          "geographicScale": "city"
+        },
+        {
+          "name": "MTA subway/SIR accessibility settlement commitment",
+          "value": "Settlement (Center for Independence of the Disabled NY et al. v. MTA, preliminarily approved 2023) commits MTA to at least 95% of the 472 stations having stair-free access by 2055, via interim milestones: 81 stations contracted from existing capital plans, then +85 by 2035, +90 by 2045, +90 by 2055. MTA must dedicate a minimum 14.69% of NYC Transit's capital plan (when the plan exceeds $35.389B) to accessibility, floor of 8%.",
+          "year": 2023,
+          "source": "MTA ADA Settlement Notice",
+          "sourceUrl": "https://www.mta.info/accessibility/ada-settlement-notice",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Mean travel time to work, worker-weighted citywide estimate",
+          "value": "~40.4 minutes (author's worker-count-weighted average of the 5 published county figures: Manhattan 31.5, Brooklyn 41.7, Bronx 43.3, Queens 43.8, Staten Island 45.4 -- see boroughs above). Among the longest of any large US city.",
+          "year": 2024,
+          "source": "US Census Bureau ACS 2024 1-Year Estimates via Census Reporter (component county figures primary; citywide aggregation calculated by the author, not independently published)",
+          "sourceUrl": "https://censusreporter.org/profiles/05000US36061-new-york-county-ny/",
+          "geographicScale": "city",
+          "geographicScaleNote": "city (derived)"
+        },
+        {
+          "name": "Super-commuters (90+ minute one-way commute)",
+          "value": "Staten Island (Richmond County) has the 5th-highest super-commuter share of any US county at 14.3%; elevated super-commuting is documented across all outer boroughs, concentrated among public-transit riders (14.0% of transit commuters are super-commuters vs. 2.4% of drivers).",
+          "year": 2023,
+          "source": "Apartment List / Stacker analysis of Census commuting microdata",
+          "sourceUrl": "https://stacker.com/new-york/counties-most-super-commuters-new-york",
+          "geographicScale": "borough",
+          "geographicScaleNote": "borough (Staten Island); citywide pattern"
+        },
+        {
+          "name": "Average bus speed",
+          "value": "8.17 mph citywide in 2024 (down from 8.22 mph in 2015); by borough: Staten Island 12.6 mph, Queens 8.75 mph, Bronx 7.65 mph, Brooklyn 7.37 mph, Manhattan 6.29 mph (slowest). NYC buses are the slowest of any major US city; the M42 crosstown was named the single slowest route citywide at 5.25 mph.",
+          "year": 2024,
+          "source": "NYC Comptroller, \"Behind Schedule: How New York City's Bus System Slow Rolls Riders\"",
+          "sourceUrl": "https://comptroller.nyc.gov/wp-content/uploads/documents/Behind-Schedule-Bus-Report.pdf",
+          "geographicScale": "borough",
+          "geographicScaleNote": "city and borough"
+        },
+        {
+          "name": "Vision Zero traffic fatalities",
+          "value": "205 traffic deaths in 2025 (down 19% from 253 in 2024) -- the fewest ever recorded since record-keeping began in 1910, and down 31% since Vision Zero launched in 2014. Pedestrian deaths: 111 in 2025 vs. 122 in 2024. Total injuries down 7.7% (47,557 vs 51,540) and serious injuries down 2.8% (2,947 vs 3,031) year over year as of mid-December 2025. Note: several years between 2020-2024 were among the deadliest of the Vision Zero era before this 2025 improvement, per Vision Zero Network and Transportation Alternatives commentary.",
+          "year": 2025,
+          "source": "NYC DOT press release, \"Traffic Deaths Reach All-time Low\"",
+          "sourceUrl": "https://www.nyc.gov/html/dot/html/pr2026/traffic-deaths-reach-all-time-low.shtml",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Fair Fares NYC enrollment vs. eligibility",
+          "value": "Approximately 37% of the ~1.4 million income-eligible New Yorkers are enrolled in the half-price transit fare program. Income ceiling raised from 120% to 145% of the Federal Poverty Level effective January 2025, with a further increase to 150% FPL underway.",
+          "year": 2025,
+          "source": "NYC HRA press materials and NY1 reporting on Fair Fares enrollment gap",
+          "sourceUrl": "https://ny1.com/nyc/all-boroughs/traffic_and_transit/2025/10/15/fair-fares-half-price-fare-program-fails-those-who-most-need-it",
+          "geographicScale": "city"
+        },
+        {
+          "name": "NYC Streets Plan (LL195) mileage shortfall",
+          "value": "DOT built 18.2 lane-miles of protected bike lanes in 2025 (36% of the 50-mile/year statutory minimum) and 13.5 lane-miles of protected bus lanes in 2024 (45% of the 30-mile/year minimum). 2024's ~29 bike-lane miles was the third-highest annual total in city history, yet still fell short of the legal mandate every year checked.",
+          "year": 2025,
+          "source": "City & State New York, \"NYC DOT falls far short of '24 targets for bike and bus lanes\"",
+          "sourceUrl": "https://www.cityandstateny.com/policy/2025/03/nyc-dot-falls-far-short-24-targets-bike-and-bus-lanes-touts-progress/403707/",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Congestion pricing (Central Business District Tolling Program / Congestion Relief Zone)",
+          "value": "Launched January 5, 2025 at a $9 peak toll for passenger vehicles ($2.25 overnight), scheduled to rise to $12 in 2028 and $15 in 2031. First-year (through ~Nov 2025) measured effects: ~27 million fewer vehicle entries into the zone (11% average daily decline, ~71,500-73,000 fewer vehicles/day); travel-time gains at major crossings (Holland Tunnel +51% faster, Queensboro Bridge +29.3%, Lincoln Tunnel +24.7%, Brooklyn Bridge +15%); in-zone weekday vehicle speeds up 4%, weekend up 6.2%, bus speeds up 2.3%; subway trips into the zone up 9%, express bus +7.8%, local bus +8.4%; $518M net toll revenue collected through November 2025 with projections exceeding $550M by year-end against a $500M/yr target. Survived a federal termination attempt: a May 2025 preliminary injunction in MTA v. Duffy kept the program operating.",
+          "year": 2025,
+          "source": "Governor Hochul press release, first-anniversary summary of congestion pricing results; MTA press releases",
+          "sourceUrl": "https://www.governor.ny.gov/news/less-traffic-better-transit-its-first-anniversary-governor-hochul-celebrates-transformational",
+          "geographicScale": "city",
+          "geographicScaleNote": "city (Manhattan CBD zone, with regional spillover effects)"
+        },
+        {
+          "name": "Interborough Express (IBX)",
+          "value": "Proposed 14-mile light-rail/BRT line connecting Brooklyn and Queens along an existing freight right-of-way, bypassing Manhattan; projected 160,000+ daily riders. As of 2026 the project is in design/environmental review (design phase ~2025-2027); MTA estimates it would eliminate 21.8 million vehicle-miles of car trips annually once built. No construction start date confirmed.",
+          "year": 2026,
+          "source": "MTA press release, Earth Day 2026 IBX vehicle-miles announcement; MTA project page",
+          "sourceUrl": "https://www.mta.info/press-release/earth-day-2026-mta-calculates-interborough-express-will-eliminate-218-million-miles",
+          "geographicScale": "city",
+          "geographicScaleNote": "city (Brooklyn-Queens corridor)"
+        },
+        {
+          "name": "Sammy's Law / 20 mph speed limits",
+          "value": "State legislation (Sammy's Law, named for a child killed by a car in 2013) authorized NYC, for the first time, to lower default speed limits without state approval. NYC DOT began lowering limits from 25 to 20 mph in 2024 and completed rollout across 250 designated zones/areas by the end of 2025.",
+          "year": 2025,
+          "source": "AOL/news aggregation of NYC DOT rollout reporting",
+          "sourceUrl": "https://www.aol.com/articles/nyc-speed-limit-drop-20-163450880.html",
+          "geographicScale": "city"
+        }
+      ],
+      "global": {
+        "lens": "global-social",
+        "level": 30,
+        "levelRationale": "NYC is a genuine global model on the positive side (a dense megacity where most people do not need a car), but its subway construction costs are the highest in the world by a wide margin, meaning NYC's own transit expansion consumes capital and technical capacity at a rate that, if replicated, would make transit unaffordable for the rest of the world -- a real global-relevance failure alongside the modeling success. Level reflects that mixed picture rather than a clean pass or fail; it is not a precisely quantifiable single score and should be treated as indicative only.",
+        "indicator": "Subway/metro construction cost per mile, benchmarked against the global average (proxy for NYC's global relevance/model status in mobility, alongside untracked aviation emissions and global road-access inequality)",
+        "value": "Second Avenue Subway Phase 2 (1.76 miles, 3 stations, connecting the Q line from 96th St to 125th St/Lexington Ave) is projected to cost approximately $7.7 billion, or roughly $4.3 billion per mile -- reported as more than 11 times the global average of ~$350 million per mile across 900+ rapid-rail projects in nearly 60 countries studied by the NYU Marron Institute's Transit Costs Project. The MTA approved a $1.972 billion tunneling contract for Phase 2 in 2025 (Connect Plus Partners/Halmar-FCC joint venture).",
+        "year": 2025,
+        "target": "No binding target exists; the informal global benchmark is the Transit Costs Project's own international average cost per mile/km, which NYC (like most large US transit projects) badly exceeds. No NYC or MTA policy currently commits to closing this cost gap, though MTA capital-planning reform has been publicly discussed.",
+        "context": "NYC's below-50%-drive-alone mode share is precisely the kind of outcome climate and transit advocates worldwide point to as proof dense transit-oriented cities work -- the city exports that model globally through comparative research (Transit Costs Project, ITDP, C40). But the same system's construction costs are a cautionary tale: at $4B+/mile, NYC cannot build enough subway to meaningfully change its own accessibility gaps (see subway accessibility subIndicator above), and the cost overrun is frequently cited internationally as a reason other cities hesitate to pursue rail-heavy strategies. Two further global-lens threads could not be quantified within this research pass: (1) JFK/LaGuardia/Newark aviation emissions are widely reported to sit outside NYC's official GPC-protocol greenhouse-gas inventory boundary (this is a mobility/climate-change cross-cutting issue), but a direct primary-source citation could not be fetched (CBC NY's explainer returned an HTTP 403 on fetch) -- flagged as a dataGap, not asserted as fact. (2) Global road-access inequality: roughly 900 million-1 billion rural people worldwide lack access to an all-season road (World Bank Rural Access Index / SDG indicator 9.1.1, originally estimated 2006), a stark contrast to NYC's 24/7 rail system -- included qualitatively as the global-equity counterpoint but not something NYC policy can directly move.",
+        "source": "Vital City NYC, \"The Transit Costs Are Too Damn High!\" (reporting NYU Marron Institute Transit Costs Project data); Engineering News-Record on the Phase 2 contract award",
+        "sourceUrl": "https://www.vitalcitynyc.org/articles/why-it-costs-4-billion-per-mile-of-subway-track",
+        "confidence": "medium",
+        "geographicScale": "global",
+        "productionVsConsumption": "production-based",
+        "productionVsConsumptionNote": "not applicable (social/cost indicator, not an emissions figure); aviation-emissions boundary question above is inherently a production-based-inventory-scope issue but could not be independently verified this pass"
+      },
+      "policyAnchors": [
+        {
+          "name": "Central Business District Tolling Program / Congestion Relief Zone (congestion pricing)",
+          "relevance": "Primary near-term lever changing NYC's mobility mode share and traffic volumes; direct funding source for MTA capital accessibility program.",
+          "status": "Live and operating since January 5, 2025 at a $9 peak toll; survived a federal termination attempt via a May 2025 preliminary injunction (MTA v. Duffy); first-year outcomes (traffic down ~11%, faster crossings, $500M+ revenue) published by MTA/Governor's office as of Jan 2026 anniversary.",
+          "sourceUrl": "https://www.governor.ny.gov/news/less-traffic-better-transit-its-first-anniversary-governor-hochul-celebrates-transformational"
+        },
+        {
+          "name": "NYC Streets Plan (Local Law 195 of 2019)",
+          "relevance": "Statutory minimum annual mileage for protected bus lanes (30 mi/yr) and protected bike lanes (50 mi/yr); the core accountability mechanism for street redesign.",
+          "status": "In effect but DOT has missed the mandate every recent year measured (2025: 18.2 mi bike lanes = 36% of mandate; 2024: 13.5 mi bus lanes = 45% of mandate). City Council was considering added tracking/oversight legislation as of April 2025.",
+          "sourceUrl": "https://www.cityandstateny.com/policy/2025/03/nyc-dot-falls-far-short-24-targets-bike-and-bus-lanes-touts-progress/403707/"
+        },
+        {
+          "name": "MTA subway accessibility class-action settlement",
+          "relevance": "Binding, court-approved commitment on the pace of subway ADA accessibility upgrades -- the main lever on the local-social lens's biggest documented failure.",
+          "status": "Preliminarily approved 2023 (federal judge approval reported April 2023); MTA's 2025-2029 Capital Program dedicates $7.1B to accessibility, targeting 60+ newly accessible stations this cycle, consistent with the settlement's interim milestones.",
+          "sourceUrl": "https://www.mta.info/accessibility/ada-settlement-notice"
+        },
+        {
+          "name": "Sammy's Law (NY State, 2024)",
+          "relevance": "State authorization enabling NYC to set 20 mph default speed limits without prior state sign-off; directly supports Vision Zero.",
+          "status": "Implemented; DOT completed rollout of 20 mph limits across 250 designated zones by end of 2025.",
+          "sourceUrl": "https://www.aol.com/articles/nyc-speed-limit-drop-20-163450880.html"
+        },
+        {
+          "name": "Vision Zero (2014)",
+          "relevance": "The city's overarching traffic-safety policy framework; sets the baseline against which 2025's record-low fatality count is measured.",
+          "status": "Active; 2025 was the safest year on record citywide (205 deaths, down 31% since 2014 launch), though several years in between (2020-2024) were flagged by advocates as among the era's deadliest before this improvement.",
+          "sourceUrl": "https://www.nyc.gov/html/dot/html/pr2026/traffic-deaths-reach-all-time-low.shtml"
+        },
+        {
+          "name": "Fair Fares NYC",
+          "relevance": "City's primary transit-affordability program for low-income residents; enrollment gap is a direct equity lever within the mobility dimension.",
+          "status": "Income eligibility raised to 145% FPL (Jan 2025), further increase to 150% FPL underway; enrollment remains at only ~37% of the ~1.4M eligible population as of late 2025.",
+          "sourceUrl": "https://ny1.com/nyc/all-boroughs/traffic_and_transit/2025/10/15/fair-fares-half-price-fare-program-fails-those-who-most-need-it"
+        }
+      ],
+      "comparisonNote": "Petaluma's 72.6% drive-alone commute share (a small Mediterranean-climate city built almost entirely around cars) sits at nearly the opposite end of the spectrum from NYC's 20.6% citywide figure -- and even NYC's most car-dependent borough, Staten Island, at 50.8%, is still well below Petaluma's rate. But the comparison cuts both ways: Petaluma has no subway to fail at accessibility, no multi-billion-dollar-per-mile construction-cost problem, and no history of a formal traffic-fatality reduction program comparable to Vision Zero's decade-plus track record: NYC's genuine failures here (accessibility, bus speed, travel time, historically high fatality years, transit-cost overruns) are failures of scale and complexity that a 60,000-person city never has to confront.",
+      "dataGaps": [
+        "Borough-by-borough count of ADA-accessible subway stations (the settlement and secondary reporting give citywide totals only; MTA's own station accessibility page lists stations but not a total system count needed to calculate per-borough percentages) -- MTA Department of Subways / Accessibility unit would have this.",
+        "A single, MTA- or Census-published citywide (not author-aggregated) mean commute time and drive-alone percentage for the five boroughs combined -- NYC DCP's Population FactFinder or a future NYC DOT Citywide Mobility Survey release may publish this directly; the 2024 CMS User Guide references 2023 ACS baselines but the full survey results were not fetched in this pass.",
+        "Whether JFK/LaGuardia/Newark aviation emissions are formally excluded from MOCEJ's citywide GHG inventory boundary, and by how much -- Mayor's Office of Climate & Environmental Justice (MOCEJ) or the Port Authority of NY & NJ would have the definitive inventory-boundary documentation; a secondary source (Citizens Budget Commission) suggested exclusion but the primary page returned an HTTP 403 on fetch and could not be verified directly.",
+        "A precise, current (2026) primary-source total count of MTA-accessible stations (this dossier uses a 2023 settlement baseline of 108/472 and a secondary 2026 estimate of ~160/472; MTA's own accessibility dashboard would resolve the gap)."
+      ],
+      "experts": [
+        {
+          "org": "MTA Department of Subways / Accessibility Program",
+          "why": "Authoritative current station-by-station accessibility counts and capital program milestones.",
+          "contactPath": "https://www.mta.info/accessibility"
+        },
+        {
+          "org": "NYC DOT Bicycle and Pedestrian Programs / Streets Plan compliance office",
+          "why": "Authoritative annual mileage data for LL195 (Streets Plan) compliance and future-year plans.",
+          "contactPath": "https://www.nyc.gov/html/dot/html/about/nyc-streets-plan.shtml"
+        },
+        {
+          "org": "Mayor's Office of Climate & Environmental Justice (MOCEJ)",
+          "why": "Definitive answer on aviation-emissions inventory boundary and consumption- vs. production-based transportation GHG accounting.",
+          "contactPath": "https://www.nyc.gov/site/sustainability/index.page"
+        },
+        {
+          "org": "Center for Independence of the Disabled, New York (CIDNY)",
+          "why": "Lead plaintiff organization in the MTA accessibility settlement; tracks compliance with interim milestones on the ground.",
+          "contactPath": "https://cidny.org/"
+        },
+        {
+          "org": "Riders Alliance / Transportation Alternatives / Permanent Citizens Advisory Committee to the MTA (PCAC)",
+          "why": "Advocacy and technical groups closely tracking bus speed, Fair Fares enrollment, and Vision Zero outcomes; good validators for the subIndicator framing chosen here.",
+          "contactPath": "https://www.ridersny.org/ ; https://transalt.org/ ; https://pcac.org/"
+        }
+      ]
     }
   ],
   "ecological": [
     {
       "name": "climate change",
       "lens": "local-ecological",
-      "level": null,
-      "indicator": "Not yet researched",
-      "value": null,
-      "year": null,
-      "target": "TBD",
-      "context": "⚠ Citywide figure shown — not specific to Manhattan. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
-      "source": "Pending",
-      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "level": 50,
+      "levelRationale": "Citywide production-based emissions are down 20% from 2005 as of 2023, but MOCEJ's own analysis states the city 'must more than double year-over-year reductions' to hit the legally binding 40%-by-2030 target -- current pace is 'Needs attention,' not on track, though not yet in crisis given steady historical decline.",
+      "indicator": "NYC Citywide Greenhouse Gas Emissions Inventory (production-based, GPC/BASIC methodology, per Local Law 22 of 2008)",
+      "value": "Approximately 51.2-51.3 million metric tons CO2e (MtCO2e) citywide in 2023 (down ~4% from 2019, down ~1 million tons from 2022); approximately 6.2 tCO2e per capita (down 23% from 2005, but +3% above the 2019 pre-pandemic low). Sector shares in 2023: Buildings ~72%, Transportation ~25%, Waste ~4%.",
+      "year": 2023,
+      "target": "Local Law 22 of 2008 mandates the Citywide-GPC inventory that tracks Local Law 97/PlaNYC goals: 40% reduction below 2005 levels by 2030, and carbon neutrality (net-zero, '80x50'-descended target) by 2050. NY State's CLCPA sets a parallel but distinct target (40% below 1990 by 2030, 85% by 2050) tracked via a separate 'Citywide-CLCPA' inventory that also counts fugitive methane's near-term warming impact -- MOCEJ's own presentation shows accounting for methane leakage roughly doubles measured natural-gas emissions.",
+      "context": "⚠ Citywide figure shown — not specific to Manhattan. Not published; see Bronx note. CBEI proxy: Manhattan = 13 tCO2e/person (2019, consumption-based).\n\nAt 51 MtCO2e total, NYC's absolute footprint is roughly 118x Petaluma's (population is only ~138x larger), and its production-based per-capita figure of ~6.2 tCO2e is genuinely LOWER than Petaluma's 7.25 tCO2e/person (2024) -- a real, counter-intuitive result driven by density, transit ridership, and small, efficient housing units. The policy lever is fundamentally different in kind from a small city: Local Law 97 imposes binding, penalty-backed emissions caps on ~50,000 individual large buildings (the source of 72% of emissions), enforced building-by-building rather than through a single utility or fleet decision. The major recent complication is the 2021 closure of the Indian Point nuclear plant, which MOCEJ's own analysis shows increased in-city fossil generation and grid carbon intensity (289.6 to 369.9 kg CO2/MWh, 2019-2023) and concentrated the resulting pollution increase in disadvantaged waterfront neighborhoods (Astoria, Long Island City, the East River corridor). Caveat: the 2023 total/per-capita figures here are read off MOCEJ's published bar charts (precise to roughly +/-0.5 MtCO2e), not the underlying dataset row.",
+      "source": "NYC Mayor's Office of Climate & Environmental Justice (MOCEJ), 'NYC Greenhouse Gas Inventory' presentation to the Climate Knowledge Exchange",
+      "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/2023_GHG_Inventory_MOCEJ_Climate_Knowledge_Exchange_Meeting_1.13.25.pdf",
       "screenshot": null,
       "confidence": "low",
       "geographicScale": "city",
-      "actions": [],
+      "actions": [
+        "If you sit on a co-op/condo board or manage a rental building over 25,000 sq ft, check your building's Local Law 97 filing status on NYC DOB's public compliance data and start a decarbonization plan now -- 57% of buildings already exceed the 2030 cap and the penalty is $268/ton over the limit.",
+        "Use NYC Accelerator (accelerator.nyc), the city's free technical-assistance program, to plan HVAC electrification retrofits, and apply for the J51 tax abatement, which MOCEJ specifically flags as necessary to 'leapfrog' buildings off natural gas ahead of LL97 deadlines.",
+        "Cut personal air travel and red-meat/dining-out consumption: per NYC's own Consumption-Based Emissions Inventory, air travel is 34% of the average household's transportation footprint and eating out plus animal products are nearly half of food emissions -- the two single biggest levers an individual NYC resident actually controls.",
+        "Push City Council and the new Mamdani administration (in office since Jan 1, 2026) to fund LL97 enforcement/audits, protect the 2030 caps from weakening amendments, and advance large-scale renewable transmission projects (Champlain Hudson Power Express, offshore wind) that MOCEJ says account for 35% of the city's projected 2030 emissions progress.",
+        "Support the Zero Waste Act's curbside organics program and use it consistently -- MOCEJ flags landfilled waste as one of the sectors where progress has stalled even as wastewater-treatment efficiency has improved.",
+        "If your household consumes at the higher end of NYC's Consumption-Based Emissions map (parts of Staten Island and outer Queens/Brooklyn run up to 3x the citywide average per household), prioritize reducing car ownership/VMT and air travel first -- these are the categories with the widest gap between NYC and a 1.5C-aligned per-capita budget."
+      ],
       "reviewStatus": {
         "state": "draft",
-        "notes": "Not yet researched."
-      }
+        "reviewedLevel": 50,
+        "notes": "DRAFT severity — not yet adversarially reviewed or expert-validated."
+      },
+      "productionVsConsumption": "production-based",
+      "neighborhoodNote": "In-city power plant fuel combustion rose 20% since Indian Point's 2021 closure, concentrated at plants in or near Astoria, Long Island City, Hunters Point, and the East River corridor -- neighborhoods MOCEJ itself flags as 'disadvantaged communities' -- meaning the grid-decarbonization shortfall is also an environmental-justice problem, not just a climate-accounting one.",
+      "subIndicators": [
+        {
+          "name": "Manhattan — NYC Household Consumption-Based Emissions Inventory (CBEI) -- lifecycle/scope-3 emissions from residents' consumption of food, goods, housing, services, and private transport, wherever in the world those emissions physically occur (different basis: consumption-based)",
+          "value": "13 tCO2e/person (27 tCO2e/household)",
+          "year": 2019,
+          "source": "NYC Household CBEI",
+          "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/NYC-Household-Consumption-GHG-Emissions-Inventory.pdf",
+          "geographicScale": "borough",
+          "geographicScaleNote": "Borough figure measured on the consumption-based basis — NOT comparable with the local headline indicator above."
+        },
+        {
+          "name": "Buildings share of citywide emissions",
+          "value": "72% (2023)",
+          "year": 2023,
+          "source": "MOCEJ GHG Inventory presentation",
+          "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/2023_GHG_Inventory_MOCEJ_Climate_Knowledge_Exchange_Meeting_1.13.25.pdf",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Transportation share of citywide emissions",
+          "value": "25% (2023), down 22% since 2005 but flat (0% change) since 2022",
+          "year": 2023,
+          "source": "MOCEJ GHG Inventory presentation",
+          "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/2023_GHG_Inventory_MOCEJ_Climate_Knowledge_Exchange_Meeting_1.13.25.pdf",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Waste share of citywide emissions",
+          "value": "4% (2023), down 20% since 2005",
+          "year": 2023,
+          "source": "MOCEJ GHG Inventory presentation",
+          "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/2023_GHG_Inventory_MOCEJ_Climate_Knowledge_Exchange_Meeting_1.13.25.pdf",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Electricity grid coefficient",
+          "value": "369.9 kg CO2/MWh (2023), up from 289.6 in 2019 following Indian Point's closure; renewables share of grid fell from 36% (2019) to 14% (2023)",
+          "year": 2023,
+          "source": "MOCEJ GHG Inventory presentation",
+          "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/2023_GHG_Inventory_MOCEJ_Climate_Knowledge_Exchange_Meeting_1.13.25.pdf",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Local Law 97 first-cycle compliance filings (2024 calendar year, filed by Dec 31, 2025)",
+          "value": "~91% of covered buildings (93% of covered properties/tax lots) filed. Of filed buildings, under 10% exceeded their 2024-2029 emissions cap (i.e., roughly 90% were within their initial cap), but 57% of properties already exceed the tighter 2030-2034 cap. Roughly 1,400 properties failed to file and received Notices of Deficiency; penalties are set at $268 per ton of excess emissions.",
+          "year": 2025,
+          "source": "NYC Department of Buildings press release",
+          "sourceUrl": "https://www.nyc.gov/site/buildings/dob/pr-ll97-improve-sustainability.page",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Citywide EV adoption",
+          "value": "2% of all registered vehicles citywide are electric (2023), up from 1% in 2022; City government fleet is further ahead at 12% electric",
+          "year": 2023,
+          "source": "MOCEJ GHG Inventory presentation",
+          "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/2023_GHG_Inventory_MOCEJ_Climate_Knowledge_Exchange_Meeting_1.13.25.pdf",
+          "geographicScale": "city"
+        }
+      ],
+      "global": {
+        "lens": "global-ecological",
+        "level": 100,
+        "levelRationale": "NYC's own Consumption-Based Emissions Inventory (CBEI) puts household consumption emissions at 11 tCO2e/person (2019) -- roughly 5.5x to 7x the ~1.6-2.0 tCO2e/person range DEAL cites as 1.5C-aligned, and far above C40's own modeled 2050 target of 0.7 tCO2e/capita for high-income cities. It is below the U.S. household average (17 tCO2e/person) and mid-pack among wealthy C40 cities, but the 20-year decline (2007-2019) was only 7.7%, nowhere close to the 'halve by 2030, cut two-thirds in wealthy cities' pace C40 says is required -- hence 'Critical' rather than 'Severe.'",
+        "indicator": "NYC Household Consumption-Based Emissions Inventory (CBEI) -- lifecycle/scope-3 emissions from residents' consumption of food, goods, housing, services, and private transport, wherever in the world those emissions physically occur",
+        "value": "92 million MTCO2e total for NYC household consumption in 2019 (3,211,033 households); ~29 MTCO2e per household; ~11 MTCO2e per person. This is 67% larger than the same-year territorial/production-based inventory (55 million MTCO2e in 2019). Category breakdown per household: Food 7.5 t (25% of total; eating-out and animal products each ~1.8t), Housing 7.0t (natural gas 49% of housing), Services 5.9t (healthcare 57%), Goods 4.2t, Transportation 4.1t (air travel alone = 1.4t, or 34% of the transport share). Personal air travel citywide totals roughly 4.5 million MTCO2e/year (1.4 t/household x 3.21 million households) -- notably this captures only NYC residents' personal flights, not the much larger throughput of non-resident passengers transiting JFK/LaGuardia/Newark, which is not attributable to the city under this method.",
+        "year": 2019,
+        "target": "DEAL's cited 1.5C-aligned per-capita consumption target of roughly 1.6-2.0 tCO2e/person. This sits between C40's own 'Future of Urban Consumption in a 1.5C World' (2019) trajectory milestones for the 'North America, Oceania & High-Income Asia' city typology NYC belongs to: 15.6 tCO2e/capita in 2017, falling to 5.9 by 2030 and 0.7 by 2050 (note: this C40 figure is a regional-typology average across ~20 cities, not an NYC-specific number).",
+        "context": "This is the single most important entry in NYC's ecological portrait: it is the number that shows the small-city framing fails for a global megacity. NYC's production-based inventory (used for Local Law 97 and looks almost flattering next to Petaluma) captures only what burns or is generated within the five boroughs; it excludes nearly everything the city's 8.3 million residents actually consume -- food grown elsewhere, clothing manufactured abroad, electronics assembled overseas, and the embodied carbon in construction materials shipped in. NYC's own commissioned inventory (with C40, American Express, and EcoDataLab) shows consumption emissions are 67% larger than production emissions for the same year and residents. The transmission mechanisms are trade (food, goods, construction materials), finance (NYC-headquartered banks underwriting fossil-fuel projects worldwide -- a separate, unquantified channel not covered by this consumption inventory), personal aviation, and institutional procurement. The policy lever here is categorically different from anything in Local Law 97: it runs through consumer behavior, supply-chain standards (e.g., the Good Food Purchasing Program), and national/global production decarbonization that NYC cannot mandate directly -- C40's own modeling concludes that even aggressive local action only closes about a quarter of the consumption-emissions gap; the rest depends on the carbon intensity of production worldwide.",
+        "source": "NYC Household Consumption-Based Emissions Inventory (MOCEJ / C40 Cities / EcoDataLab, funded by American Express), 2019 base year, prepared February 2023",
+        "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/NYC-Household-Consumption-GHG-Emissions-Inventory.pdf",
+        "confidence": "high",
+        "geographicScale": "global",
+        "productionVsConsumption": "consumption-based",
+        "boroughs": {
+          "bronx": {
+            "value": "9 tCO2e/person (24 tCO2e/household)",
+            "year": 2019,
+            "source": "NYC Household CBEI",
+            "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/NYC-Household-Consumption-GHG-Emissions-Inventory.pdf",
+            "confidence": "high",
+            "note": "Lowest per-capita consumption footprint of the five boroughs despite being the lowest-income borough -- driven by very low private-transportation emissions (2.5 t/household, the lowest of all boroughs)."
+          },
+          "brooklyn": {
+            "value": "11 tCO2e/person (28 tCO2e/household)",
+            "year": 2019,
+            "source": "NYC Household CBEI",
+            "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/NYC-Household-Consumption-GHG-Emissions-Inventory.pdf",
+            "confidence": "high"
+          },
+          "manhattan": {
+            "value": "13 tCO2e/person (27 tCO2e/household)",
+            "year": 2019,
+            "source": "NYC Household CBEI",
+            "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/NYC-Household-Consumption-GHG-Emissions-Inventory.pdf",
+            "confidence": "high",
+            "note": "Higher per-capita than per-household because Manhattan has the smallest average household size; driven by the highest services (healthcare, education, entertainment) footprint of any borough."
+          },
+          "queens": {
+            "value": "12 tCO2e/person (33 tCO2e/household)",
+            "year": 2019,
+            "source": "NYC Household CBEI",
+            "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/NYC-Household-Consumption-GHG-Emissions-Inventory.pdf",
+            "confidence": "high"
+          },
+          "statenIsland": {
+            "value": "15 tCO2e/person (42 tCO2e/household)",
+            "year": 2019,
+            "source": "NYC Household CBEI",
+            "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/NYC-Household-Consumption-GHG-Emissions-Inventory.pdf",
+            "confidence": "high",
+            "note": "Highest of all five boroughs on every category; transportation emissions (12.3 t/household) are roughly 5x the Bronx's, reflecting car-dependence and larger, less efficient single-family homes."
+          }
+        }
+      },
+      "policyAnchors": [
+        {
+          "name": "Local Law 97 of 2019",
+          "relevance": "Binding building emissions caps for buildings >25,000 sq ft (the ~72% of citywide emissions), 2024-2029 period then a much tighter 2030-2034 cap; penalty of $268/ton over the limit.",
+          "status": "First compliance-period reports (for calendar year 2024) were due Dec 31, 2025. ~91% of covered buildings filed; DOB reports under 10% of filed buildings exceeded their 2024-29 cap, but 57% of properties already exceed the 2030 cap and will need retrofits; ~1,400 non-filers received Notices of Deficiency and now face penalties.",
+          "sourceUrl": "https://www.nyc.gov/site/buildings/dob/pr-ll97-improve-sustainability.page"
+        },
+        {
+          "name": "Local Law 22 of 2008",
+          "relevance": "Establishes NYC's mandatory citywide GHG inventory (the source of the 'local' figures in this dossier) and requires it to track Local Law 97 goals.",
+          "status": "Actively maintained by MOCEJ; 18+ years of continuous data (2005-2023) as of the most recent published inventory.",
+          "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/2023_GHG_Inventory_MOCEJ_Climate_Knowledge_Exchange_Meeting_1.13.25.pdf"
+        },
+        {
+          "name": "Carbon neutrality by 2050 / '80x50' descendant goal",
+          "relevance": "The city's overarching production-based target, tracked via the Citywide-GPC inventory; requires roughly halving emissions by 2030 relative to a Climate Budgeting trajectory shown in MOCEJ's own charts.",
+          "status": "MOCEJ's own January 2025 presentation states the city must 'more than double year-over-year reductions' to stay on the Climate Budgeting trajectory (-74% by 2050) rather than the slower business-as-usual path (-51%); as of 2023 the city was only 20% below 2005 levels.",
+          "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/2023_GHG_Inventory_MOCEJ_Climate_Knowledge_Exchange_Meeting_1.13.25.pdf"
+        },
+        {
+          "name": "NY State Climate Leadership and Community Protection Act (CLCPA)",
+          "relevance": "State-level target (40% below 1990 by 2030, 85% by 2050, 70% renewable electricity by 2030) that NYC tracks via a separate 'Citywide-CLCPA' inventory methodology that also accounts for near-term methane warming, per MOCEJ's inventory-basics slide.",
+          "status": "Not independently verified in this research pass -- see dataGaps. MOCEJ confirms the CLCPA-aligned inventory exists and is maintained alongside the GPC inventory.",
+          "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/2023_GHG_Inventory_MOCEJ_Climate_Knowledge_Exchange_Meeting_1.13.25.pdf"
+        },
+        {
+          "name": "PlaNYC: Getting Sustainability Done (2023)",
+          "relevance": "Mayor's Office long-term sustainability plan referenced by the brief; expected to frame the city's climate-budgeting and building-electrification strategy.",
+          "status": "Released under the Adams administration (April 2023); its status and any updates under the Mamdani administration (in office since Jan 1, 2026) were not verified in this research pass -- flagged as a dataGap."
+        }
+      ],
+      "comparisonNote": "Counter-intuitively, NYC's production-based per-capita footprint (~6.2 tCO2e/person, 2023) is actually LOWER than Petaluma's 7.25 tCO2e/person (2024), driven by density, transit ridership, and small, efficient housing -- despite NYC's absolute emissions (51 MtCO2e) being roughly 118x Petaluma's estimated total (~0.44 MtCO2e at 60,000 residents x 7.25t), even though NYC's population is only ~138x larger. But NYC's consumption-based footprint (11 tCO2e/person, 2019) flips the comparison: it captures the embodied carbon in everything the city imports and consumes that a small-city inventory like Petaluma's does not attempt to measure at all, and it is this global/consumption lens -- not the production lens -- where NYC's status as a global financial and consumption center actually shows up.",
+      "dataGaps": [
+        "Precise 2023 citywide MtCO2e total and per-capita figure to the exact ton -- this dossier reads values off MOCEJ's published bar charts; the underlying dataset (likely on NYC Open Data / data.cityofnewyork.us) would give exact figures. Agency: MOCEJ / NYC Open Data.",
+        "Share of Local Law 97 filers using the 'good faith efforts' alternative compliance pathway (vs. straight compliance or paying penalties) -- not found in the sources fetched. Agency: NYC DOB.",
+        "Current (2025-2026) NY State progress toward CLCPA's 40%-by-2030 target and 70%-renewable-electricity-by-2030 target -- not verified in this research pass. Agency: NYSERDA / NY DEC.",
+        "Status of Local Law 154 (all-electric new construction) enforcement and City of Yes for Carbon Neutrality implementation as of 2026, and whether the Mamdani administration (took office Jan 1, 2026) has issued any updates to PlaNYC or the climate-budgeting trajectory. Agency: MOCEJ / Mayor's Office.",
+        "Current-year (2025/2026) aviation emissions from JFK, LaGuardia, and Newark combined -- the only figures located were from a 2011 NYC Comptroller report (52,864 tons CO2e from JFK's own electricity use alone; ~63,000 tons combined JFK+LaGuardia building electricity), far too stale to use and covering only building operations, not flight operations or throughput serving ~146 million annual passengers (2024). Agency: Port Authority of NY & NJ sustainability reporting.",
+        "A defensible borough-level PRODUCTION-based emissions estimate built from geocoded LL84/LL133 building energy benchmarking data -- not attempted in this research pass due to time/scope; would require pulling and aggregating the raw NYC Open Data benchmarking dataset by borough. Agency: MOCEJ, DOB, or Urban Green Council (which has already worked with this dataset)."
+      ],
+      "experts": [
+        {
+          "org": "NYC Mayor's Office of Climate & Environmental Justice (MOCEJ)",
+          "why": "Author and steward of both the citywide production-based GHG inventory and the household Consumption-Based Emissions Inventory used throughout this dossier; best positioned to confirm current-year figures and CLCPA alignment.",
+          "contactPath": "https://www.nyc.gov/content/climate/pages/"
+        },
+        {
+          "org": "NYC Department of Buildings (DOB), Local Law 97 compliance unit",
+          "why": "Holds the underlying LL97 filing and compliance-pathway data (including the 'good faith efforts' share not found in this pass).",
+          "contactPath": "https://www.nyc.gov/site/buildings/index.page"
+        },
+        {
+          "org": "Urban Green Council",
+          "why": "NGO that has done extensive independent LL84/LL97 data analysis, including work that could support a borough-level building-emissions estimate.",
+          "contactPath": "https://www.urbangreencouncil.org/"
+        },
+        {
+          "org": "NYC Comptroller's Office, Climate Dashboard team",
+          "why": "Publishes an independent public climate-emissions dashboard and has previously analyzed aviation/transportation emissions (e.g., the 'Green Skies' report).",
+          "contactPath": "https://comptroller.nyc.gov/services/for-the-public/nyc-climate-dashboard/"
+        },
+        {
+          "org": "C40 Cities / EcoDataLab",
+          "why": "Co-developed NYC's Consumption-Based Emissions Inventory methodology and hold the underlying tract-level and city-comparison data referenced in this dossier.",
+          "contactPath": "https://www.c40.org/"
+        }
+      ]
     },
     {
       "name": "ocean acidification",
@@ -502,12 +1315,12 @@
     {
       "name": "land conversion",
       "lens": "local-ecological",
-      "level": 20,
-      "levelRationale": "Citywide tree canopy is at 23.4% against a legally-mandated 30% goal (Local Law 148 of 2023) — about 78% of the way there — but the city's own April 2026 Urban Forest Plan pushed the deadline from 2035 to 2040 and acknowledges current growth trends (about +0.3 pts/yr) will miss even that; independent analysts project 2055+ at present funding levels. Combined with historic near-total loss of Jamaica Bay's salt marsh islands (only partially reversed by restoration), this is 'needs attention' rather than 'on track,' despite real, measurable gains.",
+      "level": 30,
+      "levelRationale": "50 is defensible if and only if the dimension is scored purely as canopy-versus-goal, but it is too high once the target is stated accurately and the orchestrator's density ruling is applied. On the target: Local Law 148's 30% is statutory but carries NO deadline; 2040 is an administrative date chosen in April 2026 and 2035 was never in the law. So the sharpest negative available — 'the city has blown a legal deadline' — does not exist. What does exist: 23.4% is 78% of the way to the goal; canopy rose in all five boroughs 2017-2021 (+1.2 pts, ~+0.3 pts/yr); at that rate 30% arrives around 2043, and press analysis of the 2026 plan puts it at 2055 or later on current funding, with Comptroller Levine (April 2026) finding forested natural areas get ~0.7% of the Parks expense budget. Against that, on land conversion proper NYC is close to neutral-positive: the city is built out, its 2024 rezoning (City of Yes, 82,000 homes) adds capacity by infill rather than by extending the built footprint, per-capita land consumption is the lowest of major US cities (~459 m2/person), 14% of city land is NYC parkland, and the orchestrator has ruled the density is genuinely land-conserving at regional scale. The remaining genuine problems are a 7-point EJ canopy gap (19% vs 26%), net canopy loss on one- and two-family residential lots concentrated in southeastern Queens, and largely irreversible historic wetland loss (Jamaica Bay 2,350 acres of marsh islands in 1951 to ~800 today, only ~60 acres restored at Elders Point). That profile is worse than 'on track' (0) but well short of a full 'needs attention' (50): 25 is the honest placement. I flag for the orchestrator that this is a disagreement about indicator scope, not about any number — the canopy data and the borough data both survived verification intact.",
       "indicator": "Tree canopy cover % (citywide), with parkland %, impervious surface %, and wetland loss/restoration as supporting sub-indicators",
       "value": "22.7% tree canopy (2021)",
       "year": 2021,
-      "target": "30% tree canopy citywide 'in an equitable manner,' mandated by Local Law 148 of 2023 and reaffirmed in PlaNYC: Getting Sustainability Done (2023); implementing Urban Forest Plan released April 2026 by the Mayor's Office of Climate & Environmental Justice moved the target date from 2035 to 2040",
+      "target": "Local Law 148 of 2023 (Admin. Code s 18-164) sets a statutory goal of equitably expanding tree canopy to 30% of city land area. NOTE: the statute sets NO deadline — the commonly cited 2040 date is an administrative target, not a legal one.",
       "context": "Manhattan: 22.7% tree canopy (2021)\n\nCitywide for comparison: 23.4% canopy citywide (45,247 acres) in 2021, up from 22.2% (2017) and 20.37% (2010); ~72% of the city's 305 sq mi land area is impervious surface (buildings, roads, sidewalks); NYC Parks manages >30,000 acres = 14% of city land as parkland, rising to ~19.5% (38,000–50,000 acres) if state/federal parkland within the five boroughs is included\n\nUnlike Petaluma, where 'land conversion' means whether farmland/open space outside an urban growth boundary gets paved over, NYC is already ~72% impervious — the meaningful question is how much of the remaining pervious/natural fraction is protected, growing, or being lost, and whether the city's own growth model (infill density) is itself averting conversion elsewhere. Nearly 90% of 2017–2021 canopy growth came from existing trees expanding rather than new plantings, and the only net canopy LOSS citywide was on one- and two-family residential lots, concentrated in southeastern Queens — meaning small-lot residential development/hardscaping is the marginal driver of loss even in a built-out city. The policy lever is Local Law 148 implementation funding (flagged as under-resourced by the City Comptroller) plus zoning/permitting practices for residential lot coverage. Caveat: canopy %, parkland %, and impervious % measure related but distinct things and none alone is a perfect proxy; we present all three rather than picking one number to represent 'land conversion' for a megacity.",
       "source": "2021 LiDAR canopy assessment, as reported by NBC New York citing NYC Urban Forest Plan data",
       "sourceUrl": "https://www.nbcnewyork.com/news/local/nyc-urban-forest-plan-trees-mamdani-report-staten-island/6492728/",
@@ -523,9 +1336,9 @@
         "Push NYC pension funds and the Mayor's Office of Food Policy to require deforestation-free sourcing standards in the Good Food Purchasing Program's institutional food contracts"
       ],
       "reviewStatus": {
-        "state": "draft",
-        "reviewedLevel": 50,
-        "notes": "DRAFT severity — not yet adversarially reviewed or expert-validated."
+        "state": "adversarially-reviewed",
+        "reviewedLevel": 25,
+        "notes": "Corrections from an independent adversarial review applied."
       },
       "productionVsConsumption": "production-based",
       "productionVsConsumptionNote": "production-based (physical land cover within city limits)",
@@ -671,22 +1484,202 @@
     {
       "name": "air pollution",
       "lens": "local-ecological",
-      "level": null,
-      "indicator": "Not yet researched",
-      "value": null,
-      "year": null,
-      "target": "TBD",
-      "context": "⚠ Citywide figure shown — not specific to Manhattan. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
-      "source": "Pending",
-      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "level": 45,
+      "levelRationale": "Citywide annual-average PM2.5 (~6.65 µg/m³, 2024) is roughly 33% above the WHO 2021 Air Quality Guideline of 5 µg/m³ but comfortably meets the US EPA annual NAAQS of 9.0 µg/m³ (revised Feb 2024). Scored primarily against the WHO guideline per research brief instruction; NYC is 'needs attention, mild' against the health-protective benchmark while formally 'attaining' the weaker federal standard.",
+      "indicator": "NYCCAS annual average fine particulate matter (PM2.5)",
+      "value": "7.84 µg/m³ (author-computed unweighted mean of Manhattan's 12 community districts, 2024) — highest of the five boroughs, driven by Midtown (CD5, 10.5) and Greenwich Village-Soho (CD2, 9.4)",
+      "year": 2024,
+      "target": "WHO 2021 Air Quality Guideline: 5 µg/m³ annual PM2.5 (primary scoring target per research brief). Secondary/regulatory target: US EPA NAAQS, revised Feb 7, 2024 from 12 to 9.0 µg/m³ annual (NYC attains this).",
+      "context": "Manhattan: 7.84 µg/m³ (author-computed unweighted mean of Manhattan's 12 community districts, 2024) — highest of the five boroughs, driven by Midtown (CD5, 10.5) and Greenwich Village-Soho (CD2, 9.4)\n\nCitywide for comparison: ~6.65 µg/m³ citywide (author-computed unweighted mean across all 59 community districts); individual community districts range from 5.3 µg/m³ (Rockaway and Broad Channel, Queens CD14) to 10.5 µg/m³ (Midtown, Manhattan CD5). Citywide PM2.5 has declined 29-36% since 2009 depending on the report vintage cited by DOHMH.\n\nNYC's PM2.5 story is fundamentally about intra-city gradient, not a single citywide number: the ~2x range from Rockaway (Queens, 5.3 µg/m³) to Midtown (Manhattan, 10.5 µg/m³) reflects traffic density, building-heating combustion, and street-canyon effects, not a uniform exposure. NYCCAS is a ~100-site seasonal monitoring network run by DOHMH and Queens College (CUNY) covering all 59 community districts since 2009 — one of the most granular urban air-monitoring systems in the US. Local Law 43 (2010) and the NYC Clean Heat program are the biggest documented policy win, having eliminated No. 6 heating oil citywide by 2015 and cut PM2.5 emissions from heating by an estimated 65%. Wildfire smoke (see subIndicators) is now a major confounder that DOHMH itself flags as disrupting the underlying downward trend. Congestion pricing (since Jan 2025) is independently measured to be reducing PM2.5 in and near the Manhattan CBD.",
+      "source": "DOHMH NYCCAS Appendix 3",
+      "sourceUrl": "https://a816-dohbesp.nyc.gov/indicatorpublic/data-features/NYCCAS/pdf/Appendix3.pdf",
       "screenshot": null,
-      "confidence": "low",
-      "geographicScale": "city",
-      "actions": [],
+      "confidence": "medium",
+      "geographicScale": "borough",
+      "actions": [
+        "Sign up for NYC Emergency Management's Notify NYC alert system to get real-time air-quality/wildfire-smoke advisories, and pick up free KN95 masks at NYC public libraries during smoke events (as offered during the June 2023 and July 2026 Canadian wildfire smoke episodes).",
+        "If you own or sit on the board of a building burning No. 4 heating oil, start planning the conversion now — the Local Law 43 deadline is January 1, 2030 — using NYC's Retrofit Accelerator heating-oil-conversion resources.",
+        "If your building is covered by Local Law 97, check your building's emissions performance via NYC Accelerator/DOB and push your co-op or condo board to plan retrofits before the tighter 2030-2034 caps and escalating $268/ton penalties hit.",
+        "Support continuation of congestion pricing (the Congestion Relief Zone) given DOHMH/Cornell-measured PM2.5 reductions — the program has faced federal political pushback; contact your City Council member or testify at MTA/NYSDOT public comment sessions.",
+        "Push for zero-emission drayage and cargo-handling electrification at the Port of NY/NJ by engaging with the Port Authority's Clean Ports Program and groups like South Bronx Unite and the NYC Environmental Justice Alliance, given the South Bronx's outsized truck-traffic and asthma burden.",
+        "Use the NYC Environment & Health Data Portal's neighborhood reports (a816-dohbesp.nyc.gov) to check your own community district's PM2.5/asthma data and support community air-monitoring and advocacy groups such as WE ACT for Environmental Justice."
+      ],
       "reviewStatus": {
         "state": "draft",
-        "notes": "Not yet researched."
-      }
+        "reviewedLevel": 25,
+        "notes": "DRAFT severity — not yet adversarially reviewed or expert-validated."
+      },
+      "productionVsConsumption": "production-based",
+      "productionVsConsumptionNote": "production-based (locally emitted — traffic, building combustion, construction, some regional/transboundary contribution noted in global lens)",
+      "neighborhoodNote": "Highest 2024 PM2.5: Midtown, Manhattan (Community District 5), 10.5 µg/m³. Lowest: Rockaway and Broad Channel, Queens (Community District 14), 5.3 µg/m³ — roughly a 2x intra-city gradient. On health burden rather than raw concentration, the sharpest disparity is asthma: Hunts Point-Mott Haven (South Bronx) had a child (ages 5-17) asthma ED visit rate of 266.2 per 10,000 in 2023 versus 143.7 per 10,000 citywide (NYC Environment & Health Data Portal neighborhood report). An older but more geographically complete DOHMH dataset (2016) found Hunts Point-Mott Haven at 502.7 per 10,000 and neighboring East Harlem at 578.4 per 10,000, both roughly 20x the rate in low-poverty Bayside-Little Neck, Queens (22.4 per 10,000) — DOHMH Epi Data Brief No. 126.",
+      "subIndicators": [
+        {
+          "name": "NO2 annual average, highest/lowest community districts",
+          "value": "Citywide NO2 declined 38-41% since 2009 (DOHMH). 2024 community-district range: 25.1 ppb (Midtown, Manhattan CD5, highest) to 4.8 ppb (Rockaway and Broad Channel, Queens CD14, lowest)",
+          "year": 2024,
+          "source": "DOHMH NYCCAS Appendix 3, Table A3-2",
+          "sourceUrl": "https://a816-dohbesp.nyc.gov/indicatorpublic/data-features/NYCCAS/pdf/Appendix3.pdf",
+          "geographicScaleNote": "community district"
+        },
+        {
+          "name": "Summertime average ozone (NYCCAS descriptive metric, not the EPA regulatory design value)",
+          "value": "2024 community-district range: 27.1 ppb (Midtown, Manhattan CD5, lowest — consistent with NOx titration suppressing ozone in the densest traffic core) to 38.4 ppb (Rockaway and Broad Channel, Queens CD14, highest — coastal/outer-borough areas see more regional ozone transport)",
+          "year": 2024,
+          "source": "DOHMH NYCCAS Appendix 3, Table A3-5",
+          "sourceUrl": "https://a816-dohbesp.nyc.gov/indicatorpublic/data-features/NYCCAS/pdf/Appendix3.pdf",
+          "geographicScaleNote": "community district"
+        },
+        {
+          "name": "NY-NJ-CT 8-hour ozone nonattainment classification",
+          "value": "Reclassified from 'Moderate' to 'Serious' nonattainment for the 2015 ozone NAAQS (70 ppb) after the area missed its August 3, 2024 attainment deadline",
+          "year": 2024,
+          "source": "US EPA, Federal Register final rule",
+          "sourceUrl": "https://www.federalregister.gov/documents/2024/07/25/2024-16244/designations-of-areas-for-air-quality-planning-purposes-new-york-new-jersey-connecticut-new",
+          "geographicScale": "metro",
+          "geographicScaleNote": "metro (NY-NJ-CT combined statistical area)"
+        },
+        {
+          "name": "PM2.5-attributable deaths",
+          "value": "~2,000 excess deaths per year from cardiovascular/respiratory disease attributable to long-term PM2.5 exposure — about 1 in every 25 deaths citywide",
+          "year": 2025,
+          "source": "NYC DOHMH, cited in NYC Health press release on NYCCAS congestion-pricing evaluation",
+          "sourceUrl": "https://www.nyc.gov/site/doh/about/press/pr2025/community-air-survey-to-evaluate-impact-of-congestion-pricing.page",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Ozone-attributable asthma ED visits (older estimate)",
+          "value": "~10% of asthma ED visits citywide attributable to ozone in a 2011 DOHMH analysis; Staten Island, southern Brooklyn, central Queens, and the northwest Bronx had the highest ozone-related death rate estimates",
+          "year": 2011,
+          "source": "NYC DOHMH (secondary citation, original analysis not independently re-fetched)",
+          "sourceUrl": "https://a816-dohbesp.nyc.gov/IndicatorPublic/data-features/realtime-air-quality/",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Citywide and Bronx child asthma ED visit rate, current",
+          "value": "143.7 per 10,000 children ages 5-17 citywide (2023); 239.8 per 10,000 in the Bronx (2023)",
+          "year": 2023,
+          "source": "NYC Environment & Health Data Portal, neighborhood reports",
+          "sourceUrl": "https://a816-dohbesp.nyc.gov/IndicatorPublic/neighborhood-reports/hunts_point_mott_haven/asthma_and_the_environment/",
+          "geographicScale": "borough",
+          "geographicScaleNote": "city / borough"
+        },
+        {
+          "name": "Child asthma ED visit rate by borough, historical",
+          "value": "Ages 5-17, 2016: Bronx 388.4 per 10,000 (highest); Manhattan 261.9; Brooklyn 188.2; Queens 128.1; Staten Island 81.8 (lowest); Citywide 217.1 per 10,000",
+          "year": 2016,
+          "source": "NYC DOHMH, Epi Data Brief No. 126, 'Disparities among Children with Asthma in New York City'",
+          "sourceUrl": "https://www.nyc.gov/assets/doh/downloads/pdf/epi/databrief126.pdf",
+          "geographicScale": "borough"
+        },
+        {
+          "name": "June 2023 Canadian wildfire smoke episode",
+          "value": "NYC's AQI peaked around 465 on June 7, 2023 (figures reported across sources range roughly 350-465 depending on monitor/averaging window); IQAir ranked NYC the world's worst major-city air quality that day. City officials called it the worst air quality since the 1960s. A materially smaller, ozone-driven Canadian wildfire smoke advisory recurred in mid-July 2026.",
+          "year": 2023,
+          "source": "NYC Emergency Management press release (referencing the 2023 event) and CNBC/Fox Weather reporting",
+          "sourceUrl": "https://www.nyc.gov/site/em/about/press-releases/20260715_pr-NYCEM-Smoke-From-Canadian-Wildfires-May-Affect-NYC-Air-Quality.page",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Local Law 43 / NYC Clean Heat — No. 6 and No. 4 residual heating oil phase-out",
+          "value": "100% of NYC buildings converted off No. 6 oil by the June 30, 2015 deadline (over 6,000 heating-system conversions, >75% to the cleanest fuel options); No. 4 oil phase-out deadline is January 1, 2030. Buildings burning No. 4/No. 6 oil were only ~1% of buildings but were responsible for an estimated 86% of citywide soot (PM2.5) from heating before the law.",
+          "year": 2015,
+          "source": "NYC DEP / NYC Clean Heat program",
+          "sourceUrl": "https://retrofitaccelerator.cityofnewyork.us/resources/heating-oil-conversions",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Congestion pricing (Congestion Relief Zone) measured PM2.5 effect",
+          "value": "In the first six months after the January 5, 2025 launch, average daily maximum PM2.5 in the Manhattan CBD/CRZ fell 22% (about 3.05 µg/m³ versus a modeled no-toll counterfactual of 13.8 µg/m³); the five-borough average fell 1.07 µg/m³ and the broader metro area 0.70 µg/m³. The weekly effect grew from 0.8 µg/m³ in week 1 to 4.9 µg/m³ by week 20, consistent with commuters shifting mode/route over time.",
+          "year": 2025,
+          "source": "Cornell University study published in npj Clean Air (Dec 8, 2025), analyzing 42 regional air monitors Jan 2024-June 2025",
+          "sourceUrl": "https://www.nature.com/articles/s44407-025-00037-2",
+          "geographicScale": "metro",
+          "geographicScaleNote": "CBD / citywide / metro"
+        }
+      ],
+      "global": {
+        "lens": "global-ecological",
+        "level": 50,
+        "levelRationale": "NYC cannot unilaterally control two of the three largest pressures on its air-pollution ceiling: (1) upwind/interstate ozone-precursor transport, part of why the NY-NJ-CT region was reclassified from 'Moderate' to 'Serious' 2015-ozone-NAAQS nonattainment in July 2024 despite the city's own local control measures, and (2) increasingly frequent transboundary Canadian wildfire smoke (2023, recurring 2024 and again mid-July 2026) that is itself a downstream effect of global climate change. Layered on top, the Port of NY/NJ — the busiest port on the US East Coast — services NYC-area (and much wider) consumption demand and its ocean-going vessels alone account for 53% of the port's NOx and 36% of its PM2.5 emissions, a footprint driven by global containerized trade rather than by New Yorkers' local combustion. 'Needs attention' reflects a real, evidenced overshoot with only partial local leverage, not an unquantified hand-wave.",
+        "indicator": "Transboundary/regional pollutant transport and Port of NY/NJ ocean-going vessel emissions",
+        "value": "NY-NJ-CT ozone nonattainment area reclassified 'Serious' (2024); Port of NY/NJ ocean-going vessels = 53% of port NOx emissions and 36% of port PM2.5 emissions (2023 Port Emissions Inventory)",
+        "year": 2024,
+        "target": "Clean Air Act attainment of the 2015 ozone NAAQS (70 ppb, 8-hour) for the NY-NJ-CT area; Port Authority's Clean Air Strategy / Clean Ports Program goals for zero-emission drayage and cargo-handling equipment",
+        "context": "NYC's air-pollution footprint is not a closed local system. Regionally, the metro area's persistent ozone problem is driven substantially by NOx and VOC transport from upwind states and the wider Ozone Transport Region, which is why New York, New Jersey, and Connecticut jointly petitioned for and received the 2024 'Serious' reclassification rather than fixing it through city-level action alone — this is the ozone-pollution analogue to a 'consumption-based' emissions argument in the climate dimension. Separately, the Port of NY/NJ exists to serve import/export demand — much of it NYC consumption — and its ocean-going vessels, drayage trucks, and cargo-handling equipment emit PM2.5 and NOx concentrated in South Bronx, Red Hook, and New Jersey waterfront communities that host the region's port and last-mile e-commerce warehouse infrastructure. And the escalating frequency of Canadian wildfire smoke intrusions (2023, 2024, and again mid-July 2026) means an increasing share of NYC's worst PM2.5 days now originates entirely outside city and even national jurisdiction, tied to boreal-forest climate change. Aviation (JFK, LaGuardia, Newark) is a further plausible contributor to both local NOx/PM near the airports and to NYC's share of global aviation emissions, but no single quantified 'NYC aviation air-pollution footprint' figure was located in this research pass.",
+        "source": "US EPA (ozone reclassification); Port Authority of NY/NJ, Clean Ports Report Card (2023 Port Emissions Inventory)",
+        "sourceUrl": "https://www.federalregister.gov/documents/2024/07/25/2024-16244/designations-of-areas-for-air-quality-planning-purposes-new-york-new-jersey-connecticut-new",
+        "confidence": "medium",
+        "geographicScale": "global",
+        "productionVsConsumption": "both",
+        "productionVsConsumptionNote": "mixed — transboundary transport (ozone precursors, wildfire smoke) is pollution NYC imports/receives regardless of its own emissions; Port of NY/NJ vessel/truck emissions are production-based emissions physically occurring in the harbor but generated in service of consumption demand (NYC's and the wider region's)"
+      },
+      "policyAnchors": [
+        {
+          "name": "Local Law 43 of 2010 / NYC Clean Heat",
+          "relevance": "Phased out the dirtiest heating oils (No. 6, then No. 4), the single most significant documented PM2.5 policy win in NYC air-quality history",
+          "status": "No. 6 oil phase-out has been at 100% compliance since 2015; No. 4 oil phase-out deadline is January 1, 2030 and is reportedly on track, though this research pass did not independently verify a current percent-remaining figure for No. 4 conversions",
+          "sourceUrl": "https://retrofitaccelerator.cityofnewyork.us/resources/heating-oil-conversions"
+        },
+        {
+          "name": "Local Law 97 of 2019",
+          "relevance": "Building emissions caps reduce combustion (boilers, on-site fuel burning) that is also a PM2.5/NO2 source, so LL97 compliance carries direct air-quality co-benefits alongside its GHG purpose",
+          "status": "First compliance period (2024-2029): reportedly under 10% of covered buildings exceeded their cap based on 2024 performance; DOB began issuing the first Notices of Violation and penalties ($268/ton CO2e over the cap) around May 1, 2026. About 57% of buildings are projected to exceed the stricter 2030-2034 caps if no further retrofits occur.",
+          "sourceUrl": "https://accelerator.nyc/ll97"
+        },
+        {
+          "name": "Congestion pricing / Central Business District Tolling Program",
+          "relevance": "Direct traffic-reduction air-quality intervention in and around the Manhattan core, with NYCCAS itself expanded specifically to measure it",
+          "status": "Launched January 5, 2025; DOHMH is running a legally required 2-year NYCCAS-based evaluation (baseline completed December 2024, initial findings report due 'early 2026' per NYS law) alongside independent academic measurement (Cornell, Dec 2025) already showing a 22% PM2.5 reduction in the tolling zone. The program has faced political/legal pushback from the Trump administration as of early 2026 reporting.",
+          "sourceUrl": "https://www.nyc.gov/site/doh/about/press/pr2025/community-air-survey-to-evaluate-impact-of-congestion-pricing.page"
+        },
+        {
+          "name": "NY-NJ-CT 2015 ozone NAAQS nonattainment reclassification",
+          "relevance": "The binding regulatory anchor for NYC's ozone/smog problem; 'Serious' status requires a tighter State Implementation Plan and controls",
+          "status": "Reclassified from Moderate to Serious effective per EPA's July 25, 2024 final rule after the area missed its August 3, 2024 attainment deadline for the 70 ppb standard",
+          "sourceUrl": "https://www.federalregister.gov/documents/2024/07/25/2024-16244/designations-of-areas-for-air-quality-planning-purposes-new-york-new-jersey-connecticut-new"
+        },
+        {
+          "name": "Port Authority of NY/NJ Clean Air Strategy / Clean Ports Program",
+          "relevance": "The binding-ish operational framework (developed with EPA and stakeholders) for reducing truck, vessel, and cargo-handling emissions at the region's largest port, directly affecting South Bronx and NJ waterfront air quality",
+          "status": "Truck Replacement Program had retired 900+ older diesel trucks as of 2023; Port Authority received a large EPA Clean Ports grant (reported around $344 million) for electric cargo-handling equipment and drayage truck charging infrastructure; a proposed 'Green Drayage Accelerator' aims to move toward zero-emission drayage",
+          "sourceUrl": "https://assets.ctfassets.net/aafuy6bw3szy/6ePAHwyf2HUzBp919uk7DA/9b2e3ab00ec2e7d75875e4a6aeb8bc03/PANYNJ_Clean_Ports_Report_Card.pdf"
+        }
+      ],
+      "comparisonNote": "Petaluma's own draft portrait scores PM2.5 at 7.0-9.5 µg/m³ (2024, BAAQMD, level 30) — above the WHO guideline but meeting the federal NAAQS, with wildfire smoke as the dominant episodic driver for a small city with limited monitoring. NYC's author-computed citywide figure (~6.65 µg/m³, 2024) is comparable or even somewhat lower, but that single number masks a 2x intra-city gradient (5.3 to 10.5 µg/m³ across 59 monitored community districts) and a stark, quantified environmental-justice pattern — Bronx child asthma ED visit rates roughly 1.7-2x the citywide rate and historically up to 4-5x Staten Island's — that a 60,000-person city with one regional monitoring network cannot show at anywhere near this resolution. NYC's dominant sources (traffic, building combustion, port/truck freight) and levers (Local Law 43/97, congestion pricing) are also structurally different from Petaluma's wildfire-and-agriculture-dominated exposure.",
+      "dataGaps": [
+        "No single official DOHMH-published 'citywide' PM2.5 headline figure was located; the value used here is an unweighted mean the author computed across all 59 NYCCAS community districts from Appendix 3 of the DOHMH report. DOHMH's Environment & Health Data Portal data-explorer tool is interactive/JavaScript-based and could not be scraped directly for an official aggregate — someone with portal access or the underlying dataset (data.cityofnewyork.us) should confirm whether a population-weighted citywide figure exists and differs materially from this unweighted estimate.",
+        "Current-year (2023-2025) asthma ED visit rates broken out for Manhattan, Brooklyn, Queens, and Staten Island individually were not found; only citywide (143.7 per 10,000, 2023) and Bronx (239.8 per 10,000, 2023) figures were located via the EH Data Portal neighborhood report. The full five-borough table used here (388.4 Bronx / 261.9 Manhattan / 188.2 Brooklyn / 128.1 Queens / 81.8 Staten Island) is from 2016. NYS DOH EpiQuery or DOHMH's asthma dashboard would have the current equivalent.",
+        "NYCCAS's ozone metric is a 'summertime average,' not the EPA regulatory 8-hour design value used for NAAQS attainment/nonattainment determinations; the actual current design value for the NY-NJ-CT area was not independently fetched in this pass.",
+        "No quantified figure for aviation-attributable local air pollution near JFK/LaGuardia/Newark, or for NYC's share of global aviation emissions, was located. Port Authority of NY/NJ or FAA environmental/sustainability reports would have this.",
+        "DOHMH's own legally required 2-year NYCCAS evaluation of congestion pricing's air-quality effect (baseline completed December 2024, report due 'early 2026') was referenced in a 2025 press release but its actual findings report was not locatable/fetched — it may not yet be published as of this research pass."
+      ],
+      "experts": [
+        {
+          "org": "NYC Department of Health and Mental Hygiene, Environmental Surveillance and Policy Unit (NYCCAS)",
+          "why": "Owns the NYCCAS monitoring network and community-district data; could confirm whether an official population-weighted citywide/borough PM2.5 figure exists",
+          "contactPath": "https://www.nyc.gov/site/doh/data/data-sets/air-quality-nyc-community-air-survey.page"
+        },
+        {
+          "org": "NYC Mayor's Office of Climate and Environmental Justice (MOCEJ)",
+          "why": "Administers Local Law 97 and can speak to current compliance data and the 2030-2034 rulemaking status",
+          "contactPath": "https://www.nyc.gov/site/sustainability/index.page"
+        },
+        {
+          "org": "Port Authority of New York and New Jersey, Office of Environmental and Energy Programs",
+          "why": "Owns the Port Emissions Inventory and Clean Ports Program data on vessel/truck/cargo-handling emissions",
+          "contactPath": "https://www.panynj.gov/port/en/our-port/environment.html"
+        },
+        {
+          "org": "WE ACT for Environmental Justice",
+          "why": "Leading NYC environmental-justice organization with deep expertise on air pollution disparities in Northern Manhattan and citywide",
+          "contactPath": "https://www.weact.org/"
+        },
+        {
+          "org": "South Bronx Unite",
+          "why": "Community organization focused on truck traffic, warehouse siting, and air quality in Hunts Point/Mott Haven",
+          "contactPath": "https://southbronxunite.org/"
+        }
+      ]
     },
     {
       "name": "ozone layer depletion",
@@ -731,22 +1724,195 @@
     {
       "name": "heat & climate resilience",
       "lens": "local-ecological",
-      "level": null,
-      "indicator": "Not yet researched",
-      "value": null,
-      "year": null,
-      "target": "TBD",
-      "context": "⚠ Citywide figure shown — not specific to Manhattan. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
-      "source": "Pending",
-      "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+      "level": 70,
+      "levelRationale": "Heat is NYC's leading weather-related killer at an estimated ~500 deaths/year (2026 DOHMH report) and rising relative to the ~350/year figure cited in earlier report vintages (methodology has expanded the heat-exacerbated cause list over time). The Black:white age-adjusted heat-stress death-rate ratio (0.8 vs 0.4 per million, 2014-2023) has persisted at roughly 2:1 essentially unchanged since Cool Neighborhoods NYC launched in 2017, meaning the city's implicit equity target (eliminating the racial mortality gap) is not being met even though citywide home-AC access is high (91%). Rated Critical because the hazard is the deadliest of any extreme weather type in NYC and the core equity problem is unresolved after nearly a decade of programming.",
+      "indicator": "Heat-related mortality (direct heat-stress deaths + heat-exacerbated deaths)",
+      "value": "East Harlem scores HVI 5, a sharp intra-borough contrast with low-HVI Upper East Side/Upper West Side. Manhattan has the citywide-highest cooling-center density (7.1 per 100,000), which masks this internal disparity.",
+      "year": 2022,
+      "target": "No single codified numeric mortality target exists. DOHMH's Cool Neighborhoods NYC (2017) initiative and successive Heat-Related Mortality Reports state an implicit goal of eliminating the racial disparity in heat-stress mortality and driving preventable heat deaths toward zero via AC access, cooling centers, and canopy/cool-roof expansion.",
+      "context": "Manhattan: East Harlem scores HVI 5, a sharp intra-borough contrast with low-HVI Upper East Side/Upper West Side. Manhattan has the citywide-highest cooling-center density (7.1 per 100,000), which masks this internal disparity.\n\nCitywide for comparison: ~500 estimated heat-related deaths/year citywide (2026 report); ~7/year are direct heat-stress deaths (2016-2025 avg), ~489-520/year are heat-exacerbated deaths where heat aggravates an existing condition (2014-2023 avg). Black New Yorkers die of heat stress at ~2x the age-adjusted rate of white New Yorkers: 0.8 vs 0.4 deaths per million (2014-2023); Latino New Yorkers at ~1.0 per million (~2x white rate also reported in some vintages). An earlier (2022) report's headline figure was ~350/year with the same ~2x Black:white ratio (1.2 vs 0.5-0.6 per million in that vintage) — see dataGaps re: cross-vintage comparability.\n\nIn an 8.3M-person city, heat kills more people annually than all other weather hazards combined, and the mechanism is overwhelmingly indoor and socioeconomic (un-air-conditioned homes) rather than purely meteorological — sharply different from Petaluma's wildfire-smoke-centered climate-health narrative. The policy lever is AC access and its affordability (utility cost, not just ownership), tree canopy in redlined/EJ neighborhoods, and building-level cooling requirements; Local Law 97's building-emissions caps and heat-pump retrofit push interact with this because electrified cooling raises electricity demand even as it cuts direct heat-stress risk. Caveat: total-death estimates are model-based (excess-mortality methodology) and have shifted across report vintages as DOHMH refined its heat-exacerbated cause list, so year-to-year comparisons should be read as trend direction, not exact deltas.",
+      "source": "NYC Comptroller, \"Overheated, Underserved\"",
+      "sourceUrl": "https://comptroller.nyc.gov/reports/overheated-underserved/",
       "screenshot": null,
-      "confidence": "low",
-      "geographicScale": "city",
-      "actions": [],
+      "confidence": "medium",
+      "geographicScale": "borough",
+      "actions": [
+        "Apply early for the NY State HEAP Cooling Assistance Benefit via ACCESS NYC or OTDA each spring — funds are first-come-first-served and have closed as early as June in recent years, so late applicants can be shut out for the whole summer.",
+        "During a heat emergency, use NYC Emergency Management's Cooling Center Finder or call 311 to locate the nearest cooling center (library, community/senior center, or NYCHA facility) under the Local Law 85/128 network.",
+        "If you live in a basement or cellar apartment, check eligibility for the Basement Apartment Conversion Pilot Program (Local Law 126) through HPD/DOB before the April 2029 application deadline, and know your flood-evacuation route given the Hurricane Ida basement-death pattern.",
+        "Support or join the NYC Environmental Justice Alliance's (NYC-EJA) Extreme Heat & Air Quality campaign, which pushes for equitable cooling-center density and canopy investment in HVI-5 neighborhoods.",
+        "In the South Bronx, connect with or volunteer for the Be A Buddy program (run by The Point CDC in Hunts Point) which does neighbor check-ins for isolated, heat-vulnerable residents during extreme-heat days.",
+        "Track your community board's Cloudburst/Stormwater Resiliency Plan timeline and the NY-NJ Harbor & Tributaries Study public comment process (Army Corps/DEP), since both determine whether and when your neighborhood gets flood infrastructure."
+      ],
       "reviewStatus": {
         "state": "draft",
-        "notes": "Not yet researched."
-      }
+        "reviewedLevel": 100,
+        "notes": "DRAFT severity — not yet adversarially reviewed or expert-validated."
+      },
+      "productionVsConsumption": "not-applicable",
+      "productionVsConsumptionNote": "not applicable — this is a health-outcome indicator, not an emissions or resource-flow metric",
+      "neighborhoodNote": "The sharpest intra-city heat gap is between Hunts Point/Mott Haven (South Bronx) — HVI 5, >20% of nearby Morrisania/East Tremont households lack home AC, majority Black and Latino, adjacent to industrial/waste-transfer land uses — and the Upper East Side (Manhattan), which scores at the low end of the HVI scale. Source: DOHMH Heat Vulnerability Index interactive tool (a816-dohbesp.nyc.gov/IndicatorPublic/data-features/hvi/) and NYC Comptroller, \"Overheated, Underserved\" (2022).",
+      "subIndicators": [
+        {
+          "name": "Home AC access, citywide",
+          "value": "91.0% of households have home AC (~9% lack it)",
+          "year": 2026,
+          "source": "DOHMH Heat Vulnerability Index page / DOHMH Heat-Related Mortality Report",
+          "sourceUrl": "https://a816-dohbesp.nyc.gov/IndicatorPublic/data-features/hvi/",
+          "geographicScale": "city"
+        },
+        {
+          "name": "AC-access gap, Bronx neighborhoods",
+          "value": ">20% of households lack home AC in Morrisania/East Tremont and University Heights/Fordham (Bronx)",
+          "year": 2026,
+          "source": "NYC Council Data Team, Heat and Cooling Equity",
+          "sourceUrl": "https://council.nyc.gov/data/heat/",
+          "geographicScaleNote": "NTA"
+        },
+        {
+          "name": "AC owned-but-unused due to cost",
+          "value": "~15% of New Yorkers with AC report not using it in hot weather; ~493,000 rental households cite utility cost as the reason (2023 Housing & Vacancy Survey)",
+          "year": 2023,
+          "source": "NYC Housing and Vacancy Survey, cited via City Limits reporting on the DOHMH Heat-Related Mortality Report",
+          "sourceUrl": "https://citylimits.org/at-least-21-new-yorkers-died-from-heat-stress-last-year-city-health-dept-says/",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Citywide tree canopy cover",
+          "value": "~22% of NYC land area covered by tree canopy (7M+ trees); Environmental Justice communities average ~19% canopy vs ~26% in non-EJ areas, with some pockets as low as 6%",
+          "year": 2017,
+          "source": "NYC Urban Forest assessment, cited in NYC Comptroller (Levine), \"New York City's Living Infrastructure\"",
+          "sourceUrl": "https://comptroller.nyc.gov/reports/new-york-citys-living-infrastructure-funding-and-managing-nycs-urban-forest-and-tree-canopy/",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Urban-heat-island block-level temperature differential",
+          "value": "Sparsely-vegetated blocks can run several degrees F hotter than tree-heavy blocks at the same time of day; one DOHMH comparison found a high-canopy Edenwald (Bronx) block ~2°F cooler than a low-canopy Brownsville (Brooklyn) block, with citywide surface differentials reported up to ~16°F depending on paving/rooftop exposure",
+          "year": 2023,
+          "source": "DOHMH Environment & Health Data Portal, Urban Heat Island Effect story",
+          "sourceUrl": "https://a816-dohbesp.nyc.gov/IndicatorPublic/data-stories/urban-heat-island/",
+          "geographicScale": "city",
+          "geographicScaleNote": "city/block"
+        },
+        {
+          "name": "Heat Vulnerability Index (HVI) scale",
+          "value": "1 (lowest) to 5 (highest) per Neighborhood Tabulation Area (NTA), modeled from surface temperature, green space, home-AC access, income, and race/ethnicity; 12 NTAs citywide score 5, about half of them in the Bronx",
+          "year": 2026,
+          "source": "DOHMH Heat Vulnerability Index",
+          "sourceUrl": "https://a816-dohbesp.nyc.gov/IndicatorPublic/data-features/hvi/",
+          "geographicScaleNote": "NTA"
+        }
+      ],
+      "global": {
+        "lens": "global-ecological",
+        "level": 70,
+        "levelRationale": "This lens is framed around adaptation-capacity and climate-finance equity (to avoid duplicating the companion 'climate change' dimension's global-emissions lens). NYC can mobilize single-project sums ($1.45-2.7B for East Side and Lower Manhattan Coastal Resiliency alone; a proposed $52B regional storm-surge-barrier system) that dwarf what most equally-exposed coastal megacities in the Global South can access, while the global adaptation finance gap for developing countries is estimated at $187-359B/year against only ~$26-28B/year in actual international public flows. Scored 70 (Needs Attention, bordering Critical) rather than a precise figure because NYC's own share of responsibility for this gap is not separately quantified in the sources reviewed.",
+        "indicator": "Global adaptation-finance and adaptation-capacity gap, framed against NYC's own resiliency capital mobilization",
+        "value": "UNEP's Adaptation Gap Report estimates the global adaptation finance gap for developing countries at US$187-359B/year (2024 report) to US$215-387B/year (2023 report), and projects developing-country adaptation costs will exceed $310B/year by 2035 — roughly 12x the ~$26-28B/year in actual international public adaptation finance flows (2022-2023). By contrast, NYC alone is spending $1.45B (East Side Coastal Resiliency) and $2.7B+ (Lower Manhattan Coastal Resiliency) on two coastal-defense projects, within a $196.7B FY2025-2035 citywide capital plan that includes climate/resiliency spending, and is one sponsor (with NY/NJ states and the Army Corps) of a proposed $52B regional storm-surge-gate system (NY-NJ Harbor & Tributaries Study, Alternative 3B).",
+        "year": 2024,
+        "target": "No binding international target for equitable adaptation-finance distribution exists; the Paris Agreement's Glasgow Climate Pact called for developed countries to at least double adaptation finance from 2019 levels by 2025 (a target UNEP finds would close only ~5% of the gap even if met), and the post-COP28 Loss and Damage Fund remains far below assessed need.",
+        "context": "NYC's flood and heat risk is driven by the same global warming to which its own building/transport/consumption emissions contribute (the companion climate-change dimension covers that footprint directly), but the distinct global-equity story for THIS dimension is capacity: NYC, as a wealthy financial-capital city, can self-finance multibillion-dollar seawalls, storm-surge gates, and cooling infrastructure that an equally-exposed but lower-income coastal megacity (e.g. Lagos, Dhaka, Manila) cannot, even though such cities face comparable or worse physical exposure with far less adaptive capacity and did far less to cause the warming driving the risk. This is a loss-and-damage/climate-finance framing: the same hazard (sea-level rise, extreme heat) produces starkly unequal outcomes based on capital access rather than physical exposure alone. Quantifying NYC's specific share of the global adaptation-finance shortfall (e.g., via its financial sector's role per the Income & Work dimension's global lens, or via a formal loss-and-damage attribution study) was not found in this research pass and is flagged as a data gap.",
+        "source": "UNEP Adaptation Gap Report 2024 / 2025; NYC OMB Executive Budget (Climate Budgeting); NYC Mayor's Office press releases on ESCR/LMCR/Battery Coastal Resilience; U.S. Army Corps of Engineers NY-NJ Harbor & Tributaries Study",
+        "sourceUrl": "https://www.unep.org/resources/adaptation-gap-report-2024",
+        "confidence": "medium",
+        "geographicScale": "global",
+        "productionVsConsumption": "both",
+        "productionVsConsumptionNote": "not directly applicable — this is a finance/capacity metric rather than an emissions flow; NYC's consumption-based vs. production-based emissions responsibility is the companion 'climate change' dimension's global-lens territory"
+      },
+      "policyAnchors": [
+        {
+          "name": "Cool Neighborhoods NYC (2017)",
+          "relevance": "The city's founding heat-equity strategy: tree planting, CoolRoofs reflective-roof coatings, cooling-center expansion, and a commitment to address the racial heat-mortality gap identified by DOHMH's HVI.",
+          "status": "Program continues under MOCEJ/DOHMH; its cooling-center and canopy commitments have been folded into subsequent Local Law 85/128 cooling-center reporting and a 2026 City Council bill pushing a goal of 7 cooling centers per 100,000 residents, with an operating plan due by May 2026. The core equity gap (2x Black:white heat mortality) has not closed since 2017.",
+          "sourceUrl": "https://gothamist.com/news/nyc-could-expand-cooling-centers-during-heat-waves-under-newly-passed-legislation"
+        },
+        {
+          "name": "Local Law 41 of 2021 (Climate Resiliency Design Guidelines)",
+          "relevance": "Requires city capital-project design (buildings, roads, sewers, public housing, other infrastructure) to account for worsening heat, rainfall, and sea-level-rise hazards, including solar-reflectance, tree/shade, green-space, and HVAC-redundancy standards.",
+          "status": "By 2026 all city capital projects are required to meet the full Climate Resiliency Design Guidelines standard, per the pilot-to-mandate timeline set when the law passed; could not independently verify a 2026 compliance-rate report in this pass.",
+          "sourceUrl": "https://www.citylandnyc.org/mayors-office-announces-dozens-of-resilient-building-and-infrastructure-projects/"
+        },
+        {
+          "name": "Local Law 85 of 2020 / Local Law 128 (Heat Emergency and Cooling Center Plan)",
+          "relevance": "Requires NYC Emergency Management to publish an annual Heat Emergency and Cooling Center Plan documenting cooling-center locations and capacity.",
+          "status": "A 2026 version of the report has been published (ll85_ll128_cooling_center_report_2026.pdf); City Council legislation in 2026 seeks to expand the mandated cooling-center density.",
+          "sourceUrl": "https://www.nyc.gov/assets/em/downloads/pdf/local_law_reports/ll85_ll128_cooling_center_report_2026.pdf"
+        },
+        {
+          "name": "NYC Stormwater Resiliency Plan / Cloudburst Program",
+          "relevance": "DEP's post-Ida program to add stormwater storage, larger sewers, and porous pavement neighborhood-by-neighborhood; direct response to the 2021 sewer-capacity failure (NYC sewers are designed for ~1.75in/hr; Ida delivered a record 3.15-3.5in/hr).",
+          "status": "Expanding to four new neighborhoods (Corona, Kissena Park, Parkchester, East New York) as of 2025-2026, but several cloudburst hubs (Central Harlem, East Elmhurst, Kissena, Corona) each lost $46-50M in federal funding after a federal program suspension, per 2025-2026 reporting.",
+          "sourceUrl": "https://www.nyc.gov/site/dep/news/25-031/mayor-adams-nyc-department-environmental-protection-delivered-historic-progress-climate"
+        },
+        {
+          "name": "East Side Coastal Resiliency (ESCR)",
+          "relevance": "$1.45B flagship coastal-flood-barrier and park-reconstruction project protecting Manhattan's East Side from storm surge, directly responsive to Sandy.",
+          "status": "Phase 1 completed ahead of schedule and under budget; the southern phase is under construction and expected complete by early 2027.",
+          "sourceUrl": "https://www.nyc.gov/site/dep/news/772-24/mayor-adams-completes-first-section-east-side-coastal-resiliency-project-taking-steps-to"
+        },
+        {
+          "name": "U.S. Army Corps NY-NJ Harbor & Tributaries Study",
+          "relevance": "Regional storm-surge-barrier feasibility study (Alternative 3B: 12 storm-surge gates plus 41+ miles of shoreline barriers/floodwalls, ~$52B), the largest-scale flood-protection option under consideration for NYC and the harbor region.",
+          "status": "A 30-day state/agency review of the Final Interim Feasibility Report/Environmental Assessment completed May 6, 2026; three 'Actionable Elements' (East Riser Meadowlands NJ, Harlem River NY floodwall, Oakwood Beach Staten Island nature-based solution) are being pursued for Congressional authorization in WRDA 2026.",
+          "sourceUrl": "https://gothamist.com/news/army-corps-52-billion-dollar-storm-surge-barriers-new-york-new-jersey-harbor-waterways"
+        },
+        {
+          "name": "Basement Apartment Conversion Pilot Program (Local Law 126) / basement legalization",
+          "relevance": "Direct policy response to the Hurricane Ida basement-apartment deaths; creates a legal pathway (min. ceiling heights, egress windows, flood-proofing, ventilation) to convert eligible pre-April-2024 illegal basement/cellar units to lawful, safer dwellings.",
+          "status": "Still in early pilot phase as of late 2025/2026: DOB and HPD published proposed program rules in November 2025; only low hundreds of units have been legalized against an estimated 100,000+ illegal units citywide; owners have until April 2029 to apply.",
+          "sourceUrl": "https://www.nyc.gov/site/hpd/services-and-information/basement-and-cellar.page"
+        },
+        {
+          "name": "HEAP Cooling Assistance Benefit",
+          "relevance": "State-administered benefit providing a free AC unit or fan (capped at $800 portable/$1,000 wall-sleeve including installation) to income-eligible households with young children, seniors, or heat-vulnerable medical conditions.",
+          "status": "Active but funding-limited and first-come-first-served; 2026 applications closed June 5, 2026, meaning the benefit is unavailable for the remainder of the summer once exhausted, and the household cannot have received a HEAP-funded AC in the prior five years — a real limit on its reach during exactly the season it is needed.",
+          "sourceUrl": "https://www.ny.gov/services/apply-cooling-assistance"
+        }
+      ],
+      "comparisonNote": "Petaluma has no equivalent 11th 'heat & climate resilience' dimension — its CLAUDE.md-documented climate-health narrative centers on drought and wildfire-smoke exposure in a Mediterranean-climate inland city of ~60,000, not urban heat-island effects or coastal/pluvial flooding. NYC's ~500 heat-related deaths/year and its 2:1 Black:white heat-mortality-rate disparity, plus a single 2021 storm (Ida) killing 13 people in one night largely via illegal basement flooding, have no scale-equivalent in Petaluma's portrait, which lacks any Heat Vulnerability Index, cooling-center network, or FEMA coastal-floodplain exposure of comparable magnitude.",
+      "dataGaps": [
+        "DOHMH does not publish an exact borough-level (as opposed to NTA-level) heat-related mortality rate in the press materials and public-facing report pages reviewed; it only states qualitatively that rates are 'highest in Brooklyn and the Bronx.' The underlying tract/NTA-level data (aggregable to boroughs) likely sits in DOHMH's EpiQuery system or Bureau of Environmental Health records — worth a direct data request or EpiQuery query if that interface is fetchable.",
+        "The exact current-year (2023 or later) total citywide GHG emissions figure in MtCO2e could not be confirmed to the ton in this research pass; only percent-change figures (-26% since 2006, -2% since 2019, -6% since 2022) were accessible from secondary reporting. MOCEJ's full 2023 GHG Inventory PDF (climate.cityofnewyork.us) should be fetched directly for the absolute figure.",
+        "The current (2020s) FEMA floodplain population figure for NYC is reported inconsistently across sources: ~400,000 (per the 2015 Preliminary FIRM, cited by NYC DCP materials), ~605,300 (a 100-year floodplain figure incorporating NPCC sea-level-rise adjustment, from a secondary source), and ~1.3 million (Rebuild by Design's broader 'in or adjacent to' floodplain definition). NYC Department of City Planning's Flood Risk Info Brief PDF should be the authoritative source but returned only binary/encoded content on this WebFetch attempt.",
+        "No NYC-specific quantification of the consumption-based-vs-production-based emissions multiplier was found; the C40 finding that some 'consumer cities' have consumption-based emissions 3x+ their sector-based inventory names NYC only as an example of a 'consumer city' type, not with a confirmed NYC-specific multiplier."
+      ],
+      "experts": [
+        {
+          "org": "NYC DOHMH Bureau of Environmental Health / Climate & Health Program",
+          "why": "Owns the Heat-Related Mortality Report and Heat Vulnerability Index methodology; best source for true borough- and NTA-level mortality rates.",
+          "contactPath": "https://www.nyc.gov/site/doh/health/health-topics/climate-change.page"
+        },
+        {
+          "org": "Mayor's Office of Climate and Environmental Justice (MOCEJ)",
+          "why": "Owns the citywide GHG inventory, Cool Neighborhoods NYC, and Climate Resiliency Design Guidelines (Local Law 41) implementation.",
+          "contactPath": "https://www.nyc.gov/site/sustainability/index.page"
+        },
+        {
+          "org": "NYC Emergency Management",
+          "why": "Administers the Local Law 85/128 Heat Emergency and Cooling Center Plan and cooling-center siting.",
+          "contactPath": "https://www.nyc.gov/site/em/index.page"
+        },
+        {
+          "org": "NYC Department of City Planning, Resiliency/Waterfront team",
+          "why": "Holds the authoritative flood-risk maps and floodplain-population methodology (FEMA PFIRM + NPCC sea-level-rise overlays).",
+          "contactPath": "https://www.nyc.gov/site/planning/index.page"
+        },
+        {
+          "org": "NYC Comptroller's Office, Bureau of Climate & Sustainability",
+          "why": "Authored 'Overheated, Underserved' and the tree-canopy/urban-forest funding report used for borough/neighborhood disaggregation in this dossier.",
+          "contactPath": "https://comptroller.nyc.gov/"
+        },
+        {
+          "org": "NYC Environmental Justice Alliance (NYC-EJA)",
+          "why": "Runs the Extreme Heat & Air Quality campaign and represents EJ-community priorities on heat and canopy equity.",
+          "contactPath": "https://nyc-eja.org/campaigns/extreme-heat-and-air-quality/"
+        },
+        {
+          "org": "The Point Community Development Corporation (Be A Buddy program)",
+          "why": "Runs South Bronx/Hunts Point neighbor-to-neighbor heat check-in outreach, a ground-level view of HVI-5 conditions.",
+          "contactPath": "https://www.thepoint.org/"
+        }
+      ]
     }
   ]
 }

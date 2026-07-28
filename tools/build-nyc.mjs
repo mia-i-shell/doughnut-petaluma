@@ -166,12 +166,22 @@ function toCanonical(d) {
         const [gpvc, gpvcNote] = normalizePvC(g.productionVsConsumption);
         if (gpvc) out.global.productionVsConsumption = gpvc;
         if (gpvcNote) out.global.productionVsConsumptionNote = gpvcNote;
+        // Ruling R7: borough data measured on the global/consumption basis rides on the
+        // global lens, never in local.boroughs.
+        if (g.boroughs) out.global.boroughs = g.boroughs;
     }
     if (d.policyAnchors?.length) {
-        out.policyAnchors = d.policyAnchors.map((p) => ({
-            name: p.name, relevance: p.relevance,
-            status: p.status2026 || p.status, sourceUrl: p.sourceUrl,
-        }));
+        // Drop null/absent fields rather than emitting them — the schema types these as
+        // strings, and an agent that omits a source URL should produce a missing key.
+        out.policyAnchors = d.policyAnchors.map((p) => {
+            const a = {};
+            if (p.name) a.name = p.name;
+            if (p.relevance) a.relevance = p.relevance;
+            const st = p.status2026 || p.status;
+            if (st) a.status = st;
+            if (typeof p.sourceUrl === 'string' && p.sourceUrl) a.sourceUrl = p.sourceUrl;
+            return a;
+        });
     }
     if (d.petalumaContrast) out.comparisonNote = d.petalumaContrast;
     if (d.dataGaps?.length) out.dataGaps = d.dataGaps;
@@ -223,12 +233,30 @@ function toBoroughDimension(canonical, key) {
         };
     }
     const why = b?.note ? ` ${b.note}` : ' No borough-level figure is published for this indicator.';
-    return {
+    const out = {
         ...base,
         geographicScale: 'city',
         confidence: 'low',
         context: `⚠ Citywide figure shown — not specific to ${label}.${why}\n\n${canonical.context ?? ''}`.trim(),
     };
+    // R7: where the borough figure exists only on the global/consumption basis, surface it
+    // as an explicitly-labelled subIndicator rather than as this borough's headline.
+    const gb = canonical.global?.boroughs?.[key];
+    if (gb && gb.value != null) {
+        out.subIndicators = [
+            {
+                name: `${label} — ${canonical.global.indicator} (different basis: ${canonical.global.productionVsConsumption || canonical.global.lens})`,
+                value: gb.value,
+                year: Number.isInteger(gb.year) ? gb.year : canonical.global.year,
+                source: gb.source || canonical.global.source,
+                sourceUrl: gb.sourceUrl || canonical.global.sourceUrl,
+                geographicScale: 'borough',
+                geographicScaleNote: `Borough figure measured on the ${canonical.global.productionVsConsumption || 'global'} basis — NOT comparable with the local headline indicator above.`,
+            },
+            ...(out.subIndicators || []),
+        ];
+    }
+    return out;
 }
 
 // ---------------------------------------------------------------- emit
@@ -325,14 +353,20 @@ const vizDim = (d) => ({
         : null,
     comparisonNote: d.comparisonNote || null,
     boroughs: d.boroughs || null,
+    globalBoroughs: d.global?.boroughs || null,
+    levelRationale: d.levelRationale || null,
+    reviewState: d.reviewStatus?.state || 'draft',
+    dataGaps: d.dataGaps || [],
     actions: d.actions || [],
 });
+
+const coverage = ` — FIRST DRAFT: ${researched} of 24 dimensions researched, ${reviewed} adversarially reviewed. Un-researched dimensions are shown as explicit grey gaps.`;
 
 const entries = {
     city_nyc: {
         name: 'New York City',
         population: citywide.meta.population,
-        description: CITY_DESC,
+        description: CITY_DESC + coverage,
         social: social.map(vizDim),
         ecological: ecological.map(vizDim),
     },
