@@ -476,6 +476,9 @@
 
             doughnut.setData(data);
             showDetail(null);
+
+            // Keep the URL in step so the current portrait stays shareable
+            if (history.replaceState) history.replaceState(null, '', '#' + key);
         }
 
         function openLightbox(src) {
@@ -509,7 +512,11 @@
         doughnut = new D3Doughnut('doughnutContainer', {
             onSelect: (dim) => showDetail(dim)
         });
-        loadCity(keys[0]);
+        // Deep-linking: ?city=city_nyc or #city_nyc opens straight to that portrait,
+        // so a specific jurisdiction can be linked and shared directly.
+        const requested = new URLSearchParams(location.search).get('city')
+                       || decodeURIComponent(location.hash.replace(/^#/, ''));
+        loadCity(keys.includes(requested) ? requested : keys[0]);
     </script>
 </body>
 </html>
