@@ -123,7 +123,8 @@ not to generic aspiration. Verify current status of each one you cite:
 - **NY State Climate Leadership and Community Protection Act (CLCPA)** — 40% below 1990 by 2030, 85% by 2050, 70% renewable electricity by 2030
 - **Environmental Bond Act (2022, $4.2B)**
 - **NYC Housing Blueprint / Fair Housing Framework / "City of Yes" follow-ons**
-- **Zero Waste Act (2023)** — curbside organics citywide, 2030 diversion goals
+- **Zero Waste Act — Local Laws 85-89 of 2023** (NOT 'Local Law 134', which does not exist; an
+  earlier version of this brief cited it wrongly) — curbside organics citywide, 2030 diversion goals
 - **NYCHA** capital needs and the PACT/Trust program
 - Dimension-specific: e.g. **Streets Plan (LL195)** for mobility, **Cool
   Neighborhoods NYC / Climate Resiliency Design Guidelines** for heat, **Right to

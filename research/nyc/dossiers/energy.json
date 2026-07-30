@@ -1,0 +1,228 @@
+{
+  "dimension": "energy",
+  "ring": "social",
+  "local": {
+    "lens": "local-social",
+    "level": 65,
+    "levelRationale": "Anchored on the state's own 6% affordability target: 41% of NYC's low-income families (460,493 of 1,111,978, <200% FPL) pay more than 6% of pre-tax income toward energy, a direct and large-scale miss of the target the state itself set in 2016. Pushed up further by two verified, worsening facts outside the headline: Con Edison residential disconnections roughly TRIPLED between H1 2024 and H1 2025 (to ~88,000 households, 2.5% of the territory's customers), and Black/Latino New Yorkers are about 8x more likely than white New Yorkers to have utilities shut off (Poverty Tracker, 2015-2022 average) versus about 2x more likely to merely fall behind -- a widening-at-the-point-of-disconnection equity gap, not just a burden gap. Moderated down from a more severe score by two real, large-scale mitigants: Con Edison's Energy Affordability Program now covers roughly 500,000 customers with over $500M in bill discounts across 2024-2025, and NYCHA's 2025-26 heat season posted its best five-year performance on record (7.8-hour average restoration vs. the 12-hour HUD standard, 98% of outages resolved within 24 hours) even though high-profile multi-day failures (Polo Grounds Towers, Mitchel Houses, Far Rockaway) continued.",
+    "indicator": "Share of NYC families with high energy cost burden (energy bills >6% of pre-tax income), against New York State's 2016 Energy Affordability Policy target",
+    "value": "18% of all NYC families (609,850 of ~3.47M) had a high energy cost burden (>6% of pre-tax income) in 2017 ACS data; 41% of low-income families (<200% FPL) were burdened -- 460,493 of 1,111,978 -- versus just 7% of families above 200% FPL. 73% of burdened low-income families are renters.",
+    "year": 2017,
+    "target": "New York State Energy Affordability Policy (Governor Cuomo, May 2016; formally adopted by the Public Service Commission): low-income customers should pay no more than 6% of pre-tax income toward energy bills.",
+    "geographicScale": "city",
+    "context": "This is NYC's most recent genuinely city-scale (not metro-area) energy-burden analysis with a real borough breakdown, built by the Mayor's Office of Sustainability and the Mayor's Office for Economic Opportunity directly from ACS microdata rather than a metro-area proxy. It is also 9 years old (2017 data, published August 2019) and no newer official NYC-specific update was found in this research pass -- flagged under R11 as a vintage gap the sibling/orchestrator should note. Two widely-cited 2020s sources (ACEEE's 'Energy Burdens in New York City' flyer and the NYC Comptroller's 2024 'Record Highs' report) both report '25% of New York City households (1,859,460) have a high energy burden' -- but ACEEE's underlying 2020 report explicitly defines this at the New York-Newark-Jersey City METRO level, not the city, and its own one-page NYC flyer inconsistently drops the 'metropolitan area' qualifier in the same bullet list that uses it two lines above. The Comptroller's report appears to have inherited this metro-labeled-as-city figure. This is the exact geographic-conflation failure mode the research brief warned about (wave-1 failure mode 4), reproduced independently by two different downstream NYC-focused publications from the same upstream ACEEE error -- worth flagging portrait-wide. NYC's housing stock is older and more rental-dominated than a typical US metro, and landlords rather than tenants often control the efficiency investments (insulation, boilers) that would lower bills, creating a split-incentive problem the City's own report calls out.",
+    "source": "NYC Mayor's Office of Sustainability & Mayor's Office for Economic Opportunity, 'Understanding and Alleviating Energy Cost Burden in New York City' (using 2017 American Community Survey)",
+    "sourceUrl": "https://www.nyc.gov/assets/sustainability/downloads/pdf/publications/EnergyCost.pdf",
+    "confidence": "medium",
+    "boroughs": {
+      "bronx": {
+        "value": null,
+        "level": null,
+        "note": "MOCEJ's 2019 report gives Bronx's SHARE of the citywide low-income burdened population (116,483 families, 25% of all burdened low-income families citywide) but does not publish a per-borough burden RATE (share of Bronx's own families that are burdened), so it cannot be promoted to this field per R10. Closest real borough-level RATE for an energy-affordability indicator: Columbia Poverty Tracker/Robin Hood (2015-2022 average) finds 29% of Bronx residents fall behind on utility payments annually and 15% face a shutoff -- the highest of any borough on both measures -- but this measures payment delinquency, a related but distinct indicator from income-share burden. See subIndicators."
+      },
+      "brooklyn": {
+        "value": null,
+        "level": null,
+        "note": "Same limitation as Bronx. MOCEJ reports Brooklyn holds the largest SHARE of citywide low-income burdened families (147,227, 32%), not a borough rate. Poverty Tracker proxy: 19% fall behind annually, 9% face shutoff."
+      },
+      "manhattan": {
+        "value": null,
+        "level": null,
+        "note": "Same limitation. MOCEJ share: 68,448 low-income burdened families (15% of citywide total, the smallest share). Poverty Tracker proxy: 17% fall behind annually, 8% face shutoff -- the lowest of any borough."
+      },
+      "queens": {
+        "value": null,
+        "level": null,
+        "note": "Same limitation. MOCEJ share: 103,135 low-income burdened families (22% of citywide total). Poverty Tracker proxy: 19% fall behind annually, 10% face shutoff. MOCEJ's community-district map additionally flags Southeast Queens (Howard Beach/Ozone Park, Queens Village/Cambria Heights/Rosedale, Jamaica/Hollis/St Albans) as having among the highest median annual energy bills for low-income families citywide ($1,897-$2,574)."
+      },
+      "statenIsland": {
+        "value": null,
+        "level": null,
+        "note": "Same limitation. MOCEJ share: 25,200 low-income burdened families (5% of citywide total, smallest raw count) -- but MOCEJ's own community-district map flags Staten Island (Port Richmond/Stapleton/Mariners Harbor, $2,985/yr; New Springville/South Beach, $2,520/yr; Tottenville/Great Kills/Annadale, $2,390/yr) as having the single highest median annual low-income energy bills of any neighborhoods citywide -- a case where the borough's SHARE of the burdened population is small but its per-family severity is the worst in the city. Poverty Tracker proxy: 18% fall behind annually, 5% face shutoff (smallest sample; interpret with caution per source)."
+      }
+    },
+    "neighborhoodNote": "MOCEJ's community-district map (2017 data) shows the highest median annual energy bills for low-income (<200% FPL) families concentrated in Staten Island (Port Richmond/Stapleton/Mariners Harbor, $2,985) and Southeast Queens (Howard Beach/Ozone Park, $2,574), while the highest CONCENTRATION (largest number) of low-income energy-burdened families is in the South and Central Bronx and Central Brooklyn. Source: nyc.gov/assets/sustainability/downloads/pdf/publications/EnergyCost.pdf, Map 1 and Table 3.",
+    "subIndicators": [
+      {
+        "name": "Utility payment delinquency and shutoff rate by borough (annual average, real borough-level RATE for a related affordability indicator)",
+        "value": "Rate of falling behind on utility payments / rate of utility shutoff, 2015-2022 annual average: Bronx 29% / 15% (highest both measures); Brooklyn 19% / 9%; Manhattan 17% / 8% (lowest both measures); Queens 19% / 10%; Staten Island 18% / 5% (small sample, interpret with caution). Citywide: ~20% fall behind and ~9% face a shutoff in an average year; over a 5-year period, 42% fall behind at least once and 23% face a shutoff at least once.",
+        "year": 2022,
+        "source": "Columbia Center on Poverty & Social Policy / Robin Hood, 'The Prevalence and Persistence of Energy Insecurity in New York City' (Poverty Tracker longitudinal survey, published July 2024)",
+        "sourceUrl": "https://robinhood.org/wp-content/uploads/2024/07/Poverty-Tracker-Energy-Insecurity-Report-Robin-Hood-2024.07.18-FINAL.pdf",
+        "geographicScale": "borough"
+      },
+      {
+        "name": "Racial disparity in utility payment delinquency and shutoffs (citywide, 5-year persistence)",
+        "value": "Black and Latino New Yorkers are more than twice as likely as white New Yorkers to fall behind on a utility payment at least once in 5 years (59% and 56% vs. 23%) and close to 8 times as likely to have a utility shutoff (37% and 33% vs. 5%). New Yorkers below the poverty line are 3x as likely to fall behind and 8x as likely to be shut off as those above 300% of poverty (62%/43% vs 18%/5%).",
+        "year": 2022,
+        "source": "Columbia Center on Poverty & Social Policy / Robin Hood Poverty Tracker",
+        "sourceUrl": "https://robinhood.org/wp-content/uploads/2024/07/Poverty-Tracker-Energy-Insecurity-Report-Robin-Hood-2024.07.18-FINAL.pdf",
+        "geographicScale": "city"
+      },
+      {
+        "name": "Con Edison residential arrears and disconnections",
+        "value": "377,000 Con Edison households (NYC + Westchester service territory -- not NYC-only; flagged per geography-check requirement) were 60+ days behind as of May 2025, owing $845M; arrears stood at ~$840M by mid-2025. Disconnections roughly TRIPLED year-on-year to ~88,000 households (2.5% of the territory) in the first half of 2025, and nearly 120,000 households owing $200M+ received final termination notices in a single month (May 2025).",
+        "year": 2025,
+        "source": "New York State Public Service Commission Case 91-M-0744 monthly filings, via Habitat Magazine and Pragmatic Environmentalist of New York",
+        "sourceUrl": "https://www.habitatmag.com/Publication-Content/Legal-Financial/2025/August-2025/con-edison-utility-disconnections",
+        "geographicScale": "utility service territory (NYC + Westchester County, not NYC alone)"
+      },
+      {
+        "name": "Statewide utility arrears (explicitly NOT a city figure -- included only for scale context)",
+        "value": "Over 1.28 million New York STATE households were 60+ days behind by December 2025, owing more than $1.84 billion combined -- across all of the state's investor-owned utilities, not Con Edison/NYC alone. PULP's hotline logged 781 emergency cases in 2025, up ~150% from 320 in 2024; 58.8% of emergency contacts were in a disadvantaged community and 47.5% involved a household member with a serious medical condition or disability.",
+        "year": 2025,
+        "source": "Public Utility Law Project of New York (PULP)",
+        "sourceUrl": "https://www.nysenate.gov/sites/default/files/admin/structure/media/manage/filefile/a/2026-01/public-utility-law-project.pdf",
+        "geographicScale": "state"
+      },
+      {
+        "name": "HEAP (LIHEAP) enrollment in NYC",
+        "value": "952,170 HEAP recipients in New York City in FFY2025, receiving $63.7M in benefits -- the largest of any county/borough grouping in the state by a wide margin (next largest, Erie County, had 100,707). No reliable citywide estimate of HEAP-eligible-but-unenrolled households was found in this research pass (flagged as a dataGap); national LIHEAP participation research generally finds only a minority of eligible households are ever enrolled in a given year.",
+        "year": 2025,
+        "source": "NYS Office of the State Comptroller, 'Low Income Home Energy Assistance Program - Federal Funding and New York', citing OTDA caseload statistics",
+        "sourceUrl": "https://www.osc.ny.gov/reports/budget/fed-funding-ny/low-income-home-energy-assistance-program",
+        "geographicScale": "city"
+      },
+      {
+        "name": "Con Edison Energy Affordability Program (EAP) discount",
+        "value": "~500,000 Con Edison customers enrolled and receiving discounts (up to $173/month) in 2025; over $500M in bill discounts provided across 2024-2025 combined. Most SSI/HEAP/SNAP recipients are auto-enrolled; the Enhanced EAP (expanded February 2026) extends eligibility to a broader income band based on household size and area median income.",
+        "year": 2025,
+        "source": "Con Edison press releases",
+        "sourceUrl": "https://www.coned.com/en/accounts-billing/payment-plans-assistance/energy-affordability-program",
+        "geographicScale": "utility service territory (NYC + Westchester)"
+      },
+      {
+        "name": "Con Edison 2026-2028 rate case (approved January 2026)",
+        "value": "PSC approved a 3-year joint proposal, an ~87% reduction from Con Edison's original ask. Average residential bills rise: electric +3.5% (2026), +3.2% (2027), +3.1% (2028); gas +4.4% (2026), +5.7% (2027), +5.6% (2028) -- roughly +$6.88/month electric and +$10.67/month gas in 2026 alone, layering directly onto the arrears and burden picture above.",
+        "year": 2026,
+        "source": "New York State Department of Public Service / Public Service Commission",
+        "sourceUrl": "https://dps.ny.gov/news/psc-approves-amendment-and-environmental-management-and-construction-plan-champlain-hudson",
+        "geographicScale": "utility service territory (NYC + Westchester)"
+      },
+      {
+        "name": "NYCHA heating performance and notable outages, 2025-26 season",
+        "value": "Citywide performance improved: 7.8-hour average restoration time (vs. 12-hour HUD standard), 98% of 2,240 outages resolved within 24 hours, a 7% decrease in total outages vs. the 2021-22 season, and $90.6M in heating-infrastructure investment across 5 developments. Against this, high-profile multi-day failures continued: ~3,000 residents at Polo Grounds Towers (Harlem) without heat/hot water for days in sub-zero January 2025 temperatures; Mitchel Houses (Bronx) residents without heat/cooking gas for over a month after a November 2025 chimney explosion; Far Rockaway (Queens) residents without heat through a January 2026 snowstorm.",
+        "year": 2026,
+        "source": "NYCHA press releases; Gothamist, NY1, ABC7 NY, PIX11 local reporting",
+        "sourceUrl": "https://www.nyc.gov/site/nycha/about/press/pr-2026/pr-20260603.page",
+        "geographicScale": "citywide (NYCHA portfolio) with development-level incidents"
+      },
+      {
+        "name": "Peaker plants in environmental-justice neighborhoods",
+        "value": "Documented PEAK Coalition-identified fossil peaker plants remain concentrated in EJ neighborhoods: Astoria Generating Station (Queens, ~959 MW), Gowanus Generating Station (Brooklyn/Sunset Park area, ~640 MW), Narrows (Brooklyn, ~352 MW), Harlem River and Hellgate (Bronx, ~94 MW each, NYPA-owned), and Bayswater/Jamaica Bay Peaking (Far Rockaway, Queens, ~61 MW+). Despite the DEC's 2025 peaker-emissions rule and the Champlain Hudson Power Express (CHPE) entering commercial service in May 2026, NYISO's most recent (Jan 2026) reliability determination retained the Gowanus and Narrows barge units through May 1, 2029 -- the maximum extension allowed under the rule -- meaning EJ-neighborhood peaker exposure continues well past CHPE's start date.",
+        "year": 2026,
+        "source": "PEAK Coalition (NYC-EJA, UPROSE, The Point CDC, NYLPI, Clean Energy Group); NYISO System & Resource Planning Status Reports",
+        "sourceUrl": "https://www.peakcoalition.org/",
+        "geographicScale": "citywide, with specific facility locations"
+      },
+      {
+        "name": "Local Law 97 and the rent-regulated-tenant pass-through question (cross-referenced from the climate change dimension per R13; not re-derived here)",
+        "value": "Per the climate dimension's verified figures (R13): LL97 covers ~35% of citywide emissions (not 72%, which is all buildings), DOB confirms ~91-93% filing rates, ~1,400 non-filers, and a $268/ton penalty, but has not published a cap-compliance rate (the widely-cited 57%-of-buildings-already-exceeding-2030-caps figure is an Urban Green Council estimate, not a DOB finding). For this dimension's social angle: buildings with >35% rent-regulated units follow a prescriptive Article 321 checklist instead of the emissions cap and can delay compliance; landlords can lease-provision LL97 costs onto tenants; and building electrification (heat pump/induction retrofits) can shift previously landlord-bundled heating costs onto tenants who become newly, directly responsible for them -- which the Poverty Tracker report flags as a real risk of the decarbonization transition even though it also newly qualifies more tenants for LIHEAP/HEAP.",
+        "year": 2026,
+        "source": "Cross-referenced from sibling climate change dossier (R13); Columbia/Robin Hood Poverty Tracker report",
+        "sourceUrl": "https://www.nyc.gov/assets/buildings/local_laws/ll97of2019.pdf",
+        "geographicScale": "city"
+      }
+    ]
+  },
+  "global": {
+    "lens": "global-social",
+    "level": null,
+    "levelRationale": "Two real transmission channels exist, but neither is quantifiable to NYC's specific share this research pass, so per R2 this is scored null rather than given an invented number. (1) NY State's own clean-energy procurement -- not NYC-only, but NYC-driven -- creates real, quantified DEMAND that runs through supply chains under documented labor-rights scrutiny: a 6 GW battery-storage target by 2030, ~500 MTA battery-electric buses in service by 2025-26 (rising to the full 5,800-bus fleet by 2040), and 8 GW of statewide distributed solar (with a specific ≥450 MW target inside Con Edison/NYC territory) all depend on cobalt (DRC supplies ~70% of world production; investigations found roughly 40,000 of 255,000 Congolese cobalt miners are children) and polysilicon (Xinjiang supplies ~40% of world production, and is the specific subject of the US Uyghur Forced Labor Prevention Act). No source in this research pass quantifies NYC's or NY's specific share of global cobalt or polysilicon demand or of the associated harms, so the level is null rather than asserted. (2) NYC's own per-capita electricity consumption is comparatively low for a US city (density and apartment living reduce demand relative to sprawl), which is a genuine and quantified fact but is a benchmark comparison, not a claim about NYC's effect on people elsewhere (the same distinction R2 draws for the mobility dimension's construction-cost benchmark) -- so it is carried here as context, not as the scored claim.",
+    "indicator": "NYC/NY State's demand-side link to global critical-mineral and solar-manufacturing supply chains under labor-rights scrutiny, set against the global electricity-access gap",
+    "value": "Global baseline: an estimated 666 million people worldwide still lack basic electricity access and more than 2 billion lack access to clean cooking (2023 data) -- both essentially universal in NYC. NY-driven clean-energy demand that plugs into contested supply chains: 6 GW battery-storage target by 2030 (NYSERDA); ~500 MTA electric buses in service 2025-26 en route to a 5,800-bus zero-emission fleet by 2040; 8 GW of statewide distributed solar installed through 2025, with a specific ≥450 MW target inside Con Edison's NYC/Westchester territory. Supply-side context: the DRC supplies ~70% of global cobalt, with credible reporting of widespread child labor (an estimated 40,000 of 255,000 Congolese cobalt miners) and hazardous artisanal-mining conditions; Xinjiang supplies ~40% of global polysilicon and is the specific target of the US Uyghur Forced Labor Prevention Act, with Chinese manufacturers documented bifurcating supply chains to obscure origin. Supporting (non-scored) context: NYC's own per-capita electricity draw is low for a US city (~1,123 kWh/month per Con Edison residential customer) due to density and mass-transit-oriented living.",
+    "year": 2025,
+    "target": "No accepted city-scale downscaled target exists for a jurisdiction's fair share of global critical-mineral supply-chain labor conditions; SDG7 sets universal electricity and clean-cooking access as the global target by 2030.",
+    "context": "NYC and NY State are, at once, a demand center whose own decarbonization requires materials produced under documented forced- and child-labor conditions abroad, and a place where the equivalent domestic hardship (lacking electricity at all) is essentially absent. This is the energy dimension's version of a genuine global-responsibility question -- not a restatement of local data, and not a merely internationally-benchmarked performance statistic -- but it needs a specialist (a supply-chain/critical-minerals researcher, not a generalist search) to actually attribute a share of DRC cobalt-mining harm or Xinjiang polysilicon volume to New York State's specific offtake, which no source in this pass provided.",
+    "source": "IEA, 'Tracking SDG7: The Energy Progress Report 2025'; NYU Stern Center for Business & Human Rights; Business & Human Rights Resource Centre; NYSERDA 6 GW Energy Storage Roadmap; MTA Zero-Emission Bus Transition Plan",
+    "sourceUrl": "https://www.iea.org/reports/tracking-sdg7-the-energy-progress-report-2025",
+    "confidence": "low"
+  },
+  "policyAnchors": [
+    {
+      "name": "New York State Energy Affordability Policy (PSC, 2016)",
+      "relevance": "The direct scoring target for this dimension's local headline -- low-income customers should pay no more than 6% of pre-tax income on energy.",
+      "status2026": "Still the nominal state policy; verified as the target the 2019 MOCEJ analysis is built against. No evidence found that the 6% figure itself has been revised, though the NY HEAT Act/CSRA attempts (below) sought to codify it more strongly in statute and repeatedly failed.",
+      "sourceUrl": "https://www.governor.ny.gov/news/governor-cuomo-announces-new-energy-affordability-policy-deliver-relief-nearly-2-million-low"
+    },
+    {
+      "name": "NY HEAT Act / Customer Savings and Reliability Act (CSRA), S8421 (2025-2026 session)",
+      "relevance": "Would codify the 6% affordability target in statute, cap gas-system buildout costs, and reform the '100-foot rule' obligation to serve gas -- the state's marquee energy-affordability and just-transition bill, central to this dimension's political anchor.",
+      "status2026": "Passed the Senate 36-23 on June 12, 2025, but died in the Assembly; returned to the Senate January 7, 2026 without Assembly passage -- the third consecutive session in which a version of this bill passed the Senate and failed in the Assembly. A separate, narrower repeal of the '100-foot rule' (one of its provisions) was signed into law in late 2025/early 2026 with a one-year implementation delay. Verify current 2026-session status before publication, as this is a fast-moving legislative fight.",
+      "sourceUrl": "https://www.nysenate.gov/legislation/bills/2025/S8421"
+    },
+    {
+      "name": "Local Law 97 of 2019",
+      "relevance": "Building decarbonization law whose compliance costs and cost-pass-through risk (heat pump/induction retrofits shifting heating costs onto tenants) are directly relevant to this dimension's affordability and just-transition angle.",
+      "status2026": "Cross-referenced from the climate dimension per R13 -- covers ~35% of citywide emissions (not 72%), ~91-93% filing rate, ~1,400 non-filers, no published DOB cap-compliance rate yet. Not independently re-verified in this research pass; see the climate dossier for primary detail.",
+      "sourceUrl": "https://www.nyc.gov/assets/buildings/local_laws/ll97of2019.pdf"
+    },
+    {
+      "name": "CLCPA 70% renewable electricity by 2030",
+      "relevance": "The statutory backdrop against which NYC's in-city fossil dependence (Indian Point's 2020-21 closure was replaced almost entirely by new gas capacity; downstate generation went from 68% to 94% fossil-fueled by 2023) must be judged.",
+      "status2026": "New York's renewable share of generation was roughly 25-30% as of 2025 (up from 25.1% in 2022); the PSC/NYSERDA's own 2024 draft Clean Energy Standard Biennial Review concluded the 70%-by-2030 target will likely not be met on schedule and modeled a more realistic ~2033 achievement date. This is the sibling climate dimension's primary territory; carried here only insofar as it explains continued in-city gas/peaker reliance.",
+      "sourceUrl": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/Energy-Storage/ny-6-gw-energy-storage-roadmap.pdf"
+    },
+    {
+      "name": "DEC Peaker Rule (nitrogen oxide emissions rule for peaking units)",
+      "relevance": "Directly governs the retirement timeline of the fossil peaker plants concentrated in EJ neighborhoods (South Bronx, Sunset Park, Astoria, Far Rockaway).",
+      "status2026": "The May 1, 2025 stricter emissions-limit deadline took effect as scheduled (25 ppmvd gas / 42 ppmvd oil), retiring or limiting hundreds of MW of peaking capacity. However, the Gowanus and Narrows barge units were granted the maximum reliability-need extension, now confirmed through May 1, 2029, despite the Champlain Hudson Power Express entering service in May 2026 -- CHPE alone was not sufficient for NYISO to clear full retirement.",
+      "sourceUrl": "https://www.nyiso.com/-/press-release-%7C-nyiso-identifies-solution-to-solve-new-york-city-reliability-need"
+    },
+    {
+      "name": "Champlain Hudson Power Express (CHPE)",
+      "relevance": "Major transmission project bringing Hydro-Québec hydropower to NYC (Astoria converter station), intended to displace in-city fossil generation including peakers.",
+      "status2026": "VERIFIED OPERATIONAL: entered commercial service May 13, 2026, ahead of its original early-June target; capable of supplying roughly 20% of NYC's electricity demand (~1 million homes) at full capacity. Construction had been substantially complete since January 2026.",
+      "sourceUrl": "https://www.hvdcworld.com/news/champlain-hudson-power-express-enters-commercial-operation-early"
+    },
+    {
+      "name": "Clean Path NY",
+      "relevance": "Was intended as a second major transmission line bringing upstate renewables to NYC alongside CHPE.",
+      "status2026": "VERIFIED CANCELLED: NYSERDA and the developers mutually terminated the underlying contracts in November 2024 after a cost/subsidy dispute; the NY PSC denied NYPA's petition for priority transmission status in August 2025, confirming the project will not proceed. Partially superseded in ambition (not in specific transmission capacity) by NYPA's Build Public Renewables Act Strategic Plan, updated December 9, 2025: 45 generation projects plus 146 distributed storage projects, ~5.5 GW combined capacity, though these are NYPA-owned generation/storage assets rather than a dedicated NYC transmission corridor.",
+      "sourceUrl": "https://www.utilitydive.com/news/nyserda-clean-path-ny-developers-terminate-contracts-transmission/734410/"
+    },
+    {
+      "name": "Offshore wind: South Fork Wind, Sunrise Wind, Empire Wind",
+      "relevance": "NYC/NY's offshore wind buildout, connecting into the grid at Brooklyn substations (Gowanus for South Fork and Empire Wind 1) and displacing fossil generation serving the city.",
+      "status2026": "South Fork Wind: fully operational since 2024. Sunrise Wind: under construction (roughly half its monopiles installed as of late 2025), targeting 2027 completion. Empire Wind: ~60% complete, targeting first power late 2026/commercial operation 2027. All three faced a Trump administration stop-work order in December 2025 citing national-security review; federal courts subsequently cleared each to resume construction. This federal-versus-state tension is an active 2026 political-moment risk factor for the justice-of-transition question this dimension covers.",
+      "sourceUrl": "https://www.nyserda.ny.gov/All-Programs/Offshore-Wind/Focus-Areas/NY-Offshore-Wind-Projects"
+    }
+  ],
+  "actions": [
+    "If receiving HEAP, SNAP, SSI, or Medicaid, confirm automatic enrollment in (or self-certify for) Con Edison's or National Grid's Energy Affordability Program at coned.com/EAP for a monthly bill discount of up to $173.",
+    "Apply for HEAP Regular and Emergency benefits each heating season (opens ~December 1) via mybenefitsny.gov or NYC's Human Resources Administration -- NYC already has the largest HEAP caseload in the state (952,170 recipients, FFY2025), but many eligible households still miss it.",
+    "If facing an arrears notice, shutoff, or termination threat, contact the Public Utility Law Project of New York's free hotline (utilityproject.org) before the shutoff -- PULP restored or prevented service loss for nearly 800 New Yorkers in 2025 and can invoke Home Energy Fair Practices Act medical/elderly protections.",
+    "Support renewed passage of the NY HEAT Act / Customer Savings and Reliability Act in the next legislative session (via NY Renews or WE ACT for Environmental Justice) -- it has now passed the Senate and died in the Assembly in three consecutive sessions.",
+    "Renters and low-income homeowners who can't install rooftop solar can apply for a no-cost Con Edison, NYC Economic Development Corporation (Sunset Park), or NYSERDA 'Solar for All' community-solar subscription to offset utility bills without owning panels.",
+    "Residents of peaker-plant-adjacent neighborhoods (South Bronx, Sunset Park, Astoria, Far Rockaway) can track and organize with the PEAK Coalition (peakcoalition.org) around the Gowanus/Narrows barge retirement timeline, now pushed to 2029."
+  ],
+  "petalumaContrast": "Petaluma's own energy-dimension entry is currently unpopulated (`level: null`, 'Data pending' -- data/petaluma_ca.json), reflecting a small city served by a vertically-different utility structure (PG&E plus the community-choice aggregator Sonoma Clean Power) with no PSC-style contested rate case, no documented peaker-plant environmental-justice fight, and no HEAP caseload anywhere near NYC's scale. NYC's version of this dimension is dominated by a single investor-owned monopoly utility serving 3.1 million customers with a formal, adversarial rate-case process (Con Edison's 2026-2028 increases just approved), fossil peaker plants sited specifically in low-income communities of color, and a state-level 6% affordability target that 41% of low-income NYC families still miss -- a scale and institutional complexity that simply does not exist yet in Petaluma's portrait.",
+  "dataGaps": [
+    "No NYC-specific, borough-level, post-2019 update of the income-share energy-cost-burden analysis exists; MOCEJ (or its successor, the Mayor's Office of Climate & Environmental Justice) would need to re-run the ACS-based methodology on current data.",
+    "No reliable citywide estimate of HEAP-eligible-but-unenrolled households (a true 'enrollment gap' denominator) was found; OTDA or NYSERDA's LMI Market Characterization program would hold or could construct this.",
+    "No NYC- or NY-specific quantification of cobalt or polysilicon volume (or associated labor-conditions harm) attributable to the state's own battery-storage, EV-bus, or solar procurement; a supply-chain-focused researcher (e.g., NYU Stern Center for Business & Human Rights) would be needed to build this.",
+    "No borough-level breakdown of NYC solar installations (rooftop or community solar) by capacity was found in this pass; NYSERDA's Solar Data Maps likely have this at a finer grain than was retrieved here.",
+    "DOB has not yet published a Local Law 97 cap-compliance rate (as opposed to a filing rate); this is being tracked on the climate dimension and will affect the affordability/pass-through question here once available."
+  ],
+  "expertsForPhase2": [
+    {"org": "Public Utility Law Project of New York (PULP)", "why": "Direct caseload data on arrears, shutoffs, and HEFPA protections; can speak to real-time enrollment gaps in EAP/HEAP.", "contactPath": "https://utilityproject.org/"},
+    {"org": "PEAK Coalition (NYC-EJA, UPROSE, The Point CDC, NYLPI, Clean Energy Group)", "why": "Authoritative, community-rooted source on peaker-plant locations, retirement timelines, and environmental-justice framing.", "contactPath": "https://www.peakcoalition.org/"},
+    {"org": "NYC Mayor's Office of Climate & Environmental Justice, Energy team", "why": "Would hold (or could commission) any post-2019 update to the citywide/borough energy-cost-burden analysis.", "contactPath": "https://www.nyc.gov/content/climate/pages/energy"},
+    {"org": "Columbia Center on Poverty & Social Policy / Poverty Tracker", "why": "Holds the underlying longitudinal microdata behind the borough-level utility-delinquency rates used in this dossier and could extend the analysis with newer years.", "contactPath": "https://www.povertytracker.robinhood.org/"},
+    {"org": "NYU Stern Center for Business & Human Rights", "why": "Published work specifically on critical-minerals stockpiling and forced/child labor; best positioned to help quantify NYC/NY's actual share of the global-lens transmission channel this dossier had to leave null.", "contactPath": "https://bhr.stern.nyu.edu/"}
+  ],
+  "questionsForOrchestrator": [
+    "The dimension's real, city-scale, ACS-based energy-cost-burden analysis (MOCEJ, 41% of low-income families burdened) is from 2017 data (published 2019) -- 9 years old. Is it better to headline this stale-but-genuinely-city-scale figure, or the more recent (2024) but metro-area ACEEE/Comptroller figure that has been mislabeled as a city figure in two downstream publications? I chose the former per R3/R11 but flag it as a real trade-off the orchestrator may want to weigh in on.",
+    "No single source publishes a true per-borough RATE for the income-share energy-burden headline (only MOCEJ's borough SHARE-of-citywide-total, which R10 blocks from the value field). I used the Poverty Tracker's genuinely borough-rate-based utility-payment-delinquency/shutoff indicator as the featured borough subIndicator instead, with the headline boroughs all set to null+note. Is this the right resolution, or should I instead attempt to derive a borough burden rate by combining MOCEJ's borough counts with published ACS borough household totals (capped at medium confidence per R3)?",
+    "This dossier and the sibling climate-change dossier both touch Local Law 97, CLCPA 70%-renewable progress, Indian Point's replacement-by-gas, and offshore wind/CHPE/Clean Path transmission. I've tried to cross-reference rather than re-derive (per R13's verified LL97 figures) and to keep this dossier's framing on the affordability/justice angle specifically -- please flag if anything here duplicates rather than complements the climate dossier's ecological framing."
+  ],
+  "sourcesFetched": [
+    {"url": "https://www.aceee.org/sites/default/files/pdfs/aceee-01_energy_burden_-_new_york_city.pdf", "fetchedOk": true, "whatItGave": "ACEEE's one-page NYC energy-burden flyer; confirmed the median/low-income-median burden figures (2.9%/9.3%) are explicitly metro-area, while the household-count bullets (25%/1,859,460 and 15%/1,111,740) drop the metro qualifier inconsistently within the same document -- the source of the geography-conflation error."},
+    {"url": "https://www.nyc.gov/assets/sustainability/downloads/pdf/publications/EnergyCost.pdf", "fetchedOk": true, "whatItGave": "Full text of NYC MOCEJ's 2019 'Understanding and Alleviating Energy Cost Burden in New York City' report: citywide and borough-level (share-of-total, not rate) energy-cost-burden counts, neighborhood-level annual bill data, and the 2016 state 6% policy target detail, from 2017 ACS microdata."},
+    {"url": "https://robinhood.org/wp-content/uploads/2024/07/Poverty-Tracker-Energy-Insecurity-Report-Robin-Hood-2024.07.18-FINAL.pdf", "fetchedOk": true, "whatItGave": "Full text of the Columbia/Robin Hood Poverty Tracker energy-insecurity report: citywide and real borough-level RATES of utility-payment delinquency and shutoff (2015-2022), plus race/income/tenure/education breakdowns and 5-year persistence data."},
+    {"url": "https://www.osc.ny.gov/reports/budget/fed-funding-ny/low-income-home-energy-assistance-program", "fetchedOk": true, "whatItGave": "NYC-specific HEAP recipient count (952,170) and benefit total ($63.7M) for FFY2025, with county-by-county comparison."},
+    {"url": "https://www.nysenate.gov/legislation/bills/2025/S8421", "fetchedOk": true, "whatItGave": "Verified legislative status of the Customer Savings and Reliability Act (NY HEAT Act successor): passed Senate June 12 2025, died in Assembly, returned to Senate January 7 2026."},
+    {"url": "https://www.nysenate.gov/legislation/bills/2025/S5056/amendment/B", "fetchedOk": true, "whatItGave": "Attempted verification of an alternate bill number; returned content describing an unrelated heat-mortality-reporting bill, indicating a mismatched/unreliable fetch -- discarded in favor of the S8421 result and not relied upon."},
+    {"url": "https://www.iea.org/reports/tracking-sdg7-the-energy-progress-report-2025", "fetchedOk": false, "whatItGave": "Not directly fetched; global electricity-access (666M) and clean-cooking (2B+) figures taken from WebSearch summaries of this IEA 2025 report and should be re-verified against the primary report/PDF before publication."}
+  ]
+}

@@ -352,3 +352,34 @@ are the easiest thing in a city portrait to repeat uncritically**, because they 
 press material untested. Either pin the superlative to a definition and a source, or describe
 the thing without the superlative. The scale of Hunts Point is impressive on plain figures
 and needs no ranking claim to carry it.
+
+## R19. Further brief errors, corrected by the research layer
+
+The waste & materials agent caught two errors the orchestrator introduced. Both are now
+settled; use these forms:
+
+- **The Zero Waste Act is Local Laws 85-89 of 2023.** "Local Law 134 of 2023" **does not
+  exist** — the orchestrator invented it in the research brief. The brief has been fixed.
+  No dossier inherited it, but treat any appearance of LL134 as the orchestrator's error.
+- **DSNY publishes two different diversion metrics and they must not be conflated.** The
+  narrower **Curbside & Containerized Diversion Rate** runs ~17-18.5%; the broader
+  **DSNY-Managed Diversion Rate** runs ~20.6-21.8%. The brief's "~20-21%" silently mixed
+  them. State which metric you are using, every time.
+
+## R20. Conflicting official figures: report both, prefer the planning document
+
+Two live cases from waste & materials, resolved the same way:
+
+- **Commercial Waste Zones full implementation: 2027 (agency testimony) vs 2028 (SWMP 2026 /
+  published report).** Use the **published planning document** as primary and note the
+  testimony discrepancy. Testimony is a statement of intent at a moment; a planning document
+  is the record. Do not silently pick one.
+- **FY2025 export cost: $513,989,376 (agent-derived by summing DSNY figures) vs ~$495M (cited
+  at a Council hearing).** Per R16, carry the derived figure labelled as derived with its
+  method, **and** state the Council figure. Do not reconcile to a single number — a ~$19M gap
+  between an agency's own summed data and its testimony is itself information, and collapsing
+  it hides a real discrepancy.
+
+Generally: when two official sources disagree and neither is clearly superseded, the portrait
+carries both with attribution. Averaging them, or picking the convenient one, manufactures a
+false precision.
