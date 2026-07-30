@@ -1872,182 +1872,230 @@
       "name": "heat & climate resilience",
       "lens": "local-ecological",
       "level": 100,
-      "levelRationale": "Heat is NYC's leading weather-related killer at an estimated ~500 deaths/year (2026 DOHMH report) and rising relative to the ~350/year figure cited in earlier report vintages (methodology has expanded the heat-exacerbated cause list over time). The Black:white age-adjusted heat-stress death-rate ratio (0.8 vs 0.4 per million, 2014-2023) has persisted at roughly 2:1 essentially unchanged since Cool Neighborhoods NYC launched in 2017, meaning the city's implicit equity target (eliminating the racial mortality gap) is not being met even though citywide home-AC access is high (91%). Rated Critical because the hazard is the deadliest of any extreme weather type in NYC and the core equity problem is unresolved after nearly a decade of programming.",
-      "indicator": "Heat-related mortality (direct heat-stress deaths + heat-exacerbated deaths)",
-      "value": "Highest concentration of HVI-5 (highest heat-vulnerability) neighborhoods citywide: Mott Haven/Melrose, Hunts Point, East Tremont, and Fordham/University Heights all score 5 of 5. Over 20% of households in Morrisania/East Tremont and University Heights/Fordham lack home AC, more than double the citywide 9% average. DOHMH statements describe age-adjusted heat death rates as highest in the Bronx (tied with Brooklyn) but do not publish an exact borough-level rate.",
-      "year": 2022,
-      "target": "No single codified numeric mortality target exists. DOHMH's Cool Neighborhoods NYC (2017) initiative and successive Heat-Related Mortality Reports state an implicit goal of eliminating the racial disparity in heat-stress mortality and driving preventable heat deaths toward zero via AC access, cooling centers, and canopy/cool-roof expansion.",
-      "context": "The Bronx: Highest concentration of HVI-5 (highest heat-vulnerability) neighborhoods citywide: Mott Haven/Melrose, Hunts Point, East Tremont, and Fordham/University Heights all score 5 of 5. Over 20% of households in Morrisania/East Tremont and University Heights/Fordham lack home AC, more than double the citywide 9% average. DOHMH statements describe age-adjusted heat death rates as highest in the Bronx (tied with Brooklyn) but do not publish an exact borough-level rate.\n\nCitywide for comparison: ~500 estimated heat-related deaths/year citywide (2026 report); ~7/year are direct heat-stress deaths (2016-2025 avg), ~489-520/year are heat-exacerbated deaths where heat aggravates an existing condition (2014-2023 avg). Black New Yorkers die of heat stress at ~2x the age-adjusted rate of white New Yorkers: 0.8 vs 0.4 deaths per million (2014-2023); Latino New Yorkers at ~1.0 per million (~2x white rate also reported in some vintages). An earlier (2022) report's headline figure was ~350/year with the same ~2x Black:white ratio (1.2 vs 0.5-0.6 per million in that vintage) — see dataGaps re: cross-vintage comparability.\n\nIn an 8.3M-person city, heat kills more people annually than all other weather hazards combined, and the mechanism is overwhelmingly indoor and socioeconomic (un-air-conditioned homes) rather than purely meteorological — sharply different from Petaluma's wildfire-smoke-centered climate-health narrative. The policy lever is AC access and its affordability (utility cost, not just ownership), tree canopy in redlined/EJ neighborhoods, and building-level cooling requirements; Local Law 97's building-emissions caps and heat-pump retrofit push interact with this because electrified cooling raises electricity demand even as it cuts direct heat-stress risk. Caveat: total-death estimates are model-based (excess-mortality methodology) and have shifted across report vintages as DOHMH refined its heat-exacerbated cause list, so year-to-year comparisons should be read as trend direction, not exact deltas.",
-      "source": "NYC Comptroller, \"Overheated, Underserved\"; DOHMH Heat Vulnerability Index",
-      "sourceUrl": "https://comptroller.nyc.gov/reports/overheated-underserved/",
+      "levelRationale": "BENCHMARK NOTE (R12): this is one of the two locally-defined ecological dimensions (R6). There is no Raworth planetary boundary for urban heat mortality and no DEAL downscaled per-capita benchmark, so R12's instruction to score against the framework benchmark has no direct analogue. The benchmark scored against is stated explicitly: ZERO PREVENTABLE HEAT DEATHS. That is the defensible framework-equivalent because DOHMH itself frames these deaths as preventable and the dominant risk factor is a purchasable good — home AC and the ability to run it — rather than an irreducible meteorological hazard; and unlike a city statute it applies identically to any portrait, which is R12's actual purpose. ANCHOR: ~500 heat-related deaths/year, about 3% of all warm-season deaths, heat being NYC's deadliest weather hazard, against a benchmark of zero. PUSHED UP BY (R1): the direct heat-stress racial disparity has WIDENED rather than closed in the current vintage — Black New Yorkers at 3x the white age-adjusted rate (1.2 vs 0.4 per million, 2016-2025) against 2x in the previous vintage — nine years after Cool Neighborhoods NYC (2017) made closing it an explicit aim; 2025 produced 21 heat-stress deaths, the highest single-year tally in over a decade, 19 of them in one four-day June heat wave, and 18 of the 21 decedents were Black or Latino; ~493,000 rental households have AC they do not run because of utility cost, so ownership statistics overstate real protection; the most heat-vulnerable neighbourhood citywide by HVI, East Flatbush (85% Black), has 1.2 cooling centres per 100,000 residents against Manhattan's 7.1. PULLED DOWN BY, but insufficient to move the score: citywide AC penetration of ~90-91% is genuinely high and is reported as such per R5; Local Law 128 of 2025 now makes a 7-per-100,000 cooling-centre target statutory with a plan due 15 May 2026; Local Law 41 of 2021 requires resilient design across the ~$90B city capital portfolio from 2026; CoolRoofs has coated more than 10M sq ft since 2009. Those are inputs, not outcomes, and the outcome measure has not improved. Not raised to 150 (emergency) because programmes exist and are expanding and the toll is not accelerating on a like-for-like basis. Level 100 (Critical) retained.",
+      "indicator": "Heat-related mortality (direct heat-stress deaths + modelled heat-exacerbated deaths)",
+      "value": "~500 heat-related deaths per year citywide, May-September — about 3% of all warm-season deaths (2026 New York City Heat-Related Mortality Report, DOHMH, released 15 June 2026). This is a MULTI-YEAR ANNUAL AVERAGE, not a single-year count: an average of 7 direct heat-stress deaths/year (pooled 2016-2025) plus an average of ~490 modelled heat-exacerbated deaths/year (pooled 2014-2023), where heat aggravates an existing condition. EQUITY — SCOPE STATED PRECISELY: DOHMH's race-disaggregated rates cover DIRECT HEAT-STRESS DEATHS ONLY. For 2016-2025 the age-adjusted heat-stress death rate was 1.2 per million for Black New Yorkers and 1.0 for Latino New Yorkers against 0.4 for white New Yorkers — 3x and 2x respectively, in DOHMH's own words 'Black New Yorkers had heat-stress death rates three times higher and Latino New Yorkers had death rates two times higher than white New Yorkers.' DOHMH publishes NO race-disaggregated rate for the ~490/year heat-exacerbated component that makes up ~98% of the headline; for that component its inequity finding is qualitative ('inequitably affects Black New Yorkers, reflecting the impacts of structural racism'). The ratio and the headline therefore describe different populations and must not be conflated. Corroborating single-year fact: in 2025, 21 New Yorkers died of heat stress — the highest tally in over a decade, 19 of them during one four-day June heat wave — and 18 of the 21 were Black or Latino.",
+      "year": 2026,
+      "target": "No codified numeric mortality target exists, and no planetary boundary applies to this locally-defined dimension. The benchmark used for scoring is ZERO PREVENTABLE HEAT DEATHS plus elimination of the racial disparity in heat mortality — the aim DOHMH and Cool Neighborhoods NYC (2017) state in qualitative terms, pursued via AC access and affordability, cooling centres, tree canopy and cool roofs. Statutory commitments that exist (Local Law 41 of 2021 on resilient capital design; Local Law 128 of 2025's 7-cooling-centres-per-100,000 target) are progress measures reported in context and policyAnchors, never the scoring anchor.",
+      "context": "⚠ Citywide figure shown — not specific to The Bronx. PROXY ONLY — no borough-level heat-mortality rate is published, per R10. DOHMH's 2026 report states qualitatively that age-adjusted heat-STRESS death rates are 'highest in Brooklyn and the Bronx' but publishes no borough figure, and publishes no borough heat-exacerbated rate at all. Closest proxies, each measuring something other than the headline: (a) Heat Vulnerability Index — a MODELLED VULNERABILITY COMPOSITE, not a mortality outcome — with the highest concentration of HVI-5 neighbourhoods citywide: Mott Haven and Melrose, Hunts Point and Longwood, Fordham and University Heights, Highbridge and Concourse, and Morrisania and Crotona, five of the eleven HVI-5 neighbourhoods citywide (NYC Comptroller, 4 Aug 2022); (b) home-AC access, a RISK FACTOR rather than an outcome — over 20% of households in Morrisania/East Tremont and University Heights/Fordham lack home AC, more than double the citywide ~9-10%. Holder of the underlying tract/NTA mortality data: DOHMH Bureau of Environmental Health (EpiQuery or a direct data request).\n\nIn an 8.3M-person city, heat kills more people annually than all other weather hazards combined, and the mechanism is overwhelmingly indoor and socioeconomic (un-air-conditioned homes, and AC that households cannot afford to run) rather than purely meteorological — sharply different from Petaluma's wildfire-smoke-centered climate-health narrative. VINTAGE LADDER (R11), all confirmed from primary sources: the 2022 report (released 16 June 2022) gave ~370 deaths/year with race rates for 2011-2020 (Black 2.2 vs white 0.9 per million, 2x); the 2025 report (released 30 June 2025) gave ~525/year pooled 2018-2022, of which ~5/year heat-stress and ~520/year heat-exacerbated, with race rates for 2014-2023 (Black 0.8 vs white 0.4, 2x); the 2026 report gives ~500/year with race rates for 2016-2025 (Black 1.2, Latino 1.0, white 0.4, i.e. 3x and 2x). The step from ~370 to ~500-525 is driven principally by a moved pooling window and by DOHMH's successive refinements to the heat-exacerbated excess-mortality model — it is a methodology and scope shift, NOT a measured trend, and the portrait must not read it as a rise; note the current ~500 is in fact BELOW the previous vintage's ~525. The widening of the Black:white direct heat-stress ratio from 2x to 3x reflects the June 2025 heat wave entering the pooling window. The policy lever is AC access and its affordability (utility cost, not just ownership), tree canopy in redlined/EJ neighborhoods, and building-level cooling requirements; Local Law 97's building-emissions caps and heat-pump retrofit push interact with this because electrified cooling raises electricity demand even as it cuts direct heat-stress risk.",
+      "source": "NYC DOHMH, 2026 New York City Heat-Related Mortality Report (Environment & Health Data Portal data feature and the 15 June 2026 press release); prior vintages 2025 (30 June 2025) and 2022 (16 June 2022) reports for the comparison ladder",
+      "sourceUrl": "https://a816-dohbesp.nyc.gov/IndicatorPublic/data-features/heat-report/",
       "screenshot": null,
-      "confidence": "medium",
-      "geographicScale": "borough",
+      "confidence": "low",
+      "geographicScale": "city",
       "actions": [
-        "Apply early for the NY State HEAP Cooling Assistance Benefit via ACCESS NYC or OTDA each spring — funds are first-come-first-served and have closed as early as June in recent years, so late applicants can be shut out for the whole summer.",
-        "During a heat emergency, use NYC Emergency Management's Cooling Center Finder or call 311 to locate the nearest cooling center (library, community/senior center, or NYCHA facility) under the Local Law 85/128 network.",
-        "If you live in a basement or cellar apartment, check eligibility for the Basement Apartment Conversion Pilot Program (Local Law 126) through HPD/DOB before the April 2029 application deadline, and know your flood-evacuation route given the Hurricane Ida basement-death pattern.",
+        "Apply early for the NY State HEAP Cooling Assistance Benefit via ACCESS NYC or OTDA each spring — funds are first-come-first-served and the 2026 benefit closed on 5 June, so late applicants are shut out for the whole summer. Note you are ineligible if your household received a HEAP-funded AC within the past five years.",
+        "During a heat emergency, use NYC Emergency Management's Cooling Center Finder or call 311 to locate the nearest cooling center (library, community or senior center, or NYCHA facility) under the Local Law 85/128 network.",
+        "If you live in a basement or cellar apartment, check eligibility for the city's basement and cellar legalization pilot (Local Law 126 of 2024) through DOB/HPD before the 20 April 2029 deadline — but note flood-prone properties are excluded from the programme, so know your flood-evacuation route regardless, given the Hurricane Ida basement-death pattern.",
         "Support or join the NYC Environmental Justice Alliance's (NYC-EJA) Extreme Heat & Air Quality campaign, which pushes for equitable cooling-center density and canopy investment in HVI-5 neighborhoods.",
         "In the South Bronx, connect with or volunteer for the Be A Buddy program (run by The Point CDC in Hunts Point) which does neighbor check-ins for isolated, heat-vulnerable residents during extreme-heat days.",
+        "Hold NYCEM to Local Law 128 of 2025: the comprehensive cooling and communication plan was due on or before 15 May 2026 and the law sets a target of no fewer than 7 cooling centers per 100,000 residents — compare that against your own neighborhood's actual count.",
         "Track your community board's Cloudburst/Stormwater Resiliency Plan timeline and the NY-NJ Harbor & Tributaries Study public comment process (Army Corps/DEP), since both determine whether and when your neighborhood gets flood infrastructure."
       ],
       "reviewStatus": {
-        "state": "draft",
+        "state": "adversarially-reviewed",
         "reviewedLevel": 100,
-        "notes": "DRAFT severity — not yet adversarially reviewed or expert-validated."
+        "notes": "Corrections from an independent adversarial review applied."
       },
       "productionVsConsumption": "not-applicable",
       "productionVsConsumptionNote": "not applicable — this is a health-outcome indicator, not an emissions or resource-flow metric",
-      "neighborhoodNote": "The sharpest intra-city heat gap is between Hunts Point/Mott Haven (South Bronx) — HVI 5, >20% of nearby Morrisania/East Tremont households lack home AC, majority Black and Latino, adjacent to industrial/waste-transfer land uses — and the Upper East Side (Manhattan), which scores at the low end of the HVI scale. Source: DOHMH Heat Vulnerability Index interactive tool (a816-dohbesp.nyc.gov/IndicatorPublic/data-features/hvi/) and NYC Comptroller, \"Overheated, Underserved\" (2022).",
+      "neighborhoodNote": "The sharpest intra-city heat gap is between the South Bronx HVI-5 cluster (Mott Haven/Melrose, Hunts Point/Longwood, Morrisania/Crotona — majority Black and Latino, >20% of households in adjacent Morrisania/East Tremont lacking home AC, adjacent to industrial and waste-transfer land uses) and the Upper East Side, which scores at the low end of the HVI scale. On cooling-centre access the sharpest gap is East Flatbush, Brooklyn — HVI 5, 85% Black, the most heat-vulnerable neighbourhood citywide — with 1.2 cooling centres per 100,000 residents against Manhattan's borough-wide 7.1. HVI is a modelled vulnerability composite, not a measured mortality rate. Sources: DOHMH Heat Vulnerability Index (a816-dohbesp.nyc.gov/IndicatorPublic/data-features/hvi/) and NYC Comptroller, \"Overheated, Underserved\" (4 Aug 2022).",
       "subIndicators": [
         {
+          "name": "Single-year heat-stress deaths, 2025",
+          "value": "21 heat-stress deaths in 2025 — the highest single-year tally in over a decade, against a 10-year average of 7/year; 19 occurred during one four-day June 2025 heat wave, and 18 of the 21 decedents were Black or Latino",
+          "year": 2025,
+          "source": "DOHMH 2026 Heat-Related Mortality Report, via City Limits",
+          "sourceUrl": "https://citylimits.org/at-least-21-new-yorkers-died-from-heat-stress-last-year-city-health-dept-says/",
+          "geographicScale": "city"
+        },
+        {
           "name": "Home AC access, citywide",
-          "value": "91.0% of households have home AC (~9% lack it)",
+          "value": "~90-91% of households have home AC (~9-10% lack it). Stated as a range: the DOHMH HVI page gives 91% and City Limits, reporting the same 2026 DOHMH report, gives 'around 90 percent'. One-decimal precision is not supported by either source.",
           "year": 2026,
-          "source": "DOHMH Heat Vulnerability Index page / DOHMH Heat-Related Mortality Report",
+          "source": "DOHMH Heat Vulnerability Index page; City Limits reporting on the 2026 DOHMH Heat-Related Mortality Report",
           "sourceUrl": "https://a816-dohbesp.nyc.gov/IndicatorPublic/data-features/hvi/",
           "geographicScale": "city"
         },
         {
-          "name": "AC-access gap, Bronx neighborhoods",
-          "value": ">20% of households lack home AC in Morrisania/East Tremont and University Heights/Fordham (Bronx)",
-          "year": 2026,
-          "source": "NYC Council Data Team, Heat and Cooling Equity",
-          "sourceUrl": "https://council.nyc.gov/data/heat/",
-          "geographicScaleNote": "NTA"
-        },
-        {
           "name": "AC owned-but-unused due to cost",
-          "value": "~15% of New Yorkers with AC report not using it in hot weather; ~493,000 rental households cite utility cost as the reason (2023 Housing & Vacancy Survey)",
+          "value": "~493,000 rental households report having AC but not using it because of utility prices (2023 NYC Housing and Vacancy Survey) — meaning AC-ownership statistics materially overstate actual heat protection",
           "year": 2023,
           "source": "NYC Housing and Vacancy Survey, cited via City Limits reporting on the DOHMH Heat-Related Mortality Report",
           "sourceUrl": "https://citylimits.org/at-least-21-new-yorkers-died-from-heat-stress-last-year-city-health-dept-says/",
           "geographicScale": "city"
         },
         {
+          "name": "AC-access gap, Bronx neighborhoods",
+          "value": ">20% of households lack home AC in Morrisania/East Tremont and University Heights/Fordham (Bronx), more than double the citywide ~9-10%",
+          "year": 2026,
+          "source": "NYC Council Data Team, Heat and Cooling Equity",
+          "sourceUrl": "https://council.nyc.gov/data/heat/",
+          "geographicScaleNote": "NTA"
+        },
+        {
+          "name": "Cooling-centre density inequity",
+          "value": "Manhattan 7.1 and Queens 5.0 cooling centres per 100,000 residents at borough level; at neighbourhood level East Flatbush (HVI 5, 85% Black) has 2 centres for 162,446 residents = 1.2 per 100,000, the most underserved citywide, against Bedford-Stuyvesant's 9 for 174,960 = 5.1 per 100,000. Local Law 128 of 2025 sets a statutory target of no fewer than 7 per 100,000 where practicable.",
+          "year": 2022,
+          "source": "NYC Comptroller, \"Overheated, Underserved\" (4 Aug 2022); Local Law 128 of 2025",
+          "sourceUrl": "https://comptroller.nyc.gov/reports/overheated-underserved/",
+          "geographicScale": "borough",
+          "geographicScaleNote": "borough/NTA"
+        },
+        {
           "name": "Citywide tree canopy cover",
           "value": "~22% of NYC land area covered by tree canopy (7M+ trees); Environmental Justice communities average ~19% canopy vs ~26% in non-EJ areas, with some pockets as low as 6%",
           "year": 2017,
-          "source": "NYC Urban Forest assessment, cited in NYC Comptroller (Levine), \"New York City's Living Infrastructure\"",
+          "source": "NYC Urban Forest assessment, cited in NYC Comptroller, \"New York City's Living Infrastructure\"",
           "sourceUrl": "https://comptroller.nyc.gov/reports/new-york-citys-living-infrastructure-funding-and-managing-nycs-urban-forest-and-tree-canopy/",
           "geographicScale": "city"
         },
         {
           "name": "Urban-heat-island block-level temperature differential",
-          "value": "Sparsely-vegetated blocks can run several degrees F hotter than tree-heavy blocks at the same time of day; one DOHMH comparison found a high-canopy Edenwald (Bronx) block ~2°F cooler than a low-canopy Brownsville (Brooklyn) block, with citywide surface differentials reported up to ~16°F depending on paving/rooftop exposure",
+          "value": "Sparsely-vegetated blocks can run several degrees F hotter than tree-heavy blocks at the same time of day; one DOHMH comparison found a high-canopy Edenwald (Bronx) block ~2°F cooler than a low-canopy Brownsville (Brooklyn) block, with citywide surface differentials reported up to ~16°F depending on paving and rooftop exposure",
           "year": 2023,
           "source": "DOHMH Environment & Health Data Portal, Urban Heat Island Effect story",
-          "sourceUrl": "https://a816-dohbesp.nyc.gov/IndicatorPublic/data-stories/urban-heat-island/",
+          "sourceUrl": "https://a816-dohbesp.nyc.gov/IndicatorPublic/data-features/urban-heat-island/",
           "geographicScale": "city",
           "geographicScaleNote": "city/block"
         },
         {
-          "name": "Heat Vulnerability Index (HVI) scale",
-          "value": "1 (lowest) to 5 (highest) per Neighborhood Tabulation Area (NTA), modeled from surface temperature, green space, home-AC access, income, and race/ethnicity; 12 NTAs citywide score 5, about half of them in the Bronx",
-          "year": 2026,
-          "source": "DOHMH Heat Vulnerability Index",
+          "name": "Heat Vulnerability Index (HVI)",
+          "value": "Scale 1 (lowest) to 5 (highest), modelled from surface temperature, green space, home-AC access, income and race/ethnicity — a VULNERABILITY COMPOSITE, not a mortality measure, and therefore never a substitute for the dimension's headline indicator. The NYC Comptroller's 2022 analysis identifies ELEVEN HVI-5 neighbourhoods citywide: East Flatbush, Bedford-Stuyvesant, Brownsville, East New York and Starrett City (Brooklyn); Fordham and University Heights, Highbridge and Concourse, Hunts Point and Longwood, Morrisania and Crotona, Mott Haven and Melrose (Bronx); Central Harlem (Manhattan); Jamaica and Hollis (Queens) — five of the eleven in the Bronx. HVI vintages and geographies change (DOHMH has published NTA- and ZCTA-based versions), so counts are vintage-specific.",
+          "year": 2022,
+          "source": "DOHMH Heat Vulnerability Index; NYC Comptroller, \"Overheated, Underserved\"",
           "sourceUrl": "https://a816-dohbesp.nyc.gov/IndicatorPublic/data-features/hvi/",
           "geographicScaleNote": "NTA"
+        },
+        {
+          "name": "NPCC4 climate projections for NYC",
+          "value": "Latest published assessment is NPCC4, 'New York City Climate Risk Information 2022: Observations & Projections' (April 2024). Sea level along NYC's coastline and the Hudson is projected to rise 7-11 inches within the next decade, 14-19 inches by the 2050s and 25-39 inches by the 2080s, and as much as 65 inches by the start of the next century, with a higher worst case that cannot be ruled out. Average annual temperature is projected to rise 2.7-3.9°F by the 2030s, 4.0-6.0°F by the 2050s and 5.6-9.8°F by the 2080s, with hot days and heat waves increasing. Average annual rainfall is projected to rise up to 14% by the 2050s and 22% by the 2080s, with more extreme rainfall events. NPCC5 is in progress (co-chairs Sheila Foster, Columbia; Timon McPhearson, The New School) and has not superseded NPCC4.",
+          "year": 2024,
+          "source": "New York City Panel on Climate Change 4th Assessment (NPCC4), Climate Risk Summary; Braneon et al., Annals of the New York Academy of Sciences, 2024",
+          "sourceUrl": "https://climateassessment.nyc/wp-content/uploads/2024/04/NPCC4_ClimateRiskSummary.pdf",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Flood mortality events — Sandy and Ida",
+          "value": "Superstorm Sandy (29 Oct 2012) killed 43 city residents and caused ~$19B in damages (NYC Comptroller; the city's SIRR report 'A Stronger, More Resilient New York' is dedicated to the 43); DOHMH counts 52 Sandy injury deaths on a broader direct-plus-indirect definition, and at least a third of those who drowned at home were in basements. Hurricane Ida's remnants (1-2 Sept 2021) killed 13 New Yorkers as reported at the time, 11 of them in flooded basement apartments and mostly in Queens; DOHMH's later analysis counts 14 Ida-related injury deaths of which 10 (71%) were drownings in unregulated illegal basement apartments. A record 3.15 inches of rain fell in one hour against a sewer system designed for ~1.75 in/hr.",
+          "year": 2021,
+          "source": "NYC Comptroller, \"Ten Years After Sandy\"; DOHMH Environment & Health Data Portal, 'What Hurricane Ida and Superstorm Sandy taught us about flooding and health'",
+          "sourceUrl": "https://a816-dohbesp.nyc.gov/IndicatorPublic/data-stories/flooding-and-health/",
+          "geographicScale": "city"
+        },
+        {
+          "name": "Population in the 100-year floodplain",
+          "value": "400,000 residents live in the 1% annual chance (100-year) floodplain, along with 183,000 residential units, 72,000 buildings, 291,000 jobs and 532M sq ft of floor area — NYC Department of City Planning, using FEMA's 2015 Preliminary Flood Insurance Rate Maps. DCP states that by the 2050s the number of people in the floodplain 'could more than double'. Two other figures circulate on DIFFERENT definitions rather than as conflicting measurements: ~440,000 residents 'affected' by the 2013/2015 PFIRM expansion, and 1.3 million residents 'within or directly adjacent to' the floodplain (Rebuild by Design, counting all block groups touching it, 2015 PFIRM + 2018 ACS, rising to 2.2M by 2100 under NPCC3); a ~1.5M figure appears in 2021 Stormwater Resiliency Plan press material. CAVEAT: the base maps are the 2015 PFIRMs, which NYC successfully appealed in October 2016 and FEMA agreed to revise, so the 400,000 figure is both dated and contested — DCP should be consulted in Phase 2.",
+          "year": 2016,
+          "source": "NYC Department of City Planning, 'Flood Risk in NYC' Info Brief (Nov 2016); Rebuild by Design, 'Who Lives in NYC's Floodplain?'",
+          "sourceUrl": "https://www.nyc.gov/assets/planning/download/pdf/about/dcp-priorities/data-expertise/flood-risk-info-brief.pdf",
+          "geographicScale": "city"
         }
       ],
       "global": {
         "lens": "global-ecological",
-        "level": 70,
-        "levelRationale": "This lens is framed around adaptation-capacity and climate-finance equity (to avoid duplicating the companion 'climate change' dimension's global-emissions lens). NYC can mobilize single-project sums ($1.45-2.7B for East Side and Lower Manhattan Coastal Resiliency alone; a proposed $52B regional storm-surge-barrier system) that dwarf what most equally-exposed coastal megacities in the Global South can access, while the global adaptation finance gap for developing countries is estimated at $187-359B/year against only ~$26-28B/year in actual international public flows. Scored 70 (Needs Attention, bordering Critical) rather than a precise figure because NYC's own share of responsibility for this gap is not separately quantified in the sources reviewed.",
-        "indicator": "Global adaptation-finance and adaptation-capacity gap, framed against NYC's own resiliency capital mobilization",
-        "value": "UNEP's Adaptation Gap Report estimates the global adaptation finance gap for developing countries at US$187-359B/year (2024 report) to US$215-387B/year (2023 report), and projects developing-country adaptation costs will exceed $310B/year by 2035 — roughly 12x the ~$26-28B/year in actual international public adaptation finance flows (2022-2023). By contrast, NYC alone is spending $1.45B (East Side Coastal Resiliency) and $2.7B+ (Lower Manhattan Coastal Resiliency) on two coastal-defense projects, within a $196.7B FY2025-2035 citywide capital plan that includes climate/resiliency spending, and is one sponsor (with NY/NJ states and the Army Corps) of a proposed $52B regional storm-surge-gate system (NY-NJ Harbor & Tributaries Study, Alternative 3B).",
-        "year": 2024,
-        "target": "No binding international target for equitable adaptation-finance distribution exists; the Paris Agreement's Glasgow Climate Pact called for developed countries to at least double adaptation finance from 2019 levels by 2025 (a target UNEP finds would close only ~5% of the gap even if met), and the post-COP28 Loss and Damage Fund remains far below assessed need.",
-        "context": "NYC's flood and heat risk is driven by the same global warming to which its own building/transport/consumption emissions contribute (the companion climate-change dimension covers that footprint directly), but the distinct global-equity story for THIS dimension is capacity: NYC, as a wealthy financial-capital city, can self-finance multibillion-dollar seawalls, storm-surge gates, and cooling infrastructure that an equally-exposed but lower-income coastal megacity (e.g. Lagos, Dhaka, Manila) cannot, even though such cities face comparable or worse physical exposure with far less adaptive capacity and did far less to cause the warming driving the risk. This is a loss-and-damage/climate-finance framing: the same hazard (sea-level rise, extreme heat) produces starkly unequal outcomes based on capital access rather than physical exposure alone. Quantifying NYC's specific share of the global adaptation-finance shortfall (e.g., via its financial sector's role per the Income & Work dimension's global lens, or via a formal loss-and-damage attribution study) was not found in this research pass and is flagged as a data gap.",
-        "source": "UNEP Adaptation Gap Report 2024 / 2025; NYC OMB Executive Budget (Climate Budgeting); NYC Mayor's Office press releases on ESCR/LMCR/Battery Coastal Resilience; U.S. Army Corps of Engineers NY-NJ Harbor & Tributaries Study",
-        "sourceUrl": "https://www.unep.org/resources/adaptation-gap-report-2024",
-        "confidence": "medium",
+        "level": null,
+        "levelRationale": "Level is null by design under R2, not for lack of effort. The prior draft scored 70 on an adaptation-capacity and climate-finance-equity framing whose own text conceded that 'NYC's own share of responsibility for this gap is not separately quantified in the sources reviewed'. R2 requires a global lens to say something about the city's external footprint or responsibility, and ranks an honest qualitative framing with level: null above a precise-looking score attached to an unquantified claim — it states explicitly that a level of 30 or 65 next to confidence: low with no underlying quantity is a finding, not a result. What this entry actually contains is a comparative capacity benchmark (NYC can self-finance seawalls; Lagos, Dhaka and Manila cannot), which is a fact about NYC's wealth and about global finance architecture, not a quantified channel by which NYC affects those cities' adaptation shortfall. The framing is retained in full because it is real and important; the score is withdrawn until a transmission channel is quantified. NO DUPLICATION: the companion climate-change dimension owns emissions attribution and is scored 120 on consumption-based overshoot per R12; this entry deliberately does not restate emissions.",
+        "indicator": "Adaptation-capacity and climate-finance inequity — NYC's self-financed resiliency capital set against the global adaptation finance gap (qualitative framing; NYC's own share unquantified, hence unscored)",
+        "value": "UNEP's Adaptation Gap Report 2025, 'Running on Empty' (November 2025 — the current vintage), estimates the adaptation finance gap for developing countries at US$284-339 billion per year by 2035, against adaptation needs of US$310-365 billion per year by 2035 (US$440-520 billion when inflation-adjusted to 2035) and actual international public adaptation finance flows of just US$26 billion in 2023 — needs of 12-14 times current flows. The prior vintage, Adaptation Gap Report 2024, put the gap at US$187-359 billion per year, with international public flows rising from US$22 billion (2021) to US$28 billion (2022), and found that even meeting the Glasgow Climate Pact's doubling goal would close only about 5% of the gap; UNEP now finds developed countries off track on that goal. By contrast NYC self-finances single coastal-defence projects at $1.45 billion (East Side Coastal Resiliency) and is one sponsor, with New York and New Jersey and the Army Corps, of a proposed ~$52 billion regional storm-surge-barrier system (USACE NY-NJ Harbor & Tributaries Study, Alternative 3B). NYC's own attributable share of the global adaptation shortfall is not quantified in any source located, which is why this lens carries no level. Figures previously cited here that this review could not verify — a US$215-387B/year gap attributed to the 2023 report, a $2.7B+ Lower Manhattan Coastal Resiliency total, and a $196.7B FY2025-2035 citywide capital plan — have been removed or flagged rather than carried as fact.",
+        "year": 2025,
+        "target": "No binding international target for equitable adaptation-finance distribution exists. The Glasgow Climate Pact called on developed countries to at least double adaptation finance from 2019 levels by 2025 — a goal UNEP found would close only ~5% of the gap even if met, and which UNEP now reports developed countries are off track to meet. The post-COP28 Loss and Damage Fund remains far below assessed need, and UNEP judges the post-COP29 New Collective Quantified Goal insufficient for adaptation needs.",
+        "context": "NYC's flood and heat risk is driven by the same global warming to which its own emissions contribute, but the companion climate-change dimension owns that footprint directly (its global lens is scored 120 on consumption-based emissions overshoot per R12), so this dimension deliberately does not restate emissions attribution and there is no duplication between the two. The distinct story here is CAPACITY: NYC, as a wealthy financial-capital city, can self-finance multibillion-dollar seawalls, storm-surge gates and cooling infrastructure that an equally-exposed but lower-income coastal megacity — Lagos, Dhaka, Manila — cannot, even though such cities face comparable or worse physical exposure with far less adaptive capacity and did far less to cause the warming driving the risk. That is a genuine and important loss-and-damage framing: the same hazard produces starkly unequal outcomes based on capital access rather than physical exposure alone. But under R2 it is a comparative capacity benchmark, not a quantified transmission channel, so it stays as framing with level null. PARTIES WHO COULD QUANTIFY IT: the NYC Comptroller's Bureau of Climate & Sustainability (city climate capital accounting), UNEP's Adaptation Gap Report team, and loss-and-damage attribution researchers; a route worth testing is NYC's financial sector, which the Income & Work dimension's global lens already treats as a quantified channel.",
+        "source": "UNEP Adaptation Gap Report 2025 ('Running on Empty', Nov 2025) and Adaptation Gap Report 2024, figures confirmed via Carbon Brief and SEI summaries because unep.org returned HTTP 403 to direct fetch; NYC Mayor's Office on East Side Coastal Resiliency; U.S. Army Corps of Engineers NY-NJ Harbor & Tributaries Study",
+        "sourceUrl": "https://www.unep.org/resources/adaptation-gap-report-2025",
+        "confidence": "low",
         "geographicScale": "global",
         "productionVsConsumption": "both",
-        "productionVsConsumptionNote": "not directly applicable — this is a finance/capacity metric rather than an emissions flow; NYC's consumption-based vs. production-based emissions responsibility is the companion 'climate change' dimension's global-lens territory"
+        "productionVsConsumptionNote": "not directly applicable — this is a finance and capacity metric rather than an emissions flow; NYC's consumption-based vs production-based emissions responsibility is the companion 'climate change' dimension's global-lens territory"
       },
       "policyAnchors": [
         {
           "name": "Cool Neighborhoods NYC (2017)",
-          "relevance": "The city's founding heat-equity strategy: tree planting, CoolRoofs reflective-roof coatings, cooling-center expansion, and a commitment to address the racial heat-mortality gap identified by DOHMH's HVI.",
-          "status": "Program continues under MOCEJ/DOHMH; its cooling-center and canopy commitments have been folded into subsequent Local Law 85/128 cooling-center reporting and a 2026 City Council bill pushing a goal of 7 cooling centers per 100,000 residents, with an operating plan due by May 2026. The core equity gap (2x Black:white heat mortality) has not closed since 2017.",
-          "sourceUrl": "https://gothamist.com/news/nyc-could-expand-cooling-centers-during-heat-waves-under-newly-passed-legislation"
+          "relevance": "The city's founding heat-equity strategy, launched 2017 as a $106M initiative: $82M for tree planting targeted at the South Bronx, Central Brooklyn and Northern Manhattan; NYC CoolRoofs reflective-roof coatings; cooling-centre expansion; heat-risk training for home health aides; and the Be A Buddy NYC neighbour check-in programme — with an explicit aim of addressing the racial heat-mortality gap identified by DOHMH's HVI.",
+          "status": "Continues under MOCEJ/DOHMH; commitments folded into Local Law 85 of 2020 / Local Law 128 of 2025 cooling-centre reporting, and the 2026 DOHMH report accompanies new cooling capacity in Brownsville, East Harlem and Tremont. The core equity gap has NOT closed since 2017 — on DOHMH's current vintage the Black:white direct heat-stress rate ratio is 3:1, WIDER than the 2:1 in the previous vintage. NYC CoolRoofs, running since 2009 with ~70 workers recoating up to ~1M sq ft per summer, has coated more than 10M sq ft citywide, targeted at the highest-heat-vulnerability districts.",
+          "sourceUrl": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-releases-report-on-heat-related-deaths.page"
         },
         {
           "name": "Local Law 41 of 2021 (Climate Resiliency Design Guidelines)",
-          "relevance": "Requires city capital-project design (buildings, roads, sewers, public housing, other infrastructure) to account for worsening heat, rainfall, and sea-level-rise hazards, including solar-reflectance, tree/shade, green-space, and HVAC-redundancy standards.",
-          "status": "By 2026 all city capital projects are required to meet the full Climate Resiliency Design Guidelines standard, per the pilot-to-mandate timeline set when the law passed; could not independently verify a 2026 compliance-rate report in this pass.",
-          "sourceUrl": "https://www.citylandnyc.org/mayors-office-announces-dozens-of-resilient-building-and-infrastructure-projects/"
+          "relevance": "Passed March 2021, codified at NYC Admin Code § 3-131. Requires climate resilience guidelines and a resilience scoring system for city capital projects, so that buildings, roads, sewers, public housing and other public infrastructure are designed for worsening heat, rainfall and sea-level-rise hazards, including solar-reflectance, tree and shade, green-space and HVAC-redundancy standards.",
+          "status": "By 2026 all city capital projects must meet the Climate Resiliency Design Guidelines, covering a ~$90B capital portfolio; a pilot ran on 40 projects across 23 agencies with budgets from $3M to $1B. SCOPE LIMIT: coastal protection projects (sea walls, bulkheads, levees) are excluded, with separate guidance in development. No 2026 compliance-rate report was located, so implementation performance is unverified.",
+          "sourceUrl": "https://codelibrary.amlegal.com/codes/newyorkcity/latest/NYCadmin/0-0-0-132687"
         },
         {
-          "name": "Local Law 85 of 2020 / Local Law 128 (Heat Emergency and Cooling Center Plan)",
-          "relevance": "Requires NYC Emergency Management to publish an annual Heat Emergency and Cooling Center Plan documenting cooling-center locations and capacity.",
-          "status": "A 2026 version of the report has been published (ll85_ll128_cooling_center_report_2026.pdf); City Council legislation in 2026 seeks to expand the mandated cooling-center density.",
-          "sourceUrl": "https://www.nyc.gov/assets/em/downloads/pdf/local_law_reports/ll85_ll128_cooling_center_report_2026.pdf"
+          "name": "Local Law 85 of 2020 / Local Law 128 of 2025 (Heat Emergency and Cooling Center Plan)",
+          "relevance": "Local Law 85 of 2020 addressed public education and communication about cooling centres. Local Law 128 of 2025 (enacted from Int 0998-2024, passed by the Council in September 2025) codifies the cooling-centre programme, requires the NYCEM Commissioner to designate cooling-centre locations during heat emergencies, and requires — where practicable — no fewer than 7 cooling centres per 100,000 residents, with siting to consider the Heat Vulnerability Index and where vulnerable populations live.",
+          "status": "STATUS CORRECTED: the 7-per-100,000 density target is already LAW as of September 2025, not a pending 2026 bill. NYCEM must submit a comprehensive cooling and communication plan on or before 15 May 2026 and an annual public plan each May. The 2026 Local Law 85/128 cooling-centre report is published. Actual density remains far below the target in the highest-risk neighbourhoods — East Flatbush at 1.2 per 100,000 as of the Comptroller's 2022 analysis.",
+          "sourceUrl": "https://intro.nyc/0998-2024"
         },
         {
           "name": "NYC Stormwater Resiliency Plan / Cloudburst Program",
-          "relevance": "DEP's post-Ida program to add stormwater storage, larger sewers, and porous pavement neighborhood-by-neighborhood; direct response to the 2021 sewer-capacity failure (NYC sewers are designed for ~1.75in/hr; Ida delivered a record 3.15-3.5in/hr).",
-          "status": "Expanding to four new neighborhoods (Corona, Kissena Park, Parkchester, East New York) as of 2025-2026, but several cloudburst hubs (Central Harlem, East Elmhurst, Kissena, Corona) each lost $46-50M in federal funding after a federal program suspension, per 2025-2026 reporting.",
+          "relevance": "DEP's post-Ida program adding stormwater storage, larger sewers and porous pavement neighbourhood-by-neighbourhood; a direct response to the 2021 sewer-capacity failure, in which a record 3.15 inches of rain fell in one hour against a system designed for ~1.75 in/hr. NPCC projects rainfall up to 25% higher by the end of the century.",
+          "status": "Expanding to four new neighbourhoods (Corona, Kissena Park, Parkchester, East New York) as of 2025-2026. Reporting indicates several cloudburst hubs lost federal funding after a federal program suspension; the specific per-hub dollar losses previously cited ($46-50M each) were NOT independently verified in this review pass.",
           "sourceUrl": "https://www.nyc.gov/site/dep/news/25-031/mayor-adams-nyc-department-environmental-protection-delivered-historic-progress-climate"
         },
         {
           "name": "East Side Coastal Resiliency (ESCR)",
-          "relevance": "$1.45B flagship coastal-flood-barrier and park-reconstruction project protecting Manhattan's East Side from storm surge, directly responsive to Sandy.",
-          "status": "Phase 1 completed ahead of schedule and under budget; the southern phase is under construction and expected complete by early 2027.",
+          "relevance": "$1.45B coastal-flood-barrier and park-reconstruction project protecting Manhattan's East Side from storm surge, a direct response to Sandy.",
+          "status": "Phase 1 complete; the southern phase is under construction. The claims that Phase 1 finished ahead of schedule and under budget and that the southern phase completes by early 2027 were NOT independently verified in this pass.",
           "sourceUrl": "https://www.nyc.gov/site/dep/news/772-24/mayor-adams-completes-first-section-east-side-coastal-resiliency-project-taking-steps-to"
         },
         {
           "name": "U.S. Army Corps NY-NJ Harbor & Tributaries Study",
-          "relevance": "Regional storm-surge-barrier feasibility study (Alternative 3B: 12 storm-surge gates plus 41+ miles of shoreline barriers/floodwalls, ~$52B), the largest-scale flood-protection option under consideration for NYC and the harbor region.",
-          "status": "A 30-day state/agency review of the Final Interim Feasibility Report/Environmental Assessment completed May 6, 2026; three 'Actionable Elements' (East Riser Meadowlands NJ, Harlem River NY floodwall, Oakwood Beach Staten Island nature-based solution) are being pursued for Congressional authorization in WRDA 2026.",
+          "relevance": "Regional storm-surge-barrier feasibility study (Alternative 3B: 12 storm-surge gates plus 41+ miles of shoreline barriers and floodwalls, ~$52B), the largest-scale flood-protection option under consideration for NYC and the harbour region.",
+          "status": "Reporting indicates the Final Interim Feasibility Report review concluded in 2026 with three 'Actionable Elements' (East Riser Meadowlands NJ, a Harlem River NY floodwall, and a nature-based solution at Oakwood Beach, Staten Island) pursued for Congressional authorization in WRDA 2026. The specific review dates and element list were NOT independently verified in this pass.",
           "sourceUrl": "https://gothamist.com/news/army-corps-52-billion-dollar-storm-surge-barriers-new-york-new-jersey-harbor-waterways"
         },
         {
-          "name": "Basement Apartment Conversion Pilot Program (Local Law 126) / basement legalization",
-          "relevance": "Direct policy response to the Hurricane Ida basement-apartment deaths; creates a legal pathway (min. ceiling heights, egress windows, flood-proofing, ventilation) to convert eligible pre-April-2024 illegal basement/cellar units to lawful, safer dwellings.",
-          "status": "Still in early pilot phase as of late 2025/2026: DOB and HPD published proposed program rules in November 2025; only low hundreds of units have been legalized against an estimated 100,000+ illegal units citywide; owners have until April 2029 to apply.",
-          "sourceUrl": "https://www.nyc.gov/site/hpd/services-and-information/basement-and-cellar.page"
+          "name": "Basement and Cellar Apartment Legalization Pilot (Local Law 126 of 2024)",
+          "relevance": "Mandated by Local Law 126 of 2024 under City of Yes for Housing Opportunity; creates an Authorization for Temporary Residence pathway letting tenants remain in eligible illegally converted basement and cellar units in one- and two-family homes while owners bring them up to code over a decade without penalty. Eligibility requires the unit to have existed before 20 April 2024, to sit in a community district named in the law, and to have basic safety features — smoke and gas alarms, central heating, proper egress, and adequate wall separation from boiler equipment.",
+          "status": "IMPORTANT SCOPE CORRECTION: properties in FLOOD-PRONE AREAS ARE NOT ELIGIBLE, and flood-proofing is not among the programme's requirements. It is therefore a housing-safety and legalisation measure that specifically excludes the highest-flood-risk stock, and should not be characterised as the policy answer to the Ida basement drownings. Still in early phase — DOB and HPD published proposed rules in 2025 (HPD press release 074-25); only low hundreds of units legalized against an estimated 100,000+ illegal units citywide; owners must apply through DOB by 20 April 2029.",
+          "sourceUrl": "https://www.nyc.gov/site/hpd/news/074-25/adams-administration-publishes-new-proposed-rules-legalizing-basement-cellar-apartments"
         },
         {
           "name": "HEAP Cooling Assistance Benefit",
-          "relevance": "State-administered benefit providing a free AC unit or fan (capped at $800 portable/$1,000 wall-sleeve including installation) to income-eligible households with young children, seniors, or heat-vulnerable medical conditions.",
-          "status": "Active but funding-limited and first-come-first-served; 2026 applications closed June 5, 2026, meaning the benefit is unavailable for the remainder of the summer once exhausted, and the household cannot have received a HEAP-funded AC in the prior five years — a real limit on its reach during exactly the season it is needed.",
-          "sourceUrl": "https://www.ny.gov/services/apply-cooling-assistance"
+          "relevance": "State-administered benefit providing one free AC unit or fan per household to income-eligible households with young children, seniors, or heat-vulnerable medical conditions — not to exceed $800 with installation for a window or portable AC or a fan, and not to exceed $1,000 for an existing wall-sleeve unit. A fan is provided where an AC cannot be safely installed.",
+          "status": "CONFIRMED. Active but funding-limited and first-come-first-served: the 2025-2026 benefit closed 5 June 2026, so it is unavailable for the remainder of the summer once exhausted. Eligibility criterion, verbatim: 'Not have received a HEAP-funded air conditioner within the past five years.' Both limits bite during exactly the season the benefit is needed.",
+          "sourceUrl": "https://access.nyc.gov/programs/cooling-assistance-benefit/"
         }
       ],
-      "comparisonNote": "Petaluma has no equivalent 11th 'heat & climate resilience' dimension — its CLAUDE.md-documented climate-health narrative centers on drought and wildfire-smoke exposure in a Mediterranean-climate inland city of ~60,000, not urban heat-island effects or coastal/pluvial flooding. NYC's ~500 heat-related deaths/year and its 2:1 Black:white heat-mortality-rate disparity, plus a single 2021 storm (Ida) killing 13 people in one night largely via illegal basement flooding, have no scale-equivalent in Petaluma's portrait, which lacks any Heat Vulnerability Index, cooling-center network, or FEMA coastal-floodplain exposure of comparable magnitude.",
+      "comparisonNote": "Petaluma has no equivalent 'heat & climate resilience' dimension — its climate-health narrative centers on drought and wildfire-smoke exposure in a Mediterranean-climate inland city of ~60,000, not urban heat-island effects or coastal and pluvial flooding. NYC's ~500 heat-related deaths per year, its 3:1 Black:white DIRECT heat-stress mortality-rate disparity, and a single 2021 storm (Ida) killing 13 people in one night largely in illegal basement apartments have no scale-equivalent in Petaluma's portrait, which has no Heat Vulnerability Index, no cooling-center network, and no coastal-floodplain exposure of comparable magnitude. Note for cross-portrait honesty: because this dimension is locally defined with no planetary boundary, its level is scored against 'zero preventable heat deaths' rather than a downscaled framework benchmark, and that anchor must be applied identically if any other portrait adds a heat dimension.",
       "dataGaps": [
-        "DOHMH does not publish an exact borough-level (as opposed to NTA-level) heat-related mortality rate in the press materials and public-facing report pages reviewed; it only states qualitatively that rates are 'highest in Brooklyn and the Bronx.' The underlying tract/NTA-level data (aggregable to boroughs) likely sits in DOHMH's EpiQuery system or Bureau of Environmental Health records — worth a direct data request or EpiQuery query if that interface is fetchable.",
-        "The exact current-year (2023 or later) total citywide GHG emissions figure in MtCO2e could not be confirmed to the ton in this research pass; only percent-change figures (-26% since 2006, -2% since 2019, -6% since 2022) were accessible from secondary reporting. MOCEJ's full 2023 GHG Inventory PDF (climate.cityofnewyork.us) should be fetched directly for the absolute figure.",
-        "The current (2020s) FEMA floodplain population figure for NYC is reported inconsistently across sources: ~400,000 (per the 2015 Preliminary FIRM, cited by NYC DCP materials), ~605,300 (a 100-year floodplain figure incorporating NPCC sea-level-rise adjustment, from a secondary source), and ~1.3 million (Rebuild by Design's broader 'in or adjacent to' floodplain definition). NYC Department of City Planning's Flood Risk Info Brief PDF should be the authoritative source but returned only binary/encoded content on this WebFetch attempt.",
-        "No NYC-specific quantification of the consumption-based-vs-production-based emissions multiplier was found; the C40 finding that some 'consumer cities' have consumption-based emissions 3x+ their sector-based inventory names NYC only as an example of a 'consumer city' type, not with a confirmed NYC-specific multiplier."
+        "DOHMH publishes NO borough-level heat-mortality rate, only the qualitative statement that age-adjusted heat-STRESS death rates are 'highest in Brooklyn and the Bronx'. All five borough entries are therefore value: null with named proxies, per R10 — 0 of 5 with real data, 5 of 5 with proxies. The underlying tract/NTA-level data sits with DOHMH's Bureau of Environmental Health (EpiQuery or a direct data request).",
+        "DOHMH publishes NO race-disaggregated rate for heat-EXACERBATED deaths, which are ~98% of the headline ~500. The published 3:1 Black:white ratio covers only the ~7 direct heat-stress deaths per year. This is the single most important caveat on the dimension's headline equity claim and must not be elided.",
+        "The floodplain population range is now settled by definition rather than left unresolved — 400,000 in the 1% annual chance floodplain (DCP, FEMA 2015 PFIRMs) vs 1.3M 'within or directly adjacent to' (Rebuild by Design) — but the base maps are the 2015 PFIRMs, which NYC successfully appealed in October 2016 and FEMA agreed to revise. A current-vintage floodplain population count was not located and DCP should supply one in Phase 2.",
+        "NYC's own attributable share of the global adaptation-finance shortfall is not quantified in any located source, which is why the global lens carries level: null under R2. UNEP's own resource pages returned HTTP 403 to direct fetch, so the Adaptation Gap Report figures rest on Carbon Brief and SEI summaries rather than the primary PDFs.",
+        "Several policy-status details could not be verified in this pass and are flagged in place rather than asserted: the $2.7B+ Lower Manhattan Coastal Resiliency total, the $196.7B FY2025-2035 capital plan figure, ESCR phase schedule and budget claims, the USACE review dates and Actionable Elements list, and the per-hub Cloudburst federal funding losses."
       ],
       "experts": [
         {
           "org": "NYC DOHMH Bureau of Environmental Health / Climate & Health Program",
-          "why": "Owns the Heat-Related Mortality Report and Heat Vulnerability Index methodology; best source for true borough- and NTA-level mortality rates.",
+          "why": "Owns the Heat-Related Mortality Report and Heat Vulnerability Index methodology; the only body that can supply true borough- and NTA-level mortality rates, any race-disaggregated heat-exacerbated rate, and an explanation of the heat-exacerbated model revisions between the 2022, 2025 and 2026 vintages.",
           "contactPath": "https://www.nyc.gov/site/doh/health/health-topics/climate-change.page"
         },
         {
           "org": "Mayor's Office of Climate and Environmental Justice (MOCEJ)",
-          "why": "Owns the citywide GHG inventory, Cool Neighborhoods NYC, and Climate Resiliency Design Guidelines (Local Law 41) implementation.",
+          "why": "Owns the citywide GHG inventory, Cool Neighborhoods NYC, the NPCC secretariat, and Local Law 41 Climate Resiliency Design Guidelines implementation — including whether the 2026 all-capital-projects requirement is actually being met.",
           "contactPath": "https://www.nyc.gov/site/sustainability/index.page"
         },
         {
           "org": "NYC Emergency Management",
-          "why": "Administers the Local Law 85/128 Heat Emergency and Cooling Center Plan and cooling-center siting.",
+          "why": "Administers the Local Law 85 of 2020 / Local Law 128 of 2025 Heat Emergency and Cooling Center Plan and cooling-centre siting; holds current per-neighbourhood cooling-centre counts against the statutory 7-per-100,000 target.",
           "contactPath": "https://www.nyc.gov/site/em/index.page"
         },
         {
           "org": "NYC Department of City Planning, Resiliency/Waterfront team",
-          "why": "Holds the authoritative flood-risk maps and floodplain-population methodology (FEMA PFIRM + NPCC sea-level-rise overlays).",
+          "why": "Holds the authoritative flood-risk maps and floodplain-population methodology (FEMA PFIRM plus NPCC sea-level-rise overlays); needed to replace the 2016-vintage 400,000 figure with a current count.",
           "contactPath": "https://www.nyc.gov/site/planning/index.page"
         },
         {
           "org": "NYC Comptroller's Office, Bureau of Climate & Sustainability",
-          "why": "Authored 'Overheated, Underserved' and the tree-canopy/urban-forest funding report used for borough/neighborhood disaggregation in this dossier.",
+          "why": "Authored 'Overheated, Underserved' and the tree-canopy/urban-forest funding report used for the neighbourhood proxies here; best placed to quantify city climate capital against global adaptation need, which would let the global lens carry a level.",
           "contactPath": "https://comptroller.nyc.gov/"
+        },
+        {
+          "org": "New York City Panel on Climate Change (NPCC5)",
+          "why": "NPCC4 (April 2024) is the current published assessment; NPCC5 is in progress under co-chairs Sheila Foster (Columbia) and Timon McPhearson (The New School) and will supersede the projection ranges used here.",
+          "contactPath": "https://climateassessment.nyc/"
         },
         {
           "org": "NYC Environmental Justice Alliance (NYC-EJA)",
@@ -2056,7 +2104,7 @@
         },
         {
           "org": "The Point Community Development Corporation (Be A Buddy program)",
-          "why": "Runs South Bronx/Hunts Point neighbor-to-neighbor heat check-in outreach, a ground-level view of HVI-5 conditions.",
+          "why": "Runs South Bronx/Hunts Point neighbour-to-neighbour heat check-in outreach, a ground-level view of HVI-5 conditions.",
           "contactPath": "https://www.thepoint.org/"
         }
       ]

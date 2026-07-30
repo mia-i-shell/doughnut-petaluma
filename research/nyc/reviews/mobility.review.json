@@ -1,0 +1,189 @@
+{
+  "dimension": "mobility",
+  "overallVerdict": "sound-with-corrections",
+  "confidenceInDossier": "medium",
+  "summaryOfReview": "The dossier's quantitative core is unusually clean: every headline and borough Census figure is confirmed digit-for-digit against official ACS 2024 1-Year data, and the congestion-pricing toll schedule and bus-speed figures are confirmed against MTA and NYC Comptroller primary sources. The failures are (a) a false claim that NYC is not a Census-published geography, (b) an R2 violation in the global lens, (c) a stale Fair Fares policy status with a wrong denominator, and (d) most importantly, one of the four pull factors underpinning the -45 orchestrator override is REFUTED by the dossier's own subIndicator and by primary DOT sources.",
+  "findings": [
+    {
+      "severity": "critical",
+      "category": "severity-unsupported",
+      "claim": "ORCHESTRATOR OVERRIDE (R1): level -45, resting on four pull factors including 'traffic fatalities at post-Vision-Zero highs' / 'traffic deaths at or near post-Vision-Zero highs'",
+      "verdict": "REFUTED",
+      "whatIFound": "This pull factor is false as of the review date. NYC DOT: 2025 ended with 205 traffic deaths — 'the fewest traffic deaths ever recorded, dating back to when record-keeping began in 1910', a 19% decline from 253 in 2024, one fewer than the prior record year (2018, 206), and down 31% since Vision Zero launched in 2014. Pedestrian deaths fell from 122 to 111; child fatalities fell 63% (16 to 6). The trend continued into 2026: DOT's Q1 2026 release reports 42 deaths in the first three months, down 7% year-on-year and the third-fewest at that point since 1910 ('in only 2015 and 2018 were fewer traffic deaths recorded at this point'). Traffic safety is therefore not a pull factor pushing the level up — it is verified evidence pushing it DOWN. The dossier's own subIndicator already said this ('2025 was a record-setting exception'), so the override's rationale contradicts the dossier it was applied to. The other three pull factors do hold (see below), but the override was built on four pillars and one has collapsed.",
+      "correction": "Remove traffic fatalities from the list of upward pull factors and record it as a verified strength. Recommended level -65 (see levelReview).",
+      "sourceUrl": "https://www.nyc.gov/html/dot/html/pr2026/traffic-deaths-are-near-lowest-levels.shtml"
+    },
+    {
+      "severity": "major",
+      "category": "lens-confusion",
+      "claim": "global lens: indicator = 'Subway/metro construction cost per mile, benchmarked against the global average', level 30",
+      "verdict": "REFUTED",
+      "whatIFound": "R2 was already settled by the orchestrator: a comparative cost benchmark describes NYC's own governance, not its external effect, and must not be the headline global indicator. The dossier did NOT demote it — the Transit Costs Project cost figure is still the `indicator` string and still carries level 30 with confidence 'medium' and no underlying quantity. That is precisely the pattern R2 names as a finding ('a level of 30 or 65 next to confidence low and no underlying quantity is a finding, not a result'). The two genuinely global threads in the block (aviation-emissions inventory boundary; global road-access inequality) are both explicitly unquantified-for-NYC, and the rolling-stock / EV-battery supply-chain thread R2 asked for is absent entirely.",
+      "correction": "Restructure per R2: global-social level becomes null; indicator becomes the honest qualitative transferability/supply-chain framing with named parties who could quantify it; the construction-cost figure moves to a subIndicator on the global lens.",
+      "sourceUrl": "https://www.vitalcitynyc.org/articles/why-it-costs-4-billion-per-mile-of-subway-track"
+    },
+    {
+      "severity": "major",
+      "category": "stale-policy",
+      "claim": "Fair Fares: 'Approximately 37% of the ~1.4 million income-eligible New Yorkers are enrolled'; 'Income ceiling raised from 120% to 145% of the Federal Poverty Level effective January 2025, with a further increase to 150% FPL underway'",
+      "verdict": "CORRECTED",
+      "whatIFound": "Both numbers and the policy status are wrong. NYC Independent Budget Office, 'Expanding Fair Fares: Many Options, A Range of Costs' (June 2026): the threshold IS ALREADY 150% FPL ($23,940 single adult / $49,500 household of four, ages 18-64); eligible population is 938,834 ('nearly 940,000'); about 385,000 are enrolled = 41% of eligible. Separately, NYC Comptroller (April 2025) reported ~360,000 enrolled at end-2024 = 38% of eligible. The dossier's '37% of ~1.4 million' is internally impossible — it implies ~518,000 enrolled, which no primary source supports; 1.4 million is the eligible pool AFTER the future 200% FPL expansion, not the current one. FURTHER STALE: in June 2026 the Council and Mayor agreed to raise the threshold from 150% to 200% FPL effective fall 2026, adding ~343,000 newly eligible (IBO Scenario C: 342,604; total eligible rising to 1,281,438). The under-enrollment pull factor HOLDS — 59% of eligible New Yorkers are not enrolled — but it is milder than the dossier stated and the direction of travel is strongly positive.",
+      "correction": "~385,000 enrolled = 41% of the ~940,000 eligible (IBO, June 2026, on ACS 2024 1-Year). Threshold currently 150% FPL; expansion to 200% FPL agreed June 2026, effective fall 2026, adding ~343,000 eligible.",
+      "sourceUrl": "https://www.ibo.nyc.gov/assets/ibo/downloads/pdf/infrastructure/2026/2026-june-expanding-fair-fares.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "internal-inconsistency",
+      "claim": "'NYC itself is not a single Census-published geography'; 'there is no single Census file labeled New York City, so the citywide figure here is a worker-weighted aggregate the author calculated from the 5 published county totals'; sourced via 'the Census Reporter API mirror'",
+      "verdict": "REFUTED",
+      "whatIFound": "ACS 2024 1-Year publishes both B08301 and S0801 directly for the place 'New York city, New York' (GEOID 1600000US3651000). Published S0801: drove alone 20.6, carpool 4.4, public transit 48.7, walked 9.6, worked from home 12.5, mean travel time to work 40.6 min (+-0.3). Published B08301: total workers 16+ 4,070,607; drove alone 840,263. R3 therefore applies in full: a published place-level figure exists and must be the headline, sourced to the Census, not to Census Reporter. NOTE — the agent's self-computed aggregate equals the published place figure EXACTLY (the five counties are exactly coextensive with the place, and the borough worker counts sum to 4,070,607 and borough drove-alone counts to 840,263), so there is NO numeric error. The defect is in the sourcing, the geographicScale text, and the unnecessary self-deprecating method caveat.",
+      "correction": "Source to U.S. Census Bureau ACS 2024 1-Year, Tables B08301 and S0801, place 'New York city, New York' (1600000US3651000). geographicScale: 'city (Census place New York city, New York — officially published, not derived)'. Delete the aggregation caveat and the associated dataGap and question to the orchestrator.",
+      "sourceUrl": "https://data.census.gov/api/access/data/table?g=1600000US3651000&y=2024&tid=ACSST1Y2024.S0801"
+    },
+    {
+      "severity": "minor",
+      "category": "stale-policy",
+      "claim": "Congestion pricing 'Survived a federal termination attempt: a May 2025 preliminary injunction in MTA v. Duffy kept the program operating'",
+      "verdict": "CORRECTED",
+      "whatIFound": "Accurate but materially stale, and it understates the outcome. Case name CONFIRMED: Metropolitan Transportation Authority v. Duffy, S.D.N.Y., filed 19 February 2025, Judge Lewis Liman; preliminary injunction granted to the MTA May 2025 (Regional Plan Association litigation tracker). But on 3 March 2026 Judge Liman issued a final 149-page decision holding the Trump administration lacks authority to terminate the program and that its attempt to revoke approval was 'arbitrary and capricious' — resolving the case in the MTA's favour, not merely enjoining it. Four other federal challenges (Chan, Mulgrew, New Yorkers Against Congestion Pricing Tax, Trucking Association) were closed on summary judgment for defendants 17 April 2025. I also checked and REFUTE a low-quality secondary claim circulating that congestion pricing is 'suspended by executive action' as of 2026 — no court has ordered a halt and the program is operating.",
+      "correction": "Litigation resolved in the MTA's favour: final ruling by Judge Lewis Liman, S.D.N.Y., 3 March 2026 in Metropolitan Transportation Authority v. Duffy, following the May 2025 preliminary injunction. Program operating.",
+      "sourceUrl": "https://abc7ny.com/post/manhattans-congestion-pricing-can-continue-judge-rules-ending-lengthy-legal-battle/18672390/"
+    },
+    {
+      "severity": "minor",
+      "category": "fabrication",
+      "claim": "Settlement 'commits MTA to at least 95% of the 472 stations having stair-free access by 2055'",
+      "verdict": "CORRECTED",
+      "whatIFound": "The base of the 95% is wrong. The MTA ADA Settlement Notice commits to at least 95% of the 364 stations that were inaccessible at settlement — not 95% of all 472. The milestone arithmetic confirms this: 81 (from existing capital plans) + 85 by 2035 + 90 by 2045 + 90 by 2055 = 346, which is 95% of 364, not of 472. Everything else in the subIndicator is confirmed: the 14.69% NYCT capital-plan accessibility set-aside above a $35.389B plan size, the 8% floor, the interim milestone years. Case names confirmed: Center for Independence of the Disabled, New York, et al. v. MTA (NY State, No. 153765/2017) and De La Rosa, et al. v. MTA (S.D.N.Y., No. 19-cv-04406); fairness hearings April 2023.",
+      "correction": "95% of the 364 stations inaccessible at the time of settlement (equivalently ~454 of 472, ~96% systemwide) by 2055.",
+      "sourceUrl": "https://www.mta.info/accessibility/ada-settlement-notice"
+    },
+    {
+      "severity": "minor",
+      "category": "fabrication",
+      "claim": "'Secondary reporting in 2026 puts the current count at approximately 160 of 472 stations (~34%) accessible' — sourced to HelpNewYork.com/amNewYork, 'not independently verified against a primary MTA total'",
+      "verdict": "CONFIRMED",
+      "whatIFound": "Now PRIMARY-sourced and can be upgraded. MTA's own article (mta.info, updated 22 July 2026): 'Today, the subway system has 160 accessible stations, nearly eleven times the 15 stations that were accessible when the ADA passed in 1990.' Corroborated by Governor Hochul's 31 December 2025 release stating 154 stations accessible after 10 projects completed in 2025 — consistent with 160 by mid-2026. 160/472 = 33.9%, so ~66% of stations remain stair-inaccessible. This pull factor HOLDS and is severe.",
+      "correction": "Upgrade source from secondary to MTA primary (mta.info, 22 July 2026): 160 of 472 stations accessible (33.9%); ~66% stair-inaccessible.",
+      "sourceUrl": "https://www.mta.info/article/accessibility-disability-pride-month-2026"
+    },
+    {
+      "severity": "minor",
+      "category": "fabricated-borough-data",
+      "claim": "Borough drive-alone shares: Manhattan 5.2%, Brooklyn 17.0%, Bronx 23.1%, Queens 30.0%, Staten Island 50.8%, with worker counts",
+      "verdict": "CONFIRMED",
+      "whatIFound": "All five verified against official ACS 2024 1-Year B08301 and S0801 at county level. B08301_003E/B08301_001E: Bronx 129,307/560,522 = 23.07%; Kings 211,612/1,247,694 = 16.96%; New York 47,452/914,910 = 5.19%; Queens 334,422/1,116,296 = 29.96%; Richmond 117,470/231,185 = 50.81%. S0801_C01_003E rounds to exactly 23.1 / 17.0 / 5.2 / 30.0 / 50.8. Every worker count in the dossier matches the published table digit-for-digit. Consistency with the citywide figure: borough worker totals sum to exactly 4,070,607 and borough drove-alone counts to exactly 840,263 — the published place totals. Nothing is interpolated, pro-rated, or invented. This is the cleanest borough block I would expect to see.",
+      "correction": null,
+      "sourceUrl": "https://data.census.gov/api/access/data/table?g=0500000US36081&y=2024&tid=ACSDT1Y2024.B08301"
+    },
+    {
+      "severity": "minor",
+      "category": "indicator-validity",
+      "claim": "Mode-share breakdown: 12.5% work-from-home, 48.7% transit, 9.6% walk, 4.4% carpool; and the drive-alone denominator treatment",
+      "verdict": "CONFIRMED",
+      "whatIFound": "All confirmed against published place-level S0801/B08301. From B08301 counts: WFH 509,852 = 12.53%; transit 1,981,663 = 48.68%; walked 389,200 = 9.56%; carpooled 179,649 = 4.41%; plus taxicab 44,560 (1.09%), bicycle 70,035 (1.72%), motorcycle 6,392 (0.16%), other 48,993 (1.20%). Shares sum to 100.0% and car/truck/van total (1,019,912) = drove alone + carpooled exactly. DENOMINATOR: the ACS B08301/S0801 universe is all workers 16+ INCLUDING work-from-home, so 20.6% is drove-alone as a share of all workers. Removing WFH from the denominator gives 840,263/3,560,755 = 23.60% — exactly the alternative the dossier reports. The dossier discloses BOTH figures and both denominators explicitly in `value`, which closes the single easiest route for this dimension to mislead. The all-workers denominator is also the correct one for comparability with Petaluma's 72.6%, which is on the same ACS basis. No finding beyond the sourcing fix above.",
+      "correction": null,
+      "sourceUrl": "https://data.census.gov/api/access/data/table?g=1600000US3651000&y=2024&tid=ACSDT1Y2024.B08301"
+    },
+    {
+      "severity": "minor",
+      "category": "fabrication",
+      "claim": "ACS 2024 1-Year Estimates is the vintage used",
+      "verdict": "CONFIRMED",
+      "whatIFound": "The Census API dataset catalog (api.census.gov/data.json) lists vintage 2024 for ['acs','acs1'], ['acs','acs1','subject'] and ['acs','acs1','profile']. No ACS vintage later than 2024 exists in the catalog — the only 2025/2026 vintages are Current Population Survey. 2024 ACS 1-Year is released and is the latest available. The cited vintage exists and is current.",
+      "correction": null,
+      "sourceUrl": "https://api.census.gov/data.json"
+    },
+    {
+      "severity": "minor",
+      "category": "fabrication",
+      "claim": "Average bus speed 8.17 mph citywide in 2024, down from 8.22 in 2015; Staten Island 12.6, Queens 8.75, Bronx 7.65, Brooklyn 7.37, Manhattan 6.29; M42 slowest at 5.25 mph",
+      "verdict": "CONFIRMED",
+      "whatIFound": "Verified against the primary PDF (NYC Comptroller, Bureau of Policy and Research, 'Behind Schedule: How New York City's Bus System Slow Rolls Riders', April 2025). Table 3 gives exactly: Bronx 7.74/7.53/7.65, Brooklyn 7.42/7.25/7.37, Manhattan 6.11/6.07/6.29, Queens 9.28/8.98/8.75, Staten Island 13.74/13.71/12.6, Citywide 8.22/8.06/8.17 for 2015/2019/2024. The report adds that speeds fell 0.6% over ten years and 'fall far short of the City's goal to improve bus speeds citywide by 25%'. ONE CORRECTION: Table 8 gives the M42 at 5.27 mph (2025), not 5.25. This pull factor HOLDS firmly.",
+      "correction": "M42 slowest route at 5.27 mph (2025). Add report date (April 2025) and the missed 25% bus-speed improvement goal.",
+      "sourceUrl": "https://comptroller.nyc.gov/wp-content/uploads/documents/Behind-Schedule-Bus-Report.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "fabrication",
+      "claim": "Congestion pricing launched January 5, 2025 at a $9 peak toll ($2.25 overnight), rising to $12 in 2028 and $15 in 2031; first-year effects ~27 million fewer entries, 11% decline, travel-time gains, $518M net revenue",
+      "verdict": "CONFIRMED",
+      "whatIFound": "Toll schedule verified against the MTA/TBTA primary tariff document (mta.info/document/138931): Class 1 passenger vehicles, E-ZPass, peak (5am-9pm weekdays, 9am-9pm weekends) $9.00 / $12.00 / $15.00 across PHASE 1 (2025-2027), PHASE 2 (2028-2030), PHASE 3 (starting 2031); overnight $2.25 / $3.00 / $3.75. Exactly as the dossier states, and $9 is confirmed as the current 2026 rate since Phase 1 runs through 2027. First-year outcomes verified against the Governor's anniversary release: launch 5 January 2025 12:00 AM; 27 million fewer vehicle entries (73,000 fewer daily); 11% traffic decline; VMT down 7.1%; Holland Tunnel 51% faster, Queensboro 29.3%, Lincoln 24.7%, Brooklyn Bridge 15% (also Manhattan Bridge 6.7%); in-zone weekday speeds +4%, weekend +6.2%, bus +2.3%, truck +5.6%; subway trips into zone +9%, express bus +7.8%, local bus +8.4%; $518M net revenue through November 2025, projected over $550M. All confirmed. Only the litigation status is stale (separate finding). Unmentioned but real: a Low-Income Discount Plan halves the peak toll from the 11th trip in a calendar month.",
+      "correction": "Add the toll-schedule primary source and the Low-Income Discount Plan; update litigation status per the separate finding.",
+      "sourceUrl": "https://www.mta.info/document/138931"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "'Mean travel time to work, worker-weighted citywide estimate ~40.4 minutes (author's aggregate)'; Manhattan 31.5 min (+-0.4)",
+      "verdict": "CORRECTED",
+      "whatIFound": "A published citywide figure exists, so the derived one is unnecessary under R3: S0801_C01_046E for New York city, New York = 40.6 minutes (+-0.3). Manhattan's published S0801 value is 31.4 (+-0.6), not the 31.5 (+-0.4) the dossier took from Census Reporter. The other four boroughs match S0801 exactly (Bronx 43.3 +-0.9, Brooklyn 41.7 +-0.5, Queens 43.8 +-0.6, Staten Island 45.4 +-1.6).",
+      "correction": "Citywide mean travel time 40.6 min (+-0.3), published, not derived. Manhattan 31.4 min (+-0.6).",
+      "sourceUrl": "https://data.census.gov/api/access/data/table?g=1600000US3651000&y=2024&tid=ACSST1Y2024.S0801"
+    },
+    {
+      "severity": "minor",
+      "category": "fabrication",
+      "claim": "neighborhoodNote: eastern Queens (Bay Terrace, Fresh Meadows, Glen Oaks, Oakland Gardens -- roughly CD 11) is a documented transit desert; 'fewer than 4 in 10 Queens residents overall can walk to a subway station'; sourced to a Streetsblog op-ed and Metro Airport News",
+      "verdict": "UNVERIFIABLE",
+      "whatIFound": "The transit-desert substance is CONFIRMED: the Streetsblog NYC op-ed exists ('Op-Ed: The Queens Bus-Network Redesign May Hurt Transit Deserts', nyc.streetsblog.org, 27 January 2020) and names exactly Bay Terrace, Fresh Meadows, Glen Oaks and Oakland Gardens as neighborhoods far from subway lines for which the express bus is a lifeline, with the redesign cutting them from all-day seven-day service to weekday rush hours only. TWO PROBLEMS. (1) The '~roughly CD 11' attribution is wrong — these four neighborhoods span several different Queens community districts, not one. (2) The statistic 'fewer than 4 in 10 Queens residents overall can walk to a subway station' could not be sourced. The nearest sourceable figure is a CITYWIDE one — more than a third of all New Yorkers do not live within walking distance of a subway or train station — which is a different claim about a different geography and would imply roughly the opposite share. I could not confirm the Queens-specific 40% figure and could not source a correction, so it must be removed rather than adjusted. The source is also a 2020 op-ed, not a data publication, and the dossier presents it as current.",
+      "correction": "Keep the named transit-desert neighborhoods (sourced), drop the 'roughly CD 11' attribution, drop the unsourceable 'fewer than 4 in 10 Queens residents' statistic, and date the Streetsblog op-ed to January 2020.",
+      "sourceUrl": "https://nyc.streetsblog.org/2020/01/27/op-ed-how-the-queens-bus-network-redesign-hurts-transit-deserts"
+    },
+    {
+      "severity": "minor",
+      "category": "fabrication",
+      "claim": "'NYC buses are the slowest of any major US city' (attributed to the NYC Comptroller bus report); repeated in local `context` as 'buses are the slowest of any major US city'",
+      "verdict": "UNVERIFIABLE",
+      "whatIFound": "I searched the full extracted text of the cited Comptroller report for any nationwide-ranking language ('slowest in the nation/country/US', 'major US city', 'largest cities') and found none. The report benchmarks NYC bus speeds against NYC's own history and its own 25% improvement goal, and separately says Fair Fares 'remains less generous ... compared to similar programs offered in other US cities' — but it makes no claim that NYC buses are the slowest nationally. The claim is widely repeated in journalism but is not supported by the source the dossier attributes it to, and I could not source it to a primary comparative dataset.",
+      "correction": "Replace with what the source actually supports: bus speeds have not meaningfully improved in a decade (8.22 mph in 2015 to 8.17 in 2024, -0.6%) and fall far short of the City's own goal of a 25% citywide improvement. Drop the national-ranking claim, or mark it explicitly as unverified press characterization.",
+      "sourceUrl": "https://comptroller.nyc.gov/wp-content/uploads/documents/Behind-Schedule-Bus-Report.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "fabrication",
+      "claim": "Second Avenue Subway Phase 2: 1.76 miles, ~$7.7 billion, ~$4.3 billion per mile, 'more than 11 times the global average of ~$350 million per mile across 900+ rapid-rail projects in nearly 60 countries studied by the NYU Marron Institute's Transit Costs Project'",
+      "verdict": "CORRECTED",
+      "whatIFound": "The agent's fetch to transitcosts.com/case/second-avenue-subway/ genuinely 404s (I reproduced it), so the dossier was right to flag it — but a PRIMARY Transit Costs Project source does resolve: transitcosts.com/wp-content/uploads/NewYork_Case_Study.pdf, 'The New York Case' by Eric Goldwyn, Alon Levy and Elif Ensari (74 pp). Fetched and read. IMPORTANT ATTRIBUTION PROBLEM: that primary TCP report costs Phase 1 at $4.6B for its 1.5-mile extension and puts Phase 2 at $6.3 billion serving 123,000 daily riders — NOT $7.7B. The $7.7B / $4.3B-per-mile figure is a later (2025) MTA cost estimate reported in secondary press, and the '11x' comparison is Vital City's own arithmetic applying TCP's ~$350M/mile database average to that MTA estimate. So TCP supplies the international benchmark, not the NYC numerator, and the dossier's phrasing implies TCP produced both. The Vital City URL the dossier cites does resolve (HTTP 200) and does support $7.7B / ~$4.3B per mile / 11x / ~$350M average / 900+ projects / nearly 60 countries. The CBC NY transportation-emissions page still returns HTTP 403 (I reproduced it), so the aviation-inventory-boundary claim correctly remains an unverified dataGap.",
+      "correction": "Attribute precisely: ~$350M/mile international average across 900+ projects in nearly 60 countries = NYU Marron Transit Costs Project; $7.7B / ~$4.3B per mile for Phase 2 = 2025 MTA cost estimate via secondary reporting (Vital City), with TCP's own case study putting Phase 2 at $6.3B — flag the discrepancy. Add the working TCP primary URL.",
+      "sourceUrl": "https://transitcosts.com/wp-content/uploads/NewYork_Case_Study.pdf"
+    }
+  ],
+  "levelReview": {
+    "originalLevel": -45,
+    "recommendedLevel": -65,
+    "reasoning": "The -45 was an explicit orchestrator judgement resting on four pull factors, and independent verification changes the arithmetic. Anchor (R1): 20.6% drove alone against the shared <50% threshold — published, place-level, confirmed — is 41% of the target and argues for about -85. Of the four pull factors: (1) subway accessibility HOLDS and is severe — 160 of 472 stations accessible (33.9%) per MTA's own July 2026 statement, i.e. ~66% stair-inaccessible, with a court-approved deadline of 2055; (2) bus speeds HOLD firmly — 8.17 mph citywide in 2024 versus 8.22 in 2015, a 0.6% DECLINE over a decade against the City's own 25%-improvement goal, and 6.29 mph in Manhattan; (3) Fair Fares HOLDS but is milder than stated and improving — 41% of ~940,000 eligible enrolled (IBO, June 2026), not 37% of 1.4M, and the threshold has moved 120% to 145% to 150% FPL with a further expansion to 200% FPL agreed in June 2026; (4) traffic fatalities is REFUTED — 2025 recorded 205 deaths, the fewest since record-keeping began in 1910, down 19% year-on-year and 31% since Vision Zero began in 2014, with Q1 2026 the third-lowest on record. So one of the four pillars of the override is not merely unsupported but inverted into a strength, a second is weaker and closing, and a further downward factor is now verified: congestion pricing is operating, legally secure after Judge Liman's final 3 March 2026 ruling in MTA v. Duffy, and delivering measured results (11% fewer entries, 27M fewer vehicle entries, faster crossings, $518M net revenue). Pulling the other way and genuinely: mean travel time 40.6 minutes citywide, among the longest of large US cities, and Staten Island at 50.8% is the one borough above the threshold. Net: two verified structural failures (accessibility, stagnant bus speeds) plus long commutes justify moving roughly 20 points up from the headline-only -85, but not the 40 points the override applied, because the safety pillar that justified part of that move is false. -65: strongly and honestly inside the safe space, consistent with R5, with the two real failures visible in the number. I did not nudge toward zero — per R5 a strongly negative level is the correct result here, and the drive-alone, transit (48.7%) and walk (9.6%) shares are all confirmed published figures."
+  },
+  "sourcesIndependentlyFetched": [
+    {"url": "https://api.census.gov/data.json", "fetchedOk": true, "confirms": "ACS 2024 1-Year exists and is the latest ACS vintage; no 2025 ACS release of any kind"},
+    {"url": "https://data.census.gov/api/access/data/table?g=1600000US3651000&y=2024&tid=ACSDT1Y2024.B08301", "fetchedOk": true, "confirms": "Published place-level B08301 for 'New York city, New York': 4,070,607 workers 16+, 840,263 drove alone (20.64%), 179,649 carpooled, 1,981,663 transit, 389,200 walked, 509,852 WFH"},
+    {"url": "https://data.census.gov/api/access/data/table?g=1600000US3651000&y=2024&tid=ACSST1Y2024.S0801", "fetchedOk": true, "confirms": "Published place-level S0801: 20.6 drove alone, 4.4 carpool, 48.7 transit, 9.6 walk, 12.5 WFH, mean travel time 40.6 min (+-0.3)"},
+    {"url": "https://data.census.gov/api/access/data/table?g=0500000US36005&y=2024&tid=ACSDT1Y2024.B08301", "fetchedOk": true, "confirms": "Bronx County 129,307 of 560,522 = 23.07% drove alone"},
+    {"url": "https://data.census.gov/api/access/data/table?g=0500000US36047&y=2024&tid=ACSDT1Y2024.B08301", "fetchedOk": true, "confirms": "Kings County 211,612 of 1,247,694 = 16.96% drove alone"},
+    {"url": "https://data.census.gov/api/access/data/table?g=0500000US36061&y=2024&tid=ACSDT1Y2024.B08301", "fetchedOk": true, "confirms": "New York County 47,452 of 914,910 = 5.19% drove alone; S0801 mean travel time 31.4 min"},
+    {"url": "https://data.census.gov/api/access/data/table?g=0500000US36081&y=2024&tid=ACSDT1Y2024.B08301", "fetchedOk": true, "confirms": "Queens County 334,422 of 1,116,296 = 29.96% drove alone"},
+    {"url": "https://data.census.gov/api/access/data/table?g=0500000US36085&y=2024&tid=ACSDT1Y2024.B08301", "fetchedOk": true, "confirms": "Richmond County 117,470 of 231,185 = 50.81% drove alone"},
+    {"url": "https://www.mta.info/accessibility/ada-settlement-notice", "fetchedOk": true, "confirms": "95% of the 364 then-inaccessible stations by 2055; milestones 81 + 85 by 2035 + 90 by 2045 + 90 by 2055; 14.69% NYCT capital set-aside above $35.389B; CIDNY v. MTA (153765/2017) and De La Rosa v. MTA (19-cv-04406)"},
+    {"url": "https://www.mta.info/article/accessibility-disability-pride-month-2026", "fetchedOk": true, "confirms": "MTA primary: 160 accessible subway stations as of 22 July 2026, vs 15 in 1990"},
+    {"url": "https://www.governor.ny.gov/news/governor-hochul-announces-mta-has-completed-10-station-accessibility-projects-2025", "fetchedOk": true, "confirms": "154 stations accessible as of 31 December 2025; 95%-by-2055 target"},
+    {"url": "https://www.nyc.gov/html/dot/html/pr2026/traffic-deaths-reach-all-time-low.shtml", "fetchedOk": true, "confirms": "205 deaths in 2025, fewest since record-keeping began 1910, -19% vs 253 in 2024, -31% since 2014; pedestrian 111 vs 122; prior record 206 in 2018; child deaths 6 vs 16"},
+    {"url": "https://www.nyc.gov/html/dot/html/pr2026/traffic-deaths-are-near-lowest-levels.shtml", "fetchedOk": true, "confirms": "42 deaths in Q1 2026, -7% year-on-year, third fewest at that point since 1910 — refutes 'post-Vision-Zero highs'"},
+    {"url": "https://comptroller.nyc.gov/wp-content/uploads/documents/Behind-Schedule-Bus-Report.pdf", "fetchedOk": true, "confirms": "'Behind Schedule', NYC Comptroller, April 2025: 8.17 mph citywide 2024 (8.22 in 2015, -0.6%); borough Table 3 exact; M42 5.27 mph; 30% off-schedule; Fair Fares ~360,000 = 38% of eligible at end-2024; 145% FPL threshold; no national-slowest claim"},
+    {"url": "https://www.ibo.nyc.gov/assets/ibo/downloads/pdf/infrastructure/2026/2026-june-expanding-fair-fares.pdf", "fetchedOk": true, "confirms": "NYC IBO June 2026: threshold 150% FPL; 938,834 eligible; ~385,000 enrolled = 41%; 200% FPL expansion adds 342,604 eligible to 1,281,438"},
+    {"url": "https://ny1.com/nyc/all-boroughs/traffic_and_transit/2026/06/30/city-50--off-transit-program-expands-eligibility", "fetchedOk": true, "confirms": "June 2026 agreement to raise Fair Fares to 200% FPL effective fall 2026; +340,000 eligible; 960,000 currently eligible with ~40% enrolled"},
+    {"url": "https://www.mta.info/document/138931", "fetchedOk": true, "confirms": "TBTA CBD toll tariff: Class 1 E-ZPass peak $9.00 (Phase 1, 2025-2027), $12.00 (Phase 2, 2028-2030), $15.00 (Phase 3, from 2031); overnight $2.25/$3.00/$3.75; Low-Income Discount Plan halves peak toll from 11th monthly trip"},
+    {"url": "https://www.governor.ny.gov/news/less-traffic-better-transit-its-first-anniversary-governor-hochul-celebrates-transformational", "fetchedOk": true, "confirms": "27M fewer entries, 73,000/day, 11% decline, VMT -7.1%, Holland +51%/Queensboro +29.3%/Lincoln +24.7%/Brooklyn Bridge +15%, in-zone +4% weekday, bus +2.3%, subway +9%, $518M net through Nov 2025"},
+    {"url": "https://rpa.org/news/lab/status-of-new-york-congestion-pricing-litigation", "fetchedOk": true, "confirms": "MTA v. Duffy, S.D.N.Y., filed 19 Feb 2025, Judge Lewis Liman, preliminary injunction to MTA; four other federal cases closed for defendants 17 April 2025; no court ordered a halt"},
+    {"url": "https://abc7ny.com/post/manhattans-congestion-pricing-can-continue-judge-rules-ending-lengthy-legal-battle/18672390/", "fetchedOk": true, "confirms": "3 March 2026 final 149-page ruling by Judge Liman: administration lacks authority to terminate; revocation 'arbitrary and capricious'; program continues"},
+    {"url": "https://transitcosts.com/wp-content/uploads/NewYork_Case_Study.pdf", "fetchedOk": true, "confirms": "Transit Costs Project 'The New York Case' (Goldwyn, Levy, Ensari): Phase 1 $4.6B / 1.5 miles; Phase 2 at $6.3B serving 123,000 daily riders — NOT $7.7B"},
+    {"url": "https://transitcosts.com/case/second-avenue-subway/", "fetchedOk": false, "confirms": "404 reproduced — the agent's reported failure is accurate"},
+    {"url": "https://cbcny.org/research/4-facts-about-new-yorks-transportation-emissions", "fetchedOk": false, "confirms": "403 reproduced — aviation-inventory-boundary claim correctly remains an unverified dataGap"},
+    {"url": "https://www.vitalcitynyc.org/articles/why-it-costs-4-billion-per-mile-of-subway-track", "fetchedOk": true, "confirms": "URL resolves (200) and supports $7.7B / ~$4.3B per mile / 11x / ~$350M average across 900+ projects in nearly 60 countries"},
+    {"url": "https://nyc.streetsblog.org/2020/01/27/op-ed-how-the-queens-bus-network-redesign-hurts-transit-deserts", "fetchedOk": true, "confirms": "Names Bay Terrace, Fresh Meadows, Glen Oaks, Oakland Gardens as far-from-subway express-bus-dependent neighborhoods; dated January 2020; contains no '4 in 10 Queens residents' statistic"}
+  ],
+  "questionsForOrchestrator": [
+    "The -45 override was justified on four named pull factors and one of them — traffic fatalities at post-Vision-Zero highs — is refuted by primary NYC DOT sources (205 deaths in 2025, the fewest since 1910; Q1 2026 third-lowest on record). I have moved the level to -65 accordingly. If the orchestrator wants to retain -45, it needs a fourth pull factor to replace the refuted one, because the levelRationale must be auditable under R1 and currently would name a fact that is false.",
+    "Global-social is now level null per R2 because nothing in the block is quantified for NYC's external footprint. The one quantifiable transmission channel R2 suggested — rolling stock and EV-battery sourcing — was not researched at all in this pass, and the aviation-emissions boundary question is blocked by a persistent HTTP 403 at CBC NY. Does the orchestrator want a targeted re-research pass on MTA rolling-stock procurement origin (Kawasaki/Alstom contracts) and Port Authority aviation emissions to give this lens a real number, or should mobility ship with a null global level?",
+    "The dossier's claim that 'NYC buses are the slowest of any major US city' is not in the Comptroller report it cites and I could not source it to any primary comparative dataset. I have removed it. If the orchestrator has a source (e.g. an NTD-based comparison), it can go back in; otherwise the dimension loses a rhetorically useful but unsupported line."
+  ]
+}
