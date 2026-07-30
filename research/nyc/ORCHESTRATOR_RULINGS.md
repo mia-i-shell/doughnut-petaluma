@@ -284,3 +284,42 @@ wherever they appear, and do not re-derive them:
   reviewed dimensions had a confident-looking global level resting on no quantity, and all
   four were moved to `null` under R2. Assume a global level is wrong until a quantified
   transmission channel is produced.
+
+## R15. Where no downscaled local benchmark exists, the planetary comparison lives on the GLOBAL lens
+
+R12 says ecological levels score against the planetary boundary rather than the city's own
+statute. For climate that is mechanical, because a downscaled per-capita carbon budget
+exists (~1.6–2.0 tCO2e/person). For most other boundaries it does not: there is no accepted
+city-scale downscaled nitrogen-loading benchmark.
+
+The convention, confirmed:
+- **Local lens** — score against the best available regulatory or ecological-condition
+  target (TMDL, consent order, dissolved-oxygen standard, ecological integrity), and say in
+  `levelRationale` that this is a proxy for an absent planetary benchmark.
+- **Global lens** — carry the planetary-boundary comparison, quantified per capita against
+  the boundary's fair share. This is where the overshoot claim belongs anyway under R2,
+  since it is a claim about the city's share of a global limit.
+
+**Worked example (nitrogen & phosphorus).** The reviewer quantified NYC at **30–41 kg
+N/capita/yr against a fair share of ~7.7 kg** (derived from the 62 Tg planetary boundary),
+plus ~4.4 kg P/capita — moving the global lens from an unsupported 65/low-confidence to
+**105/medium**, now genuinely quantified. The local lens sits at **55**, anchored off
+consent-order compliance per R12 but scored against receiving-water condition.
+
+This produces a result worth stating plainly, because it is the clearest vindication of R12
+in the portrait: **NYC is meeting its regulatory obligations and still overshooting the
+planetary boundary.** The Long Island Sound TMDL is met at 68% against a 60% requirement;
+the Jamaica Bay nitrogen target is met at ~57% against a >50% requirement; DEP certified its
+December 2025 green-infrastructure milestone on time. A portrait scored on compliance would
+show this dimension as a success. Scored on the boundary, it is a 4–5x overshoot. Both facts
+are true and the portrait must carry both.
+
+## R16. A reviewer may fill a data gap, and should label it as derived
+
+The nitrogen reviewer pulled CY2025 DMRs (parameter 00600) for all 14 WRRFs from EPA ECHO
+and constructed a citywide total the research layer had recorded as an unfillable gap:
+**~132,200 lb/day, ~21,900 t N/yr, ~2.6 kg N/person/yr.** Carry figures like this in the
+dossier rather than leaving them in `dataGaps` — but label them as reviewer-derived, name
+the method and the source system, and cap confidence at medium. A derived figure that is
+transparently derived is far more useful than an absent one; a derived figure presented as
+published is a defect (R3).
