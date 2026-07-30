@@ -383,3 +383,61 @@ Two live cases from waste & materials, resolved the same way:
 Generally: when two official sources disagree and neither is clearly superseded, the portrait
 carries both with attribution. Averaging them, or picking the convenient one, manufactures a
 false precision.
+
+## R21. Correct geography beats recency — always
+
+The energy agent found the cleanest possible test case. The widely-repeated figure "25% of
+NYC households (1,859,460) have a high energy burden" is a **New York-Newark-Jersey City
+METRO** figure. It is mislabelled as city-level in **ACEEE's own NYC flyer and in the NYC
+Comptroller's 2024 "Record Highs" report** — two independent, reputable downstream
+publications propagating the same geography conflation.
+
+The alternative is MOCEJ's analysis on 2017 ACS data: genuinely city-scale, and nine years
+stale with no newer official update located.
+
+**Ruling: headline the city-scale figure and label the staleness prominently.** A stale figure
+about the right place beats a current figure about the wrong place. The metro figure may appear
+as a subIndicator, explicitly labelled as metro — never as the headline, and never without the
+scale stated.
+
+This is worth internalising beyond this dimension: **a figure appearing in a reputable
+publication is not evidence that its geography is right.** Check the underlying source's
+geography even when a city agency is the one citing it.
+
+## R22. A borough table on a related-but-different indicator is allowed — labelled, and never derived
+
+Energy's headline (share of families with energy burden >6%) has no published borough *rate* —
+only borough shares of the citywide total, which is a different quantity. The agent nulled all
+five per R10 and then featured a genuinely published 5-of-5 borough table from Columbia/Robin
+Hood's Poverty Tracker on utility delinquency and shutoffs, clearly labelled as a different
+basis.
+
+**That is the right resolution.** Confirmed:
+- `boroughs` stays null on the headline indicator, with the note naming what is missing.
+- A related indicator with real borough coverage goes in `subIndicators`, labelled with what it
+  actually measures and why it is not comparable to the headline.
+- **Do not compute a derived borough burden rate.** Splitting a citywide rate by borough shares
+  of a total is exactly the pro-rating that R6 calls a critical defect.
+
+## R23. Non-commensurable global channels justify a null score
+
+Peace & justice quantified two real global transmission channels — 237,000+ asylum arrivals
+since 2022, and NYC pension holdings in weapons and surveillance firms (Palantir ~$56.6M,
+Elbit Systems) — and scored the global lens `null` because there is no benchmark that nets a
+humanitarian intake against an investment exposure into one number.
+
+**Correct.** Quantification is necessary but not sufficient for a score: the quantities must be
+commensurable with a target. Two well-sourced numbers pointing in opposite directions with no
+common denominator is a `null` with strong framing, not an averaged guess. Report both channels
+fully in `context`.
+
+## R24. One headline indicator; tensions live in levelRationale
+
+Peace & justice asked whether to carry a dual headline (record-low homicide rate *and* the
+Rikers crisis). No — the viz renders one wedge and one headline per dimension. Keep the single
+headline indicator (homicide rate, ~3.6/100,000, 305 murders in 2025, a record-era low) and
+make the Rikers material explicit pull factors in `levelRationale` under R1, which is what the
+agent did to reach 45 rather than a deeply negative score.
+
+For `petalumaContrast`, anchor on the **homicide rate per 100,000** — it is the metric that is
+genuinely comparable between a megacity and a small city.

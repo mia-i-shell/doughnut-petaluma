@@ -5,14 +5,14 @@
 // Six jurisdictions: citywide plus each of the five boroughs.
 // Merges into the JURISDICTIONS object that data.js defines, so Petaluma is untouched.
 //
-// Coverage at generation time: 11/24 dimensions researched, 8/24 adversarially reviewed.
+// Coverage at generation time: 12/24 dimensions researched, 8/24 adversarially reviewed.
 // Dimensions with no dossier yet render as explicit "Not yet researched" gaps (level NaN).
 
 const NYC_JURISDICTIONS = {
     "city_nyc": {
         "name": "New York City",
         "population": "~8,258,000",
-        "description": "The largest city in the United States: 8.3 million people across five boroughs and 59 community districts, and the command centre of global finance. Portrait built on DEAL's full four-lens City Portrait method — local-social and local-ecological scored as the two rings, global-social and global-ecological carried per dimension — and anchored to Local Law 97, PlaNYC and City of Yes. Every dimension is disaggregated to all five boroughs. Companion to the Petaluma portrait: same framework, opposite scale. — FIRST DRAFT: 11 of 24 dimensions researched, 8 adversarially reviewed. Un-researched dimensions are shown as explicit grey gaps.",
+        "description": "The largest city in the United States: 8.3 million people across five boroughs and 59 community districts, and the command centre of global finance. Portrait built on DEAL's full four-lens City Portrait method — local-social and local-ecological scored as the two rings, global-social and global-ecological carried per dimension — and anchored to Local Law 97, PlaNYC and City of Yes. Every dimension is disaggregated to all five boroughs. Companion to the Petaluma portrait: same framework, opposite scale. — FIRST DRAFT: 12 of 24 dimensions researched, 8 adversarially reviewed. Un-researched dimensions are shown as explicit grey gaps.",
         "social": [
             {
                 "name": "food",
@@ -493,25 +493,80 @@ const NYC_JURISDICTIONS = {
             },
             {
                 "name": "peace & justice",
-                "level": "NaN",
-                "indicator": "Not yet researched",
-                "value": "No data",
-                "year": null,
-                "target": "TBD",
-                "context": "No research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
-                "source": "Pending",
-                "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+                "level": 45,
+                "indicator": "Homicide (murder) rate per 100,000 residents, dimension-adjusted per R1 for the Rikers/NYPD-accountability sub-indicators above",
+                "value": "305 homicides citywide in 2025 (NYPD year-end figure), -20.2% vs 382 in 2024; rate ~3.6 per 100,000 (derived: 305 / 8,478,072 [Census Vintage 2024 NYC population estimate] x 100,000; NYPD figure, Census denominator, so labeled derived, confidence medium for the rate specifically, high for the raw count). Shooting incidents: 688 in 2025 (-24% vs 904 in 2024), also a recorded-history low. Note press variance in early tallies (302-303-309 reported before final NYPD compilation) — 305 is the figure in the joint NYPD/Governor's Office year-end release and is treated as authoritative per R11.",
+                "year": 2025,
+                "target": "No single NYC statutory target for homicide rate exists; treated against a 'continued reduction toward historic lows, below the national average' standard implicit in NYPD's own CompStat framing and against the Nunez consent judgment's constitutional-minimum standard for the jail system.",
+                "context": "NYC recorded its lowest murder total in the modern CompStat era in 2025, a genuine and heavily-verified result (multiple independent city, state, and press sources converge on ~305, -20%). This is the headline strength of the dimension. But 'peace & justice' in the Doughnut framework is not only about violence between residents — it is also about the justice system's treatment of the people it holds, and there NYC's headline number tells a starkly different story: a federal judge found the city in contempt of a 13-year-old consent judgment, then took the unprecedented step of ordering a court-appointed Remediation Manager (functionally a receiver) with hiring/firing and policy-making authority over DOC, because in-custody deaths and use-of-force incidents kept rising despite four mayoral administrations' worth of monitoring. NYC is simultaneously one of the safest large US cities on the street and running a jail system a federal court has found unconstitutional — a genuine structural tension, not a data error, and the two facts must be reported side by side rather than blended into a false middle. The policy lever for the carceral crisis is the Nunez remediation process and the borough-based jails construction timeline; the lever for street violence is continued precision-policing and Crisis Management System investment, which itself faces funding pressure (see subIndicators).",
+                "source": "NYPD (year-end 2025 CompStat release, via NYS Governor's Office joint announcement); Vera Institute (in-custody deaths); S.D.N.Y. Nunez docket",
+                "sourceUrl": "https://www.governor.ny.gov/news/safer-streets-governor-hochul-mayor-mamdani-police-commissioner-tisch-announce-crime-new-york",
                 "screenshot": null,
-                "confidence": "low",
+                "confidence": "high",
                 "geographicScale": "city",
-                "globalLens": null,
-                "comparisonNote": null,
-                "boroughs": null,
+                "globalLens": {
+                    "level": "NaN",
+                    "indicator": "NYC as conflict-displacement destination (asylum arrivals) and as capital allocator to weapons/surveillance-linked holdings (pension fund equities) — two distinct transmission channels, not scored against each other",
+                    "value": "237,000+ cumulative asylum seekers received into NYC's care since spring 2022 (as of July 2025 data; weekly arrivals fell from a peak of ~4,000 to under 100 by mid-2025, and the city closed its dedicated Asylum Arrival Center in 2025); NYC pension funds' Palantir Technologies holdings ~$56.6M (2024), up from ~$17.6M (2022); ~$1.5M+ in Elbit Systems and ~$300M across Israeli-company equities (Dec 2025 disclosures, reviewed via public pension records)",
+                    "context": "NYC hosts the United Nations headquarters and its annual General Assembly high-level week — the institutional home of the post-1945 international peace and security architecture — which is a qualitative fact about the city's global role in this dimension, not a quantified one. More concretely: NYC has absorbed one of the largest municipal shares of the 2022-2025 US asylum-seeker influx of any US city, a genuine (if now-declining) contribution to global displacement response that this framework can quantify. At the same time, as one of the world's largest financial centers, NYC-headquartered and NYC-pension-fund capital is allocated into companies tied to surveillance, immigration enforcement, and arms manufacturing — a transmission channel in the other direction that the same city's residents (via their pension funds) are exposed to and, through worker-led divestment campaigns since 2024, are actively contesting. The 9/11 attacks also durably reshaped NYC's own security posture (NYPD counterterrorism apparatus, hardened public infrastructure) in ways not quantified here. Whoever eventually scores this systematically would need the NYC Comptroller's SRI/stewardship team (portfolio composition) and MOIA/the Mayor's Office of Immigrant Affairs (displacement-hosting data) working from a common framework — neither currently exists.",
+                    "source": "NYC Comptroller pension disclosures (via amNewYork/Break the Chain reporting); NYC Mayor's Office (asylum arrivals); UNHCR Mid-Year and Global Trends reports",
+                    "sourceUrl": "https://www.amny.com/news/nyc-pension-funds-palantir-lander/"
+                },
+                "comparisonNote": "Petaluma's peace & justice indicator is violent crime rate: 510.7 per 100,000 (2023, FBI/Petaluma PD), essentially tied with the California state average, scored at level 30. NYC's FBI-defined violent crime rate is actually higher — 671 per 100,000 (2024) — even though NYC's homicide rate (~3.6/100,000) is far lower than a naive city-size comparison would predict and is near modern-era lows. The two portraits also diverge structurally, not just numerically: Petaluma has no jail system of its own comparable to Rikers and no analog to a federal consent-judgment/receivership crisis — NYC's carceral-system failure is a scale-specific phenomenon a small city like Petaluma simply does not have the apparatus to produce, which is why this dossier scores NYC's dimension level (45) well above what its street-crime data alone would suggest.",
+                "boroughs": {
+                    "bronx": {
+                        "value": null,
+                        "level": null,
+                        "note": "Murders fell 18% in the Bronx in 2025 (NYPD/Governor's Office release, same source as citywide figure) — verified and same indicator as the headline, but no full-year absolute count could be sourced to a fetchable primary document within this research pass (the NYPD borough PDF cs-en-us-pbbx.pdf 404'd). The closest dated data point: Bronx murders YTD through Oct 26, 2025 stood at 89, down 14.4% from 104 over the same period in 2024 (Bronx Times, citing NYPD CompStat). Per R6/R10, this is left null rather than estimated from the percentage. NYPD CompStat 2.0 (compstat.nypdonline.org) would have the exact full-year count."
+                    },
+                    "brooklyn": {
+                        "value": "91 murders in 2025, down from 120 in 2024 (-24%); derived rate ~3.48 per 100,000 (91 / 2,617,631 Kings County 2024 ACS population)",
+                        "level": -55,
+                        "year": 2025,
+                        "source": "Brooklyn District Attorney's Office year-end release, via Brooklyn Eagle/amNewYork; population from U.S. Census ACS 2024 1-Year",
+                        "sourceUrl": "https://brooklynda.org/2025/12/31/brooklyn-finishes-2025-with-fewest-murders-shootings-shooting-victims-and-shooting-homicides-in-recorded-history/",
+                        "confidence": "high"
+                    },
+                    "manhattan": {
+                        "value": null,
+                        "level": null,
+                        "note": "Murders fell 33% in Manhattan in 2025 (NYPD/Governor's Office release) — verified, same indicator, but no full-year absolute count was found at a fetchable primary source; the NYPD borough PDF (cs-en-us-pbmn.pdf) fetched but returned as an unreadable scanned/encoded document. Left null per R6/R10 rather than back-calculated from the percentage."
+                    },
+                    "queens": {
+                        "value": "58 murders in 2025, up from 55 in 2024 (+7%) — the only borough where murders rose; derived rate ~2.50 per 100,000 (58 / 2,316,841 Queens County 2024 ACS population)",
+                        "level": 10,
+                        "year": 2025,
+                        "source": "Queens Chronicle, citing NYPD data; population from U.S. Census ACS 2024 1-Year",
+                        "sourceUrl": "https://www.qchron.com/editions/queenswide/crime-down-murder-up-in-queens-in-25/article_4701cc28-827d-50df-8ea5-1123e4ce2878.html",
+                        "confidence": "high"
+                    },
+                    "statenIsland": {
+                        "value": "3 murders in 2025, a recorded-history low, down more than 60% year-over-year; derived rate ~0.60 per 100,000 (3 / 498,212 Richmond County 2024 ACS population)",
+                        "level": -85,
+                        "year": 2025,
+                        "source": "NYPD/Governor's Office year-end release; 2024 baseline for Staten Island not independently confirmed to an exact count within this research pass",
+                        "sourceUrl": "https://www.governor.ny.gov/news/safer-streets-governor-hochul-mayor-mamdani-police-commissioner-tisch-announce-crime-new-york",
+                        "confidence": "medium"
+                    }
+                },
                 "globalBoroughs": null,
-                "levelRationale": null,
+                "levelRationale": "Anchored on the headline homicide rate, this dimension would score deep in safe territory alone (roughly -80): 305 murders in 2025, down 20.2% from 382 in 2024, a rate of ~3.6/100,000 — among the lowest in NYC's modern recorded history and well below the national average. But R1 requires adjusting for well-sourced shortfalls captured in the same dimension, and here they are severe, not marginal. PULLING THE LEVEL UP: (1) a federal court held the city in CONTEMPT in Nov 2024 for ongoing constitutional violations at Rikers (use-of-force, staff accountability, supervision failures); (2) the court then ordered a Remediation Manager with powers equivalent to a receiver (May 2025 order; powers detailed Dec 19, 2025; Nicholas Deml named Jan 2026) — the city has lost operational control of a core agency, an outcome with no precedent in the Nunez litigation's history; (3) in-custody deaths rebounded to 15 in 2025 from a low of 5 in 2024 (Vera Institute tracking), still below 2022's 19 but a reversal; (4) the average daily jail population (~6,747, Jan-May 2026) runs roughly 1.6-2x the 3,300-4,160 capacity the closure plan requires, and the city's own Mamdani administration has now formally acknowledged the Aug 31, 2027 legal deadline to close Rikers will be missed, with replacement jails not complete until 2029-2032; (5) 12+ years after the Floyd remedial order, NYPD accountability remains structurally weak: CCRB complaints hit a decade-high in 2024 (5,663), NYPD implements fewer than half of CCRB's substantiated non-disciplinary recommendations, and the city paid $117M-$206M/year in misconduct settlements (2024-2025); (6) stop-and-frisk racial disparities persist even as volume fell — Black drivers were 32% of NYPD's 2M+ 2024 traffic stops against ~20-23% of the city's population, and searched at roughly 9x the rate of white drivers. Net: street-level violence is a genuine, well-evidenced NYC strength; the carceral and police-accountability side of this dimension is a genuine, court-documented crisis. The two do not average to a mild score — they coexist, and the level (45, 'needs attention' tilting toward critical) is deliberately anchored closer to the carceral-system failure because it represents an active, unresolved federal constitutional violation, which this framework treats as more structurally severe than a favorable-but-improving crime trend.",
                 "reviewState": "draft",
-                "dataGaps": [],
-                "actions": []
+                "dataGaps": [
+                    "Exact full-year 2025 murder counts for the Bronx and Manhattan (only percent changes were sourced within this research pass) — NYPD CompStat 2.0 (compstat.nypdonline.org) or the borough PDFs (cs-en-us-pbbx.pdf, cs-en-us-pbmn.pdf) would have them.",
+                    "Total CCRB agency budget (only the FY2026 $1.2M staffing increment was confirmed; total agency appropriation not verified).",
+                    "Live current-year hate crime totals directly from NYC's Open Data / Power BI Hate Crimes Dashboard (secondary press citations of NYPD data were used instead).",
+                    "A borough-level or precinct-level breakdown of Rikers/DOC in-custody deaths and CCRB complaint outcomes, which are citywide/facility-level, not borough-level, datasets by nature.",
+                    "A single agency or academic source quantifying NYC's total financial exposure (pension + bank-headquarters lending) to weapons manufacturers as a combined figure, rather than the piecemeal Palantir/Elbit figures found here."
+                ],
+                "actions": [
+                    "Monitor the Nunez Remediation Manager's public status reports and deadlines via the NYC Board of Correction (nyc.gov/boc) and nypdmonitor.org.",
+                    "Track NYPD's Level 1/2 stop data now published under the How Many Stops Act via NYC Open Data, and press City Council oversight hearings on the Racial Disparities Review Committee's findings.",
+                    "File complaints and track case outcomes through the Civilian Complaint Review Board (CCRB), and follow its Annual Report for NYPD's discipline-implementation rate.",
+                    "Support restoration of Crisis Management System / Cure Violence funding through the Legal Aid Society's Community Justice Unit and advocate for the state's new Office of Gun Violence Prevention to backstop lost federal funds.",
+                    "Push for B-HEARD's expansion (hours, geography, eligible call types) as it transitions fully to NYC Health + Hospitals, per the Comptroller's May 2025 audit findings.",
+                    "Engage NYCERS/other NYC pension trustee board meetings on the worker-led divestment campaign targeting Israeli-linked and defense/surveillance holdings (e.g., Palantir, Elbit Systems)."
+                ]
             },
             {
                 "name": "mobility",
@@ -1575,25 +1630,45 @@ const NYC_JURISDICTIONS = {
             },
             {
                 "name": "peace & justice",
-                "level": "NaN",
-                "indicator": "Not yet researched",
-                "value": "No data",
-                "year": null,
-                "target": "TBD",
-                "context": "⚠ Citywide figure shown — not specific to The Bronx. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
-                "source": "Pending",
-                "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+                "level": 45,
+                "indicator": "Homicide (murder) rate per 100,000 residents, dimension-adjusted per R1 for the Rikers/NYPD-accountability sub-indicators above",
+                "value": "305 homicides citywide in 2025 (NYPD year-end figure), -20.2% vs 382 in 2024; rate ~3.6 per 100,000 (derived: 305 / 8,478,072 [Census Vintage 2024 NYC population estimate] x 100,000; NYPD figure, Census denominator, so labeled derived, confidence medium for the rate specifically, high for the raw count). Shooting incidents: 688 in 2025 (-24% vs 904 in 2024), also a recorded-history low. Note press variance in early tallies (302-303-309 reported before final NYPD compilation) — 305 is the figure in the joint NYPD/Governor's Office year-end release and is treated as authoritative per R11.",
+                "year": 2025,
+                "target": "No single NYC statutory target for homicide rate exists; treated against a 'continued reduction toward historic lows, below the national average' standard implicit in NYPD's own CompStat framing and against the Nunez consent judgment's constitutional-minimum standard for the jail system.",
+                "context": "⚠ Citywide figure shown — not specific to The Bronx. Murders fell 18% in the Bronx in 2025 (NYPD/Governor's Office release, same source as citywide figure) — verified and same indicator as the headline, but no full-year absolute count could be sourced to a fetchable primary document within this research pass (the NYPD borough PDF cs-en-us-pbbx.pdf 404'd). The closest dated data point: Bronx murders YTD through Oct 26, 2025 stood at 89, down 14.4% from 104 over the same period in 2024 (Bronx Times, citing NYPD CompStat). Per R6/R10, this is left null rather than estimated from the percentage. NYPD CompStat 2.0 (compstat.nypdonline.org) would have the exact full-year count.\n\nNYC recorded its lowest murder total in the modern CompStat era in 2025, a genuine and heavily-verified result (multiple independent city, state, and press sources converge on ~305, -20%). This is the headline strength of the dimension. But 'peace & justice' in the Doughnut framework is not only about violence between residents — it is also about the justice system's treatment of the people it holds, and there NYC's headline number tells a starkly different story: a federal judge found the city in contempt of a 13-year-old consent judgment, then took the unprecedented step of ordering a court-appointed Remediation Manager (functionally a receiver) with hiring/firing and policy-making authority over DOC, because in-custody deaths and use-of-force incidents kept rising despite four mayoral administrations' worth of monitoring. NYC is simultaneously one of the safest large US cities on the street and running a jail system a federal court has found unconstitutional — a genuine structural tension, not a data error, and the two facts must be reported side by side rather than blended into a false middle. The policy lever for the carceral crisis is the Nunez remediation process and the borough-based jails construction timeline; the lever for street violence is continued precision-policing and Crisis Management System investment, which itself faces funding pressure (see subIndicators).",
+                "source": "NYPD (year-end 2025 CompStat release, via NYS Governor's Office joint announcement); Vera Institute (in-custody deaths); S.D.N.Y. Nunez docket",
+                "sourceUrl": "https://www.governor.ny.gov/news/safer-streets-governor-hochul-mayor-mamdani-police-commissioner-tisch-announce-crime-new-york",
                 "screenshot": null,
                 "confidence": "low",
                 "geographicScale": "city",
-                "globalLens": null,
-                "comparisonNote": null,
+                "globalLens": {
+                    "level": "NaN",
+                    "indicator": "NYC as conflict-displacement destination (asylum arrivals) and as capital allocator to weapons/surveillance-linked holdings (pension fund equities) — two distinct transmission channels, not scored against each other",
+                    "value": "237,000+ cumulative asylum seekers received into NYC's care since spring 2022 (as of July 2025 data; weekly arrivals fell from a peak of ~4,000 to under 100 by mid-2025, and the city closed its dedicated Asylum Arrival Center in 2025); NYC pension funds' Palantir Technologies holdings ~$56.6M (2024), up from ~$17.6M (2022); ~$1.5M+ in Elbit Systems and ~$300M across Israeli-company equities (Dec 2025 disclosures, reviewed via public pension records)",
+                    "context": "NYC hosts the United Nations headquarters and its annual General Assembly high-level week — the institutional home of the post-1945 international peace and security architecture — which is a qualitative fact about the city's global role in this dimension, not a quantified one. More concretely: NYC has absorbed one of the largest municipal shares of the 2022-2025 US asylum-seeker influx of any US city, a genuine (if now-declining) contribution to global displacement response that this framework can quantify. At the same time, as one of the world's largest financial centers, NYC-headquartered and NYC-pension-fund capital is allocated into companies tied to surveillance, immigration enforcement, and arms manufacturing — a transmission channel in the other direction that the same city's residents (via their pension funds) are exposed to and, through worker-led divestment campaigns since 2024, are actively contesting. The 9/11 attacks also durably reshaped NYC's own security posture (NYPD counterterrorism apparatus, hardened public infrastructure) in ways not quantified here. Whoever eventually scores this systematically would need the NYC Comptroller's SRI/stewardship team (portfolio composition) and MOIA/the Mayor's Office of Immigrant Affairs (displacement-hosting data) working from a common framework — neither currently exists.",
+                    "source": "NYC Comptroller pension disclosures (via amNewYork/Break the Chain reporting); NYC Mayor's Office (asylum arrivals); UNHCR Mid-Year and Global Trends reports",
+                    "sourceUrl": "https://www.amny.com/news/nyc-pension-funds-palantir-lander/"
+                },
+                "comparisonNote": "Petaluma's peace & justice indicator is violent crime rate: 510.7 per 100,000 (2023, FBI/Petaluma PD), essentially tied with the California state average, scored at level 30. NYC's FBI-defined violent crime rate is actually higher — 671 per 100,000 (2024) — even though NYC's homicide rate (~3.6/100,000) is far lower than a naive city-size comparison would predict and is near modern-era lows. The two portraits also diverge structurally, not just numerically: Petaluma has no jail system of its own comparable to Rikers and no analog to a federal consent-judgment/receivership crisis — NYC's carceral-system failure is a scale-specific phenomenon a small city like Petaluma simply does not have the apparatus to produce, which is why this dossier scores NYC's dimension level (45) well above what its street-crime data alone would suggest.",
                 "boroughs": null,
                 "globalBoroughs": null,
-                "levelRationale": null,
+                "levelRationale": "Anchored on the headline homicide rate, this dimension would score deep in safe territory alone (roughly -80): 305 murders in 2025, down 20.2% from 382 in 2024, a rate of ~3.6/100,000 — among the lowest in NYC's modern recorded history and well below the national average. But R1 requires adjusting for well-sourced shortfalls captured in the same dimension, and here they are severe, not marginal. PULLING THE LEVEL UP: (1) a federal court held the city in CONTEMPT in Nov 2024 for ongoing constitutional violations at Rikers (use-of-force, staff accountability, supervision failures); (2) the court then ordered a Remediation Manager with powers equivalent to a receiver (May 2025 order; powers detailed Dec 19, 2025; Nicholas Deml named Jan 2026) — the city has lost operational control of a core agency, an outcome with no precedent in the Nunez litigation's history; (3) in-custody deaths rebounded to 15 in 2025 from a low of 5 in 2024 (Vera Institute tracking), still below 2022's 19 but a reversal; (4) the average daily jail population (~6,747, Jan-May 2026) runs roughly 1.6-2x the 3,300-4,160 capacity the closure plan requires, and the city's own Mamdani administration has now formally acknowledged the Aug 31, 2027 legal deadline to close Rikers will be missed, with replacement jails not complete until 2029-2032; (5) 12+ years after the Floyd remedial order, NYPD accountability remains structurally weak: CCRB complaints hit a decade-high in 2024 (5,663), NYPD implements fewer than half of CCRB's substantiated non-disciplinary recommendations, and the city paid $117M-$206M/year in misconduct settlements (2024-2025); (6) stop-and-frisk racial disparities persist even as volume fell — Black drivers were 32% of NYPD's 2M+ 2024 traffic stops against ~20-23% of the city's population, and searched at roughly 9x the rate of white drivers. Net: street-level violence is a genuine, well-evidenced NYC strength; the carceral and police-accountability side of this dimension is a genuine, court-documented crisis. The two do not average to a mild score — they coexist, and the level (45, 'needs attention' tilting toward critical) is deliberately anchored closer to the carceral-system failure because it represents an active, unresolved federal constitutional violation, which this framework treats as more structurally severe than a favorable-but-improving crime trend.",
                 "reviewState": "draft",
-                "dataGaps": [],
-                "actions": []
+                "dataGaps": [
+                    "Exact full-year 2025 murder counts for the Bronx and Manhattan (only percent changes were sourced within this research pass) — NYPD CompStat 2.0 (compstat.nypdonline.org) or the borough PDFs (cs-en-us-pbbx.pdf, cs-en-us-pbmn.pdf) would have them.",
+                    "Total CCRB agency budget (only the FY2026 $1.2M staffing increment was confirmed; total agency appropriation not verified).",
+                    "Live current-year hate crime totals directly from NYC's Open Data / Power BI Hate Crimes Dashboard (secondary press citations of NYPD data were used instead).",
+                    "A borough-level or precinct-level breakdown of Rikers/DOC in-custody deaths and CCRB complaint outcomes, which are citywide/facility-level, not borough-level, datasets by nature.",
+                    "A single agency or academic source quantifying NYC's total financial exposure (pension + bank-headquarters lending) to weapons manufacturers as a combined figure, rather than the piecemeal Palantir/Elbit figures found here."
+                ],
+                "actions": [
+                    "Monitor the Nunez Remediation Manager's public status reports and deadlines via the NYC Board of Correction (nyc.gov/boc) and nypdmonitor.org.",
+                    "Track NYPD's Level 1/2 stop data now published under the How Many Stops Act via NYC Open Data, and press City Council oversight hearings on the Racial Disparities Review Committee's findings.",
+                    "File complaints and track case outcomes through the Civilian Complaint Review Board (CCRB), and follow its Annual Report for NYPD's discipline-implementation rate.",
+                    "Support restoration of Crisis Management System / Cure Violence funding through the Legal Aid Society's Community Justice Unit and advocate for the state's new Office of Gun Violence Prevention to backstop lost federal funds.",
+                    "Push for B-HEARD's expansion (hours, geography, eligible call types) as it transitions fully to NYC Health + Hospitals, per the Comptroller's May 2025 audit findings.",
+                    "Engage NYCERS/other NYC pension trustee board meetings on the worker-led divestment campaign targeting Israeli-linked and defense/surveillance holdings (e.g., Palantir, Elbit Systems)."
+                ]
             },
             {
                 "name": "mobility",
@@ -2385,25 +2460,45 @@ const NYC_JURISDICTIONS = {
             },
             {
                 "name": "peace & justice",
-                "level": "NaN",
-                "indicator": "Not yet researched",
-                "value": "No data",
-                "year": null,
-                "target": "TBD",
-                "context": "⚠ Citywide figure shown — not specific to Brooklyn. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
-                "source": "Pending",
-                "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+                "level": -55,
+                "indicator": "Homicide (murder) rate per 100,000 residents, dimension-adjusted per R1 for the Rikers/NYPD-accountability sub-indicators above",
+                "value": "91 murders in 2025, down from 120 in 2024 (-24%); derived rate ~3.48 per 100,000 (91 / 2,617,631 Kings County 2024 ACS population)",
+                "year": 2025,
+                "target": "No single NYC statutory target for homicide rate exists; treated against a 'continued reduction toward historic lows, below the national average' standard implicit in NYPD's own CompStat framing and against the Nunez consent judgment's constitutional-minimum standard for the jail system.",
+                "context": "Brooklyn: 91 murders in 2025, down from 120 in 2024 (-24%); derived rate ~3.48 per 100,000 (91 / 2,617,631 Kings County 2024 ACS population)\n\nCitywide for comparison: 305 homicides citywide in 2025 (NYPD year-end figure), -20.2% vs 382 in 2024; rate ~3.6 per 100,000 (derived: 305 / 8,478,072 [Census Vintage 2024 NYC population estimate] x 100,000; NYPD figure, Census denominator, so labeled derived, confidence medium for the rate specifically, high for the raw count). Shooting incidents: 688 in 2025 (-24% vs 904 in 2024), also a recorded-history low. Note press variance in early tallies (302-303-309 reported before final NYPD compilation) — 305 is the figure in the joint NYPD/Governor's Office year-end release and is treated as authoritative per R11.\n\nNYC recorded its lowest murder total in the modern CompStat era in 2025, a genuine and heavily-verified result (multiple independent city, state, and press sources converge on ~305, -20%). This is the headline strength of the dimension. But 'peace & justice' in the Doughnut framework is not only about violence between residents — it is also about the justice system's treatment of the people it holds, and there NYC's headline number tells a starkly different story: a federal judge found the city in contempt of a 13-year-old consent judgment, then took the unprecedented step of ordering a court-appointed Remediation Manager (functionally a receiver) with hiring/firing and policy-making authority over DOC, because in-custody deaths and use-of-force incidents kept rising despite four mayoral administrations' worth of monitoring. NYC is simultaneously one of the safest large US cities on the street and running a jail system a federal court has found unconstitutional — a genuine structural tension, not a data error, and the two facts must be reported side by side rather than blended into a false middle. The policy lever for the carceral crisis is the Nunez remediation process and the borough-based jails construction timeline; the lever for street violence is continued precision-policing and Crisis Management System investment, which itself faces funding pressure (see subIndicators).",
+                "source": "Brooklyn District Attorney's Office year-end release, via Brooklyn Eagle/amNewYork; population from U.S. Census ACS 2024 1-Year",
+                "sourceUrl": "https://brooklynda.org/2025/12/31/brooklyn-finishes-2025-with-fewest-murders-shootings-shooting-victims-and-shooting-homicides-in-recorded-history/",
                 "screenshot": null,
-                "confidence": "low",
-                "geographicScale": "city",
-                "globalLens": null,
-                "comparisonNote": null,
+                "confidence": "high",
+                "geographicScale": "borough",
+                "globalLens": {
+                    "level": "NaN",
+                    "indicator": "NYC as conflict-displacement destination (asylum arrivals) and as capital allocator to weapons/surveillance-linked holdings (pension fund equities) — two distinct transmission channels, not scored against each other",
+                    "value": "237,000+ cumulative asylum seekers received into NYC's care since spring 2022 (as of July 2025 data; weekly arrivals fell from a peak of ~4,000 to under 100 by mid-2025, and the city closed its dedicated Asylum Arrival Center in 2025); NYC pension funds' Palantir Technologies holdings ~$56.6M (2024), up from ~$17.6M (2022); ~$1.5M+ in Elbit Systems and ~$300M across Israeli-company equities (Dec 2025 disclosures, reviewed via public pension records)",
+                    "context": "NYC hosts the United Nations headquarters and its annual General Assembly high-level week — the institutional home of the post-1945 international peace and security architecture — which is a qualitative fact about the city's global role in this dimension, not a quantified one. More concretely: NYC has absorbed one of the largest municipal shares of the 2022-2025 US asylum-seeker influx of any US city, a genuine (if now-declining) contribution to global displacement response that this framework can quantify. At the same time, as one of the world's largest financial centers, NYC-headquartered and NYC-pension-fund capital is allocated into companies tied to surveillance, immigration enforcement, and arms manufacturing — a transmission channel in the other direction that the same city's residents (via their pension funds) are exposed to and, through worker-led divestment campaigns since 2024, are actively contesting. The 9/11 attacks also durably reshaped NYC's own security posture (NYPD counterterrorism apparatus, hardened public infrastructure) in ways not quantified here. Whoever eventually scores this systematically would need the NYC Comptroller's SRI/stewardship team (portfolio composition) and MOIA/the Mayor's Office of Immigrant Affairs (displacement-hosting data) working from a common framework — neither currently exists.",
+                    "source": "NYC Comptroller pension disclosures (via amNewYork/Break the Chain reporting); NYC Mayor's Office (asylum arrivals); UNHCR Mid-Year and Global Trends reports",
+                    "sourceUrl": "https://www.amny.com/news/nyc-pension-funds-palantir-lander/"
+                },
+                "comparisonNote": "Petaluma's peace & justice indicator is violent crime rate: 510.7 per 100,000 (2023, FBI/Petaluma PD), essentially tied with the California state average, scored at level 30. NYC's FBI-defined violent crime rate is actually higher — 671 per 100,000 (2024) — even though NYC's homicide rate (~3.6/100,000) is far lower than a naive city-size comparison would predict and is near modern-era lows. The two portraits also diverge structurally, not just numerically: Petaluma has no jail system of its own comparable to Rikers and no analog to a federal consent-judgment/receivership crisis — NYC's carceral-system failure is a scale-specific phenomenon a small city like Petaluma simply does not have the apparatus to produce, which is why this dossier scores NYC's dimension level (45) well above what its street-crime data alone would suggest.",
                 "boroughs": null,
                 "globalBoroughs": null,
-                "levelRationale": null,
+                "levelRationale": "Anchored on the headline homicide rate, this dimension would score deep in safe territory alone (roughly -80): 305 murders in 2025, down 20.2% from 382 in 2024, a rate of ~3.6/100,000 — among the lowest in NYC's modern recorded history and well below the national average. But R1 requires adjusting for well-sourced shortfalls captured in the same dimension, and here they are severe, not marginal. PULLING THE LEVEL UP: (1) a federal court held the city in CONTEMPT in Nov 2024 for ongoing constitutional violations at Rikers (use-of-force, staff accountability, supervision failures); (2) the court then ordered a Remediation Manager with powers equivalent to a receiver (May 2025 order; powers detailed Dec 19, 2025; Nicholas Deml named Jan 2026) — the city has lost operational control of a core agency, an outcome with no precedent in the Nunez litigation's history; (3) in-custody deaths rebounded to 15 in 2025 from a low of 5 in 2024 (Vera Institute tracking), still below 2022's 19 but a reversal; (4) the average daily jail population (~6,747, Jan-May 2026) runs roughly 1.6-2x the 3,300-4,160 capacity the closure plan requires, and the city's own Mamdani administration has now formally acknowledged the Aug 31, 2027 legal deadline to close Rikers will be missed, with replacement jails not complete until 2029-2032; (5) 12+ years after the Floyd remedial order, NYPD accountability remains structurally weak: CCRB complaints hit a decade-high in 2024 (5,663), NYPD implements fewer than half of CCRB's substantiated non-disciplinary recommendations, and the city paid $117M-$206M/year in misconduct settlements (2024-2025); (6) stop-and-frisk racial disparities persist even as volume fell — Black drivers were 32% of NYPD's 2M+ 2024 traffic stops against ~20-23% of the city's population, and searched at roughly 9x the rate of white drivers. Net: street-level violence is a genuine, well-evidenced NYC strength; the carceral and police-accountability side of this dimension is a genuine, court-documented crisis. The two do not average to a mild score — they coexist, and the level (45, 'needs attention' tilting toward critical) is deliberately anchored closer to the carceral-system failure because it represents an active, unresolved federal constitutional violation, which this framework treats as more structurally severe than a favorable-but-improving crime trend.",
                 "reviewState": "draft",
-                "dataGaps": [],
-                "actions": []
+                "dataGaps": [
+                    "Exact full-year 2025 murder counts for the Bronx and Manhattan (only percent changes were sourced within this research pass) — NYPD CompStat 2.0 (compstat.nypdonline.org) or the borough PDFs (cs-en-us-pbbx.pdf, cs-en-us-pbmn.pdf) would have them.",
+                    "Total CCRB agency budget (only the FY2026 $1.2M staffing increment was confirmed; total agency appropriation not verified).",
+                    "Live current-year hate crime totals directly from NYC's Open Data / Power BI Hate Crimes Dashboard (secondary press citations of NYPD data were used instead).",
+                    "A borough-level or precinct-level breakdown of Rikers/DOC in-custody deaths and CCRB complaint outcomes, which are citywide/facility-level, not borough-level, datasets by nature.",
+                    "A single agency or academic source quantifying NYC's total financial exposure (pension + bank-headquarters lending) to weapons manufacturers as a combined figure, rather than the piecemeal Palantir/Elbit figures found here."
+                ],
+                "actions": [
+                    "Monitor the Nunez Remediation Manager's public status reports and deadlines via the NYC Board of Correction (nyc.gov/boc) and nypdmonitor.org.",
+                    "Track NYPD's Level 1/2 stop data now published under the How Many Stops Act via NYC Open Data, and press City Council oversight hearings on the Racial Disparities Review Committee's findings.",
+                    "File complaints and track case outcomes through the Civilian Complaint Review Board (CCRB), and follow its Annual Report for NYPD's discipline-implementation rate.",
+                    "Support restoration of Crisis Management System / Cure Violence funding through the Legal Aid Society's Community Justice Unit and advocate for the state's new Office of Gun Violence Prevention to backstop lost federal funds.",
+                    "Push for B-HEARD's expansion (hours, geography, eligible call types) as it transitions fully to NYC Health + Hospitals, per the Comptroller's May 2025 audit findings.",
+                    "Engage NYCERS/other NYC pension trustee board meetings on the worker-led divestment campaign targeting Israeli-linked and defense/surveillance holdings (e.g., Palantir, Elbit Systems)."
+                ]
             },
             {
                 "name": "mobility",
@@ -3195,25 +3290,45 @@ const NYC_JURISDICTIONS = {
             },
             {
                 "name": "peace & justice",
-                "level": "NaN",
-                "indicator": "Not yet researched",
-                "value": "No data",
-                "year": null,
-                "target": "TBD",
-                "context": "⚠ Citywide figure shown — not specific to Manhattan. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
-                "source": "Pending",
-                "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+                "level": 45,
+                "indicator": "Homicide (murder) rate per 100,000 residents, dimension-adjusted per R1 for the Rikers/NYPD-accountability sub-indicators above",
+                "value": "305 homicides citywide in 2025 (NYPD year-end figure), -20.2% vs 382 in 2024; rate ~3.6 per 100,000 (derived: 305 / 8,478,072 [Census Vintage 2024 NYC population estimate] x 100,000; NYPD figure, Census denominator, so labeled derived, confidence medium for the rate specifically, high for the raw count). Shooting incidents: 688 in 2025 (-24% vs 904 in 2024), also a recorded-history low. Note press variance in early tallies (302-303-309 reported before final NYPD compilation) — 305 is the figure in the joint NYPD/Governor's Office year-end release and is treated as authoritative per R11.",
+                "year": 2025,
+                "target": "No single NYC statutory target for homicide rate exists; treated against a 'continued reduction toward historic lows, below the national average' standard implicit in NYPD's own CompStat framing and against the Nunez consent judgment's constitutional-minimum standard for the jail system.",
+                "context": "⚠ Citywide figure shown — not specific to Manhattan. Murders fell 33% in Manhattan in 2025 (NYPD/Governor's Office release) — verified, same indicator, but no full-year absolute count was found at a fetchable primary source; the NYPD borough PDF (cs-en-us-pbmn.pdf) fetched but returned as an unreadable scanned/encoded document. Left null per R6/R10 rather than back-calculated from the percentage.\n\nNYC recorded its lowest murder total in the modern CompStat era in 2025, a genuine and heavily-verified result (multiple independent city, state, and press sources converge on ~305, -20%). This is the headline strength of the dimension. But 'peace & justice' in the Doughnut framework is not only about violence between residents — it is also about the justice system's treatment of the people it holds, and there NYC's headline number tells a starkly different story: a federal judge found the city in contempt of a 13-year-old consent judgment, then took the unprecedented step of ordering a court-appointed Remediation Manager (functionally a receiver) with hiring/firing and policy-making authority over DOC, because in-custody deaths and use-of-force incidents kept rising despite four mayoral administrations' worth of monitoring. NYC is simultaneously one of the safest large US cities on the street and running a jail system a federal court has found unconstitutional — a genuine structural tension, not a data error, and the two facts must be reported side by side rather than blended into a false middle. The policy lever for the carceral crisis is the Nunez remediation process and the borough-based jails construction timeline; the lever for street violence is continued precision-policing and Crisis Management System investment, which itself faces funding pressure (see subIndicators).",
+                "source": "NYPD (year-end 2025 CompStat release, via NYS Governor's Office joint announcement); Vera Institute (in-custody deaths); S.D.N.Y. Nunez docket",
+                "sourceUrl": "https://www.governor.ny.gov/news/safer-streets-governor-hochul-mayor-mamdani-police-commissioner-tisch-announce-crime-new-york",
                 "screenshot": null,
                 "confidence": "low",
                 "geographicScale": "city",
-                "globalLens": null,
-                "comparisonNote": null,
+                "globalLens": {
+                    "level": "NaN",
+                    "indicator": "NYC as conflict-displacement destination (asylum arrivals) and as capital allocator to weapons/surveillance-linked holdings (pension fund equities) — two distinct transmission channels, not scored against each other",
+                    "value": "237,000+ cumulative asylum seekers received into NYC's care since spring 2022 (as of July 2025 data; weekly arrivals fell from a peak of ~4,000 to under 100 by mid-2025, and the city closed its dedicated Asylum Arrival Center in 2025); NYC pension funds' Palantir Technologies holdings ~$56.6M (2024), up from ~$17.6M (2022); ~$1.5M+ in Elbit Systems and ~$300M across Israeli-company equities (Dec 2025 disclosures, reviewed via public pension records)",
+                    "context": "NYC hosts the United Nations headquarters and its annual General Assembly high-level week — the institutional home of the post-1945 international peace and security architecture — which is a qualitative fact about the city's global role in this dimension, not a quantified one. More concretely: NYC has absorbed one of the largest municipal shares of the 2022-2025 US asylum-seeker influx of any US city, a genuine (if now-declining) contribution to global displacement response that this framework can quantify. At the same time, as one of the world's largest financial centers, NYC-headquartered and NYC-pension-fund capital is allocated into companies tied to surveillance, immigration enforcement, and arms manufacturing — a transmission channel in the other direction that the same city's residents (via their pension funds) are exposed to and, through worker-led divestment campaigns since 2024, are actively contesting. The 9/11 attacks also durably reshaped NYC's own security posture (NYPD counterterrorism apparatus, hardened public infrastructure) in ways not quantified here. Whoever eventually scores this systematically would need the NYC Comptroller's SRI/stewardship team (portfolio composition) and MOIA/the Mayor's Office of Immigrant Affairs (displacement-hosting data) working from a common framework — neither currently exists.",
+                    "source": "NYC Comptroller pension disclosures (via amNewYork/Break the Chain reporting); NYC Mayor's Office (asylum arrivals); UNHCR Mid-Year and Global Trends reports",
+                    "sourceUrl": "https://www.amny.com/news/nyc-pension-funds-palantir-lander/"
+                },
+                "comparisonNote": "Petaluma's peace & justice indicator is violent crime rate: 510.7 per 100,000 (2023, FBI/Petaluma PD), essentially tied with the California state average, scored at level 30. NYC's FBI-defined violent crime rate is actually higher — 671 per 100,000 (2024) — even though NYC's homicide rate (~3.6/100,000) is far lower than a naive city-size comparison would predict and is near modern-era lows. The two portraits also diverge structurally, not just numerically: Petaluma has no jail system of its own comparable to Rikers and no analog to a federal consent-judgment/receivership crisis — NYC's carceral-system failure is a scale-specific phenomenon a small city like Petaluma simply does not have the apparatus to produce, which is why this dossier scores NYC's dimension level (45) well above what its street-crime data alone would suggest.",
                 "boroughs": null,
                 "globalBoroughs": null,
-                "levelRationale": null,
+                "levelRationale": "Anchored on the headline homicide rate, this dimension would score deep in safe territory alone (roughly -80): 305 murders in 2025, down 20.2% from 382 in 2024, a rate of ~3.6/100,000 — among the lowest in NYC's modern recorded history and well below the national average. But R1 requires adjusting for well-sourced shortfalls captured in the same dimension, and here they are severe, not marginal. PULLING THE LEVEL UP: (1) a federal court held the city in CONTEMPT in Nov 2024 for ongoing constitutional violations at Rikers (use-of-force, staff accountability, supervision failures); (2) the court then ordered a Remediation Manager with powers equivalent to a receiver (May 2025 order; powers detailed Dec 19, 2025; Nicholas Deml named Jan 2026) — the city has lost operational control of a core agency, an outcome with no precedent in the Nunez litigation's history; (3) in-custody deaths rebounded to 15 in 2025 from a low of 5 in 2024 (Vera Institute tracking), still below 2022's 19 but a reversal; (4) the average daily jail population (~6,747, Jan-May 2026) runs roughly 1.6-2x the 3,300-4,160 capacity the closure plan requires, and the city's own Mamdani administration has now formally acknowledged the Aug 31, 2027 legal deadline to close Rikers will be missed, with replacement jails not complete until 2029-2032; (5) 12+ years after the Floyd remedial order, NYPD accountability remains structurally weak: CCRB complaints hit a decade-high in 2024 (5,663), NYPD implements fewer than half of CCRB's substantiated non-disciplinary recommendations, and the city paid $117M-$206M/year in misconduct settlements (2024-2025); (6) stop-and-frisk racial disparities persist even as volume fell — Black drivers were 32% of NYPD's 2M+ 2024 traffic stops against ~20-23% of the city's population, and searched at roughly 9x the rate of white drivers. Net: street-level violence is a genuine, well-evidenced NYC strength; the carceral and police-accountability side of this dimension is a genuine, court-documented crisis. The two do not average to a mild score — they coexist, and the level (45, 'needs attention' tilting toward critical) is deliberately anchored closer to the carceral-system failure because it represents an active, unresolved federal constitutional violation, which this framework treats as more structurally severe than a favorable-but-improving crime trend.",
                 "reviewState": "draft",
-                "dataGaps": [],
-                "actions": []
+                "dataGaps": [
+                    "Exact full-year 2025 murder counts for the Bronx and Manhattan (only percent changes were sourced within this research pass) — NYPD CompStat 2.0 (compstat.nypdonline.org) or the borough PDFs (cs-en-us-pbbx.pdf, cs-en-us-pbmn.pdf) would have them.",
+                    "Total CCRB agency budget (only the FY2026 $1.2M staffing increment was confirmed; total agency appropriation not verified).",
+                    "Live current-year hate crime totals directly from NYC's Open Data / Power BI Hate Crimes Dashboard (secondary press citations of NYPD data were used instead).",
+                    "A borough-level or precinct-level breakdown of Rikers/DOC in-custody deaths and CCRB complaint outcomes, which are citywide/facility-level, not borough-level, datasets by nature.",
+                    "A single agency or academic source quantifying NYC's total financial exposure (pension + bank-headquarters lending) to weapons manufacturers as a combined figure, rather than the piecemeal Palantir/Elbit figures found here."
+                ],
+                "actions": [
+                    "Monitor the Nunez Remediation Manager's public status reports and deadlines via the NYC Board of Correction (nyc.gov/boc) and nypdmonitor.org.",
+                    "Track NYPD's Level 1/2 stop data now published under the How Many Stops Act via NYC Open Data, and press City Council oversight hearings on the Racial Disparities Review Committee's findings.",
+                    "File complaints and track case outcomes through the Civilian Complaint Review Board (CCRB), and follow its Annual Report for NYPD's discipline-implementation rate.",
+                    "Support restoration of Crisis Management System / Cure Violence funding through the Legal Aid Society's Community Justice Unit and advocate for the state's new Office of Gun Violence Prevention to backstop lost federal funds.",
+                    "Push for B-HEARD's expansion (hours, geography, eligible call types) as it transitions fully to NYC Health + Hospitals, per the Comptroller's May 2025 audit findings.",
+                    "Engage NYCERS/other NYC pension trustee board meetings on the worker-led divestment campaign targeting Israeli-linked and defense/surveillance holdings (e.g., Palantir, Elbit Systems)."
+                ]
             },
             {
                 "name": "mobility",
@@ -4005,25 +4120,45 @@ const NYC_JURISDICTIONS = {
             },
             {
                 "name": "peace & justice",
-                "level": "NaN",
-                "indicator": "Not yet researched",
-                "value": "No data",
-                "year": null,
-                "target": "TBD",
-                "context": "⚠ Citywide figure shown — not specific to Queens. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
-                "source": "Pending",
-                "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+                "level": 10,
+                "indicator": "Homicide (murder) rate per 100,000 residents, dimension-adjusted per R1 for the Rikers/NYPD-accountability sub-indicators above",
+                "value": "58 murders in 2025, up from 55 in 2024 (+7%) — the only borough where murders rose; derived rate ~2.50 per 100,000 (58 / 2,316,841 Queens County 2024 ACS population)",
+                "year": 2025,
+                "target": "No single NYC statutory target for homicide rate exists; treated against a 'continued reduction toward historic lows, below the national average' standard implicit in NYPD's own CompStat framing and against the Nunez consent judgment's constitutional-minimum standard for the jail system.",
+                "context": "Queens: 58 murders in 2025, up from 55 in 2024 (+7%) — the only borough where murders rose; derived rate ~2.50 per 100,000 (58 / 2,316,841 Queens County 2024 ACS population)\n\nCitywide for comparison: 305 homicides citywide in 2025 (NYPD year-end figure), -20.2% vs 382 in 2024; rate ~3.6 per 100,000 (derived: 305 / 8,478,072 [Census Vintage 2024 NYC population estimate] x 100,000; NYPD figure, Census denominator, so labeled derived, confidence medium for the rate specifically, high for the raw count). Shooting incidents: 688 in 2025 (-24% vs 904 in 2024), also a recorded-history low. Note press variance in early tallies (302-303-309 reported before final NYPD compilation) — 305 is the figure in the joint NYPD/Governor's Office year-end release and is treated as authoritative per R11.\n\nNYC recorded its lowest murder total in the modern CompStat era in 2025, a genuine and heavily-verified result (multiple independent city, state, and press sources converge on ~305, -20%). This is the headline strength of the dimension. But 'peace & justice' in the Doughnut framework is not only about violence between residents — it is also about the justice system's treatment of the people it holds, and there NYC's headline number tells a starkly different story: a federal judge found the city in contempt of a 13-year-old consent judgment, then took the unprecedented step of ordering a court-appointed Remediation Manager (functionally a receiver) with hiring/firing and policy-making authority over DOC, because in-custody deaths and use-of-force incidents kept rising despite four mayoral administrations' worth of monitoring. NYC is simultaneously one of the safest large US cities on the street and running a jail system a federal court has found unconstitutional — a genuine structural tension, not a data error, and the two facts must be reported side by side rather than blended into a false middle. The policy lever for the carceral crisis is the Nunez remediation process and the borough-based jails construction timeline; the lever for street violence is continued precision-policing and Crisis Management System investment, which itself faces funding pressure (see subIndicators).",
+                "source": "Queens Chronicle, citing NYPD data; population from U.S. Census ACS 2024 1-Year",
+                "sourceUrl": "https://www.qchron.com/editions/queenswide/crime-down-murder-up-in-queens-in-25/article_4701cc28-827d-50df-8ea5-1123e4ce2878.html",
                 "screenshot": null,
-                "confidence": "low",
-                "geographicScale": "city",
-                "globalLens": null,
-                "comparisonNote": null,
+                "confidence": "high",
+                "geographicScale": "borough",
+                "globalLens": {
+                    "level": "NaN",
+                    "indicator": "NYC as conflict-displacement destination (asylum arrivals) and as capital allocator to weapons/surveillance-linked holdings (pension fund equities) — two distinct transmission channels, not scored against each other",
+                    "value": "237,000+ cumulative asylum seekers received into NYC's care since spring 2022 (as of July 2025 data; weekly arrivals fell from a peak of ~4,000 to under 100 by mid-2025, and the city closed its dedicated Asylum Arrival Center in 2025); NYC pension funds' Palantir Technologies holdings ~$56.6M (2024), up from ~$17.6M (2022); ~$1.5M+ in Elbit Systems and ~$300M across Israeli-company equities (Dec 2025 disclosures, reviewed via public pension records)",
+                    "context": "NYC hosts the United Nations headquarters and its annual General Assembly high-level week — the institutional home of the post-1945 international peace and security architecture — which is a qualitative fact about the city's global role in this dimension, not a quantified one. More concretely: NYC has absorbed one of the largest municipal shares of the 2022-2025 US asylum-seeker influx of any US city, a genuine (if now-declining) contribution to global displacement response that this framework can quantify. At the same time, as one of the world's largest financial centers, NYC-headquartered and NYC-pension-fund capital is allocated into companies tied to surveillance, immigration enforcement, and arms manufacturing — a transmission channel in the other direction that the same city's residents (via their pension funds) are exposed to and, through worker-led divestment campaigns since 2024, are actively contesting. The 9/11 attacks also durably reshaped NYC's own security posture (NYPD counterterrorism apparatus, hardened public infrastructure) in ways not quantified here. Whoever eventually scores this systematically would need the NYC Comptroller's SRI/stewardship team (portfolio composition) and MOIA/the Mayor's Office of Immigrant Affairs (displacement-hosting data) working from a common framework — neither currently exists.",
+                    "source": "NYC Comptroller pension disclosures (via amNewYork/Break the Chain reporting); NYC Mayor's Office (asylum arrivals); UNHCR Mid-Year and Global Trends reports",
+                    "sourceUrl": "https://www.amny.com/news/nyc-pension-funds-palantir-lander/"
+                },
+                "comparisonNote": "Petaluma's peace & justice indicator is violent crime rate: 510.7 per 100,000 (2023, FBI/Petaluma PD), essentially tied with the California state average, scored at level 30. NYC's FBI-defined violent crime rate is actually higher — 671 per 100,000 (2024) — even though NYC's homicide rate (~3.6/100,000) is far lower than a naive city-size comparison would predict and is near modern-era lows. The two portraits also diverge structurally, not just numerically: Petaluma has no jail system of its own comparable to Rikers and no analog to a federal consent-judgment/receivership crisis — NYC's carceral-system failure is a scale-specific phenomenon a small city like Petaluma simply does not have the apparatus to produce, which is why this dossier scores NYC's dimension level (45) well above what its street-crime data alone would suggest.",
                 "boroughs": null,
                 "globalBoroughs": null,
-                "levelRationale": null,
+                "levelRationale": "Anchored on the headline homicide rate, this dimension would score deep in safe territory alone (roughly -80): 305 murders in 2025, down 20.2% from 382 in 2024, a rate of ~3.6/100,000 — among the lowest in NYC's modern recorded history and well below the national average. But R1 requires adjusting for well-sourced shortfalls captured in the same dimension, and here they are severe, not marginal. PULLING THE LEVEL UP: (1) a federal court held the city in CONTEMPT in Nov 2024 for ongoing constitutional violations at Rikers (use-of-force, staff accountability, supervision failures); (2) the court then ordered a Remediation Manager with powers equivalent to a receiver (May 2025 order; powers detailed Dec 19, 2025; Nicholas Deml named Jan 2026) — the city has lost operational control of a core agency, an outcome with no precedent in the Nunez litigation's history; (3) in-custody deaths rebounded to 15 in 2025 from a low of 5 in 2024 (Vera Institute tracking), still below 2022's 19 but a reversal; (4) the average daily jail population (~6,747, Jan-May 2026) runs roughly 1.6-2x the 3,300-4,160 capacity the closure plan requires, and the city's own Mamdani administration has now formally acknowledged the Aug 31, 2027 legal deadline to close Rikers will be missed, with replacement jails not complete until 2029-2032; (5) 12+ years after the Floyd remedial order, NYPD accountability remains structurally weak: CCRB complaints hit a decade-high in 2024 (5,663), NYPD implements fewer than half of CCRB's substantiated non-disciplinary recommendations, and the city paid $117M-$206M/year in misconduct settlements (2024-2025); (6) stop-and-frisk racial disparities persist even as volume fell — Black drivers were 32% of NYPD's 2M+ 2024 traffic stops against ~20-23% of the city's population, and searched at roughly 9x the rate of white drivers. Net: street-level violence is a genuine, well-evidenced NYC strength; the carceral and police-accountability side of this dimension is a genuine, court-documented crisis. The two do not average to a mild score — they coexist, and the level (45, 'needs attention' tilting toward critical) is deliberately anchored closer to the carceral-system failure because it represents an active, unresolved federal constitutional violation, which this framework treats as more structurally severe than a favorable-but-improving crime trend.",
                 "reviewState": "draft",
-                "dataGaps": [],
-                "actions": []
+                "dataGaps": [
+                    "Exact full-year 2025 murder counts for the Bronx and Manhattan (only percent changes were sourced within this research pass) — NYPD CompStat 2.0 (compstat.nypdonline.org) or the borough PDFs (cs-en-us-pbbx.pdf, cs-en-us-pbmn.pdf) would have them.",
+                    "Total CCRB agency budget (only the FY2026 $1.2M staffing increment was confirmed; total agency appropriation not verified).",
+                    "Live current-year hate crime totals directly from NYC's Open Data / Power BI Hate Crimes Dashboard (secondary press citations of NYPD data were used instead).",
+                    "A borough-level or precinct-level breakdown of Rikers/DOC in-custody deaths and CCRB complaint outcomes, which are citywide/facility-level, not borough-level, datasets by nature.",
+                    "A single agency or academic source quantifying NYC's total financial exposure (pension + bank-headquarters lending) to weapons manufacturers as a combined figure, rather than the piecemeal Palantir/Elbit figures found here."
+                ],
+                "actions": [
+                    "Monitor the Nunez Remediation Manager's public status reports and deadlines via the NYC Board of Correction (nyc.gov/boc) and nypdmonitor.org.",
+                    "Track NYPD's Level 1/2 stop data now published under the How Many Stops Act via NYC Open Data, and press City Council oversight hearings on the Racial Disparities Review Committee's findings.",
+                    "File complaints and track case outcomes through the Civilian Complaint Review Board (CCRB), and follow its Annual Report for NYPD's discipline-implementation rate.",
+                    "Support restoration of Crisis Management System / Cure Violence funding through the Legal Aid Society's Community Justice Unit and advocate for the state's new Office of Gun Violence Prevention to backstop lost federal funds.",
+                    "Push for B-HEARD's expansion (hours, geography, eligible call types) as it transitions fully to NYC Health + Hospitals, per the Comptroller's May 2025 audit findings.",
+                    "Engage NYCERS/other NYC pension trustee board meetings on the worker-led divestment campaign targeting Israeli-linked and defense/surveillance holdings (e.g., Palantir, Elbit Systems)."
+                ]
             },
             {
                 "name": "mobility",
@@ -4815,25 +4950,45 @@ const NYC_JURISDICTIONS = {
             },
             {
                 "name": "peace & justice",
-                "level": "NaN",
-                "indicator": "Not yet researched",
-                "value": "No data",
-                "year": null,
-                "target": "TBD",
-                "context": "⚠ Citywide figure shown — not specific to Staten Island. No borough-level figure is published for this indicator.\n\nNo research dossier has been produced for this dimension yet. Rendered as an explicit data gap rather than omitted, so the portrait does not read as complete when it is not.",
-                "source": "Pending",
-                "sourceUrl": "https://github.com/mia-i-shell/doughnut-petaluma",
+                "level": -85,
+                "indicator": "Homicide (murder) rate per 100,000 residents, dimension-adjusted per R1 for the Rikers/NYPD-accountability sub-indicators above",
+                "value": "3 murders in 2025, a recorded-history low, down more than 60% year-over-year; derived rate ~0.60 per 100,000 (3 / 498,212 Richmond County 2024 ACS population)",
+                "year": 2025,
+                "target": "No single NYC statutory target for homicide rate exists; treated against a 'continued reduction toward historic lows, below the national average' standard implicit in NYPD's own CompStat framing and against the Nunez consent judgment's constitutional-minimum standard for the jail system.",
+                "context": "Staten Island: 3 murders in 2025, a recorded-history low, down more than 60% year-over-year; derived rate ~0.60 per 100,000 (3 / 498,212 Richmond County 2024 ACS population)\n\nCitywide for comparison: 305 homicides citywide in 2025 (NYPD year-end figure), -20.2% vs 382 in 2024; rate ~3.6 per 100,000 (derived: 305 / 8,478,072 [Census Vintage 2024 NYC population estimate] x 100,000; NYPD figure, Census denominator, so labeled derived, confidence medium for the rate specifically, high for the raw count). Shooting incidents: 688 in 2025 (-24% vs 904 in 2024), also a recorded-history low. Note press variance in early tallies (302-303-309 reported before final NYPD compilation) — 305 is the figure in the joint NYPD/Governor's Office year-end release and is treated as authoritative per R11.\n\nNYC recorded its lowest murder total in the modern CompStat era in 2025, a genuine and heavily-verified result (multiple independent city, state, and press sources converge on ~305, -20%). This is the headline strength of the dimension. But 'peace & justice' in the Doughnut framework is not only about violence between residents — it is also about the justice system's treatment of the people it holds, and there NYC's headline number tells a starkly different story: a federal judge found the city in contempt of a 13-year-old consent judgment, then took the unprecedented step of ordering a court-appointed Remediation Manager (functionally a receiver) with hiring/firing and policy-making authority over DOC, because in-custody deaths and use-of-force incidents kept rising despite four mayoral administrations' worth of monitoring. NYC is simultaneously one of the safest large US cities on the street and running a jail system a federal court has found unconstitutional — a genuine structural tension, not a data error, and the two facts must be reported side by side rather than blended into a false middle. The policy lever for the carceral crisis is the Nunez remediation process and the borough-based jails construction timeline; the lever for street violence is continued precision-policing and Crisis Management System investment, which itself faces funding pressure (see subIndicators).",
+                "source": "NYPD/Governor's Office year-end release; 2024 baseline for Staten Island not independently confirmed to an exact count within this research pass",
+                "sourceUrl": "https://www.governor.ny.gov/news/safer-streets-governor-hochul-mayor-mamdani-police-commissioner-tisch-announce-crime-new-york",
                 "screenshot": null,
-                "confidence": "low",
-                "geographicScale": "city",
-                "globalLens": null,
-                "comparisonNote": null,
+                "confidence": "medium",
+                "geographicScale": "borough",
+                "globalLens": {
+                    "level": "NaN",
+                    "indicator": "NYC as conflict-displacement destination (asylum arrivals) and as capital allocator to weapons/surveillance-linked holdings (pension fund equities) — two distinct transmission channels, not scored against each other",
+                    "value": "237,000+ cumulative asylum seekers received into NYC's care since spring 2022 (as of July 2025 data; weekly arrivals fell from a peak of ~4,000 to under 100 by mid-2025, and the city closed its dedicated Asylum Arrival Center in 2025); NYC pension funds' Palantir Technologies holdings ~$56.6M (2024), up from ~$17.6M (2022); ~$1.5M+ in Elbit Systems and ~$300M across Israeli-company equities (Dec 2025 disclosures, reviewed via public pension records)",
+                    "context": "NYC hosts the United Nations headquarters and its annual General Assembly high-level week — the institutional home of the post-1945 international peace and security architecture — which is a qualitative fact about the city's global role in this dimension, not a quantified one. More concretely: NYC has absorbed one of the largest municipal shares of the 2022-2025 US asylum-seeker influx of any US city, a genuine (if now-declining) contribution to global displacement response that this framework can quantify. At the same time, as one of the world's largest financial centers, NYC-headquartered and NYC-pension-fund capital is allocated into companies tied to surveillance, immigration enforcement, and arms manufacturing — a transmission channel in the other direction that the same city's residents (via their pension funds) are exposed to and, through worker-led divestment campaigns since 2024, are actively contesting. The 9/11 attacks also durably reshaped NYC's own security posture (NYPD counterterrorism apparatus, hardened public infrastructure) in ways not quantified here. Whoever eventually scores this systematically would need the NYC Comptroller's SRI/stewardship team (portfolio composition) and MOIA/the Mayor's Office of Immigrant Affairs (displacement-hosting data) working from a common framework — neither currently exists.",
+                    "source": "NYC Comptroller pension disclosures (via amNewYork/Break the Chain reporting); NYC Mayor's Office (asylum arrivals); UNHCR Mid-Year and Global Trends reports",
+                    "sourceUrl": "https://www.amny.com/news/nyc-pension-funds-palantir-lander/"
+                },
+                "comparisonNote": "Petaluma's peace & justice indicator is violent crime rate: 510.7 per 100,000 (2023, FBI/Petaluma PD), essentially tied with the California state average, scored at level 30. NYC's FBI-defined violent crime rate is actually higher — 671 per 100,000 (2024) — even though NYC's homicide rate (~3.6/100,000) is far lower than a naive city-size comparison would predict and is near modern-era lows. The two portraits also diverge structurally, not just numerically: Petaluma has no jail system of its own comparable to Rikers and no analog to a federal consent-judgment/receivership crisis — NYC's carceral-system failure is a scale-specific phenomenon a small city like Petaluma simply does not have the apparatus to produce, which is why this dossier scores NYC's dimension level (45) well above what its street-crime data alone would suggest.",
                 "boroughs": null,
                 "globalBoroughs": null,
-                "levelRationale": null,
+                "levelRationale": "Anchored on the headline homicide rate, this dimension would score deep in safe territory alone (roughly -80): 305 murders in 2025, down 20.2% from 382 in 2024, a rate of ~3.6/100,000 — among the lowest in NYC's modern recorded history and well below the national average. But R1 requires adjusting for well-sourced shortfalls captured in the same dimension, and here they are severe, not marginal. PULLING THE LEVEL UP: (1) a federal court held the city in CONTEMPT in Nov 2024 for ongoing constitutional violations at Rikers (use-of-force, staff accountability, supervision failures); (2) the court then ordered a Remediation Manager with powers equivalent to a receiver (May 2025 order; powers detailed Dec 19, 2025; Nicholas Deml named Jan 2026) — the city has lost operational control of a core agency, an outcome with no precedent in the Nunez litigation's history; (3) in-custody deaths rebounded to 15 in 2025 from a low of 5 in 2024 (Vera Institute tracking), still below 2022's 19 but a reversal; (4) the average daily jail population (~6,747, Jan-May 2026) runs roughly 1.6-2x the 3,300-4,160 capacity the closure plan requires, and the city's own Mamdani administration has now formally acknowledged the Aug 31, 2027 legal deadline to close Rikers will be missed, with replacement jails not complete until 2029-2032; (5) 12+ years after the Floyd remedial order, NYPD accountability remains structurally weak: CCRB complaints hit a decade-high in 2024 (5,663), NYPD implements fewer than half of CCRB's substantiated non-disciplinary recommendations, and the city paid $117M-$206M/year in misconduct settlements (2024-2025); (6) stop-and-frisk racial disparities persist even as volume fell — Black drivers were 32% of NYPD's 2M+ 2024 traffic stops against ~20-23% of the city's population, and searched at roughly 9x the rate of white drivers. Net: street-level violence is a genuine, well-evidenced NYC strength; the carceral and police-accountability side of this dimension is a genuine, court-documented crisis. The two do not average to a mild score — they coexist, and the level (45, 'needs attention' tilting toward critical) is deliberately anchored closer to the carceral-system failure because it represents an active, unresolved federal constitutional violation, which this framework treats as more structurally severe than a favorable-but-improving crime trend.",
                 "reviewState": "draft",
-                "dataGaps": [],
-                "actions": []
+                "dataGaps": [
+                    "Exact full-year 2025 murder counts for the Bronx and Manhattan (only percent changes were sourced within this research pass) — NYPD CompStat 2.0 (compstat.nypdonline.org) or the borough PDFs (cs-en-us-pbbx.pdf, cs-en-us-pbmn.pdf) would have them.",
+                    "Total CCRB agency budget (only the FY2026 $1.2M staffing increment was confirmed; total agency appropriation not verified).",
+                    "Live current-year hate crime totals directly from NYC's Open Data / Power BI Hate Crimes Dashboard (secondary press citations of NYPD data were used instead).",
+                    "A borough-level or precinct-level breakdown of Rikers/DOC in-custody deaths and CCRB complaint outcomes, which are citywide/facility-level, not borough-level, datasets by nature.",
+                    "A single agency or academic source quantifying NYC's total financial exposure (pension + bank-headquarters lending) to weapons manufacturers as a combined figure, rather than the piecemeal Palantir/Elbit figures found here."
+                ],
+                "actions": [
+                    "Monitor the Nunez Remediation Manager's public status reports and deadlines via the NYC Board of Correction (nyc.gov/boc) and nypdmonitor.org.",
+                    "Track NYPD's Level 1/2 stop data now published under the How Many Stops Act via NYC Open Data, and press City Council oversight hearings on the Racial Disparities Review Committee's findings.",
+                    "File complaints and track case outcomes through the Civilian Complaint Review Board (CCRB), and follow its Annual Report for NYPD's discipline-implementation rate.",
+                    "Support restoration of Crisis Management System / Cure Violence funding through the Legal Aid Society's Community Justice Unit and advocate for the state's new Office of Gun Violence Prevention to backstop lost federal funds.",
+                    "Push for B-HEARD's expansion (hours, geography, eligible call types) as it transitions fully to NYC Health + Hospitals, per the Comptroller's May 2025 audit findings.",
+                    "Engage NYCERS/other NYC pension trustee board meetings on the worker-led divestment campaign targeting Israeli-linked and defense/surveillance holdings (e.g., Palantir, Elbit Systems)."
+                ]
             },
             {
                 "name": "mobility",
