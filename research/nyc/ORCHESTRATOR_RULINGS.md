@@ -23,13 +23,23 @@ Therefore:
 This cuts both ways. Do not let one bad sub-indicator drag a genuinely strong dimension
 into the red, and do not let a strong headline launder a real failure.
 
-**Worked example (mobility).** Drive-alone share of 20.6% against a <50% target argues
-for roughly -85. But the same dimension contains: only a minority of subway stations
-ADA-accessible (with the compliance deadline set at 2055), traffic deaths at or near
-post-Vision-Zero highs, ~8 mph bus speeds, and Fair Fares enrolling well below the
-eligible population. Those are not marginal. **Mobility should land near -45**: clearly
-inside the safe space, but not "solved". `levelRationale` must name all four pull
-factors.
+**Worked example (mobility) — CORRECTED, and instructive about how this ruling fails.**
+Drive-alone share of 20.6% against a <50% target argues for roughly -85. The orchestrator
+originally adjusted to -45, citing four pull factors. The adversarial reviewer then
+**refuted one of them outright**: "traffic deaths at or near post-Vision-Zero highs" is
+false. NYC DOT reports **205 traffic deaths in 2025 — the fewest since record-keeping
+began in 1910**, down 19% year-on-year and 31% since 2014, with Q1 2026 the third-lowest
+on record. Traffic safety is a verified NYC *strength*, not a pull factor.
+
+The other three pillars held on primary sources: subway accessibility (160 of 472
+stations, 33.9%), bus speeds (8.17 mph, and *slower* than 2015's 8.22), and Fair Fares
+(41% of ~940,000 eligible enrolled). Three real shortfalls, not four.
+
+**Mobility therefore lands at -65, not -45.** The lesson for anyone applying R1: an
+adjustment is only as good as each individual pull factor, and a factor asserted from
+plausibility rather than from a source will inflate the adjustment. Verify every factor
+you name before it moves a number. The orchestrator introduced this error in the research
+brief and it propagated into the override — briefs are not evidence.
 
 ## R2. The global lens must be about the city's EXTERNAL footprint or responsibility
 
@@ -253,3 +263,24 @@ wherever they appear, and do not re-derive them:
   **top-five, not top-three**.
 - **NYC pension fossil-fuel divestment is NOT reversed** — Court of Appeals denied leave
   to appeal, 21 October 2025.
+
+## R14. Further portrait-wide corrections (extends R13)
+
+- **NYC traffic deaths are at a RECORD LOW, not a high.** 205 in 2025 — fewest since
+  record-keeping began in 1910; −19% year-on-year, −31% since 2014; Q1 2026 third-lowest
+  on record (NYC DOT). Any dimension asserting rising or record-high traffic violence is
+  wrong. This corrects an error the orchestrator introduced in the research brief.
+- **Subway accessibility: 160 of 472 stations (33.9%)**, MTA-sourced. The 2022 settlement
+  commits to 95% by 2055.
+- **Bus speeds: 8.17 mph, down from 8.22 in 2015** — the decline is the finding.
+- **Fair Fares: ~41% of roughly 940,000 eligible New Yorkers enrolled.** Any "37% of 1.4M"
+  formulation is stale and internally inconsistent.
+- **ACS publishes place-level data for "New York city, New York"** (`1600000US3651000`),
+  tables B08301 and S0801, 2024 1-Year. There is no need to aggregate the five counties,
+  and claims that no city-level Census geography exists are false.
+- **Congestion pricing:** Judge Liman issued a **final ruling in *MTA v. Duffy* on 3 March
+  2026**. Any dossier describing that litigation as pending is stale.
+- **The global lens is systematically over-scored by the research layer.** Four of the six
+  reviewed dimensions had a confident-looking global level resting on no quantity, and all
+  four were moved to `null` under R2. Assume a global level is wrong until a quantified
+  transmission channel is produced.

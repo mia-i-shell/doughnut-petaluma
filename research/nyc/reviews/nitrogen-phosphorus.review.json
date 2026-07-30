@@ -1,0 +1,230 @@
+{
+  "dimension": "nitrogen & phosphorus loading",
+  "overallVerdict": "sound-with-corrections",
+  "confidenceInDossier": "medium",
+  "findings": [
+    {
+      "severity": "major",
+      "category": "severity-unsupported",
+      "claim": "the city has missed its first two green-infrastructure milestones (1.5% by 2015, 4% by 2020, against a 2030 goal) ... the green infrastructure program, which the city is currently behind schedule on",
+      "verdict": "CORRECTED",
+      "whatIFound": "Half right, half stale, and the stale half is load-bearing for the level. The 2023 CSO Order modification (DEC Case No. CO2-20230228-38, effective 29 June 2023) states verbatim that 'Respondents failed to achieve the 4% application rate by December 2020' and describes 'challenges in attaining the 1.5% application rate' — so the historical misses are real. BUT that order REPLACED the impervious-acre application-rate milestones with CSO-volume-reduction and funding-encumbrance milestones (revised Appendix A, Section XIV: 668 MGY / $1.4B encumbered by Dec 2025; 700-800 MGY / $1.8B by Dec 2030; 850-1,220 MGY / $2.8B by Dec 2035; 1,670 MGY / $3.5B encumbered by Dec 2040; $3.5B expended by Dec 2045). DEP's certification letter of 30 December 2025 certifies exactly 668 MGY of cumulative CSO volume reduction and $1.4B encumbered — i.e. the Dec 2025 milestone was met, on time, at the number. DEP is therefore NOT currently behind schedule on the binding milestone. What IS behind is the physical buildout: Attachment 1 of the same certification totals 2,062.0 green/managed acres, against ~8,000 acres for the 10%-of-impervious 2030 goal (~26% of the way, ~2.6% application rate). Also, the Q1 2026 quarterly report (30 Apr 2026) shows DEC had commented on the certification in Jan-Mar 2026 and had not yet accepted it.",
+      "correction": "State both: the 1.5%/2015 and 4%/2020 application-rate milestones were missed (confirmed in the 2023 Order's own recitals), the 2023 Order replaced them with volume+dollar milestones, and DEP certified the Dec 2025 milestone (668 MGY, $1.4B) complete on 30 Dec 2025 — DEC review still open as of Q1 2026. Greened/managed acres stand at 2,062 of ~8,000.",
+      "sourceUrl": "https://www.nyc.gov/assets/dep/downloads/pdf/water/stormwater/green-infrastructure/2025-green-infrastructure-milestone-certification.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "fabrication",
+      "claim": "Flushing Bay (Queens) is slated for a 28-million-gallon CSO storage tank plus 15 million gallons of in-system storage, still in design/construction as of the 2026 Q1 CSO quarterly report.",
+      "verdict": "REFUTED",
+      "whatIFound": "Neither number is right and the structure type is wrong. DEP's own public meeting deck of 16 December 2025 ('Flushing Bay CSO/Flood Storage Tunnel Project — LTCP Consent Order Modification Update'): the DEC-approved 2017 LTCP requires a 25 million gallon CSO storage TUNNEL capturing outfalls BB-006 and BB-008. The 2025 proposed modification is 6.5 MG of IN-LINE storage (Phase 1) plus increasing tunnel storage from 25 MG to 40 MG (Phase 2), on a revised alignment. Schedule: in-line storage design NTP Q4 2027, construction complete Q2 2037; tunnel design NTP Q1 2032, construction complete Q4 2053. Cost: $326M (in-line) + $3.098B (tunnel) = $3.424B, against $683M in the 2016 LTCP. The 2023 CER version had already slipped construction completion to February 2051 at $2.4B. DEP submitted the modification request 31 Dec 2025; per the Q1 2026 report it is under DEC review, and DEP told DEC it needs guidance before end of May 2026 to proceed. Nothing is 'in construction'.",
+      "correction": "Flushing Bay: DEC-approved 25 MG CSO storage tunnel; DEP's Dec 2025 proposed modification is 6.5 MG in-line storage + a 40 MG tunnel, $3.42B total, in-line storage complete Q2 2037 and tunnel complete Q4 2053; modification request submitted 31 Dec 2025, under DEC review as of Q1 2026 with nothing yet in construction.",
+      "sourceUrl": "https://www.nyc.gov/assets/dep/downloads/pdf/water/nyc-waterways/flushing-bay/flushing-bay-ltcp-cso-tunnel-public-meeting-12-16-2025.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "internal-inconsistency",
+      "claim": "the four Jamaica Bay WRRFs ... cut nitrogen loading to Jamaica Bay from a historic ~54,000 lbs/day to a currently reported ~18,000-20,000 lbs/day",
+      "verdict": "REFUTED",
+      "whatIFound": "The ~54,000 lbs/day baseline is not supportable. NYC DEP's own press release of 7 February 2012 states that 'in early 2010, approximately 40,000 pounds of nitrogen were being discharged into the bay every day' and that the 2010 agreement would 'reduce nitrogen discharges into Jamaica Bay by more than 50% over 10 years'. The dossier also contradicts itself: its Brooklyn entry repeats DEP's statement that the 26th Ward carbon-addition facility cut >3,000 lbs/day equal to 'nearly 10% of total' bay loading, which implies a total near 30,000-35,000 lbs/day at that time, not 18,000-20,000.",
+      "correction": "Baseline is ~40,000 lbs/day in early 2010 (DEP), against a >50%-in-10-years target; drop the ~54,000 figure entirely.",
+      "sourceUrl": "https://www.nyc.gov/html/dep/html/press_releases/12-10pr.shtml"
+    },
+    {
+      "severity": "major",
+      "category": "fabrication",
+      "claim": "[self-flagged weakest claim] the Jamaica Bay 'current ~18,000-20,000 lbs/day' nitrogen figure comes from community/NGO reporting (Rockaway Wave, NRDC), not a dated primary DEP monitoring report",
+      "verdict": "CORRECTED",
+      "whatIFound": "Now sourced primarily, and the community figure turns out to be very close. EPA ECHO effluent-chart DMR data (parameter 00600, Nitrogen total as N; Effluent Gross; monthly-average quantity, lb/d) for CY2025, mean of the 12 reported monthly averages: 26th Ward (NY0026212) 2,617; Coney Island (NY0026182) 8,108; Jamaica (NY0026115) 5,158; Rockaway (NY0026221) 1,242. Four-plant total ~17,125 lbs/day. Against DEP's 2010 baseline of ~40,000 lbs/day that is a ~57% reduction, i.e. the >50% consent-agreement target has been met. Confidence on this sub-indicator can be raised; the arithmetic (summing four plants, averaging 12 monthly values) is mine and must be labelled as reviewer-derived from primary DMRs.",
+      "correction": "~17,100 lbs/day total nitrogen from the four Jamaica Bay WRRFs, CY2025 (reviewer-computed from EPA ECHO DMRs), down ~57% from ~40,000 lbs/day in early 2010.",
+      "sourceUrl": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026212&output=JSON&parameter_code=00600&start_date=01/01/2025&end_date=12/31/2025"
+    },
+    {
+      "severity": "major",
+      "category": "stale-policy",
+      "claim": "Long Island Sound TMDL (EPA-approved 2001) requires an aggregate 58.5% reduction in human-generated nitrogen vs. a 1990 baseline ... described as 'ongoing' rather than complete",
+      "verdict": "CORRECTED",
+      "whatIFound": "The target as actually tracked is a 60% reduction from a baseline of 59,000 trade-equalized lbs/day of nitrogen, set by the 2000 TMDL. The Long Island Sound Partnership's nitrogen-loading indicator reports the combined New York + Connecticut point-source load at 18,909 lbs/day in 2025 — a 68% reduction, exceeding the 60% requirement by 8 points; the goal was first met in 2016 and has continued to decline. Connecticut alone went from 26,043 to 5,938 lbs/day. So the point-source element of the TMDL is met and beaten, not 'ongoing'. The 58.5% figure is a real number in the TMDL literature but is not the tracked point-source requirement and was attached in the dossier to a '1990 baseline' I could not verify. Separately, the four East River plant names — Wards Island, Hunts Point, Bowery Bay, Tallman Island — are CONFIRMED correct (ECHO facility records: NY0026131 Ward's Island, NY0026191 Hunt's Point, NY0026158 Bowery Bay, NY0026239 Tallman Island). DEP's own most recent published percentage for those four is 'approximately 61 percent' (24 May 2018), above the dossier's '>58%'. Their CY2025 ECHO total is ~37,700 lbs/day.",
+      "correction": "TMDL requirement: 60% reduction from a 59,000 trade-equalized lbs/day baseline (2000 TMDL). Status: 18,909 lbs/day in 2025 = 68% reduction, target met and exceeded since 2016. Ecosystem targets (eelgrass extent) still lag.",
+      "sourceUrl": "https://lispartnership.org/ecosystem-target-indicators/nitrogen-loading/"
+    },
+    {
+      "severity": "major",
+      "category": "fabricated-borough-data",
+      "claim": "All five borough entries carry a WRRF nitrogen figure or a Bluebelt programme description in `value`, each with a derived `level` (-20, 30, -20, 10, -60).",
+      "verdict": "CORRECTED",
+      "whatIFound": "Two distinct R10 violations. (1) The dimension's designated headline (R6) is CSO annual discharge volume; none of the five `value` fields measures CSO volume at that borough. DEP publishes CSO volumes by waterbody/LTCP, not by borough, so the correct encoding is value: null plus a named proxy in `note`. (2) The proxies used are assigned by plant location, which is not where the load goes: Wards Island is administratively Manhattan/Randall's Island but discharges to the upper East River bordering Queens and the Bronx; 26th Ward and Coney Island discharge to Jamaica Bay, which borders both Brooklyn and Queens; Newtown Creek WRRF (Brooklyn) discharges to the East River. Levels derived from those proxies must be dropped. The Gowanus 659 MGY figure is real and its baseline year, which the dossier said was unstated, is the 2008 average/typical rainfall year used across all DEP LTCP modelling.",
+      "correction": "All five borough entries set to value: null, level: null, with the CY2025 ECHO WRRF total-nitrogen loads and the waterbody CSO baseline volumes carried in `note`, explicitly labelled as proxies measuring a different quantity than the headline and assigned by plant location.",
+      "sourceUrl": "https://echodata.epa.gov/echo/cwa_rest_services.get_facility_info?output=JSON&p_st=NY&p_fn=NYCDEP"
+    },
+    {
+      "severity": "major",
+      "category": "severity-unsupported",
+      "claim": "Staten Island is largely separately sewered rather than combined-sewered ... which by design avoids the CSO/nitrogen-shock-load pattern seen elsewhere [level -60]",
+      "verdict": "REFUTED",
+      "whatIFound": "Roughly half of sewered Staten Island is combined. The Port Richmond WRRF treats combined sewage from a 9,665-acre drainage area on the north shore serving about 200,000 residents; the Oakwood Beach WRRF's 10,779-acre southern drainage area (population ~245,000) is not a combined system — DEC's 2021 CSO Annual Report states 'The Oakwood Beach WRRF sewershed is not a CSS and thus has no CSO outfalls'. So by drainage acreage the split is about 47% combined / 53% separate, and by served population about 45%/55%. 'Largely separately sewered' is wrong as stated, and a level of -60 built on it is unsupported. The Bluebelt itself is real: ~10,000 acres across 16 watersheds, concentrated in the southern/eastern part of the island — i.e. inside the already-separately-sewered Oakwood Beach sewershed, which weakens rather than strengthens the causal story the dossier tells.",
+      "correction": "Staten Island is split: the Oakwood Beach sewershed (10,779 acres, ~245,000 people, southern/eastern SI) is separately sewered with no CSO outfalls; the Port Richmond sewershed (9,665 acres, ~200,000 people, north shore) is combined-sewered and does have CSO outfalls. The Bluebelt's ~10,000 acres in 16 watersheds sit within the separately-sewered south.",
+      "sourceUrl": "https://extapps.dec.ny.gov/docs/water_pdf/csoannrpt2021.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "lens-confusion",
+      "claim": "global level 65, confidence low, indicator 'NYC's embodied/consumption-based nitrogen footprint ... (no verified city-specific study found; scaled from national per-capita averages as an order-of-magnitude proxy)'; 'U.S. average per-capita nitrogen footprint is reported as roughly 30-41 kg N/person/year'",
+      "verdict": "CORRECTED",
+      "whatIFound": "R2's failure mode was present: a precise-looking 65 next to confidence 'low' with no defensible NYC quantity. There is more published material than the dossier used, and it supports a real overshoot ratio. (a) Leach et al. 2012 / N-Calculator: the US average per-capita N footprint is 41 kg N/yr, of which food production is 30 kg N/yr — so '30-41 kg' is a misreading of a total and a component as a range. (b) The Baltimore City community nitrogen footprint (Environ. Res. Lett. 2020) is 30 kg N/capita/yr, ~19,000 MT N total in 2016, 73% food production — the closest published US municipal analog and the right per-capita anchor for a dense East Coast city. (c) The US consumer PHOSPHORUS footprint is 4.4 kg P/capita/yr (Metson/Leach et al., ERL 2020) — this closes the dossier's stated 'no phosphorus figure at all' gap on the global lens. (d) The boundary: anthropogenic N fixation is ~190 Tg N/yr against a 62 Tg N/yr planetary boundary (Planetary Health Check, after Richardson et al. 2023) — a ~3.1x global overshoot. An equal-per-capita share of 62 Tg across ~8.1bn people is ~7.7 kg N/person/yr; at a Baltimore-like 30 kg or a US-average 41 kg, NYC residents sit ~3.9x to ~5.3x over that share. Still no NYC-specific study exists — that gap is real and stays flagged — but the score is now attached to quantities rather than to rhetoric.",
+      "correction": "Global lens re-anchored on published quantities: 30 kg N/capita/yr (Baltimore analog) to 41 kg N/capita/yr (US average) against a ~7.7 kg N/person/yr equal-per-capita share of the 62 Tg N/yr boundary = ~3.9-5.3x overshoot; plus 4.4 kg P/capita/yr US consumer phosphorus footprint. Level 105, confidence medium, with the downscaling arithmetic labelled reviewer-derived.",
+      "sourceUrl": "https://www.planetaryhealthcheck.org/boundary/modification-of-biogeochemical-flows/"
+    },
+    {
+      "severity": "minor",
+      "category": "fabrication",
+      "claim": "398 CSO outfalls ... 'the 398-outfall count [is] the most current published DEP/DEC figure'; sourcesFetched: DEP page gave '700 outfalls figure (superseded by DEC's 398)'",
+      "verdict": "CONFIRMED",
+      "whatIFound": "398 is confirmed as DEC's current figure ('398 CSO outfalls that discharge on average about 18 billion gallons of CSO per year', NYSDEC, both the NYC CSO program page and the statewide CSO page) and is corroborated by DEC's 2021 CSO Annual Report: 'The other 12 wastewater treatment facilities contain 400 permitted CSO outfalls' — 12 rather than 14 because Oakwood Beach has no CSO outfalls and Rockaway was redesignated a separate sanitary system in 2021. But 700 is NOT 'superseded'; it is a different count. And the legal instrument itself disagrees with both: the 2023 CSO Order (CO2-20230228-38) recites that 'Respondents discharge wastewater combined with stormwater from approximately 418 CSO outfalls within the City of New York'. Advocacy filings use 460. The number must be pinned to a definition, not just quoted.",
+      "correction": "'398 permitted CSO outfalls (NYSDEC, current; 400 in DEC's 2021 CSO Annual Report, across the 12 of 14 WRRFs that are combined-sewered)'. Note that the 2023 consent order says ~418, and that DEP's own website's 700 is a broader count of combined-sewer outfalls, not a superseded CSO-outfall count.",
+      "sourceUrl": "https://extapps.dec.ny.gov/docs/water_pdf/2023nycgiordermod.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "fabrication",
+      "claim": "~18 billion gallons/year of combined sewage discharged citywide ... year: 2025",
+      "verdict": "UNVERIFIABLE",
+      "whatIFound": "The figure is genuinely published by NYSDEC and is the right one to headline, but it carries no year and is not a 2025 measurement. DEC states it as an average with no vintage. DEP publishes no measured citywide annual CSO total — the Deputy Commissioner told the City Council on 7 May 2025 only that ~600 million gallons/year is being abated by green infrastructure, and DEP's LTCP modelling is all normalised to 'the average rainfall year of 2008'. Competing figures exist and do not reconcile: the State Comptroller's 2018 report cites 6.5 billion gallons of partially or untreated wastewater in FY2016-17; Riverkeeper's SPRTKA filings use 21 billion gallons through 460 outfalls; Save the Sound uses 27 billion gallons of untreated or undertreated sewage. Most awkwardly, DEP's own 16 Dec 2025 deck shows an 'Untreated CSO Volume Reduction' graphic labelled 5.6 BGY (Baseline CSO & GI Program, $6.2B) and 3.5 BGY (LTCP CSO Program, $8.7B), which cannot be reconciled with an 18 BGY total without DEP's underlying chart.",
+      "correction": "Keep ~18 billion gallons/year as the headline but label it a modelled typical-rainfall-year estimate published by NYSDEC with no stated vintage (DEP's LTCP baseline year is 2008), remove 'year: 2025' for the CSO component, cap confidence at medium, and add the reconciliation gap to dataGaps.",
+      "sourceUrl": "https://dec.ny.gov/environmental-protection/water/water-quality/combined-sewer-overflow"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "2023 CSO Consent Order Modification (DEC Case CO2-20110512-25, modifying CO2-20000107-8) ... spend $3.5B on green infrastructure by 2045",
+      "verdict": "CORRECTED",
+      "whatIFound": "Case number mismatched to the instrument. CO2-20110512-25 is real — it is the 2012 CSO Order, effective 8 March 2012, and it is the case number DEP's CSO quarterly progress reports are still filed under. The 2023 modification is DEC Case No. CO2-20230228-38 (Citywide Green Infrastructure), effective 29 June 2023. Also the funding commitment is two-stage: $3.5B ENCUMBERED by December 2040 and $3.5B EXPENDED by December 2045, not '$3.5B spent by 2045'. And the 1.67 BGY reduction is explicitly 'for the average rainfall year of 2008' and covers combined sewer systems only, with no credit for stormwater managed in MS4 areas.",
+      "correction": "Name it '2023 Citywide Green Infrastructure Modification, DEC Case No. CO2-20230228-38 (eff. 29 June 2023), modifying CO2-20000107-8 (2005 CSO Order); quarterly reporting filed under CO2-20110512-25 (2012 CSO Order)'. Target: 1.67 BGY CSO reduction by Dec 2040 for the 2008 average rainfall year, $3.5B encumbered by Dec 2040 / expended by Dec 2045.",
+      "sourceUrl": "https://extapps.dec.ny.gov/docs/water_pdf/2023nycgiordermod.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "stale-policy",
+      "claim": "SPRTKA: 'Ruling issued December 2023 ... I could not confirm from available sources whether any appeal was filed or resolved by mid-2026 — flagged as unconfirmed.'",
+      "verdict": "CORRECTED",
+      "whatIFound": "It was appealed and it was affirmed. Matter of Riverkeeper, Inc. v New York City Dept. of Envtl. Protection, 2026 NY Slip Op 03444 (App. Div., 2d Dept., June 2026) affirms the Supreme Court's grant of mandamus compelling DEP to promptly notify the public of discharges of untreated and partially untreated sewage, and holds that DEP's water quality advisories in their current form do not comply with SPRTKA. The direct nycourts.gov slip-opinion URL returns 403 to automated fetch, so this rests on the reported case citation and summary rather than on my reading the opinion text — treat as medium confidence. Petitioners: Pace Environmental Litigation Clinic for Riverkeeper, Save the Sound, Bronx Council for Environmental Quality, Newtown Creek Alliance, NYC Water Trail Association, NY/NJ Baykeeper, Waterkeeper Alliance.",
+      "correction": "Affirmed on appeal, App. Div. 2d Dept., 2026 NY Slip Op 03444 (June 2026); DEP's current advisories held non-compliant with SPRTKA.",
+      "sourceUrl": "https://www.nycourts.gov/reporter/current/3dseries/2026/2026_03444.shtml"
+    },
+    {
+      "severity": "minor",
+      "category": "fabrication",
+      "claim": "NYC exports its wastewater biosolids (roughly 500,000+ tons/year across all 14 WRRFs) largely to landfill and historically to out-of-state land application (Colorado, Florida, 1992-2010)",
+      "verdict": "CORRECTED",
+      "whatIFound": "The tonnage is loose and the Colorado/Florida/1992-2010 specifics are unsourceable from anything I could fetch. NEBRA (22 March 2024), reporting on DEP: 'approximately 1,300 wet tons of dewatered biosolids each day' (~475,000 wet tons/yr), and 'as of 2010, the city has been sending 100% of its biosolids to landfills'; DEP is seeking partners to divert 100% from landfill to beneficial use by 2030. Current split reported at roughly 31% beneficial use / 69% landfill, rising steadily since 2018. No NYC phosphorus-recovery programme is identified in any source I fetched, and the NEBRA piece does not mention phosphorus recovery at all — so the P-recovery angle is a legitimate framing but is unquantified and has no NYC programme behind it.",
+      "correction": "~1,300 wet tons/day (~475,000 wet tons/yr) across 14 WRRFs; ~31% beneficially used, ~69% landfilled; DEP goal of 100% landfill diversion by 2030. Drop the Colorado/Florida/1992-2010 detail. Keep phosphorus recovery as an explicitly unquantified framing with no identified NYC programme.",
+      "sourceUrl": "https://www.nebiosolids.org/nycdep-shifting-to-reuse"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "Hunts Point WRRF (Bronx): biological nitrogen removal retrofit cut nitrogen discharge from ~22,000 lbs/day to ~12,000 lbs/day (~45% reduction)",
+      "verdict": "UNVERIFIABLE",
+      "whatIFound": "I could not re-verify the City Limits article or the 22,000/12,000 pair. It is stale in any case: Hunts Point (NY0026191) averaged 6,633 lbs/day total nitrogen across CY2025 in its own DMRs, roughly half the '~12,000' the dossier presents as the post-upgrade level. The dossier's understatement of NYC's own improvement is worth noting alongside its overstatements — the errors run in both directions here.",
+      "correction": "Replace with the CY2025 ECHO figure (~6,600 lbs/day) in the borough `note`; drop the unverified 22,000-to-12,000 pair.",
+      "sourceUrl": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026191&output=JSON&parameter_code=00600&start_date=01/01/2025&end_date=12/31/2025"
+    },
+    {
+      "severity": "minor",
+      "category": "fabrication",
+      "claim": "26th Ward WRRF (Brooklyn ...): new carbon-addition facility completed ... 'recent per DEP reporting reflected in 2026 search coverage but no publication date was confirmed'",
+      "verdict": "CORRECTED",
+      "whatIFound": "It is not recent. The carbon-addition facility at 26th Ward was announced as completed in DEP's press release of 7 February 2012, at 'nearly $2 million', as part of $115 million in new investments under the 2010 agreement. Treating a 2012 completion as 2026-vintage news is exactly the staleness the brief warns about.",
+      "correction": "26th Ward carbon-addition facility completed February 2012 (~$2M), cutting >3,000 lbs/day of nitrogen, then ~10% of total bay loading.",
+      "sourceUrl": "https://www.nyc.gov/html/dep/html/press_releases/12-10pr.shtml"
+    },
+    {
+      "severity": "minor",
+      "category": "indicator-validity",
+      "claim": "dataGap: 'A single, current, citywide total for nitrogen ... across all 14 WRRFs was not found'",
+      "verdict": "CORRECTED",
+      "whatIFound": "It can be built, and I built it. EPA ECHO effluent charts return CY2025 monthly-average Effluent Gross total nitrogen (parameter 00600) for all 14 WRRFs. Means of the 12 reported monthly averages, lb/day: 26th Ward 2,617; Bowery Bay 11,642; Coney Island 8,108; Hunts Point 6,633; Jamaica 5,158; Newtown Creek 26,342; North River 19,067; Oakwood Beach 9,017; Owls Head 14,633; Port Richmond 3,550; Red Hook 4,801; Rockaway 1,242; Tallman Island 4,892; Wards Island 14,542. Citywide total ~132,200 lb/day = ~48.3 million lb/yr = ~21,900 metric tons N/yr = ~2.6 kg N/person/yr at 8.26M residents. This is a reviewer-computed aggregate from primary DMRs; per R3 the method is stated and confidence capped at medium. Caveat: plants report on differing statistical bases (some rolling averages) and a simple unweighted mean of monthly averages is not a flow-weighted annual load.",
+      "correction": "Added as a subIndicator with method stated; the dataGap is narrowed to 'DEP/DEC publish no rolled-up citywide figure' rather than 'no citywide figure exists'.",
+      "sourceUrl": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026204&output=JSON&parameter_code=00600&start_date=01/01/2025&end_date=12/31/2025"
+    },
+    {
+      "severity": "minor",
+      "category": "stale-policy",
+      "claim": "DEP filed a Newtown Creek CSO Storage Tunnel FEIS/Notice of Completion in February 2026 ... indicating the consent order's major capital projects are actively moving through design/environmental review",
+      "verdict": "CONFIRMED",
+      "whatIFound": "Confirmed and now improvable. DEP as lead agency accepted the FEIS with a Notice of Completion issued 5 February 2026 (NYSDEC ENB, 18 Feb 2026). Since then: City Council approved the property acquisition on 26 March 2026 and ULURP completed 6 April 2026, authorising DEP to acquire the property and easements needed for construction. The 2026 Q1 CSO quarterly report (published 30 April 2026) also exists, confirming that dossier claim.",
+      "correction": "Add the 26 March 2026 Council approval and 6 April 2026 ULURP completion.",
+      "sourceUrl": "https://dec.ny.gov/news/environmental-notice-bulletin/2026-02-18/seqr/brooklyn-queens-newtown-creek-combined-sewer-overflow-cso-storage-tunnel-project"
+    },
+    {
+      "severity": "minor",
+      "category": "actions-quality",
+      "claim": "actions list; expertsForPhase2 contactPaths",
+      "verdict": "CONFIRMED",
+      "whatIFound": "Actions are NYC-specific and the named bodies are real: SPRTKA discharge notification (now court-enforced), the LTCP public review process and the ltcp@dep.nyc.gov agency mailbox, Jamaica Bay Ecowatchers, NY-NJ Harbor & Estuary Program / Hudson River Foundation, the Council's Committee on Environmental Protection, Resiliency and Waterfronts (which did in fact take CSO-reduction reporting testimony on 7 May 2025), and DEP's Biosolids Beneficial Use planning. No private individual's contact details appear in the dossier. Note for the orchestrator: DEP's 2025 GI milestone certification letter carries a named DEP official's direct desk phone and work email; I deliberately did not carry either into the corrected dossier. The last action ('reduce household use of high-phosphorus detergents') is the weakest — phosphate in household laundry and dishwasher detergent has been restricted in New York since 2010 — so I reframed it toward lawn/garden fertiliser and grease/organics, which are live.",
+      "correction": "Reworded the household-phosphorus action; all other actions retained.",
+      "sourceUrl": "https://citymeetings.nyc/meetings/new-york-city-council/2025-05-07-0100-pm-committee-on-environmental-protection-resiliency-and-waterfronts/chapter/calculation-and-reporting-of-combined-sewer-overflow-cso-reduction/"
+    },
+    {
+      "severity": "minor",
+      "category": "indicator-validity",
+      "claim": "R6 compliance: 'CSO volume is the headline, WRRF nitrogen loading is a subIndicator, and nitrogen-weighting over phosphorus is correct'",
+      "verdict": "CONFIRMED",
+      "whatIFound": "Both rulings are substantively honoured but the first is structurally blurred: the dossier's `indicator` string reads 'CSO annual discharge volume, paired with wastewater nitrogen loading', and the `value` field carries both, so a build pipeline reading the headline gets two indicators. Corrected so the indicator and value are CSO volume alone, with all nitrogen loading moved into subIndicators. Nitrogen-over-phosphorus weighting is confirmed appropriate — nitrogen is the TMDL-regulated limiting nutrient in the Sound and in Jamaica Bay, all 14 WRRFs report total N under their SPDES permits, and no NYC phosphorus TMDL or loading series surfaced — and is now less lopsided, since the global lens carries a published US consumer phosphorus footprint (4.4 kg P/capita/yr).",
+      "correction": "Indicator/value narrowed to CSO volume; nitrogen loading fully relocated to subIndicators.",
+      "sourceUrl": "https://dec.ny.gov/environmental-protection/water/cso/nyc-cso"
+    }
+  ],
+  "levelReview": {
+    "originalLevel": 40,
+    "recommendedLevel": 55,
+    "reasoning": "40 was anchored on the wrong things in both directions and has to move up, though not far. It was anchored partly on consent-order compliance — which R12 forbids as the anchor — and partly on a green-infrastructure 'behind schedule' claim that is stale (DEP certified the binding December 2025 milestone, 668 MGY and $1.4B, exactly and on time). Strip those out and what is left on the debit side is the boundary-relevant substance: ~18 billion gallons/year of untreated combined sewage into a nationally significant, eutrophication- and pathogen-sensitive estuary; a binding abatement commitment of only 1.67 BGY, roughly 9% of that load, whose deadline has already slid from 2030 to 2040 with a 2045 backstop; the Flushing Bay control tunnel now scheduled for completion in Q4 2053 at $3.42B; greened acreage at 2,062 against ~8,000 for the 10% goal; and a citywide WRRF effluent nitrogen load of ~132,200 lb/day (~21,900 t N/yr, ~2.6 kg N/person/yr), which is roughly half of per-capita excreted nitrogen — i.e. NYC removes about half the nitrogen it collects, which is real treatment but not within-safe-bounds performance. On the credit side, and this is substantial: the Long Island Sound point-source load is 68% below the TMDL baseline against a 60% requirement (18,909 lb/day, 2025), Jamaica Bay is at ~17,100 lb/day against ~40,000 in 2010 (~57%, target was >50%), and harbor-wide summer dissolved oxygen has been above the 5.0 mg/L standard every summer since the 1990s. Those are met targets on the dimension's own nutrient metrics and they must not be laundered away — but under R12 they are progress-against-statute, not proof of living within planetary means. 55 places the dimension clearly in 'needs attention' without the doom inflation that a mechanical read of the nitrogen boundary's 3.1x global overshoot would produce, and without the success laundering that 40 produced. Honest caveat the orchestrator should see: unlike climate, there is no accepted downscaled city-scale N-loading benchmark, and the boundary's control variable (intentional N fixation) is a food-system input measure whose NYC share sits almost entirely in the global lens — so this local score cannot be derived from the boundary the way climate's 75 was. Global lens moves from 65 (low confidence, no quantity) to 105: at 30-41 kg N/capita/yr against a ~7.7 kg equal-per-capita share of the 62 Tg N/yr boundary, NYC residents are ~3.9-5.3x over, which sits below climate's global 120 (5.5-6.9x) and above 100, and is now attached to published quantities rather than to directional judgement."
+  },
+  "sourcesIndependentlyFetched": [
+    {"url": "https://dec.ny.gov/environmental-protection/water/cso/nyc-cso", "fetchedOk": true, "confirms": "398 CSO outfalls, ~18 billion gallons/year, 60% combined-sewered, 1.67 BGY by 2040, $3.5B GI by 2045, 2005 order C02-20000107-8; no year attached to the 18 BGY figure"},
+    {"url": "https://dec.ny.gov/environmental-protection/water/water-quality/combined-sewer-overflow", "fetchedOk": true, "confirms": "~800 CSO outfalls statewide; NYC 398 outfalls discharging on average ~18 billion gallons/year; NYC metro ~50% of state outfalls"},
+    {"url": "https://www.nyc.gov/site/dep/water/combined-sewer-overflows.page", "fetchedOk": true, "confirms": "700 combined sewer outfalls; about 60% combined / 40% separate; no annual volume given"},
+    {"url": "https://extapps.dec.ny.gov/docs/water_pdf/2023nycgiordermod.pdf", "fetchedOk": true, "confirms": "DEC Case No. CO2-20230228-38; ~418 CSO outfalls; 14 WRRFs processing ~1.3 BGD; failure to achieve the 4% application rate by Dec 2020; 4% Contingency Plan minimum 668 MGY by Dec 2025; Appendix A milestones 668/700-800/850-1,220/1,670 MGY and Table 1 encumbrances $1.4B/$1.8B/$2.8B/$3.5B encumbered by 2040 and $3.5B expended by 2045; 1.67 BGY tied to the average rainfall year of 2008; full order history including CO2-20110512-25 as the 2012 CSO Order"},
+    {"url": "https://www.nyc.gov/assets/dep/downloads/pdf/water/stormwater/green-infrastructure/2025-green-infrastructure-milestone-certification.pdf", "fetchedOk": true, "confirms": "DEP letter 30 Dec 2025 certifying 668 MGY cumulative CSO reduction and $1.4B encumbered; Attachment 1 totals 2,062.0 green/managed acres and 680.7 MGY across 11 waterbodies; Attachment 2 totals $1,489,734,966"},
+    {"url": "https://www.nyc.gov/assets/dep/downloads/pdf/water/nyc-waterways/citywide-ltcp/2026-q1-cso-quarterly-report.pdf", "fetchedOk": true, "confirms": "Q1 2026 report published 30 Apr 2026 under DEC Case CO2-20110512-25; CSO Order modified 29 June 2023; DEC commented on the GI certification Jan-Mar 2026 and review remains open; Flushing Bay modification request submitted 31 Dec 2025 and under DEC review"},
+    {"url": "https://www.nyc.gov/assets/dep/downloads/pdf/water/nyc-waterways/flushing-bay/flushing-bay-ltcp-cso-tunnel-public-meeting-12-16-2025.pdf", "fetchedOk": true, "confirms": "Approved LTCP 25 MG tunnel; 2025 proposed modification 6.5 MG in-line storage + 40 MG tunnel; schedule Q2 2037 / Q4 2053; costs $326M + $3.098B = $3.424B vs $683M in 2016; 1999-2022 ~$1.2B to upgrade 8 plants for biological nitrogen removal; 1995-2024 ~$5.3B on CSO & GI; 2025-2050 ~$7.4B future CSO spending; 'Untreated CSO Volume Reduction' graphic showing 5.6 BGY and 3.5 BGY"},
+    {"url": "https://extapps.dec.ny.gov/docs/water_pdf/csoannrpt2021.pdf", "fetchedOk": true, "confirms": "400 permitted CSO outfalls across the 12 of 14 NYC WRRFs that are combined-sewered; Oakwood Beach sewershed is not a CSS and has no CSO outfalls; Rockaway redesignated SSS in 2021; LTCP approval list and dates"},
+    {"url": "https://www.nyc.gov/html/dep/html/press_releases/12-10pr.shtml", "fetchedOk": true, "confirms": "7 Feb 2012: ~40,000 lbs/day of nitrogen to Jamaica Bay in early 2010; target >50% reduction over 10 years; 26th Ward carbon-addition facility completed, >3,000 lbs/day or nearly 10% of total; ~$2M facility within $115M total investments"},
+    {"url": "https://www.nyc.gov/html/dep/html/press_releases/18-054pr.shtml", "fetchedOk": true, "confirms": "24 May 2018: East River plant combined nitrogen discharges reduced by approximately 61 percent; Rockaway removes ~45% of nitrogen; $23M Rockaway upgrade; $460M already completed at Jamaica and 26th Ward"},
+    {"url": "https://echodata.epa.gov/echo/cwa_rest_services.get_facility_info?output=JSON&p_st=NY&p_fn=NYCDEP", "fetchedOk": true, "confirms": "NPDES IDs for all 14 NYC WRRFs, confirming the four East River and four Jamaica Bay plant names"},
+    {"url": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026212&output=JSON&parameter_code=00600&start_date=01/01/2025&end_date=12/31/2025", "fetchedOk": true, "confirms": "26th Ward CY2025 monthly-average total N, Effluent Gross: 2,000-3,600 lb/d, mean 2,617"},
+    {"url": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026182&output=JSON&parameter_code=00600&start_date=01/01/2024&end_date=12/31/2025", "fetchedOk": true, "confirms": "Coney Island CY2025 mean 8,108 lb/d total N"},
+    {"url": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026115&output=JSON&parameter_code=00600&start_date=01/01/2024&end_date=12/31/2025", "fetchedOk": true, "confirms": "Jamaica CY2025 mean 5,158 lb/d total N"},
+    {"url": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026221&output=JSON&parameter_code=00600&start_date=01/01/2024&end_date=12/31/2025", "fetchedOk": true, "confirms": "Rockaway CY2025 mean 1,242 lb/d total N"},
+    {"url": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026131&output=JSON&parameter_code=00600&start_date=01/01/2025&end_date=12/31/2025", "fetchedOk": true, "confirms": "Wards Island CY2025 mean 14,542 lb/d total N"},
+    {"url": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026191&output=JSON&parameter_code=00600&start_date=01/01/2025&end_date=12/31/2025", "fetchedOk": true, "confirms": "Hunts Point CY2025 mean 6,633 lb/d total N"},
+    {"url": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026158&output=JSON&parameter_code=00600&start_date=01/01/2025&end_date=12/31/2025", "fetchedOk": true, "confirms": "Bowery Bay CY2025 mean 11,642 lb/d total N"},
+    {"url": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026239&output=JSON&parameter_code=00600&start_date=01/01/2025&end_date=12/31/2025", "fetchedOk": true, "confirms": "Tallman Island CY2025 mean 4,892 lb/d total N"},
+    {"url": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026204&output=JSON&parameter_code=00600&start_date=01/01/2025&end_date=12/31/2025", "fetchedOk": true, "confirms": "Newtown Creek CY2025 mean 26,342 lb/d total N — the largest single WRRF nitrogen load in the city"},
+    {"url": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026247&output=JSON&parameter_code=00600&start_date=01/01/2025&end_date=12/31/2025", "fetchedOk": true, "confirms": "North River CY2025 mean 19,067 lb/d total N"},
+    {"url": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026166&output=JSON&parameter_code=00600&start_date=01/01/2025&end_date=12/31/2025", "fetchedOk": true, "confirms": "Owls Head CY2025 mean 14,633 lb/d total N"},
+    {"url": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026174&output=JSON&parameter_code=00600&start_date=01/01/2025&end_date=12/31/2025", "fetchedOk": true, "confirms": "Oakwood Beach CY2025 mean 9,017 lb/d total N"},
+    {"url": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0026107&output=JSON&parameter_code=00600&start_date=01/01/2025&end_date=12/31/2025", "fetchedOk": true, "confirms": "Port Richmond CY2025 mean 3,550 lb/d total N"},
+    {"url": "https://echodata.epa.gov/echo/eff_rest_services.get_effluent_chart?p_id=NY0027073&output=JSON&parameter_code=00600&start_date=01/01/2025&end_date=12/31/2025", "fetchedOk": true, "confirms": "Red Hook CY2025 mean 4,801 lb/d total N"},
+    {"url": "https://echodata.epa.gov/echo/dfr_rest_services.get_dfr?output=JSON&p_id=NY0026212", "fetchedOk": true, "confirms": "26th Ward in Significant/Category I Noncompliance; 9 quarters SNC; copper, TSS, silver and whole-effluent-toxicity exceedances; $17,762 in penalties; permit expires 30 June 2027"},
+    {"url": "https://lispartnership.org/ecosystem-target-indicators/nitrogen-loading/", "fetchedOk": true, "confirms": "2000 TMDL goal of 60% reduction from 59,000 trade-equalized lb/day; 2025 NY+CT point-source load 18,909 lb/day = 68% reduction; Connecticut 26,043 to 5,938 lb/day"},
+    {"url": "https://neiwpcc.org/our-programs/pollution-control/lis-tmdl/", "fetchedOk": true, "confirms": "58.5% reduction language appears in TMDL summaries; hypoxia area and volume trending down; further reductions in progress; LINAP launched 2015"},
+    {"url": "https://www.planetaryhealthcheck.org/boundary/modification-of-biogeochemical-flows/", "fetchedOk": true, "confirms": "N fixation ~190 Tg N/yr against a 62 Tg N/yr boundary; regional P flow ~18.2 Tg P/yr against 6.2 Tg P/yr; both substantially exceeded; data through 2022"},
+    {"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9389546/", "fetchedOk": true, "confirms": "US consumer phosphorus footprint 4.4 kg P/capita/yr; 22.4 kg N/capita/yr for the food portion; ~5.2 kg N released per kg P"},
+    {"url": "https://iopscience.iop.org/article/10.1088/1748-9326/ab76dc", "fetchedOk": true, "confirms": "Baltimore City community N footprint: 30 kg N/capita/yr, ~19,000 MT N in 2016, 73% food production, geographic variability across census block groups"},
+    {"url": "https://www.nebiosolids.org/nycdep-shifting-to-reuse", "fetchedOk": true, "confirms": "22 Mar 2024: ~1,300 wet tons/day of dewatered biosolids; 100% landfilled as of 2010; 100% diversion-to-beneficial-use goal by 2030; no phosphorus recovery mentioned"},
+    {"url": "https://www.nyc.gov/assets/dep/downloads/pdf/water/wastewater/state-of-the-sewers-2024.pdf", "fetchedOk": true, "confirms": "7,500 miles of sewers; ~1.3 billion gallons/day to 14 WRRFs; approximately 60% of the sewer system is combined"},
+    {"url": "https://citymeetings.nyc/meetings/new-york-city-council/2025-05-07-0100-pm-committee-on-environmental-protection-resiliency-and-waterfronts/chapter/calculation-and-reporting-of-combined-sewer-overflow-cso-reduction/", "fetchedOk": true, "confirms": "7 May 2025 Council hearing: DEP Deputy Commissioner Licata states ~600 million gallons/year now abated by green infrastructure; 'volume managed' equals 'CSO abated'; annual report issued 30 April; data not on NYC Open Data"},
+    {"url": "https://www.osc.ny.gov/press/releases/2018/05/dinapoli-contamination-new-yorks-waterways-combined-sewer-overflows-remains-challenge", "fetchedOk": true, "confirms": "6.5 billion gallons of partially or untreated wastewater in FY2016-17; NYC responsible for about half of the 807 statewide CSO outfalls"},
+    {"url": "https://dec.ny.gov/news/environmental-notice-bulletin/2026-02-18/seqr/brooklyn-queens-newtown-creek-combined-sewer-overflow-cso-storage-tunnel-project", "fetchedOk": true, "confirms": "Newtown Creek CSO Storage Tunnel FEIS Notice of Completion issued 5 February 2026; Council property approval 26 Mar 2026; ULURP complete 6 Apr 2026"},
+    {"url": "https://www.nyc.gov/site/dep/water/citywide-long-term-control-plan.page", "fetchedOk": true, "confirms": "10 waterbody-specific LTCPs plus 1 citywide LTCP; no Staten Island waterbody LTCP; contact ltcp@dep.nyc.gov"},
+    {"url": "https://www.nycourts.gov/reporter/current/3dseries/2026/2026_03444.shtml", "fetchedOk": false, "confirms": "403 Forbidden to automated fetch; case citation and holding confirmed only via reported summaries — Matter of Riverkeeper v NYC DEP, 2026 NY Slip Op 03444, App. Div. 2d Dept., affirming mandamus and holding DEP's current advisories non-compliant with SPRTKA"},
+    {"url": "https://a816-dohbesp.nyc.gov/IndicatorPublic/data-explorer/waterways/?id=2427", "fetchedOk": false, "confirms": "Not directly fetchable; the portal's dissolved-oxygen wording ('since the 1990s, the annual summer average for surface and bottom water dissolved oxygen levels of open water sites have been above New York State standards') confirmed only via indexed search text, so the DO subIndicator stays at medium confidence"}
+  ],
+  "questionsForOrchestrator": [
+    "There is no accepted downscaled city-scale nitrogen-loading benchmark, and the planetary boundary's control variable (intentional N fixation, ~190 Tg vs a 62 Tg boundary) is a food-system input measure whose NYC share sits almost entirely in the consumption/global lens. That means R12 cannot be applied mechanically to the LOCAL score here the way it was for climate. I anchored local 55 on the unabated share of the CSO load (1.67 BGY committed against ~18 BGY discharged) plus a ~50% citywide nitrogen removal efficiency, moderated by met nutrient targets. Confirm that this is the convention you want, or supply a portrait-wide local N/P benchmark so all portraits use the same anchor.",
+    "Under R6 the headline is CSO volume, and under R10 borough values must measure the headline — so all five boroughs correctly go to value: null. That leaves this dimension with 0 of 5 real borough values, while I now hold genuine dated per-plant CY2025 nitrogen loads for all 14 WRRFs. Do you want a `boroughs` block on the WRRF-nitrogen subIndicator (the R7 pattern of carrying a figure on the lens or indicator it actually belongs to), so the borough portraits can surface a real labelled number instead of only a note?",
+    "The citywide WRRF nitrogen total (~132,200 lb/day, ~21,900 t N/yr) is mine, computed from ECHO DMRs across 14 permits. Per R3 I labelled the method and capped confidence at medium. Confirm you want a reviewer-derived aggregate carried in the dossier at all, rather than left in dataGaps as an un-built figure with DEP named as the holder.",
+    "DEP's 16 Dec 2025 presentation shows an 'Untreated CSO Volume Reduction' graphic with 5.6 BGY against the Baseline CSO & GI Program ($6.2B) and 3.5 BGY against the LTCP CSO Program ($8.7B). I could not reconcile those with the 18 BGY headline from the extracted slide text alone, and I did not want to guess at a chart I cannot see. Someone with the slide images should resolve whether 18 BGY is a pre-programme baseline or a current modelled volume, because it determines whether the headline overstates today's discharge."
+  ]
+}

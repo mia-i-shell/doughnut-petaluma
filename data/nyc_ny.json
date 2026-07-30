@@ -880,247 +880,283 @@
     {
       "name": "mobility",
       "lens": "local-social",
-      "level": -45,
-      "levelRationale": "ORCHESTRATOR OVERRIDE (ruling R1), applied because this dimension's adversarial review did not complete. Drive-alone share of 20.6% against a <50% target argues for roughly -85 on the headline indicator alone. Adjusted to -45 because the same dimension contains four material, separately-sourced shortfalls: subway ADA inaccessibility with a 2055 compliance deadline; traffic fatalities at post-Vision-Zero highs; bus speeds around 8 mph; and Fair Fares enrolling well below its eligible population. NYC remains clearly inside the safe space on mobility — it is not 'solved'. Original research level was -85. This adjustment is an orchestrator judgement, NOT an independent verification: the underlying figures have not been re-fetched by a second agent.",
+      "level": -65,
+      "levelRationale": "Anchored on the published headline: 20.6% of NYC workers drove alone to work (ACS 2024 1-Year, place-level), against the shared <50% threshold used in the Petaluma portrait. At 41% of the threshold this argues for roughly -85 on the headline alone. Moved up ~20 points under R1 for two material, independently verified structural failures inside the same dimension: (1) SUBWAY ACCESSIBILITY -- only 160 of 472 stations (33.9%) have stair-free access per MTA's own July 2026 count, leaving ~66% inaccessible, with the court-approved compliance horizon set at 2055; (2) BUS SPEEDS -- 8.17 mph citywide in 2024, DOWN 0.6% from 8.22 mph in 2015 and far short of the City's own 25%-improvement goal, with Manhattan at 6.29 mph. Also pulling up, though less: mean commute time of 40.6 minutes, among the longest of any large US city; Staten Island at 50.8% is the one borough above the threshold; Fair Fares enrolls only 41% of its ~940,000 eligible population; and NYC DOT has missed its Local Law 195 bus- and bike-lane mileage mandates every recent year. NOT moved further up, for three reasons independently verified in adversarial review: (a) TRAFFIC SAFETY IS A STRENGTH, NOT A SHORTFALL -- 2025 recorded 205 traffic deaths, the fewest since record-keeping began in 1910, down 19% year-on-year and 31% since Vision Zero launched in 2014, with Q1 2026 the third-lowest on record; an earlier version of this rationale asserted fatalities were at post-Vision-Zero highs, which primary NYC DOT sources refute; (b) the Fair Fares gap is smaller than previously stated (41% of ~940,000, not 37% of 1.4M) and is closing, with the income ceiling raised to 150% FPL and a further expansion to 200% FPL agreed in June 2026; (c) congestion pricing is operating, legally secure following Judge Liman's final ruling of 3 March 2026 in Metropolitan Transportation Authority v. Duffy, and delivering measured reductions (11% fewer vehicle entries, 27 million fewer entries in year one). Per R5, a strongly negative level is the correct and honest result for NYC mobility mode share and has not been nudged toward zero.",
       "indicator": "Percent of workers 16+ who drove alone to work",
-      "value": "20.6% citywide (840,263 of 4,070,607 workers) drove alone in 2024. If the worked-from-home population is excluded from the denominator (i.e. measuring mode share only among people who actually commute anywhere), drove-alone share rises to 23.6% (840,263 of 3,560,755 commuting workers). Citywide, 12.5% of all workers worked from home, 48.7% used public transit, 9.6% walked, and 4.4% carpooled. By borough, drove-alone ranges from 5.2% in Manhattan to 50.8% in Staten Island -- a ~46-point spread within one city.",
+      "value": "20.6% citywide (840,263 of 4,070,607 workers 16+) drove alone in 2024 -- the officially published figure for the Census place 'New York city, New York'. Full published mode share: 48.7% public transportation, 12.5% worked from home, 9.6% walked, 4.4% carpooled, 1.7% bicycle, 1.2% other, 1.1% taxicab, 0.2% motorcycle. Only 25.1% of workers used a car, truck or van at all. DENOMINATOR NOTE: the ACS universe for this table is all workers 16+ INCLUDING those who worked from home, which is the same basis as Petaluma's 72.6% and therefore the correct comparison. If the work-from-home population is excluded from the denominator (i.e. mode share among people who actually travel to work), drove-alone rises to 23.6% (840,263 of 3,560,755). Both figures are stated because the 12.5% work-from-home share materially affects the percentage. By borough, drove-alone ranges from 5.2% in Manhattan to 50.8% in Staten Island -- a ~46-point spread within one city.",
       "year": 2024,
-      "target": "No official NYC target exists for this exact metric; using the same informal <50% drive-alone threshold applied in the Petaluma portrait for direct comparability. NYC's own binding mode-shift commitments are structural rather than numeric (NYC Streets Plan / Local Law 195 of 2019 mandates minimum annual bus- and bike-lane mileage; City of Yes and PlaNYC 2023 set car-lite land-use and TOD goals).",
-      "context": "This is the dimension where NYC and Petaluma diverge most sharply: Petaluma's 72.6% drive-alone rate vs. NYC's 20.6% reflects two fundamentally different built environments -- a car-dependent small city vs. a transit-first megacity with the country's only subway system running 24/7. But a low drive-alone rate does not mean NYC's mobility system is healthy: only a minority of subway stations are wheelchair accessible, buses are the slowest of any major US city, mean commute times are among the longest in the country, and 2021-2024 were some of the deadliest years for traffic violence since Vision Zero began (2025 was a record-setting exception -- see subIndicators). The policy lever with the most 2025-2026 momentum is congestion pricing (Central Business District Tolling Program), which is reshaping the denominator itself by pulling trips out of cars. Caveat: NYC's ACS geographies are the 5 counties/boroughs; there is no single Census file labeled 'New York City,' so the citywide figure here is a worker-weighted aggregate the author calculated from the 5 published county totals (component figures are primary-sourced; the aggregation step is the author's).",
-      "source": "U.S. Census Bureau, American Community Survey 2024 1-Year Estimates, Table B08301 (Means of Transportation to Work), retrieved via the Census Reporter API mirror of the Census Bureau API",
-      "sourceUrl": "https://api.censusreporter.org/1.0/data/show/latest?table_ids=B08301&geo_ids=05000US36061,05000US36047,05000US36005,05000US36081,05000US36085",
+      "target": "No official NYC target exists for this exact metric; using the same informal <50% drive-alone threshold applied in the Petaluma portrait for direct comparability (R4). NYC's own binding mode-shift commitments are structural rather than numeric (NYC Streets Plan / Local Law 195 of 2019 mandates minimum annual bus- and bike-lane mileage; City of Yes and PlaNYC 2023 set car-lite land-use and TOD goals).",
+      "context": "This is the dimension where NYC and Petaluma diverge most sharply: Petaluma's 72.6% drive-alone rate vs. NYC's 20.6% reflects two fundamentally different built environments -- a car-dependent small city vs. a transit-first megacity with the country's only 24/7 subway system. But a low drive-alone rate does not mean NYC's mobility system is healthy. Two failures are severe and well-evidenced: only about a third of subway stations (160 of 472) offer stair-free access, with the court-approved compliance horizon at 2055; and bus speeds have not improved in a decade, running at 8.17 mph citywide and 6.29 mph in Manhattan against the City's own goal of a 25% improvement. Mean commute time, 40.6 minutes, is among the longest of any large US city. Traffic safety, by contrast, is now a genuine strength: 2025 was the safest year in recorded NYC history (205 deaths, down 31% since Vision Zero began in 2014), and the first quarter of 2026 was the third-safest on record. The policy lever with the most momentum is congestion pricing (Central Business District Tolling Program), which is reshaping the denominator itself by pulling trips out of cars, and which survived the federal attempt to terminate it with a final court ruling in the MTA's favour in March 2026. NOTE on a claim removed in review: the widely-repeated assertion that NYC buses are 'the slowest of any major US city' is not supported by the NYC Comptroller report usually cited for it and could not be sourced to a primary comparative dataset, so it is not asserted here; what the source does support is a decade of stagnation against the City's own target.",
+      "source": "U.S. Census Bureau, American Community Survey 2024 1-Year Estimates, Table B08301 (Means of Transportation to Work) and Subject Table S0801 (Commuting Characteristics by Sex), for the place 'New York city, New York' (1600000US3651000), retrieved from the official Census / data.census.gov API",
+      "sourceUrl": "https://data.census.gov/api/access/data/table?g=1600000US3651000&y=2024&tid=ACSST1Y2024.S0801",
       "screenshot": null,
       "confidence": "high",
-      "geographicScale": "borough",
+      "geographicScale": "city",
       "actions": [
-        "Apply for Fair Fares NYC through ACCESS HRA if household income is at or below 145-150% of the Federal Poverty Level -- only ~37% of the ~1.4 million eligible New Yorkers are currently enrolled (nyc.gov/site/hra/help/fair-fares.page).",
-        "Submit testimony or comment to NYC DOT / City Council on Streets Plan (LL195) compliance, since the agency has missed its statutory annual bus- and bike-lane mileage mandates every recent year.",
-        "Track and comment on the Interborough Express (IBX) scoping/environmental review process through MTA's project page as it moves toward a Draft Environmental Impact Statement in Fall/Winter 2026 (mta.info/project/interborough-express).",
-        "Support or monitor the MTA subway accessibility capital program (2025-2029, $7.1B) -- advocacy groups like the Center for Independence of the Disabled NY track compliance with the 2023 settlement's interim milestones.",
-        "Use and provide feedback on Vision Zero infrastructure (20 mph zones under Sammy's Law, open streets, protected bike/bus lanes) via NYC DOT's public engagement channels (nyc.gov/visionzero).",
-        "Follow congestion pricing's ongoing legal and toll-schedule developments (toll rises to $12 in 2028, $15 in 2031) via MTA's Congestion Relief Zone page, since revenue is earmarked for accessibility and capital transit improvements citywide."
+        "Apply for Fair Fares NYC through ACCESS HRA if household income is at or below 150% of the Federal Poverty Level (rising to 200% FPL in fall 2026) and you are aged 18-64 -- only about 41% of the ~940,000 currently eligible New Yorkers are enrolled (nyc.gov/site/hra/help/fair-fares.page).",
+        "Submit testimony or comment to NYC DOT / City Council on Streets Plan (LL195) compliance, since the agency has missed its statutory annual bus- and bike-lane mileage mandates every recent year measured.",
+        "Track and comment on the Interborough Express (IBX) scoping and environmental review through MTA's project page as it moves toward a Draft Environmental Impact Statement (mta.info/project/interborough-express).",
+        "Support or monitor the MTA subway accessibility capital program (2025-2029, $7.1B) -- the Center for Independence of the Disabled, New York, lead plaintiff in the settlement, tracks compliance with the interim milestones; 160 of 472 stations are accessible today against a 2055 deadline.",
+        "Press for faster bus service through the MTA/DOT bus priority programme (busways, camera-enforced bus lanes, all-door boarding), since citywide bus speeds have not improved in a decade (8.17 mph in 2024 vs 8.22 in 2015) against the City's own 25%-improvement goal.",
+        "Use and provide feedback on Vision Zero infrastructure (20 mph zones under Sammy's Law, open streets, protected bike and bus lanes) via NYC DOT's public engagement channels (nyc.gov/visionzero).",
+        "Follow congestion pricing's toll-schedule developments (rising to $12 in 2028 and $15 in 2031) via MTA's Congestion Relief Zone page, and check eligibility for the Low-Income Discount Plan, which halves the peak toll from the 11th trip in a calendar month."
       ],
       "reviewStatus": {
-        "state": "draft",
-        "reviewedLevel": -45,
-        "notes": "DRAFT severity — not yet adversarially reviewed or expert-validated."
+        "state": "adversarially-reviewed",
+        "reviewedLevel": -65,
+        "notes": "Corrections from an independent adversarial review applied."
       },
       "productionVsConsumption": "not-applicable",
       "productionVsConsumptionNote": "not applicable (social indicator)",
       "boroughs": {
         "bronx": {
-          "value": "23.1% drove alone (129,307 of 560,522 workers); mean travel time to work 43.3 min (+-0.9)",
+          "value": "23.1% drove alone (129,307 of 560,522 workers 16+); mean travel time to work 43.3 min (+-0.9)",
           "level": -70,
           "year": 2024,
-          "source": "US Census Bureau ACS 2024 1-Year, Table B08301 / Census Reporter profile, Bronx County NY",
-          "sourceUrl": "https://censusreporter.org/profiles/05000US36005-bronx-county-ny/",
+          "source": "US Census Bureau ACS 2024 1-Year, Tables B08301 and S0801, Bronx County, New York",
+          "sourceUrl": "https://data.census.gov/api/access/data/table?g=0500000US36005&y=2024&tid=ACSDT1Y2024.B08301",
           "confidence": "high"
         },
         "brooklyn": {
-          "value": "17.0% drove alone (211,612 of 1,247,694 workers); mean travel time to work 41.7 min (+-0.4)",
+          "value": "17.0% drove alone (211,612 of 1,247,694 workers 16+); mean travel time to work 41.7 min (+-0.5)",
           "level": -90,
           "year": 2024,
-          "source": "US Census Bureau ACS 2024 1-Year, Table B08301 / Census Reporter profile, Kings County NY",
-          "sourceUrl": "https://censusreporter.org/profiles/05000US36047-kings-county-ny/",
+          "source": "US Census Bureau ACS 2024 1-Year, Tables B08301 and S0801, Kings County, New York",
+          "sourceUrl": "https://data.census.gov/api/access/data/table?g=0500000US36047&y=2024&tid=ACSDT1Y2024.B08301",
           "confidence": "high"
         },
         "manhattan": {
-          "value": "5.2% drove alone (47,452 of 914,910 workers); mean travel time to work 31.5 min (+-0.4) -- shortest of the 5 boroughs",
+          "value": "5.2% drove alone (47,452 of 914,910 workers 16+); mean travel time to work 31.4 min (+-0.6) -- shortest of the 5 boroughs. Also the highest work-from-home share (18.1%) and the highest walk share (18.3%).",
           "level": -100,
           "year": 2024,
-          "source": "US Census Bureau ACS 2024 1-Year, Table B08301 / Census Reporter profile, New York County NY",
-          "sourceUrl": "https://censusreporter.org/profiles/05000US36061-new-york-county-ny/",
+          "source": "US Census Bureau ACS 2024 1-Year, Tables B08301 and S0801, New York County, New York",
+          "sourceUrl": "https://data.census.gov/api/access/data/table?g=0500000US36061&y=2024&tid=ACSDT1Y2024.B08301",
           "confidence": "high"
         },
         "queens": {
-          "value": "30.0% drove alone (334,422 of 1,116,296 workers); mean travel time to work 43.8 min (+-0.6) -- despite a lower drive-alone rate than Staten Island, Queens has the borough's largest raw number of subway-inaccessible \"transit desert\" neighborhoods",
+          "value": "30.0% drove alone (334,422 of 1,116,296 workers 16+); mean travel time to work 43.8 min (+-0.6) -- despite a lower drive-alone rate than Staten Island, Queens contains the largest number of subway-inaccessible \"transit desert\" neighborhoods (see neighborhoodNote).",
           "level": -55,
           "year": 2024,
-          "source": "US Census Bureau ACS 2024 1-Year, Table B08301 / Census Reporter profile, Queens County NY",
-          "sourceUrl": "https://censusreporter.org/profiles/05000US36081-queens-county-ny/",
+          "source": "US Census Bureau ACS 2024 1-Year, Tables B08301 and S0801, Queens County, New York",
+          "sourceUrl": "https://data.census.gov/api/access/data/table?g=0500000US36081&y=2024&tid=ACSDT1Y2024.B08301",
           "confidence": "high"
         },
         "statenIsland": {
-          "value": "50.8% drove alone (117,470 of 231,185 workers) -- the only borough over the 50% threshold; mean travel time to work 45.4 min (+-1.4), longest of the 5 boroughs",
+          "value": "50.8% drove alone (117,470 of 231,185 workers 16+) -- the only borough over the 50% threshold; also the highest carpool share (11.9%) and the lowest transit share (25.1%); mean travel time to work 45.4 min (+-1.6), longest of the 5 boroughs",
           "level": 10,
           "year": 2024,
-          "source": "US Census Bureau ACS 2024 1-Year, Table B08301 / Census Reporter profile, Richmond County NY",
-          "sourceUrl": "https://censusreporter.org/profiles/05000US36085-richmond-county-ny/",
+          "source": "US Census Bureau ACS 2024 1-Year, Tables B08301 and S0801, Richmond County, New York",
+          "sourceUrl": "https://data.census.gov/api/access/data/table?g=0500000US36085&y=2024&tid=ACSDT1Y2024.B08301",
           "confidence": "high"
         }
       },
-      "neighborhoodNote": "Northeast/eastern Queens community districts (e.g. Bay Terrace, Fresh Meadows, Glen Oaks, Oakland Gardens -- roughly CD 11) are a documented transit desert: no subway access, residents depend on express buses and the LIRR, and fewer than 4 in 10 Queens residents overall can walk to a subway station. This contrasts with Manhattan's near-universal subway proximity (5.2% drive-alone). Source: Streetsblog NYC op-ed on the Queens bus-network redesign and Metro Airport News reporting on Queens transit connectivity.",
+      "boroughsNote": "The five borough worker totals sum to exactly 4,070,607 and the five borough drove-alone counts to exactly 840,263 -- identical to the published place-level totals for New York city, New York. No borough figure is interpolated, pro-rated or derived; all five are published county estimates.",
+      "neighborhoodNote": "Bay Terrace, Fresh Meadows, Glen Oaks and Oakland Gardens in northeastern/eastern Queens are documented transit deserts: no subway access, with residents dependent on express buses and the LIRR. A Streetsblog NYC op-ed (January 2020) on the Queens bus-network redesign named these neighborhoods specifically, noting the redesign would cut them from all-day, seven-day express bus service to weekday rush hours only, even though their lack of transit alternatives is what makes the express bus a lifeline. This contrasts with Manhattan's near-universal subway proximity (5.2% drive-alone, 51.0% transit). CAVEATS ADDED IN REVIEW: an earlier version attributed these neighborhoods to 'roughly Community District 11' -- they in fact span several different Queens community districts, so no single CD is named here. An earlier version also claimed 'fewer than 4 in 10 Queens residents overall can walk to a subway station'; that statistic could not be sourced and has been removed. The nearest sourceable figure is a citywide one (more than a third of all New Yorkers do not live within walking distance of a subway or rail station), which is a different measure at a different geography. A Queens-specific subway-walkshed percentage remains a dataGap.",
       "subIndicators": [
         {
           "name": "Subway stations with ADA (stair-free) accessibility",
-          "value": "MTA's 2022/2023 class-action settlement baseline: 108 of 472 stations accessible (~23%) at time of settlement, defined as 364 of 472 then-inaccessible. Secondary reporting in 2026 puts the current count at approximately 160 of 472 stations (~34%) accessible.",
+          "value": "160 of 472 subway stations accessible (33.9%) as of July 2026 -- meaning roughly 66% of stations remain stair-inaccessible. MTA states this is 'nearly eleven times the 15 stations that were accessible when the ADA passed in 1990'. The Governor's office reported 154 accessible as of 31 December 2025 after 10 station accessibility projects completed during 2025, consistent with 160 by mid-2026. The 2022/2023 class-action settlement baseline was 364 inaccessible stations of 472, i.e. 108 accessible (~23%) at time of settlement.",
           "year": 2026,
-          "source": "MTA ADA Settlement Notice (primary, 2023 baseline); secondary 2026 station-count reporting via HelpNewYork.com/amNewYork (not independently verified against a primary MTA total)",
-          "sourceUrl": "https://www.mta.info/accessibility/ada-settlement-notice",
-          "geographicScale": "city"
+          "source": "MTA (primary), accessibility article updated 22 July 2026; MTA ADA Settlement Notice for the 2023 baseline; NY Governor's Office 31 December 2025 release for the 154 interim count",
+          "sourceUrl": "https://www.mta.info/article/accessibility-disability-pride-month-2026",
+          "geographicScale": "city",
+          "confidence": "high",
+          "reviewNote": "Upgraded from secondary reporting (HelpNewYork.com / amNewYork) to an MTA primary statement during adversarial review."
         },
         {
           "name": "MTA subway/SIR accessibility settlement commitment",
-          "value": "Settlement (Center for Independence of the Disabled NY et al. v. MTA, preliminarily approved 2023) commits MTA to at least 95% of the 472 stations having stair-free access by 2055, via interim milestones: 81 stations contracted from existing capital plans, then +85 by 2035, +90 by 2045, +90 by 2055. MTA must dedicate a minimum 14.69% of NYC Transit's capital plan (when the plan exceeds $35.389B) to accessibility, floor of 8%.",
+          "value": "Settlement commits the MTA to making at least 95% of the 364 stations that were inaccessible at the time of settlement stair-free accessible by 2055 (equivalently ~454 of 472 stations, ~96% systemwide), via interim milestones: 81 stations already contracted in the 2020-2024 or prior capital plans, then +85 by 2035, +90 by 2045, +90 by 2055 (81+85+90+90 = 346 = 95% of 364). The MTA must dedicate no less than 14.69% of the NYC Transit portion of any capital plan of $35.389B or more to station accessibility, with a floor of 8%. Consolidated cases: Center for Independence of the Disabled, New York, et al. v. MTA (NY State Supreme Court, No. 153765/2017) and De La Rosa, et al. v. MTA (S.D.N.Y., No. 19-cv-04406); fairness hearings scheduled April 2023.",
           "year": 2023,
-          "source": "MTA ADA Settlement Notice",
+          "source": "MTA ADA Settlement Notice (primary)",
           "sourceUrl": "https://www.mta.info/accessibility/ada-settlement-notice",
-          "geographicScale": "city"
+          "geographicScale": "city",
+          "confidence": "high",
+          "reviewNote": "Corrected in review: the 95% target applies to the 364 then-inaccessible stations, not to all 472 as previously stated. The milestone arithmetic (346 = 95% of 364) confirms the corrected base."
         },
         {
-          "name": "Mean travel time to work, worker-weighted citywide estimate",
-          "value": "~40.4 minutes (author's worker-count-weighted average of the 5 published county figures: Manhattan 31.5, Brooklyn 41.7, Bronx 43.3, Queens 43.8, Staten Island 45.4 -- see boroughs above). Among the longest of any large US city.",
+          "name": "Mean travel time to work",
+          "value": "40.6 minutes (+-0.3) citywide -- among the longest of any large US city. By borough: Manhattan 31.4, Brooklyn 41.7, Bronx 43.3, Queens 43.8, Staten Island 45.4.",
           "year": 2024,
-          "source": "US Census Bureau ACS 2024 1-Year Estimates via Census Reporter (component county figures primary; citywide aggregation calculated by the author, not independently published)",
-          "sourceUrl": "https://censusreporter.org/profiles/05000US36061-new-york-county-ny/",
+          "source": "US Census Bureau, ACS 2024 1-Year Estimates, Subject Table S0801 (variable S0801_C01_046), place 'New York city, New York' -- officially published at city level",
+          "sourceUrl": "https://data.census.gov/api/access/data/table?g=1600000US3651000&y=2024&tid=ACSST1Y2024.S0801",
           "geographicScale": "city",
-          "geographicScaleNote": "city (derived)"
+          "confidence": "high",
+          "reviewNote": "Replaced an author-derived worker-weighted estimate of ~40.4 minutes with the published place-level figure of 40.6, per R3. Manhattan corrected from 31.5 (+-0.4) to the published 31.4 (+-0.6)."
         },
         {
           "name": "Super-commuters (90+ minute one-way commute)",
-          "value": "Staten Island (Richmond County) has the 5th-highest super-commuter share of any US county at 14.3%; elevated super-commuting is documented across all outer boroughs, concentrated among public-transit riders (14.0% of transit commuters are super-commuters vs. 2.4% of drivers).",
+          "value": "Staten Island (Richmond County) reported as having the 5th-highest super-commuter share of any US county at 14.3%; elevated super-commuting documented across the outer boroughs and concentrated among public-transit riders (14.0% of transit commuters vs. 2.4% of drivers).",
           "year": 2023,
-          "source": "Apartment List / Stacker analysis of Census commuting microdata",
+          "source": "Apartment List / Stacker analysis of Census commuting microdata (secondary; not independently re-verified against a primary Census tabulation in this review)",
           "sourceUrl": "https://stacker.com/new-york/counties-most-super-commuters-new-york",
           "geographicScale": "borough",
+          "confidence": "low",
+          "reviewNote": "Confidence lowered to low: this rests on a third-party analysis that was not re-fetched or confirmed against a primary Census table during adversarial review.",
           "geographicScaleNote": "borough (Staten Island); citywide pattern"
         },
         {
           "name": "Average bus speed",
-          "value": "8.17 mph citywide in 2024 (down from 8.22 mph in 2015); by borough: Staten Island 12.6 mph, Queens 8.75 mph, Bronx 7.65 mph, Brooklyn 7.37 mph, Manhattan 6.29 mph (slowest). NYC buses are the slowest of any major US city; the M42 crosstown was named the single slowest route citywide at 5.25 mph.",
+          "value": "8.17 mph citywide in 2024 -- DOWN 0.6% from 8.22 mph in 2015 (8.06 in 2019), i.e. a decade of no improvement, and far short of the City's stated goal of improving bus speeds citywide by 25%. By borough (2024): Staten Island 12.6 mph, Queens 8.75, Bronx 7.65, Brooklyn 7.37, Manhattan 6.29 (slowest). Manhattan is the only borough faster in 2024 than in 2015 (+3%); Staten Island slowed most (-8%). The M42 crosstown is the single slowest route citywide at 5.27 mph (2025), and eight of the city's ten slowest routes are inside the congestion relief zone. Buses also fail to reach stops on schedule 30% of the time (37% for express buses).",
           "year": 2024,
-          "source": "NYC Comptroller, \"Behind Schedule: How New York City's Bus System Slow Rolls Riders\"",
+          "source": "NYC Comptroller, Bureau of Policy and Research, \"Behind Schedule: How New York City's Bus System Slow Rolls Riders\", April 2025 (Table 3 and Table 8), drawing on MTA bus speed data",
           "sourceUrl": "https://comptroller.nyc.gov/wp-content/uploads/documents/Behind-Schedule-Bus-Report.pdf",
           "geographicScale": "borough",
+          "confidence": "high",
+          "reviewNote": "All borough and citywide speeds confirmed digit-for-digit against Table 3 of the primary PDF. M42 corrected from 5.25 to 5.27 mph. The claim that NYC buses are 'the slowest of any major US city' was REMOVED: it appears nowhere in the cited report and could not be sourced to a primary comparative dataset.",
           "geographicScaleNote": "city and borough"
         },
         {
           "name": "Vision Zero traffic fatalities",
-          "value": "205 traffic deaths in 2025 (down 19% from 253 in 2024) -- the fewest ever recorded since record-keeping began in 1910, and down 31% since Vision Zero launched in 2014. Pedestrian deaths: 111 in 2025 vs. 122 in 2024. Total injuries down 7.7% (47,557 vs 51,540) and serious injuries down 2.8% (2,947 vs 3,031) year over year as of mid-December 2025. Note: several years between 2020-2024 were among the deadliest of the Vision Zero era before this 2025 improvement, per Vision Zero Network and Transportation Alternatives commentary.",
+          "value": "205 traffic deaths in 2025 -- the fewest ever recorded, dating back to when NYC record-keeping began in 1910, and one fewer than the previous record year (206 in 2018). Down 19% from 253 in 2024 and down 31% since Vision Zero launched in 2014. Pedestrian deaths 111 in 2025 vs. 122 in 2024 (-9%); child fatalities 6 vs. 16 (-63%); total injuries down 7.7% (47,557 vs 51,540) and serious injuries down 2.8% (2,947 vs 3,031). The improvement has continued: 42 deaths in the first three months of 2026, down 7% year-on-year and the third-fewest recorded at that point in the year since 1910 (only 2015 and 2018 were lower).",
           "year": 2025,
-          "source": "NYC DOT press release, \"Traffic Deaths Reach All-time Low\"",
+          "source": "NYC DOT press releases, \"Traffic Deaths Reach All-time Low\" (January 2026) and \"Traffic Deaths Are Near Lowest Levels in Recorded History After First Three Months of 2026\"",
           "sourceUrl": "https://www.nyc.gov/html/dot/html/pr2026/traffic-deaths-reach-all-time-low.shtml",
-          "geographicScale": "city"
+          "geographicScale": "city",
+          "confidence": "high",
+          "reviewNote": "MATERIAL CORRECTION FROM REVIEW. An earlier framing described recent years as 'among the deadliest of the Vision Zero era' and the dimension's level rationale treated traffic fatalities as a factor pushing severity upward. Primary NYC DOT sources refute that framing for the current period: 2025 is the safest year in recorded NYC history and Q1 2026 is the third-safest on record. Traffic safety is a verified STRENGTH of this dimension, not a shortfall, and is scored as such."
         },
         {
           "name": "Fair Fares NYC enrollment vs. eligibility",
-          "value": "Approximately 37% of the ~1.4 million income-eligible New Yorkers are enrolled in the half-price transit fare program. Income ceiling raised from 120% to 145% of the Federal Poverty Level effective January 2025, with a further increase to 150% FPL underway.",
-          "year": 2025,
-          "source": "NYC HRA press materials and NY1 reporting on Fair Fares enrollment gap",
-          "sourceUrl": "https://ny1.com/nyc/all-boroughs/traffic_and_transit/2025/10/15/fair-fares-half-price-fare-program-fails-those-who-most-need-it",
-          "geographicScale": "city"
+          "value": "About 385,000 of the 938,834 (~940,000) income-eligible New Yorkers are enrolled in the half-price transit fare program -- 41% of eligible, leaving 59% of eligible New Yorkers unenrolled. Eligibility is currently 150% of the Federal Poverty Level ($23,940 for a single adult, $49,500 for a household of four) for residents aged 18-64; adults 65+ and many disabled New Yorkers are excluded because they qualify for the MTA's separate Reduced-Fare program, and the Fair Fares discount does not apply to express buses. The threshold has risen from below 100% FPL at 2019 launch to 120% (2023) to 145% (2025) to 150%; in June 2026 the City Council and Mayor agreed to raise it to 200% FPL effective fall 2026, adding an estimated 342,604 newly eligible New Yorkers (total eligible rising to ~1.28 million). Earlier figure for trend: ~360,000 enrolled at end-2024 = 38% of eligible.",
+          "year": 2026,
+          "source": "NYC Independent Budget Office, \"Expanding Fair Fares: Many Options, A Range of Costs\" (June 2026), based on IBO analysis of HRA enrollment data and ACS 2024 1-Year estimates; NYC Comptroller \"Behind Schedule\" (April 2025) for the end-2024 figure; NY1 (30 June 2026) for the 200% FPL agreement",
+          "sourceUrl": "https://www.ibo.nyc.gov/assets/ibo/downloads/pdf/infrastructure/2026/2026-june-expanding-fair-fares.pdf",
+          "geographicScale": "city",
+          "confidence": "high",
+          "reviewNote": "CORRECTED IN REVIEW. The previous value ('~37% of the ~1.4 million income-eligible') was wrong on both numbers and internally impossible -- it implied ~518,000 enrollees, which no primary source supports. The 1.4 million figure is the eligible pool AFTER the future 200% FPL expansion, not the current one. The previous policy status ('145% FPL, with a further increase to 150% underway') was also stale: 150% is already in effect and 200% was agreed in June 2026. The under-enrollment shortfall is real but milder than previously stated and is closing."
         },
         {
           "name": "NYC Streets Plan (LL195) mileage shortfall",
-          "value": "DOT built 18.2 lane-miles of protected bike lanes in 2025 (36% of the 50-mile/year statutory minimum) and 13.5 lane-miles of protected bus lanes in 2024 (45% of the 30-mile/year minimum). 2024's ~29 bike-lane miles was the third-highest annual total in city history, yet still fell short of the legal mandate every year checked.",
+          "value": "DOT built 18.2 lane-miles of protected bike lanes in 2025 (36% of the 50-mile/year statutory minimum) and 13.5 lane-miles of protected bus lanes in 2024 (45% of the 30-mile/year minimum). 2024's ~29 bike-lane miles was reportedly the third-highest annual total in city history, yet still fell short of the legal mandate in every year checked.",
           "year": 2025,
-          "source": "City & State New York, \"NYC DOT falls far short of '24 targets for bike and bus lanes\"",
+          "source": "City & State New York, \"NYC DOT falls far short of '24 targets for bike and bus lanes\" (secondary; not independently re-verified against a primary DOT compliance filing in this review)",
           "sourceUrl": "https://www.cityandstateny.com/policy/2025/03/nyc-dot-falls-far-short-24-targets-bike-and-bus-lanes-touts-progress/403707/",
-          "geographicScale": "city"
+          "geographicScale": "city",
+          "confidence": "medium",
+          "reviewNote": "Not re-fetched in this review pass; confidence set to medium pending confirmation against NYC DOT's own Local Law 195 annual compliance reporting."
         },
         {
           "name": "Congestion pricing (Central Business District Tolling Program / Congestion Relief Zone)",
-          "value": "Launched January 5, 2025 at a $9 peak toll for passenger vehicles ($2.25 overnight), scheduled to rise to $12 in 2028 and $15 in 2031. First-year (through ~Nov 2025) measured effects: ~27 million fewer vehicle entries into the zone (11% average daily decline, ~71,500-73,000 fewer vehicles/day); travel-time gains at major crossings (Holland Tunnel +51% faster, Queensboro Bridge +29.3%, Lincoln Tunnel +24.7%, Brooklyn Bridge +15%); in-zone weekday vehicle speeds up 4%, weekend up 6.2%, bus speeds up 2.3%; subway trips into the zone up 9%, express bus +7.8%, local bus +8.4%; $518M net toll revenue collected through November 2025 with projections exceeding $550M by year-end against a $500M/yr target. Survived a federal termination attempt: a May 2025 preliminary injunction in MTA v. Duffy kept the program operating.",
-          "year": 2025,
-          "source": "Governor Hochul press release, first-anniversary summary of congestion pricing results; MTA press releases",
-          "sourceUrl": "https://www.governor.ny.gov/news/less-traffic-better-transit-its-first-anniversary-governor-hochul-celebrates-transformational",
+          "value": "Launched 5 January 2025 at 12:00 AM. Current toll for Class 1 passenger vehicles with E-ZPass: $9.00 peak (5am-9pm weekdays, 9am-9pm weekends) and $2.25 overnight, per the TBTA tariff, which sets Phase 1 at 2025-2027 ($9.00/$2.25), Phase 2 at 2028-2030 ($12.00/$3.00) and Phase 3 from 2031 ($15.00/$3.75). A registered Low-Income Discount Plan halves the peak toll from the 11th trip in a calendar month. First-year measured effects (through ~November 2025): ~27 million fewer vehicle entries into the zone (11% average daily decline, ~73,000 fewer vehicles/day); vehicle miles travelled down 7.1%; morning-rush travel-time gains at major crossings (Holland Tunnel 51% faster, Queensboro Bridge 29.3%, Lincoln Tunnel 24.7%, Brooklyn Bridge 15%, Manhattan Bridge 6.7%); in-zone weekday vehicle speeds up 4%, weekend 6.2%, bus speeds 2.3%, truck speeds 5.6%; subway trips into the zone up 9%, express bus up 7.8%, local bus up 8.4%; $518M net toll revenue through November 2025 against a $500M/yr target, projected to exceed $550M. LITIGATION RESOLVED IN THE CITY'S FAVOUR: in Metropolitan Transportation Authority v. Duffy (S.D.N.Y., filed 19 February 2025), Judge Lewis Liman granted the MTA a preliminary injunction in May 2025 and then, on 3 March 2026, issued a final 149-page decision holding that the federal administration lacked authority to terminate the program and that its attempted revocation of approval was arbitrary and capricious. Four other federal challenges (Chan, Mulgrew, New Yorkers Against Congestion Pricing Tax, Trucking Association) were closed on summary judgment for defendants on 17 April 2025. No court has ordered the program to halt, and it is operating.",
+          "year": 2026,
+          "source": "MTA/TBTA CBD toll tariff (primary, for toll amounts and phase years); Governor Hochul first-anniversary release and MTA press releases (for measured first-year outcomes); Regional Plan Association congestion pricing litigation tracker and reporting on the 3 March 2026 ruling (for litigation status)",
+          "sourceUrl": "https://www.mta.info/document/138931",
           "geographicScale": "city",
+          "confidence": "high",
+          "reviewNote": "Toll amounts and phase years verified against the MTA primary tariff document. Litigation status updated in review: the previous entry stopped at the May 2025 preliminary injunction and missed the 3 March 2026 final ruling, which is the materially more significant outcome. A secondary claim circulating that congestion pricing is 'suspended by executive action' in 2026 was checked and is false.",
           "geographicScaleNote": "city (Manhattan CBD zone, with regional spillover effects)"
         },
         {
           "name": "Interborough Express (IBX)",
-          "value": "Proposed 14-mile light-rail/BRT line connecting Brooklyn and Queens along an existing freight right-of-way, bypassing Manhattan; projected 160,000+ daily riders. As of 2026 the project is in design/environmental review (design phase ~2025-2027); MTA estimates it would eliminate 21.8 million vehicle-miles of car trips annually once built. No construction start date confirmed.",
+          "value": "Proposed 14-mile light-rail line connecting Brooklyn and Queens along an existing freight right-of-way, bypassing Manhattan; projected 160,000+ daily riders. As of 2026 the project is in design/environmental review; MTA estimates it would eliminate 21.8 million vehicle-miles of car trips annually once built. No construction start date confirmed.",
           "year": 2026,
-          "source": "MTA press release, Earth Day 2026 IBX vehicle-miles announcement; MTA project page",
+          "source": "MTA press release, Earth Day 2026 IBX vehicle-miles announcement; MTA project page (not independently re-verified in this review pass)",
           "sourceUrl": "https://www.mta.info/press-release/earth-day-2026-mta-calculates-interborough-express-will-eliminate-218-million-miles",
           "geographicScale": "city",
+          "confidence": "medium",
+          "reviewNote": "Not re-fetched in this review pass; confidence set to medium.",
           "geographicScaleNote": "city (Brooklyn-Queens corridor)"
         },
         {
           "name": "Sammy's Law / 20 mph speed limits",
-          "value": "State legislation (Sammy's Law, named for a child killed by a car in 2013) authorized NYC, for the first time, to lower default speed limits without state approval. NYC DOT began lowering limits from 25 to 20 mph in 2024 and completed rollout across 250 designated zones/areas by the end of 2025.",
+          "value": "State legislation (Sammy's Law, 2024) authorized NYC for the first time to lower default speed limits without separate state approval. NYC DOT began lowering limits from 25 to 20 mph in 2024 and reported completing rollout across 250 designated zones/areas by the end of 2025.",
           "year": 2025,
-          "source": "AOL/news aggregation of NYC DOT rollout reporting",
+          "source": "News aggregation of NYC DOT rollout reporting (secondary; not independently re-verified against a primary NYC DOT or NY State source in this review pass)",
           "sourceUrl": "https://www.aol.com/articles/nyc-speed-limit-drop-20-163450880.html",
-          "geographicScale": "city"
+          "geographicScale": "city",
+          "confidence": "low",
+          "reviewNote": "Confidence lowered to low: the only cited source is a news aggregator. A primary NYC DOT or NY State legislative citation is needed."
         }
       ],
       "global": {
         "lens": "global-social",
-        "level": 30,
-        "levelRationale": "NYC is a genuine global model on the positive side (a dense megacity where most people do not need a car), but its subway construction costs are the highest in the world by a wide margin, meaning NYC's own transit expansion consumes capital and technical capacity at a rate that, if replicated, would make transit unaffordable for the rest of the world -- a real global-relevance failure alongside the modeling success. Level reflects that mixed picture rather than a clean pass or fail; it is not a precisely quantifiable single score and should be treated as indicative only.",
-        "indicator": "Subway/metro construction cost per mile, benchmarked against the global average (proxy for NYC's global relevance/model status in mobility, alongside untracked aviation emissions and global road-access inequality)",
-        "value": "Second Avenue Subway Phase 2 (1.76 miles, 3 stations, connecting the Q line from 96th St to 125th St/Lexington Ave) is projected to cost approximately $7.7 billion, or roughly $4.3 billion per mile -- reported as more than 11 times the global average of ~$350 million per mile across 900+ rapid-rail projects in nearly 60 countries studied by the NYU Marron Institute's Transit Costs Project. The MTA approved a $1.972 billion tunneling contract for Phase 2 in 2025 (Connect Plus Partners/Halmar-FCC joint venture).",
-        "year": 2025,
-        "target": "No binding target exists; the informal global benchmark is the Transit Costs Project's own international average cost per mile/km, which NYC (like most large US transit projects) badly exceeds. No NYC or MTA policy currently commits to closing this cost gap, though MTA capital-planning reform has been publicly discussed.",
-        "context": "NYC's below-50%-drive-alone mode share is precisely the kind of outcome climate and transit advocates worldwide point to as proof dense transit-oriented cities work -- the city exports that model globally through comparative research (Transit Costs Project, ITDP, C40). But the same system's construction costs are a cautionary tale: at $4B+/mile, NYC cannot build enough subway to meaningfully change its own accessibility gaps (see subway accessibility subIndicator above), and the cost overrun is frequently cited internationally as a reason other cities hesitate to pursue rail-heavy strategies. Two further global-lens threads could not be quantified within this research pass: (1) JFK/LaGuardia/Newark aviation emissions are widely reported to sit outside NYC's official GPC-protocol greenhouse-gas inventory boundary (this is a mobility/climate-change cross-cutting issue), but a direct primary-source citation could not be fetched (CBC NY's explainer returned an HTTP 403 on fetch) -- flagged as a dataGap, not asserted as fact. (2) Global road-access inequality: roughly 900 million-1 billion rural people worldwide lack access to an all-season road (World Bank Rural Access Index / SDG indicator 9.1.1, originally estimated 2006), a stark contrast to NYC's 24/7 rail system -- included qualitatively as the global-equity counterpoint but not something NYC policy can directly move.",
-        "source": "Vital City NYC, \"The Transit Costs Are Too Damn High!\" (reporting NYU Marron Institute Transit Costs Project data); Engineering News-Record on the Phase 2 contract award",
-        "sourceUrl": "https://www.vitalcitynyc.org/articles/why-it-costs-4-billion-per-mile-of-subway-track",
-        "confidence": "medium",
+        "level": null,
+        "levelRationale": "Scored null per ruling R2. The only quantified material available for this lens is a comparative construction-cost benchmark, which R2 explicitly rules out as a headline global indicator: 'NYC's subway construction costs are the highest in the world' is a governance and cost-efficiency fact about NYC, not a claim about NYC's effect on anyone beyond its boundary. That figure is retained below as a subIndicator. The genuinely global-facing threads -- NYC's transferability as the one large US city whose mode share is compatible with a 1.5C-aligned per-capita transport budget, the supply chains embodied in its rolling stock and electric bus fleet, and the aviation emissions of JFK/LaGuardia/Newark that sit outside the city's GPC inventory boundary -- are all real but none is quantified for NYC in this research pass. Per R2, an honest qualitative framing with a null level and named parties who could quantify it is the correct output; attaching a precise-looking score (the previous entry carried level 30 on no underlying quantity) would be a finding, not a result.",
+        "indicator": "NYC's external mobility footprint and its transferability as a low-car megacity model -- qualitative pending quantification of (a) rolling-stock and electric-bus supply-chain sourcing, (b) aviation emissions excluded from the city inventory boundary, and (c) the transport-mode-share transferability argument",
+        "value": "NOT QUANTIFIED. Three transmission channels are identified but none has a defensible NYC-specific number in this pass. (1) TRANSFERABILITY: NYC is the one large US city where a large majority of workers do not use a car to get to work (25.1% used a car, truck or van at all; 48.7% used public transit; 9.6% walked), which is the empirical basis on which dense transit-oriented development is argued globally to be compatible with a 1.5C per-capita transport budget. Quantifying NYC's per-capita transport emissions against a downscaled global transport budget would turn this into a real global indicator; that calculation has not been done here. (2) SUPPLY CHAIN: the embodied emissions and labour conditions in MTA rolling-stock procurement and electric-bus/battery sourcing are a genuine external footprint, but no NYC-specific quantification was located and this channel was not researched in this pass. (3) AVIATION: JFK, LaGuardia and Newark aviation emissions are widely reported to fall outside NYC's official GPC-protocol greenhouse-gas inventory boundary, which would make a substantial share of the mobility emissions NYC induces invisible in its own accounting. The primary source for this (Citizens Budget Commission) returned HTTP 403 on two separate fetch attempts, including during adversarial review, and the claim is therefore NOT asserted -- it remains a dataGap for MOCEJ and the Port Authority of NY & NJ to resolve. GLOBAL-EQUITY COUNTERPOINT (context, not an NYC-attributable metric): roughly 900 million to 1 billion rural people worldwide lack access to an all-season road (World Bank Rural Access Index / SDG indicator 9.1.1), a stark contrast with NYC's 24/7 rail system, but not something NYC policy moves.",
+        "year": 2026,
+        "target": "No quantified target can be scored against until one of the three channels above is quantified. If NYC's per-capita transport emissions were computed, the appropriate benchmark would be a downscaled 1.5C-aligned per-capita transport budget applied identically across all portraits in the repo, consistent with rulings R8 and R12.",
+        "context": "NYC's below-25%-car mode share is precisely the outcome climate and transit advocates worldwide point to as proof that dense transit-oriented cities work, and the city exports that model through comparative research and city networks (Transit Costs Project, ITDP, C40). The cost subIndicator below is the cautionary half of that story -- at $4B+ per mile NYC cannot build enough subway to close its own accessibility gaps -- but per R2 it describes NYC's governance, not NYC's effect on others, and so cannot carry this lens. The honest position is that mobility's global lens is currently unquantified, and that the fastest route to quantifying it is either the aviation-boundary question (MOCEJ / Port Authority) or a rolling-stock procurement footprint (MTA Construction & Development).",
+        "source": "See subIndicators and dataGaps; no single source carries this lens.",
+        "sourceUrl": "https://www.mta.info/press-release/mta-construction-development-spotlights-action-taken-build-better-faster-and-cheaper",
+        "confidence": "low",
         "geographicScale": "global",
         "productionVsConsumption": "production-based",
-        "productionVsConsumptionNote": "not applicable (social/cost indicator, not an emissions figure); aviation-emissions boundary question above is inherently a production-based-inventory-scope issue but could not be independently verified this pass"
+        "productionVsConsumptionNote": "not applicable as structured; the aviation-emissions boundary question is inherently a production-based-inventory-scope issue and could not be verified this pass"
       },
       "policyAnchors": [
         {
           "name": "Central Business District Tolling Program / Congestion Relief Zone (congestion pricing)",
-          "relevance": "Primary near-term lever changing NYC's mobility mode share and traffic volumes; direct funding source for MTA capital accessibility program.",
-          "status": "Live and operating since January 5, 2025 at a $9 peak toll; survived a federal termination attempt via a May 2025 preliminary injunction (MTA v. Duffy); first-year outcomes (traffic down ~11%, faster crossings, $500M+ revenue) published by MTA/Governor's office as of Jan 2026 anniversary.",
-          "sourceUrl": "https://www.governor.ny.gov/news/less-traffic-better-transit-its-first-anniversary-governor-hochul-celebrates-transformational"
+          "relevance": "Primary near-term lever changing NYC's mobility mode share and traffic volumes; direct funding source for the MTA capital accessibility program.",
+          "status": "Live and operating since 5 January 2025. Current Class 1 E-ZPass toll $9.00 peak / $2.25 overnight (tariff Phase 1, 2025-2027; $12.00 in Phase 2, 2028-2030; $15.00 from 2031). The federal attempt to terminate the program has FAILED on the merits: Judge Lewis Liman, S.D.N.Y., granted the MTA a preliminary injunction in May 2025 and issued a final 149-page ruling on 3 March 2026 in Metropolitan Transportation Authority v. Duffy holding that the administration lacked authority to terminate and that the revocation was arbitrary and capricious. First-year outcomes (traffic down ~11%, VMT down 7.1%, faster crossings, $518M net revenue through November 2025) published by MTA and the Governor's office.",
+          "sourceUrl": "https://www.mta.info/document/138931"
         },
         {
           "name": "NYC Streets Plan (Local Law 195 of 2019)",
           "relevance": "Statutory minimum annual mileage for protected bus lanes (30 mi/yr) and protected bike lanes (50 mi/yr); the core accountability mechanism for street redesign.",
-          "status": "In effect but DOT has missed the mandate every recent year measured (2025: 18.2 mi bike lanes = 36% of mandate; 2024: 13.5 mi bus lanes = 45% of mandate). City Council was considering added tracking/oversight legislation as of April 2025.",
+          "status": "In effect but DOT has missed the mandate every recent year measured (2025: 18.2 mi bike lanes = 36% of mandate; 2024: 13.5 mi bus lanes = 45% of mandate). City Council was considering added tracking and oversight legislation as of April 2025. These figures rest on secondary reporting and should be confirmed against DOT's own LL195 compliance filings.",
           "sourceUrl": "https://www.cityandstateny.com/policy/2025/03/nyc-dot-falls-far-short-24-targets-bike-and-bus-lanes-touts-progress/403707/"
         },
         {
           "name": "MTA subway accessibility class-action settlement",
-          "relevance": "Binding, court-approved commitment on the pace of subway ADA accessibility upgrades -- the main lever on the local-social lens's biggest documented failure.",
-          "status": "Preliminarily approved 2023 (federal judge approval reported April 2023); MTA's 2025-2029 Capital Program dedicates $7.1B to accessibility, targeting 60+ newly accessible stations this cycle, consistent with the settlement's interim milestones.",
+          "relevance": "Binding, court-approved commitment on the pace of subway ADA accessibility upgrades -- the lever on the local-social lens's largest documented failure.",
+          "status": "Settlement in Center for Independence of the Disabled, New York v. MTA (NY State, 153765/2017) and De La Rosa v. MTA (S.D.N.Y., 19-cv-04406); fairness hearings April 2023. Commits the MTA to stair-free access at 95% of the 364 stations inaccessible at settlement by 2055, with interim milestones of +85 by 2035, +90 by 2045 and +90 by 2055 on top of 81 already contracted. 160 of 472 stations (33.9%) accessible as of July 2026, up from 108 at settlement and 154 at end-2025. The 2025-2029 Capital Program dedicates $7.1B to accessibility, targeting 60+ newly accessible stations this cycle.",
           "sourceUrl": "https://www.mta.info/accessibility/ada-settlement-notice"
         },
         {
           "name": "Sammy's Law (NY State, 2024)",
           "relevance": "State authorization enabling NYC to set 20 mph default speed limits without prior state sign-off; directly supports Vision Zero.",
-          "status": "Implemented; DOT completed rollout of 20 mph limits across 250 designated zones by end of 2025.",
+          "status": "Reported as implemented, with DOT completing rollout of 20 mph limits across 250 designated zones by end of 2025. Sourced only to news aggregation in this pass -- needs a primary NYC DOT or NY State citation.",
           "sourceUrl": "https://www.aol.com/articles/nyc-speed-limit-drop-20-163450880.html"
         },
         {
           "name": "Vision Zero (2014)",
-          "relevance": "The city's overarching traffic-safety policy framework; sets the baseline against which 2025's record-low fatality count is measured.",
-          "status": "Active; 2025 was the safest year on record citywide (205 deaths, down 31% since 2014 launch), though several years in between (2020-2024) were flagged by advocates as among the era's deadliest before this improvement.",
+          "relevance": "The city's overarching traffic-safety policy framework; sets the baseline against which the record-low fatality counts are measured.",
+          "status": "Active and delivering. 2025 was the safest year in recorded NYC history (205 deaths, the fewest since record-keeping began in 1910, down 31% since the 2014 launch and one below the prior record of 206 in 2018). The first quarter of 2026 was the third-safest on record (42 deaths, down 7% year-on-year). This corrects an earlier characterization of recent years as among the era's deadliest.",
           "sourceUrl": "https://www.nyc.gov/html/dot/html/pr2026/traffic-deaths-reach-all-time-low.shtml"
         },
         {
           "name": "Fair Fares NYC",
-          "relevance": "City's primary transit-affordability program for low-income residents; enrollment gap is a direct equity lever within the mobility dimension.",
-          "status": "Income eligibility raised to 145% FPL (Jan 2025), further increase to 150% FPL underway; enrollment remains at only ~37% of the ~1.4M eligible population as of late 2025.",
-          "sourceUrl": "https://ny1.com/nyc/all-boroughs/traffic_and_transit/2025/10/15/fair-fares-half-price-fare-program-fails-those-who-most-need-it"
+          "relevance": "City's primary transit-affordability program for low-income residents; the enrollment gap is a direct equity lever within the mobility dimension.",
+          "status": "Eligibility currently 150% FPL for residents aged 18-64; ~385,000 of ~940,000 eligible enrolled (41%). In June 2026 the City Council and Mayor agreed to raise the threshold to 200% FPL effective fall 2026, adding ~343,000 newly eligible (total eligible ~1.28M). The discount still does not apply to express buses, and adults 65+ and many disabled New Yorkers remain excluded because they qualify for the MTA's separate Reduced-Fare program.",
+          "sourceUrl": "https://www.ibo.nyc.gov/assets/ibo/downloads/pdf/infrastructure/2026/2026-june-expanding-fair-fares.pdf"
         }
       ],
-      "comparisonNote": "Petaluma's 72.6% drive-alone commute share (a small Mediterranean-climate city built almost entirely around cars) sits at nearly the opposite end of the spectrum from NYC's 20.6% citywide figure -- and even NYC's most car-dependent borough, Staten Island, at 50.8%, is still well below Petaluma's rate. But the comparison cuts both ways: Petaluma has no subway to fail at accessibility, no multi-billion-dollar-per-mile construction-cost problem, and no history of a formal traffic-fatality reduction program comparable to Vision Zero's decade-plus track record: NYC's genuine failures here (accessibility, bus speed, travel time, historically high fatality years, transit-cost overruns) are failures of scale and complexity that a 60,000-person city never has to confront.",
+      "comparisonNote": "Petaluma's 72.6% drive-alone commute share (a small Mediterranean-climate city built almost entirely around cars) sits at nearly the opposite end of the spectrum from NYC's published 20.6% citywide figure -- and even NYC's most car-dependent borough, Staten Island, at 50.8%, is still well below Petaluma's rate. Both figures are ACS drive-alone shares of all workers 16+, including those who work from home, so they are directly comparable (R4). But the comparison cuts both ways: Petaluma has no subway to fail at accessibility, no multi-billion-dollar-per-mile construction-cost problem, and no decade-long traffic-safety programme comparable to Vision Zero. NYC's real failures here -- two-thirds of subway stations without stair-free access on a 2055 timetable, buses averaging 8.17 mph with no improvement in ten years, and 40.6-minute average commutes -- are failures of scale and complexity that a 60,000-person city never has to confront. Equally, NYC's traffic-safety record (fewest deaths since 1910) and its working congestion charge are achievements for which Petaluma has no equivalent lever.",
       "dataGaps": [
-        "Borough-by-borough count of ADA-accessible subway stations (the settlement and secondary reporting give citywide totals only; MTA's own station accessibility page lists stations but not a total system count needed to calculate per-borough percentages) -- MTA Department of Subways / Accessibility unit would have this.",
-        "A single, MTA- or Census-published citywide (not author-aggregated) mean commute time and drive-alone percentage for the five boroughs combined -- NYC DCP's Population FactFinder or a future NYC DOT Citywide Mobility Survey release may publish this directly; the 2024 CMS User Guide references 2023 ACS baselines but the full survey results were not fetched in this pass.",
-        "Whether JFK/LaGuardia/Newark aviation emissions are formally excluded from MOCEJ's citywide GHG inventory boundary, and by how much -- Mayor's Office of Climate & Environmental Justice (MOCEJ) or the Port Authority of NY & NJ would have the definitive inventory-boundary documentation; a secondary source (Citizens Budget Commission) suggested exclusion but the primary page returned an HTTP 403 on fetch and could not be verified directly.",
-        "A precise, current (2026) primary-source total count of MTA-accessible stations (this dossier uses a 2023 settlement baseline of 108/472 and a secondary 2026 estimate of ~160/472; MTA's own accessibility dashboard would resolve the gap)."
+        "Borough-by-borough count of ADA-accessible subway stations. MTA publishes a citywide total (160 of 472 as of July 2026) and a station-by-station list, but not a per-borough total or denominator, so per-borough accessibility percentages cannot be computed. MTA Department of Subways / Accessibility unit holds this.",
+        "A Queens-specific figure for the share of residents within walking distance of a subway station. The claim 'fewer than 4 in 10 Queens residents can walk to a subway station' could not be sourced and has been removed; only a citywide figure (more than a third of New Yorkers not within walking distance of a subway or rail station) was locatable. NYC Department of City Planning or the MTA could produce a borough-level subway walkshed statistic.",
+        "Whether JFK/LaGuardia/Newark aviation emissions are formally excluded from MOCEJ's citywide GHG inventory boundary, and by how much. The Mayor's Office of Climate & Environmental Justice (MOCEJ) or the Port Authority of NY & NJ holds the definitive inventory-boundary documentation; the secondary source (Citizens Budget Commission) returned HTTP 403 on repeated fetch attempts and could not be verified. This is the single highest-value gap for the global lens.",
+        "A quantified embodied-emissions or supply-chain footprint for MTA rolling stock and electric bus/battery procurement, which would give the global-social lens a real number in place of its current null. MTA Construction & Development and the MTA procurement office hold the contract and sourcing data.",
+        "NYC DOT's own Local Law 195 compliance filings, to replace the secondary reporting currently carrying the Streets Plan mileage-shortfall figures.",
+        "A primary NYC DOT or NY State citation for the Sammy's Law 20 mph rollout, currently sourced only to a news aggregator.",
+        "A primary comparative dataset (e.g. National Transit Database) on average bus speed across large US transit agencies, which would either substantiate or retire the widely-repeated claim that NYC buses are the slowest of any major US city."
       ],
       "experts": [
         {
           "org": "MTA Department of Subways / Accessibility Program",
-          "why": "Authoritative current station-by-station accessibility counts and capital program milestones.",
+          "why": "Authoritative current station-by-station and per-borough accessibility counts, and settlement milestone tracking.",
           "contactPath": "https://www.mta.info/accessibility"
         },
         {
+          "org": "MTA Construction & Development",
+          "why": "Rolling-stock and electric-bus procurement sourcing (needed to quantify the global-social lens) and the capital cost-reduction programme relevant to the construction-cost subIndicator.",
+          "contactPath": "https://www.mta.info/mta-construction-development"
+        },
+        {
           "org": "NYC DOT Bicycle and Pedestrian Programs / Streets Plan compliance office",
-          "why": "Authoritative annual mileage data for LL195 (Streets Plan) compliance and future-year plans.",
+          "why": "Authoritative annual mileage data for Local Law 195 (Streets Plan) compliance and forward-year plans; also the primary source for the Sammy's Law 20 mph rollout.",
           "contactPath": "https://www.nyc.gov/html/dot/html/about/nyc-streets-plan.shtml"
         },
         {
-          "org": "Mayor's Office of Climate & Environmental Justice (MOCEJ)",
-          "why": "Definitive answer on aviation-emissions inventory boundary and consumption- vs. production-based transportation GHG accounting.",
+          "org": "Mayor's Office of Climate & Environmental Justice (MOCEJ) and the Port Authority of NY & NJ",
+          "why": "Definitive answer on the aviation-emissions inventory boundary -- the highest-value unresolved question for mobility's global lens.",
           "contactPath": "https://www.nyc.gov/site/sustainability/index.page"
+        },
+        {
+          "org": "New York City Independent Budget Office",
+          "why": "Authoritative Fair Fares eligibility and enrollment modelling, including the fall 2026 expansion to 200% FPL.",
+          "contactPath": "https://www.ibo.nyc.gov/"
         },
         {
           "org": "Center for Independence of the Disabled, New York (CIDNY)",
@@ -1129,7 +1165,7 @@
         },
         {
           "org": "Riders Alliance / Transportation Alternatives / Permanent Citizens Advisory Committee to the MTA (PCAC)",
-          "why": "Advocacy and technical groups closely tracking bus speed, Fair Fares enrollment, and Vision Zero outcomes; good validators for the subIndicator framing chosen here.",
+          "why": "Advocacy and technical groups tracking bus speed, Fair Fares enrollment and Vision Zero outcomes; good validators for the subIndicator framing chosen here.",
           "contactPath": "https://www.ridersny.org/ ; https://transalt.org/ ; https://pcac.org/"
         }
       ]
