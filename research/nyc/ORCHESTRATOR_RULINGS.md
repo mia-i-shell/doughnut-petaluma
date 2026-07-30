@@ -323,3 +323,32 @@ dossier rather than leaving them in `dataGaps` — but label them as reviewer-de
 the method and the source system, and cap confidence at medium. A derived figure that is
 transparently derived is far more useful than an absent one; a derived figure presented as
 published is a defect (R3).
+
+## R17. Vintage mismatch between headline and subIndicators is acceptable — label it
+
+A dimension will often pair a slow-but-comparable headline measure with fast-moving
+administrative subIndicators. Food is the case: Feeding America's Map the Meal Gap runs a
+roughly two-year publication lag (17.8%, 2023 data, published 2025) while HRA publishes SNAP
+enrollment near-real-time (1.74M, Dec 2025).
+
+**Keep the comparable measure as the headline.** Do not swap to a same-year proxy that
+measures a different construct — a Community Health Survey "food hardship" question is not
+the same thing as a food-insecurity rate, and switching would break both cross-borough and
+cross-portrait comparability for the sake of recency.
+
+Requirements: state the vintage inside `value` (not only in `year`), note the publication lag
+in `context`, and never let a reader infer that a headline and a subIndicator describe the
+same moment. A labelled two-year lag is a known limitation; an unlabelled one is a defect.
+
+## R18. Do not assert a superlative you cannot pin down
+
+The food agent could not resolve whether Hunts Point is "the largest food distribution centre
+in the world" — sources differ on whether the claim is about the produce market by dollar
+volume or the whole complex combining produce, meat and fish. It hedged in `context` and
+logged the ambiguity in `dataGaps` rather than repeating the superlative.
+
+That is the correct call, and it generalises: **"largest / first / only in the world" claims
+are the easiest thing in a city portrait to repeat uncritically**, because they circulate in
+press material untested. Either pin the superlative to a definition and a source, or describe
+the thing without the superlative. The scale of Hunts Point is impressive on plain figures
+and needs no ranking claim to carry it.
