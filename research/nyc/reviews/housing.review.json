@@ -1,0 +1,286 @@
+{
+  "dimension": "housing",
+  "overallVerdict": "sound-with-corrections",
+  "confidenceInDossier": "medium",
+  "findings": [
+    {
+      "severity": "critical",
+      "category": "fabrication",
+      "claim": "Households with a housing voucher: 86% severely rent-burdened even after assistance (85% in 2021). [subIndicator 'Rent burden by race/ethnicity', cited to 2023 NYCHVS Table 18]",
+      "verdict": "REFUTED",
+      "whatIFound": "I extracted the full text of the primary PDF. The 86%/85% figures belong to a different and effectively opposite population: 'Among those with household incomes of less than $25,000 who did not live in public housing or report having a voucher, a full 86 percent was severely rent burdened, and an additional 4 percent was moderately rent burdened. This remained at persistently high levels relative to 2021 when 85 percent were severely burdened.' The report is explicit that voucher and public-housing households are EXCLUDED from the rent-burden analysis entirely ('Renter households in means-tested housing, including those in public housing and those who reported having a voucher, are not included in this analysis'; technical appendix: such households 'have no calculated rent burden or classification as burdened or not'). No NYCHVS voucher-household burden share exists. As written the dossier asserts that vouchers fail to relieve burden for 86% of recipients — the source says the opposite of what is claimed, about a different group.",
+      "correction": "Among renter households earning under $25,000 who were NOT in public housing and did NOT report a voucher, 86% were severely rent burdened and a further 4% moderately burdened (85%/7% in 2021). NYCHVS excludes means-tested households from its rent-burden analysis, so it publishes no voucher-household burden rate.",
+      "sourceUrl": "https://www.nyc.gov/assets/hpd/downloads/pdfs/about/2023-nychvs-selected-initial-findings.pdf"
+    },
+    {
+      "severity": "critical",
+      "category": "stale-policy",
+      "claim": "NYC/NYS-level tools in this space include ... a longstanding but unenacted NYC pied-a-terre tax proposal [global lens target field]",
+      "verdict": "REFUTED",
+      "whatIFound": "The pied-a-terre tax was ENACTED. The New York State Legislature passed it on May 26, 2026 as part of the FY2026-27 Budget Bill, effective July 1, 2026, with a component retroactive to January 1, 2026 and a sunset of June 30, 2031. Phase 1 (through June 30, 2028): Class 2 condos/co-ops at a $1M threshold taxed 4.0% / 5.25% / 6.5% by bracket; Class 1 homes at a $5M threshold taxed 0.8% / 1.05% / 1.3%. Holland & Knight reports an official estimate of '14,000 apartments and homes that could be subject to the PAT Tax' and a Comptroller revenue estimate revised down to $340-380M from $500M. Describing the single most-cited NYC instrument against non-primary-residence ownership as 'unenacted' two months after it took effect is a confidently-stated wrong policy status.",
+      "correction": "NY State enacted a pied-a-terre surcharge on 26 May 2026 (FY2026-27 Budget Bill), effective 1 July 2026, sunsetting 30 June 2031; ~14,000 NYC units are estimated to fall above the thresholds.",
+      "sourceUrl": "https://www.hklaw.com/en/insights/publications/2026/06/new-york-state-enacts-pied-a-terre-tax"
+    },
+    {
+      "severity": "critical",
+      "category": "fabrication",
+      "claim": "About 10% of Manhattan condo transactions are pied-a-terre/non-primary-residence purchases per NYC Department of Finance data (secondary-sourced figure, not independently verified against the primary DOF table). [global lens headline value]",
+      "verdict": "UNVERIFIABLE",
+      "whatIFound": "I could not source this to any DOF table or to any secondary source that cites one. Searching for it returns only DOF's *assessment-ratio* convention — NYC assesses Class 2 condos/co-ops at roughly 10-20% of market value — which is an unrelated use of '10 percent' and is the most likely origin of the conflation. Meanwhile a genuinely primary, published, NYC-specific quantity for exactly this channel exists and the dossier missed it: 2023 NYCHVS reports 58,810 units held for seasonal, recreational or occasional use (26% of all units not available for rent or sale), down from 102,900 in 2021 and 74,950 in 2017. Per ruling R2 and the brief's no-fabrication rule, an unverified secondary figure cannot be the headline global indicator.",
+      "correction": "Replace the headline with the primary NYCHVS figure (58,810 units held for seasonal/recreational/occasional use in 2023, down from 102,900 in 2021) plus the ~14,000 units estimated above the new pied-a-terre tax thresholds and the DOF-derived Comptroller sample of 19,107 properties, 17,125 of them in Manhattan. Delete the 10% claim.",
+      "sourceUrl": "https://www.nyc.gov/assets/hpd/downloads/pdfs/about/2023-nychvs-selected-initial-findings.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "severity-unsupported",
+      "claim": "local.level = 150 (Severe) — the highest score in the portrait",
+      "verdict": "CORRECTED",
+      "whatIFound": "The headline is verified and genuinely emergency-grade: 1.41% net rental vacancy against the 5% ETPA statutory housing-emergency threshold, and 0.39% in the bottom rent quartile. My own verification also strengthened the case in a way the dossier missed — homelessness is at an all-time record and still rising through the review date (194,531 unique DHS users in 2025; ~96,500 nightly in April 2026; >350,000 New Yorkers without homes as of 1 Jan 2026), now after the asylum surge receded, i.e. a structurally domestic record. Against that stand two well-sourced primary counter-facts the dossier itself surfaced but did not let bear on the score: the citywide median rent-to-income ratio fell from 34.3% to 29.5%, which NYCHVS calls the first decline since 2002, and its own conclusion that 'the overall prevalence of rent burden in New York City declined for the first time in several survey cycles'; plus eviction filings down 9.6% in 2024 and below pre-pandemic levels. Note also that the 4.54% 2021 comparator is described by NYCHVS itself as 'historically high' — a pandemic anomaly — so the 3.1-point 'collapse' framing overstates the trend; the defensible framing is a return to and beyond NYC's chronic sub-3.5% norm. 150 is the ceiling of the scale and should be reserved for a dimension with no measurable improvement on its central affordability metric. This one has one. I reject 150, and I equally reject anything at or near 100: the statutory emergency, the record homelessness, the Right to Counsel collapse and the $78.3B NYCHA backlog all sit above 'critical'.",
+      "correction": "135",
+      "sourceUrl": "https://www.nyc.gov/assets/hpd/downloads/pdfs/about/2023-nychvs-selected-initial-findings.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "internal-inconsistency",
+      "claim": "DHS+HPD shelter census was 73,219 people (Dec 2024) [headline value and shelter subIndicator]",
+      "verdict": "CORRECTED",
+      "whatIFound": "This is 18 months stale, and the agent had the current figure in hand: its own sourcesFetched entry records that the Coalition for the Homeless page returned a May 2026 census of 87,442, which it then did not use. I re-fetched and confirmed 87,442 for May 2026 (18,890 families, 29,008 single adults). Coalition's State of the Homeless 2026 additionally reports ~96,500 people sleeping in NYC shelters nightly as of April 2026 (65% family members, including 30,955 children) and 'over 350,000 New Yorkers were without homes as of January 1, 2026'. Headlining Dec-2024 understates the dimension by roughly 20-30%.",
+      "correction": "87,442 in DHS+HPD shelter (May 2026); ~96,500 nightly across NYC shelters (April 2026, Coalition State of the Homeless 2026); >350,000 New Yorkers without homes as of 1 Jan 2026. Retain 73,219 (Dec 2024) only as the trend comparator.",
+      "sourceUrl": "https://www.coalitionforthehomeless.org/state-of-the-homeless-2026/"
+    },
+    {
+      "severity": "major",
+      "category": "fabrication",
+      "claim": "Attorney representation rate ... fell from 71% (2021) to 42% (2024) citywide as eligible caseload grew ~110% over the same period; in the Bronx ... representation fell from 88% to 31%.",
+      "verdict": "CORRECTED",
+      "whatIFound": "I re-fetched the Comptroller report. Citywide 71% (Q4 FY2021) to 42% (Q4 FY2024) CONFIRMED, and it fell further to 30% by March 2025 — an omission that understates the problem. But the Bronx figure is wrong: the report gives 81% (Q4 2021) to 31% (Q4 2024), not 88%. And the caseload figure is wrong: the report gives a 51% increase from FY2019 to FY2024 (approx. 16,300 to 24,500 households), not ~110%, and not '2022-2024'. The 475% growth figure in the report applies to brief legal services, a different measure. The $350M advocate estimate and the 89% stably-housed outcome are CONFIRMED.",
+      "correction": "Citywide representation 71% (Q4 FY2021) -> 42% (Q4 FY2024) -> 30% (March 2025); Bronx 81% -> 31%; full-representation caseload +51% FY2019-FY2024 (~16,300 to ~24,500 households), with demand for brief legal services up 475%.",
+      "sourceUrl": "https://comptroller.nyc.gov/reports/evictions-up-representation-down/"
+    },
+    {
+      "severity": "major",
+      "category": "scale-substitution",
+      "claim": "more than half of all renter households were rent-burdened (30%+ of income) and about one in four were severely rent-burdened (50%+) ... Citywide: >50% rent-burdened, ~25% severely burdened (2023 NYCHVS)",
+      "verdict": "CORRECTED",
+      "whatIFound": "This is not an NYCHVS 2023 finding and cannot be, on two grounds. First, NYCHVS excludes means-tested households from the burden analysis, so it publishes no all-renter share. Second, within that restricted universe the HIGHEST burdened share of any group in Table 18 is 47% (Black-headed households; Hispanic-headed 45%), so a citywide majority is arithmetically impossible on the NYCHVS basis. The >50% figure is real but ACS-based, from Furman Center's State of Renters and Their Homes 2024: 23.0% moderately + 28.9% severely burdened in 2023 = 51.9%. The severe share is therefore ~29% on the ACS basis, not '~25%'. This is a basis substitution of the R7 type — two accountings silently merged under one citation.",
+      "correction": "On the ACS basis (Furman Center, SOC 2024, 2023 data): just over half of renter households rent-burdened, 28.9% severely, 23.0% moderately. On the NYCHVS 2023 basis, which excludes means-tested households, severe burden runs 22-28% by race of householder and no group exceeds 47% total burden. Label the basis explicitly in each case.",
+      "sourceUrl": "https://www.furmancenter.org/soc-report/state-of-the-city-2024/state-of-renters-and-their-homes-2024/"
+    },
+    {
+      "severity": "major",
+      "category": "fabrication",
+      "claim": "The 2023 Physical Needs Assessment found $78.3B in 20-year capital repair needs ... a January-2025 update raised this to $78.6B.",
+      "verdict": "CORRECTED",
+      "whatIFound": "The $78.3B / 73%-increase-from-$45.3B figures are CONFIRMED (2023 PNA: $78.3B across 264 directly-managed properties, 161,400 apartments; $57.8B or 74% in apartments, heating, exteriors and plumbing). The '$78.6B January-2025 update' is not sourceable. NYCHA's January-2025 Fact Sheet — the document the dossier cites — states only 'nearly $80 billion in major repairs needed'; it contains no PNA dollar figure at all. City Limits' NYCHA repair tracker states the next Physical Needs Assessment is slated for 2028, so no intervening reassessment exists.",
+      "correction": "$78.3B (2023 PNA, up 73% from $45.3B in 2017), the assessment of record; next PNA due 2028. NYCHA's Jan-2025 Fact Sheet characterises it as 'nearly $80 billion'. Drop the $78.6B figure.",
+      "sourceUrl": "https://citylimits.org/resources-overview/nycha-repair-needs-tracker/"
+    },
+    {
+      "severity": "major",
+      "category": "fabrication",
+      "claim": "The 2023 Basement Apartment Conversion Pilot Program (BACPP) created a legal conversion pathway; as of early 2026 only a few hundred units have been legalized against an estimated 100,000+ illegal basement/cellar units citywide.",
+      "verdict": "REFUTED",
+      "whatIFound": "Three errors. (1) The BACPP launched in 2019, not 2023, and only in Brooklyn Community District 5 (East New York). (2) It drew five active participants out of roughly 8,000 homeowners contacted, against an initial goal of 40 units. (3) 'A few hundred units legalized' is refuted: NO conversions were completed by any participant as of mid-2025 (CHPC final report). The dossier's error runs in the optimistic direction — it credits the city with a few hundred legalisations that did not occur. The current pathway is a different instrument: a citywide pilot mandated by Local Law 126 of 2024 (part of City of Yes), with DOB/HPD proposed rules published November 2025, eligibility limited to apartments existing before 20 April 2024 in named community districts, application deadline 20 April 2029 and a 10-year compliance window. The dossier's flood criticism is CONFIRMED and can be sharpened: properties in flood-prone areas are categorically ineligible under the pilot.",
+      "correction": "BACPP (2019, Brooklyn CD5): 5 active participants from ~8,000 homeowners contacted, 40-unit goal, ZERO completed conversions as of mid-2025. Current citywide pathway: Local Law 126 of 2024 pilot, DOB/HPD proposed rules Nov 2025, apply by 20 Apr 2029, 10 years to comply — properties in flood-prone areas categorically ineligible.",
+      "sourceUrl": "https://chpcny.org/publication/basement-apartment-conversion-pilot-program-final-report/"
+    },
+    {
+      "severity": "major",
+      "category": "stale-policy",
+      "claim": "Adopted by City Council Dec 5, 2024, with a projected ~80,000 new homes over 15 years [City of Yes; also '~80,000-unit citywide target' in actions]",
+      "verdict": "CORRECTED",
+      "whatIFound": "The official and contemporaneous projection is 82,000 homes over 15 years, not ~80,000. Confirmed by the Governor's 5 Dec 2024 joint release with the Mayor and Speaker and by contemporaneous coverage. Adoption date 5 Dec 2024 and $5B accompanying infrastructure funding both CONFIRMED. This matches what the land-conversion reviewer found; the two dossiers must not ship inconsistent figures.",
+      "correction": "82,000 new homes over 15 years.",
+      "sourceUrl": "https://www.governor.ny.gov/news/governor-hochul-mayor-adams-and-council-speaker-adams-celebrate-passage-most-pro-housing"
+    },
+    {
+      "severity": "major",
+      "category": "stale-policy",
+      "claim": "NY State's 2019 LLC Transparency Act (disclosure of beneficial owners for LLCs holding NYS real property, separate from the federal CTA) [offered as a state-level counterweight to the narrowed federal CTA]",
+      "verdict": "REFUTED",
+      "whatIFound": "Wrong year and, more importantly, wrong direction. The NY LLC Transparency Act was signed 23 December 2023, amended 1 March 2024, and took effect 1 January 2026 — there is no 2019 LLC Transparency Act. Critically, following Governor Hochul's 19 December 2025 veto of S8432, the NY LLCTA now imposes beneficial-ownership reporting only on LLCs formed OUTSIDE the United States and authorised to do business in New York; US-formed LLCs are exempt. New York therefore narrowed its regime in precisely the same way FinCEN did, so it does not backstop the federal CTA as the dossier's framing implies — it replicates the gap.",
+      "correction": "NY LLC Transparency Act: signed 23 Dec 2023, amended 1 Mar 2024, effective 1 Jan 2026; after Hochul's 19 Dec 2025 veto of S8432 it reaches only non-US-formed LLCs, leaving domestic LLCs — the primary vehicle for anonymous NYC purchases — exempt at state level too.",
+      "sourceUrl": "https://www.sidley.com/en/insights/newsupdates/2026/02/ny-llc-transparency-act-took-effect-but-governor-veto-exempts-us-formed-llcs"
+    },
+    {
+      "severity": "major",
+      "category": "stale-policy",
+      "claim": "GTOs ... were most recently renewed effective Oct 10, 2025 through Feb 28, 2026; a permanent nationwide reporting rule (finalized Aug 2024) that would replace the GTOs was postponed from Dec 1, 2025 to March 1, 2026.",
+      "verdict": "CORRECTED",
+      "whatIFound": "Accurate as of late 2025 but materially stale at the review date, and stale in the direction that makes the dossier's own argument stronger. Per FinCEN's own RRE newsroom: the GTOs expired 28 February 2026 and were replaced by the nationwide Residential Real Estate Rule effective 1 March 2026 — and on 19 March 2026 the U.S. District Court for the Eastern District of Texas VACATED that rule. FinCEN states that 'reporting persons are not required to file Real Estate Reports with FinCEN and are not subject to liability if they fail to do so'; FinCEN and DOJ have appealed. Net effect: as of July 2026 there is no federal shell-company residential real-estate reporting requirement in force anywhere in the US, including NYC — the first such gap since the GTOs began in 2016.",
+      "correction": "GTOs expired 28 Feb 2026; the nationwide Residential Real Estate Rule took effect 1 Mar 2026 and was vacated by the U.S. District Court for E.D. Texas on 19 Mar 2026 (FinCEN/DOJ appealing), leaving no federal shell-company residential reporting requirement currently in force.",
+      "sourceUrl": "https://www.fincen.gov/rre-newsroom"
+    },
+    {
+      "severity": "major",
+      "category": "severity-unsupported",
+      "claim": "global.level = 100 (critical)",
+      "verdict": "CORRECTED",
+      "whatIFound": "The regression half of the rationale is CONFIRMED and is in fact worse than stated (see the CTA, RRE-vacatur and NY LLCTA findings above): between March 2025 and March 2026 the federal beneficial-ownership regime was narrowed to exempt ~99.8% of covered entities, the GTOs lapsed, the replacement rule was vacated, and New York exempted domestic LLCs from its own act. But 100 was carried by a headline figure that does not survive verification, and the quantities that do survive are modest and moving the right way: 58,810 units held for seasonal/occasional use (1.6% of a 3.7M-unit stock), down 43% from 102,900 in 2021; ~14,000 units above the new pied-a-terre thresholds; 11,200 units under Blackstone/Ivanhoe Cambridge at Stuy Town. And a real new instrument just took effect (the pied-a-terre surcharge, 1 July 2026). A 'critical' reading is not supportable on a channel of that measured magnitude with that direction of travel. Because three primary quantities now exist, null is not required either — R2's preference for a null over an invented number does not apply once the quantification is real.",
+      "correction": "60",
+      "sourceUrl": "https://www.fincen.gov/news/news-releases/fincen-removes-beneficial-ownership-reporting-requirements-us-companies-and-us"
+    },
+    {
+      "severity": "major",
+      "category": "internal-inconsistency",
+      "claim": "Borough levels: Bronx 150, Brooklyn 150, Queens 150, Manhattan 100 — derived from the borough net rental vacancy point estimates",
+      "verdict": "CORRECTED",
+      "whatIFound": "All four borough values are exactly right (see confirmations), but the levels assign a differentiation the source explicitly disclaims. NYCHVS 2023 states: 'Due to the small number of vacant units that were available for rent in New York City in 2023, net rental vacancy rates within borough and different types of rental housing are all statistically similar to one another.' The Bronx estimate additionally carries the report's highest caution marker (***) with a 90% CI of [0.34%, 1.30%], and Brooklyn and Queens carry (**). Scoring Manhattan 50 points better than Queens on a 1.45-point gap between two statistically indistinguishable estimates is not supported. Where real borough differentiation exists it is in burden and eviction data, not vacancy.",
+      "correction": "Re-anchor borough levels on the differentiation that is statistically real (severe rent burden, eviction filing rate, Right to Counsel collapse): Bronx 145, Brooklyn 135, Queens 135, Manhattan 115, and state the NYCHVS statistical-similarity caveat in every borough note.",
+      "sourceUrl": "https://www.nyc.gov/assets/hpd/downloads/pdfs/about/2023-nychvs-selected-initial-findings.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "fabrication",
+      "claim": "NYCHA houses roughly 516,000-521,000 authorized residents in ~177,565 apartments across 335 developments (public housing + PACT/Section 9 combined; figures vary slightly by report vintage in 2024-2025).",
+      "verdict": "CORRECTED",
+      "whatIFound": "I extracted the NYCHA Fact Sheet (release date January 2025) directly. It states 511,384 authorized residents in over 177,565 apartments within 335 developments through public housing, Section 8 and PACT/RAD. The '516,000-521,000' range is not in the document and I could not source it; the apartment and development counts are exact. The hedge about vintage variation is not needed — the Fact Sheet gives a single number.",
+      "correction": "511,384 authorized residents in over 177,565 apartments across 335 developments (NYCHA Fact Sheet, Jan 2025). Component detail: 298,206 residents / 152,926 apartments / 243 developments in conventional public housing (Section 9); 46,455 residents / 24,639 apartments / 92 developments converted under PACT/RAD; 107,979 families (223,114 residents) on Section 8 vouchers.",
+      "sourceUrl": "https://www.nyc.gov/assets/nycha/downloads/pdf/NYCHA_Fact_Sheet.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "the lowest since the survey began tracking this in 1968",
+      "verdict": "CORRECTED",
+      "whatIFound": "The NYCHVS began in 1965, not 1968, and the primary report is more cautious than the dossier: 'This was one of the lowest net rental vacancy rates on record since the NYCHVS began in 1965.' HPD's press release does support the stronger 'lowest this measurement has been since the 1968 NYCHVS' — but that phrasing means 1968's rate was lower, which is the opposite of the dossier's implication that tracking began in 1968. The levelRationale's shorter 'lowest recorded since 1968' is fine; the value field's version is not.",
+      "correction": "'the lowest net rental vacancy rate since the 1968 NYCHVS (HPD); the NYCHVS itself, which began in 1965, describes it as one of the lowest on record'",
+      "sourceUrl": "https://www.nyc.gov/site/hpd/news/007-24/new-york-city-s-vacancy-rate-reaches-historic-low-1-4-percent-demanding-urgent-action-new"
+    },
+    {
+      "severity": "minor",
+      "category": "fabricated-borough-data",
+      "claim": "Staten Island: value null, note attributing non-reporting to 'Census Bureau disclosure-avoidance rules'",
+      "verdict": "CORRECTED",
+      "whatIFound": "The null is CORRECT and must not be marked down: Table 9's Staten Island row genuinely carries suppression markers and no numeric estimate for either 2023 or 2021. But the stated mechanism is wrong. The report uses two distinct markers: '*' for 'Estimate is suppressed following US Census Bureau disclosure avoidance practices', and '** / ***' for 'Due to the small number of units that were vacant and available for rent, estimate is subject to a large amount of sampling variation and is therefore either not reported or should be interpreted with caution.' Staten Island carries the sampling-variation marker, not the disclosure-avoidance marker. This is a reliability suppression, not a confidentiality suppression — and it matters, because a disclosure suppression implies a value exists in restricted microdata whereas a reliability suppression implies the sample cannot support one.",
+      "correction": "Not reported in Table 9 because too few vacant-and-available units were sampled in Staten Island for a reliable estimate (NYCHVS sampling-variation suppression, distinct from Census disclosure-avoidance suppression); restricted-use microdata would not necessarily yield a reliable figure either.",
+      "sourceUrl": "https://www.nyc.gov/assets/hpd/downloads/pdfs/about/2023-nychvs-selected-initial-findings.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "dataGap: 'NYCHA authorized-resident and apartment counts broken out by borough were not found in the sources reached (only citywide totals and individual flagship-development examples)'",
+      "verdict": "REFUTED",
+      "whatIFound": "Not a real gap. The very document the dossier cites — the January-2025 NYCHA Fact Sheet — publishes the full public-housing borough breakdown on page 2: Bronx 63 developments / 37,544 apartments / 75,783 residents; Brooklyn 64 / 47,725 / 94,553; Manhattan 77 / 48,284 / 91,010; Queens 21 / 15,348 / 29,530; Staten Island 8 / 3,876 / 7,330. The agent's fetch of this PDF failed on filename casing and it never re-extracted the correct file. Reporting a non-existent gap is a smaller error than fabricating data, but it costs the portrait a real borough-level dataset.",
+      "correction": "Remove the data gap; promote the published borough breakdown to a subIndicator.",
+      "sourceUrl": "https://www.nyc.gov/assets/nycha/downloads/pdf/NYCHA_Fact_Sheet.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "stale-policy",
+      "claim": "PACT conversions continue (91 developments, ~23,367 units converted as of the 2024 Fact Sheet)",
+      "verdict": "CORRECTED",
+      "whatIFound": "The January-2025 Fact Sheet gives 92 developments and 24,639 apartments (46,455 authorized residents) converted under PACT/RAD. Superseded by one vintage.",
+      "correction": "92 developments, 24,639 apartments, 46,455 authorized residents converted under PACT/RAD (NYCHA Fact Sheet, Jan 2025).",
+      "sourceUrl": "https://www.nyc.gov/assets/nycha/downloads/pdf/NYCHA_Fact_Sheet.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "indicator-validity",
+      "claim": "Q1 2025 median asking rents (StreetEasy, as summarized in secondary market-trend coverage): Manhattan $4,391.67, Brooklyn $3,479.67, Queens $3,000.00, Bronx $2,820.67, Staten Island $2,679.33",
+      "verdict": "UNVERIFIABLE",
+      "whatIFound": "Two-decimal precision on a median asking rent is a tell: these are three-month averages of monthly medians, i.e. a derived statistic presented in a published-figure slot, which ruling R3 forbids without stating the method. They are also 15 months stale at the review date, and the cited Miller Samuel URL is a November-2025 report that cannot support Q1-2025 StreetEasy figures. I did not re-derive them and am not asserting a replacement.",
+      "correction": "Retain only as explicitly labelled quarterly averages of monthly StreetEasy medians (derived, not published), Q1 2025 vintage, confidence low; flag the need for a current published median.",
+      "sourceUrl": "https://millersamuel.com/files/2025/12/Rental-11_2025.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "actions-quality",
+      "claim": "Source: Coalition for the Homeless, DHS/HPD shelter census tracker [for the 194,531 figure]",
+      "verdict": "CORRECTED",
+      "whatIFound": "194,531 is CONFIRMED but comes from Coalition for the Homeless' State of the Homeless 2026 report, not the census tracker page — the tracker carries only the monthly nightly census. The agent's own notes concede the 2023-24 peak figures were 'obtained via WebSearch instead' of the tracker. Same report also yields the 27% / 12,442-person rise among longer-term New Yorkers over the Adams administration and the doubled-up schoolchildren series (69,000 to 89,000, +29%).",
+      "correction": "Cite Coalition for the Homeless, State of the Homeless 2026.",
+      "sourceUrl": "https://www.coalitionforthehomeless.org/state-of-the-homeless-2026/"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "petalumaContrast: 'more than half of NYC renters are burdened (comparable in share to Petaluma's 34%, but at 8.3M people the absolute population affected is roughly 140x larger)'",
+      "verdict": "CORRECTED",
+      "whatIFound": "52% is not 'comparable in share' to 34% — it is roughly half again as high. The sentence asserts parity in order to make an absolute-scale point, and the parity claim is simply false. The absolute-scale point stands on its own.",
+      "correction": "State the shares as materially different (NYC ~52% burdened on the ACS basis vs Petaluma 34%) and make the scale point separately.",
+      "sourceUrl": "https://www.furmancenter.org/soc-report/state-of-the-city-2024/state-of-renters-and-their-homes-2024/"
+    },
+    {
+      "severity": "minor",
+      "category": "fabrication",
+      "claim": "questionForOrchestrator: 'This brief's pointer cites Fair Housing Framework (LL 174 of 2021) but my research repeatedly surfaces Local Law 167 of 2023 ... please confirm which is correct.'",
+      "verdict": "CONFIRMED",
+      "whatIFound": "The agent was right and the orchestrator's brief was wrong. Adjudicated definitively: NYC's Fair Housing Framework is Local Law 167 of 2023, Int. 1031-2023 (Int. 1031-A), 'A Local Law to amend the New York city charter, in relation to a fair housing plan, and to repeal local law number 133 for the year 2018, relating to affordable housing plans' — passed by the Council 15 Nov 2023 and signed by Mayor Adams on 13 Dec 2023. 'LL 174 of 2021' does not exist: the 2021 local laws run 1 through 173. The nearest real law with that number, Local Law 174 of 2017, requires citywide agency equity assessments and equity action plans — related to equity generally but not the Fair Housing Framework. The agent's refusal to assert either number rather than guess was correct behaviour and should be credited, not marked down. The orchestrator should correct the research brief so downstream dimensions do not inherit the error.",
+      "correction": "Fair Housing Framework = Local Law 167 of 2023 (Int. 1031-A, signed 13 Dec 2023, amending the City Charter and repealing LL 133 of 2018). The brief's 'LL 174 of 2021' is not a real law.",
+      "sourceUrl": "https://intro.nyc/local-laws/2023"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "questionForOrchestrator: whether to report a synthesized ~134,000 combined DHS + HERRC/asylum shelter total (Jan 2024)",
+      "verdict": "CONFIRMED",
+      "whatIFound": "The agent's stated approach is the correct one and I am upholding it: the synthesized ~134,000 appears nowhere in the dossier body, only in dataGaps and questionsForOrchestrator, with the two components carried separately and each attributed (Coalition for the Homeless for DHS+HPD; NYC Comptroller for the asylum-specific series). That is exactly what ruling R3 requires. I confirmed both components independently: asylum-seeker shelter population peaked near 70,000 in January 2024 and stood at approximately 33,300 on 28 September 2025 (-51%), with more than 239,200 asylum seekers having entered the shelter system since spring 2022. No official combined point-in-time total is published, and I could not source one either. The synthesized figure must stay out of the body; I have tightened the dataGap wording so it cannot be read as a reportable number.",
+      "correction": null,
+      "sourceUrl": "https://comptroller.nyc.gov/services/for-the-public/accounting-for-asylum-seeker-services/asylum-seeker-census"
+    },
+    {
+      "severity": "minor",
+      "category": "indicator-validity",
+      "claim": "The 2023 NYCHVS is the current vintage; 'the next HVS is due in 2026'",
+      "verdict": "CONFIRMED",
+      "whatIFound": "No staleness finding. The 2023 NYCHVS remains the most recent survey with published results. A 2026 NYCHVS is in the field — beginning in 2026 the City partnered with the Survey Research Center at the University of Michigan, with CUNY students hired and trained as field interviewers across 28 campuses — but no 2026 results have been released and no publication date is posted. The dossier's caveat that current post-City-of-Yes, post-rent-freeze conditions are not yet independently re-measured is accurate.",
+      "correction": null,
+      "sourceUrl": "https://nychvs.cityofnewyork.us/welcome/"
+    },
+    {
+      "severity": "minor",
+      "category": "fabrication",
+      "claim": "Headline arithmetic: 1.41% / 4.54% / ~33,000 available units / 2.36M rental stock / 0.39% under $1,100; ~275,000 household growth against ~60,000 net new units; four borough vacancy rates and 2021 comparators; Manhattan 10.01% to 2.33%",
+      "verdict": "CONFIRMED",
+      "whatIFound": "Every one of these checks out against the extracted primary PDF, and several are more precise than the dossier claims. 'The net rental vacancy rate in 2023 ... was 1.41 percent. There were 33,210 units available for rent out of a total stock of 2,357,000 occupied and vacant available rental units' — so '~33,000' and '2.36M' are both right, and the denominator is correctly the occupied-plus-vacant-available rental stock (renter-occupied alone is 2,324,000). 2021 comparator 4.54% confirmed and described by the report itself as 'historically high'. Bottom-quartile (<$1,100) rate 0.39% confirmed; second quartile 0.91%, third 0.78%, top quartile ($2,400+) 3.39%. Table 9: Bronx 0.82% [0.34-1.30] *** / 0.78% *** in 2021; Brooklyn 1.27% [0.76-1.78] ** / 2.73%; Manhattan 2.33% [1.72-2.94] / 10.01%; Queens 0.88% [0.47-1.29] ** / 4.48%. Manhattan highest in both years, confirmed in the narrative. The R11 check on the Manhattan swing is satisfied by the report itself, which attributes 2021's level to a historically high pandemic vacancy. Occupied units 3,432,000 in 2023 vs 3,157,000 in 2021 = +275,000; total housing stock 3,705,000 vs 3,644,000 = +61,000, which validates the '~60,000 net new units' claim the dossier made without a citation.",
+      "correction": null,
+      "sourceUrl": "https://www.nyc.gov/assets/hpd/downloads/pdfs/about/2023-nychvs-selected-initial-findings.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "indicator-validity",
+      "claim": "Policy and secondary claims: RGB June 2026 rent freeze; Good Cause Eviction; 485-x; rent-stabilized stock; Worst Landlord Watchlist 2025; Stuy Town and the UN Special Rapporteur; UN-Habitat; CTA March 2025; Ida basement deaths; Right to Counsel law number; Section 8 waitlist",
+      "verdict": "CONFIRMED",
+      "whatIFound": "A large block of the dossier survives intact and that is a real result. RGB: 7-1 vote on 25 June 2026, 0% for both one- and two-year leases from 1 Oct 2026 to 30 Sept 2027, first-ever two-year freeze, ~1M units; a pro-landlord board member resigned in protest hours before the vote. Rent-stabilized stock: 996,600 units = 27% of the overall housing stock and 41 percent of rental units (so the dossier's '~1 million' and '~40%' are both exactly right); 758,700 of them stabilized via ETPA. Good Cause: 17 municipalities opted in, ~1M renters covered statewide. 485-x: adopted 20 April 2024, 20-25% permanently affordable at 60-80% AMI weighted average, plus construction wage floors. NYCHA Section 8 waitlist: 633,808 applicants, 200,000 selected by lottery, first general opening since 10 Dec 2009. Worst Landlord Watchlist 2025: Margaret Brunn 24 buildings / 4,872 open violations, Donald Hastings 36 / 3,889, both A&E Real Estate, 60 buildings and ~8,761 violations combined — more than any prior top two. Stuy Town: 11,200 apartments, Blackstone with Ivanhoe Cambridge (a subsidiary of Caisse de depot et placement du Quebec, which validates the 'global pension capital' framing), $5.3B, closed Dec 2015. UN Special Rapporteur: A/HRC/34/51 (Farha, 2017) confirmed; the 22 March 2019 letter to Blackstone CEO Stephen Schwarzman, co-signed by Working Group chair-rapporteur Surya Deva, does reference Stuy Town, so the case-study linkage holds. UN-Habitat World Cities Report 2026, 'The Global Housing Crisis: Pathways to Action' (May 2026, WUF13 Baku): 895 million in informal settlements in 2000 rising to 1.13 billion in 2024, ~3.4 billion lacking adequate housing. CTA: FinCEN interim final rule issued 21 March 2025, effective 26 March 2025, exempting domestic entities and removing ~99.8% of originally covered entities; a final rule reached OIRA on 5 June 2026 and remains unpublished. Hurricane Ida: 11 of 13 NYC deaths were drownings in basement apartments, DOB found 5 of 6 units illegally converted. Right to Counsel: Local Law 136 of 2017 (Int. 214-B, signed 11 Aug 2017), expanded citywide by Local Law 54 of 2021. Asylum series confirmed as above. No private individual's contact details appear anywhere in the dossier — no PII finding.",
+      "correction": null,
+      "sourceUrl": "https://www.nyc.gov/assets/hpd/downloads/pdfs/about/2023-nychvs-selected-initial-findings.pdf"
+    }
+  ],
+  "levelReview": {
+    "originalLevel": 150,
+    "recommendedLevel": 135,
+    "reasoning": "Anchor: 1.41% net rental vacancy against the 5% ETPA statutory housing-emergency threshold — 3.5x below the line, and 0.39% in the bottom rent quartile, i.e. the affordable segment is functionally at zero. That is emergency-grade on its face and rules out anything at or below 100. Per R1 I then adjusted for sub-indicators, and the adjustment cuts both ways. Pulling UP: homelessness is at an all-time record and still rising at the review date — 194,531 unique DHS shelter users in 2025 (most in system history), ~96,500 people in shelter nightly in April 2026, >350,000 New Yorkers without homes at 1 Jan 2026 — and it is now a structurally domestic record, reached after the asylum-seeker population fell 51% from its Jan-2024 peak, so it cannot be dismissed as a migration shock. Add the Right to Counsel collapse (71% to 42% to 30% citywide; Bronx 81% to 31%), NYCHA's $78.3B twenty-year capital backlog (up 73% since 2017) with 633,808 households competing for 200,000 waitlist slots, and 86% of sub-$25,000 renters severely burdened. Pulling DOWN, and this is the honest tension the assignment asked me to adjudicate: the citywide median rent-to-income ratio fell from 34.3% to 29.5%, which NYCHVS calls the first decline since 2002, and the report's own conclusion is that 'the overall prevalence of rent burden in New York City declined for the first time in several survey cycles'; eviction filings fell 9.6% in 2024 and remain below pre-pandemic levels; units withheld for seasonal/occasional use fell 43%; and 2024-2026 brought an unusually dense run of real instruments (City of Yes at 82,000 units, Good Cause Eviction, 485-x, LL 126 of 2024, the 2026 rent freeze, the enacted pied-a-terre tax). I also discount the 4.54%-to-1.41% 'collapse' framing: NYCHVS itself calls 4.54% historically high, so the honest reading is reversion to and past NYC's chronic sub-3.5% norm rather than a new cliff. 150 is the ceiling of the scale and should mean a dimension deteriorating on every axis; this one improved on the single most standard affordability metric, and spending the ceiling here leaves nothing to distinguish a genuinely worse future reading. Equally, R5 forbids laundering a real crisis: I considered 120 and reject it as too soft against a live statutory emergency and record homelessness. 135 places housing as the most severe dimension in the portrait, clearly above 'critical', and just short of the ceiling — with the improvement in median rent burden as the sole named reason it is not 150. Global lens moves 100 to 60: the transparency regression is confirmed and worse than the dossier knew, but the headline figure carrying the 100 did not survive verification, and the quantities that did survive (58,810 withheld units, 1.6% of stock and falling 43%; ~14,000 units above the new pied-a-terre thresholds; 11,200 units at Stuy Town) plus a newly enacted tax instrument do not support 'critical'."
+  },
+  "sourcesIndependentlyFetched": [
+    {"url": "https://www.nyc.gov/assets/hpd/downloads/pdfs/about/2023-nychvs-selected-initial-findings.pdf", "fetchedOk": true, "confirms": "Full text extracted with pdfminer. Confirms 1.41%, 33,210 available units, 2,357,000 rental stock, 4.54% (2021, described as historically high), 0.39% bottom quartile, all four borough rates with confidence intervals and caution markers, Staten Island suppressed for sampling variation, 29.5%/34.3% median rent-to-income, 54.0% for sub-$70k renters, severe burden by race 28/27/26/22, 996,600 rent-stabilized units = 41% of rental units, 3,432,000 occupied units (+275,000) and 3,705,000 total stock (+61,000). Refutes the voucher-86% attribution and the '>50% burdened per NYCHVS' claim; supplies 58,810 seasonal/occasional-use units."},
+    {"url": "https://www.nyc.gov/site/hpd/news/007-24/new-york-city-s-vacancy-rate-reaches-historic-low-1-4-percent-demanding-urgent-action-new", "fetchedOk": true, "confirms": "1.4% headline, ~33,000 units available, 0.39% under $1,100, and the 'lowest since the 1968 NYCHVS' phrasing."},
+    {"url": "https://nychvs.cityofnewyork.us/welcome/", "fetchedOk": true, "confirms": "2026 NYCHVS in the field via University of Michigan SRC; no 2026 results published, so 2023 remains the current vintage. No staleness finding."},
+    {"url": "https://www.coalitionforthehomeless.org/state-of-the-homeless-2026/", "fetchedOk": true, "confirms": "194,531 unique DHS shelter users in 2025 (most in system history); ~96,500 in shelter nightly April 2026 incl. 30,955 children; +27% / 12,442 longer-term New Yorkers over the Adams administration; >350,000 New Yorkers without homes at 1 Jan 2026; doubled-up schoolchildren 69,000 to 89,000."},
+    {"url": "https://www.coalitionforthehomeless.org/dhs-hpd-census/", "fetchedOk": true, "confirms": "May 2026 DHS+HPD census 87,442 (18,890 families, 29,008 single adults) — the current figure the dossier had but did not use."},
+    {"url": "https://comptroller.nyc.gov/reports/evictions-up-representation-down/", "fetchedOk": true, "confirms": "Citywide RTC representation 71% (Q4 FY2021) to 42% (Q4 FY2024) to 30% (March 2025); Bronx 81% to 31% (refutes 88%); caseload +51% FY2019-2024 (refutes ~110%); 89% stably housed; $350M advocate estimate."},
+    {"url": "https://www.nyc.gov/assets/nycha/downloads/pdf/NYCHA_Fact_Sheet.pdf", "fetchedOk": true, "confirms": "Extracted with pdfminer. Jan-2025 release: 511,384 authorized residents, 177,565 apartments, 335 developments; PACT 92 developments / 24,639 apartments / 46,455 residents; Section 8 107,979 families; full public-housing borough breakdown; 'nearly $80 billion' repair need and no PNA dollar figure."},
+    {"url": "https://citylimits.org/resources-overview/nycha-repair-needs-tracker/", "fetchedOk": true, "confirms": "$78B/20 years per the 2023 PNA; next PNA slated 2028, so no intervening reassessment — refutes the $78.6B Jan-2025 update."},
+    {"url": "https://www.fincen.gov/rre-newsroom", "fetchedOk": true, "confirms": "Residential Real Estate Rule vacated by the U.S. District Court for E.D. Texas on 19 March 2026; no filing obligation and no liability for non-filing; FinCEN/DOJ appealing. GTOs expired 28 Feb 2026 and were superseded by the (now vacated) rule effective 1 March 2026."},
+    {"url": "https://www.hklaw.com/en/insights/publications/2026/06/new-york-state-enacts-pied-a-terre-tax", "fetchedOk": true, "confirms": "Pied-a-terre tax enacted 26 May 2026 in the FY2026-27 NYS Budget Bill, effective 1 July 2026, sunset 30 June 2031; rates and thresholds; ~14,000 units estimated in scope; revenue revised to $340-380M."},
+    {"url": "https://intro.nyc/local-laws/2023", "fetchedOk": true, "confirms": "Local Law 167 of 2023 = Int. 1031-2023, amending the City Charter re: a fair housing plan and repealing LL 133 of 2018 — the Fair Housing Framework."},
+    {"url": "https://intro.nyc/local-laws/2021", "fetchedOk": true, "confirms": "2021 local laws run 1 through 173. There is no Local Law 174 of 2021 — the orchestrator brief's citation does not exist."},
+    {"url": "https://www.nyc.gov/office-of-the-mayor/news/951-23/mayor-adams-signs-bill-create-fair-housing-framework-more-equitable-housing-production", "fetchedOk": true, "confirms": "Fair Housing Framework was Int. 1031-A, signed 13 December 2023."},
+    {"url": "https://www.nysenate.gov/newsroom/press-releases/2025/julia-salazar/1-year-later-good-cause-eviction-adopted-17-ny", "fetchedOk": true, "confirms": "17 NY municipalities opted into Good Cause Eviction; ~1 million renters protected statewide."},
+    {"url": "https://www.nyc.gov/site/hpd/services-and-information/tax-incentives-485-x.page", "fetchedOk": true, "confirms": "485-x adopted 20 April 2024; 20-25% permanently affordable at 60-80% AMI weighted average by project tier; construction wage floors; permanent rent stabilization for restricted units."},
+    {"url": "https://www.governor.ny.gov/news/governor-hochul-mayor-adams-and-council-speaker-adams-celebrate-passage-most-pro-housing", "fetchedOk": true, "confirms": "City of Yes for Housing Opportunity adopted 5 Dec 2024, 82,000 homes over 15 years, $5B infrastructure — refutes '~80,000'."},
+    {"url": "https://www.sidley.com/en/insights/newsupdates/2026/02/ny-llc-transparency-act-took-effect-but-governor-veto-exempts-us-formed-llcs", "fetchedOk": true, "confirms": "NY LLC Transparency Act signed 23 Dec 2023, amended 1 Mar 2024, effective 1 Jan 2026; after Hochul's 19 Dec 2025 veto of S8432 it covers only non-US-formed LLCs. Refutes the dossier's '2019' date and its implied federal backstop role."},
+    {"url": "https://www.fincen.gov/news/news-releases/fincen-removes-beneficial-ownership-reporting-requirements-us-companies-and-us", "fetchedOk": true, "confirms": "CTA interim final rule issued 21 March 2025, effective 26 March 2025; domestic entities exempt; ~99.8% of originally covered entities removed; final rule still unpublished as of June 2026."},
+    {"url": "https://chpcny.org/publication/basement-apartment-conversion-pilot-program-final-report/", "fetchedOk": true, "confirms": "BACPP launched 2019 in Brooklyn CD5; 5 active participants from ~8,000 homeowners contacted against a 40-unit goal; no conversions completed by mid-2025. Refutes 'the 2023 BACPP' and 'a few hundred units legalized'."},
+    {"url": "https://www.nyc.gov/site/hpd/news/074-25/adams-administration-publishes-new-proposed-rules-legalizing-basement-cellar-apartments", "fetchedOk": true, "confirms": "Current pilot mandated by Local Law 126 of 2024; DOB/HPD proposed rules Nov 2025; apartments must predate 20 Apr 2024; named community districts only; apply by 20 Apr 2029; 10-year compliance window; properties in flood-prone areas categorically ineligible."},
+    {"url": "https://www.furmancenter.org/soc-report/state-of-the-city-2024/state-of-renters-and-their-homes-2024/", "fetchedOk": false, "confirms": "403 Forbidden on direct fetch, as the agent also found. Figures recovered via search indexing of the report: 119,646 eviction filings in 2024 (-9.6%); borough filing rates Bronx 104.1, Queens 47.1, Brooklyn 45.2, Staten Island 42.9, Manhattan 36.6; severe burden Bronx 35.8%, Brooklyn 28.1%, Queens 28.0%, Manhattan 25.4%; citywide 2023 just over half burdened (23.0% moderate + 28.9% severe). Staten Island's 32.1% severe-burden figure was NOT recovered and is downgraded to medium confidence. All Furman-derived figures capped at medium confidence per the brief's unfetchable-source rule."},
+    {"url": "https://comptroller.nyc.gov/services/for-the-public/accounting-for-asylum-seeker-services/asylum-seeker-census", "fetchedOk": false, "confirms": "403 Forbidden on direct fetch. Via search indexing of the same Comptroller page: ~33,300 asylum seekers in City-funded shelter as of 28 Sept 2025, -51% from a peak of nearly 70,000 in Jan 2024; >239,200 cumulative entrants since spring 2022. Confidence capped at medium."},
+    {"url": "https://www.hklaw.com/en/insights/publications/2026/06/what-happened-to-fincens-corporate-transparency-act", "fetchedOk": true, "confirms": "CTA in regulatory limbo; final BOI rule received by OIRA 5 June 2026, unpublished."}
+  ],
+  "questionsForOrchestrator": [
+    "The orchestrator's own research brief is wrong and should be corrected at source before other dimensions inherit it: the Fair Housing Framework is Local Law 167 of 2023 (Int. 1031-A, signed 13 Dec 2023), and 'LL 174 of 2021' does not exist — the 2021 local laws end at 173. Local Law 174 of 2017 is the unrelated citywide equity-assessments law. The research agent was right to refuse to assert either number; that judgement should be credited rather than treated as an incomplete answer.",
+    "I moved the local level from 150 to 135, which means housing is no longer at the scale ceiling. If any other dimension in the portrait is currently scored 150, the orchestrator should confirm that it clears a higher bar than housing does — a live statutory housing emergency, record all-time homelessness and a $78.3B public-housing backlog — or lower it. Housing should remain the portrait's most severe dimension at 135.",
+    "The 2026 NYCHVS is in the field (University of Michigan SRC with CUNY field interviewers) with no published release date. Every headline number in this dimension is keyed to a Jan-Jun 2023 field period, so the entire dimension will need re-scoring on publication — and it post-dates City of Yes, Good Cause Eviction and the 2026 rent freeze. Recommend the orchestrator record an explicit re-score trigger rather than leaving the 2023 vintage to age silently.",
+    "The global lens for housing is inbound-capital-focused (anonymous purchases, withheld units, institutional ownership) rather than a claim about NYC's external footprint. I judged that a legitimate R2 'transmission channel (finance)' reading and scored it 60 on three primary quantities. If the orchestrator reads R2 more strictly as requiring NYC's effect on people elsewhere, the honest alternative is level null with the transparency-regression narrative intact — I do not think the evidence supports anything higher than 60 either way."
+  ]
+}

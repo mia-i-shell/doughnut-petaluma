@@ -113,6 +113,19 @@ function normalizeSubIndicators(subs) {
     });
 }
 
+
+// Reviewers sometimes add prose keys (e.g. "patternNote") alongside the borough keys.
+// Split them out: object values are borough entries, string values become a note.
+function splitBoroughs(raw) {
+    if (!raw || typeof raw !== 'object') return [undefined, undefined];
+    const entries = {}, notes = [];
+    for (const [k, v] of Object.entries(raw)) {
+        if (v && typeof v === 'object' && !Array.isArray(v)) entries[k] = v;
+        else if (typeof v === 'string' && v.trim()) notes.push(v.trim());
+    }
+    return [Object.keys(entries).length ? entries : undefined, notes.length ? notes.join(' ') : undefined];
+}
+
 // Canonical (schema-compliant) form: keeps boroughs + the global lens.
 function toCanonical(d) {
     const l = d.local || {};
@@ -144,7 +157,9 @@ function toCanonical(d) {
     const [lpvc, lpvcNote] = normalizePvC(l.productionVsConsumption);
     if (lpvc) out.productionVsConsumption = lpvc;
     if (lpvcNote) out.productionVsConsumptionNote = lpvcNote;
-    if (l.boroughs) out.boroughs = l.boroughs;
+    const [lbor, lborNote] = splitBoroughs(l.boroughs);
+    if (lbor) out.boroughs = lbor;
+    if (lborNote) out.boroughsNote = lborNote;
     if (l.neighborhoodNote) out.neighborhoodNote = l.neighborhoodNote;
     if (l.subIndicators?.length) out.subIndicators = normalizeSubIndicators(l.subIndicators);
     if (d.global) {
@@ -168,7 +183,9 @@ function toCanonical(d) {
         if (gpvcNote) out.global.productionVsConsumptionNote = gpvcNote;
         // Ruling R7: borough data measured on the global/consumption basis rides on the
         // global lens, never in local.boroughs.
-        if (g.boroughs) out.global.boroughs = g.boroughs;
+        const [gbor, gborNote] = splitBoroughs(g.boroughs);
+        if (gbor) out.global.boroughs = gbor;
+        if (gborNote) out.global.boroughsNote = gborNote;
     }
     if (d.policyAnchors?.length) {
         // Drop null/absent fields rather than emitting them — the schema types these as

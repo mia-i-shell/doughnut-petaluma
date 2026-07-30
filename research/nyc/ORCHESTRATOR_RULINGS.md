@@ -190,3 +190,66 @@ Specific live example: the heat dimension reports ~500 heat-related deaths/year 
 its heat-exacerbated-mortality methodology before — but the portrait must say which
 vintage and which definition it is using, and whether the change is methodological or
 real.
+
+## R12. Ecological levels score against the PLANETARY BOUNDARY, not the city's own statute
+
+This supersedes any reading of R9 that made a city's own policy target the scoring anchor.
+R9 still governs the *accounting basis* (GPC production-based for the local climate
+headline); R12 governs which *target* the severity is measured against.
+
+The Doughnut's outer ring asks whether a city is living within planetary means. It does
+not ask whether a city is on track against its own legislation. Those are different
+questions with different answers, and conflating them breaks the portrait in a specific,
+visible way:
+
+> NYC's production-based emissions are ~6.2 tCO2e/person. Petaluma's are 7.25 — **15%
+> higher**. Scored against the DEAL 1.5°C-aligned benchmark (1.6–2.0 t), Petaluma sits at
+> 100. Scored against NYC's own 40x30 statutory target, NYC landed at **40**. Side by side
+> in the same tool, a reader sees Petaluma deep in the red and NYC almost inside the
+> doughnut — for near-identical per-capita emissions. That comparison is false, and the
+> falseness is an artefact of the scoring anchor, not of anything either city did.
+
+Therefore, for every **ecological** dimension:
+- Score against the framework/planetary benchmark, applied identically across all
+  portraits in the repo.
+- Report progress against the city's own statutory commitments (LL97, 40x30, CLCPA,
+  Zero Waste Act) in `context`, `policyAnchors`, and `subIndicators`.
+- That progress may adjust the level modestly under R1 — a city genuinely and rapidly
+  decarbonising is in a better position than one that is not — but it is a modifier, never
+  the anchor.
+
+**Applied to climate change:** local level **75**, not 40. NYC is roughly 3x the
+1.5°C-aligned per-capita benchmark (clearly overshooting), moderated from Petaluma's 100
+because its per-capita is 15–20% lower and its trend is genuinely downward (−25.2% vs
+2005, with 2024 the largest single-year cut in the series). Global lens stays at **120**:
+the consumption overshoot ratio (~5.5–6.9x) is about 1.5x Petaluma's, and flattening that
+to an identical 100 would erase a real difference.
+
+Social dimensions are less exposed to this, because most lack a downscaled global
+benchmark — but the same principle holds wherever a cross-portrait comparison exists.
+
+## R13. Corrected figures that must be applied portrait-wide
+
+Errors found in one dimension often propagate. These are settled corrections; apply them
+wherever they appear, and do not re-derive them:
+
+- **Undocumented New Yorkers: ~412,000 (MOIA, 2022)**, down from ~611,000 in 2012. The
+  **672,000 figure is New York STATE** (CMS), not the city. Figures of 820,400 and 943,000
+  are unsupportable as city numbers. This was a scale substitution that the research layer
+  introduced by overriding a correct brief — treat any six-figure "undocumented NYC"
+  number above ~450,000 as suspect until sourced to a city-scale publication.
+- **NYC GHG inventory: CY2024 is the current vintage** (published Dec 2025; NYC Open Data
+  `wq7q-htne`). CY2024 = **47,944,551 tCO2e**, −25.2% vs the 2005 baseline of 64,139,721,
+  and −4.9% vs CY2023's **50,433,720**. The figures 51.2–51.3 Mt for 2023 are wrong.
+  Officially published per-capita: **6.2 t (2023)**; the 2024 per-capita (~5.7) is derived,
+  not published, and must be labelled as such.
+- **Local Law 97 covers ~35% of citywide emissions**, not 72%. The 72% figure is *all*
+  buildings; LL97 covers roughly 60% of floor area and ~50% of building emissions.
+- The **57% of buildings already exceeding the 2030 cap** and 9% figures are **Urban Green
+  Council estimates** from CY2024 benchmarking data, **not DOB findings**. DOB confirms
+  filing rates (~91–93%), ~1,400 non-filers and the $268/ton penalty, but is still
+  auditing and has published no cap-compliance rate. Attribute accordingly.
+- **JPMorgan Chase fossil-fuel financing: $58B (2025)**, ranked #1 globally. Citigroup is
+  **top-five, not top-three**.
+- **NYC pension fossil-fuel divestment is NOT reversed** — Court of Appeals denied leave
+  to appeal, 21 October 2025.
