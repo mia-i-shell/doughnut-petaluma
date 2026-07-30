@@ -81,7 +81,7 @@ Two agent layers, orchestrated:
    against stated targets (`REVIEW_BRIEF.md`).
 
 Judgement calls escalate to the orchestrator and are settled once, in
-`ORCHESTRATOR_RULINGS.md` (R1–R11), which both layers read. Highlights:
+`ORCHESTRATOR_RULINGS.md` (R1–R16), which both layers read. Highlights:
 
 - **R1** — the wedge scores the *dimension*, not just the headline indicator.
 - **R2** — a global-lens entry must describe the city's *external* footprint. An
@@ -89,6 +89,11 @@ Judgement calls escalate to the orchestrator and are settled once, in
 - **R7** — never put a consumption-based figure in a production-based slot.
 - **R10** — a borough entry must measure the *same indicator* as the headline; a proxy
   goes in `note`, never in `value`.
+- **R12** — ecological levels score against the *planetary boundary*, not the city's own
+  statute. Without this, NYC's climate wedge sat at 40 against its 40x30 target while
+  Petaluma sat at 100 against the DEAL benchmark — for 15% *higher* per-capita emissions.
+- **R15** — where no downscaled city-scale benchmark exists, the local lens scores against
+  the best regulatory target and the *global* lens carries the quantified boundary comparison.
 
 ## Files
 
@@ -96,7 +101,7 @@ Judgement calls escalate to the orchestrator and are settled once, in
 research/nyc/
 ├── RESEARCH_BRIEF.md         contract given to every research agent
 ├── REVIEW_BRIEF.md           contract given to every adversarial reviewer
-├── ORCHESTRATOR_RULINGS.md   R1–R11, binding on both layers
+├── ORCHESTRATOR_RULINGS.md   R1–R16, binding on both layers
 ├── dossiers/                 raw per-dimension research output
 └── reviews/                  adversarial reviews + corrected dossiers
 ```
