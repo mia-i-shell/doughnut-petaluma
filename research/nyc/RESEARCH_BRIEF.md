@@ -8,7 +8,48 @@ be **substantively distinct**: a 8.3M-person global megacity, not a 60k small to
 Today's date: **2026-07-25**. Your training data ends earlier than that. **You must
 use WebSearch and WebFetch for every data point.** Do not assert a number from memory.
 
+
 ---
+
+## 0. READ THE RULINGS FIRST — and learn from what the first wave got wrong
+
+Before anything else, read `ORCHESTRATOR_RULINGS.md` in this directory (R1-R16). It is
+binding. Eight dimensions have already been through research and adversarial review, and
+**every single one came back with corrections** — 10 critical findings across the eight.
+These are the failure modes that actually occurred. Do not repeat them:
+
+1. **Over-scoring the global lens.** Four of eight dimensions attached a confident level
+   (30, 65, 70) to a global-lens claim with no underlying quantity. All four were forced to
+   `null`. **If you cannot quantify a transmission channel, score `null`** (R2). A null with
+   strong framing is a good result; a fabricated-looking number is a defect.
+2. **Putting a proxy in a borough `value`.** Heat reported "5 of 5 boroughs" where all five
+   were Heat Vulnerability Index scores, not the heat-mortality headline. All five were
+   nulled. A borough `value` must measure the SAME indicator as the headline (R10).
+   **Reporting "1 of 5 real, 4 proxied in notes" is better than a false 5 of 5.**
+3. **Missing a newer vintage.** The climate dossier headlined a 2023 inventory when CY2024
+   had been published in Dec 2025 — and got 2023 wrong too. **Always check whether a newer
+   release exists** before headlining, and verify your figure against the exact table rather
+   than reading a chart.
+4. **State figures passed off as city figures.** One agent overrode a correct brief to claim
+   672,000 undocumented New Yorkers; that is New York STATE. NYC is ~412,000. **Check the
+   geography of every figure** (R3).
+5. **Computing your own aggregate when a published one exists.** Air pollution averaged 59
+   community districts unweighted; DOHMH publishes a citywide mean. Mobility aggregated five
+   counties; ACS publishes a place-level figure for "New York city, New York"
+   (`1600000US3651000`). **Look harder for the published number** (R3).
+6. **Fabricated or stale law details.** A canopy target was given a "by 2040" deadline that
+   is not in the statute. A heating-oil deadline had been superseded three years earlier. A
+   tax was described as an unenacted proposal after it had passed. **Verify the law number,
+   the year, and the current status** of every policy you cite.
+7. **A statistic attached to the wrong population.** A rent-burden figure for voucher
+   holders actually described a nearly opposite group; an equity ratio described 7 deaths a
+   year while the headline described 490. **Check that your ratio and your headline describe
+   the same people.**
+
+If a figure surprises you, or differs from what this brief suggests, apply R11: find the
+prior vintage, state both, and explain the gap. **This brief is not evidence** — an earlier
+version of it asserted NYC traffic deaths were at post-Vision-Zero highs when they are at a
+record low since 1910, and that error propagated into a published score.
 
 ## 1. Geographic resolution — REQUIRED
 
