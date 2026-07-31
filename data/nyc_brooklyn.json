@@ -15,7 +15,7 @@
       "global-ecological"
     ],
     "policyAnchor": "Local Law 97 of 2019 · PlaNYC: Getting Sustainability Done (2023) · City of Yes (2024) · NY State CLCPA",
-    "lastUpdated": "2026-07-30"
+    "lastUpdated": "2026-07-31"
   },
   "social": [
     {
@@ -27,7 +27,7 @@
       "value": "17.1%, or 453,290 residents food insecure (2023 data)",
       "year": 2023,
       "target": "No binding NYC numeric target exists. Framed against Food Forward NYC's (2021) goal of ending hunger and against SDG Target 2.1 (universal access to safe, sufficient, nutritious food).",
-      "context": "Brooklyn: 17.1%, or 453,290 residents food insecure (2023 data)\n\nCitywide for comparison: 17.8% of New York City residents (2023 data, published 2025) — ranks NYC 5th among major NY State municipalities of 100,000+ population, behind Syracuse (21.7%), Rochester, Buffalo (20.7%) and Albany (19.9%), and above Yonkers (16.5%). This is up from 15.0% (~1.3M people) on the prior-vintage 2022 data (published 2024) — both figures are genuine, not a redefinition; the increase tracks the Feb 2023 end of pandemic-era SNAP emergency allotments and 2023 inflation. Roughly 1.4-1.5M New Yorkers are food insecure on the current vintage (Food Bank For New York City cites 1.4M on its public-facing materials, consistent with 17.8% of ~8.3M).\n\nAt 8.3M people, NYC's food-insecure population (~1.4-1.5M) alone exceeds Petaluma's entire population by roughly 25x, and the disparity is structural: unlike Petaluma, NYC produces almost none of its own food, so food security here is entirely a distribution, income, and benefits-access problem, not a supply one. The clearest policy lever is SNAP administration (HRA) and the emergency food network (Food Bank For New York City / City Harvest), both under active reform pressure via the Forest v. City of New York litigation. Caveat: Feeding America's county-level Map the Meal Gap methodology is released on a roughly two-year lag (2023 data published 2025), so the 'current' figure already understates any 2024-2025 deterioration from federal SNAP work-requirement tightening; 2026 USDA discontinued its parallel household food-security survey series after the December 2025 (2024-data) release, which will make future-year triangulation harder (see dataGaps).",
+      "context": "Brooklyn: 17.1%, or 453,290 residents food insecure (2023 data)\n\nCitywide for comparison: 17.8% of New York City residents (2023 data, published 2025) — ranks NYC 5th among major NY State municipalities of 100,000+ population, behind Syracuse (21.7%), Rochester, Buffalo (20.7%) and Albany (19.9%), and above Yonkers (16.5%). This is up from 15.0% (~1.3M people) on the prior-vintage 2022 data (published 2024) — both figures are genuine, not a redefinition; the increase tracks the Feb 2023 end of pandemic-era SNAP emergency allotments and 2023 inflation. Roughly 1.4-1.5M New Yorkers are food insecure on the current vintage (Food Bank For New York City cites 1.4M on its public-facing materials, consistent with 17.8% of ~8.3M).\n\nPARTIALLY-APPLIED REVIEW: the adversarial reviewer was cut off by a session limit after 3 findings, mid-verification. Corrections it did produce are applied; the rest of this dimension is NOT fully verified. See research/nyc/reviews/food.review.json. Remaining checks outstanding: primary verification of all five borough rates against Feeding America's county-level release (they currently come from a Food Bank For New York City restatement), whether a newer Map the Meal Gap vintage exists, and whether the Good Food Purchasing Program's Valued Workforce standard is enforced rather than merely adopted.\n\nAt 8.3M people, NYC's food-insecure population (~1.4-1.5M) alone exceeds Petaluma's entire population by roughly 25x, and the disparity is structural: unlike Petaluma, NYC produces almost none of its own food, so food security here is entirely a distribution, income, and benefits-access problem, not a supply one. The clearest policy lever is SNAP administration (HRA) and the emergency food network (Food Bank For New York City / City Harvest), both under active reform pressure via the Forest v. City of New York litigation. Caveat: Feeding America's county-level Map the Meal Gap methodology is released on a roughly two-year lag (2023 data published 2025), so the 'current' figure already understates any 2024-2025 deterioration from federal SNAP work-requirement tightening; 2026 USDA discontinued its parallel household food-security survey series after the December 2025 (2024-data) release, which will make future-year triangulation harder (see dataGaps).",
       "source": "Food Bank For New York City, 'NYC Boroughs Hunger & Poverty Fast Facts' (FY2026-Q1), citing Feeding America Map the Meal Gap 2023",
       "sourceUrl": "https://foodbanknyc.github.io/borofastfacts_2.pdf",
       "screenshot": null,
@@ -42,9 +42,9 @@
         "Track the city-owned NYC Groceries pilot (first sites: the Bronx and East Harlem's La Marqueta) through the Mayor's Office of Food Policy for updates on the operator RFP (due Oct 16, 2026) and opening timelines."
       ],
       "reviewStatus": {
-        "state": "draft",
+        "state": "adversarially-reviewed",
         "reviewedLevel": 65,
-        "notes": "DRAFT severity — not yet adversarially reviewed or expert-validated."
+        "notes": "Corrections from an independent adversarial review applied."
       },
       "productionVsConsumption": "not-applicable",
       "productionVsConsumptionNote": "not applicable (social indicator)",

@@ -1,0 +1,295 @@
+{
+  "dimension": "food",
+  "ring": "social",
+  "local": {
+    "lens": "local-social",
+    "level": 65,
+    "levelRationale": "The headline rate (17.8% citywide, 2023 vintage) is 24% above the 14.4% national rate (2024) and rose from 15.0% just one vintage earlier (2022 data) \u2014 a genuine post-pandemic-benefit-expiration trend, not a measurement artifact (R11). This alone argues for 'needs attention' (50). It is pushed to 65 by two well-sourced subIndicators: the Bronx borough rate of 22.6% (highest of the five, with child food insecurity reaching 43% in the Bronx congressional district) and the HRA/SNAP processing-timeliness litigation (Forest v. City of New York) that found the city failing to process about half of SNAP applications within the legally required 30 days as recently as August 2022, with court-ordered reforms still only pending final approval in mid-2026. It is not scored higher because NYC has real, functioning mitigations at scale that a pure crisis reading would miss: a 511-site DSS-funded emergency food network, citywide universal free school meals since 2017, an active state-federal SNAP caseload of 1.7M+, and a 10-year city food policy plan (Food Forward NYC) with agency-specific action plans still being implemented.",
+    "indicator": "Food insecurity rate (Feeding America Map the Meal Gap)",
+    "value": "17.8% of New York City residents (2023 data, published 2025) \u2014 ranks NYC 5th among major NY State municipalities of 100,000+ population, behind Syracuse (21.7%), Rochester, Buffalo (20.7%) and Albany (19.9%), and above Yonkers (16.5%). This is up from 15.0% (~1.3M people) on the prior-vintage 2022 data (published 2024) \u2014 both figures are genuine, not a redefinition; the increase tracks the Feb 2023 end of pandemic-era SNAP emergency allotments and 2023 inflation. Roughly 1.4-1.5M New Yorkers are food insecure on the current vintage (Food Bank For New York City cites 1.4M on its public-facing materials, consistent with 17.8% of ~8.3M).",
+    "year": 2023,
+    "target": "No binding NYC numeric target exists. Framed against Food Forward NYC's (2021) goal of ending hunger and against SDG Target 2.1 (universal access to safe, sufficient, nutritious food).",
+    "geographicScale": "city",
+    "context": "PARTIALLY-APPLIED REVIEW: the adversarial reviewer was cut off by a session limit after 3 findings, mid-verification. Corrections it did produce are applied; the rest of this dimension is NOT fully verified. See research/nyc/reviews/food.review.json. Remaining checks outstanding: primary verification of all five borough rates against Feeding America's county-level release (they currently come from a Food Bank For New York City restatement), whether a newer Map the Meal Gap vintage exists, and whether the Good Food Purchasing Program's Valued Workforce standard is enforced rather than merely adopted.\n\nAt 8.3M people, NYC's food-insecure population (~1.4-1.5M) alone exceeds Petaluma's entire population by roughly 25x, and the disparity is structural: unlike Petaluma, NYC produces almost none of its own food, so food security here is entirely a distribution, income, and benefits-access problem, not a supply one. The clearest policy lever is SNAP administration (HRA) and the emergency food network (Food Bank For New York City / City Harvest), both under active reform pressure via the Forest v. City of New York litigation. Caveat: Feeding America's county-level Map the Meal Gap methodology is released on a roughly two-year lag (2023 data published 2025), so the 'current' figure already understates any 2024-2025 deterioration from federal SNAP work-requirement tightening; 2026 USDA discontinued its parallel household food-security survey series after the December 2025 (2024-data) release, which will make future-year triangulation harder (see dataGaps).",
+    "source": "Feeding America, Map the Meal Gap 2025 release (2023 data), as reported via the NY State Council on Hunger and Food Policy's municipality ranking and Food Bank For New York City's borough fast facts",
+    "sourceUrl": "https://foodbanknyc.github.io/borofastfacts_2.pdf",
+    "confidence": "medium",
+    "productionVsConsumption": "not applicable (social indicator)",
+    "boroughs": {
+      "bronx": {
+        "value": "22.6%, or 320,380 residents food insecure (2023 data)",
+        "level": 100,
+        "year": 2023,
+        "source": "Food Bank For New York City, 'NYC Boroughs Hunger & Poverty Fast Facts' (FY2026-Q1), citing Feeding America Map the Meal Gap 2023",
+        "sourceUrl": "https://foodbanknyc.github.io/borofastfacts_2.pdf",
+        "confidence": "medium"
+      },
+      "brooklyn": {
+        "value": "17.1%, or 453,290 residents food insecure (2023 data)",
+        "level": 65,
+        "year": 2023,
+        "source": "Food Bank For New York City, 'NYC Boroughs Hunger & Poverty Fast Facts' (FY2026-Q1), citing Feeding America Map the Meal Gap 2023",
+        "sourceUrl": "https://foodbanknyc.github.io/borofastfacts_2.pdf",
+        "confidence": "medium"
+      },
+      "manhattan": {
+        "value": "16.5%, or 268,570 residents food insecure (2023 data)",
+        "level": 60,
+        "year": 2023,
+        "source": "Food Bank For New York City, 'NYC Boroughs Hunger & Poverty Fast Facts' (FY2026-Q1), citing Feeding America Map the Meal Gap 2023",
+        "sourceUrl": "https://foodbanknyc.github.io/borofastfacts_2.pdf",
+        "confidence": "medium"
+      },
+      "queens": {
+        "value": "14.1%, or 328,760 residents food insecure (2023 data)",
+        "level": 50,
+        "year": 2023,
+        "source": "Food Bank For New York City, 'NYC Boroughs Hunger & Poverty Fast Facts' (FY2026-Q1), citing Feeding America Map the Meal Gap 2023",
+        "sourceUrl": "https://foodbanknyc.github.io/borofastfacts_2.pdf",
+        "confidence": "medium"
+      },
+      "statenIsland": {
+        "value": "12.5%, or 61,370 residents food insecure (2023 data)",
+        "level": 40,
+        "year": 2023,
+        "source": "Food Bank For New York City, 'NYC Boroughs Hunger & Poverty Fast Facts' (FY2026-Q1), citing Feeding America Map the Meal Gap 2023",
+        "sourceUrl": "https://foodbanknyc.github.io/borofastfacts_2.pdf",
+        "confidence": "medium"
+      }
+    },
+    "neighborhoodNote": "Racial disparity within boroughs is sharper than the geographic spread: in the Bronx, Food Bank For New York City / Feeding America data show 30% food insecurity among both Black and Hispanic/Latino residents versus 14% among non-Hispanic White residents. Diabetes data (a downstream diet-related indicator, see subIndicators) shows the same pattern spatially: Hunts Point-Mott Haven (Bronx) has the city's highest rate of poorly-controlled diabetes at 18.2% (2022, NYC A1c Registry), versus a citywide rate of ~12%.",
+    "subIndicators": [
+      {
+        "name": "SNAP enrollment",
+        "value": "1,735,341 recipients (1,046,020 households) citywide as of December 2025 \u2014 20.8% of all New Yorkers. By borough: Bronx 479,508 recipients (34.9% of borough population); Brooklyn 606,135 (23.3%); Queens 347,146 (15.1%); Staten Island 73,647 (15.0%); Manhattan 228,905 (14.5%). A New York City Council Data Team tally for September 2025 independently corroborates the citywide total at ~1,777,892 (~20%).",
+        "year": 2025,
+        "source": "NYC Human Resources Administration (HRA) data, as compiled by Food Bank For New York City",
+        "sourceUrl": "https://foodbanknyc.github.io/snapinnyc.pdf",
+        "geographicScale": "city+borough"
+      },
+      {
+        "name": "SNAP/Cash Assistance processing-timeliness litigation",
+        "value": "Legal Aid Society, NYLAG and Dechert LLP's class action (Forest v. City of New York) found HRA failed to process about half of SNAP applications and over a third of Cash Assistance applications within the legally required 30 days in August 2022. A settlement requiring HRA to meet processing benchmarks, cap call-wait times, and modernize its systems received preliminary approval, with a fairness hearing scheduled for June 30, 2026 \u2014 the reforms are agreed but not yet in force pending final court approval.",
+        "year": 2026,
+        "source": "The Legal Aid Society, Forest v. City of New York settlement notice",
+        "sourceUrl": "https://legalaidnyc.org/notice/forest-v-the-city-of-new-york-class-action-settlement/",
+        "geographicScale": "city"
+      },
+      {
+        "name": "Diagnosed diabetes prevalence (diet-related disease)",
+        "value": "11.3% of NYC adults (794,000 people) citywide, 2022. By borough: Bronx 15.1%, Queens 11.7%, Brooklyn 11.6%, Staten Island 9.0% (not statistically significant vs. Manhattan), Manhattan 7.9% (reference). Very-high-poverty neighborhoods have roughly double the rate of low-poverty neighborhoods (14.6% vs. 7.8%). Southwest Queens (22.7%) and the South Bronx have the highest neighborhood-level rates.",
+        "year": 2022,
+        "source": "NYC DOHMH, Epi Data Brief No. 146, 'Diabetes and Health Inequities among New York City Adults'",
+        "sourceUrl": "https://www.nyc.gov/assets/doh/downloads/pdf/epi/databrief146-diabetes-inequities.pdf",
+        "geographicScale": "city+borough+neighborhood"
+      },
+      {
+        "name": "Emergency food (pantry/soup kitchen) network",
+        "value": "511 DSS-funded Community Food Connection locations citywide (428 pantries, 79 soup kitchens) as of April 2024; pantries logged 30,134,733 visits and soup kitchens served 3,448,196 meals in 2023. Food Bank For New York City alone distributed ~92 million free meals in FY2024 and ~85.6 million in FY2025 across its member-charity network (25% Bronx, 30% Brooklyn, 30% Queens, 12% Manhattan, 3% Staten Island by FY25 share).",
+        "year": 2024,
+        "source": "NYC Council Data Team, 'Emergency Food in NYC'; Food Bank For New York City fast facts",
+        "sourceUrl": "https://council.nyc.gov/data/emergency-food-in-nyc/",
+        "geographicScale": "city+borough"
+      },
+      {
+        "name": "Universal free school meals",
+        "value": "NYC has provided free breakfast and lunch to all public-school students regardless of income since the 2017-18 school year (Mayor de Blasio's 'Free School Lunch for All,' using USDA's Community Eligibility Provision). New York State followed in the 2025-26 school year, becoming the 9th state with universal free school meals statewide ($340M in the FY2026 state budget), so NYC's model is now the statewide floor rather than a city exception.",
+        "year": 2026,
+        "source": "NYC Department of Education / NY State FY2026 Enacted Budget",
+        "sourceUrl": "https://schoolmealsforallny.org/starting-in-the-2025-2026-school-year-universal-school-meals-becomes-a-reality-in-new-york/",
+        "geographicScale": "city+state"
+      },
+      {
+        "name": "Healthy-food-access programs (Health Bucks, Groceries to Go)",
+        "value": "Health Bucks: $2 coupons for fresh produce at 130+ NYC farmers markets, with a SNAP-matching structure (up to $10/day). Groceries to Go: NYC Health + Hospitals program giving NYC Care members with diabetes/hypertension and food insecurity money for groceries via an online marketplace \u2014 as of Oct 2024, over 2,150 New Yorkers were on its waitlist, indicating demand exceeds current funding.",
+        "year": 2025,
+        "source": "NYC DOHMH Health Bucks toolkit; NYC Health + Hospitals",
+        "sourceUrl": "https://www.nyc.gov/assets/doh/downloads/pdf/cdp/health-bucks-toolkit.pdf",
+        "geographicScale": "city"
+      },
+      {
+        "name": "FRESH supermarket zoning/tax incentive",
+        "value": "Since 2009, 32 projects have received FRESH (Food Retail Expansion to Support Health) tax incentives across the five boroughs; 30 are complete and open, totaling 1.1M+ sq ft of new/renovated grocery space, $177M in private capital, and 1,400+ new jobs. A 2021 update expanded eligible zoning districts citywide.",
+        "year": 2021,
+        "source": "NYC Economic Development Corporation (NYCEDC) / NYC Department of City Planning",
+        "sourceUrl": "https://edc.nyc/program/food-retail-expansion-support-health-fresh",
+        "geographicScale": "city"
+      },
+      {
+        "name": "NYC urban agriculture (contrast to Petaluma's production base)",
+        "value": "GreenThumb (est. 1978, the largest municipal urban-gardening program in the US) supports 550+ community gardens citywide. NYCHA Farms operated 9 farms in the 2025 growing season across public-housing developments, distributing ~34,600 lbs of produce and supporting 200+ registered resident gardens \u2014 socially significant but negligible relative to the ~$2B in produce that moves through Hunts Point annually.",
+        "year": 2025,
+        "source": "NYC Parks GreenThumb; NYCHA Journal",
+        "sourceUrl": "https://nychajournal.nyc/nycha-farms-gardens-growing-community-food-engagement-in-2025/",
+        "geographicScale": "city"
+      }
+    ]
+  },
+  "global": {
+    "lens": "global-social",
+    "level": 45,
+    "levelRationale": "NYC has a real, quantified transmission channel \u2014 $500M+/year in institutional food procurement across 11 city agencies (schools, jails, shelters, hospitals, senior centers) serving ~219-220 million meals/year \u2014 and a values-based framework (the Good Food Purchasing Program, adopted by Executive Order 123 in 2017) that explicitly names a 'Valued Workforce' standard meant to reach labor conditions in the supply chain, including internationally sourced commodities. It is not scored higher (i.e., not treated as a strength) because that framework's labor and other standards remain largely non-enforceable: city agencies are still legally bound to lowest-bid procurement under state law, and the 'Good Food NY' state bill (S.7638-B/A.8091-B) needed to give GFPP standards contractual teeth had not passed as of the City Council's April 2026 resolution urging its passage. It is not scored as a crisis (100+) or nulled, because the dollar figure and the standards-adoption fact are both real and sourced \u2014 this is 'the program exists and is quantified, but is not yet legally binding,' which is a needs-attention (not merely aspirational, not enforced) result.",
+    "indicator": "NYC institutional food procurement dollars operating under Good Food Purchasing Program standards",
+    "value": "$500M+/year spent by 11 NYC agencies (DOE, NYC Health + Hospitals, DOC, DFTA, ACS, HRA/DSS shelters and others) on food serving ~219-220 million meals and snacks annually \u2014 making NYC the second-largest institutional food purchaser in the US after the Department of Defense. All of this spend nominally falls under the Good Food Purchasing Program's five equal-weighted standards (Local Economies, Environmental Sustainability, Valued Workforce, Animal Welfare, Nutrition) adopted by Executive Order 123 (2017), but full contractual enforcement of those standards \u2014 including the Valued Workforce standard most relevant to supply-chain labor conditions abroad \u2014 requires state procurement-law changes not yet enacted. Updated citywide Food Standards take effect July 1, 2026, tightening nutrition rules (eliminating processed meats, restricting additives, strengthening plant-based protein requirements) across the same $500M+/219M-meal base.",
+    "year": 2026,
+    "target": "Full Good Food Purchasing Program compliance across all 11 procuring agencies, contingent on passage of the state 'Good Food NY' bill (S.7638-B/A.8091-B) to exempt values-based food procurement from lowest-bid requirements.",
+    "context": "NYC's global-social footprint in food runs overwhelmingly through what it buys, not what it grows: with almost no local agricultural production, the city's leverage over labor and environmental conditions in coffee, cocoa, banana, and imported-produce supply chains is exercised (if at all) through institutional purchasing power and market-shaping regulation, not land stewardship. This is the polar opposite of Petaluma, an agricultural producer whose global-lens footprint runs through commodity exports and input use, not purchasing power. I could not locate a quantified, NYC-specific figure for the labor conditions of imported produce, coffee, cocoa, or banana supply chains reaching city institutions or Hunts Point \u2014 that qualitative claim is real (documented broadly in the fair-trade and supply-chain-labor literature) but unquantified for NYC specifically, and I have not attached a score to it; the $500M procurement figure is the one genuinely quantified transmission channel available and is what the level above reflects. NYC's plant-based procurement shift (Meatless Mondays since 2019, Plant-Powered Fridays since 2022, plant-based-as-default hospital dinners since 2022, expanding under the July 2026 Food Standards) is a lever on global land/water use tied to livestock supply chains, but I found no dollar or acreage quantification of its downstream global effect.",
+    "source": "NYC Mayor's Office of Food Policy / Good Food Purchasing Program NYC coalition; NYC Council Member Amanda Far\u00edas's Resolution 183 (April 2026)",
+    "sourceUrl": "https://council.nyc.gov/amanda-farias/2026/04/30/council-member-amanda-farias-advances-new-york-city-council-resolution-183-urging-the-passage-of-good-food-ny-procurement-state-legislation/",
+    "confidence": "medium",
+    "productionVsConsumption": "consumption-based"
+  },
+  "policyAnchors": [
+    {
+      "name": "Food Forward NYC (2021)",
+      "relevance": "The Mayor's Office of Food Policy's 10-year food policy plan; sets the framework for hunger reduction, supply-chain modernization, and food-system equity through 2030 that this dimension's headline and subIndicators are measured against.",
+      "status2026": "Released March 31, 2021; agency-specific action plans (e.g., for the Administration for Children's Services and Department of Correction) continue to be published and updated as of 2026, indicating live, ongoing implementation rather than a one-time report.",
+      "sourceUrl": "https://goodfoodpurchasing.org/food-forward-nyc-city-releases-10-year-food-policy-plan/"
+    },
+    {
+      "name": "Good Food Purchasing Program / Executive Order 123 (2017)",
+      "relevance": "The city's values-based institutional food procurement standard (Local Economies, Environmental Sustainability, Valued Workforce, Animal Welfare, Nutrition), the main lever for this dimension's global-social lens.",
+      "status2026": "Adopted in principle since 2017 across 11 agencies covering $500M+/year and ~219-220M meals; enforceability remains capped by state lowest-bid procurement law. City Council Resolution 183 (April 30, 2026) formally urges NY State to pass the 'Good Food NY' bill (S.7638-B/A.8091-B) to remove that legal barrier \u2014 not yet enacted as of this research.",
+      "sourceUrl": "https://www.nyc.gov/site/foodpolicy/good-food-purchasing/good-food-purchasing.page"
+    },
+    {
+      "name": "Local Law 52 of 2023 / Citywide Diabetes Reduction Plan",
+      "relevance": "Council legislation directing DOHMH to address diabetes; produced the 2024 Citywide Diabetes Reduction Plan, linking diet-related disease directly to food-access policy.",
+      "status2026": "In effect; DOHMH continues to publish borough- and neighborhood-level diabetes equity data (Epi Data Brief 146, most recent citywide dataset from CHS/A1c Registry 2022) under this mandate.",
+      "sourceUrl": "https://www.nyc.gov/assets/doh/downloads/pdf/epi/databrief146-diabetes-inequities.pdf"
+    },
+    {
+      "name": "Forest v. City of New York (SNAP/Cash Assistance timeliness settlement)",
+      "relevance": "Class-action settlement forcing HRA to meet legally mandated SNAP/CA processing timelines \u2014 the most direct current lever on food-benefit access failures documented in this dossier.",
+      "status2026": "Preliminary settlement approval granted; fairness hearing scheduled for June 30, 2026. Reforms (processing benchmarks, call-wait-time caps, system modernization) are agreed but not yet in force pending final court approval.",
+      "sourceUrl": "https://legalaidnyc.org/notice/forest-v-the-city-of-new-york-class-action-settlement/"
+    },
+    {
+      "name": "NYC Groceries / city-owned grocery store pilot (Mamdani administration)",
+      "relevance": "A new, direct city intervention in food retail access and affordability \u2014 the first NYC public grocery-store program, aimed at food deserts and high grocery prices.",
+      "status2026": "Mayor Mamdani announced La Marqueta (East Harlem, Manhattan) and a Bronx site as the first two of five planned city-owned stores (one per borough); RFPs for private operators are due October 16, 2026, with an operator selected by spring 2027 and the first store (Bronx) targeted to open by late 2027. Stores are pledged to sell a 'core basket' of staples (eggs, milk, produce) at ~30% below typical prices.",
+      "sourceUrl": "https://www.nyc.gov/mayors-office/news/2026/04/mayor-mamdani-announces-la-marqueta-as-first-site-identified-for"
+    },
+    {
+      "name": "NYC Food Standards update (effective July 1, 2026)",
+      "relevance": "Reshapes nutrition and sourcing rules across the same $500M+/219M-meal institutional procurement base covered by the global lens above \u2014 eliminating processed meats, restricting additives/low-calorie sweeteners, and strengthening plant-based protein requirements.",
+      "status2026": "Finalized, taking effect July 1, 2026, across all 11 procuring agencies.",
+      "sourceUrl": "https://www.nycfoodpolicy.org/six-food-policies-were-watching-in-2026/"
+    }
+  ],
+  "actions": [
+    "Apply for SNAP or report processing delays through NYC HRA's ACCESS HRA portal; if facing an unlawful delay, contact The Legal Aid Society or NYLAG, which are actively monitoring compliance with the Forest v. City of New York settlement.",
+    "Use Health Bucks ($2-for-$2 SNAP match, up to $10/day) at any of NYC's 130+ farmers markets, and ask NYC Health + Hospitals about Groceries to Go if managing diabetes or hypertension and facing food insecurity.",
+    "Volunteer with or donate to Food Bank For New York City or City Harvest, whose member-agency networks (511 DSS-funded pantries/soup kitchens) are the front line for the ~1.4-1.5M food-insecure New Yorkers documented above.",
+    "Weigh in on the NYC Council's Resolution 183 / the state 'Good Food NY' bill (S.7638-B/A.8091-B) through your City Council member's office \u2014 its passage is the single legal change needed to make the Good Food Purchasing Program's labor and sourcing standards enforceable.",
+    "Submit a garden or urban-agriculture proposal through NYC Parks' GreenThumb program or NYCHA Farms & Gardens if living in or near public housing.",
+    "Track the city-owned NYC Groceries pilot (first sites: the Bronx and East Harlem's La Marqueta) through the Mayor's Office of Food Policy for updates on the operator RFP (due Oct 16, 2026) and opening timelines."
+  ],
+  "petalumaContrast": "NYC's citywide food insecurity rate (17.8%, 2023 data) is more than three times Petaluma's 5.4% of households (2024, Petaluma Health and Environmental Justice Report), and NYC's Bronx borough alone (22.6%) is more than four times Petaluma's rate. The mechanism differs entirely: Petaluma is a net agricultural producer (dairy, poultry, wine) with a county-scale food bank network addressing access gaps in an otherwise food-abundant region, while NYC is a pure importer of nearly all its food for 8.3M people, so its food-security lever is almost entirely about income, SNAP administration, and distribution infrastructure (Hunts Point, the 511-site emergency food network) rather than production. Petaluma has no equivalent to NYC's $500M+/year institutional procurement program or its emerging city-owned grocery store pilot.",
+  "dataGaps": [
+    "No NYC-specific quantification of labor conditions in imported produce, coffee, cocoa, or banana supply chains reaching city institutions or the Hunts Point market \u2014 the Mayor's Office of Food Policy, the GFPP NYC Coalition, or academic labor researchers (e.g., at Cornell's ILR School) would be positioned to build this.",
+    "USDA discontinued its household food-security survey series after the December 2025 (2024-data) release per its September 2025 announcement, removing a federal cross-check on future NYC/NYS figures; Feeding America's Map the Meal Gap (private, model-based, ~2-year lag) will become the primary continuously updated source going forward \u2014 worth flagging to Amelia/CalDEC as a data-availability risk for future portrait updates.",
+    "No single, verified citywide dollar total for the Hunts Point Food Distribution Center's full annual throughput (produce + meat + fish combined) was located in one authoritative source within this research session; NYCEDC or the Hunts Point Cooperative Market's own reporting would have the current consolidated figure.",
+    "Current (2025-26) implementation data on how many of the 511 DSS-funded emergency food sites, or which specific city procurement contracts, are certified under full Good Food Purchasing Program scoring (as opposed to simply operating under the framework's aspiration) was not found \u2014 the GFPP NYC Coalition or DCAS would hold agency-by-agency scorecards."
+  ],
+  "expertsForPhase2": [
+    {
+      "org": "Food Bank For New York City",
+      "why": "Publishes the most current borough-level food insecurity, SNAP, and meal-gap data used as this dossier's headline and borough figures; can confirm indicator choice and methodology.",
+      "contactPath": "https://www.foodbanknyc.org/"
+    },
+    {
+      "org": "NYC Mayor's Office of Food Policy",
+      "why": "Owns Food Forward NYC, the Good Food Purchasing Program, and the NYC Food Standards update; best positioned to confirm current implementation status and the Good Food NY state-bill timeline.",
+      "contactPath": "https://www.nyc.gov/site/foodpolicy/index.page"
+    },
+    {
+      "org": "NYC Department of Health and Mental Hygiene (DOHMH), Bureau of Chronic Disease Prevention",
+      "why": "Publishes the diabetes-prevalence Epi Data Briefs and administers the Citywide Diabetes Reduction Plan under Local Law 52.",
+      "contactPath": "https://www.nyc.gov/site/doh/data/data-sets/epi-data-briefs-and-data-tables.page"
+    },
+    {
+      "org": "The Legal Aid Society",
+      "why": "Lead counsel in Forest v. City of New York; can confirm the settlement's final approval status and any reforms actually implemented by HRA.",
+      "contactPath": "https://legalaidnyc.org/"
+    },
+    {
+      "org": "City Harvest",
+      "why": "Operates NYC's food-rescue and Mobile Markets network; can speak to on-the-ground pantry/produce-access conditions across boroughs.",
+      "contactPath": "https://www.cityharvest.org/"
+    },
+    {
+      "org": "NYC Food Policy Center at Hunter College",
+      "why": "Independent academic monitor of NYC food policy; publishes the annual 'food policies to watch' analysis and can validate indicator and target choices.",
+      "contactPath": "https://www.nycfoodpolicy.org/"
+    }
+  ],
+  "questionsForOrchestrator": [
+    "The Feeding America Map the Meal Gap headline (17.8%, 2023 data, ~2-year publication lag) and the SNAP enrollment figure (Dec 2025, near-real-time via HRA) are on very different vintages by construction \u2014 is that acceptable for this dimension's headline/subIndicator pairing, or should I look harder for a same-year proxy (e.g., NYC Community Health Survey's own food-hardship question) to headline instead of Map the Meal Gap?",
+    "Should the Hunts Point Food Distribution Center's 'largest in the world' claim be reported at all given I could not verify a single consolidated citywide-authoritative figure (sources conflict: largest by dollar volume of the produce market specifically vs. largest food-distribution complex overall combining produce+meat+fish)? I have hedged this in context/dataGaps rather than asserting the superlative \u2014 confirm that's the right call."
+  ],
+  "sourcesFetched": [
+    {
+      "url": "https://foodbanknyc.github.io/borofastfacts_2.pdf",
+      "fetchedOk": true,
+      "whatItGave": "Real 5/5 borough food insecurity rates (2023 MMG data) plus YoY comparison to 2022 data, meal gap, cost per meal, poverty, SNAP, median income, population by borough"
+    },
+    {
+      "url": "https://foodbanknyc.github.io/citywidefastfacts.pdf",
+      "fetchedOk": true,
+      "whatItGave": "Prior-vintage citywide food insecurity rate (15.0%, 2022 MMG data) and SNAP/poverty/CPI context, used for R11 comparison"
+    },
+    {
+      "url": "https://foodbanknyc.github.io/snapinnyc.pdf",
+      "fetchedOk": true,
+      "whatItGave": "Current (Dec 2025) citywide and borough SNAP enrollment counts and rates from HRA data"
+    },
+    {
+      "url": "https://foodbanknyc.github.io/foodinsecurityin2024.pdf",
+      "fetchedOk": true,
+      "whatItGave": "National (not NYC-specific) USDA food security context and confirmation that USDA's household food security survey series ended after the Dec 2025 release"
+    },
+    {
+      "url": "https://www.nyc.gov/assets/doh/downloads/pdf/epi/databrief146-diabetes-inequities.pdf",
+      "fetchedOk": true,
+      "whatItGave": "Citywide, borough, and UHF-neighborhood diabetes prevalence and disparity data, 2022"
+    },
+    {
+      "url": "https://council.nyc.gov/data/emergency-food-in-nyc/",
+      "fetchedOk": true,
+      "whatItGave": "DSS-funded pantry/soup-kitchen counts and visit/meal totals, corroborating SNAP enrollment"
+    },
+    {
+      "url": "https://legalaidnyc.org/notice/forest-v-the-city-of-new-york-class-action-settlement/",
+      "fetchedOk": true,
+      "whatItGave": "Forest v. City of New York settlement status, reforms, and June 30 2026 fairness-hearing date"
+    },
+    {
+      "url": "https://goodfoodpurchasing.org/food-forward-nyc-city-releases-10-year-food-policy-plan/",
+      "fetchedOk": true,
+      "whatItGave": "Food Forward NYC release date and Good Food Purchasing Program's five standards categories"
+    },
+    {
+      "url": "https://www.nyc.gov/assets/agriculture/downloads/pdf/moua-report-values-aligned-procurement-nyc-final-2026.pdf",
+      "fetchedOk": true,
+      "whatItGave": "Confirmed GFPP framework categories; did not yield further quantified 2026 enforcement metrics"
+    },
+    {
+      "url": "https://www.nycfoodpolicy.org/six-food-policies-were-watching-in-2026/",
+      "fetchedOk": true,
+      "whatItGave": "July 1, 2026 NYC Food Standards update details ($500M+/219M meals, processed-meat elimination, plant-based protein rules)"
+    },
+    {
+      "url": "https://www.nyc.gov/mayors-office/news/2026/04/mayor-mamdani-announces-la-marqueta-as-first-site-identified-for",
+      "fetchedOk": false,
+      "whatItGave": "Not directly fetched; details drawn from WebSearch snippets of this and corroborating news coverage (Time, NPR, ABC7) on the city-owned grocery store pilot"
+    },
+    {
+      "url": "https://foodlinkny.org/additional-food-insecurity-data-released-from-annual-map-the-meal-gap-report/",
+      "fetchedOk": true,
+      "whatItGave": "Confirmed NYC's 17.8% municipality-level ranking figure and its 2023-data vintage"
+    }
+  ],
+  "_reviewPartial": true,
+  "_reviewFindings": 3
+}

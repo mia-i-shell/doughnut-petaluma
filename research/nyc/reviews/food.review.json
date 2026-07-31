@@ -1,0 +1,48 @@
+{
+  "dimension": "food",
+  "overallVerdict": "sound-with-corrections",
+  "confidenceInDossier": "medium",
+  "reviewStatus": "DRAFT — verification in progress",
+  "findings": [
+    {
+      "severity": "major",
+      "category": "stale-policy",
+      "claim": "Headline: '17.8% ... (2023 data, published 2025)' sourced to 'Feeding America, Map the Meal Gap 2025 release (2023 data)'.",
+      "verdict": "CORRECTED",
+      "whatIFound": "Feeding America released Map the Meal Gap 2026 on 28 July 2026, covering 2024 data. The dossier's headline vintage is therefore one release stale as of the review date (30 July 2026).",
+      "correction": "Label the headline explicitly as the MMG 2025 release (2023 data) and note that MMG 2026 (2024 data) was published 28 July 2026 but county/place figures for NYC were not yet publicly extractable.",
+      "sourceUrl": "https://www.feedingamerica.org/about-us/press-room/Map-the-Meal-Gap-2026"
+    },
+    {
+      "severity": "major",
+      "category": "internal-inconsistency",
+      "claim": "'Roughly 1.4-1.5M New Yorkers are food insecure on the current vintage ... consistent with 17.8% of ~8.3M' alongside 5/5 borough rates.",
+      "verdict": "REFUTED",
+      "whatIFound": "The five borough counts in the cited source sum to 1,432,370 people. Against the 8,804,190 NYC population printed in the same Food Bank For New York City fast-facts family, that is 16.3%; against the populations implied by each borough's own rate/count pair it is 16.8%. Neither reproduces 17.8%.",
+      "correction": "Report 17.8% as an MMG place-level ('major municipality') estimate and state that the county-level borough estimates aggregate to ~16.3-16.8%; cap confidence at medium-low.",
+      "sourceUrl": "https://foodbanknyc.github.io/borofastfacts_2.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "stale-policy",
+      "claim": "Forest v. City of New York: 'fairness hearing scheduled for June 30, 2026 — the reforms are agreed but not yet in force pending final court approval.'",
+      "verdict": "CORRECTED",
+      "whatIFound": "Legal Aid's notice confirms the case name, preliminary approval, and a fairness hearing on 30 June 2026 at 1:00pm before Judge Jennifer Rearden (SDNY). That date is one month in the past as of review.",
+      "correction": "Rephrase in past tense and flag final-approval status as unverified.",
+      "sourceUrl": "https://legalaidnyc.org/notice/forest-v-the-city-of-new-york-class-action-settlement/"
+    }
+  ],
+  "levelReview": {
+    "originalLevel": 65,
+    "recommendedLevel": 65,
+    "reasoning": "Provisional — pending completion of verification."
+  },
+  "sourcesIndependentlyFetched": [
+    {"url": "https://www.feedingamerica.org/about-us/press-room/Map-the-Meal-Gap-2026", "fetchedOk": true, "confirms": "MMG 2026 released 28 July 2026 with 2024 data; NY-15 child food insecurity 43%"},
+    {"url": "https://foodbanknyc.github.io/borofastfacts_2.pdf", "fetchedOk": true, "confirms": "All five borough rates and counts exactly as the dossier states; 2023 MMG data, two-year lag noted; prior-vintage borough rates 20.2/15.2/14.9/12.5/11.5"},
+    {"url": "https://foodbanknyc.github.io/citywidefastfacts.pdf", "fetchedOk": true, "confirms": "NYC 15.0% / ~1.3M on MMG 2022 data, up from 13.5%; sheet is 'as of September 27, 2024'"},
+    {"url": "https://legalaidnyc.org/notice/forest-v-the-city-of-new-york-class-action-settlement/", "fetchedOk": true, "confirms": "Case name, preliminary approval, 30 June 2026 fairness hearing, Judge Rearden, required HRA reforms"},
+    {"url": "https://foodlinkny.org/additional-food-insecurity-data-released-from-annual-map-the-meal-gap-report/", "fetchedOk": true, "confirms": "NYC 17.8% ranks 5th among NY municipalities 100,000+; Syracuse 21.7, Rochester 21.5, Buffalo 20.7, Albany 19.9, Yonkers 16.5; article dated 26 June 2025"}
+  ],
+  "questionsForOrchestrator": []
+}

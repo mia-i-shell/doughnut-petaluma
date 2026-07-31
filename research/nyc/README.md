@@ -16,37 +16,45 @@ small agricultural city. Same framework, opposite scale.
 
 ## Status — this is a first draft, and it is partial
 
-**8 of 24 dimensions researched — and all 8 adversarially reviewed.**
+**12 of 24 dimensions researched. 9 reviewed (7 fully, 2 partially).**
 
-Breadth was traded for verification deliberately. Every dimension that exists in this
-portrait has been through an independent reviewer that re-fetched its sources; none is
-carrying an unchecked figure. The 16 missing dimensions are honestly absent rather than
-present-and-unverified.
+Breadth was traded for verification deliberately. The 12 missing dimensions are honestly
+absent rather than present-and-unverified, and render in the dashboard as explicit grey
+"Not yet researched" wedges. Every figure carries a provenance badge separating *draft*
+from *adversarially reviewed*.
 
-The build was interrupted twice by account usage limits. Rather than hide the gap, the
-16 un-researched dimensions render in the dashboard as explicit grey "Not yet
-researched" wedges, and every figure carries a provenance badge distinguishing
-*draft* from *adversarially reviewed*.
+Progress was interrupted five times by account usage limits, which is why three
+dimensions (waste & materials, energy, peace & justice) are researched but not yet
+reviewed, and two (air pollution, food) carry partial reviews whose agents were cut off
+mid-verification. Both partial dimensions say so in their own `context` field and list
+what remains unchecked.
 
-| Dimension | Ring | Local | Global | Reviewed | Findings |
-|---|---|---|---|---|---|
-| housing | social | **135** | 60 | ✓ | 3 critical, 12 major, 12 minor |
-| heat & climate resilience | eco | **100** | null | ✓ | 3 critical, 6 major, 7 minor |
-| income & work | social | **100** | 100 | ✓ | 2 critical, 11 major, 17 minor |
-| climate change | eco | **75** | **120** | ✓ | 9 major, 14 minor |
-| nitrogen & phosphorus | eco | **55** | **105** | ✓ | 8 major, 11 minor |
-| air pollution | eco | **50** | 50 | ✓ | 1 critical, 8 major, 8 minor (partly applied) |
-| land conversion | eco | **25** | null | ✓ | 12 findings |
-| mobility | social | **−65** | null | ✓ | 1 critical, 3 major, 12 minor |
+| Dimension | Ring | Local | Global | Review status |
+|---|---|---|---|---|
+| housing | social | **135** | 60 | ✓ reviewed |
+| heat & climate resilience | eco | **100** | null | ✓ reviewed |
+| income & work | social | **100** | 100 | ✓ reviewed |
+| climate change | eco | **75** | 120 | ✓ reviewed |
+| food | social | **65** | 45 | ◐ partly reviewed |
+| energy | social | **65** | null | ⚠ draft |
+| nitrogen & phosphorus loading | eco | **55** | 105 | ✓ reviewed |
+| air pollution | eco | **50** | 50 | ◐ partly reviewed |
+| peace & justice | social | **45** | null | ⚠ draft |
+| land conversion | eco | **25** | null | ✓ reviewed |
+| mobility | social | **-65** | null | ✓ reviewed |
+| waste & materials | eco | **null** | null | ⚠ draft |
 
-**Every one of the 8 reviews returned "sound-with-corrections" — none was clean.** Six of
-the eight had their severity level changed; four had a headline indicator or its sourcing
-replaced outright; four global lenses lost an unsupported score and went to `null`.
+**Not one review came back clean.** Of the 9 reviews, all returned
+"sound-with-corrections". Six changed the severity level. Four had a headline indicator or
+its sourcing replaced outright. Four global lenses lost an unsupported score and went to
+`null`. Across the set: **10 critical findings.**
 
-Remaining, not yet researched: ocean acidification, chemical pollution, freshwater
-withdrawals, biodiversity loss, ozone layer depletion, waste & materials, food, health,
-education, water & sanitation, energy, networks, gender equality, social equity,
-political voice, peace & justice.
+Researched but NOT yet reviewed — treat these three as unverified drafts:
+waste & materials (70), energy (65), peace & justice (45).
+
+Not yet researched (12): ocean acidification, chemical pollution, freshwater withdrawals,
+biodiversity loss, ozone layer depletion, health, education, water & sanitation, networks,
+gender equality, social equity, political voice.
 
 ## Two findings that justify the method
 
@@ -81,7 +89,7 @@ Two agent layers, orchestrated:
    against stated targets (`REVIEW_BRIEF.md`).
 
 Judgement calls escalate to the orchestrator and are settled once, in
-`ORCHESTRATOR_RULINGS.md` (R1–R16), which both layers read. Highlights:
+`ORCHESTRATOR_RULINGS.md` (R1–R24), which both layers read. Highlights:
 
 - **R1** — the wedge scores the *dimension*, not just the headline indicator.
 - **R2** — a global-lens entry must describe the city's *external* footprint. An
@@ -94,6 +102,10 @@ Judgement calls escalate to the orchestrator and are settled once, in
   Petaluma sat at 100 against the DEAL benchmark — for 15% *higher* per-capita emissions.
 - **R15** — where no downscaled city-scale benchmark exists, the local lens scores against
   the best regulatory target and the *global* lens carries the quantified boundary comparison.
+- **R21** — correct geography beats recency. A stale figure about the right place beats a
+  current figure about the wrong place.
+- **R23** — two well-sourced global channels with no common denominator justify a `null`,
+  not an averaged guess.
 
 ## Files
 
@@ -101,7 +113,7 @@ Judgement calls escalate to the orchestrator and are settled once, in
 research/nyc/
 ├── RESEARCH_BRIEF.md         contract given to every research agent
 ├── REVIEW_BRIEF.md           contract given to every adversarial reviewer
-├── ORCHESTRATOR_RULINGS.md   R1–R16, binding on both layers
+├── ORCHESTRATOR_RULINGS.md   R1–R24, binding on both layers
 ├── dossiers/                 raw per-dimension research output
 └── reviews/                  adversarial reviews + corrected dossiers
 ```
