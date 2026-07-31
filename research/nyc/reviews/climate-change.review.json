@@ -1,0 +1,240 @@
+{
+  "dimension": "climate change",
+  "overallVerdict": "sound-with-corrections",
+  "confidenceInDossier": "medium",
+  "findings": [
+    {
+      "severity": "major",
+      "category": "stale-policy",
+      "claim": "Headline local value: 'Approximately 51.2-51.3 million metric tons CO2e (MtCO2e) citywide in 2023'; policyAnchor: '18+ years of continuous data (2005-2023) as of the most recent published inventory.'",
+      "verdict": "CORRECTED",
+      "whatIFound": "A CY2024 inventory has been published. The NYC Open Data dataset 'NYC Greenhouse Gas Emissions Inventory' (wq7q-htne) was updated 2025-12-16 and now carries a full CY 2024 column; its own 'Total' row gives CY2024 = 47,944,551.47 tCO2e (Citywide-GPC, 100-yr GWP) and a published 2005-2024 change of -25.249828%. THE CITY (2025-12-23) and MOCEJ's release confirm the 2024 inventory: '5% decrease ... compared to the previous year and a 25% cut since 2005'. The dossier's 2023 headline is one vintage stale.",
+      "correction": "Headline year 2024. CY2024 = 47.94 MtCO2e (exact 47,944,551 tCO2e), -25.2% vs the 2005 baseline of 64,139,721 tCO2e, -4.9% vs 2023 — the largest single-year reduction in the series.",
+      "sourceUrl": "https://data.cityofnewyork.us/resource/wq7q-htne.json"
+    },
+    {
+      "severity": "major",
+      "category": "fabrication",
+      "claim": "'Approximately 51.2-51.3 million metric tons CO2e (MtCO2e) citywide in 2023' ... 'Caveat: the 2023 total/per-capita figures here are read off MOCEJ's published bar charts (precise to roughly +/-0.5 MtCO2e), not the underlying dataset row.'",
+      "verdict": "REFUTED",
+      "whatIFound": "The exact dataset row gives CY2023 Citywide-GPC = 50,433,720.04 tCO2e = 50.43 MtCO2e. The dossier's chart-read overstated the portrait's most important local number by ~0.8-0.9 Mt (~1.6%), outside its own stated +/-0.5 Mt error bar. The relative changes the dossier reported (-4% vs 2019, ~-1 Mt vs 2022) are correct: 2019 = 52,690,071 and 2022 = 51,642,248 tCO2e.",
+      "correction": "CY2023 = 50.43 MtCO2e exactly (50,433,720 tCO2e). Superseded as headline by CY2024 = 47.94 MtCO2e.",
+      "sourceUrl": "https://data.cityofnewyork.us/resource/wq7q-htne.json"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "dataGap: 'Precise 2023 citywide MtCO2e total and per-capita figure to the exact ton -- this dossier reads values off MOCEJ's published bar charts' ... 'approximately 6.2 tCO2e per capita'.",
+      "verdict": "CONFIRMED",
+      "whatIFound": "The per-capita figure is NOT a chart read — it is officially published verbatim in a source the dossier did not fetch. 'NYC 2023 Greenhouse Gas Inventory Methodology', section 1(b) Citywide Calendar Year 2023 Findings: 'Since 2005, greenhouse gas (GHG) emissions have decreased citywide by approximately 20%.' and 'In 2023, New York City's per capita GHG emissions averaged 6.2 metric tons of carbon dioxide equivalent (tCO2e), over 50% lower than the 2020 U.S. average of 13 tCO2e per capita (World Bank, 2020).' Both the 6.2 figure and the -20% claim are official. Confidence should go UP on these, not down; the self-deprecating caveat and dataGap #1 should be removed.",
+      "correction": "6.2 tCO2e/person (2023) is MOCEJ's officially published figure. Caveat and dataGap removed. MOCEJ has not yet published a CY2024 per-capita figure; 47.94 Mt over the Census Bureau Vintage-2024 July-2024 population of 8,478,000 implies ~5.7 tCO2e/person (derived, labelled as such).",
+      "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/GHG%20Inventory%20Methodology%202023.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "'Sector shares in 2023: Buildings ~72%, Transportation ~25%, Waste ~4%.' (sums to 101%)",
+      "verdict": "CONFIRMED",
+      "whatIFound": "These are MOCEJ's own rounded slide labels, verbatim from the presentation: 'Building Emissions (72% of emissions)', 'Transportation Emissions (25% of emissions)', 'Waste Emissions (4% of emissions)'. The 101% is MOCEJ's rounding, not the agent's error. Computed from the dataset, exact CY2023 shares are Stationary Energy 71.2% / Transportation 24.9% / Waste 3.9% (= 100.0%). CY2024: 69.5% / 26.3% / 4.2%. The sector-level trend claims also check out: transportation 16.195 Mt (2005) to 12.579 Mt (2023) = -22.3%, matching MOCEJ's '-22% since 2005'.",
+      "correction": "Use exact computed shares. CY2024: buildings 69.5%, transportation 26.3%, waste 4.2%. Note that MOCEJ's own published rounding sums to 101%.",
+      "sourceUrl": "https://data.cityofnewyork.us/resource/wq7q-htne.json"
+    },
+    {
+      "severity": "major",
+      "category": "severity-unsupported",
+      "claim": "'MOCEJ's own analysis states the city must more than double year-over-year reductions to hit the legally binding 40%-by-2030 target'",
+      "verdict": "CONFIRMED",
+      "whatIFound": "Verbatim, slide 30 of the MOCEJ deck: 'Urgent Action: We must more than double year-over-year reductions to meet our goals', with 'BAU Trajectory: -51%', 'Climate Budgeting Trajectory: -74%', '2025: -30%'. Slide 15 confirms 'Carbon Reduction Targets: Citywide: 40% by 2030'. HOWEVER the statement rests on the CY2023 basis (-20%, i.e. 1.19 pp/yr average vs 2.66 pp/yr required = 2.24x). On the now-published CY2024 basis (-25.25%, 1.33 pp/yr average vs 2.46 pp/yr required) the multiple is ~1.85x, i.e. 'nearly double'. The single-year 2023-to-2024 cut of 3.85 pp actually exceeded the required annual pace. The claim is real but must be dated to its vintage.",
+      "correction": "Attribute the 'more than double' statement to MOCEJ's January 2025 presentation on the CY2023 inventory, and state that on the CY2024 inventory the required pace is ~1.85x the 2005-2024 average.",
+      "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/2023_GHG_Inventory_MOCEJ_Climate_Knowledge_Exchange_Meeting_1.13.25.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "fabrication",
+      "claim": "'Local Law 97 imposes binding, penalty-backed emissions caps on ~50,000 individual large buildings (the source of 72% of emissions)'",
+      "verdict": "REFUTED",
+      "whatIFound": "The 72% is ALL buildings citywide, not LL97-covered buildings. Urban Green Council: LL97 covers 'the nearly 50,000 properties covered by Local Law 97', representing '60% of NYC's building area' and '50% of NYC building emissions'. With buildings at ~70% of citywide emissions, LL97-covered properties are roughly 35% of citywide emissions — about half what the dossier claims. Also 'properties/tax lots', not 'individual buildings'.",
+      "correction": "'binding, penalty-backed caps on nearly 50,000 covered properties, which hold ~60% of the city's building floor area and ~50% of building-sector emissions (roughly 35% of citywide emissions)'.",
+      "sourceUrl": "https://www.urbangreencouncil.org/what-we-do/driving-innovative-policy/ll97/"
+    },
+    {
+      "severity": "major",
+      "category": "fabrication",
+      "claim": "subIndicator and policyAnchor sourced to the DOB press release: 'Of filed buildings, under 10% exceeded their 2024-2029 emissions cap ... but 57% of properties already exceed the tighter 2030-2034 cap' with sourceUrl https://www.nyc.gov/site/buildings/dob/pr-ll97-improve-sustainability.page",
+      "verdict": "CORRECTED",
+      "whatIFound": "MISATTRIBUTED. I fetched the DOB release (dated April 22, 2026). It confirms 'approximately 93% of the covered privately owned properties, representing 91% of covered buildings' filed for CY2024; 'approximately 1,400 properties ... failed to do so' with Notices of Deficiency; and '$268 per ton of carbon emissions'. It does NOT contain any cap-compliance percentage — it states DOB staff are 'in the process of auditing the filings received' and will release 'additional compliance data ... later this year'. The 9%/57% figures are Urban Green Council estimates modelled from 2024 energy benchmarking data (page last updated January 2026): 'about 9 percent of properties exceed their 2024 GHG cap' and 'about 57 percent of properties currently emit more GHG than their 2030 cap'. Urban Green explicitly caveats: 'we'll wait for official 2024 compliance information from the NYC Department of Buildings later this year.' So both figures are real and correctly quoted, but they are benchmarking-based projections from an NGO, not DOB compliance determinations.",
+      "correction": "Split the subIndicator: filing rates, non-filers and penalty rate to DOB (April 22, 2026); the 9%/57% cap figures to Urban Green Council's LL97 progress tracker, labelled as modelled from CY2024 benchmarking data and not yet confirmed by DOB audit. Confidence on the cap figures: medium.",
+      "sourceUrl": "https://www.urbangreencouncil.org/what-we-do/explore-nyc-building-data-hub/local-law-97-progress/"
+    },
+    {
+      "severity": "major",
+      "category": "indicator-validity",
+      "claim": "'This is 67% larger than the same-year territorial/production-based inventory (55 million MTCO2e in 2019).' — the portrait's headline finding.",
+      "verdict": "CORRECTED",
+      "whatIFound": "Adjudicated in three parts. (a) The comparison is NOT the agent's invention — it is the CBEI's own published framing, p.13 verbatim: 'In contrast, the CBEI estimated a total of 92 million MTCO2e, about 67% more than in the territorial inventory' and 'A CBEI that is much larger than a territorial inventory indicates that New York City is a net exporter of emissions.' (b) But it IS a scope mismatch, and the dossier presents it without the caveat. The CBEI covers only NYC-resident HOUSEHOLD consumption and excludes business and tourism consumption, non-residential building energy, and government (p.3, p.13); the territorial inventory covers ALL in-boundary activity. The two are not a partition of the same universe and cannot be summed or differenced. MOCEJ's own integration paper is explicit: 'These inventories (the Citywide Inventory and the CBEI) are developed using very different methods that are not directly compatible', and combining them required an estimated overlap correction — 'The CBEI uses the roughly 17 million MTC02e of emissions from residential energy use observed in the citywide inventory.' (c) The 55 Mt territorial figure is a SUPERSEDED vintage. The current Open Data series puts CY2019 Citywide-GPC at 52.69 Mt, against which 92 Mt is 75% larger, not 67%.",
+      "correction": "Restate so the finding does not depend on the ratio: NYC residents' household consumption alone drives 92 MtCO2e/yr (11 tCO2e/person, 2019), and the great majority of it occurs outside the five boroughs, invisible to the territorial inventory that Local Law 97 tracks. Then quote the 67% as the CBEI's own comparison, flagging (i) household-only vs all-activity scope, (ii) MOCEJ's 'not directly compatible' statement and the ~17 Mt residential-energy overlap, (iii) that 55 Mt is a superseded vintage (current CY2019 = 52.69 Mt, giving 75%).",
+      "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/Integrating-New-York-Citys-2019-Citywide-and-Consumption-Based-Greenhouse-Gas-Emissions-Inventories.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "fabrication",
+      "claim": "'C40's own modeling concludes that even aggressive local action only closes about a quarter of the consumption-emissions gap; the rest depends on the carbon intensity of production worldwide.'",
+      "verdict": "REFUTED",
+      "whatIFound": "Misreading of the C40 report. The 25% is the OVERLAP between production- and consumption-based accounting, not the share of the gap local action can close: 'C40 cities that are already delivering on their Deadline 2020 commitments will simultaneously be addressing 25% of their consumption-based emissions, due to an overlap between production-based and consumption-based emissions.' C40 in fact credits cities with substantially more agency: 'City governments and urban stakeholders can deliver 35% of the necessary emission reductions on their own' and 'By also meeting Deadline 2020 commitments, C40 cities will have closed 80% of their consumption-based emissions gap.' The dossier's version materially understates city agency.",
+      "correction": "'C40's modelling credits city governments and urban stakeholders with delivering 35% of the necessary reductions on their own; meeting Deadline 2020 production-based commitments alone addresses the ~25% of consumption emissions that overlaps the territorial inventory and closes 80% of the consumption gap. The remainder depends on the carbon intensity of production worldwide.'",
+      "sourceUrl": "https://www.c40.org/wp-content/uploads/2023/04/2270_C40_CBE_MainReport_250719.original-compressed-1-2.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "internal-inconsistency",
+      "claim": "global.boroughs.manhattan note: 'driven by the highest services (healthcare, education, entertainment) footprint of any borough.'",
+      "verdict": "REFUTED",
+      "whatIFound": "CBEI Table 4 contradicts this. Services emissions per household: Bronx 4.9, Brooklyn 5.8, Manhattan 6.0, Queens 6.3, Staten Island 7.6, NYC average 5.9. Manhattan is THIRD, not highest. Manhattan's high per-capita figure is a household-size artefact: its per-household total (27 t) is below Queens (33) and Brooklyn (28), but its average household size is the smallest in the city, so 27 t/household becomes 13 t/person.",
+      "correction": "'Higher per-capita than its per-household total would suggest because Manhattan has the smallest average household size in the city (27 tCO2e/household divided across ~2.1 people). Its per-household total is the second-LOWEST of the five boroughs; the per-capita ranking is a household-size effect, not a higher-consumption effect.'",
+      "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/NYC-Household-Consumption-GHG-Emissions-Inventory.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "lens-confusion",
+      "claim": "levelRationale (global): 'It is below the U.S. household average (17 tCO2e/person) and mid-pack among wealthy C40 cities'",
+      "verdict": "UNVERIFIABLE",
+      "whatIFound": "The 17 tCO2e/person US average is confirmed verbatim in the CBEI ('the national average is 43 MTCO2e per household per year or 17 MTCO2e per person'). The 'mid-pack among wealthy C40 cities' claim, applied to the CONSUMPTION figure, is not supported by anything I could fetch. What MOCEJ's slides actually say is about PRODUCTION-based emissions and about all C40 cities, not wealthy ones: slide 35 'NYC is the second largest emitter among C40 cities', slide 36 'Yet our per capita emissions rank just above average'. The dossier appears to have transposed a production-based C40 ranking onto a consumption-based comparison among a different peer set.",
+      "correction": "Replace with the two sourced facts: 11 tCO2e/person is ~two-thirds of the US household average of 17 tCO2e/person (CBEI); and on production-based accounting MOCEJ reports NYC as the second-largest total emitter among C40 cities with per-capita emissions ranking 'just above average'. Drop the unsourced consumption-based peer ranking.",
+      "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/2023_GHG_Inventory_MOCEJ_Climate_Knowledge_Exchange_Meeting_1.13.25.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "'the 20-year decline (2007-2019) was only 7.7%'",
+      "verdict": "CORRECTED",
+      "whatIFound": "The 7.7% is correct and verbatim ('the emissions have declined by 7.7% from 2007 to 2019'), but 2007-2019 is a 12-year span, not 20.",
+      "correction": "'the 12-year decline (2007-2019) was only 7.7%'",
+      "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/NYC-Household-Consumption-GHG-Emissions-Inventory.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "'Housing 7.0t (natural gas 49% of housing)'",
+      "verdict": "CORRECTED",
+      "whatIFound": "CBEI Table 1 (2019 column): housing total 7.0 t/household, of which natural gas 3.7 t = ~53%, not 49%. The report's text confirms natural gas is 'the largest single category' of housing.",
+      "correction": "'Housing 7.0 t (natural gas 3.7 t, ~53% of housing and its largest single component)'",
+      "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/NYC-Household-Consumption-GHG-Emissions-Inventory.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "actions-quality",
+      "claim": "action 6: 'parts of Staten Island and outer Queens/Brooklyn run up to 3x the citywide average per household'",
+      "verdict": "CORRECTED",
+      "whatIFound": "The CBEI's 3-fold figure is a tract-to-tract range, not a ratio to the citywide average: 'The highest-emitting census tract has per-household emissions of 58 tons, while households in the lowest-emitting tract have emissions of 18 MTCO2e - roughly a 3-fold difference.' 58 t against the citywide average of 29 t is 2x, not 3x.",
+      "correction": "'the highest-emitting census tract is at 58 tCO2e/household against a citywide average of 29 and a lowest-tract figure of 18 — a roughly 3-fold spread between tracts, and about 2x the citywide average at the top end'",
+      "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/NYC-Household-Consumption-GHG-Emissions-Inventory.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "petalumaContrast: 'NYC's absolute emissions (51 MtCO2e) being roughly 118x Petaluma's estimated total (~0.44 MtCO2e ...), even though NYC's population is only ~138x larger'",
+      "verdict": "CORRECTED",
+      "whatIFound": "Petaluma's figures check out against the repo (/home/user/doughnut-petaluma/docs/data.js: '7.25 MT CO2e/person', 2024, 'Community-wide emissions ~435,000 MTCO2e / ~60,000 residents'). But the NYC numerator and the population ratio are both off. With CY2024 = 47.94 Mt: 47.94/0.435 = ~110x, not 118x. Population: 8,478,000 / 60,000 = ~141x, not 138x.",
+      "correction": "~110x Petaluma's total emissions on ~141x the population.",
+      "sourceUrl": "https://data.cityofnewyork.us/resource/wq7q-htne.json"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "target field: Citywide-CLCPA inventory 'also counts fugitive methane's near-term warming impact -- MOCEJ's own presentation shows accounting for methane leakage roughly doubles measured natural-gas emissions', carried only as prose with no figure. R9 requires it as a subIndicator with its basis stated.",
+      "verdict": "CORRECTED",
+      "whatIFound": "The CLCPA variant is fully quantified in the same NYC Open Data dataset and the dossier missed it. The 20-yr-GWP columns, summing GPC rows plus the 28 'CLCPA Addition' rows, give: 2005 = 97.17 Mt, 2019 = 85.31 Mt, 2022 = 81.47 Mt, 2023 = 83.85 Mt, 2024 = 78.74 Mt. The dataset's own published 2005-2024 change on this basis is -18.97%, against -25.25% on the GPC basis. So the CLCPA basis is ~64% higher in absolute terms and shows materially LESS progress. MOCEJ slide 5 confirms the Citywide-CLCPA inventory 'Covers all Citywide-GPC sources & fugitive energy-related emissions, while highlighting methane's near-term warming impacts.'",
+      "correction": "Added as a quantified subIndicator per R9, with GPC retained as the headline.",
+      "sourceUrl": "https://data.cityofnewyork.us/resource/wq7q-htne.json"
+    },
+    {
+      "severity": "minor",
+      "category": "indicator-validity",
+      "claim": "The global lens quantifies only household consumption; government/institutional consumption is described as 'institutional procurement' in prose with no figure.",
+      "verdict": "CORRECTED",
+      "whatIFound": "The CBEI quantifies this in Appendix 4 and the dossier missed it: 'If these emissions were allocated to households, it would be an average of 5.5 MTCO2e per household. For New York City, this would work out to an additional 17.66 million MTCO2e citywide. These \"hidden\" emissions are not otherwise captured in the CBEI.' That is ~+2.2 tCO2e/person on top of 11 — material to the level, and it makes the 11 t figure a floor rather than a full account.",
+      "correction": "Added as a subIndicator on the global lens and cited in the levelRationale.",
+      "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/NYC-Household-Consumption-GHG-Emissions-Inventory.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "fabricated-borough-data",
+      "claim": "All five global.boroughs CBEI values: Bronx 9, Brooklyn 11, Manhattan 13, Queens 12, Staten Island 15 tCO2e/person (2019); Bronx transport 2.5 vs Staten Island 12.3 t/household.",
+      "verdict": "CONFIRMED",
+      "whatIFound": "All five confirmed exactly against CBEI Table 4 (per household / per capita): Bronx 24/9, Brooklyn 28/11, Manhattan 27/13, Queens 33/12, Staten Island 42/15, NYC average 29/11. Transportation per household: Bronx 2.5, Brooklyn 3.2, Manhattan 3.7, Queens 7.0, Staten Island 12.3, NYC 4.1 — so 12.3/2.5 = 4.9x, matching the dossier's 'roughly 5x'. Staten Island is genuinely highest in every one of the five categories (transport 12.3, housing 9.1, food 8.5, goods 4.9, services 7.6). Nothing pro-rated or interpolated. The non-monotonicity in income is real and the CBEI's own model explains it: the six drivers include vehicle ownership, home size and household size alongside income, which is why car-dependent, detached-housing Staten Island tops the table and the lowest-income borough sits at the bottom.",
+      "correction": null,
+      "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/NYC-Household-Consumption-GHG-Emissions-Inventory.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "indicator-validity",
+      "claim": "R8 implementation: target cites 'DEAL's cited 1.5C-aligned per-capita consumption target of roughly 1.6-2.0 tCO2e/person' with the C40 trajectory labelled '(note: this C40 figure is a regional-typology average across ~20 cities, not an NYC-specific number)'.",
+      "verdict": "CONFIRMED",
+      "whatIFound": "R8 is correctly applied. C40's Table 1 is verbatim 'Start, interim and final consumption-based emissions per capita targets per region (in tCO2e/capita)' with 'North America, Oceania & High Income Asia 15.6 / 5.9 / 0.7' for 2017/2030/2050. The typology city list contains exactly 21 named cities (Austin, Auckland, Boston, Chicago, Hong Kong, Houston, Los Angeles, Melbourne, Montreal, New Orleans, New York, Philadelphia, Portland, San Francisco, Seattle, Seoul, Sydney, Tokyo, Toronto, Vancouver, Washington), so '~20 cities' is right, and the study grouped 96 C40 cities into typologies. The dossier scores against 1.6-2.0 and labels the C40 figure as context. R9 and R7 are also correctly applied: GPC is the local headline, and local.boroughs is null-with-note while the CBEI table sits on global.boroughs.",
+      "correction": null,
+      "sourceUrl": "https://www.c40.org/wp-content/uploads/2023/04/2270_C40_CBE_MainReport_250719.original-compressed-1-2.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "stale-policy",
+      "claim": "'2019 is the CBEI base year' / no newer vintage noted.",
+      "verdict": "CONFIRMED",
+      "whatIFound": "2019 remains the latest CBEI vintage. The report states the base year was chosen because 'that is the most recent robust consumer expenditure dataset available unaffected by the COVID-19 pandemic' and warns 'Known changes in emissions after 2019 are not included' — notably it excludes the post-Indian-Point grid deterioration, which means the 11 t/person figure understates the current housing-electricity component. Searching turned up no post-2019 NYC CBEI. The vintage gap is now 7 years and should be stated as a limitation.",
+      "correction": "Note explicitly that the CBEI predates the Indian Point closure and therefore understates the current electricity component.",
+      "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/NYC-Household-Consumption-GHG-Emissions-Inventory.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "stale-policy",
+      "claim": "Grid narrative: 'grid carbon intensity (289.6 to 369.9 kg CO2/MWh, 2019-2023)', 'renewables share of grid fell from 36% (2019) to 14% (2023)', 'In-city power plant fuel combustion rose 20% since Indian Point's 2021 closure', Astoria/LIC/East River concentration, 'Large scale renewables account for 35% of our projected 2030 progress'.",
+      "verdict": "CONFIRMED",
+      "whatIFound": "All confirmed verbatim from the MOCEJ deck. Slide 14 table: Grid Coefficient (kgs/MWh) 498.5 (2005), 289.6 (2019), 315.5, 337.8, 369.7 (2022), 369.9 (2023); Renewables 36% (2019) falling to 14% (2023); Percent Grid Served by In City Power Plants 47% (2019) to 59% (2023). Slide 16: 'In City Power Plant Fuel Combustion Has Increased by 20% Since Indian Point Closure', with Astoria Energy +30%, Poletti 500 MW +31%, Ravenswood +14%, Vernon Blvd +13%, East River +11%; 'Indian Point Closure Completed April 2021'. Slide 17: 'Large scale renewables account for 35% of our projected 2030 progress'. Slide 21: J51 quote confirmed verbatim — 'Underscores importance of J51 tax credit for electrification projects to \"leapfrog\" electrification in LL97 buildings'. Slide 26: City Fleet 8% to 12%, for-hire 1% to 3%, 'Citywide: 2% of all registered vehicles'. Law numbers correct: slide 5 'Per Local Law 22 of 2008 and Required to track Local Law 97 Goals'. One addition: electricity-sector emissions rose again in CY2024 (16.34 to 16.61 MtCO2e per the dataset) even as the total fell, so the grid drag persists past 2023.",
+      "correction": null,
+      "sourceUrl": "https://www.nyc.gov/assets/climate/downloads/pdfs/2023_GHG_Inventory_MOCEJ_Climate_Knowledge_Exchange_Meeting_1.13.25.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "stale-policy",
+      "claim": "'the new Mamdani administration (in office since Jan 1, 2026)'",
+      "verdict": "CONFIRMED",
+      "whatIFound": "Zohran Mamdani was sworn in as Mayor of New York City on January 1, 2026. Multiple independent confirmations (NPR, CNN, ABC News, and the NYC Mayor's Office inaugural address page).",
+      "correction": null,
+      "sourceUrl": "https://www.nyc.gov/mayors-office/news/2026/01/mayor-zohran-mamdani-inaugural-address"
+    },
+    {
+      "severity": "minor",
+      "category": "pii",
+      "claim": "Named MOCEJ presentation authors appear in the fetched source; expertsForPhase2 lists organizations with institutional contactPath URLs only.",
+      "verdict": "CONFIRMED",
+      "whatIFound": "No private individual's contact details anywhere in the dossier. All five expertsForPhase2 entries are organizations with public institutional URLs, and all five organizations exist. No PII to strip.",
+      "correction": null,
+      "sourceUrl": null
+    }
+  ],
+  "levelReview": {
+    "originalLevel": 50,
+    "recommendedLevel": 40,
+    "reasoning": "LOCAL 50 -> 40. Anchor (R1): the headline is production-based emissions against NYC's own binding target of 40% below 2005 by 2030. The newly published CY2024 inventory puts the city at -25.2%, i.e. 63% of the way to the target with six years left, having just posted the largest single-year cut in the 20-year series (-4.9%, 3.85 percentage points, faster than the 2.46 pp/yr now required). That is materially better than the -20%/CY2023 basis on which the original 50 and MOCEJ's 'must more than double' statement both rested; on CY2024 the required multiple of the historical average pace is ~1.85x, not >2x. Per R5 the genuine strength is real and must be reported: 6.2 tCO2e/person (2023, MOCEJ-published) is less than half the US average of 13 and below Petaluma's 7.25. Adjustments back up (R1), named: (i) grid carbon intensity worsened 28% from 289.6 to 369.9 kg CO2/MWh 2019-2023 with the renewables share collapsing from 36% to 14%, and electricity-sector emissions rose again in CY2024 — the single largest structural risk to 2030, and MOCEJ attributes 35% of projected 2030 progress to large-scale renewables that are partly cancelled; (ii) 57% of LL97-covered properties still emit above their 2030 cap; (iii) on the Citywide-CLCPA basis, which counts fugitive methane's near-term warming, progress is only -18.97% since 2005 rather than -25.25%; (iv) the 2021 Indian Point closure pushed the resulting pollution into disadvantaged waterfront communities. Net: still 'needs attention', but nearer the on-track boundary than 50 implied. I decline to apply R5's literal steer that per-capita production-based emissions should score NEGATIVE here: the local lens is scored against NYC's own 40x30 target (R9) and the city is not meeting it, and a negative wedge would tell readers NYC's climate dimension is inside the safe space, which at ~3x the 1.5C-aligned benchmark it is not. GLOBAL 100 -> 120. Per R8 the benchmark is DEAL's ~1.6-2.0 tCO2e/person. At 11 tCO2e/person the overshoot is 5.5-6.9x, and the true figure is a floor: the CBEI excludes government/institutional consumption which its own Appendix 4 puts at +5.5 tCO2e/household (+17.66 Mt citywide, ~+2.2 t/person, giving ~13 t), excludes business and tourism consumption entirely, and predates the post-Indian-Point grid deterioration. The trend is close to flat: -7.7% over 2007-2019, against C40's requirement that high-income cities cut two-thirds by 2030. The reason to go above 100 is cross-portrait consistency: the Petaluma portrait scores 100 for 7.25 tCO2e/person against the same 1.6-2.0 target, an overshoot ratio of 3.6-4.5x; NYC's consumption overshoot is roughly 1.5x larger, so an identical score of 100 would flatten a real difference. The reason not to go to 150 is that 150 is 'severe/emergency' and 11 t is about two-thirds of the US household average of 17 t, with a downward if inadequate trend — reserving 150 for footprints that are worst-in-class or rising preserves the scale's discriminating power. 120 sits above Petaluma's 100 and below the emergency band."
+  },
+  "sourcesIndependentlyFetched": [
+    {"url": "https://data.cityofnewyork.us/api/views/wq7q-htne.json", "fetchedOk": true, "confirms": "Dataset schema for 'NYC Greenhouse Gas Emissions Inventory', updated 2025-12-16, with a full CY 2024 column set — establishing that a CY2024 inventory exists and the dossier's 2023 headline is stale."},
+    {"url": "https://data.cityofnewyork.us/resource/wq7q-htne.json", "fetchedOk": true, "confirms": "Exact Citywide-GPC totals (100-yr GWP): 2005 = 64,139,720.6; 2019 = 52,690,071.35; 2022 = 51,642,247.68; 2023 = 50,433,720.04; 2024 = 47,944,551.47 tCO2e; published 2005-2024 change -25.249828%. Citywide-CLCPA (20-yr GWP incl. fugitive methane): 2005 = 97.17, 2023 = 83.85, 2024 = 78.74 Mt; -18.97% since 2005. Exact sector shares CY2023 71.2/24.9/3.9 and CY2024 69.5/26.3/4.2. Refutes the 51.2-51.3 Mt chart-read."},
+    {"url": "https://www.nyc.gov/assets/climate/downloads/pdfs/2023_GHG_Inventory_MOCEJ_Climate_Knowledge_Exchange_Meeting_1.13.25.pdf", "fetchedOk": true, "confirms": "Text extracted locally after the fetch tool failed on the image-heavy PDF. Confirms verbatim: '-20% from 2005 / -4% from 2019 / -2% from 2022'; sector labels 72%/25%/4%; per-capita '-23% since 2005 / +3% since 2019 / -1% since 2022'; 'We must more than double year-over-year reductions to meet our goals' with BAU -51% and Climate Budgeting -74%; grid coefficient table 498.5/289.6/315.5/337.8/369.7/369.9 and renewables 36% to 14%; in-city combustion +20% with named plants; large-scale renewables 35% of 2030 progress; J51 'leapfrog' quote; EV 2% citywide / 12% city fleet; Local Law 22 of 2008; 'NYC is the second largest emitter among C40 cities' and per-capita 'just above average'."},
+    {"url": "https://www.nyc.gov/assets/climate/downloads/pdfs/GHG%20Inventory%20Methodology%202023.pdf", "fetchedOk": true, "confirms": "Source the dossier did not fetch. Officially publishes the per-capita figure: 'In 2023, New York City's per capita GHG emissions averaged 6.2 metric tons of carbon dioxide equivalent (tCO2e), over 50% lower than the 2020 U.S. average of 13 tCO2e per capita', and 'Since 2005, greenhouse gas (GHG) emissions have decreased citywide by approximately 20%.' Resolves the dossier's own dataGap #1."},
+    {"url": "https://www.nyc.gov/assets/climate/downloads/pdfs/NYC-Household-Consumption-GHG-Emissions-Inventory.pdf", "fetchedOk": true, "confirms": "Text extracted locally. Confirms 92 million MTCO2e (2019), 3,211,033 households, ~29 t/household, ~11 t/person; US average 43 t/household and 17 t/person; category totals food 7.5, housing 7.0 (natural gas 3.7), services 5.9 (healthcare 3.4 = 57%), goods 4.2, transport 4.1 (air travel 1.4 = 34%); -7.7% 2007-2019; Table 4 borough figures 24/9, 28/11, 27/13, 33/12, 42/15 and transport 2.5/3.2/3.7/7.0/12.3; the 'about 67% more than in the territorial inventory' framing vs 55 Mt; tract range 58 vs 18 t/household; Appendix 4 government emissions +5.5 t/household = 17.66 Mt citywide. Refutes the Manhattan 'highest services' note and the natural-gas 49% figure."},
+    {"url": "https://www.nyc.gov/assets/climate/downloads/pdfs/Integrating-New-York-Citys-2019-Citywide-and-Consumption-Based-Greenhouse-Gas-Emissions-Inventories.pdf", "fetchedOk": true, "confirms": "The adjudication source for the apples-to-oranges question: 'These inventories (the Citywide Inventory and the CBEI) are developed using very different methods that are not directly compatible', the overlap-estimation method for the Integrated Inventory, and 'The CBEI uses the roughly 17 million MTC02e of emissions from residential energy use observed in the citywide inventory.'"},
+    {"url": "https://www.c40.org/wp-content/uploads/2023/04/2270_C40_CBE_MainReport_250719.original-compressed-1-2.pdf", "fetchedOk": true, "confirms": "Table 1 verbatim: 'North America, Oceania & High Income Asia 15.6 / 5.9 / 0.7', captioned 'Start, interim and final consumption-based emissions per capita targets per region' — a regional typology, with 21 named cities in NYC's group out of 96 studied. Also 'high-income cities must decrease by two thirds within the next decade'; '85% of the emissions associated with goods and services consumed in C40 cities are generated outside the city; 60% in their own country and 25% from abroad'; and the statements that refute the 'quarter of the gap' claim — 'addressing 25% of their consumption-based emissions, due to an overlap' and 'City governments and urban stakeholders can deliver 35% of the necessary emission reductions on their own'."},
+    {"url": "https://www.nyc.gov/site/buildings/dob/pr-ll97-improve-sustainability.page", "fetchedOk": true, "confirms": "Dated April 22, 2026. Confirms '93% of the covered privately owned properties, representing 91% of covered buildings' filed for CY2024, '~1,400 properties' failed to file and face Notices of Deficiency, and '$268 per ton of carbon emissions'. Explicitly does NOT contain the 9%/57% cap figures — DOB is 'in the process of auditing the filings received' and will publish compliance data 'later this year'. Establishes the misattribution."},
+    {"url": "https://www.urbangreencouncil.org/what-we-do/driving-innovative-policy/ll97/", "fetchedOk": true, "confirms": "'the nearly 50,000 properties covered by Local Law 97', '60% of NYC's building area', '50% of NYC building emissions' — refuting the '72% of emissions' attribution to LL97-covered buildings. Also 'about 9 percent of properties exceed their 2024 GHG cap' and 'about 57 percent of properties currently emit more GHG than their 2030 cap'."},
+    {"url": "https://www.urbangreencouncil.org/what-we-do/explore-nyc-building-data-hub/local-law-97-progress/", "fetchedOk": true, "confirms": "True source of the 57% figure: 43% of all buildings meet 2030 limits (46% multifamily, 47% office) on 'the latest benchmarking data (2024)', page last updated January 2026, with the caveat 'we'll wait for official 2024 compliance information from the NYC Department of Buildings later this year.'"},
+    {"url": "https://www.thecityreporter.nyc/2025/12/23/greenhouse-gas-inventory-emissions-pandemic/", "fetchedOk": true, "confirms": "Independent confirmation (Dec 23, 2025) of the CY2024 inventory: 5% decrease vs 2023, 25% cut since 2005; buildings ~27% below 2005, transportation >22% below 2005, waste >19% below 2005; natural gas up 15% on 2005 but at decade lows."},
+    {"url": "https://www.nyc.gov/mayors-office/news/2026/01/mayor-zohran-mamdani-inaugural-address", "fetchedOk": true, "confirms": "Mamdani sworn in as mayor January 1, 2026 — the dossier's political-moment claim, which it had only search-confirmed."},
+    {"url": "https://www.nyc.gov/content/climate/pages/initiatives/nyc-greenhouse-gas-inventories", "fetchedOk": false, "confirms": "Returns only navigation chrome with no inventory content — the same failure the dossier reported. The NYC Open Data dataset is the reliable route."},
+    {"url": "https://climate.cityofnewyork.us/wp-content/uploads/2025/03/GHG-Inventory-Methodology-2023.pdf", "fetchedOk": false, "confirms": "301 cross-host redirect to a generic landing page; the www.nyc.gov/assets path serves the same document and was used instead."}
+  ],
+  "questionsForOrchestrator": [
+    "Cross-portrait level consistency on the SAME metric. The Petaluma portrait scores climate change 100 for 7.25 tCO2e/person production-based against the 1.6-2.0 DEAL target. NYC's production-based figure is 6.2 tCO2e/person (2023, MOCEJ-published) — 15% LOWER than Petaluma's — yet per R9 NYC's local lens is scored against NYC's own 40x30 target and lands at 40. A reader comparing the two portraits will see Petaluma's climate wedge deep in the red and NYC's near the doughnut's edge for near-identical per-capita emissions. Do you want (a) this to stand, with the difference explained in petalumaContrast prose per R4, (b) Petaluma's local level revisited, or (c) a note rendered on the NYC wedge stating that the local lens is scored against the city's own statutory target rather than the 1.5C benchmark?",
+    "I recommend global 120 rather than 100 or 150, on the reasoning that NYC's consumption overshoot ratio (5.5-6.9x the 1.6-2.0 benchmark) is roughly 1.5x Petaluma's (3.6-4.5x), so an identical 100 would flatten a real difference — while 150 ('severe/emergency') is not warranted for a figure that is two-thirds of the US household average and falling, if far too slowly. If you would rather keep the scale to the six canonical values, 100 is the defensible fallback and I would not contest it; what I would contest is anything below 100.",
+    "The CBEI vintage is now 7 years old (2019) and predates the Indian Point closure, so its housing-electricity component understates current reality, while its exclusion of government consumption understates the total by ~2.2 tCO2e/person (CBEI Appendix 4: +17.66 Mt citywide). Should the global headline stay at the published 11 tCO2e/person (my choice, per R3), or should the dossier carry an explicitly-derived 'household + government' figure of ~13 tCO2e/person as the headline with 11 as a subIndicator? I kept 11 as the headline because it is the officially published number, but the level rationale leans on the ~13 figure and you may prefer that visible."
+  ]
+}

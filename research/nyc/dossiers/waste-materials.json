@@ -1,0 +1,234 @@
+{
+  "dimension": "waste & materials",
+  "ring": "ecological",
+  "note_on_scope": "Locally-defined 10th ecological dimension (ORCHESTRATOR_RULINGS R6) — no direct Raworth planetary-boundary analog. Local-ecological lens scored against best available regulatory/goal benchmark (NYC's own Zero Waste Act 2030 target), per the R15 convention for boundaries lacking a downscaled planetary benchmark. Global-ecological lens reserved for effects/transmission channels beyond NYC's boundary.",
+
+  "local": {
+    "indicator": "Curbside & Containerized Diversion Rate (residential)",
+    "value": "18.5%",
+    "year": 2025,
+    "fiscalYear": "FY2025 (July 2024–June 2025)",
+    "target": "Zero Waste Act goal of eliminating landfill-bound waste by 2030 (citywide zero-waste target set under OneNYC; reaffirmed in the 2023 Zero Waste Act package). DSNY's own FY2025 Zero Waste Report and Draft SWMP26 both state the 2030 goal is 'likely not attainable' at the current diversion trajectory.",
+    "geographicScale": "city",
+    "confidence": "high",
+    "productionVsConsumption": "production/generation-based (measures tonnage collected and diverted within NYC; does not capture embodied material footprint of goods consumed — see global lens)",
+    "levelRationale": "Headline curbside & containerized diversion rate is 18.5% (FY2025), essentially flat against a multi-year historical band (FY2018: 18.0%, FY2021: 17.6%, FY2022: 17.0%, FY2025: 18.5% — SWMP26 Table 1-5 and FY2025 Zero Waste Report), against a stated 2030 zero-waste goal that DSNY itself now calls 'likely not attainable.' The city's own broader DSNY-Managed Diversion Rate (a more generous metric including voluntary/non-curbside diversion under Local Law 40 of 2010) reached 21.8% in FY2025, up from 20.6% in FY2024 — real improvement, but still far below any zero-waste trajectory. Organics capture rate (share of divertible organic material actually captured in the brown bin, per DSNY's Waste Characterization Study) is only 7.2% in FY2025, despite curbside organics now being mandatory citywide since 2024 — indicating a large compliance/participation gap on the single highest-leverage material stream (food waste is the largest fraction of NYC's residential waste stream). No active in-city landfill or waste-to-energy capacity exists since Fresh Kills closed in 2001; 100% of non-diverted residential and commercial waste is exported out of the five boroughs (truck, rail, or barge via Marine Transfer Stations) at a cost in the hundreds of millions of dollars annually, meaning NYC's entire non-diverted waste stream is displaced onto other jurisdictions' landfills and incinerators (mostly Pennsylvania, Ohio, Virginia, South Carolina) — a material scale of transmission that would be disqualifying on its own even before diversion performance is considered. Weighing (a) diversion essentially flat/stagnant against a stated 2030 goal now admitted to be unreachable, (b) very low organics capture despite a mandatory program, and (c) total dependency on waste export with no in-city end-of-life capacity, against (d) genuine incremental improvement in the broader DSNY-Managed rate and a real, functioning regulatory infrastructure (Zero Waste Act, Commercial Waste Zones, Waste Equity Law) actively working the problem, I score this 70 ('needs attention' trending toward 'critical') rather than higher — the system is moving, just too slowly relative to its own targets.",
+    "context": "IMPORTANT CORRECTION to research-brief assumption: the brief's 'historically ~20-21%' figure appears to conflate two distinct, separately-published DSNY metrics. The narrower and more commonly cited 'Curbside & Containerized Diversion Rate' (diverted tonnage ÷ all curbside+containerized collection tonnage) has historically run lower — FY2018: 18.0%, FY2021: 17.6%, FY2022: 17.0%, FY2025: 18.5%. The broader 'DSNY-Managed Diversion Rate' (adds voluntary/non-curbside reported diversion, per Local Law 40 of 2010) is the one that sits in the 20-21% range: FY2024: 20.6%, FY2025: 21.8%. Both are legitimate, separately-defined, officially published DSNY metrics — they should not be conflated. This dossier uses the narrower Curbside & Containerized rate as the headline because it is the metric DSNY itself reports at the borough/district level (enabling real 5-borough comparison, see below) and is the more conservative, harder-to-game figure. STATUTORY CORRECTION: the research brief cited 'Local Law 134 of 2023' for the Zero Waste Act. No such law exists; the actual 2023 Zero Waste Act package is Local Laws 85, 86, 87, 88, and 89 of 2023 (covering, among other things, mandatory curbside composting and containerization requirements). This should be corrected wherever 'Local Law 134' appears elsewhere in the portrait.",
+    "source": "NYC Department of Sanitation, FY2025 Zero Waste Report (published Oct 2025) and Draft Solid Waste Management Plan 2026 (SWMP26)",
+    "sourceUrl": "https://www.nyc.gov/assets/dsny/site/resources/reports-data/zero-waste-progress-reports",
+    "boroughs": [
+      {
+        "name": "Manhattan",
+        "value": "20.0%",
+        "level": 65,
+        "note": "FY2025 Curbside & Containerized Diversion Rate, same metric as citywide headline. High-rise/dense multi-family housing stock; strong containerization program overlap."
+      },
+      {
+        "name": "Bronx",
+        "value": "14.5%",
+        "level": 90,
+        "note": "FY2025 Curbside & Containerized Diversion Rate, same metric as citywide headline. Lowest of the five boroughs — correlates with higher-density multi-family/renter-occupied housing stock, historically lower service investment, and documented lower organics-program participation."
+      },
+      {
+        "name": "Brooklyn",
+        "value": "17.0%",
+        "level": 78,
+        "note": "FY2025 Curbside & Containerized Diversion Rate, same metric as citywide headline. Mixed housing stock (dense multi-family in north/central, lower-density with yard waste in south/east)."
+      },
+      {
+        "name": "Queens",
+        "value": "20.6%",
+        "level": 60,
+        "note": "FY2025 Curbside & Containerized Diversion Rate, same metric as citywide headline. Higher share of one/two-family housing with yard space generates more yard waste (a well-captured organics stream) and eases source separation."
+      },
+      {
+        "name": "Staten Island",
+        "value": "21.8%",
+        "level": 55,
+        "note": "FY2025 Curbside & Containerized Diversion Rate, same metric as citywide headline. Best-performing borough — lowest density, highest share of single-family housing with yards, longest-standing curbside organics participation history, and home to the former Fresh Kills landfill site (now Freshkills Park), which anchors strong local zero-waste identity/messaging."
+      }
+    ],
+    "neighborhoodNote": "All five boroughs report REAL, same-metric (Curbside & Containerized Diversion Rate) headline-indicator data from the FY2025 Zero Waste Report's district-level table — a genuine 5-of-5 result, not proxied (per R10). The clear housing-type gradient (lower density + yard waste + single-family stock = higher diversion) mirrors national patterns and should not be read as a values or effort gap between boroughs.",
+    "subIndicators": [
+      {
+        "name": "DSNY-Managed Diversion Rate (broader metric, includes voluntary/non-curbside reporting)",
+        "value": "21.8% (FY2025), up from 20.6% (FY2024)",
+        "year": 2025,
+        "source": "DSNY FY2025 Zero Waste Report",
+        "note": "Distinct from the headline Curbside & Containerized rate; do not sum or average the two."
+      },
+      {
+        "name": "Organics capture rate (share of divertible organic material actually captured in brown bin/curbside organics)",
+        "value": "7.2%",
+        "year": 2025,
+        "source": "DSNY FY2025 Zero Waste Report, based on DSNY Waste Characterization Study",
+        "note": "Despite curbside organics collection being mandatory citywide since 2024, actual capture of the largest divertible material stream (food waste) remains very low — the single biggest lever for improving the headline rate."
+      },
+      {
+        "name": "Annual waste export/transfer cost (FY2025)",
+        "value": "$495 million (NYC Council Committee on Finance citation, May 12, 2025 hearing) vs. $513,989,376 (reviewer-derived sum of FY2025 Zero Waste Report's per-facility transfer-station cost line items)",
+        "year": 2025,
+        "source": "NYC Council Committee on Finance FY2025 hearing (secondary source); DSNY FY2025 Zero Waste Report per-facility cost table (primary source, reviewer-summed)",
+        "note": "PER R16: the $514.0M figure is a reviewer-derived sum of primary-source line items, not an officially published single total — confidence on this specific figure is capped at medium. The ~$19M (~4%) gap against the $495M Council citation is unresolved; plausible explanations include differing fiscal-year cutoffs or scope (e.g., inclusion/exclusion of out-of-state disposal/tipping fees vs. NYC-side transfer/haul costs only). Flagged as a discrepancy rather than silently resolved — see questionsForOrchestrator."
+      },
+      {
+        "name": "In-city landfill/disposal capacity",
+        "value": "Zero — no active landfill or waste-to-energy facility has operated within NYC since Fresh Kills (Staten Island) closed in 2001. 100% of non-diverted waste is exported.",
+        "year": 2025,
+        "source": "DSNY Draft SWMP26",
+        "note": "This is the structural core of NYC's waste system and the sharpest point of contrast with Petaluma."
+      }
+    ]
+  },
+
+  "global": {
+    "level": null,
+    "indicator": "International/out-of-region material footprint of NYC's exported waste and recyclables — NOT QUANTIFIED",
+    "value": null,
+    "confidence": "low",
+    "context": "Per R2: a null score with strong qualitative framing is preferred over attaching an invented number. Two real, verified transmission channels exist but neither could be quantified to a hard figure from available primary or secondary sources: (1) INTERSTATE waste export — DSNY exports 100% of non-diverted waste (both residential and commercial) via truck, rail, and barge from Marine Transfer Stations to out-of-state landfills/incinerators, primarily in Pennsylvania, Ohio, Virginia, and South Carolina, at a cost of roughly $495M-$514M/year (FY2025, see local-lens subIndicators). This is technically an interstate rather than international transmission channel, so it is documented here as context rather than scored as the 'global' lens result — but it is a real displaced ecological/environmental-justice burden onto receiving-state communities that a full portrait should surface (receiving landfills' EJ demographics are documented in DSNY's Draft SWMP26 but not aggregated into a single footprint figure). (2) INTERNATIONAL recyclables market exposure — NYC's curbside recycling (processed largely at Sims Municipal Recycling's Sunset Park, Brooklyn facility, ~1,000 tons/day capacity) is sold into international commodity markets and has been structurally disrupted since China's 2018 'National Sword' policy banned most imported mixed paper and plastic scrap. Available sourcing describes materials as sold 'on the east coast and in Canada' with explicit acknowledgment that 'there are no buyers for plastic bags in the US' for some film/mixed-plastic streams — but no source found (DSNY, Sims, NYSDEC, or academic/NGO) publishes a quantified tonnage-by-destination-country breakdown or a consumption-based international material-footprint figure for NYC specifically. Rather than force a number onto this qualitative reality, this lens is scored null with the framing above. A materials-flow analysis by NYSDEC, Sims Municipal Recycling, or an academic/NGO materials-flow research group (e.g., Columbia University's Earth Institute, or the Natural Resources Defense Council's waste program) could plausibly quantify this in Phase 2.",
+    "source": "DSNY Draft SWMP26 (export routing/EJ demographic data); general secondary sourcing on Sims Municipal Recycling and China National Sword impacts",
+    "sourceUrl": "https://www.nyc.gov/assets/dsny/site/resources/reports-data/swmp"
+  },
+
+  "policyAnchors": [
+    {
+      "name": "Zero Waste Act (Local Laws 85, 86, 87, 88, and 89 of 2023)",
+      "relevance": "Package establishing mandatory citywide curbside organics collection and new containerization requirements — the primary current statutory vehicle for the 2030 zero-waste goal.",
+      "status2026": "Enacted 2023; implementation ongoing. Mandatory curbside organics collection citywide took effect in phases through 2024. Containerization rules (mandatory bins rather than loose bags for trash) are phasing in by building size/district through 2025-2026.",
+      "sourceUrl": "https://www.nyc.gov/assets/dsny/site/resources/reports-data/zero-waste-progress-reports",
+      "correctionNote": "The research brief referenced 'Local Law 134 of 2023' for this package — no such law exists. The correct citations are Local Laws 85-89 of 2023. Recommend correcting this across the portrait wherever it recurs."
+    },
+    {
+      "name": "Local Law 199 of 2019 (Commercial Waste Zones)",
+      "relevance": "Restructures NYC's private commercial waste-hauling industry into 20 exclusive geographic zones to reduce truck traffic, emissions, and unsafe hauling practices.",
+      "status2026": "UNRESOLVED DATE DISCREPANCY: Dec 9, 2025 DSNY testimony (Jennifer McDonnell) states DSNY 'has already committed to full implementation of the zones by 2027.' However, both the Draft SWMP26 and the FY2025 Zero Waste Report (both published later, Oct/late-2025) state the program is 'tentatively scheduled to be fully implemented by the end of 2028.' Queens Central was the first zone rolled out; phased rollout is ongoing as of mid-2026. This dossier defers to the more recent written reports (2028) as primary but flags the conflict explicitly — see questionsForOrchestrator.",
+      "sourceUrl": "https://www.nyc.gov/assets/dsny/site/resources/reports-data/swmp"
+    },
+    {
+      "name": "Local Law 152 of 2018 (Waste Equity Law)",
+      "relevance": "Caps put-or-pay transfer-station capacity in four community districts already overburdened with waste infrastructure (South Bronx, North Brooklyn, Southeast Queens), directly addressing the environmental-justice history of transfer-station siting.",
+      "status2026": "Enacted and in effect; caps continue to constrain new/expanded transfer-station capacity in the named districts.",
+      "sourceUrl": "https://www.nyc.gov/assets/dsny/site/resources/reports-data/swmp"
+    },
+    {
+      "name": "NYS plastic bag ban (2020) and NYC expanded polystyrene (EPS) foam ban",
+      "relevance": "Upstream material-reduction measures targeting two historically high-volume, low-recyclability waste streams.",
+      "status2026": "Both in effect and enforced as of 2026 (EPS ban survived legal challenges and full enforcement began after prior delays).",
+      "sourceUrl": "https://www.nyc.gov/site/dsny/collection/collection-changes/expanded-polystyrene-ban.page"
+    },
+    {
+      "name": "NYS Packaging Reduction and Recycling Infrastructure Act (PRRIA, S1464/A1749) — Extended Producer Responsibility for packaging",
+      "relevance": "Would shift the cost and management burden of packaging waste from municipalities (including NYC/DSNY) to producers — the single largest pending upstream policy lever for this dimension.",
+      "status2026": "NOT YET ENACTED. Passed the State Senate in prior sessions (2024, 2025) but has not cleared the Assembly. A heavily amended version (~150 changes) was introduced in April 2026 and remains pending as of the 2026 legislative session — status should be treated as live/unresolved, not assumed passed.",
+      "sourceUrl": "https://www.nysenate.gov/legislation/bills/2025/S1464"
+    }
+  ],
+
+  "actions": [
+    "Use curbside organics (brown bin) correctly and consistently — organics capture rate (7.2%) is the single largest lever for improving NYC's diversion rate, and the program is now mandatory citywide.",
+    "Comply with new containerization rules (bins, not loose bags) as they phase in by building/district under the Zero Waste Act.",
+    "Advocate in Albany for passage of the Packaging Reduction and Recycling Infrastructure Act (PRRIA) to shift packaging-waste costs upstream to producers.",
+    "Support enforcement of the Waste Equity Law (LL152) and monitor Commercial Waste Zones rollout to ensure environmental-justice communities see real relief from transfer-station burden.",
+    "Use donateNYC and refashionNYC for textiles and e-waste instead of curbside trash — both are diversion streams DSNY runs but that depend entirely on voluntary participation.",
+    "Visit and support Freshkills Park as a living example of landfill-to-parkland remediation, and as a public touchstone for the zero-waste goal."
+  ],
+
+  "petalumaContrast": "This is one of the sharpest structural contrasts in the whole portrait. NYC has had zero in-city landfill or waste-to-energy capacity since Fresh Kills closed in 2001; every ton of its non-diverted waste — residential and commercial — is exported out of the five boroughs by truck, rail, or barge at a cost of roughly half a billion dollars a year, displacing the ecological and environmental-justice burden onto receiving communities in Pennsylvania, Ohio, Virginia, and South Carolina. Petaluma, by contrast, sits within Sonoma County's own solid-waste system: the Sonoma County Central Landfill has an estimated 15-25 years of remaining in-county capacity, and Petaluma's curbside collection (residential + commercial, under an exclusive Recology Sonoma Marin franchise) includes mandatory organics/food-scrap collection under California's SB 1383 (effective Jan 1, 2022), with countertop kitchen pails provided to residents to ease participation. In other words: Petaluma disposes of its waste largely within a system it can still see and govern locally, while NYC's scale has forced it into permanent, costly, and equity-fraught exporter status. That said, the comparison should not be read as Petaluma having 'solved' waste — Petaluma's own Doughnut portrait (data/petaluma_ca.json) currently has NO filled-in waste & materials indicator at all ('Need more input from City' is the literal placeholder text), so no verified Petaluma-specific diversion rate exists yet for a true side-by-side number. Sonoma County-wide, roughly two-thirds of the ~262,500 tons disposed of annually is estimated to be divertible, potentially divertible, or compostable (Zero Waste Sonoma), suggesting a real diversion gap exists in Sonoma County too, just at a vastly smaller absolute and per-capita scale than NYC's, and without the export/environmental-justice dimension that defines NYC's system. Recommend that Amelia's team prioritize filling Petaluma's own waste-and-materials indicator (Zero Waste Sonoma's annual report and Recology Sonoma Marin are the logical next sources) so the contrast can eventually be stated in real, comparable diversion-rate numbers rather than structural description alone.",
+
+  "dataGaps": [
+    "Total annual residential AND commercial waste tonnage for NYC not independently re-verified with a single reconciled figure in this synthesis (percentages were the primary metric captured from source reports; commercial tonnage under Commercial Waste Zones was described directionally in sourcing as roughly doubling the city total, but a precise current combined tonnage figure should be pulled directly from the FY2025 Zero Waste Report's tonnage tables before publication).",
+    "No quantified international material-footprint or destination-country breakdown exists for NYC's exported recyclables post-China National Sword (2018) — global-ecological lens scored null pending this data (see global lens context).",
+    "FY2025 export/transfer cost figure has an unresolved ~$19M (~4%) discrepancy between a NYC Council Committee on Finance citation ($495M) and a reviewer-derived sum of DSNY's own per-facility cost table ($513,989,376) — needs reconciliation with DSNY budget staff.",
+    "Commercial Waste Zones full-implementation date is inconsistently stated across DSNY's own sources: 2027 (Dec 2025 oral testimony) vs. 2028 (Draft SWMP26 and FY2025 Zero Waste Report, both published later) — needs a single authoritative current answer from DSNY.",
+    "Petaluma has NO existing waste & materials indicator in its own portrait data (data/petaluma_ca.json currently reads 'Need more input from City') — a real, currently-unfilled Petaluma-side gap that limits how precisely the two cities' waste systems can be numerically compared.",
+    "MRF (materials recovery facility) capacity figures differ between DSNY's FY2024 and FY2025 reports (e.g., Sims Municipal Recycling's Brooklyn/Queens/Bronx commingled MGP capacity listed as 297,600 tons in one vintage vs. 250,000 tons in the other) — likely reflects an updated/corrected capacity table rather than an actual capacity reduction, but not explicitly confirmed."
+  ],
+
+  "expertsForPhase2": [
+    {
+      "org": "NYC Department of Sanitation (DSNY), Bureau of Recycling and Sustainability",
+      "why": "Authoritative source for reconciling the CWZ 2027-vs-2028 implementation date and the $495M-vs-$514M export cost discrepancy.",
+      "contactPath": "Via DSNY press office / City Council Committee on Sanitation liaison"
+    },
+    {
+      "org": "Sims Municipal Recycling (Sunset Park, Brooklyn facility)",
+      "why": "Only entity likely to have actual downstream buyer/destination data for NYC's processed recyclables — needed to quantify the global-ecological lens currently scored null.",
+      "contactPath": "Facility public affairs / Sims Metal Management corporate sustainability team"
+    },
+    {
+      "org": "NYSDEC (NY State Dept. of Environmental Conservation)",
+      "why": "Authoritative on PRRIA (packaging EPR) legislative status and statewide recyclables market data.",
+      "contactPath": "NYSDEC Division of Materials Management"
+    },
+    {
+      "org": "Zero Waste Sonoma / Recology Sonoma Marin",
+      "why": "Needed to fill Petaluma's own currently-empty waste & materials indicator with a real, comparable diversion-rate figure.",
+      "contactPath": "Zero Waste Sonoma annual report team; Recology Sonoma Marin (Petaluma's exclusive franchise hauler)"
+    },
+    {
+      "org": "Environmental-justice community organizations in South Bronx, North Brooklyn, and Southeast Queens",
+      "why": "Lived-experience perspective on transfer-station burden and the effectiveness (or gaps) of the Waste Equity Law (LL152) in practice.",
+      "contactPath": "Via NYC Environmental Justice Alliance (NYC-EJA) member organizations"
+    }
+  ],
+
+  "questionsForOrchestrator": [
+    "Should the Commercial Waste Zones full-implementation date discrepancy (2027 per Dec 2025 DSNY oral testimony vs. 2028 per the Draft SWMP26 and FY2025 Zero Waste Report, both published later) be resolved centrally with a single portrait-wide answer, since it may recur if other dimensions cite CWZ timing?",
+    "Should the reviewer-derived FY2025 export cost sum ($513,989,376, from summing DSNY's own per-facility line items) be presented alongside the $495M Council-hearing citation as a flagged discrepancy, or should the orchestrator select one figure for consistency with any other dimension that might cite DSNY's budget?",
+    "Please confirm the correct statutory citation for the 'Zero Waste Act' package is Local Laws 85, 86, 87, 88, and 89 of 2023 — the original research brief cited 'Local Law 134 of 2023,' which does not appear to exist. If other research agents inherited this same citation from the shared brief, it likely needs correcting across multiple dimension dossiers, not just this one."
+  ],
+
+  "sourcesFetched": [
+    {
+      "url": "DSNY FY2025 Zero Waste Report (PDF, published Oct 2025)",
+      "fetchedOk": true,
+      "whatItGave": "Current authoritative headline figures: Curbside & Containerized Diversion Rate 18.5%, DSNY-Managed Diversion Rate 21.8%, organics capture rate 7.2%; full 5-borough district-level diversion table; per-facility FY2025 transfer-station cost table."
+    },
+    {
+      "url": "DSNY 2024 Zero Waste Report (PDF, prior vintage)",
+      "fetchedOk": true,
+      "whatItGave": "FY2024 figures (DSNY-Managed rate 20.6%) and prior-vintage borough/district diversion table and MRF capacity table, used for trend comparison and vintage-discrepancy checking per R11."
+    },
+    {
+      "url": "Draft Solid Waste Management Plan 2026 (SWMP26) (PDF)",
+      "fetchedOk": true,
+      "whatItGave": "Most comprehensive primary source: export routing detail and receiving-facility/EJ demographic data, LL152/LL199 program detail, waste-characterization composition data, historical per-capita/diversion-rate table (Table 1-5), commercial waste and C&D sections, policy context, projections."
+    },
+    {
+      "url": "Dec 9, 2025 DSNY testimony (Jennifer McDonnell) on SWMP26 engagement (PDF)",
+      "fetchedOk": true,
+      "whatItGave": "Oral-testimony statement on Commercial Waste Zones implementation timeline (2027), which conflicts with the later written SWMP26/FY2025 report (2028) — source of the flagged discrepancy."
+    },
+    {
+      "url": "WebSearch: Freshkills Park acres landfill-to-parkland official size NYC Parks",
+      "fetchedOk": true,
+      "whatItGave": "Confirmed Freshkills Park is 2,200 acres, the largest landfill-to-park conversion project in the world, with phased public opening through 2036."
+    },
+    {
+      "url": "WebSearch: Sims Municipal Recycling Sunset Park downstream buyers / China National Sword",
+      "fetchedOk": true,
+      "whatItGave": "Only generic facility description (1,000 tons/day capacity, barge/rail shipping, sold 'east coast and Canada,' no US buyers for some plastic film) — no quantified destination-country or footprint data found, supporting the null global-lens score."
+    },
+    {
+      "url": "WebSearch: New York State packaging EPR bill 2025/2026 status (PRRIA)",
+      "fetchedOk": true,
+      "whatItGave": "Confirmed PRRIA (S1464/A1749) passed the Senate in prior sessions but has not passed the Assembly; a heavily amended (~150 changes) version was introduced April 2026 and remains pending — not yet enacted."
+    },
+    {
+      "url": "WebSearch: NYC Council Committee on Finance FY2025 DSNY export cost hearing",
+      "fetchedOk": true,
+      "whatItGave": "Secondary-source citation of $495 million total FY2025 DSNY export expenditure, used as the comparison figure against the reviewer-derived $513,989,376 sum."
+    },
+    {
+      "url": "docs/petaluma-data-source.md and data/petaluma_ca.json (local repo files)",
+      "fetchedOk": true,
+      "whatItGave": "Confirmed Petaluma's own waste & materials indicator is currently unfilled ('Need more input from City'); provided context for the petalumaContrast field."
+    },
+    {
+      "url": "WebSearch: Sonoma County landfill diversion rate / Recology / Cold Creek Compost / SB 1383",
+      "fetchedOk": true,
+      "whatItGave": "Confirmed Sonoma County Central Landfill has 15-25 years remaining capacity; Petaluma's exclusive hauler is Recology Sonoma Marin with mandatory curbside organics under SB 1383 (effective Jan 1, 2022); Sonoma County disposes ~262,500 tons/year with ~66% estimated divertible/compostable."
+    }
+  ]
+}

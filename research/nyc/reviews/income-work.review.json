@@ -1,0 +1,309 @@
+{
+  "dimension": "income & work",
+  "overallVerdict": "sound-with-corrections",
+  "confidenceInDossier": "medium",
+  "findings": [
+    {
+      "severity": "critical",
+      "category": "scale-substitution",
+      "claim": "an estimated 600,000-820,400 undocumented New Yorkers ... are excluded from unemployment insurance and many labor protections; roughly 600,000+ undocumented workers ... 820,400 per Center for Migration Studies of New York modeling, with a historical peak of 943,000 in 2012",
+      "verdict": "REFUTED",
+      "whatIFound": "The 600,000-670,000 range is NEW YORK STATE, not New York City. Gothamist, reporting CMS data, states plainly: 'New York state was home to an estimated 672,000 undocumented immigrants in 2022 alone, according to data from the Center for Migration Studies,' and in the SAME article gives the separate city figure: 'roughly 412,000 undocumented immigrants lived in the city as of 2022,' per the NYC Mayor's Office of Immigrant Affairs, 'a decline from 611,000 in 2012.' The NYC Comptroller separately estimated ~476,000 (2019) and ~504,000 (2018). I could not source 820,400 or 943,000 as NYC figures at all; the 611,000/2012 city peak the dossier appears to have inflated to 943,000 is itself statewide-adjacent. The orchestrator's brief (400,000-500,000) was CORRECT and the agent's 'correction' was a geographic-scale substitution. This error propagated into global.value, global.levelRationale, global.context, petalumaContrast, and questionsForOrchestrator.",
+      "correction": "~412,000 undocumented New Yorkers (NYC MOIA, 2022 ACS-based), down from ~611,000 in 2012; NYC Comptroller estimated ~476,000 in 2019. The 672,000 CMS figure is New York State and must not be used as a city figure.",
+      "sourceUrl": "https://gothamist.com/news/new-york-has-more-than-600k-undocumented-immigrants-data-shows-who-are-they"
+    },
+    {
+      "severity": "critical",
+      "category": "fabrication",
+      "claim": "the 2021 Excluded Workers Fund provided a one-time $2.1B/$15,600-per-worker benefit to ~290,000 workers before exhausting its funds by December 2021 ... The 2021 $2.1B one-time fund (paid ~$1.2B of it, ~120,000-290,000 workers approved depending on source)",
+      "verdict": "CORRECTED",
+      "whatIFound": "NYS DOL and the Governor's office: 'more than 130,000 EWF applications have been approved and, minus administrative costs, the entirety of the $2.1 billion fund will soon be distributed'; more than $2 billion was distributed to ~130,000 New Yorkers; 99% of approved beneficiaries qualified for Tier 1 at $15,600. Neither the '~290,000 workers' figure nor the '~$1.2B paid' figure is supportable from any source I could locate; both are wrong in opposite directions (workers overstated ~2.2x, dollars understated ~40%). The EWF was also a NEW YORK STATE program, not a city program — the dossier does not say otherwise but the global lens reads as if it were municipal.",
+      "correction": "New York State's Excluded Workers Fund distributed more than $2B of its $2.1B appropriation to more than 130,000 approved applicants before exhausting by December 2021; 99% received the Tier 1 benefit of $15,600.",
+      "sourceUrl": "https://dol.ny.gov/news/nearly-30-million-final-excluded-workers-fund-payments-be-sent-new-yorkers-need"
+    },
+    {
+      "severity": "major",
+      "category": "internal-inconsistency",
+      "claim": "local.year: 2026 — 'released April 6, 2026 ... this is a brand-new measure with only one data release so far (April 2026), so no multi-year TCOL trend exists yet'",
+      "verdict": "CORRECTED",
+      "whatIFound": "I extracted the full 61-page primary PDF. Page 3: 'All estimates are derived from the Urban Institute's ATTIS model, applied to 2018 American Community Survey data and projected to 2022. Population figures reflect 8.16 million NYC residents.' Every data table is sourced 'Urban Institute, ATTIS model, 2022.' The report cover is dated March 2026; the press release is April 6, 2026. The Urban Institute companion report (Acs, Dehry, Simpson, Todd; May 14, 2026) independently states the data year as 2022. So the headline is a 2022-vintage estimate published in 2026 — a four-year lag that the dossier presents as a 2026 measurement. This matters materially because the one series with a real time trend (FCNY, below) shows income inadequacy FELL between 2021 and 2024.",
+      "correction": "local.year: 2022 (data year; ATTIS model on 2018 ACS projected to 2022). Publication: MOERJ report dated March 2026, released April 6, 2026. Population base 8.16M residents, not 8.3M.",
+      "sourceUrl": "https://www.nyc.gov/assets/equity/downloads/pdf/2026%20NYC%20TCOL%20Measure_4%206%2026.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "severity-unsupported",
+      "claim": "R11 divergence: dossier headlines 62% where the orchestrator's brief cited the United Way/FCNY TCOL study at roughly 50%",
+      "verdict": "CONFIRMED",
+      "whatIFound": "Both figures are real; they are different measures and the gap is fully explainable. (a) MOERJ/NYCO/Urban Institute 'NYC True Cost of Living Measure': 61.8% (rounded to 62%) of PERSONS IN FAMILIES — 5.04M of 8.16M residents — 2022 data, AFTER government transfers; 67% before transfers, i.e. supports cut the rate by ~5pp ('from 67 percent to 62 percent', p.30). Universe is the whole resident population, including 65+ and people with disabilities. Methodology: Urban Institute True Cost of Economic Security / ATTIS, which includes a savings target of 10% of expenses in the threshold. (b) FCNY/United Way/Center for Women's Welfare 'NYC True Cost of Living': 50% of WORKING-AGE HOUSEHOLDS (1,298,212 households, 2,991,973 people) in the 2023 report, and 46% in the newest vintage ('Overlooked & Undercounted in New York City 2026', March 18, 2026, 2024 ACS 1-year PUMS with incomes adjusted to 2026 costs). Universe explicitly 'excludes adults 65+, group quarters, and adults with work-limiting disabilities'; measured with NO public or private assistance counted; Self-Sufficiency Standard methodology, no savings component. The 62%/46% gap is therefore driven by four things, not by an error: unit (persons vs households), universe (all residents vs working-age households — MOERJ's highest-rate groups, 92% of families with self-care disabilities and 68.1% of 65+ with disability, are precisely who FCNY excludes), threshold basket (savings target included vs not), and vintage (2022 vs 2024/2026). Note the direction check the orchestrator asked for: FCNY is PRE-transfer and still LOWER than MOERJ's POST-transfer figure, which confirms transfers are not the driver. The 62% headline is defensible and is the officially mandated city measure (Charter Amendment 3, Nov 2022, 81% approval), so per R3 it stays as headline — but both figures, both vintages, and both definitions must be stated in the dossier, which they now are.",
+      "correction": "Headline retained at 61.8%/62% (2022, persons in families, post-transfer) with the FCNY series added as a labelled co-measure: 46% of working-age households (2024 incomes/2026 costs), 50% in the 2023 report, 36% in the 2021 report.",
+      "sourceUrl": "https://www.fcny.org/wp-content/uploads/2026/03/NYC2026_TCL_BRIEF_20260318.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "internal-inconsistency",
+      "claim": "the older UWNYC/FCNY 'True Cost of Living' series (50% in 2023, up from 36% in 2021) is the best available proxy for trend direction and both show a fast-worsening trajectory",
+      "verdict": "REFUTED",
+      "whatIFound": "The current FCNY vintage says the opposite. 'Overlooked & Undercounted in New York City 2026', p.6: 'The share of New York City households unable to meet the cost of basic needs declined between 2012 and 2019, rose sharply in 2021, and then declined again by 2024... At 46%, income inadequacy in 2024 remains substantially higher than pre-pandemic levels, despite declining from the 2021 peak.' The brief then cautions that the decline 'does not reflect a broad easing of affordability pressures' — it reflects fewer no-worker households as the labour market recovered, plus a 1.2pp fall in the share of households with children (which mechanically lowers the average because child-present households face higher thresholds). Critically, it also reports that inadequacy among households with ONE full-time year-round worker ROSE, from 40% in 2021 to 44% in 2024, and rose among all working households. So the honest characterisation is: falling from the 2021 peak on a composition-driven basis, still well above pre-pandemic, and WORSENING for single-earner working households. 'Fast-worsening trajectory' is not supportable.",
+      "correction": "Replace the trend claim with the FCNY finding as stated above, including the 40%->44% single-full-time-earner deterioration, which is the honest and more damning framing.",
+      "sourceUrl": "https://www.fcny.org/wp-content/uploads/2026/03/NYC2026_TCL_BRIEF_20260318.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "internal-inconsistency",
+      "claim": "families with children need a median $159,197/yr but have median resources of $124,007/yr, an average annual gap of $39,603",
+      "verdict": "CORRECTED",
+      "whatIFound": "Two separate statistics have been welded into one sentence. The primary report p.16: 'For families with children, total resources of $124,007 cover 78 percent of the total costs of $159,197, leaving an average gap of $35,190. Market resources alone ($95,277)...' Government transfers add $28,730. Separately, Table 11 gives the CITYWIDE average resource gap across all persons in families below TCOL as $39,603 (median costs $122,919, median resources $78,993). $39,197/$124,007/$35,190 belong together; $39,603 is a different denominator. The Urban Institute companion states the average shortfall as $40,200, a small definitional difference worth noting.",
+      "correction": "Families with children: median cost $159,197, median resources $124,007 (78% of cost), average gap $35,190; market resources alone $95,277, transfers adding $28,730. Citywide average resource gap for persons in families below TCOL: $39,603 (Urban Institute companion: ~$40,200).",
+      "sourceUrl": "https://www.nyc.gov/assets/equity/downloads/pdf/2026%20NYC%20TCOL%20Measure_4%206%2026.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "scale-substitution",
+      "claim": "92% of New Yorkers with disabilities are below threshold (avg. gap $76,178)",
+      "verdict": "CORRECTED",
+      "whatIFound": "The 92% figure applies to a much narrower group than 'New Yorkers with disabilities'. Report pp.14 and 21-22: 'Among working-age adults with self-care disabilities (difficulty bathing, dressing, etc.), 92 [percent]... resource gap of $76,178 annually'; 'People in families with a self-care disability face the highest rates in this analysis: 92 percent.' Self-care disability is described in the report as 'typically the most severe form of disability.' The broader any-disability rates are materially lower: 80.3% for people in families with any disability, adults under 65, and 68.1% for adults 65 and older. The dossier applied the most extreme sub-category's rate to the whole disabled population. The number itself is real and primary-confirmed; the population label is wrong.",
+      "correction": "92% of people in families with a self-care disability (working-age adults under 65) are below the threshold, with an average resource gap of $76,178 — the highest rate of any group in the measure. Any-disability rates: 80.3% (under 65) and 68.1% (65+).",
+      "sourceUrl": "https://www.nyc.gov/assets/equity/downloads/pdf/2026%20NYC%20TCOL%20Measure_4%206%2026.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "fabricated-borough-data",
+      "claim": "All five borough TCOL rates (Bronx 75.1%, Brooklyn 61.5%, Manhattan 55.6%, Queens 61.1%, Staten Island 48.2%)",
+      "verdict": "CONFIRMED",
+      "whatIFound": "Genuinely published at borough level, not derived. Primary report Table 9 (p.43) gives Bronx 75.1% / Brooklyn 61.5% / Queens 61.1% / Manhattan 55.6% / Staten Island 48.2% / NYC Overall 61.8%, alongside persons-in-families-with-children rates (86.8/73.1/71.5/57.8/57.1) and average resource gaps ($39,692/$38,208/$37,953/$44,529/$39,861). Table 10 (p.44) gives the full race-by-borough matrix. Both tables are sourced 'Urban Institute, ATTIS model, 2022. MOERJ compilation from borough-level data.' The Urban Institute companion independently reports the borough range as 75% Bronx to 49% Staten Island. Narrative text on p.13 confirms. No interpolation. This part of the dossier is solid, and the agent deserves credit for it.",
+      "correction": null,
+      "sourceUrl": "https://www.nyc.gov/assets/equity/downloads/pdf/2026%20NYC%20TCOL%20Measure_4%206%2026.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "manhattan value: '55.6% below TCOL threshold citywide reporting; borough race breakdown shows Hispanic 85.3% and Black 80% below threshold vs. white 32.9%'",
+      "verdict": "CORRECTED",
+      "whatIFound": "Copy error — 'citywide reporting' is stray editorial text inside a borough value field, and the Black rate is 79.7%, not 80% (Table 10, p.44: Manhattan Hispanic 85.3%, Black 79.7%, Asian/PI 54.5%, White 32.9%). The dossier's substantive claim that Manhattan has the widest racial gap of any borough is correct: the report puts the Manhattan Hispanic-white spread at 52 percentage points versus 35 in the Bronx and ~25 in Queens.",
+      "correction": "Cleaned to: '55.6% of Manhattan residents below the TCOL threshold — below the citywide 61.8% — but the widest racial gap of any borough: Hispanic 85.3%, Black 79.7%, Asian/PI 54.5%, White 32.9% (a 52-point Hispanic-white spread). Manhattan also has the second-highest deep-hardship rate in the city, 15.2% below half the threshold.'",
+      "sourceUrl": "https://www.nyc.gov/assets/equity/downloads/pdf/2026%20NYC%20TCOL%20Measure_4%206%2026.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "severity-unsupported",
+      "claim": "target: 'No binding numeric target exists; framed against the ... Racial Equity Plan's implicit goal of closing racial TCOL gaps' with level 100",
+      "verdict": "CORRECTED",
+      "whatIFound": "Per R8 and R1, a level of 100 anchored to an 'implicit goal' is not auditable. But a real, non-implicit benchmark exists and the dossier walked past it: the TCOL threshold is itself definitionally a target. Charter Amendment 3 (Nov 2022, 81% approval) mandates the City to create and annually report a measure of 'what it actually costs to live in New York City'; the report defines the threshold as 'the resources necessary for individuals and families to be independent of public and private assistance.' The implied target is 0% of residents below it. Scoring 61.8% against a 0% benchmark is unambiguous and fully auditable, and requires no appeal to implicit goals. The racial gaps and the Racial Equity Plan then function as R1 adjustment factors, not as the anchor.",
+      "correction": "target reframed to the TCOL threshold itself (0% of residents below it, per the Charter Amendment 3 mandate), with the FCNY Self-Sufficiency Standard as the independent cross-check and the Racial Equity Plan's racial-gap closure as a secondary equity benchmark. Level 100 retained but now anchored to a real benchmark.",
+      "sourceUrl": "https://www.nyc.gov/assets/equity/downloads/pdf/2026%20NYC%20TCOL%20Measure_4%206%2026.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "severity-unsupported",
+      "claim": "Bronx borough level 130; Manhattan 90; Staten Island 70",
+      "verdict": "CORRECTED",
+      "whatIFound": "130 is not a scale anchor but interpolation between 100 (critical) and 150 (severe) is used elsewhere in this portrait — R1's worked mobility example lands on -45 and cites -85 — so off-anchor values are permitted. Bronx at 130 is defensible and I retain it: 75.1% citywide-highest rate, 86.8% of persons in families with children, 15.6% below half the threshold, plus the highest borough unemployment (6.8%, 2025 annual average) and lowest good-job rate (~20%). The mapping is monotone in the borough TCOL rate and consistent with the citywide 100. I do raise Manhattan from 90 to 100: its headline rate is below citywide, but per R1 the borough score should reflect the dimension, and Manhattan carries the second-highest deep-hardship rate in the city (15.2%), the widest racial gap (52pp), the highest average resource gap ($44,529), and the highest Gini of any borough (0.5944, 2024). Staten Island stays at 70 (48.2%, lowest deep-hardship at 9.0%, lowest Gini at 0.4374).",
+      "correction": "Manhattan level 90 -> 100 with named pull factors. Bronx 130, Brooklyn 100, Queens 100, Staten Island 70 retained, each with an explicit note that off-anchor values are interpolated.",
+      "sourceUrl": "https://www.nyc.gov/assets/equity/downloads/pdf/2026%20NYC%20TCOL%20Measure_4%206%2026.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "stale-policy",
+      "claim": "JPMorgan Chase (HQ: NYC) financed $53.5B in fossil fuels in 2024, the largest of any bank globally ... the world's 65 largest banks financed fossil fuels with $906B in 2025 (+8% y/y) and $8.7 trillion since the 2016 Paris Agreement — all cited to 'Banking on Climate Chaos 2026'",
+      "verdict": "CORRECTED",
+      "whatIFound": "The dossier mixes two report editions under one citation. Banking on Climate Chaos 2026 (published June 8, 2026, covering 2025 data) reports JPMorgan Chase at $58 billion in 2025, up 12.6% year-over-year, and states it 'remains the #1 fossil fuel financier in the world.' The $906B 65-bank total and $8.7T cumulative-since-Paris figures ARE from that 2026 edition and are correct. The $53.5B/2024 bank-level figure is from the prior edition (BOCC 2025, whose 65-bank 2024 total was $869B) — and I could not confirm $53.5B as JPMorgan's published 2024 number in either edition, since BOCC restates prior-year data between editions and $58B at +12.6% implies a ~$51.5B 2024 base. So the specific dollar figure is unverifiable as stated and is also the wrong vintage for the source cited. The correction strengthens the entry rather than weakening it: financing to companies actively expanding fossil fuels surged 27% to $508B in 2025, and JPMorgan and Goldman Sachs abandoned their coal and Arctic exclusions outright after the Net-Zero Banking Alliance collapsed.",
+      "correction": "JPMorgan Chase (HQ: NYC) financed $58B in fossil fuels in 2025, up 12.6%, the largest of any bank in the world (Banking on Climate Chaos 2026, June 8 2026, 2025 data). Drop the unverifiable $53.5B/2024 figure.",
+      "sourceUrl": "https://www.ran.org/press-releases/bocc26/"
+    },
+    {
+      "severity": "major",
+      "category": "stale-policy",
+      "claim": "Citigroup (HQ: NYC) also ranks among the world's top-3 fossil-fuel financiers (~$45-47B in 2024)",
+      "verdict": "REFUTED",
+      "whatIFound": "Not for the vintage the dossier claims to be using. BOCC 2026's top three for 2025 are JPMorgan Chase ($58B), Bank of America ($47B), and Mitsubishi UFJ Financial Group ($47B, up 21%) — the RAN release headline is literally 'JPMorgan Chase, Bank of America, and MUFG are the world's three worst funders.' Citigroup and Mizuho round out the top five at $45-47B each. Citi WAS in the global top three on 2024 data (BOCC 2025), which is presumably where the claim came from, but that is a different edition and a different year. Worth noting for the global lens: of the 2025 top five, only JPMorgan and Citigroup are NYC-headquartered — Bank of America is Charlotte, MUFG and Mizuho are Tokyo.",
+      "correction": "Citigroup (HQ: NYC) ranks in the global top five at roughly $45-47B in 2025, alongside Mizuho; the 2025 top three are JPMorgan Chase, Bank of America (Charlotte) and MUFG (Tokyo). Citi was in the top three on 2024 data.",
+      "sourceUrl": "https://www.ran.org/press-releases/bocc26/"
+    },
+    {
+      "severity": "minor",
+      "category": "stale-policy",
+      "claim": "three of NYC's five public pension systems ... completed divestment from publicly-traded fossil-fuel reserve owners in 2022 and have adopted a 2040 net-zero portfolio target; a 2024 comptroller proposal to also exclude future private-market midstream/downstream fossil-fuel investment is pending",
+      "verdict": "CONFIRMED",
+      "whatIFound": "Confirmed, and specifically NOT reversed — which was the orchestrator's concern. TRS, NYCERS and BERS voted to divest in 2021 and completed divestment in 2022; the boards additionally excluded upstream fossil-fuel investing in private-markets portfolios in 2023; the 2040 net-zero portfolio target and Net Zero Implementation Plans stand. On performance: financed Scope 1+2 emissions fell 37% on a weighted average between 2019 and 2024, beating the 2025 interim targets a year early. On litigation: Wong et al. v. NYCERS was dismissed for lack of standing, the Appellate Division affirmed, and the New York Court of Appeals denied leave to appeal on October 21, 2025 — final. Two loose ends I could NOT resolve and have marked unverifiable: whether trustees actually adopted the midstream/downstream private-markets exclusion (staff were to present policy language in early 2025), and the outcome of the June 30, 2025 asset-manager net-zero-plan deadline. Also note the office has changed hands: the divestment and job-quality work cited is Comptroller Brad Lander's; Mark Levine is the current Comptroller.",
+      "correction": "Status language updated with the Oct 21 2025 Court of Appeals denial (litigation final), the 37% 2019-2024 emissions reduction, and the midstream/downstream exclusion and asset-manager deadline both flagged as status-unconfirmed.",
+      "sourceUrl": "https://comptroller.nyc.gov/newsroom/statement-from-nyc-comptroller-lander-celebrating-court-of-appeals-ruling-on-lawsuit-challenging-fossil-fuel-divestment-by-new-york-city-pension-funds"
+    },
+    {
+      "severity": "major",
+      "category": "internal-inconsistency",
+      "claim": "Gini index: 0.5546 citywide (2023) ... the 4th-highest among large U.S. cities; borough range from 0.4609 (Staten Island) to 0.5929 (Manhattan), with Bronx 0.5200, Brooklyn 0.5349, Queens 0.4745 — source: RGB '2025 Income and Affordability Study'",
+      "verdict": "CORRECTED",
+      "whatIFound": "The 2023 figures are accurate but superseded. I downloaded and text-extracted the RGB 2026 Income and Affordability Study (April 16, 2026), which the dossier missed: 'In 2024, NYC's Gini index coefficient was 0.5563, higher than the coefficient of 0.5546 in 2023, and the second-highest coefficient among large cities (behind only Miami, with a coefficient of 0.5637). By borough, the coefficients ranged from 0.4374 in Staten Island, to 0.4694 in Queens, 0.5336 in the Bronx, 0.5347 in Brooklyn, and 0.5944 in Manhattan. The U.S. Gini coefficient was 0.4809 in 2024.' Note the rank moves from 4th-highest to 2nd-highest, which cuts against the dossier — inequality worsened and NYC's relative standing worsened. The dossier also flagged this PDF as unfetchable; pypdf extracts it fine.",
+      "correction": "2024 vintage: NYC 0.5563 (up from 0.5546 in 2023), second-highest among large US cities behind Miami (0.5637); Manhattan 0.5944, Brooklyn 0.5347, Bronx 0.5336, Queens 0.4694, Staten Island 0.4374; US 0.4809.",
+      "sourceUrl": "https://rentguidelinesboard.cityofnewyork.us/wp-content/uploads/2026/04/2026-IA.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "internal-inconsistency",
+      "claim": "Unemployment rate by borough (proxy): Citywide 5.3% (seasonally adjusted, June 2026); Bronx ~6.5% (May 2026); Manhattan ~4.1% (May 2026); Brooklyn ~5.8%, Queens ~5.1%, Staten Island ~5.3% (all July 2025 vintage) ... aggregated by FRED/Trading Economics",
+      "verdict": "CORRECTED",
+      "whatIFound": "A mixed-vintage third-party assembly with several wrong values, and unnecessary — a clean single-vintage official set exists. RGB 2026 I&A Study, from BLS/NYSDOL LAUS: NYC annual average 5.2% in 2025 (up 0.2pp from 5.0% in 2024); by borough, 'Staten Island had the lowest average annual unemployment rate, 4.5%, followed by both Manhattan and Queens, at 4.6%; Brooklyn, at 5.2%; and the Bronx, consistently the borough with the highest unemployment rate, 6.8%.' Latest month: January 2026, 5.5% citywide. The dossier's Queens (~5.1% vs 4.6%), Staten Island (~5.3% vs 4.5%) and Manhattan (~4.1% vs 4.6%) values are all off, and its citywide 'June 2026 5.3%' is unverifiable. This also resolves the dossier's own dataGap #5, which asserted no single-vintage five-borough table could be located.",
+      "correction": "2025 annual averages (BLS/NYSDOL LAUS via RGB 2026 I&A Study): NYC 5.2%; Bronx 6.8%, Brooklyn 5.2%, Queens 4.6%, Manhattan 4.6%, Staten Island 4.5%. Citywide January 2026: 5.5%. dataGap #5 removed.",
+      "sourceUrl": "https://rentguidelinesboard.cityofnewyork.us/wp-content/uploads/2026/04/2026-IA.pdf"
+    },
+    {
+      "severity": "major",
+      "category": "internal-inconsistency",
+      "claim": "Freelance/gig workforce share: ~1.3 million people, ~34% of NYC's workforce ... year: 2023, source: Freelancers Union / Upwork survey conducted with the NYC Mayor's Office, sourceUrl: nelp.org",
+      "verdict": "CORRECTED",
+      "whatIFound": "The figures are real but the year is wrong by seven years and the URL points to an unrelated NELP commentary page. The study is 'Freelancing in New York City', Freelancers Union and Upwork with the NYC Mayor's Office of Media and Entertainment, released September 2019: 1.3 million workers performed freelance work in the prior 12 months, 34% of the NYC workforce, $31.4B in annual freelance earnings, 29% freelancing full-time. There is no 2023 update that I could locate. A 2019 pre-pandemic gig-work estimate is a weak indicator for 2026 and confidence should reflect that.",
+      "correction": "Year 2019; source Freelancers Union/Upwork with NYC Mayor's Office of Media and Entertainment, 'Freelancing in New York City' (Sept 2019); add $31.4B earnings; flag as pre-pandemic and stale.",
+      "sourceUrl": "https://www.nyc.gov/assets/mome/pdf/freelancing-ny-report-09062019.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "Poverty Tracker ... '26% overall poverty rate in 2024 ... affecting 2.2M people (1.7M adults, ~450,000 children); ~3 in 5 New Yorkers (5M) live below 200% of the poverty line', Vol. 8 — cited to a robinhood.org URL",
+      "verdict": "CORRECTED",
+      "whatIFound": "The figures are right, the URL is wrong. The cited URL is the Volume 7 press release, which reports 25% for 2023 data, 2.02M people (1.6M adults, 420,000 children), published February 26, 2025. Volume 8 does report 26% for 2024, 2.2M people including 1.7M adults and nearly 450,000 children, twice the national rate, the highest since the Poverty Tracker began; and nearly 5 million New Yorkers (3 in 5) below 200% of the poverty line. Attaching Vol. 8 numbers to the Vol. 7 URL would have read as fabrication to any checker who followed the link.",
+      "correction": "URL changed to https://robinhood.org/reports/poverty-tracker-annual-report-vol-8/ (release: https://robinhood.org/news/2026-annual-poverty-tracker-report-release/); note Vol. 7 reported 25% on 2023 data.",
+      "sourceUrl": "https://robinhood.org/reports/poverty-tracker-annual-report-vol-8/"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "Federal/ACS poverty rate: 18.2% ... (2023) ... child poverty 24.5%; and neighborhoodNote attributing 2024 borough poverty rates to NYU Furman Center",
+      "verdict": "CORRECTED",
+      "whatIFound": "2024 ACS is available and the dossier used 2023. RGB 2026 I&A Study: 'According to the 2024 ACS (the most recent survey), the NYC individual poverty rate was 18.0%', down 0.2pp from 2023, versus 12.1% nationally. Borough: Staten Island 11.1%, Queens 13.3%, Manhattan 15.6%, Brooklyn 19.2%, Bronx 28.8%. By age: under 18 24.2%, 18-64 15.4%, 65+ 20.2%. The borough numbers the dossier attributed to Furman are correct but are straightforwardly the 2024 ACS, and Brooklyn (19.2%) was omitted from the note. The race/ethnicity split (Hispanic 24.8%, Black 21.7%, Asian 16.8%, White 11.5%) is 2023-only and stays labelled as such.",
+      "correction": "Headline of this subIndicator moved to 2024 ACS: 18.0% citywide, under-18 24.2%, full five-borough set including Brooklyn 19.2%; 2023 race breakdown retained and explicitly labelled 2023. Source upgraded from Furman search snippets to the RGB 2026 I&A Study.",
+      "sourceUrl": "https://rentguidelinesboard.cityofnewyork.us/wp-content/uploads/2026/04/2026-IA.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "Median household income by borough: Citywide $83,970 (2024) ... Manhattan ~$110,000 (+31%, per a separate 2024 ACS citation) ... source NYU Furman Center",
+      "verdict": "CORRECTED",
+      "whatIFound": "The citywide figure conflicts with the officially published 2024 ACS value. RGB 2026 I&A Study: 'According to the most recent survey, the 2024 ACS, median household income in NYC ($81,228) increased both nominally (by 6.1%), as well as in real terms (by 2.2%), compared to 2023'; renters $64,866, owners $121,443. Per R3 the published figure is the headline. The dossier's borough set also visibly mixes vintages and self-flags one entry as 'per a separate 2024 ACS citation', and the Furman page returned 403 to the agent, so the whole set rests on search snippets.",
+      "correction": "Citywide $81,228 (2024 ACS; renters $64,866, owners $121,443), sourced to RGB 2026 I&A Study. Borough set retained as approximate with mixed vintages explicitly stated and confidence lowered.",
+      "sourceUrl": "https://rentguidelinesboard.cityofnewyork.us/wp-content/uploads/2026/04/2026-IA.pdf"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "'Good job' rate by borough ... source: NYC Comptroller Mark Levine, 'The State of Job Quality in New York City'",
+      "verdict": "CORRECTED",
+      "whatIFound": "Borough rates confirmed exactly (Manhattan ~46%, Staten Island ~37%, Brooklyn ~33%, Queens ~28%, Bronx ~20%) and the four-part definition confirmed (living wage for household size, full-time year-round at 35+ hrs/50+ weeks, employer-sponsored health insurance, safe conditions or 25% hazard premium). The citywide rate is 33.2% and the dossier omitted it. The report was published May 14, 2025 under Comptroller Brad Lander, not Mark Levine — Levine is the current Comptroller but did not issue it. Data year 2023 within a 2017-2023 series.",
+      "correction": "Attribution changed to Comptroller Brad Lander (report published May 14, 2025); citywide 33.2% added.",
+      "sourceUrl": "https://comptroller.nyc.gov/reports/the-state-of-job-quality-in-new-york-city/"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "Unemployment by race/ethnicity ... young Black workers 23.8% unemployment, 9 points above 2019 — all attributed to the DiNapoli April 2026 release, year 2025",
+      "verdict": "CORRECTED",
+      "whatIFound": "The race/ethnicity rates are confirmed from the April 2026 release for December 2025 data (Black 8.9%, Hispanic 6.3%, Asian 3.5%, White under 3%, Black over 3x White; 2019 comparators Hispanic 4.9%, Asian 1.8%). The young-Black-worker figure is NOT in that release — it is from DiNapoli's June 2025 youth report and refers to 2024: young Black workers at 23.8%, nine points above 2019, against overall 16-24 youth unemployment of 13.2% in 2024 (3.6 points above 2019). Two sources and two years merged into one entry.",
+      "correction": "Split into two subIndicators with correct years and URLs; youth figures dated 2024 and sourced to the June 2025 OSC release, with citywide youth 13.2% added.",
+      "sourceUrl": "https://www.osc.ny.gov/press/releases/2025/06/dinapoli-youth-nyc-face-double-digit-unemployment-rate"
+    },
+    {
+      "severity": "minor",
+      "category": "internal-inconsistency",
+      "claim": "NYC lost an estimated $23 billion in economic activity in 2022 due to the child care crisis; modeled gains of $900M in labor income and $1.9B in disposable income if the child care cost burden on working parents were removed",
+      "verdict": "CORRECTED",
+      "whatIFound": "The $23B is confirmed and comes with better companions than the dossier used: roughly 375,000 city parents left a job or reduced work commitments in 2022 due to inadequate child care access, at an estimated cost of $23B in lost economic output, $5.9B in lost disposable income and $2.2B in lost tax revenue; quality care is unaffordable for 80% of NY families at an average $26,000 per child annually, up to $40,000. I could not source the '$900M in labor income / $1.9B in disposable income' modeled-gains figures anywhere and they conflict with the $5.9B disposable-income loss in the same source family.",
+      "correction": "Replace the unsourceable modeled-gains clause with the verified 375,000 parents / $23B output / $5.9B disposable income / $2.2B tax revenue set, plus the $26,000 average annual per-child cost.",
+      "sourceUrl": "https://cccnewyork.org/nyc-needs-universal-child-care/"
+    },
+    {
+      "severity": "minor",
+      "category": "stale-policy",
+      "claim": "App-based delivery worker minimum pay: $22.13/hr as of April 1, 2026 ... federal court (SDNY, Judge Koeltl) denied industry's request for a preliminary injunction and injunction pending appeal in January 2026 ... $5,195,000 from Uber Eats/Fantuan/HungryPanda for ~49,000 workers",
+      "verdict": "CONFIRMED",
+      "whatIFound": "Rate confirmed: DCWP raised the minimum pay rate from $21.44 to $22.13 effective April 1, 2026, a 3.2% inflation adjustment reflecting Dec 2024-Dec 2025, covering both food and third-party grocery delivery. Litigation confirmed and incompletely described: on or about January 22, 2026, Judge John Koeltl (SDNY) denied a preliminary injunction against the grocery-delivery minimum pay requirements and subsequently denied an injunction pending appeal, while Judge George Daniels (SDNY) separately denied injunctive relief against the up-front tipping framework, which the platforms challenged on First Amendment 'government mandated message' grounds; a request to stay proceedings pending appeal was still being adjudicated. The rules took effect January 26, 2026. Settlement confirmed at $5,195,000 total across more than 49,000 workers (Uber Eats $3.15M restitution to 48,000+ plus $350K penalties; HungryPanda $1,068,672 to 1,000+; Fantuan $468K+ to 285), and Uber additionally agreed to reinstate as many as 10,000 wrongfully deactivated workers.",
+      "correction": "Expanded to name both judges and both challenged provisions, add the Jan 26 2026 effective date, the pending stay request, and the 10,000-worker reinstatement.",
+      "sourceUrl": "https://www.jacksonlewis.com/insights/courts-decline-halt-nyc-delivery-worker-amendments-leaving-employers-subject-new-compliance-obligations"
+    },
+    {
+      "severity": "minor",
+      "category": "stale-policy",
+      "claim": "NY minimum wage in NYC: $17.00/hr effective Jan 1, 2026 (up from $16.50 in 2025); statutory $0.50 step increases end in 2026, then indexed annually starting 2027 to CPI-W for the Northeast region",
+      "verdict": "CONFIRMED",
+      "whatIFound": "Fully confirmed. $17.00/hr in NYC, Nassau, Suffolk and Westchester as of January 1, 2026; $16.00 for the rest of the state; tipped food service $11.35 cash wage with a $5.65 credit, tipped service employees $14.15 with a $2.85 credit; CPI-W Northeast indexing begins 2027. The orchestrator's brief figure of $16.50 was correct for 2025 and has simply been superseded.",
+      "correction": null,
+      "sourceUrl": "https://ogletree.com/insights-resources/blog-posts/2026-minimum-wage-increases-in-new-york-key-details-for-employers/"
+    },
+    {
+      "severity": "minor",
+      "category": "stale-policy",
+      "claim": "Average Wall Street bonus: $246,900 average 2025 bonus (record, +6%), on a $49.2B bonus pool (+9%, record); average total securities-industry compensation $505,677 (2024); securities sector = 20.2% of NYC economic output and 8.4% of city tax revenue (FY2025); ~1 in 13 jobs",
+      "verdict": "CONFIRMED",
+      "whatIFound": "Confirmed line by line against the OSC release: $246,900 average 2025 bonus, up 6%; $49.2B pool, a record; average total securities-industry compensation $505,677 in 2024, up 7.3%, second-highest on record; 20.2% of all NYC economic activity in 2024; 8.4% of city tax revenue in City FY2025 and 19.4% of state tax collections in SFY2024-25; 1 in 13 city jobs directly or indirectly tied to the securities industry. Only refinement: the 20.2% output share is a 2024 figure sitting inside an entry labelled 2025, which should be stated.",
+      "correction": "Year labels made explicit per statistic; state tax share added.",
+      "sourceUrl": "https://www.osc.ny.gov/press/releases/2026/03/dinapoli-246900-average-bonus-on-wall-street-up-6-percent-in-2025"
+    },
+    {
+      "severity": "minor",
+      "category": "actions-quality",
+      "claim": "'30 For Our City' minimum wage bill ... referred to the Council's Committee on Consumer and Worker Protection; as of late July 2026 still in committee, not yet voted on by the full Council",
+      "verdict": "CORRECTED",
+      "whatIFound": "The bill is real and the substance is richer than the dossier states: introduced by Council Member Sandy Nurse and announced March 10, 2026 on the City Hall steps under the 'Raise Up NY' banner, backed by Mayor Mamdani; employers with over 500 employees would reach $20/hr by 2027 and $30/hr by 2030, with employers under 500 employees reaching $30/hr by 2032. It would be the highest municipal minimum wage in the US. I could confirm only that it is 'currently being considered by City Council' with no full-Council vote; I could NOT independently confirm referral to the Committee on Consumer and Worker Protection specifically, so that detail is softened.",
+      "correction": "Tiering and introduction date added; committee-referral detail softened to 'under consideration in the Council; no full-Council vote as of late July 2026'.",
+      "sourceUrl": "https://amsterdamnews.com/news/2026/03/19/30-of-our-city-bill-to-raise-minimum-wage-by-2030/"
+    },
+    {
+      "severity": "minor",
+      "category": "lens-confusion",
+      "claim": "global lens headline: 'NYC-headquartered banks' fossil-fuel financing set against NYC public pension divestment, and NYC's undocumented/excluded workforce'",
+      "verdict": "CONFIRMED",
+      "whatIFound": "This survives R2: finance is an explicitly listed transmission channel, the claim is about NYC's effect beyond its boundary, and it is quantified ($58B, 2025), so it is not rhetoric with a score attached. But the fit to income & work specifically is the weakest part of an otherwise strong entry — financed emissions are a climate transmission channel, and this same JPMorgan/BOCC fact will almost certainly appear in the climate change dimension, creating cross-dimension double-counting. The genuinely on-dimension global-social channels for income & work are the labour ones: the excluded/undocumented workforce underpinning low-wage sectors, wage theft, global supply-chain labour standards, and remittances. The dossier has the labour channel but leaves it unquantified apart from a headcount that turned out to be wrong by 50%, and correctly flags remittances as a data gap. I have rebalanced the entry to carry both channels with the labour channel stated first, but the dimension-assignment call is the orchestrator's.",
+      "correction": "Global entry restructured to lead with the labour/excluded-worker channel and carry fossil-finance as the quantified co-channel, with a cross-dimension duplication warning added to the context. Level 100 retained.",
+      "sourceUrl": "https://www.ran.org/press-releases/bocc26/"
+    },
+    {
+      "severity": "minor",
+      "category": "pii",
+      "claim": "expertsForPhase2 and actions entries naming individuals and organizations",
+      "verdict": "CONFIRMED",
+      "whatIFound": "No private individual's personal contact information is present anywhere in the dossier. All expert entries route to institutional URLs. Named individuals (Sandy Nurse, Afua Atta-Mensah, Mark Levine, Brad Lander, Thomas DiNapoli, Zohran Mamdani, Judges Koeltl and Daniels) are public officials acting in official capacity. Afua Atta-Mensah's appointment as Chief Equity Officer and MOERJ Commissioner is confirmed (announced January 2026). All named organizations exist and are correctly named. No action needed.",
+      "correction": null,
+      "sourceUrl": "https://www.nyc.gov/mayors-office/news/2026/01/mayor-mamdani-appoints-afua-atta-mensah-as-chief-equity-officer-"
+    },
+    {
+      "severity": "minor",
+      "category": "indicator-validity",
+      "claim": "neighborhoodNote uses federal poverty rates (Mott Haven/Melrose 42.6%, Upper East Side 5.5% vs East Harlem 32.2%) for neighborhood disaggregation",
+      "verdict": "CORRECTED",
+      "whatIFound": "A same-measure neighborhood breakdown exists and is far better than borrowing the federal poverty measure. FCNY's 'Overlooked & Undercounted in New York City 2026' reports that the share of households below the True Cost of Living 'ranges from a high of 80% in Bronx Community Districts 1 & 2 (Melrose, Mott Haven, Longwood, and Hunts Point) to a low of 14% in Manhattan Community Districts 1 & 2 (Financial District and Greenwich Village)' — a 66-point spread on the dimension's own indicator rather than on a proxy. It also reports 86% of single mothers with young children below the threshold. Per R10's spirit, the same-indicator figure belongs in the note.",
+      "correction": "neighborhoodNote rewritten to lead with the FCNY PUMA range on the TCOL measure itself, retaining the federal poverty figures as a labelled contrast.",
+      "sourceUrl": "https://www.fcny.org/wp-content/uploads/2026/03/NYC2026_TCL_BRIEF_20260318.pdf"
+    }
+  ],
+  "levelReview": {
+    "originalLevel": 100,
+    "recommendedLevel": 100,
+    "reasoning": "Unchanged, but re-anchored to an auditable benchmark rather than an implicit goal. The target is now the TCOL threshold itself — Charter Amendment 3 (November 2022, 81% approval) mandates the City to measure and annually report what it actually costs to live in New York, and the report defines the threshold as the resources needed to be independent of public and private assistance. The implied target is 0% of residents below it. Against that, 61.8% of residents (5.04M of 8.16M) are below, 13% are below even HALF the threshold (about 1 million people), and government transfers close only about 5 percentage points of the gap (67% to 62%). Two methodologically independent measures agree on the order of magnitude: FCNY's Self-Sufficiency Standard puts 46% of working-age households below its threshold on 2024 incomes. R1 upward adjustments, named: the Poverty Tracker at a record 26% in 2024 (2.2M people, twice the national rate, nearly 5M below 200% FPL); the 2024 Gini of 0.5563, now second-highest among large US cities, up from 4th; a Bronx good-job rate of 20% against 46% in Manhattan; Black unemployment at 8.9% in December 2025, over 3x white, with young Black workers at 23.8% in 2024; and a 66-point neighborhood spread on the TCOL measure itself (80% in Mott Haven/Hunts Point to 14% in the Financial District). R1 downward adjustments, named and genuinely weighed per R5: the FCNY series shows income inadequacy falling from its 2021 peak (though still above pre-pandemic, and rising for single-full-time-earner households from 40% to 44%); citywide unemployment at a moderate 5.2% annual average in 2025; median household income up 2.2% in real terms in 2024; and the strongest municipal labour-standards regime in the country, actively enforced (a $17 minimum wage above the federal floor, a $22.13 delivery-worker pay floor upheld twice in federal court in January 2026, Fair Workweek with $8.5M recovered since January 2026, statewide Freelance Isn't Free). Those are real and are why this is 100 rather than 130 or 150 — they are policy responses and a moderating trend, not evidence that the majority of the city can currently cover basic needs. They do not come close to justifying anything below 100. The largest remaining caveat, which caps confidence rather than the level, is that the headline is 2022-vintage data published in 2026; if the next MOERJ release reflects the same post-2021 improvement the FCNY series shows, this may warrant revisiting toward 85-90. Global lens stays at 100: the quantified channel got worse, not better, with JPMorgan Chase at $58B in 2025 (up 12.6%, #1 in the world), financing to fossil expanders up 27% to $508B, the Net-Zero Banking Alliance collapsed, and JPMorgan and Goldman Sachs abandoning coal and Arctic exclusions outright — partially offset by NYC's own pension divestment surviving final appellate review in October 2025 and beating its 2025 interim emissions target a year early."
+  },
+  "sourcesIndependentlyFetched": [
+    {"url": "https://www.nyc.gov/mayors-office/news/2026/04/mayor-mamdani-releases-preliminary-citywide-racial-equity-plan-a", "fetchedOk": true, "confirms": "62% / 5.04M citywide; $39,603 average family resource gap; $159,197 median cost and $124,007 median resources for families with children with 'a gap of more than $35,000'; 73% / 1.2M children and 87% in the Bronx; 92% and $76,178 for the disability group; race breakdown 77.6/65.6/63.3/43.7; Manhattan 85.3/80/32.9; 3.58M 'missing middle'; government supports reduce the rate by about 5 percentage points"},
+    {"url": "https://www.nyc.gov/assets/equity/downloads/pdf/2026%20NYC%20TCOL%20Measure_4%206%2026.pdf", "fetchedOk": true, "confirms": "Full 61-page primary report, text-extracted locally with pypdf after WebFetch returned raw PDF. Confirms report dated March 2026; data vintage 2018 ACS projected to 2022, ATTIS model 2022, 8.16M population base; NYC overall 61.8%; Table 9 borough rates and gaps; Table 10 race-by-borough matrix (Manhattan Black 79.7%); families with children gap of $35,190 not $39,603; 92% is the self-care-disability subgroup with any-disability at 80.3%/68.1%; 13% below half the threshold (~1M people); deep hardship 15.6% Bronx to 9.0% Staten Island, Manhattan 15.2%; transfers move the rate 'from 67 percent to 62 percent'; 10% savings target inside the threshold; no numeric target stated anywhere in the report"},
+    {"url": "https://www.fcny.org/wp-content/uploads/2026/03/NYC2026_TCL_BRIEF_20260318.pdf", "fetchedOk": true, "confirms": "'Overlooked & Undercounted in New York City 2026', Center for Women's Welfare for FCNY, March 2026: 46% of working-age NYC households below the True Cost of Living on 2024 ACS 1-year PUMS with incomes adjusted to 2026 costs; universe excludes 65+, group quarters and adults with work-limiting disabilities; no public or private assistance counted; Self-Sufficiency Standard methodology; trend declined 2012-2019, rose sharply 2021, declined again by 2024; one-full-time-worker household inadequacy rose 40%->44%; PUMA range 80% Bronx CD 1&2 to 14% Manhattan CD 1&2; 86% of single mothers with young children"},
+    {"url": "https://www.urban.org/research/publication/bridging-true-cost-living-gap-new-york-city", "fetchedOk": true, "confirms": "Independent second primary source (Acs, Dehry, Simpson, Todd; May 14, 2026): about 62% of people in families in NYC below the TCOL threshold, 2022 data, borough range 75% Bronx to 49% Staten Island, children 73%, single-parent families over 90%, race range 44%-78%, average shortfall about $40,200"},
+    {"url": "https://rentguidelinesboard.cityofnewyork.us/wp-content/uploads/2026/04/2026-IA.pdf", "fetchedOk": true, "confirms": "RGB 2026 Income and Affordability Study, April 16 2026, downloaded and text-extracted: 2024 Gini 0.5563, second-highest among large cities behind Miami 0.5637, boroughs 0.4374-0.5944, US 0.4809; 2024 ACS poverty 18.0% citywide with full borough set and under-18 24.2%; 2024 ACS median household income $81,228 citywide, renters $64,866, owners $121,443; 2025 annual average unemployment 5.2% citywide with all five boroughs, January 2026 at 5.5%. The dossier had reported the 2025 edition of this study as unfetchable and missed the 2026 edition entirely"},
+    {"url": "https://www.ran.org/press-releases/bocc26/", "fetchedOk": true, "confirms": "Banking on Climate Chaos 2026, published June 8 2026, covering 2025 data: 65 banks at $906B in 2025 (+8%), $8.7T since Paris; JPMorgan Chase $58B and #1 in the world, up 12.6%; Bank of America $47B; MUFG $47B, up 21%; fossil-expansion financing up 27% to $508B; 12 of 15 North American banks in scope now have no meaningful fossil commitments; JPMorgan and Goldman abandoned coal and Arctic exclusions"},
+    {"url": "https://www.esgdive.com/news/global-banks-increase-fossil-fuel-investments-jpmorgan-citi-wells-bofa-2025-banking-on-climate-chaos/751084/", "fetchedOk": true, "confirms": "Prior edition (BOCC 2025, 2024 data): 65-bank total $869B in 2024; JPMorgan, Bank of America and Citi were the top three financiers of fossil fuels overall and of fossil expansion in 2024 — establishing that Citi's top-three status is a 2024-vintage claim, not a 2025 one. No $53.5B figure appears"},
+    {"url": "https://comptroller.nyc.gov/newsroom/statement-from-nyc-comptroller-lander-celebrating-court-of-appeals-ruling-on-lawsuit-challenging-fossil-fuel-divestment-by-new-york-city-pension-funds", "fetchedOk": true, "confirms": "NY Court of Appeals denied leave to appeal in Wong et al v. NYCERS on October 21, 2025, final; dismissal for lack of standing affirmed; TRS, NYCERS and BERS divested in 2021 and completed in 2022. Divestment has NOT been reversed"},
+    {"url": "https://tollbit.gothamist.com/news/new-york-has-more-than-600k-undocumented-immigrants-data-shows-who-are-they", "fetchedOk": true, "confirms": "The 672,000 CMS figure is New York STATE (2022); NYC MOIA separately estimates roughly 412,000 undocumented immigrants in the city as of 2022, down from 611,000 in 2012. Refutes the dossier's 600,000-670,000 NYC range"},
+    {"url": "https://www.osc.ny.gov/press/releases/2026/03/dinapoli-246900-average-bonus-on-wall-street-up-6-percent-in-2025", "fetchedOk": true, "confirms": "$246,900 average 2025 bonus (+6%), $49.2B record pool, $505,677 average total compensation in 2024 (+7.3%), 20.2% of NYC economic activity in 2024, 19.4% of state tax collections in SFY2024-25 and 8.4% of city tax revenue in City FY2025, 1 in 13 city jobs"},
+    {"url": "https://www.osc.ny.gov/press/releases/2026/04/dinapoli-post-pandemic-unemployment-nyc-persists-some-demographic-groups", "fetchedOk": true, "confirms": "December 2025 unemployment by race: Black 8.9%, Hispanic 6.3%, Asian 3.5%, White under 3%, Black over 3x White; 2019 comparators. Does NOT contain the 23.8% young-Black-worker figure"},
+    {"url": "https://comptroller.nyc.gov/reports/the-state-of-job-quality-in-new-york-city/", "fetchedOk": true, "confirms": "Four-part good-job definition; borough rates Manhattan ~46%, Staten Island ~37%, Brooklyn ~33%, Queens ~28%, Bronx ~20%; citywide 33.2%; 2023 data in a 2017-2023 series; published May 14 2025 under Comptroller Brad Lander, not Mark Levine"},
+    {"url": "https://www.jacksonlewis.com/insights/courts-decline-halt-nyc-delivery-worker-amendments-leaving-employers-subject-new-compliance-obligations", "fetchedOk": true, "confirms": "Judge Koeltl (SDNY) denied a preliminary injunction on grocery-delivery minimum pay and a subsequent injunction pending appeal; Judge Daniels (SDNY) denied injunctive relief on the up-front tipping rule on January 22 2026; amendments effective January 26 2026; rate rising $21.44 to $22.13 on April 1 2026"},
+    {"url": "https://www.cssny.org/news/entry/latest-census-data-shows-poverty-remains-stubbornly-high-in-new-york-city-analysis", "fetchedOk": true, "confirms": "2023 ACS poverty 18.2% with race breakdown Hispanic 24.8% / Black 21.7% / Asian 16.8% / White 11.5% and child poverty 24.5%; published September 12 2024, so 2023 was then the latest year — superseded by 2024 ACS"},
+    {"url": "https://robinhood.org/news/robin-hood-annual-poverty-tracker-report-shows-25-overall-poverty-rate-in-new-york-city-climbing-beyond-record-highs-observed-in-2022/", "fetchedOk": true, "confirms": "This is the Volume 7 release: 25% for 2023, 2.02M people, 1.6M adults and 420,000 children, published February 26 2025. Establishes that the dossier's Vol. 8 figures were attached to the wrong URL"},
+    {"url": "https://www.nyc.gov/mayors-office/news/2026/01/mayor-mamdani-appoints-afua-atta-mensah-as-chief-equity-officer-", "fetchedOk": true, "confirms": "Afua Atta-Mensah appointed Chief Equity Officer and MOERJ Commissioner, January 2026, tasked with publishing the Preliminary Citywide Racial Equity Plan within the first 100 days"},
+    {"url": "https://unitedwaynyc.org/in-new-york-city-50-of-working-age-households-arent-earning-enough-to-meet-basic-needs/", "fetchedOk": false, "confirms": "HTTP 403. The 50% / 1,298,212 households / 2,991,973 people figures and the working-age-household universe were confirmed instead from FCNY's own 2026 brief and from search-result text of this page and the 2023 report PDF"},
+    {"url": "https://www.furmancenter.org/neighborhoods/the-bronx/", "fetchedOk": false, "confirms": "HTTP 403, as the dossier also reported. All figures the dossier attributed to Furman were re-sourced to the RGB 2026 I&A Study (2024 ACS) instead, which publishes them directly"}
+  ],
+  "questionsForOrchestrator": [
+    "The headline is 2022-vintage data (2018 ACS projected to 2022 via the Urban Institute ATTIS model) published in March/April 2026. It is unambiguously the officially mandated city measure at the right geography, so R3 says headline it — but the one series with a real time trend (FCNY) shows income inadequacy falling between 2021 and 2024. Confirm you want the 2022-vintage official measure as the headline with the 2024-vintage FCNY figure as a labelled co-measure, rather than the reverse. This is the single biggest judgement call in the dimension and it is yours, not mine.",
+    "The 62%-vs-50% divergence is resolved and is NOT an error: 61.8% is persons in families, all ages, 2022, post-transfer, Urban Institute TCES basket including a 10%-of-expenses savings target; 46-50% is working-age households only, pre-transfer, Self-Sufficiency Standard basket with no savings component. The agent's substitution of the new official measure for the brief's UWNYC figure was the right call. Should other dimensions that cite an NYC 'true cost of living' or self-sufficiency figure be flagged to state which of the two measures they mean? They are not interchangeable and the difference is 16 percentage points.",
+    "Verbatim from the dossier, now adjudicated so you can close it out: 'The brief assumed 400,000-500,000 undocumented New Yorkers excluded from labor protections; current 2023-2025 estimates I found run considerably higher (roughly 600,000-670,000 per recent local reporting, up to 820,400 per Center for Migration Studies of New York modeling, with a historical peak of 943,000 in 2012). Should the portrait use the higher, more recent range, and should other dimensions using this figure be flagged to update in sync?' — Answer: no. The brief was right and the agent was wrong. The 672,000 CMS figure is New York STATE; the NYC figure is roughly 412,000 (MOIA, 2022), down from 611,000 in 2012, with the Comptroller at ~476,000 for 2019. Any other dimension that picked up 600,000+ as a city figure must be corrected the same way — please sweep for it.",
+    "Cross-dimension duplication: the JPMorgan Chase / Banking on Climate Chaos fossil-finance material is the quantified backbone of this dimension's global-social lens, but financed emissions are a climate transmission channel and this same fact will very likely anchor the climate change dimension's global lens too. Decide where it lives. If it stays here, the income & work global lens should probably lead on labour (excluded workers, wage theft, supply-chain standards, remittances) with finance as the quantified co-channel, which is how I have left it; if it moves to climate, this global lens needs the remittances gap filled or it drops to level null.",
+    "I could not confirm two live pension-policy statuses and have marked both unverifiable rather than guess: (a) whether the NYC retirement systems' trustees actually ADOPTED the midstream/downstream private-markets fossil-fuel exclusion that was proposed in December 2024 for early-2025 presentation, and (b) the outcome of the June 30, 2025 deadline for public-markets asset managers to file compliant net-zero plans. The Comptroller's Bureau of Asset Management can close both in one email."
+  ]
+}
